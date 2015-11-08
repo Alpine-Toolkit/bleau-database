@@ -1,0 +1,1535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class=" mozilla root-section w-1600 lt-1680 lt-1920 js  gradient rgba opacity textshadow multiplebgs boxshadow borderimage borderradius no-cssreflections csstransforms csstransitions no-fontface domloaded" id="index-page" slick-uniqueid="3" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-fr" dir="ltr" lang="fr-fr"><head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="keywords" content="cosiroc">
+  <meta name="author" content="Super Utilisateur">
+  <meta name="generator" content="Joomla! - Open Source Content Management  - Version 2.5.16">
+  <title>cosiroc - cosiroc</title>
+  <link href="http://www.cosiroc.fr/templates/beez_20/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+  <link href="http://www.cosiroc.fr/index.php?option=com_search&amp;view=article&amp;id=306:liste-de-tous-les-massifs&amp;catid=2:non-categorise&amp;format=opensearch" rel="search" title="Valider cosiroc" type="application/opensearchdescription+xml">
+  <link rel="stylesheet" href="massif_fichiers/calendar-jos.css" type="text/css" title="Vert" media="all">
+  <link rel="stylesheet" href="massif_fichiers/fabrik.css" type="text/css">
+  <link rel="stylesheet" href="massif_fichiers/template_css.css" type="text/css">
+  <link rel="stylesheet" href="massif_fichiers/system.css" type="text/css">
+  <link rel="stylesheet" href="massif_fichiers/position.css" type="text/css" media="screen,projection">
+  <link rel="stylesheet" href="massif_fichiers/layout.css" type="text/css" media="screen,projection">
+  <link rel="stylesheet" href="massif_fichiers/print.css" type="text/css" media="print">
+  <link rel="stylesheet" href="massif_fichiers/general.css" type="text/css">
+  <link rel="stylesheet" href="massif_fichiers/general_mozilla.css" type="text/css">
+  <link rel="stylesheet" href="massif_fichiers/personal.css" type="text/css">
+  <script src="massif_fichiers/mootools-core.js" type="text/javascript"></script>
+  <script src="massif_fichiers/core.js" type="text/javascript"></script>
+  <script src="massif_fichiers/caption.js" type="text/javascript"></script>
+  <script src="massif_fichiers/calendar.js" type="text/javascript"></script>
+  <script src="massif_fichiers/calendar-setup.js" type="text/javascript"></script>
+  <script src="massif_fichiers/mootools-more.js" type="text/javascript"></script>
+  <script src="massif_fichiers/head.js" type="text/javascript"></script>
+  <script src="massif_fichiers/md_stylechanger.js" type="text/javascript"></script>
+  <script src="massif_fichiers/hide.js" type="text/javascript"></script>
+  <script type="text/javascript">
+window.addEvent('load', function() {
+				new JCaption('img.caption');
+			});
+Calendar._DN = new Array ("dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"); Calendar._SDN = new Array ("Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"); Calendar._FD = 0; Calendar._MN = new Array ("janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"); Calendar._SMN = new Array ("Jan", "Fév", "Mar", "Avr", "Mai", "Jui", "Juil", "Aoû", "Sep", "Oct", "Nov", "Déc"); Calendar._TT = {};Calendar._TT["INFO"] = "À propos du calendrier"; Calendar._TT["ABOUT"] =
+ "DHTML Date/Time Selector\n" +
+ "(c) dynarch.com 2002-2005 / Author: Mihai Bazon\n" +
+"For latest version visit: http://www.dynarch.com/projects/calendar/\n" +
+"Distributed under GNU LGPL.  See http://gnu.org/licenses/lgpl.html for details." +
+"\n\n" +
+"Sélection de la date&#160;:" +
+"- Utilisez les boutons « et » pour sélectionner l'année" +
+"- Utilisez les boutons < et > pour sélectionner le mois" +
+"- Maintenez enfoncé le bouton de la souris sur l'un des boutons ci-dessous pour une sélection plus rapide.";
+Calendar._TT["ABOUT_TIME"] = "\n\n" +
+"Time selection:\n" +
+"- Click on any of the time parts to increase it\n" +
+"- or Shift-click to decrease it\n" +
+"- or click and drag for faster selection.";
+
+		Calendar._TT["PREV_YEAR"] = "Cliquez pour passer à l\'année précédente. Maintenez cliqué pour une liste d\'années."; Calendar._TT["PREV_MONTH"] = "Cliquez pour passer au mois précédent. Maintenez cliqué pour une liste de mois."; Calendar._TT["GO_TODAY"] = "Aller à aujourd\'hui"; Calendar._TT["NEXT_MONTH"] = "Cliquez pour passer au mois suivant. Maintenez cliqué pour une liste de mois."; Calendar._TT["NEXT_YEAR"] = "Cliquez pour passer à l\'année suivante. Maintenez cliqué pour une liste d\'années."; Calendar._TT["SEL_DATE"] = "Sélectionnez une date."; Calendar._TT["DRAG_TO_MOVE"] = "Tirer pour déplacer"; Calendar._TT["PART_TODAY"] = "Aujourd\'hui"; Calendar._TT["DAY_FIRST"] = "Afficher %s d\'abord"; Calendar._TT["WEEKEND"] = "0,6"; Calendar._TT["CLOSE"] = "Fermer"; Calendar._TT["TODAY"] = "Aujourd\'hui"; Calendar._TT["TIME_PART"] = "(Maj-)Clic ou tirez pour modifier la valeur."; Calendar._TT["DEF_DATE_FORMAT"] = "%Y-%m-%d"; Calendar._TT["TT_DATE_FORMAT"] = "%a, %b %e"; Calendar._TT["WK"] = "sem."; Calendar._TT["TIME"] = "Heure :";
+head.ready(function() { Fabrik.liveSite = 'http://www.cosiroc.fr/';});
+head.ready(function () {
+	Fabrik.tips = new FloatingTips('.fabrikTip', {"tipfx":"Fx.Transitions.linear.easeIn","duration":"500","distance":50,"fadein":false});
+	Fabrik.addEvent('fabrik.list.updaterows', function () {
+		//reattach new tips after list redraw,
+		Fabrik.tips.attach('.fabrikTip');
+	});
+	Fabrik.addEvent('fabrik.plugin.inlineedit.editing', function () {
+		Fabrik.tips.hideAll();
+	});
+});
+				
+head.js('http://www.cosiroc.fr/media/com_fabrik/js/advanced-search-min.js',
+'http://www.cosiroc.fr/media/com_fabrik/js/list-min.js',
+'http://www.cosiroc.fr/media/com_fabrik/js/listfilter-min.js',
+'http://www.cosiroc.fr/media/com_fabrik/js/mootools-ext-min.js',
+'http://www.cosiroc.fr/media/com_fabrik/js/lib/art.js',
+'http://www.cosiroc.fr/media/com_fabrik/js/icons-min.js',
+'http://www.cosiroc.fr/media/com_fabrik/js/icongen-min.js',
+'http://www.cosiroc.fr/media/com_fabrik/js/fabrik-min.js',
+'http://www.cosiroc.fr/media/com_fabrik/js/tips-min.js',
+'http://www.cosiroc.fr/media/com_fabrik/js/window-min.js',
+'http://www.cosiroc.fr/media/com_fabrik/js/lib/Event.mock.js',
+'http://www.cosiroc.fr/media/com_fabrik/js/encoder-min.js',
+'http://www.cosiroc.fr/components/com_fabrik/views/list/tmpl/default/javascript.js');
+
+head.ready(function() {
+var list = new FbList('1',
+{"admin":false,"ajax":1,"ajax_links":false,"links":{"detail":"","edit":"","add":""},"filterMethod":"onchange","form":"listform_1_com_content_1","headings":"['bcfab_massifs___id','bcfab_massifs___massif','bcfab_massifs___gps_lng','bcfab_massifs___gps_lat','bcfab_massifs___type','bcfab_massifs___parcelles','bcfab_massifs___triage']","labels":{"bcfab_massifs___id":"id","bcfab_massifs___massif":"Massif","bcfab_massifs___gps_lng":"lon","bcfab_massifs___gps_lat":"lat","bcfab_massifs___type":"Type","bcfab_massifs___parcelles":"Parcelles","fabrik_select":"","17___3-3-17_list_heading":"Circuits"},"primaryKey":"`bcfab_massifs`.`id`","Itemid":0,"listRef":"1_com_content_1","formid":"1","canEdit":"0","canView":"1","page":"\/index.php?option=com_content","isGrouped":false,"formels":[{"name":"date_time","label":"date time"},{"name":"code_massif","label":"code_massif"},{"name":"intro","label":"intro"},{"name":"acces","label":"acces"},{"name":"dept","label":"dept"},{"name":"gestion","label":"Gestion"},{"name":"region","label":"R\u00e9gion"},{"name":"trigeom","label":"Tri G\u00e9o."},{"name":"zone","label":"zone"}],"actionMethod":"floating","floatPos":"left","csvChoose":false,"popup_edit_label":"Editer","popup_view_label":"Voir","popup_add_label":"Ajouter","limitLength":10,"limitStart":0,"csvOpts":{"excel":0,"inctabledata":1,"incraw":0,"inccalcs":0,"incfilters":0},"csvFields":{"bcfab_massifs___massif":1,"bcfab_massifs___code_massif":1,"bcfab_massifs___dept":1},"data":[[{"data":{"bcfab_massifs___id":"1","bcfab_massifs___id_raw":"1","bcfab_massifs___date_time":"2012-04-19 14:44:00","bcfab_massifs___date_time_raw":"2012-04-19 14:44:00","bcfab_massifs___massif":"91_1","bcfab_massifs___massif_raw":"91_1","bcfab_massifs___code_massif":"91-1","bcfab_massifs___code_massif_raw":"91-1","bcfab_massifs___gps_lng":"2.51919","bcfab_massifs___gps_lng_raw":"2.51919","bcfab_massifs___gps_lat":"48.37722","bcfab_massifs___gps_lat_raw":"48.37722","bcfab_massifs___intro":"","bcfab_massifs___intro_raw":"","bcfab_massifs___acces":"<p><strong>Parking<\/strong> : <span style=\"text-decoration: underline;\">Acc\u00e8s<\/span> : A6 sortie Milly. Du rond-point avant Milly, par la D 837 rejoindre la D 16 en direction du Vaudou\u00e9. Apr\u00e8s 4 Km, parking du cimeti\u00e8re de Noisy sur la gauche de la route.<\/p>\r\n<p><strong>Site<\/strong> : Suivre sur 600 m l'all\u00e9e foresti\u00e8re de la Plaine de Jean des Vignes puis \u00e0 droite celle de la Roche aux Sabots sur 200 m. On croise le circuit orange n\u00b03. Monter \u00e0 gauche \u00e0 vue (E) vers le sommet du pignon pour la partie principale du site.<\/p>","bcfab_massifs___acces_raw":"<p><strong>Parking<\/strong> : <span style=\"text-decoration: underline;\">Acc\u00e8s<\/span> : A6 sortie Milly. Du rond-point avant Milly, par la D 837 rejoindre la D 16 en direction du Vaudou\u00e9. Apr\u00e8s 4 Km, parking du cimeti\u00e8re de Noisy sur la gauche de la route.<\/p>\r\n<p><strong>Site<\/strong> : Suivre sur 600 m l'all\u00e9e foresti\u00e8re de la Plaine de Jean des Vignes puis \u00e0 droite celle de la Roche aux Sabots sur 200 m. On croise le circuit orange n\u00b03. Monter \u00e0 gauche \u00e0 vue (E) vers le sommet du pignon pour la partie principale du site.<\/p>","bcfab_massifs___dept":"77","bcfab_massifs___dept_raw":"77","bcfab_massifs___type":"E \/ D","bcfab_massifs___type_raw":"E \/ D","bcfab_massifs___parcelles":"135 141 TP","bcfab_massifs___parcelles_raw":"135 141 TP","bcfab_massifs___gestion":"ONF77","bcfab_massifs___gestion_raw":"ONF77","bcfab_massifs___region":"3PI","bcfab_massifs___region_raw":"3PI","bcfab_massifs___trigeom":"180","bcfab_massifs___trigeom_raw":"180","bcfab_massifs___zone":"For\u00eat domaniale des Trois Pignons","bcfab_massifs___zone_raw":"For\u00eat domaniale des Trois Pignons","slug":"1","__pk_val":"1","fabrik_select":"<input type=\"checkbox\" id=\"id_1\" name=\"ids[1]\" value=\"1\" \/><div style=\"display:none\">\n<\/div>","fabrik_view_url":"\/index.php?option=com_fabrik&amp;view=details&amp;formid=1&amp;rowid=1","fabrik_edit_url":"\/index.php?option=com_fabrik&amp;view=form&amp;Itemid=0&amp;formid=1&amp;rowid=1&amp;listid=1","fabrik_view":"","fabrik_edit":"","fabrik_actions":"","17___3-3-17_list_heading":"<a class=\"related_data\" href=\"\/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=1&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0\">(4) circ.<\/a>"},"cursor":1,"total":90,"id":"list_1_com_content_1_row_1","class":"fabrik_row oddRow0"},{"data":{"bcfab_massifs___id":"2","bcfab_massifs___id_raw":"2","bcfab_massifs___date_time":"2012-04-19 14:44:00","bcfab_massifs___date_time_raw":"2012-04-19 14:44:00","bcfab_massifs___massif":"95_2","bcfab_massifs___massif_raw":"95_2","bcfab_massifs___code_massif":"95-2","bcfab_massifs___code_massif_raw":"95-2","bcfab_massifs___gps_lng":"2.529684","bcfab_massifs___gps_lng_raw":"2.529684","bcfab_massifs___gps_lat":"48.385867","bcfab_massifs___gps_lat_raw":"48.385867","bcfab_massifs___intro":"","bcfab_massifs___intro_raw":"","bcfab_massifs___acces":"<p><strong>Parking<\/strong> : A6 sortie Milly. Du rond-point avant Milly, par la D 837 rejoindre la D 16 en direction du Vaudou\u00e9. 2,5 Km apr\u00e8s Milly, prendre \u00e0 gauche vers la Croix Saint J\u00e9r\u00f4me. Puis deuxi\u00e8me route \u00e0 droite et au bout (500 m) encore \u00e0 droite : on est face \u00e0 la Croix. Continuer tout droit, puis \u00e0 gauche et prendre tout de suite \u00e0 droite le chemin de la Vall\u00e9e Close.<\/p>\r\n<p><strong>Site<\/strong> : Continuer le chemin jusqu'au d\u00e9but de la Vall\u00e9e Close (grande plaine de sable). Monter alors par le premier chemin \u00e0 droite jusqu'au col entre les deux pignons. On se trouve vers l'arriv\u00e9e des circuits bleu et rouge.<\/p>","bcfab_massifs___acces_raw":"<p><strong>Parking<\/strong> : A6 sortie Milly. Du rond-point avant Milly, par la D 837 rejoindre la D 16 en direction du Vaudou\u00e9. 2,5 Km apr\u00e8s Milly, prendre \u00e0 gauche vers la Croix Saint J\u00e9r\u00f4me. Puis deuxi\u00e8me route \u00e0 droite et au bout (500 m) encore \u00e0 droite : on est face \u00e0 la Croix. Continuer tout droit, puis \u00e0 gauche et prendre tout de suite \u00e0 droite le chemin de la Vall\u00e9e Close.<\/p>\r\n<p><strong>Site<\/strong> : Continuer le chemin jusqu'au d\u00e9but de la Vall\u00e9e Close (grande plaine de sable). Monter alors par le premier chemin \u00e0 droite jusqu'au col entre les deux pignons. On se trouve vers l'arriv\u00e9e des circuits bleu et rouge.<\/p>","bcfab_massifs___dept":"77","bcfab_massifs___dept_raw":"77","bcfab_massifs___type":"C","bcfab_massifs___type_raw":"C","bcfab_massifs___parcelles":"130 TP","bcfab_massifs___parcelles_raw":"130 TP","bcfab_massifs___gestion":"ONF77","bcfab_massifs___gestion_raw":"ONF77","bcfab_massifs___region":"3PI","bcfab_massifs___region_raw":"3PI","bcfab_massifs___trigeom":"120","bcfab_massifs___trigeom_raw":"120","bcfab_massifs___zone":"For\u00eat domaniale des Trois Pignons","bcfab_massifs___zone_raw":"For\u00eat domaniale des Trois Pignons","slug":"2","__pk_val":"2","fabrik_select":"<input type=\"checkbox\" id=\"id_2\" name=\"ids[2]\" value=\"2\" \/><div style=\"display:none\">\n<\/div>","fabrik_view_url":"\/index.php?option=com_fabrik&amp;view=details&amp;formid=1&amp;rowid=2","fabrik_edit_url":"\/index.php?option=com_fabrik&amp;view=form&amp;Itemid=0&amp;formid=1&amp;rowid=2&amp;listid=1","fabrik_view":"","fabrik_edit":"","fabrik_actions":"","17___3-3-17_list_heading":"<a class=\"related_data\" href=\"\/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=2&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0\">(5) circ.<\/a>"},"cursor":2,"total":90,"id":"list_1_com_content_1_row_2","class":"fabrik_row oddRow1"},{"data":{"bcfab_massifs___id":"3","bcfab_massifs___id_raw":"3","bcfab_massifs___date_time":"2012-04-19 14:44:00","bcfab_massifs___date_time_raw":"2012-04-19 14:44:00","bcfab_massifs___massif":"Apremont Bizons","bcfab_massifs___massif_raw":"Apremont Bizons","bcfab_massifs___code_massif":"ap-bizons","bcfab_massifs___code_massif_raw":"ap-bizons","bcfab_massifs___gps_lng":"2.62185","bcfab_massifs___gps_lng_raw":"2.62185","bcfab_massifs___gps_lat":"48.43563","bcfab_massifs___gps_lat_raw":"48.43563","bcfab_massifs___intro":"","bcfab_massifs___intro_raw":"","bcfab_massifs___acces":"<p><strong>Parking<\/strong> :<span style=\"text-decoration: underline;\"><\/span> A6 sortie Fontainebleau, Barbizon. De Barbizon, par l'All\u00e9e des Vaches, rejoindre le carrefour du Bas-Br\u00e9au.<\/p>\r\n<p><strong>Site<\/strong> : Prendre vers le S la route Marie-Th\u00e9r\u00e8se. Au premier virage \u00e0 gauche, continuer tout droit par le chemin de terre. Environ cent m\u00e8tres plus loin, prendre \u00e0 droite la route des Gorges d'Apremont (GR) vers l' WNW sur 100 m puis \u00e0 gauche une sente direction SW qui croise une centaine de m\u00e8tres plus loin les circuits Rouge et Orange.<\/p>","bcfab_massifs___acces_raw":"<p><strong>Parking<\/strong> :<span style=\"text-decoration: underline;\"><\/span> A6 sortie Fontainebleau, Barbizon. De Barbizon, par l'All\u00e9e des Vaches, rejoindre le carrefour du Bas-Br\u00e9au.<\/p>\r\n<p><strong>Site<\/strong> : Prendre vers le S la route Marie-Th\u00e9r\u00e8se. Au premier virage \u00e0 gauche, continuer tout droit par le chemin de terre. Environ cent m\u00e8tres plus loin, prendre \u00e0 droite la route des Gorges d'Apremont (GR) vers l' WNW sur 100 m puis \u00e0 gauche une sente direction SW qui croise une centaine de m\u00e8tres plus loin les circuits Rouge et Orange.<\/p>","bcfab_massifs___dept":"77","bcfab_massifs___dept_raw":"77","bcfab_massifs___type":"D \/C","bcfab_massifs___type_raw":"D \/C","bcfab_massifs___parcelles":"719","bcfab_massifs___parcelles_raw":"719","bcfab_massifs___gestion":"ONF77","bcfab_massifs___gestion_raw":"ONF77","bcfab_massifs___region":"FD","bcfab_massifs___region_raw":"FD","bcfab_massifs___trigeom":"440","bcfab_massifs___trigeom_raw":"440","bcfab_massifs___zone":"For\u00eat domaniale de Fontainebleau","bcfab_massifs___zone_raw":"For\u00eat domaniale de Fontainebleau","slug":"3","__pk_val":"3","fabrik_select":"<input type=\"checkbox\" id=\"id_3\" name=\"ids[3]\" value=\"3\" \/><div style=\"display:none\">\n<\/div>","fabrik_view_url":"\/index.php?option=com_fabrik&amp;view=details&amp;formid=1&amp;rowid=3","fabrik_edit_url":"\/index.php?option=com_fabrik&amp;view=form&amp;Itemid=0&amp;formid=1&amp;rowid=3&amp;listid=1","fabrik_view":"","fabrik_edit":"","fabrik_actions":"","17___3-3-17_list_heading":"<a class=\"related_data\" href=\"\/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=3&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0\">(4) circ.<\/a>"},"cursor":3,"total":90,"id":"list_1_com_content_1_row_3","class":"fabrik_row oddRow0"},{"data":{"bcfab_massifs___id":"87","bcfab_massifs___id_raw":"87","bcfab_massifs___date_time":"2014-06-30 16:53:09","bcfab_massifs___date_time_raw":"2014-06-30 16:53:09","bcfab_massifs___massif":"Apremont Dames","bcfab_massifs___massif_raw":"Apremont Dames","bcfab_massifs___code_massif":"ap-dames","bcfab_massifs___code_massif_raw":"ap-dames","bcfab_massifs___gps_lng":"2.621716","bcfab_massifs___gps_lng_raw":"2.621716","bcfab_massifs___gps_lat":"48.438109","bcfab_massifs___gps_lat_raw":"48.438109","bcfab_massifs___intro":"","bcfab_massifs___intro_raw":"","bcfab_massifs___acces":"","bcfab_massifs___acces_raw":"","bcfab_massifs___dept":"77","bcfab_massifs___dept_raw":"77","bcfab_massifs___type":"D\u00a0?","bcfab_massifs___type_raw":"D\u00a0?","bcfab_massifs___parcelles":"714","bcfab_massifs___parcelles_raw":"714","bcfab_massifs___gestion":"","bcfab_massifs___gestion_raw":"","bcfab_massifs___region":"FD","bcfab_massifs___region_raw":"FD","bcfab_massifs___trigeom":"430","bcfab_massifs___trigeom_raw":"430","bcfab_massifs___zone":"For\u00eat domaniale de Fontainebleau","bcfab_massifs___zone_raw":"For\u00eat domaniale de Fontainebleau","slug":"87","__pk_val":"87","fabrik_select":"<input type=\"checkbox\" id=\"id_87\" name=\"ids[87]\" value=\"87\" \/><div style=\"display:none\">\n<\/div>","fabrik_view_url":"\/index.php?option=com_fabrik&amp;view=details&amp;formid=1&amp;rowid=87","fabrik_edit_url":"\/index.php?option=com_fabrik&amp;view=form&amp;Itemid=0&amp;formid=1&amp;rowid=87&amp;listid=1","fabrik_view":"","fabrik_edit":"","fabrik_actions":"","17___3-3-17_list_heading":"<a class=\"related_data\" href=\"\/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=87&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0\">(3) circ.<\/a>"},"cursor":4,"total":90,"id":"list_1_com_content_1_row_87","class":"fabrik_row oddRow1"},{"data":{"bcfab_massifs___id":"4","bcfab_massifs___id_raw":"4","bcfab_massifs___date_time":"2012-04-19 14:44:00","bcfab_massifs___date_time_raw":"2012-04-19 14:44:00","bcfab_massifs___massif":"Apremont D\u00e9sert","bcfab_massifs___massif_raw":"Apremont D\u00e9sert","bcfab_massifs___code_massif":"ap-desert","bcfab_massifs___code_massif_raw":"ap-desert","bcfab_massifs___gps_lng":"2.644824","bcfab_massifs___gps_lng_raw":"2.644824","bcfab_massifs___gps_lat":"48.436966","bcfab_massifs___gps_lat_raw":"48.436966","bcfab_massifs___intro":"","bcfab_massifs___intro_raw":"","bcfab_massifs___acces":"<p><strong>Parking<\/strong> : A6 sortie Fontainebleau, Barbizon. De Barbizon, par l'All\u00e9e des Vaches, gagner le carrefour du Bas-Br\u00e9au.<\/p>\r\n<p><strong>Site<\/strong> : Du Bas-Br\u00e9au, suivre (E) la route de Barbizon \u00e0 Fontainebleau jusqu'au carrefour de Clair-Bois (On peut aussi rejoindre le carrefour de Clair-Bois en partant du carrefour de l'Epine (N7)). Prendre \u00e0 droite (SSE) la route de Clair-Bois sur un peu plus de 200m jusqu\u00e0 un beau bloc arrondi \u00e0 gauche de la route marqu\u00e9 discr\u00e8tement d'un \"D\" jaune et d'une fl\u00e8che.<\/p>","bcfab_massifs___acces_raw":"<p><strong>Parking<\/strong> : A6 sortie Fontainebleau, Barbizon. De Barbizon, par l'All\u00e9e des Vaches, gagner le carrefour du Bas-Br\u00e9au.<\/p>\r\n<p><strong>Site<\/strong> : Du Bas-Br\u00e9au, suivre (E) la route de Barbizon \u00e0 Fontainebleau jusqu'au carrefour de Clair-Bois (On peut aussi rejoindre le carrefour de Clair-Bois en partant du carrefour de l'Epine (N7)). Prendre \u00e0 droite (SSE) la route de Clair-Bois sur un peu plus de 200m jusqu\u00e0 un beau bloc arrondi \u00e0 gauche de la route marqu\u00e9 discr\u00e8tement d'un \"D\" jaune et d'une fl\u00e8che.<\/p>","bcfab_massifs___dept":"77","bcfab_massifs___dept_raw":"77","bcfab_massifs___type":"D \/ C","bcfab_massifs___type_raw":"D \/ C","bcfab_massifs___parcelles":"710 716","bcfab_massifs___parcelles_raw":"710 716","bcfab_massifs___gestion":"ONF77","bcfab_massifs___gestion_raw":"ONF77","bcfab_massifs___region":"FD","bcfab_massifs___region_raw":"FD","bcfab_massifs___trigeom":"470","bcfab_massifs___trigeom_raw":"470","bcfab_massifs___zone":"For\u00eat domaniale de Fontainebleau","bcfab_massifs___zone_raw":"For\u00eat domaniale de Fontainebleau","slug":"4","__pk_val":"4","fabrik_select":"<input type=\"checkbox\" id=\"id_4\" name=\"ids[4]\" value=\"4\" \/><div style=\"display:none\">\n<\/div>","fabrik_view_url":"\/index.php?option=com_fabrik&amp;view=details&amp;formid=1&amp;rowid=4","fabrik_edit_url":"\/index.php?option=com_fabrik&amp;view=form&amp;Itemid=0&amp;formid=1&amp;rowid=4&amp;listid=1","fabrik_view":"","fabrik_edit":"","fabrik_actions":"","17___3-3-17_list_heading":"<a class=\"related_data\" href=\"\/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=4&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0\">(6) circ.<\/a>"},"cursor":5,"total":90,"id":"list_1_com_content_1_row_4","class":"fabrik_row oddRow0"},{"data":{"bcfab_massifs___id":"5","bcfab_massifs___id_raw":"5","bcfab_massifs___date_time":"2012-04-19 14:44:00","bcfab_massifs___date_time_raw":"2012-04-19 14:44:00","bcfab_massifs___massif":"Apremont Envers","bcfab_massifs___massif_raw":"Apremont Envers","bcfab_massifs___code_massif":"ap-envers","bcfab_massifs___code_massif_raw":"ap-envers","bcfab_massifs___gps_lng":"2.63524","bcfab_massifs___gps_lng_raw":"2.63524","bcfab_massifs___gps_lat":"48.43825","bcfab_massifs___gps_lat_raw":"48.43825","bcfab_massifs___intro":"","bcfab_massifs___intro_raw":"","bcfab_massifs___acces":"<p>Parking : A6 sortie Fontainebleau, Barbizon. De Barbizon, par l'All\u00e9e des Vaches, rejoindre le carrefour du Bas Br\u00e9au.<\/p>\r\n<p>Site : pour rejoindre le rouge et le jaune, suivre la route foresti\u00e8re de Barbizon \u00e0 Fontainebleau sur 300m. Prendre la premi\u00e8re bonne sente \u00e0 droite (sud). Les d\u00e9parts sont bien visibles au bord de la sente \u00e0 50m environ (parcelle n\u00b0713)<\/p>","bcfab_massifs___acces_raw":"<p>Parking : A6 sortie Fontainebleau, Barbizon. De Barbizon, par l'All\u00e9e des Vaches, rejoindre le carrefour du Bas Br\u00e9au.<\/p>\r\n<p>Site : pour rejoindre le rouge et le jaune, suivre la route foresti\u00e8re de Barbizon \u00e0 Fontainebleau sur 300m. Prendre la premi\u00e8re bonne sente \u00e0 droite (sud). Les d\u00e9parts sont bien visibles au bord de la sente \u00e0 50m environ (parcelle n\u00b0713)<\/p>","bcfab_massifs___dept":"77","bcfab_massifs___dept_raw":"77","bcfab_massifs___type":"C","bcfab_massifs___type_raw":"C","bcfab_massifs___parcelles":"711N 712N 713N","bcfab_massifs___parcelles_raw":"711N 712N 713N","bcfab_massifs___gestion":"ONF77","bcfab_massifs___gestion_raw":"ONF77","bcfab_massifs___region":"FD","bcfab_massifs___region_raw":"FD","bcfab_massifs___trigeom":"460","bcfab_massifs___trigeom_raw":"460","bcfab_massifs___zone":"For\u00eat domaniale de Fontainebleau","bcfab_massifs___zone_raw":"For\u00eat domaniale de Fontainebleau","slug":"5","__pk_val":"5","fabrik_select":"<input type=\"checkbox\" id=\"id_5\" name=\"ids[5]\" value=\"5\" \/><div style=\"display:none\">\n<\/div>","fabrik_view_url":"\/index.php?option=com_fabrik&amp;view=details&amp;formid=1&amp;rowid=5","fabrik_edit_url":"\/index.php?option=com_fabrik&amp;view=form&amp;Itemid=0&amp;formid=1&amp;rowid=5&amp;listid=1","fabrik_view":"","fabrik_edit":"","fabrik_actions":"","17___3-3-17_list_heading":"<a class=\"related_data\" href=\"\/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=5&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0\">(4) circ.<\/a>"},"cursor":6,"total":90,"id":"list_1_com_content_1_row_5","class":"fabrik_row oddRow1"},{"data":{"bcfab_massifs___id":"6","bcfab_massifs___id_raw":"6","bcfab_massifs___date_time":"2012-04-19 14:44:00","bcfab_massifs___date_time_raw":"2012-04-19 14:44:00","bcfab_massifs___massif":"Apremont Gorges","bcfab_massifs___massif_raw":"Apremont Gorges","bcfab_massifs___code_massif":"ap-gorges","bcfab_massifs___code_massif_raw":"ap-gorges","bcfab_massifs___gps_lng":"2.63236","bcfab_massifs___gps_lng_raw":"2.63236","bcfab_massifs___gps_lat":"48.43506","bcfab_massifs___gps_lat_raw":"48.43506","bcfab_massifs___intro":"","bcfab_massifs___intro_raw":"","bcfab_massifs___acces":"<p><strong>Parking<\/strong> : A6 sortie Fontainebleau, Barbizon. De Barbizon, par l'All\u00e9e des Vaches, rejoindre le carrefour du Bas Br\u00e9au.<\/p>\r\n<p><strong>Sites<\/strong> : Prendre \u00e0 droite (S) la route Marie-Th\u00e9r\u00e8se (alternativement, un sentier longe la route \u00e0 gauche). Environ 200m plus loin prendre un chemin en biais \u00e0 gauche, qui s'\u00e9loigne de la route de quelques dizaines de m\u00e8tres et la suit \u00e0 distance. On traverse un groupe de beaux ch\u00eanes, marqu\u00e9s de ronds bleus et on continue jusqu'\u00e0 une vaste clairi\u00e8re sablonneuse. On est au centre du massif. Les d\u00e9parts du bleu outremer et du saumon sont au bord du chemin qui part vers le nord.<\/p>","bcfab_massifs___acces_raw":"<p><strong>Parking<\/strong> : A6 sortie Fontainebleau, Barbizon. De Barbizon, par l'All\u00e9e des Vaches, rejoindre le carrefour du Bas Br\u00e9au.<\/p>\r\n<p><strong>Sites<\/strong> : Prendre \u00e0 droite (S) la route Marie-Th\u00e9r\u00e8se (alternativement, un sentier longe la route \u00e0 gauche). Environ 200m plus loin prendre un chemin en biais \u00e0 gauche, qui s'\u00e9loigne de la route de quelques dizaines de m\u00e8tres et la suit \u00e0 distance. On traverse un groupe de beaux ch\u00eanes, marqu\u00e9s de ronds bleus et on continue jusqu'\u00e0 une vaste clairi\u00e8re sablonneuse. On est au centre du massif. Les d\u00e9parts du bleu outremer et du saumon sont au bord du chemin qui part vers le nord.<\/p>","bcfab_massifs___dept":"77","bcfab_massifs___dept_raw":"77","bcfab_massifs___type":"C","bcfab_massifs___type_raw":"C","bcfab_massifs___parcelles":"712 713 ","bcfab_massifs___parcelles_raw":"712 713 ","bcfab_massifs___gestion":"ONF77","bcfab_massifs___gestion_raw":"ONF77","bcfab_massifs___region":"FD","bcfab_massifs___region_raw":"FD","bcfab_massifs___trigeom":"450","bcfab_massifs___trigeom_raw":"450","bcfab_massifs___zone":"For\u00eat domaniale de Fontainebleau","bcfab_massifs___zone_raw":"For\u00eat domaniale de Fontainebleau","slug":"6","__pk_val":"6","fabrik_select":"<input type=\"checkbox\" id=\"id_6\" name=\"ids[6]\" value=\"6\" \/><div style=\"display:none\">\n<\/div>","fabrik_view_url":"\/index.php?option=com_fabrik&amp;view=details&amp;formid=1&amp;rowid=6","fabrik_edit_url":"\/index.php?option=com_fabrik&amp;view=form&amp;Itemid=0&amp;formid=1&amp;rowid=6&amp;listid=1","fabrik_view":"","fabrik_edit":"","fabrik_actions":"","17___3-3-17_list_heading":"<a class=\"related_data\" href=\"\/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=6&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0\">(13) circ.<\/a>"},"cursor":7,"total":90,"id":"list_1_com_content_1_row_6","class":"fabrik_row oddRow0"},{"data":{"bcfab_massifs___id":"12","bcfab_massifs___id_raw":"12","bcfab_massifs___date_time":"2012-04-19 14:44:01","bcfab_massifs___date_time_raw":"2012-04-19 14:44:01","bcfab_massifs___massif":"Boigneville","bcfab_massifs___massif_raw":"Boigneville","bcfab_massifs___code_massif":"boigneville","bcfab_massifs___code_massif_raw":"boigneville","bcfab_massifs___gps_lng":"","bcfab_massifs___gps_lng_raw":null,"bcfab_massifs___gps_lat":"","bcfab_massifs___gps_lat_raw":null,"bcfab_massifs___intro":null,"bcfab_massifs___intro_raw":null,"bcfab_massifs___acces":null,"bcfab_massifs___acces_raw":null,"bcfab_massifs___dept":"91","bcfab_massifs___dept_raw":"91","bcfab_massifs___type":"","bcfab_massifs___type_raw":"","bcfab_massifs___parcelles":"","bcfab_massifs___parcelles_raw":"","bcfab_massifs___gestion":"","bcfab_massifs___gestion_raw":"","bcfab_massifs___region":"ESS","bcfab_massifs___region_raw":"ESS","bcfab_massifs___trigeom":"0","bcfab_massifs___trigeom_raw":"0","bcfab_massifs___zone":null,"bcfab_massifs___zone_raw":null,"slug":"12","__pk_val":"12","fabrik_select":"<input type=\"checkbox\" id=\"id_12\" name=\"ids[12]\" value=\"12\" \/><div style=\"display:none\">\n<\/div>","fabrik_view_url":"\/index.php?option=com_fabrik&amp;view=details&amp;formid=1&amp;rowid=12","fabrik_edit_url":"\/index.php?option=com_fabrik&amp;view=form&amp;Itemid=0&amp;formid=1&amp;rowid=12&amp;listid=1","fabrik_view":"","fabrik_edit":"","fabrik_actions":"","17___3-3-17_list_heading":"<a class=\"related_data\" href=\"\/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=12&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0\">(4) circ.<\/a>"},"cursor":8,"total":90,"id":"list_1_com_content_1_row_12","class":"fabrik_row oddRow1"},{"data":{"bcfab_massifs___id":"13","bcfab_massifs___id_raw":"13","bcfab_massifs___date_time":"2012-04-19 14:44:00","bcfab_massifs___date_time_raw":"2012-04-19 14:44:00","bcfab_massifs___massif":"Bois Rond","bcfab_massifs___massif_raw":"Bois Rond","bcfab_massifs___code_massif":"boisrond","bcfab_massifs___code_massif_raw":"boisrond","bcfab_massifs___gps_lng":"2.562827","bcfab_massifs___gps_lng_raw":"2.562827","bcfab_massifs___gps_lat":"48.390819","bcfab_massifs___gps_lat_raw":"48.390819","bcfab_massifs___intro":"","bcfab_massifs___intro_raw":"","bcfab_massifs___acces":"<p><strong>Parking<\/strong> : A6 sortie Fontainebleau, Fleury en Bi\u00e8re, Arbonne. Traverser Arbonne et prendre la D 409 \u00e0 droite. Puis au rond-point la D 64 \u00e0 gauche vers Ach\u00e8res. Parking, 500m apr\u00e8s le grand virage \u00e0 gauche (aqueduc de la Vanne) et a gauche face au chemin de la Canche.<\/p>\r\n<p><strong>Site<\/strong> : Du parking suivre une sente NE pour rejoindre le chemin du Bois Rond. Le suivre \u00e0 droite (E). Apr\u00e8s 250 m monter \u00e0 droite. On passe devant les d\u00e9parts des circuits Orange et Bleu.<\/p>","bcfab_massifs___acces_raw":"<p><strong>Parking<\/strong> : A6 sortie Fontainebleau, Fleury en Bi\u00e8re, Arbonne. Traverser Arbonne et prendre la D 409 \u00e0 droite. Puis au rond-point la D 64 \u00e0 gauche vers Ach\u00e8res. Parking, 500m apr\u00e8s le grand virage \u00e0 gauche (aqueduc de la Vanne) et a gauche face au chemin de la Canche.<\/p>\r\n<p><strong>Site<\/strong> : Du parking suivre une sente NE pour rejoindre le chemin du Bois Rond. Le suivre \u00e0 droite (E). Apr\u00e8s 250 m monter \u00e0 droite. On passe devant les d\u00e9parts des circuits Orange et Bleu.<\/p>","bcfab_massifs___dept":"77","bcfab_massifs___dept_raw":"77","bcfab_massifs___type":"D","bcfab_massifs___type_raw":"D","bcfab_massifs___parcelles":"85 TP","bcfab_massifs___parcelles_raw":"85 TP","bcfab_massifs___gestion":"ONF77","bcfab_massifs___gestion_raw":"ONF77","bcfab_massifs___region":"3PI","bcfab_massifs___region_raw":"3PI","bcfab_massifs___trigeom":"80","bcfab_massifs___trigeom_raw":"80","bcfab_massifs___zone":"For\u00eat domaniale des Trois Pignons","bcfab_massifs___zone_raw":"For\u00eat domaniale des Trois Pignons","slug":"13","__pk_val":"13","fabrik_select":"<input type=\"checkbox\" id=\"id_13\" name=\"ids[13]\" value=\"13\" \/><div style=\"display:none\">\n<\/div>","fabrik_view_url":"\/index.php?option=com_fabrik&amp;view=details&amp;formid=1&amp;rowid=13","fabrik_edit_url":"\/index.php?option=com_fabrik&amp;view=form&amp;Itemid=0&amp;formid=1&amp;rowid=13&amp;listid=1","fabrik_view":"","fabrik_edit":"","fabrik_actions":"","17___3-3-17_list_heading":"<a class=\"related_data\" href=\"\/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=13&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0\">(3) circ.<\/a>"},"cursor":9,"total":90,"id":"list_1_com_content_1_row_13","class":"fabrik_row oddRow0"},{"data":{"bcfab_massifs___id":"80","bcfab_massifs___id_raw":"80","bcfab_massifs___date_time":"2012-05-08 17:04:00","bcfab_massifs___date_time_raw":"2012-05-08 17:04:00","bcfab_massifs___massif":"Bouligny","bcfab_massifs___massif_raw":"Bouligny","bcfab_massifs___code_massif":"bouligny","bcfab_massifs___code_massif_raw":"bouligny","bcfab_massifs___gps_lng":"2.693301","bcfab_massifs___gps_lng_raw":"2.693301","bcfab_massifs___gps_lat":"48.385320","bcfab_massifs___gps_lat_raw":"48.385320","bcfab_massifs___intro":"<p>Dans le <a href=\"images\/massifs\/bouligny\/bouligny.pdf\">document <\/a>joint, vous trouverez un plan de la partie Ouest de la longue cr\u00eate de Bouligny, l\u00e0 o\u00f9 les voies sont les plus concentr\u00e9es.<\/p>\r\n<p>Pas de circuit dans cette zone, mais de nombreux passages de tous niveaux r\u00e9unis sous forme de parcours virtuels. La plupart des voies ont \u00e9t\u00e9 explor\u00e9es en 2001\u00a0; dix ans plus tard il faudra peut-\u00eatre sortir la brosse pour certains passages peu fr\u00e9quent\u00e9s. Le massif s\u2019\u00e9tend sur plus de 500m avec divers groupes rocheux s\u00e9par\u00e9s par quelques dizaines de m\u00e8tres de marche.<\/p>","bcfab_massifs___intro_raw":"<p>Dans le <a href=\"images\/massifs\/bouligny\/bouligny.pdf\">document <\/a>joint, vous trouverez un plan de la partie Ouest de la longue cr\u00eate de Bouligny, l\u00e0 o\u00f9 les voies sont les plus concentr\u00e9es.<\/p>\r\n<p>Pas de circuit dans cette zone, mais de nombreux passages de tous niveaux r\u00e9unis sous forme de parcours virtuels. La plupart des voies ont \u00e9t\u00e9 explor\u00e9es en 2001\u00a0; dix ans plus tard il faudra peut-\u00eatre sortir la brosse pour certains passages peu fr\u00e9quent\u00e9s. Le massif s\u2019\u00e9tend sur plus de 500m avec divers groupes rocheux s\u00e9par\u00e9s par quelques dizaines de m\u00e8tres de marche.<\/p>","bcfab_massifs___acces":"<p>Acc\u00e8s depuis l\u2019ob\u00e9lisque par la nationale direction Nemours. Stationner pr\u00e8s de l\u2019acqueduc, les premiers blocs sont proches de la route, c\u00f4t\u00e9 Est.<\/p>","bcfab_massifs___acces_raw":"<p>Acc\u00e8s depuis l\u2019ob\u00e9lisque par la nationale direction Nemours. Stationner pr\u00e8s de l\u2019acqueduc, les premiers blocs sont proches de la route, c\u00f4t\u00e9 Est.<\/p>","bcfab_massifs___dept":"77","bcfab_massifs___dept_raw":"77","bcfab_massifs___type":"","bcfab_massifs___type_raw":"","bcfab_massifs___parcelles":"","bcfab_massifs___parcelles_raw":"","bcfab_massifs___gestion":"","bcfab_massifs___gestion_raw":"","bcfab_massifs___region":"ESS","bcfab_massifs___region_raw":"ESS","bcfab_massifs___trigeom":"0","bcfab_massifs___trigeom_raw":"0","bcfab_massifs___zone":null,"bcfab_massifs___zone_raw":null,"slug":"80","__pk_val":"80","fabrik_select":"<input type=\"checkbox\" id=\"id_80\" name=\"ids[80]\" value=\"80\" \/><div style=\"display:none\">\n<\/div>","fabrik_view_url":"\/index.php?option=com_fabrik&amp;view=details&amp;formid=1&amp;rowid=80","fabrik_edit_url":"\/index.php?option=com_fabrik&amp;view=form&amp;Itemid=0&amp;formid=1&amp;rowid=80&amp;listid=1","fabrik_view":"","fabrik_edit":"","fabrik_actions":"","17___3-3-17_list_heading":"<a class=\"related_data\" href=\"\/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=80&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0\">(1) circ.<\/a>"},"cursor":10,"total":90,"id":"list_1_com_content_1_row_80","class":"fabrik_row oddRow1"}]],"rowtemplate":"<tr id=\"\" class=\"fabrik_row\">\r\n\t\t\t<td class=\"bcfab_massifs___id fabrik_element fabrik_list_1_group_1\" >\r\n\t\t\t\t\t<\/td>\r\n\t\t\t<td class=\"bcfab_massifs___massif fabrik_element fabrik_list_1_group_1\" >\r\n\t\t\t\t\t<\/td>\r\n\t\t\t<td class=\"bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1\" >\r\n\t\t\t\t\t<\/td>\r\n\t\t\t<td class=\"bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1\" >\r\n\t\t\t\t\t<\/td>\r\n\t\t\t<td class=\"bcfab_massifs___type fabrik_element fabrik_list_1_group_1\" >\r\n\t\t\t\t\t<\/td>\r\n\t\t\t<td class=\"bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1\" >\r\n\t\t\t\t\t<\/td>\r\n\t\t\t<td class=\"fabrik_select fabrik_element\" >\r\n\t\t\t\t\t<\/td>\r\n\t\t\t<td class=\"17___3-3-17_list_heading fabrik_element related\" >\r\n\t\t\t\t\t<\/td>\r\n\t<\/tr>","winid":""}
+);
+Fabrik.addBlock('list_1_com_content_1', list);
+
+		Fabrik.filter_listform_1_com_content_1 = new FbListFilter({"container":"listform_1_com_content_1","type":"list","id":"1","ref":"1_com_content_1","advancedSearch":{}});
+Fabrik.filter_listform_1_com_content_1.update();
+
+});
+  </script>
+  <script type="text/javascript">
+    (function() {
+      var strings = {"COM_FABRIK_LOADING":"Chargement","COM_FABRIK_PREV":"Pr\u00e9c.","COM_FABRIK_SELECT_ROWS_FOR_DELETION":"S\u00e9lectionnez les lignes \u00e0 supprimer","JYES":"Oui","JNO":"Non","COM_FABRIK_SELECT_COLUMNS_TO_EXPORT":"S\u00e9lectionnez les colonnes \u00e0 exporter","COM_FABRIK_INCLUDE_FILTERS":"Inclure filtres:","COM_FABRIK_INCLUDE_DATA":"Inclure donn\u00e9es:","COM_FABRIK_INCLUDE_RAW_DATA":"Inclure donn\u00e9es brutes:","COM_FABRIK_INLCUDE_CALCULATIONS":"Inclure calculs","COM_FABRIK_EXPORT":"Exporter","COM_FABRIK_START":"D\u00e9but","COM_FABRIK_NEXT":"Suivant","COM_FABRIK_END":"Fin","COM_FABRIK_PAGE":"COM_FABRIK_PAGE","COM_FABRIK_OF":"COM_FABRIK_OF","COM_FABRIK_RECORDS":"enregistrements","COM_FABRIK_SAVING_TO":"sauvegarder vers","COM_FABRIK_CONFIRM_DROP":"Etes-vous certain(e) de vouloir supprimer ces enregistrements et de remettre la cl\u00e9 de cette table \u00e0 la valeur 0?","COM_FABRIK_CONFIRM_DELETE":"Etes-vous certain(e) de vouloir supprimer ces enregistrements ?","COM_FABRIK_NO_RECORDS":"Aucun enregistrement trouv\u00e9","COM_FABRIK_CSV_COMPLETE":"Export CSV complet","COM_FABRIK_CSV_DOWNLOAD_HERE":"T\u00e9l\u00e9charger ici","COM_FABRIK_CSV_DOWNLOADING":"T\u00e9l\u00e9chargement fichier CSV","COM_FABRIK_FILE_TYPE":"Type de fichier","COM_FABRIK_ADVANCED_SEARCH":"Recherche avanc\u00e9e","COM_FABRIK_FORM_FIELDS":"Champs du formulaire","COM_FABRIK_LIST_SHORTCUTS_ADD":"a","COM_FABRIK_LIST_SHORTCUTS_EDIT":"e","COM_FABRIK_LIST_SHORTCUTS_DELETE":"d","COM_FABRIK_LIST_SHORTCUTS_FILTER":"f"};
+      if (typeof Joomla == 'undefined') {
+        Joomla = {};
+        Joomla.JText = strings;
+      }
+      else {
+        Joomla.JText.load(strings);
+      }
+    })();
+  </script>
+
+
+<!--[if lte IE 6]>
+<link href="/templates/beez_20/css/ieonly.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#line {
+	width:98% ;
+}
+.logoheader {
+	height:200px;
+}
+#header ul.menu {
+	display:block !important;
+	width:98.2% ;
+}
+</style>
+<![endif]-->
+
+<!--[if IE 7]>
+<link href="/templates/beez_20/css/ie7only.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<script type="text/javascript">
+	var big ='72%';
+	var small='53%';
+	var altopen='est ouvert';
+	var altclose='est fermé';
+	var bildauf='/templates/beez_20/images/plus.png';
+	var bildzu='/templates/beez_20/images/minus.png';
+	var rightopen='Ouvrir les infos';
+	var rightclose='Fermer les infos';
+	var fontSizeTitle='Taille de la police';
+	var bigger='Augmenter';
+	var reset='Réinitialiser';
+	var smaller='Diminuer';
+	var biggerTitle='Augmenter la taille';
+	var resetTitle='Revenir aux styles par défaut';
+	var smallerTitle='Réduire la taille';
+</script>
+
+</head><script src="massif_fichiers/advanced-search-min.js" type="text/javascript"></script><script src="massif_fichiers/list-min.js" type="text/javascript"></script><script src="massif_fichiers/listfilter-min.js" type="text/javascript"></script><script src="massif_fichiers/mootools-ext-min.js" type="text/javascript"></script><script src="massif_fichiers/art.js" type="text/javascript"></script><script src="massif_fichiers/icons-min.js" type="text/javascript"></script><script src="massif_fichiers/icongen-min.js" type="text/javascript"></script><script src="massif_fichiers/fabrik-min.js" type="text/javascript"></script><script src="massif_fichiers/tips-min.js" type="text/javascript"></script><script src="massif_fichiers/window-min.js" type="text/javascript"></script><script src="massif_fichiers/Event.js" type="text/javascript"></script><script src="massif_fichiers/encoder-min.js" type="text/javascript"></script><script src="massif_fichiers/javascript.js" type="text/javascript"></script>
+
+<body style="font-size: 100%;">
+
+<div id="all">
+        <div id="back">
+                <div id="header">
+                                <div class="logoheader">
+                                        <h1 id="logo">
+
+                                                                                <img src="massif_fichiers/joomla_black.gif" alt="CoSiRoc">
+                                                                                                                        <span class="header1">
+                                                                                </span></h1>
+                                </div><!-- end logoheader -->
+                                        <ul class="skiplinks">
+                                                <li><a href="#main" class="u2">Aller au contenu</a></li>
+                                                <li><a href="#nav" class="u2">Aller au menu principal et à l'identification</a></li>
+                                                                                    </ul>
+                                        <h2 class="unseen">Navigation de recherche</h2>
+                                        <h3 class="unseen">Navigation</h3>
+                                        
+                                        <div id="line">
+                                        <div id="fontsize"><h3>Taille de la police</h3><p><a title="Augmenter la taille" href="#" onclick="changeFontSize(2); return false">Augmenter</a><span class="unseen">.</span><a href="#" title="Revenir aux styles par défaut" onclick="revertStyles(); return false">Réinitialiser</a><span class="unseen">.</span><a href="#" title="Réduire la taille" onclick="changeFontSize(-2); return false">Diminuer</a></p></div>
+                                        <h3 class="unseen">Recherche</h3>
+                                        <form role="search" action="/index.php?option=com_content" method="post">
+	<div class="search">
+		<label for="mod-search-searchword">Label</label><input name="searchword" id="mod-search-searchword" maxlength="20" class="inputbox" size="20" value="Taper votre texte..." onblur="if (this.value=='') this.value='Taper votre texte...';" onfocus="if (this.value=='Taper votre texte...') this.value='';" type="text"><input value="Recherche sur le site" class="button" onclick="this.form.searchword.focus();" type="submit">	<input name="task" value="search" type="hidden">
+	<input name="option" value="com_search" type="hidden">
+	<input name="Itemid" value="0" type="hidden">
+	</div>
+</form>
+
+                                        </div> <!-- end line -->
+
+
+                        </div><!-- end header -->
+                        <div id="contentarea">
+                                        <div id="breadcrumbs">
+
+                                                        
+<div class="breadcrumbs">
+<span class="showHere">Vous êtes ici : </span><span>Accueil</span></div>
+
+
+                                        </div>
+
+                                        
+                                        <div id="wrapper2" class="shownocolumns">
+
+                                                <div role="main" id="main">
+
+                                                
+                                                        
+<div id="system-message-container">
+</div>
+                                                        <div class="item-page">
+
+	<h2>
+			<a href="http://www.cosiroc.fr/index.php?option=com_content&amp;view=article&amp;id=306:liste-de-tous-les-massifs&amp;catid=126:sites-naturels-d-escalade-en-ile-de-france&amp;Itemid=309">
+		Liste de tous les massifs</a>
+		</h2>
+
+	<ul class="actions">
+						<li class="print-icon">
+			<a href="http://www.cosiroc.fr/index.php?option=com_content&amp;view=article&amp;id=306:liste-de-tous-les-massifs&amp;catid=126&amp;Itemid=309&amp;tmpl=component&amp;print=1&amp;layout=default&amp;page=" title="Imprimer" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="massif_fichiers/printButton.png" alt="Imprimer"></a>			</li>
+		
+					<li class="email-icon">
+			<a href="http://www.cosiroc.fr/index.php?option=com_mailto&amp;tmpl=component&amp;template=beez_20&amp;link=e672f24f7edc3b3226af8e96f72c56445c49c8f0" title="E-mail" onclick="window.open(this.href,'win2','width=400,height=350,menubar=yes,resizable=yes'); return false;"><img src="massif_fichiers/emailButton.png" alt="E-mail"></a>			</li>
+		
+		
+	
+	</ul>
+
+
+
+
+	<dl class="article-info">
+	<dt class="article-info-term">Détails</dt>
+	<dd class="category-name">
+				Catégorie : <a href="http://www.cosiroc.fr/index.php?option=com_content&amp;view=category&amp;id=126&amp;Itemid=309">Sites naturels d'escalade en Ile de France</a>		</dd>
+	<dd class="modified">
+	Mis à jour le mercredi 26 novembre 2014 11:18	</dd>
+	<dd class="hits">
+	Affichages : 18379	</dd>
+	</dl>
+
+
+
+<p><em></em></p>
+<div>	<h1>massifs</h1>
+
+<p>Le critère "Type" désigne le type de chaos rocheux : voir le détail de la <a href="http://www.cosiroc.fr/images/massifs/Configurations_de_massifs.pdf">codification</a>.</p>
+<p><a href="http://www.cosiroc.fr/images/actualites/oleg_eol/Geomorphologie_chaotique.jpg"><img style="margin: 5px auto; display: block;" src="massif_fichiers/Geomorphologie_chaotique_25pc.jpg" alt="Geomorphologie chaotique 25pc"></a></p><form class="fabrikForm" action="/index.php?option=com_content&amp;view=article&amp;id=306:liste-de-tous-les-massifs&amp;catid=2:non-categorise&amp;Itemid=&amp;resetfilters=0&amp;clearordering=0&amp;clearfilters=0" method="post" id="listform_1_com_content_1" name="fabrikList">
+
+<div class="fabrik_buttons">
+
+		<ul class="fabrik_action">		<li>
+		<a href="#" class="clearFilters"><img src="massif_fichiers/filter_delete.png" alt="Effacer filtres" class="fabrikTip" title=""></a>		</li>
+			<li>
+			<a href="#" class="groupBy">
+				<img src="massif_fichiers/group_by.png" class="fabrikTip" title="" alt="Grouper par">				<span>Grouper par</span>
+			</a>
+			
+		</li>
+	</ul>
+</div><div class="fabrikFilterContainer">
+
+<table class="filtertable fabrikList">
+	<thead>
+	<tr class="fabrik___heading">
+			<th style="text-align:left">Chercher:</th>
+			<th style="text-align:right"></th>
+		</tr>
+	</thead>
+				<tbody><tr class="fabrik_row oddRow0">
+			<td>Massif</td>
+			<td style="text-align:right;"><select id="bcfab_massifs___massifvalue" name="fabrik___filter[list_1_com_content_1][value][0]" class="inputbox fabrik_filter" size="1">
+	<option value="" selected="selected">Tous</option>
+	<option value="91_1">91_1</option>
+	<option value="95_2">95_2</option>
+	<option value="Apremont Bizons">Apremont Bizons</option>
+	<option value="Apremont Dames">Apremont Dames</option>
+	<option value="Apremont Désert">Apremont Désert</option>
+	<option value="Apremont Envers">Apremont Envers</option>
+	<option value="Apremont Gorges">Apremont Gorges</option>
+	<option value="Boigneville">Boigneville</option>
+	<option value="Bois Rond">Bois Rond</option>
+	<option value="Bouligny">Bouligny</option>
+	<option value="Buthiers Canard">Buthiers Canard</option>
+	<option value="Buthiers L'I">Buthiers L'I</option>
+	<option value="Calvaire">Calvaire</option>
+	<option value="Canche aux Merciers">Canche aux Merciers</option>
+	<option value="Chaintreauville">Chaintreauville</option>
+	<option value="Chamarande">Chamarande</option>
+	<option value="Cul de Chien">Cul de Chien</option>
+	<option value="Cuvier Bas">Cuvier Bas</option>
+	<option value="Cuvier Rempart">Cuvier Rempart</option>
+	<option value="Dame Jouanne">Dame Jouanne</option>
+	<option value="Dampierre Maincourt">Dampierre Maincourt</option>
+	<option value="Demoiselles">Demoiselles</option>
+	<option value="Diplodocus">Diplodocus</option>
+	<option value="Drei Zinnen">Drei Zinnen</option>
+	<option value="Eléphant">Eléphant</option>
+	<option value="Étréchy">Étréchy</option>
+	<option value="Feuillardière">Feuillardière</option>
+	<option value="Franchard Crête Sud">Franchard Crête Sud</option>
+	<option value="Franchard Cuisinière">Franchard Cuisinière</option>
+	<option value="Franchard Ermitage">Franchard Ermitage</option>
+	<option value="Franchard Hautes-Plaines">Franchard Hautes-Plaines</option>
+	<option value="Franchard Isatis">Franchard Isatis</option>
+	<option value="Franchard Sablons">Franchard Sablons</option>
+	<option value="Gorge aux Châts">Gorge aux Châts</option>
+	<option value="Gorges du Houx">Gorges du Houx</option>
+	<option value="Grande Montagne">Grande Montagne</option>
+	<option value="Gros Sablons">Gros Sablons</option>
+	<option value="J.A.Martin / R. Cailleau">J.A.Martin / R. Cailleau</option>
+	<option value="Jean des Vignes">Jean des Vignes</option>
+	<option value="Justice de Chambergeot">Justice de Chambergeot</option>
+	<option value="La Troche">La Troche</option>
+	<option value="Maisse le Patouillat">Maisse le Patouillat</option>
+	<option value="Maunoury">Maunoury</option>
+	<option value="Mont Olivet">Mont Olivet</option>
+	<option value="Mont-Aigu">Mont-Aigu</option>
+	<option value="Mont-Ussy">Mont-Ussy</option>
+	<option value="Monts et Merveille">Monts et Merveille</option>
+	<option value="Montussiennes">Montussiennes</option>
+	<option value="Padôle">Padôle</option>
+	<option value="Padôle cent marches">Padôle cent marches</option>
+	<option value="Pendu d'Huison">Pendu d'Huison</option>
+	<option value="Petit Bois de St Pierre de Nemours">Petit Bois de St Pierre de Nemours</option>
+	<option value="Pierre Glissoire">Pierre Glissoire</option>
+	<option value="Pignon Poteau">Pignon Poteau</option>
+	<option value="Potala">Potala</option>
+	<option value="Puiselet">Puiselet</option>
+	<option value="Recloses">Recloses</option>
+	<option value="Restant du Long Rocher">Restant du Long Rocher</option>
+	<option value="Restant du Long Rocher Plaine verte">Restant du Long Rocher Plaine verte</option>
+	<option value="Restant du Long Rocher Sud">Restant du Long Rocher Sud</option>
+	<option value="Roche aux Dames - Mondeville">Roche aux Dames - Mondeville</option>
+	<option value="Roche aux Oiseaux">Roche aux Oiseaux</option>
+	<option value="Roche aux Sabots">Roche aux Sabots</option>
+	<option value="Roche Hercule">Roche Hercule</option>
+	<option value="Rocher Canon">Rocher Canon</option>
+	<option value="Rocher d'Avon">Rocher d'Avon</option>
+	<option value="Rocher de Chatillon">Rocher de Chatillon</option>
+	<option value="Rocher de la Cathédrale">Rocher de la Cathédrale</option>
+	<option value="Rocher de la Reine">Rocher de la Reine</option>
+	<option value="Rocher de Milly">Rocher de Milly</option>
+	<option value="Rocher de Milly / Corne-Biche">Rocher de Milly / Corne-Biche</option>
+	<option value="Rocher des Potets">Rocher des Potets</option>
+	<option value="Rocher des Troubadours">Rocher des Troubadours</option>
+	<option value="Rocher du Duc - Hameau">Rocher du Duc - Hameau</option>
+	<option value="Rocher du Duc - Loutteville">Rocher du Duc - Loutteville</option>
+	<option value="Rocher du Duc - Nainville">Rocher du Duc - Nainville</option>
+	<option value="Rocher du Duc -Télégraphe">Rocher du Duc -Télégraphe</option>
+	<option value="Rocher du Général">Rocher du Général</option>
+	<option value="Rocher fin">Rocher fin</option>
+	<option value="Rocher Guichot">Rocher Guichot</option>
+	<option value="Rocher Mignot">Rocher Mignot</option>
+	<option value="Rocher Saint-Germain">Rocher Saint-Germain</option>
+	<option value="Sanglier">Sanglier</option>
+	<option value="Ségognole">Ségognole</option>
+	<option value="Télégraphe">Télégraphe</option>
+	<option value="Troglodytes">Troglodytes</option>
+	<option value="Vallée Casse-Pot">Vallée Casse-Pot</option>
+	<option value="Vaux de Cernay">Vaux de Cernay</option>
+	<option value="Videlles les Roches">Videlles les Roches</option>
+	<option value="Villeneuve-sur-Auvers">Villeneuve-sur-Auvers</option>
+</select>
+
+<input name="fabrik___filter[list_1_com_content_1][condition][0]" value="contains" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][join][0]" value="AND" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][key][0]" value="`bcfab_massifs`.`massif`" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][search_type][0]" value="normal" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][match][0]" value="0" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][full_words_only][0]" value="1" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][eval][0]" value="0" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][grouped_to_previous][0]" value="0" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][hidden][0]" value="0" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][elementid][0]" value="3" type="hidden"></td>
+		</tr>
+				<tr class="fabrik_row oddRow1">
+			<td>dept</td>
+			<td style="text-align:right;"><select id="bcfab_massifs___deptvalue" name="fabrik___filter[list_1_com_content_1][value][1]" class="inputbox fabrik_filter" size="1">
+	<option value="" selected="selected">Tous</option>
+	<option value="77">77</option>
+	<option value="78">78</option>
+	<option value="91">91</option>
+</select>
+
+<input name="fabrik___filter[list_1_com_content_1][condition][1]" value="=" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][join][1]" value="AND" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][key][1]" value="`bcfab_massifs`.`dept`" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][search_type][1]" value="normal" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][match][1]" value="1" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][full_words_only][1]" value="0" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][eval][1]" value="0" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][grouped_to_previous][1]" value="0" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][hidden][1]" value="0" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][elementid][1]" value="161" type="hidden"></td>
+		</tr>
+				<tr class="fabrik_row oddRow0">
+			<td>Parcelles</td>
+			<td style="text-align:right;"><select id="bcfab_massifs___parcellesvalue" name="fabrik___filter[list_1_com_content_1][value][2]" class="inputbox fabrik_filter" size="1">
+	<option value="" selected="selected">Tous</option>
+	<option value="100 TP">100 TP</option>
+	<option value="101TP">101TP</option>
+	<option value="106 107 TP">106 107 TP</option>
+	<option value="109 111">109 111</option>
+	<option value="110">110</option>
+	<option value="112">112</option>
+	<option value="114">114</option>
+	<option value="114 118 123 TP">114 118 123 TP</option>
+	<option value="114 TP">114 TP</option>
+	<option value="116 TP">116 TP</option>
+	<option value="129 TP">129 TP</option>
+	<option value="130 TP">130 TP</option>
+	<option value="133 134 TP">133 134 TP</option>
+	<option value="133 TP">133 TP</option>
+	<option value="135 141 TP">135 141 TP</option>
+	<option value="138 TP">138 TP</option>
+	<option value="141 TP">141 TP</option>
+	<option value="145 TP">145 TP</option>
+	<option value="146 TP">146 TP</option>
+	<option value="147">147</option>
+	<option value="148">148</option>
+	<option value="149 TP">149 TP</option>
+	<option value="162 169 TP">162 169 TP</option>
+	<option value="162 TP">162 TP</option>
+	<option value="163 TP">163 TP</option>
+	<option value="167 TP">167 TP</option>
+	<option value="170 TP">170 TP</option>
+	<option value="241">241</option>
+	<option value="263">263</option>
+	<option value="264W">264W</option>
+	<option value="32 33 34 35">32 33 34 35</option>
+	<option value="387">387</option>
+	<option value="539 549">539 549</option>
+	<option value="710 716">710 716</option>
+	<option value="711N 712N 713N">711N 712N 713N</option>
+	<option value="712 713 ">712 713 </option>
+	<option value="714">714</option>
+	<option value="719">719</option>
+	<option value="74 TP">74 TP</option>
+	<option value="762 763NE">762 763NE</option>
+	<option value="764N">764N</option>
+	<option value="764S">764S</option>
+	<option value="766">766</option>
+	<option value="771">771</option>
+	<option value="772">772</option>
+	<option value="785">785</option>
+	<option value="84 TP">84 TP</option>
+	<option value="85 TP">85 TP</option>
+	<option value="858">858</option>
+	<option value="882">882</option>
+	<option value="884 883 882W">884 883 882W</option>
+</select>
+
+<input name="fabrik___filter[list_1_com_content_1][condition][2]" value="=" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][join][2]" value="AND" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][key][2]" value="`bcfab_massifs`.`parcelles`" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][search_type][2]" value="normal" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][match][2]" value="1" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][full_words_only][2]" value="0" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][eval][2]" value="0" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][grouped_to_previous][2]" value="0" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][hidden][2]" value="0" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][elementid][2]" value="266" type="hidden"></td>
+		</tr>
+				<tr class="fabrik_row oddRow1">
+			<td>Gestion</td>
+			<td style="text-align:right;"><select id="bcfab_massifs___gestionvalue" name="fabrik___filter[list_1_com_content_1][value][3]" class="inputbox fabrik_filter" size="1">
+	<option value="" selected="selected">Tous</option>
+	<option value="ONF77">ONF77</option>
+</select>
+
+<input name="fabrik___filter[list_1_com_content_1][condition][3]" value="=" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][join][3]" value="AND" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][key][3]" value="`bcfab_massifs`.`gestion`" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][search_type][3]" value="normal" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][match][3]" value="1" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][full_words_only][3]" value="0" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][eval][3]" value="0" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][grouped_to_previous][3]" value="0" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][hidden][3]" value="0" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][elementid][3]" value="276" type="hidden"></td>
+		</tr>
+				<tr class="fabrik_row oddRow0">
+			<td>Région</td>
+			<td style="text-align:right;"><select id="bcfab_massifs___regionvalue" name="fabrik___filter[list_1_com_content_1][value][4]" class="inputbox fabrik_filter" size="1">
+	<option value="" selected="selected">Tous</option>
+	<option value="3PI">3PI</option>
+	<option value="ESS">ESS</option>
+	<option value="FD">FD</option>
+	<option value="SUD">SUD</option>
+	<option value="YVE">YVE</option>
+</select>
+
+<input name="fabrik___filter[list_1_com_content_1][condition][4]" value="=" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][join][4]" value="AND" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][key][4]" value="`bcfab_massifs`.`region`" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][search_type][4]" value="normal" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][match][4]" value="1" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][full_words_only][4]" value="0" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][eval][4]" value="0" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][grouped_to_previous][4]" value="0" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][hidden][4]" value="0" type="hidden">
+<input name="fabrik___filter[list_1_com_content_1][elementid][4]" value="279" type="hidden"></td>
+		</tr>
+		</tbody></table>
+
+</div>
+<div class="fabrikDataContainer">
+
+	<div class="boxflex">
+		<table class="fabrikList" id="list_1_com_content_1">
+		 <tfoot>
+			<tr class="fabrik___heading">
+				<td colspan="8">
+					<div class="fabrikNav"><div class="list-footer">
+<div class="limit">Afficher <select id="limit1" name="limit1" class="inputbox" size="1" onchange="">
+	<option value="5">5</option>
+	<option value="10">10</option>
+	<option value="15">15</option>
+	<option value="20">20</option>
+	<option value="25">25</option>
+	<option value="30">30</option>
+	<option value="50">50</option>
+	<option value="100" selected="selected">100</option>
+</select>
+</div>
+
+<div class="counter"></div>
+<input name="limitstart1" id="limitstart1" value="0" type="hidden">
+</div></div>				</td>
+			</tr>
+		 </tfoot>
+		 <!--
+		 <thead style="display:none">
+		 	<tr>
+		 		<td colspan="8">
+		 			<div class="emptyDataMessage">
+						Aucun enregistrement					</div>
+				</td>
+		 	</tr>
+		 </thead>
+		 -->
+			<thead><tr class="fabrik___heading">
+	<th class="fabrik_ordercell bcfab_massifs___id 1_order fabrik_list_1_group_1 ">
+		<span class="heading">id</span>
+			</th>
+		<th class="fabrik_ordercell bcfab_massifs___massif 3_order fabrik_list_1_group_1 ">
+		<span class="heading"><a class="fabrikorder" href="#"><img src="massif_fichiers/ordernone.png" alt="COM_FABRIK_ORDER">Massif</a></span>
+			</th>
+		<th class="fabrik_ordercell bcfab_massifs___gps_lng 60_order fabrik_list_1_group_1 ">
+		<span class="heading"><a class="fabrikorder" href="#"><img src="massif_fichiers/ordernone.png" alt="COM_FABRIK_ORDER">lon</a></span>
+			</th>
+		<th class="fabrik_ordercell bcfab_massifs___gps_lat 61_order fabrik_list_1_group_1 ">
+		<span class="heading"><a class="fabrikorder" href="#"><img src="massif_fichiers/ordernone.png" alt="COM_FABRIK_ORDER">lat</a></span>
+			</th>
+		<th class="fabrik_ordercell bcfab_massifs___type 259_order fabrik_list_1_group_1 ">
+		<span class="heading">Type</span>
+			</th>
+		<th class="fabrik_ordercell bcfab_massifs___parcelles 266_order fabrik_list_1_group_1 ">
+		<span class="heading">Parcelles</span>
+			</th>
+		<th class="fabrik_ordercell fabrik_select">
+		<span class="heading"><input name="checkAll" class="list_1_checkAll" type="checkbox"></span>
+			</th>
+		<th class="fabrik_ordercell 17___3-3-17_list_heading related">
+		<span class="heading">Circuits</span>
+			</th>
+	</tr></thead>			<tbody class="fabrik_groupdata">
+			<tr>
+				<td class="groupdataMsg" colspan="8">
+					<div class="emptyDataMessage" style="display:none">
+						Aucun enregistrement					</div>
+				</td>
+			</tr>
+					<tr id="list_1_com_content_1_row_1" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">1</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">91_1</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.51919</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.37722</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">E / D</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">135 141 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[1]" value="1" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=1&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(4) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_2" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">2</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">95_2</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.529684</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.385867</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">130 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[2]" value="2" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=2&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(5) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_3" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">3</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Apremont Bizons</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.62185</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.43563</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">D /C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">719</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[3]" value="3" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=3&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(4) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_87" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">87</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Apremont Dames</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.621716</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.438109</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">D&nbsp;?</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">714</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[87]" value="87" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=87&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(3) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_4" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">4</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Apremont Désert</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.644824</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.436966</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">D / C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">710 716</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[4]" value="4" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=4&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(6) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_5" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">5</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Apremont Envers</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.63524</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.43825</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">711N 712N 713N</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[5]" value="5" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=5&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(4) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_6" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">6</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Apremont Gorges</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.63236</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.43506</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">712 713 </td>
+			<td class="fabrik_select fabrik_element"><input name="ids[6]" value="6" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=6&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(13) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_12" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">12</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Boigneville</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[12]" value="12" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=12&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(4) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_13" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">13</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Bois Rond</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.562827</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.390819</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">D</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">85 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[13]" value="13" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=13&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(3) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_80" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">80</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Bouligny</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.693301</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.385320</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[80]" value="80" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=80&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(1) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_49" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">49</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Buthiers Canard</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.425454</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.298019</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[49]" value="49" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=49&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(5) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_84" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">84</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Buthiers L'I</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.439445</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.294536</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[84]" value="84" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=84&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(6) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_14" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">14</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Calvaire</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.713466</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.420026</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">A / C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">387</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[14]" value="14" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=14&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(1) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_15" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">15</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Canche aux Merciers</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.547469</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.392289</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">106 107 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[15]" value="15" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=15&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(6) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_18" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">18</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Chaintreauville</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[18]" value="18" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><div style="text-align:center" class="related_data_norecords">(0) circ.</div><div style="text-align:center"><a title="Vous n'êtes pas autorisé à accéder à cette ressource."><img src="massif_fichiers/login.png" alt="Vous n'êtes pas autorisé à accéder à cette ressource."></a></div></td>
+	</tr><tr id="list_1_com_content_1_row_19" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">19</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Chamarande</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.232500</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.516483</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[19]" value="19" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=19&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(9) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_22" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">22</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Cul de Chien</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.524167</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.376267</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">E / D</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">133 134 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[22]" value="22" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=22&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(3) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_23" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">23</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Cuvier Bas</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.640046</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.447261</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">E</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">884 883 882W</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[23]" value="23" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=23&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(7) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_24" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">24</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Cuvier Rempart</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.647208</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.445441</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C / E</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">882</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[24]" value="24" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=24&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(3) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_25" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">25</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Dame Jouanne</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.60140</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.30473</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C / D</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">109 111</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[25]" value="25" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=25&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(8) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_47" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">47</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Dampierre Maincourt</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">1.978723</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.715597</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[47]" value="47" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=47&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(5) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_26" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">26</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Demoiselles</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.669802</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.379653</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">148</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[26]" value="26" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=26&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(1) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_27" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">27</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Diplodocus</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.53248</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.37138</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">E</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">163 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[27]" value="27" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=27&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(3) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_28" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">28</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Drei Zinnen</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.557715</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.392930</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">84 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[28]" value="28" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=28&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(2) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_29" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">29</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Eléphant</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.593137</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.294441</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C / D</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">147</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[29]" value="29" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=29&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(6) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_30" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">30</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Étréchy</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.170409</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.485406</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[30]" value="30" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=30&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(4) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_31" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">31</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Feuillardière</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.544505</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.401329</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">E</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">100 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[31]" value="31" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=31&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(1) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_32" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">32</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Franchard Crête Sud</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.612327</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.407858</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">764S</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[32]" value="32" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=32&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(2) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_33" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">33</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Franchard Cuisinière</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.612113</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.410194</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">764N</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[33]" value="33" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=33&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(4) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_34" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">34</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Franchard Ermitage</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.628664</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.408373</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">E</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">762 763NE</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[34]" value="34" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=34&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(3) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_35" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">35</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Franchard Hautes-Plaines</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.598639</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.408448</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">771</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[35]" value="35" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=35&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(3) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_36" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">36</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Franchard Isatis</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.599839</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.410065</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">E / D</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">766</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[36]" value="36" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=36&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(5) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_37" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">37</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Franchard Sablons</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.596185</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.408520</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">772</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[37]" value="37" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=37&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(2) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_39" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">39</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Gorge aux Châts</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.520309</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.398909</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">101TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[39]" value="39" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=39&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(3) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_40" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">40</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Gorges du Houx</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.652491</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.403102</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">112</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[40]" value="40" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=40&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(1) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_41" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">41</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Grande Montagne</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.535798</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.399455</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">149 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[41]" value="41" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=41&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(1) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_42" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">42</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Gros Sablons</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.537173</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.385573</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">114 118 123 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[42]" value="42" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=42&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(4) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_44" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">44</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">J.A.Martin / R. Cailleau</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.535674</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.360158</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">170 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[44]" value="44" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=44&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(8) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_45" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">45</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Jean des Vignes</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.523407</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.383299</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">D</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">129 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[45]" value="45" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=45&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(1) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_20" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">20</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Justice de Chambergeot</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.51473</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.39420</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">116 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[20]" value="20" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=20&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(2) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_73" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">73</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">La Troche</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.194706</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.711005</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[73]" value="73" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=73&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(3) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_48" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">48</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Maisse le Patouillat</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.375706</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.388759</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[48]" value="48" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=48&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(1) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_50" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">50</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Maunoury</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.607713</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.302683</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">110</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[50]" value="50" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=50&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(3) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_55" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">55</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Mont Olivet</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.708753</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.258701</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[55]" value="55" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=55&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(2) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_54" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">54</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Mont-Aigu</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.663016</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.401005</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">114</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[54]" value="54" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=54&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(3) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_56" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">56</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Mont-Ussy</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.693014</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.421371</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C / A</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">264W</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[56]" value="56" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=56&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(4) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_78" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">78</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Monts et Merveille</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[78]" value="78" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=78&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(1) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_92" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">92</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Montussiennes</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[92]" value="92" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><div style="text-align:center" class="related_data_norecords">(0) circ.</div><div style="text-align:center"><a title="Vous n'êtes pas autorisé à accéder à cette ressource."><img src="massif_fichiers/login.png" alt="Vous n'êtes pas autorisé à accéder à cette ressource."></a></div></td>
+	</tr><tr id="list_1_com_content_1_row_59" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">59</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Padôle</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.460420</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.479919</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[59]" value="59" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=59&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(7) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_81" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">81</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Padôle cent marches</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.464067</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.479271</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[81]" value="81" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=81&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(4) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_60" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">60</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Pendu d'Huison</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.332586</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.453408</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[60]" value="60" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=60&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(2) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_57" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">57</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Petit Bois de St Pierre de Nemours</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.670992</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.263670</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[57]" value="57" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=57&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(5) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_58" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">58</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Pierre Glissoire</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[58]" value="58" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><div style="text-align:center" class="related_data_norecords">(0) circ.</div><div style="text-align:center"><a title="Vous n'êtes pas autorisé à accéder à cette ressource."><img src="massif_fichiers/login.png" alt="Vous n'êtes pas autorisé à accéder à cette ressource."></a></div></td>
+	</tr><tr id="list_1_com_content_1_row_62" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">62</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Pignon Poteau</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.532103</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.389059</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C / B</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">114 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[62]" value="62" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=62&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(2) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_61" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">61</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Potala</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.5332680</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.367609</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">162 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[61]" value="61" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=61&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(4) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_64" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">64</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Puiselet</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.648239</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.268468</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[64]" value="64" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=64&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(3) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_65" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">65</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Recloses</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.655602</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.345313</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[65]" value="65" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><div style="text-align:center" class="related_data_norecords">(0) circ.</div><div style="text-align:center"><a title="Vous n'êtes pas autorisé à accéder à cette ressource."><img src="massif_fichiers/login.png" alt="Vous n'êtes pas autorisé à accéder à cette ressource."></a></div></td>
+	</tr><tr id="list_1_com_content_1_row_46" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">46</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Restant du Long Rocher</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.729851</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.355455</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C / D</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">539 549</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[46]" value="46" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=46&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(4) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_90" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">90</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Restant du Long Rocher Plaine verte</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.731144</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.353494</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[90]" value="90" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><div style="text-align:center" class="related_data_norecords">(0) circ.</div><div style="text-align:center"><a title="Vous n'êtes pas autorisé à accéder à cette ressource."><img src="massif_fichiers/login.png" alt="Vous n'êtes pas autorisé à accéder à cette ressource."></a></div></td>
+	</tr><tr id="list_1_com_content_1_row_89" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">89</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Restant du Long Rocher Sud</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.734234</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.353865</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[89]" value="89" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><div style="text-align:center" class="related_data_norecords">(0) circ.</div><div style="text-align:center"><a title="Vous n'êtes pas autorisé à accéder à cette ressource."><img src="massif_fichiers/login.png" alt="Vous n'êtes pas autorisé à accéder à cette ressource."></a></div></td>
+	</tr><tr id="list_1_com_content_1_row_53" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">53</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Roche aux Dames - Mondeville</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.404331</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.493119</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[53]" value="53" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=53&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(9) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_93" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">93</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Roche aux Oiseaux</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.506637</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.377600</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[93]" value="93" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><div style="text-align:center" class="related_data_norecords">(0) circ.</div><div style="text-align:center"><a title="Vous n'êtes pas autorisé à accéder à cette ressource."><img src="massif_fichiers/login.png" alt="Vous n'êtes pas autorisé à accéder à cette ressource."></a></div></td>
+	</tr><tr id="list_1_com_content_1_row_68" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">68</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Roche aux Sabots</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.514543</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.374468</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">D</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">141 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[68]" value="68" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=68&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(4) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_91" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">91</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Roche Hercule</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.700615</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.421063</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">263</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[91]" value="91" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=91&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(1) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_16" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">16</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Rocher Canon</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.662866</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.4626696</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C / D</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">858</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[16]" value="16" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=16&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(8) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_11" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">11</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Rocher d'Avon</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.721893</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.393552</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">32 33 34 35</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[11]" value="11" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=11&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(3) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_21" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">21</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Rocher de Chatillon</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.408614</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.422982</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[21]" value="21" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=21&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(5) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_17" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">17</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Rocher de la Cathédrale</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.534081</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.363753</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">162 169 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[17]" value="17" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=17&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(1) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_66" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">66</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Rocher de la Reine</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.563981</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.392018</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">B / C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">84 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[66]" value="66" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=66&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(2) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_52" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">52</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Rocher de Milly</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.586733</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.397783</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">D / C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">785</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[52]" value="52" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><div style="text-align:center" class="related_data_norecords">(0) circ.</div><div style="text-align:center"><a title="Vous n'êtes pas autorisé à accéder à cette ressource."><img src="massif_fichiers/login.png" alt="Vous n'êtes pas autorisé à accéder à cette ressource."></a></div></td>
+	</tr><tr id="list_1_com_content_1_row_85" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">85</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Rocher de Milly / Corne-Biche</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.584325</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.397814</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">74 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[85]" value="85" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=85&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(6) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_63" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">63</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Rocher des Potets</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.52701</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.38278</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">E</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">133 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[63]" value="63" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=63&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(2) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_88" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">88</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Rocher des Troubadours</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.531148</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.369501</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">E</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[88]" value="88" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><div style="text-align:center" class="related_data_norecords">(0) circ.</div><div style="text-align:center"><a title="Vous n'êtes pas autorisé à accéder à cette ressource."><img src="massif_fichiers/login.png" alt="Vous n'êtes pas autorisé à accéder à cette ressource."></a></div></td>
+	</tr><tr id="list_1_com_content_1_row_7" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">7</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Rocher du Duc - Hameau</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.473467</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.500185</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[7]" value="7" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=7&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(5) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_8" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">8</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Rocher du Duc - Loutteville</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.469565</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.502449</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[8]" value="8" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=8&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(4) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_9" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">9</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Rocher du Duc - Nainville</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.476883</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.503955</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[9]" value="9" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=9&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(9) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_10" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">10</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Rocher du Duc -Télégraphe</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.471663</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.501188</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[10]" value="10" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=10&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(5) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_38" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">38</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Rocher du Général</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.528414</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.371831</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">C / D</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">145 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[38]" value="38" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=38&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(2) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_67" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">67</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Rocher fin</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.534828</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.377170</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">D / E</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">146 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[67]" value="67" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=67&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(4) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_43" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">43</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Rocher Guichot</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.524889</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.364111</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">E</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">167 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[43]" value="43" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=43&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(3) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_51" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">51</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Rocher Mignot</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.293380</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.504004</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[51]" value="51" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=51&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(2) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_69" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">69</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Rocher Saint-Germain</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.686249</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.440286</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">E / D</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">241</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[69]" value="69" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=69&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(3) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_70" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">70</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Sanglier</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.325036</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.493915</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[70]" value="70" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=70&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(6) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_71" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">71</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Ségognole</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.504592</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.379913</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">D</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">138 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[71]" value="71" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=71&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(3) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_72" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">72</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Télégraphe</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.547401</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.394407</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1">A</td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1">100 TP</td>
+			<td class="fabrik_select fabrik_element"><input name="ids[72]" value="72" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=72&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(1) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_74" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">74</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Troglodytes</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.710235</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.243104</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[74]" value="74" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=74&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(1) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_86" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">86</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Vallée Casse-Pot</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.719702</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.254663</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[86]" value="86" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=86&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(2) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_75" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">75</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Vaux de Cernay</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">1.941251</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.684692</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[75]" value="75" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=75&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(1) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_76" class="fabrik_row oddRow0">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">76</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Videlles les Roches</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.438485</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.469856</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[76]" value="76" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=76&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(12) circ.</a></td>
+	</tr><tr id="list_1_com_content_1_row_77" class="fabrik_row oddRow1">
+			<td class="bcfab_massifs___id fabrik_element fabrik_list_1_group_1">77</td>
+			<td class="bcfab_massifs___massif fabrik_element fabrik_list_1_group_1">Villeneuve-sur-Auvers</td>
+			<td class="bcfab_massifs___gps_lng fabrik_element fabrik_list_1_group_1">2.241881</td>
+			<td class="bcfab_massifs___gps_lat fabrik_element fabrik_list_1_group_1">48.477891</td>
+			<td class="bcfab_massifs___type fabrik_element fabrik_list_1_group_1"></td>
+			<td class="bcfab_massifs___parcelles fabrik_element fabrik_list_1_group_1"></td>
+			<td class="fabrik_select fabrik_element"><input name="ids[77]" value="77" type="checkbox"><div style="display:none">
+</div></td>
+			<td class="17___3-3-17_list_heading fabrik_element related"><a class="related_data" href="http://www.cosiroc.fr/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=229&amp;Itemid=229&amp;bcfab_circuits___id_code_massif_raw=77&amp;limitstart3=0&amp;&amp;resetfilters=1&amp;&amp;fabrik_incsessionfilters=0">(2) circ.</a></td>
+	</tr></tbody>
+					</table>
+		<input name="option" value="com_fabrik" type="hidden">
+<input name="orderdir" value="" type="hidden">
+<input name="orderby" value="" type="hidden">
+<input name="view" value="list" type="hidden">
+<input name="listid" value="1" type="hidden">
+<input name="listref" value="1_com_content_1" type="hidden">
+<input name="Itemid" value="0" type="hidden">
+<input name="fabrik_referrer" value="/index.php?option=com_content&amp;view=article&amp;id=306:liste-de-tous-les-massifs&amp;catid=2:non-categorise" type="hidden">
+<input name="7782dad5e38d7ee6d41af399474b6116" value="1" type="hidden">
+<input name="format" value="raw" type="hidden">
+<input name="_packageId" value="0" type="hidden">
+<input name="task" value="list.filter" type="hidden">
+<input name="fabrik_listplugin_name" value="" type="hidden">
+<input name="fabrik_listplugin_renderOrder" value="" type="hidden">
+<input name="fabrik_listplugin_options" value="" type="hidden">
+<input name="incfilters" value="1" type="hidden">	</div>
+</div>
+</form>
+</div> 
+				<ul class="pagenav">
+					<li class="pagenav-prev">
+						<a href="http://www.cosiroc.fr/index.php?option=com_content&amp;view=article&amp;id=310:travaux-anti-erosion-autour-de-big-boss&amp;catid=126:sites-naturels-d-escalade-en-ile-de-france&amp;Itemid=309" rel="prev">&lt; Précédent</a>
+					</li>
+					<li class="pagenav-next">
+						<a href="http://www.cosiroc.fr/index.php?option=com_content&amp;view=article&amp;id=304:ca-bouge-un-peu-a-la-dj&amp;catid=126:sites-naturels-d-escalade-en-ile-de-france&amp;Itemid=309" rel="next">Suivant &gt;</a>
+					</li>
+				</ul>
+	
+</div>
+
+
+                                                </div><!-- end main -->
+
+                                        </div><!-- end wrapper -->
+
+                                
+                        
+                                <div class="wrap"></div>
+
+                                </div> <!-- end contentarea -->
+
+                        </div><!-- back -->
+
+                </div><!-- all -->
+
+                <div id="footer-outer">
+                        
+                        <div id="footer-sub">
+
+
+                                <div id="footer">
+
+                                        
+                                        <p>
+                                                Animé par <a href="http://www.joomla.org/">Joomla!®</a>
+                                        </p>
+
+
+                                </div><!-- end footer -->
+
+                        </div>
+
+                </div>
+				
+        
+
+<div style="display: none;" class="floating-tip-wrapper"><div class="floating-tip tiptop"><span>Effacer filtres</span></div></div><div style="display: none;" class="floating-tip-wrapper"><div class="floating-tip tiptop"><span>Grouper par</span></div></div><div style="display: none;" class="floating-tip-wrapper"><div class="floating-tip tipbottom"><div><ul>
+									<li><a href="http://www.cosiroc.fr/index.php?option=com_content&amp;view=article&amp;id=306:liste-de-tous-les-massifs&amp;catid=2:non-categorise&amp;group_by=0">Aucun</a></li>
+									<li><a href="http://www.cosiroc.fr/index.php?option=com_content&amp;view=article&amp;id=306:liste-de-tous-les-massifs&amp;catid=2:non-categorise&amp;group_by=bcfab_massifs___id">id</a></li>
+									<li><a href="http://www.cosiroc.fr/index.php?option=com_content&amp;view=article&amp;id=306:liste-de-tous-les-massifs&amp;catid=2:non-categorise&amp;group_by=bcfab_massifs___massif">Massif</a></li>
+									<li><a href="http://www.cosiroc.fr/index.php?option=com_content&amp;view=article&amp;id=306:liste-de-tous-les-massifs&amp;catid=2:non-categorise&amp;group_by=bcfab_massifs___gps_lng">lon</a></li>
+									<li><a href="http://www.cosiroc.fr/index.php?option=com_content&amp;view=article&amp;id=306:liste-de-tous-les-massifs&amp;catid=2:non-categorise&amp;group_by=bcfab_massifs___gps_lat">lat</a></li>
+									<li><a href="http://www.cosiroc.fr/index.php?option=com_content&amp;view=article&amp;id=306:liste-de-tous-les-massifs&amp;catid=2:non-categorise&amp;group_by=bcfab_massifs___type">Type</a></li>
+									<li><a href="http://www.cosiroc.fr/index.php?option=com_content&amp;view=article&amp;id=306:liste-de-tous-les-massifs&amp;catid=2:non-categorise&amp;group_by=bcfab_massifs___parcelles">Parcelles</a></li>
+									<li><a href="http://www.cosiroc.fr/index.php?option=com_content&amp;view=article&amp;id=306:liste-de-tous-les-massifs&amp;catid=2:non-categorise&amp;group_by=17___3-3-17_list_heading">Circuits</a></li>
+							</ul></div></div></div><div style="display: none;" class="floating-tip-wrapper"><div class="floating-tip tipleft"></div></div><div style="display: none;" class="floating-tip-wrapper"><div class="floating-tip tipleft"></div></div></body></html>
