@@ -137,17 +137,20 @@ class WithCoordinate(FromJsonMixin):
 class Massif(WithCoordinate):
 
     __fields__ = (
-        Field('massif', str),
-        Field('coordonne', Coordonne),
-        Field('type_de_chaos', str),
-        Field('parcelles', str),
-        Field('secteur', str),
         Field('acces', str),
+        Field('a_pieds', bool),
+        Field('coordonne', Coordonne),
         Field('itineraire', str),
-        Field('velo', str),
-        Field('rdv', str),
-        Field('notes', str),
+        Field('massif', str),
         Field('nom', str),
+        Field('notes', str),
+        Field('parcelles', str),
+        Field('point_deau', str),
+        Field('rdv', str),
+        Field('secteur', str),
+        Field('type_de_chaos', str),
+        Field('velo', str),
+        # propreté fréquentation exposition débutant
     )
 
     ##############################################
@@ -160,7 +163,6 @@ class Massif(WithCoordinate):
     def str_long(self):
 
         template = '''
-massif_id: {0.massif_id}
 massif: {0.massif}
 coordonné: {0.coordonne}
 type_de_chaos: {0.type_de_chaos}
@@ -174,16 +176,17 @@ secteur: {0.secteur}
 class Circuit(WithCoordinate):
 
     __fields__ = (
-        Field('massif', instance_checker(Massif)),
-        Field('couleur', str),
-        Field('numero', int),
-        Field('cotation', str),
-        Field('topos', StringList),
-        Field('coordonne', Coordonne),
         Field('annee_refection', int),
+        Field('coordonne', Coordonne),
+        Field('cotation', str),
+        Field('couleur', str),
         Field('gestion', str),
-        Field('status', str),
         Field('liste_blocs', StringList),
+        Field('massif', instance_checker(Massif)),
+        Field('numero', int),
+        Field('status', str),
+        Field('topos', StringList),
+        # patiné
     )
 
     ##############################################
