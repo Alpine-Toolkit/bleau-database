@@ -50,7 +50,10 @@ print('Nombre de circuits:', bleau_database.nombre_de_circuits)
 print('Nombre de circuits avec topos:', bleau_database.nombre_de_circuits_avec_topos)
 
 # for circuit in bleau_database.circuits:
-#     print(circuit)
+#     print(circuit.str_long())
+
+# for massif in bleau_database.massifs:
+#     print(massif.str_long())
 
 if args.get_pdf:
     for circuit in bleau_database.circuits:

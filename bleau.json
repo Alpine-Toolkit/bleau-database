@@ -5279,6 +5279,7 @@
       },
       "massif": "91_1",
       "parcelles": "135 141 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "E/D"
     },
     {
@@ -5288,6 +5289,7 @@
       },
       "massif": "95_2",
       "parcelles": "130 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "C"
     },
     {
@@ -5297,6 +5299,7 @@
       },
       "massif": "Apremont Bizons",
       "parcelles": "719",
+      "secteur": "forêt domaniale",
       "type_de_chaos": "D/C"
     },
     {
@@ -5306,6 +5309,7 @@
       },
       "massif": "Apremont Dames",
       "parcelles": "714",
+      "secteur": "forêt domaniale",
       "type_de_chaos": "D"
     },
     {
@@ -5315,6 +5319,7 @@
       },
       "massif": "Apremont Désert",
       "parcelles": "710 716",
+      "secteur": "forêt domaniale",
       "type_de_chaos": "D/C"
     },
     {
@@ -5324,6 +5329,7 @@
       },
       "massif": "Apremont Envers",
       "parcelles": "711N 712N 713N",
+      "secteur": "forêt domaniale",
       "type_de_chaos": "C"
     },
     {
@@ -5333,12 +5339,14 @@
       },
       "massif": "Apremont Gorges",
       "parcelles": "712 713",
+      "secteur": "forêt domaniale",
       "type_de_chaos": "C"
     },
     {
       "coordonne": null,
       "massif": "Boigneville",
       "parcelles": "",
+      "secteur": "Essonne",
       "type_de_chaos": ""
     },
     {
@@ -5348,6 +5356,7 @@
       },
       "massif": "Bois Rond",
       "parcelles": "85 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "D"
     },
     {
@@ -5357,6 +5366,7 @@
       },
       "massif": "Bouligny",
       "parcelles": "",
+      "secteur": "Essonne",
       "type_de_chaos": ""
     },
     {
@@ -5366,6 +5376,7 @@
       },
       "massif": "Buthiers Canard",
       "parcelles": "",
+      "secteur": "sud",
       "type_de_chaos": ""
     },
     {
@@ -5375,6 +5386,7 @@
       },
       "massif": "Buthiers L'I",
       "parcelles": "",
+      "secteur": "sud",
       "type_de_chaos": ""
     },
     {
@@ -5384,6 +5396,7 @@
       },
       "massif": "Calvaire",
       "parcelles": "387",
+      "secteur": "forêt domaniale",
       "type_de_chaos": "A/C"
     },
     {
@@ -5393,12 +5406,14 @@
       },
       "massif": "Canche aux Merciers",
       "parcelles": "106 107 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": ""
     },
     {
       "coordonne": null,
       "massif": "Chaintreauville",
       "parcelles": "",
+      "secteur": "",
       "type_de_chaos": ""
     },
     {
@@ -5408,6 +5423,7 @@
       },
       "massif": "Chamarande",
       "parcelles": "",
+      "secteur": "Essonne",
       "type_de_chaos": ""
     },
     {
@@ -5417,6 +5433,7 @@
       },
       "massif": "Cul de Chien",
       "parcelles": "133 134 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "E/D"
     },
     {
@@ -5426,6 +5443,7 @@
       },
       "massif": "Cuvier Bas",
       "parcelles": "884 883 882W",
+      "secteur": "forêt domaniale",
       "type_de_chaos": "E"
     },
     {
@@ -5435,6 +5453,7 @@
       },
       "massif": "Cuvier Rempart",
       "parcelles": "882",
+      "secteur": "forêt domaniale",
       "type_de_chaos": "C/E"
     },
     {
@@ -5444,6 +5463,7 @@
       },
       "massif": "Dame Jouanne",
       "parcelles": "109 111",
+      "secteur": "sud",
       "type_de_chaos": "C/D"
     },
     {
@@ -5453,6 +5473,7 @@
       },
       "massif": "Dampierre Maincourt",
       "parcelles": "",
+      "secteur": "Yvelines",
       "type_de_chaos": ""
     },
     {
@@ -5462,6 +5483,7 @@
       },
       "massif": "Demoiselles",
       "parcelles": "148",
+      "secteur": "forêt domaniale",
       "type_de_chaos": "C"
     },
     {
@@ -5471,6 +5493,7 @@
       },
       "massif": "Diplodocus",
       "parcelles": "163 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "E"
     },
     {
@@ -5480,6 +5503,7 @@
       },
       "massif": "Drei Zinnen",
       "parcelles": "84 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "C"
     },
     {
@@ -5489,6 +5513,7 @@
       },
       "massif": "Eléphant",
       "parcelles": "147",
+      "secteur": "sud",
       "type_de_chaos": "C/D"
     },
     {
@@ -5498,6 +5523,7 @@
       },
       "massif": "Étréchy",
       "parcelles": "",
+      "secteur": "Essonne",
       "type_de_chaos": ""
     },
     {
@@ -5507,6 +5533,7 @@
       },
       "massif": "Feuillardière",
       "parcelles": "100 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "E"
     },
     {
@@ -5516,6 +5543,7 @@
       },
       "massif": "Franchard Crête Sud",
       "parcelles": "764S",
+      "secteur": "forêt domaniale",
       "type_de_chaos": ""
     },
     {
@@ -5525,6 +5553,7 @@
       },
       "massif": "Franchard Cuisinière",
       "parcelles": "764N",
+      "secteur": "forêt domaniale",
       "type_de_chaos": "C"
     },
     {
@@ -5534,6 +5563,7 @@
       },
       "massif": "Franchard Ermitage",
       "parcelles": "762 763NE",
+      "secteur": "forêt domaniale",
       "type_de_chaos": "E"
     },
     {
@@ -5543,6 +5573,7 @@
       },
       "massif": "Franchard Hautes-Plaines",
       "parcelles": "771",
+      "secteur": "forêt domaniale",
       "type_de_chaos": "C"
     },
     {
@@ -5552,6 +5583,7 @@
       },
       "massif": "Franchard Isatis",
       "parcelles": "766",
+      "secteur": "forêt domaniale",
       "type_de_chaos": "E/D"
     },
     {
@@ -5561,6 +5593,7 @@
       },
       "massif": "Franchard Sablons",
       "parcelles": "772",
+      "secteur": "forêt domaniale",
       "type_de_chaos": "C"
     },
     {
@@ -5570,6 +5603,7 @@
       },
       "massif": "Gorge aux Châts",
       "parcelles": "101TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "C"
     },
     {
@@ -5579,6 +5613,7 @@
       },
       "massif": "Gorges du Houx",
       "parcelles": "112",
+      "secteur": "forêt domaniale",
       "type_de_chaos": "C"
     },
     {
@@ -5588,6 +5623,7 @@
       },
       "massif": "Grande Montagne",
       "parcelles": "149 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "C"
     },
     {
@@ -5597,6 +5633,7 @@
       },
       "massif": "Gros Sablons",
       "parcelles": "114 118 123 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "C"
     },
     {
@@ -5606,6 +5643,7 @@
       },
       "massif": "J.A.Martin / R. Cailleau",
       "parcelles": "170 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "C"
     },
     {
@@ -5615,6 +5653,7 @@
       },
       "massif": "Jean des Vignes",
       "parcelles": "129 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "D"
     },
     {
@@ -5624,6 +5663,7 @@
       },
       "massif": "Justice de Chambergeot",
       "parcelles": "116 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "C"
     },
     {
@@ -5633,6 +5673,7 @@
       },
       "massif": "La Troche",
       "parcelles": "",
+      "secteur": "Essonne",
       "type_de_chaos": ""
     },
     {
@@ -5642,6 +5683,7 @@
       },
       "massif": "Maisse le Patouillat",
       "parcelles": "",
+      "secteur": "Essonne",
       "type_de_chaos": ""
     },
     {
@@ -5651,6 +5693,7 @@
       },
       "massif": "Maunoury",
       "parcelles": "110",
+      "secteur": "sud",
       "type_de_chaos": "C"
     },
     {
@@ -5660,6 +5703,7 @@
       },
       "massif": "Mont-Aigu",
       "parcelles": "114",
+      "secteur": "forêt domaniale",
       "type_de_chaos": "C"
     },
     {
@@ -5669,18 +5713,21 @@
       },
       "massif": "Mont Olivet",
       "parcelles": "",
+      "secteur": "sud",
       "type_de_chaos": ""
     },
     {
       "coordonne": null,
       "massif": "Monts et Merveille",
       "parcelles": "",
+      "secteur": "forêt domaniale",
       "type_de_chaos": ""
     },
     {
       "coordonne": null,
       "massif": "Montussiennes",
       "parcelles": "",
+      "secteur": "forêt domaniale",
       "type_de_chaos": ""
     },
     {
@@ -5690,6 +5737,7 @@
       },
       "massif": "Mont-Ussy",
       "parcelles": "264W",
+      "secteur": "forêt domaniale",
       "type_de_chaos": "C/A"
     },
     {
@@ -5699,6 +5747,7 @@
       },
       "massif": "Padôle",
       "parcelles": "",
+      "secteur": "Essonne",
       "type_de_chaos": ""
     },
     {
@@ -5708,6 +5757,7 @@
       },
       "massif": "Padôle cent marches",
       "parcelles": "",
+      "secteur": "Essonne",
       "type_de_chaos": ""
     },
     {
@@ -5717,6 +5767,7 @@
       },
       "massif": "Pendu d'Huison",
       "parcelles": "",
+      "secteur": "Essonne",
       "type_de_chaos": ""
     },
     {
@@ -5726,12 +5777,14 @@
       },
       "massif": "Petit Bois de St Pierre de Nemours",
       "parcelles": "",
+      "secteur": "sud",
       "type_de_chaos": ""
     },
     {
       "coordonne": null,
       "massif": "Pierre Glissoire",
       "parcelles": "",
+      "secteur": "Essonne",
       "type_de_chaos": ""
     },
     {
@@ -5741,6 +5794,7 @@
       },
       "massif": "Pignon Poteau",
       "parcelles": "114 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "C/B"
     },
     {
@@ -5750,6 +5804,7 @@
       },
       "massif": "Potala",
       "parcelles": "162 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "C"
     },
     {
@@ -5759,6 +5814,7 @@
       },
       "massif": "Puiselet",
       "parcelles": "",
+      "secteur": "sud",
       "type_de_chaos": ""
     },
     {
@@ -5768,6 +5824,7 @@
       },
       "massif": "Recloses",
       "parcelles": "",
+      "secteur": "forêt domaniale",
       "type_de_chaos": ""
     },
     {
@@ -5777,6 +5834,7 @@
       },
       "massif": "Restant du Long Rocher",
       "parcelles": "539 549",
+      "secteur": "forêt domaniale",
       "type_de_chaos": "C/D"
     },
     {
@@ -5786,6 +5844,7 @@
       },
       "massif": "Restant du Long Rocher Plaine verte",
       "parcelles": "",
+      "secteur": "forêt domaniale",
       "type_de_chaos": ""
     },
     {
@@ -5795,6 +5854,7 @@
       },
       "massif": "Restant du Long Rocher Sud",
       "parcelles": "",
+      "secteur": "forêt domaniale",
       "type_de_chaos": ""
     },
     {
@@ -5804,6 +5864,7 @@
       },
       "massif": "Roche aux Dames - Mondeville",
       "parcelles": "",
+      "secteur": "Essonne",
       "type_de_chaos": ""
     },
     {
@@ -5813,6 +5874,7 @@
       },
       "massif": "Roche aux Oiseaux",
       "parcelles": "",
+      "secteur": "Trois Pignons",
       "type_de_chaos": ""
     },
     {
@@ -5822,6 +5884,7 @@
       },
       "massif": "Roche aux Sabots",
       "parcelles": "141 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "D"
     },
     {
@@ -5831,6 +5894,7 @@
       },
       "massif": "Roche Hercule",
       "parcelles": "263",
+      "secteur": "forêt domaniale",
       "type_de_chaos": ""
     },
     {
@@ -5840,6 +5904,7 @@
       },
       "massif": "Rocher Canon",
       "parcelles": "858",
+      "secteur": "forêt domaniale",
       "type_de_chaos": "C/D"
     },
     {
@@ -5849,6 +5914,7 @@
       },
       "massif": "Rocher d'Avon",
       "parcelles": "32 33 34 35",
+      "secteur": "forêt domaniale",
       "type_de_chaos": "C"
     },
     {
@@ -5858,6 +5924,7 @@
       },
       "massif": "Rocher de Chatillon",
       "parcelles": "",
+      "secteur": "Essonne",
       "type_de_chaos": ""
     },
     {
@@ -5867,6 +5934,7 @@
       },
       "massif": "Rocher de la Cathédrale",
       "parcelles": "162 169 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "C"
     },
     {
@@ -5876,6 +5944,7 @@
       },
       "massif": "Rocher de la Reine",
       "parcelles": "84 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "B/C"
     },
     {
@@ -5885,6 +5954,7 @@
       },
       "massif": "Rocher de Milly",
       "parcelles": "785",
+      "secteur": "forêt domaniale",
       "type_de_chaos": "D/C"
     },
     {
@@ -5894,6 +5964,7 @@
       },
       "massif": "Rocher de Milly / Corne-Biche",
       "parcelles": "74 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "C"
     },
     {
@@ -5903,6 +5974,7 @@
       },
       "massif": "Rocher des Potets",
       "parcelles": "133 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "E"
     },
     {
@@ -5912,6 +5984,7 @@
       },
       "massif": "Rocher des Troubadours",
       "parcelles": "",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "E"
     },
     {
@@ -5921,6 +5994,7 @@
       },
       "massif": "Rocher du Duc - Hameau",
       "parcelles": "",
+      "secteur": "Essonne",
       "type_de_chaos": ""
     },
     {
@@ -5930,6 +6004,7 @@
       },
       "massif": "Rocher du Duc - Loutteville",
       "parcelles": "",
+      "secteur": "Essonne",
       "type_de_chaos": ""
     },
     {
@@ -5939,6 +6014,7 @@
       },
       "massif": "Rocher du Duc - Nainville",
       "parcelles": "",
+      "secteur": "Essonne",
       "type_de_chaos": ""
     },
     {
@@ -5948,6 +6024,7 @@
       },
       "massif": "Rocher du Duc -Télégraphe",
       "parcelles": "",
+      "secteur": "Essonne",
       "type_de_chaos": ""
     },
     {
@@ -5957,6 +6034,7 @@
       },
       "massif": "Rocher du Général",
       "parcelles": "145 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "C/D"
     },
     {
@@ -5966,6 +6044,7 @@
       },
       "massif": "Rocher fin",
       "parcelles": "146 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "D/E"
     },
     {
@@ -5975,6 +6054,7 @@
       },
       "massif": "Rocher Guichot",
       "parcelles": "167 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "E"
     },
     {
@@ -5984,6 +6064,7 @@
       },
       "massif": "Rocher Mignot",
       "parcelles": "",
+      "secteur": "Essonne",
       "type_de_chaos": ""
     },
     {
@@ -5993,6 +6074,7 @@
       },
       "massif": "Rocher Saint-Germain",
       "parcelles": "241",
+      "secteur": "forêt domaniale",
       "type_de_chaos": "E/D"
     },
     {
@@ -6002,6 +6084,7 @@
       },
       "massif": "Sanglier",
       "parcelles": "",
+      "secteur": "Essonne",
       "type_de_chaos": ""
     },
     {
@@ -6011,6 +6094,7 @@
       },
       "massif": "Ségognole",
       "parcelles": "138 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "D"
     },
     {
@@ -6020,6 +6104,7 @@
       },
       "massif": "Télégraphe",
       "parcelles": "100 TP",
+      "secteur": "Trois Pignons",
       "type_de_chaos": "A"
     },
     {
@@ -6029,6 +6114,7 @@
       },
       "massif": "Troglodytes",
       "parcelles": "",
+      "secteur": "sud",
       "type_de_chaos": ""
     },
     {
@@ -6038,6 +6124,7 @@
       },
       "massif": "Vallée Casse-Pot",
       "parcelles": "",
+      "secteur": "sud",
       "type_de_chaos": ""
     },
     {
@@ -6047,6 +6134,7 @@
       },
       "massif": "Vaux de Cernay",
       "parcelles": "",
+      "secteur": "Yvelines",
       "type_de_chaos": ""
     },
     {
@@ -6056,6 +6144,7 @@
       },
       "massif": "Videlles les Roches",
       "parcelles": "",
+      "secteur": "Essonne",
       "type_de_chaos": ""
     },
     {
@@ -6065,6 +6154,7 @@
       },
       "massif": "Villeneuve-sur-Auvers",
       "parcelles": "",
+      "secteur": "Essonne",
       "type_de_chaos": ""
     }
   ]

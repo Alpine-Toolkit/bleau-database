@@ -85,6 +85,9 @@ class FromJsonMixin:
                 else:
                     value = factory(value)
             setattr(self, key, value)
+        for key in fields:
+            if key not in kwargs:
+                setattr(self, key, None)
 
     ##############################################
 
@@ -138,6 +141,7 @@ class Massif(WithCoordinate):
         Field('coordonne', Coordonne),
         Field('type_de_chaos', str),
         Field('parcelles', str),
+        Field('secteur', str),
     )
 
     ##############################################
@@ -155,6 +159,7 @@ massif: {0.massif}
 coordonné: {0.coordonne}
 type_de_chaos: {0.type_de_chaos}
 parcelles: {0.parcelles}
+secteur: {0.secteur}
 '''
         return template.format(self)
 
@@ -266,11 +271,11 @@ class BleauDataBase:
 
     @property
     def massifs(self):
-        return self._massifs.values()
+        return iter(sorted(self._massifs.values()))
 
     @property
     def circuits(self):
-        return iter(self._circuits)
+        return iter(sorted(self._circuits))
 
     ##############################################
 
@@ -295,8 +300,8 @@ class BleauDataBase:
     def to_json(self, json_file, sort_keys=False):
 
         data = OrderedDict(
-            massifs=[massif.to_json() for massif in sorted(self.massifs)],
-            circuits=[circuit.to_json(self) for circuit in sorted(self.circuits)],
+            massifs=[massif.to_json() for massif in self.massifs],
+            circuits=[circuit.to_json(self) for circuit in self.circuits],
         )
         
         with open(json_file, 'w', encoding='utf8') as f:
