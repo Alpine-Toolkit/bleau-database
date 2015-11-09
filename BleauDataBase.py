@@ -142,6 +142,12 @@ class Massif(WithCoordinate):
         Field('type_de_chaos', str),
         Field('parcelles', str),
         Field('secteur', str),
+        Field('acces', str),
+        Field('itineraire', str),
+        Field('velo', str),
+        Field('rdv', str),
+        Field('notes', str),
+        Field('nom', str),
     )
 
     ##############################################
