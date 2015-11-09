@@ -16,7 +16,7 @@ from setup_data import long_description
 subprocess.call('python setup.py --long-description | rst2html > README.html', shell=True)
 
 ####################################################################################################
-# 
+#
 # End
-# 
+#
 ####################################################################################################
