@@ -2,16 +2,18 @@
 #
 # Copyright (C) Salvaire Fabrice 2015
 #
-# This program is free software: you can redistribute it and/or modify it under the terms of the GNU
-# General Public License as published by the Free Software Foundation, either version 3 of the
-# License, or (at your option) any later version.
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
 #
-# This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without
-# even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-# General Public License for more details.
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
 #
-# You should have received a copy of the GNU General Public License along with this program.  If
-# not, see <http://www.gnu.org/licenses/>.
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ####################################################################################################
 
@@ -19,9 +21,19 @@
 
 import json
 import locale
+import math
 import urllib.request
 
 from collections import OrderedDict
+
+try:
+    import rtree
+except:
+    rtree = None
+
+####################################################################################################
+
+from .Projection import GeoAngle, GeoCoordinate
 
 ####################################################################################################
 
@@ -111,9 +123,31 @@ class Coordonne(FromJsonMixin):
 
         return '({0.latitude}, {0.longitude})'.format(self)
 
+    ##############################################
+
+    @property
+    def geo_coordinate(self):
+        return GeoCoordinate(GeoAngle(self.longitude), GeoAngle(self.latitude))
+
+    @property
+    def mercator(self):
+        return self.geo_coordinate.mercator
+
+    @property
+    def bounding_box(self):
+        x, y = self.geo_coordinate.mercator
+        return (x, y, x, y)
+
 ####################################################################################################
 
 class WithCoordinate(FromJsonMixin):
+
+    ##############################################
+
+    def __init__(self, bleau_database, **kwargs):
+
+        super().__init__(**kwargs)
+        self.bleau_database = bleau_database
 
     ##############################################
 
@@ -131,6 +165,20 @@ class WithCoordinate(FromJsonMixin):
 
         # return locale.strcoll(str(self), str(other))
         return locale.strxfrm(str(self)) < locale.strxfrm(str(other))
+
+    ##############################################
+
+    def nearest(self, number_of_items=1):
+
+        return self.bleau_database.nearest_massif(self, number_of_items)
+
+    ##############################################
+
+    def distance_to(self, item):
+
+        x0, y0 = self.coordonne.mercator
+        x1, y1 = item.coordonne.mercator
+        return math.sqrt((x1 - x0)**2 + (y1 - y0)**2)
 
 ####################################################################################################
 
@@ -152,6 +200,29 @@ class Massif(WithCoordinate):
         Field('velo', str),
         # propreté fréquentation exposition débutant
     )
+
+    ##############################################
+
+    def __init__(self, bleau_database, **kwargs):
+
+        super().__init__(bleau_database, **kwargs)
+        
+        self._circuits = set()
+
+    ##############################################
+
+    def add_circuit(self, circuit):
+        self._circuits.add(circuit)
+
+    ##############################################
+
+    def __len__(self):
+        return len(self._circuits)
+
+    ##############################################
+
+    def __iter__(self):
+        return iter(self._circuits)
 
     ##############################################
 
@@ -191,8 +262,16 @@ class Circuit(WithCoordinate):
 
     ##############################################
 
+    def __init__(self, bleau_database, **kwargs):
+
+        super().__init__(bleau_database, **kwargs)
+        
+        self.massif.add_circuit(self)
+
+    ##############################################
+
     def __str__(self):
-        return '{0.massif}-{0.numero}'.format(self)
+        return '{0.massif}-{0.numero}-{0.cotation}'.format(self)
 
     ##############################################
 
@@ -248,20 +327,30 @@ class BleauDataBase:
 
     def __init__(self, json_file=None):
 
+        self._rtree_massif = None
+        self._rtree_circuit = None
+        self._ids = {}
+        
         if json_file is not None:
             with open(json_file, encoding='utf8') as f:
                 data = json.load(f)
-            massifs = [Massif(**massif_dict) for massif_dict in data['massifs']]
+            massifs = [Massif(self, **massif_dict) for massif_dict in data['massifs']]
             self._massifs = {}
             for massif in massifs:
                 self.add_massif(massif)
             self._circuits = []
             for circuit_dict in data['circuits']:
                 circuit_dict['massif'] = self._massifs[circuit_dict['massif']]
-                self.add_circuit(Circuit(**circuit_dict))
+                self.add_circuit(Circuit(self, **circuit_dict))
         else:
             self._massifs = {}
             self._circuits = []
+
+    ##############################################
+
+    # def __del__(self):
+
+    #     del self._rtree
 
     ##############################################
 
@@ -315,6 +404,46 @@ class BleauDataBase:
         
         with open(json_file, 'w', encoding='utf8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False, sort_keys=sort_keys)
+
+    ##############################################
+
+    def _build_rtree(self, items):
+
+        rtree_ = rtree.index.Index()
+        for item in items:
+            if item.coordonne is not None:
+                rtree_.insert(id(item), item.coordonne.bounding_box, obj=item)
+                self._ids[id(item)] = item
+        return rtree_
+
+    ##############################################
+
+    @property
+    def rtree_massif(self):
+
+        if self._rtree_massif is None:
+            self._rtree_massif = self._build_rtree(self.massifs)
+        return self._rtree_massif
+
+    ##############################################
+
+    @property
+    def rtree_circuit(self):
+
+        if self._rtree_circuit is None:
+            self._rtree_circuit = self._build_rtree(self.circuits)
+        return self._rtree_circuit
+
+    ##############################################
+
+    def nearest_massif(self, item, number_of_items=1):
+
+        number_of_items += 1
+        rtree_ = self.rtree_massif
+        # Fixme: segfault ???
+        # return [x.object for x in rtree.nearest(item.coordonne.bounding_box, number_of_items, objects=True)]
+        items = [self._ids[x] for x in rtree_.nearest(item.coordonne.bounding_box, number_of_items)]
+        return [x for x in items if x is not item]
 
 ####################################################################################################
 #

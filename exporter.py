@@ -27,7 +27,7 @@ from html.parser import HTMLParser
 
 ####################################################################################################
 
-from BleauDataBase import Massif, Circuit, BleauDataBase
+from BleauDataBase.BleauDataBase import Massif, Circuit, BleauDataBase
 
 ####################################################################################################
 

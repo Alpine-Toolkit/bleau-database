@@ -23,7 +23,7 @@
 
 import argparse
 
-from BleauDataBase import BleauDataBase
+from BleauDataBase.BleauDataBase import BleauDataBase
 
 ####################################################################################################
 
@@ -53,7 +53,16 @@ print('Nombre de circuits avec topos:', bleau_database.nombre_de_circuits_avec_t
 #     print(circuit.str_long())
 
 # for massif in bleau_database.massifs:
+#     if massif.coordonne:
+#         print(massif, massif.coordonne.mercator)
 #     print(massif.str_long())
+
+# bleau_database.build_rtree()
+massif = bleau_database['Potala']
+for circuit in massif:
+    print(str(circuit))
+# print([(str(x), massif.distance_to(x))
+#        for x in massif.nearest(number_of_items=10)])
 
 if args.get_pdf:
     for circuit in bleau_database.circuits:
