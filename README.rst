@@ -26,6 +26,13 @@ Description en Français
 Ce dépôt contient une base de données au format JSON des sites d'escalade de la région de
 Fontainebleau (bleau) constitué à partir de données du |Cosiroc|_ et du |Gums|_.
 
+Contenu de la base de données:
+
+* Régions: Forêt Domaniale, Trois Pignons, Sud de Fontainebleau, Essonne, Yvelines
+* Nombre de massifs: 90
+* Nombre de circuits: 337
+* Nombre de circuits avec topos: 183
+
 Le format JSON offre plusieurs avantages:
 
 * il permet d'accéder aux données depuis une page web (dynamic HTML),
@@ -89,5 +96,9 @@ Exemple avec commentaires:
         },
       ]
     }
+
+Les coordonnées utilisent le référentiel `EPSG:4326 <http://spatialreference.org/ref/epsg/wgs-84/>`_
+(WGS 84). Attention les GPS de smartphones sont moins précis que les GPS autonomes (antenne active,
+SBAS), la résolution est de l'ordre de 15 m en temps réel.
 
 .. End
