@@ -5322,7 +5322,7 @@
       "parcelles": "719",
       "point_deau": false,
       "rdv": "Prendre vers le S la route Marie-Thérèse. Au premier virage à gauche, continuer tout droit par le chemin de terre. Environ cent mètres plus loin, prendre à droite la route des Gorges d'Apremont (GR) vers l' WNW sur 100 m puis à gauche une sente direction SW qui croise une centaine de mètres plus loin les circuits Rouge et Orange. Le rendez-vous est au niveau dès n° 6 Rouge et 13 Orange.",
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": "D/C",
       "velo": "8 km depuis Bois-le-Roi (train Gare de Lyon, direction Laroche Migennes, 35’)"
     },
@@ -5340,7 +5340,7 @@
       "parcelles": "714",
       "point_deau": false,
       "rdv": "Prendre vers le S le sentier parallèle à la route Marie-Thérèse à droite de la route (balises vert-blanc et traits jaunes). Environ 400 m plus loin, quand le sentier tourne légèrement à gauche vers le SSE (avant d’arriver à la route des Gorges d’Apremont et aux premiers rochers d’Apremont-Bizons), traverser à vue vers la droite (W) et rejoindre ~ 100 m plus loin un très grand bloc (N°1 bleu, N°6 noir, et départ Orange juste derrière). Le rendez-vous est ~50 m plus loin vers l’W (ne pas monter) près du bloc portant les N°11, 12, 13, 14 Bleu et N°9 Orange.",
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": "D",
       "velo": "8 km depuis Bois-le-Roi (train Gare de Lyon, direction Laroche Migennes, 35’)"
     },
@@ -5358,7 +5358,7 @@
       "parcelles": "710 716",
       "point_deau": false,
       "rdv": "Du Bas-Bréau, suivre (E) la route de Barbizon à Fontainebleau jusqu'au carrefour de Clair-Bois (On peut aussi rejoindre le carrefour de Clair-Bois en partant du carrefour de l'Epine (N7)). Prendre à droite (SSE) la route de Clair-Bois sur un peu plus de 200m jusquà un beau bloc arrondi à gauche de la route marqué discrètement d'un « D » jaune et d'une flèche. Prendre à gauche (direction Est) une sente qui passe au départ du circuit Jaune, puis à gauche du 1 Jaune puis à droite du 1b Jaune. Continuer dans la même direction jusqu'aux 8 et 9 Jaune (Un peu plus de 100m depuis le bloc au bord de la Route de Clair Bois).",
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": "D/C",
       "velo": "8 km depuis Bois-le-Roi (train Gare de Lyon, direction Laroche Migennes, 35’)"
     },
@@ -5376,7 +5376,7 @@
       "parcelles": "711N 712N 713N",
       "point_deau": false,
       "rdv": "Prendre (E) la route de Barbizon à Fontainebleau sur 250 m.  Puis prendre à droite (S) la route du Dormoir sur environ 50 m jusqu'aux départs des circuits jaune et rouge.  Monter sur le crête jusqu'à un replat près des blocs No 6 rouge et No 14 jaune.",
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": "C",
       "velo": "8 km depuis Bois-le-Roi (train Gare de Lyon, direction Laroche Migennes, 35’)"
     },
@@ -5394,7 +5394,7 @@
       "parcelles": "712 713",
       "point_deau": false,
       "rdv": "Prendre à droite (S) la route Marie-Thérèse (alternativement, un sentier longe la route à gauche). Environ 200m plus loin prendre un chemin en biais à gauche, qui s'éloigne de la route de quelques dizaines de mètres et la suit à distance. On traverse un groupe de beaux chênes, marqués de ronds bleus et on continue jusqu'à une vaste clairière sablonneuse (ancien parking). La traverser, et au delà de la barrière ONF prendre la Route des Gorges d'Apremont sur 300 m jusqu'au croisement de la Route de la Solitude.",
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": "C",
       "velo": "8 km depuis Bois-le-Roi (train Gare de Lyon, direction Laroche Migennes, 35’)"
     },
@@ -5463,7 +5463,7 @@
       "parcelles": null,
       "point_deau": false,
       "rdv": null,
-      "secteur": "sud",
+      "secteur": "Sud",
       "type_de_chaos": null,
       "velo": null
     },
@@ -5481,7 +5481,7 @@
       "parcelles": null,
       "point_deau": false,
       "rdv": null,
-      "secteur": "sud",
+      "secteur": "Sud",
       "type_de_chaos": null,
       "velo": null
     },
@@ -5499,7 +5499,7 @@
       "parcelles": "387",
       "point_deau": false,
       "rdv": null,
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": "A/C",
       "velo": null
     },
@@ -5586,7 +5586,7 @@
       "parcelles": "884 883 882W",
       "point_deau": false,
       "rdv": "Traverser les rochers vers le Nord Est (200 m) jusqu'au grand bloc qui accueille la célèbre fissure Prestat (n°50 Orange). Dos à la fissure, monter d'une vingtaine de mètres vers le NW. RDV entre les n°3 et 4 du Bleu D-.",
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": "E",
       "velo": "7 km depuis Bois-le-Roi (train Gare de Lyon, direction Laroche Migennes, 35')"
     },
@@ -5604,7 +5604,7 @@
       "parcelles": "882",
       "point_deau": false,
       "rdv": "Prendre l'allée forestière de Mory de Neuflieux jusqu'à croiser celle de Bellevue Monter dans la pente à gauche (flèches jaunes, aérolithe) jusqu'au sommet du rempart. Longer le versant N (GR) jusqu'à la fissure Mummery Rouge n°12.",
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": "C/E",
       "velo": null
     },
@@ -5622,7 +5622,7 @@
       "parcelles": "109 111",
       "point_deau": false,
       "rdv": "Prendre à droite du restaurant le GR qui monte en oblique vers la gauche. RdV près de grands blocs à gauche du GR (passer devant le départ du Jaune) et à 50m du grand rocher de la Dalle de Feu.",
-      "secteur": "sud",
+      "secteur": "Sud",
       "type_de_chaos": "C/D",
       "velo": "8 km depuis Bourron-Marlotte (train Gare de Lyon, direction Montargis, 55')"
     },
@@ -5658,7 +5658,7 @@
       "parcelles": "148",
       "point_deau": false,
       "rdv": "Prendre la Route des Filles, puis gagner le plateau à droite par la route de la Séduction. Suivre à gauche le tracé Bleu n°9. Passer à droite de la Mare aux Salamandres. Au carrefour de chemins suivant, prendre à droite sur environ 100m puis à gauche le tracé bleu qui longe la base de la platière, jusqu'à un auvent marqué d'un Y. Rendez-vous au-dessus.",
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": "C",
       "velo": null
     },
@@ -5712,7 +5712,7 @@
       "parcelles": "147",
       "point_deau": false,
       "rdv": "Gagner par l'W, en longeant la base du massif rocheux, la roche à jambages de l'Eléphant, puis après 100m, monter à droite sur la platière. Rendez-vous au bord S d'icelle, non loin de l'arrivée du circuit jaune.",
-      "secteur": "sud",
+      "secteur": "Sud",
       "type_de_chaos": "C/D",
       "velo": "9 km depuis Bourron-Marlotte (train Gare de Lyon, direction Montargis, 55’)"
     },
@@ -5766,7 +5766,7 @@
       "parcelles": "764S",
       "point_deau": false,
       "rdv": null,
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": null,
       "velo": null
     },
@@ -5784,7 +5784,7 @@
       "parcelles": "764N",
       "point_deau": false,
       "rdv": "Prendre vers l'ESE la route de l'Isatis, qui rejoint la route du Renardeau. Continuer vers l'E par le GR, traverser la route des Buttes de Fontainebleau. Continuer par le GR jusqu'au sommet du pignon. Rendez-vous près de dalles horizontales sous des rochers surplombants au N° 21 Rouge.",
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": "C",
       "velo": "12 km depuis Fontainebleau (train Gare de Lyon, direction Montargis ou Laroche Migennes, 35')"
     },
@@ -5802,7 +5802,7 @@
       "parcelles": "762 763NE",
       "point_deau": false,
       "rdv": null,
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": "E",
       "velo": null
     },
@@ -5820,7 +5820,7 @@
       "parcelles": "771",
       "point_deau": false,
       "rdv": "Du parking continuer la route du Loup, puis à gauche la Route des Gorges de Franchard sur environ 150m. Remonter un sente à droite jusqu'à un gros bloc surplombant.",
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": "C",
       "velo": "12 km depuis Fontainebleau (train Gare de Lyon, direction Montargis ou Laroche Migennes, 35’)"
     },
@@ -5838,7 +5838,7 @@
       "parcelles": "766",
       "point_deau": false,
       "rdv": null,
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": "E/D",
       "velo": null
     },
@@ -5856,7 +5856,7 @@
       "parcelles": "772",
       "point_deau": false,
       "rdv": null,
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": "C",
       "velo": null
     },
@@ -5892,7 +5892,7 @@
       "parcelles": "112",
       "point_deau": false,
       "rdv": null,
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": "C",
       "velo": null
     },
@@ -6036,7 +6036,7 @@
       "parcelles": "110",
       "point_deau": false,
       "rdv": "Suivre le Chemin de la Chapelle-la-Reine sur 200m après la barrière. Prendre un chemin à gauche (E) - départ du sentier bleu 19 - sur 200m jusqu'à une plaine sableuse au débouché d'un vallon. Monter à droite (GR) jusqu'au sommet du pignon.",
-      "secteur": "sud",
+      "secteur": "Sud",
       "type_de_chaos": "C",
       "velo": "8 km depuis Bourron-Marlotte (train Gare de Lyon, direction Montargis, 55')"
     },
@@ -6054,7 +6054,7 @@
       "parcelles": "114",
       "point_deau": false,
       "rdv": "Par la route du Levreau rejoindre le carrefour de l'Emerillon (900 m). Monter à droite (NW) vers le sommet du pignon S du Mont Aigu. Rendez-vous à la grotte du serment, ou 150m plus loin en suivant le sentier bleue (NW).",
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": "C",
       "velo": "5 km depuis Fontainebleau (train Gare de Lyon, direction Montargis ou Laroche Migennes, 35’)"
     },
@@ -6072,7 +6072,7 @@
       "parcelles": null,
       "point_deau": false,
       "rdv": null,
-      "secteur": "sud",
+      "secteur": "Sud",
       "type_de_chaos": null,
       "velo": null
     },
@@ -6087,7 +6087,7 @@
       "parcelles": null,
       "point_deau": false,
       "rdv": null,
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": null,
       "velo": null
     },
@@ -6102,7 +6102,7 @@
       "parcelles": null,
       "point_deau": false,
       "rdv": null,
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": null,
       "velo": null
     },
@@ -6120,7 +6120,7 @@
       "parcelles": "264W",
       "point_deau": false,
       "rdv": "Suivre le sentier bleu en direction NW, puis N, sur environ 500m, jusqu’à la grotte des Montussiennes. Rdv devant l’entrée de la grotte, près du n°7 Orange.",
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": "C/A",
       "velo": "3 km depuis Fontainebleau (train Gare de Lyon, direction Montargis ou Laroche Migennes, 35')"
     },
@@ -6192,7 +6192,7 @@
       "parcelles": null,
       "point_deau": false,
       "rdv": "remonter la pente sur environ 50 m et rejoindre à gauche un replat au pied de la dalle du n° 9 Jaune.",
-      "secteur": "sud",
+      "secteur": "Sud",
       "type_de_chaos": null,
       "velo": "1 km depuis Nemours (train Gare de Lyon, direction Montargis, 1h)"
     },
@@ -6261,7 +6261,7 @@
       "parcelles": null,
       "point_deau": false,
       "rdv": "Continuer 150m jusqu'à une grande clairière. Prendre le GR à l'extrémité NO de la clairière (passage sous un porche isolé). Le suivre sur 250m, jusqu'à une vaste esplanade au pied du pignon E du Mont Sarrasin. Quitter le GR en montant vers la droite, RdV à 30 m entre les n° 6 et 7 orange.",
-      "secteur": "sud",
+      "secteur": "Sud",
       "type_de_chaos": null,
       "velo": "3 km depuis Nemours (train Gare de Lyon, direction Montargis, 1h)"
     },
@@ -6279,7 +6279,7 @@
       "parcelles": null,
       "point_deau": false,
       "rdv": null,
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": null,
       "velo": null
     },
@@ -6297,7 +6297,7 @@
       "parcelles": "539 549",
       "point_deau": false,
       "rdv": "Suivre la route du Languedoc vers le NE.  Après 150 m, on coupe le sentier bleu n°11. De là, continuer 200 m dans la même direction, le sentier monte sur la platière.  Rendez-vous en bord de platière, vers la droite en vue de la grotte Béatrix.",
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": "C/D",
       "velo": "4 km/3km depuis la gare de Montigny (train Gare de Lyon, direction Montargis, 55’)"
     },
@@ -6315,7 +6315,7 @@
       "parcelles": null,
       "point_deau": false,
       "rdv": null,
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": null,
       "velo": null
     },
@@ -6333,7 +6333,7 @@
       "parcelles": null,
       "point_deau": false,
       "rdv": null,
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": null,
       "velo": null
     },
@@ -6405,7 +6405,7 @@
       "parcelles": "263",
       "point_deau": false,
       "rdv": null,
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": null,
       "velo": null
     },
@@ -6423,7 +6423,7 @@
       "parcelles": "858",
       "point_deau": "Gare de Bois-le-Roi",
       "rdv": "Du parking, suivre les caillebotis en bois, les quitter au niveau du sentier balisé en jaune avec des poteaux. Le suivre NW, il vous amène au départ du circuit Jaune. Les blocs 18, 19, 20 du circuit Bleu sont à proximité sur la gauche. Le RDV est situé juste derrière, dans une vaste clairière.",
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": "C/D",
       "velo": "2 km depuis Bois-le-Roi (train Gare de Lyon, direction Laroche Migennes, 35’)"
     },
@@ -6441,7 +6441,7 @@
       "parcelles": "32 33 34 35",
       "point_deau": false,
       "rdv": null,
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": "C",
       "velo": null
     },
@@ -6512,8 +6512,8 @@
       "notes": null,
       "parcelles": "785",
       "point_deau": false,
-      "rdv": "Poursuivre le chemin jusqu'à l'extrémité de la plaine (1,4 km), en limite de forêt domaniale de Fontainebleau (borne de grès à un carrefour). Une sente en biais à gauche (NE) conduit au départ des circuits Orange et Bleu. Suivre la sente en laissant à gauche le bleu n°7, puis le n° 9 (petit chêne). RdV à 50m, dans la même direction, après avoir franchi un léger talweg, près du n° 15 Bleu.",
-      "secteur": "forêt domaniale",
+      "rdv": "Poursuivre le chemin jusqu'à l'extrémité de la plaine (1,4 km), en limite de Forêt Domaniale de Fontainebleau (borne de grès à un carrefour). Une sente en biais à gauche (NE) conduit au départ des circuits Orange et Bleu. Suivre la sente en laissant à gauche le bleu n°7, puis le n° 9 (petit chêne). RdV à 50m, dans la même direction, après avoir franchi un léger talweg, près du n° 15 Bleu.",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": "D/C",
       "velo": "15 km depuis Fontainebleau (train Gare de Lyon, direction Montargis ou Laroche Migennes, 35’)"
     },
@@ -6729,7 +6729,7 @@
       "parcelles": "241",
       "point_deau": false,
       "rdv": "Du parking, suivre vers l'O le sentier bleu 3-4 (route du Luxembourg) sur 150m. A la séparation des sentiers (rochers tabulaires), en vue de la grande étendue dégagée, prendre à droite le sentier bleu n°4. Après 150m ce sentier se divise en 2 branches (pancarte descriptive sur un bouleau et Y bleu sur rocher). Prendre la branche de gauche (W) et après 40m, au moment ou le sentier pénètre sous le couvert, prendre une sente bien marquée à droite. La remonter sur 200m, jusqu'à apercevoir, en bordure de massif, un haut bloc sur la gauche. Le RdV est au pied du bloc, entre les n° 27 et 28 Jaune.",
-      "secteur": "forêt domaniale",
+      "secteur": "Forêt Domaniale",
       "type_de_chaos": "E/D",
       "velo": "5 km depuis Fontainebleau (train Gare de Lyon, direction Montargis ou Laroche Migennes, 35')"
     },
@@ -6801,7 +6801,7 @@
       "parcelles": null,
       "point_deau": false,
       "rdv": null,
-      "secteur": "sud",
+      "secteur": "Sud",
       "type_de_chaos": null,
       "velo": null
     },
@@ -6819,7 +6819,7 @@
       "parcelles": null,
       "point_deau": false,
       "rdv": null,
-      "secteur": "sud",
+      "secteur": "Sud",
       "type_de_chaos": null,
       "velo": null
     },

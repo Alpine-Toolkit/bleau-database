@@ -3,12 +3,25 @@
 {% block body %}
   <div class="row">
     <div class="col-xl-12">
-      <h2>Massifs</h2>
-      <ul>
-	{% for massif in bleau_database.massifs %}
-	  <li><a href="/main/massif/{{ massif.massif }}">{{ massif.massif }}</a></li>
-	{% endfor %}
-      </ul>
+      <div class="jumbotron">
+	<h1 class="display-3">Bleau Database</h1>
+	<p class="lead">La base de données des sites d'escalade de la région de Fontainebleau</p>
+	<p class="lead">{{ bleau_database.nombre_de_massifs }} massifs
+	  et {{ bleau_database.nombre_de_circuits }} circuits
+	  dont {{ bleau_database.nombre_de_circuits_avec_topos  }} avec topo</p>
+	<hr class="m-y-md">
+	<p class="lead">
+	  <a class="btn btn-primary btn-lg" href="/main/a-propos" role="button">À propos</a>
+	</p>
+      </div>
+      <div class="row">
+	<div class="col-xl-3">
+	  <a class="btn btn-primary btn-lg" href="/main/massifs">Tous les Massifs</a></li>
+	</div>
+	<div class="col-xl-3">
+	  <a class="btn btn-primary btn-lg" href="/main/massifs-par-secteur">Massifs par Secteur</a></li>
+	</div>
+      </div>
     </div>
   </div>
 {% endblock %}

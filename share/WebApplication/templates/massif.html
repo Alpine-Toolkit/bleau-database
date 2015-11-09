@@ -8,19 +8,13 @@
 
   <div class="row">
     <div class="col-xl-12">
-      <h2>{{ massif.massif }}</h2>
-      <dl>
-	<dt>Nom / Massif</dt><dd>{{ massif.nom_or_massif }}</dd>
-        <dt>Massif</dt><dd>{{ massif.massif }}</dd>
-        <dt>Nom</dt><dd>{{ massif.nom }}</dd>
-        <dt>Secteur</dt><dd>{{ massif.secteur }}</dd>
-      </dl>
+      <h2>{{ massif.secteur }} ~ {{ massif.massif }} {% if massif.nom %} ~ {{ massif.nom }}{% endif %}</h2>
       <h3>Accés</h3>
       <dl>
 	<dt>Accés en voiture</dt>
 	<dd>
 	  {{ massif.acces }}
-	  <a href="{{ massif.itineraire }}">Itineraire Google Map</a>
+	  <br><a href="{{ massif.itineraire }}">Itineraire Google Map</a>
 	</dd>
         <dt>Accés à vélo {% if massif.a_pieds %}/ à pieds{% endif %}</dt>
 	<dd>{{ massif.velo }}</dd>
@@ -28,8 +22,8 @@
       <h3>Informations</h3>
       <dl>
 	<dt>Coordonnée WGS 84 (<a href="http://spatialreference.org/ref/epsg/wgs-84/">EPSG:4326</a>)</dt>
-	<dd>{{ massif.coordonne }}</dd>
-	<dt>Coordonnée Mercator (<a href="http://spatialreference.org/ref/epsg/.../">EPSG:</a>)</dt>
+	<dd>longitude, latitude = {{ massif.coordonne }}</dd>
+	<dt>Coordonnée Mercator (<a href="http://spatialreference.org/ref/sr-org/epsg3857-wgs84-web-mercator-auxiliary-sphere/">EPSG:3857</a>)</dt>
 	{% with mercator = massif.coordonne.mercator %}
 	  <dd>({{ mercator[0] | round | int }}, {{ mercator[1] | round | int }}) m</dd>
 	{% endwith %}
@@ -40,33 +34,55 @@
 	<dt>Type de chaos</dt><dd>{{ massif.type_de_chaos }}</dd>
       </dl>
       <h3>Circuits</h3>
-      <ul>
-	{% for circuit in massif %}
-	  <li>{{ circuit.cotation }} N° {{ circuit.numero }} {{ circuit.couleur }}
-	    {% for topo in circuit.topos %}
-	      <a href="{{ topo }}">{{ topo }}</a>
-	    {% endfor %}
-	  </li>
-	{% endfor %}
-      </ul>
-      <h3>Massifs à proximité</h3>
-      critère: 2 km à vol d'oiseau, donc plus long par route!
-      <ul>
-	{% with massif_voisins = massif.nearest(number_of_items=100, distance_max=2000) %}
-	  {% for massif_ in massif_voisins %}
-	    <li>
-	      {{ massif.distance_to(massif_) | round | int }} m
-	      <a href="/main/massif/{{ massif_.massif }}">{{ massif_.massif }}</a>
-	      {% for circuit in massif_ %}
-		{{ circuit.cotation }}
-	      {% endfor %}
-	    </li>
+      <table class="table table-sm">
+	<col style="width:5%">
+	<col style="width:5%">
+	<col style="width:10%">
+	<col style="width:80%">
+	<tbody>
+	  {% for circuit in massif %}
+	    <tr>
+	      <td>{{ circuit.cotation }}</td>
+	      <td>N° {{ circuit.numero }}</td>
+	      <td>{{ circuit.couleur }}</td>
+	      <td>
+		{% for topo in circuit.topos %}
+		  <a href="{{ topo }}">{{ topo|truncate(70) }}</a><br>
+		{% endfor %}
+	      </td>
+	    </tr>
 	  {% endfor %}
-	  {% if not massif_voisins %}
-	    aucun
-	  {% endif %}
-	{% endwith %}
-      </ul>
+	</tbody>
+      </table>
+      <h3>Massifs à proximité</h3>
+      <div class="alert alert-info" role="alert">
+	critère: 2 km à vol d'oiseau, donc prévoir plus long!
+      </div>
+      {% with massif_voisins = massif.nearest(number_of_items=100, distance_max=2000) %}
+	{% if massif_voisins %}
+	  <table class="table table-sm">
+	    <col style="width:10%">
+	    <tbody>
+	      {% for massif_ in massif_voisins %}
+		<tr>
+		  <td class="text-right">{{ massif.distance_to(massif_) | round | int }} m</td>
+		  <td/>
+		  <td><a href="/main/massif/{{ massif_.massif }}">{{ massif_.massif }}</a></td>
+		  <td>
+		    <ul class="list-inline">
+		      {% for circuit in massif_ %}
+			<li>{{ circuit.cotation }}</li>
+		      {% endfor %}
+		    </ul>
+		  </td>
+		</tr>
+	      {% endfor %}
+	    </tbody>
+	  </table>
+	{% else %}
+	  <p>aucun</p>
+	{% endif %}
+      {% endwith %}
     </div>
   </div>
 {% endblock %}

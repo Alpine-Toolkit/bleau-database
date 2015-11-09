@@ -1,0 +1,19 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "base.html" %}
+{% block body %}
+    <ul class="breadcrumb">
+    <li><a href="/main">Accueil</a></li>
+    <li class="active"> Massifs </li>
+  </ul>
+
+  <div class="row">
+    <div class="col-xl-12">
+      <h2>Massifs</h2>
+      <ul>
+	{% for massif in massifs %}
+	  <li><a href="/main/massif/{{ massif.massif }}">{{ massif.massif }}</a></li>
+	{% endfor %}
+      </ul>
+    </div>
+  </div>
+{% endblock %}

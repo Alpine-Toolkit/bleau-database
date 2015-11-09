@@ -121,7 +121,7 @@ class Coordonne(FromJsonMixin):
 
     def __str__(self):
 
-        return '({0.latitude}, {0.longitude})'.format(self)
+        return '({0.longitude}, {0.latitude})'.format(self)
 
     ##############################################
 
@@ -254,7 +254,7 @@ secteur: {0.secteur}
 
 ####################################################################################################
 
-_cotation_bases = ('EN', 'PD', 'AD', 'D', 'TD', 'ED')
+_cotation_bases = ('EN', 'F', 'PD', 'AD', 'D', 'TD', 'ED')
 _cotations = []
 for cotation in _cotation_bases:
     for suffix in '-', '', '+':
@@ -470,6 +470,16 @@ class BleauDataBase:
         if distance_max is not None:
             items = [x for x in items if item.distance_to(x) <= distance_max]
         return items
+
+    ##############################################
+
+    def filter_by(self, secteur=None):
+
+        massifs = self.massifs
+        if secteur is not None:
+            massifs = [massif for massif in massifs if massif.secteur == secteur]
+        
+        return massifs
 
 ####################################################################################################
 #

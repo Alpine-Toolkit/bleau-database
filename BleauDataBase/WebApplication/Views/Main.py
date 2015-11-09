@@ -34,6 +34,18 @@ main = Blueprint('main', __name__, url_prefix='/main')
 def index():
     return render_template('main.html', bleau_database=model.bleau_database)
 
+@main.route('/a-propos')
+def a_propos():
+    return render_template('a-propos.html')
+
+@main.route('/massifs')
+def massifs():
+    return render_template('massifs.html', massifs=model.bleau_database.massifs)
+
+@main.route('/massifs-par-secteur')
+def massifs_par_secteur():
+    return render_template('massifs-par-secteur.html', bleau_database=model.bleau_database)
+
 @main.route('/massif/<massif>')
 def journal(massif):
     massif = model.bleau_database[massif]

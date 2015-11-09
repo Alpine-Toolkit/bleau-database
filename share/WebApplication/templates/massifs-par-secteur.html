@@ -1,0 +1,21 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "base.html" %}
+{% block body %}
+    <ul class="breadcrumb">
+    <li><a href="/main">Accueil</a></li>
+    <li class="active"> Massifs par Secteurs </li>
+  </ul>
+
+  <div class="row">
+    <div class="col-xl-12">
+      {% for secteur in ('Essonne', 'Forêt Domaniale', 'Sud', 'Trois Pignons', 'Yvelines') %}
+	<h2>{{ secteur }}</h2>
+	<ul>
+	  {% for massif in bleau_database.filter_by(secteur=secteur) %}
+	    <li><a href="/main/massif/{{ massif.massif }}">{{ massif.massif }}</a></li>
+	  {% endfor %}
+	</ul>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}
