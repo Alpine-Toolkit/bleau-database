@@ -37,8 +37,10 @@ def read(file_name):
 
 ####################################################################################################
 
+long_description = read('README.rst')
+
 setup_dict = dict(
-    name='BleauDatabase',
+    name='BleauDataBase',
     version='0.1.0',
     author='Fabrice Salvaire',
     author_email='fabrice.salvaire@orange.fr',
@@ -49,7 +51,7 @@ setup_dict = dict(
     scripts=[],
     packages=['BleauDataBase'],
     data_files = [],
-    long_description=read('README.rst'),
+    long_description=long_description,
     # cf. http://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
         "Topic :: Other/Nonlisted Topic",
