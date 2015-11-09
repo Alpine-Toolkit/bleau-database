@@ -19,11 +19,13 @@
 
 ####################################################################################################
 
-import json
 import os
 
-from collections import OrderedDict
 from html.parser import HTMLParser
+
+####################################################################################################
+
+from BleauDataBase import Coordonne, Massif, Circuit, BleauDataBase
 
 ####################################################################################################
 
@@ -35,141 +37,104 @@ def first(x):
 
 ####################################################################################################
 
-def fr_key(key):
-    # return key.replace('_', ' ')
-    return key.replace('é', 'e')
-
-####################################################################################################
-
-class Massif:
+class MassifExporter:
 
     ##############################################
 
-    def __init__(self, *args):
+    def export(self, *args):
 
-        self.massif_id = int(first(args[0]))
-        self.massif = first(args[1])
+        massif_id = int(first(args[0]))
+        massif = first(args[1])
+        
         lon = first(args[2])
         lat = first(args[3])
         if lon:
             longitude = float(lon)
             latitude = float(lat)
-            self.coordonné = OrderedDict(longitude=longitude, latitude=latitude)
+            coordonne = dict(longitude=longitude, latitude=latitude)
         else:
-            self.coordonné = None # {}
+            coordonne = None
         
         type_de_chaos = first(args[4])
         if type_de_chaos:
             type_de_chaos = type_de_chaos.replace(' ', '')
         else:
             type_de_chaos = ''
-        self.type_de_chaos = type_de_chaos
         
         parcelles = first(args[5])
         if not parcelles:
             parcelles = ''
-        self.parcelles = parcelles
         
-        # self.circuits = first(args[6])
-
-    ##############################################
-
-    def __str__(self):
-
-        template = '''
-massif_id: {0.massif_id}
-massif: {0.massif}
-coordonné: {0.coordonné}
-type_de_chaos: {0.type_de_chaos}
-parcelles: {0.parcelles}
-'''
-        # circuits: {0.circuits}
+        circuits = first(args[6])
         
-        return template.format(self)
-
-    ##############################################
-
-    def to_json(self):
-
-        keys = ('massif', 'coordonné', 'type_de_chaos', 'parcelles')
-        return OrderedDict([(fr_key(key), self.__dict__[key]) for key in keys])
+        return Massif(massif=massif,
+                      coordonne=coordonne,
+                      type_de_chaos=type_de_chaos,
+                      parcelles=parcelles)
 
 ####################################################################################################
 
-class Circuit:
+class CircuitExporter:
 
     ##############################################
 
-    def __init__(self, *args):
+    def __init__(self, bleau_database):
 
-        # print(args)
+        self._bleau_database = bleau_database
+
+    ##############################################
+
+    def export(self, *args):
 
         page_id = args[0][0]
         prefix = 'http://www.cosiroc.fr/index.php?option=com_fabrik&view=details&formid=3&rowid='
         if page_id.startswith(prefix):
-            self.page_id = int(page_id[len(prefix):])
+            page_id = int(page_id[len(prefix):])
         else:
             raise ValueError
         
-        self.massif = args[0][1]
-        self.couleur = first(args[1])
-        self.numéro = int(first(args[2]))
-        self.cotation = first(args[3])
-        self.fiches = [url for url in args[4] if url.startswith('http')]
+        massif = args[0][1]
+        couleur = first(args[1])
+        numero = int(first(args[2]))
+        cotation = first(args[3])
+        fiches = [url for url in args[4] if url.startswith('http')]
         
         ign = first(args[5])
         if ign:
             ign = dict([x.split('=') for x in ign[ign.find('?')+1:].split('&')])
-            if (ign['couleur'].replace('%20', ' ') != self.couleur
-                or ign['numero'] != str(self.numéro)):
+            if (ign['couleur'].replace('%20', ' ') != couleur
+                or ign['numero'] != str(numero)):
                 raise ValueError
             ign = {key:float(ign[key]) for key in ('lat', 'lon')}
-            self.coordonné = OrderedDict(longitude=ign['lon'], latitude=ign['lat'])
+            coordonne = dict(longitude=ign['lon'], latitude=ign['lat'])
         else:
-            self.coordonné = None # {}
+            coordonne = None
         
-        année_réfection = args[6]
-        if année_réfection:
-            année_réfection = int(first(année_réfection))
+        annee_refection = args[6]
+        if annee_refection:
+            annee_refection = int(first(annee_refection))
         else:
-            année_réfection = None
-        self.année_réfection = année_réfection
+            annee_refection = None
         
-        self.gestion = first(args[7])
-        self.status = first(args[8])
+        gestion = first(args[7])
+        status = first(args[8])
         liste_blocs = first(args[10])
         if liste_blocs == '(0)  blocs':
-            self.liste_blocs = None # []
+            liste_blocs = None # []
         else:
-            self.liste_blocs = liste_blocs
-
-    ##############################################
-
-    def __str__(self):
-
-        template = '''
-page_id: {0.page_id}
-massif: {0.massif}
-couleur: {0.couleur}
-numéro: {0.numéro}
-cotation: {0.cotation}
-fiches: {0.fiches}
-coordonné: {0.coordonné}
-année_réfection: {0.année_réfection}
-gestion: {0.gestion}
-status: {0.status}
-liste_blocs: {0.liste_blocs}
-'''
+            liste_blocs = liste_blocs
         
-        return template.format(self)
-
-    ##############################################
-
-    def to_json(self):
-
-        keys = ('massif', 'couleur', 'numéro', 'cotation', 'fiches', 'coordonné',
-                'année_réfection', 'gestion', 'status', 'liste_blocs')
-        return OrderedDict([(fr_key(key), self.__dict__[key]) for key in keys])
+        return Circuit(massif=self._bleau_database[massif],
+                       couleur=couleur,
+                       numero=numero,
+                       cotation=cotation,
+                       fiches=fiches,
+                       coordonne=coordonne,
+                       annee_refection=annee_refection,
+                       gestion=gestion,
+                       status=status,
+                       liste_blocs=liste_blocs,
+        )
 
 ####################################################################################################
 
@@ -241,7 +206,7 @@ class MyHTMLParser(HTMLParser):
             if self._item_data is not None:
                 first = self._item_data[0][0]
                 if not (first.startswith('Total') or first.startswith('Aucun')):
-                    self._items.append(self._item_factory(*self._item_data))
+                    self._items.append(self._item_factory.export(*self._item_data))
         elif tag == 'td':
             if self._in_column:
                 self._item_data.append(self._column)
@@ -259,40 +224,27 @@ class MyHTMLParser(HTMLParser):
 
 ####################################################################################################
 
-parser = MyHTMLParser(Massif)
+bleau_database = BleauDataBase()
 
+parser = MyHTMLParser(MassifExporter())
 html_file = os.path.join('html-data', 'massif.html')
 with open(html_file) as f:
     source = f.read()
     parser.feed(source)
-massifs = parser.items
+for massif in parser.items:
+    bleau_database.add_massif(massif)
 
-# for massif in massifs:
-#     print(massif)
-
-####################################################################################################
-
-parser = MyHTMLParser(Circuit)
-
+parser = MyHTMLParser(CircuitExporter(bleau_database))
 for i in range(1, 5):
     html_file = os.path.join('html-data', 'circuit{}.html'.format(i))
     with open(html_file) as f:
         source = f.read()
         parser.feed(source)
-circuits = parser.items
+for circuit in parser.items:
+    bleau_database.add_circuit(circuit)
 
-# for circuit in parser.items:
-#     print(circuit)
-
-####################################################################################################
-
-data = OrderedDict(
-    massifs=[massif.to_json() for massif in massifs],
-    circuits=[circuit.to_json() for circuit in circuits],
-)
 json_file = 'bleau.json'
-with open(json_file, 'w', encoding='utf8') as f:
-    json.dump(data, f, indent=2, ensure_ascii=False) # , sort_keys=True
+bleau_database.to_json(json_file)
 
 ####################################################################################################
 #

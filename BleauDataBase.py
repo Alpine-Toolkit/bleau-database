@@ -17,23 +17,10 @@
 
 ####################################################################################################
 
-import argparse
 import json
 import urllib.request
 
 from collections import OrderedDict
-
-####################################################################################################
-
-parser = argparse.ArgumentParser(description='Importer')
-
-parser.add_argument('json_file', metavar='json_file',
-                    help='JSON file')
-
-parser.add_argument('--get-pdf',
-                    action='store_true')
-
-args = parser.parse_args()
 
 ####################################################################################################
 
@@ -45,6 +32,28 @@ class Field:
 
         self.name = name
         self.factory = factory
+
+####################################################################################################
+
+def instance_checker(class_):
+
+    def checker(obj):
+        if isinstance(obj, class_):
+            return obj
+        else:
+            raise ValueError
+    
+    return checker
+
+####################################################################################################
+
+class StringList(list):
+
+    ##############################################
+
+    def __init__(self, *args):
+
+        super().__init__([str(x) for x in args])
 
 ####################################################################################################
 
@@ -62,6 +71,7 @@ class FromJsonMixin:
             if key not in field_names:
                 raise ValueError('Unknown key {}'.format(key))
             factory = fields[key].factory
+            # print(key, value, factory)
             if value is not None:
                 if isinstance(value, dict):
                     value = factory(**value)
@@ -75,22 +85,12 @@ class FromJsonMixin:
 
     def to_json(self):
 
-        return OrderedDict([(field.name, self.__dict__[field])
+        return OrderedDict([(field.name, self.__dict__[field.name])
                             for field in self.__fields__])
 
 ####################################################################################################
 
-class StringList(list):
-
-    ##############################################
-
-    def __init__(self, *args):
-
-        super().__init__([str(x) for x in args])
-
-####################################################################################################
-
-class Coordonné(FromJsonMixin):
+class Coordonne(FromJsonMixin):
 
     __fields__ = (
         Field('longitude', float),
@@ -105,11 +105,25 @@ class Coordonné(FromJsonMixin):
 
 ####################################################################################################
 
-class Massif(FromJsonMixin):
+class WithCoordinate(FromJsonMixin):
+
+    ##############################################
+
+    def to_json(self):
+
+        d = super().to_json()
+        if d['coordonne'] is not None:
+            d['coordonne'] = d['coordonne'].to_json()
+        
+        return d
+
+####################################################################################################
+
+class Massif(WithCoordinate):
 
     __fields__ = (
         Field('massif', str),
-        Field('coordonne', Coordonné),
+        Field('coordonne', Coordonne),
         Field('type_de_chaos', str),
         Field('parcelles', str),
     )
@@ -134,15 +148,15 @@ parcelles: {0.parcelles}
 
 ####################################################################################################
 
-class Circuit(FromJsonMixin):
+class Circuit(WithCoordinate):
 
     __fields__ = (
-        Field('massif', str),
+        Field('massif', instance_checker(Massif)),
         Field('couleur', str),
         Field('numero', int),
         Field('cotation', str),
         Field('fiches', StringList),
-        Field('coordonne', Coordonné),
+        Field('coordonne', Coordonne),
         Field('annee_refection', int),
         Field('gestion', str),
         Field('status', str),
@@ -186,6 +200,15 @@ liste_blocs: {0.liste_blocs}
                     with open(pdf_name, 'wb') as f:
                         f.write(document)
 
+    ##############################################
+
+    def to_json(self, bleau_database):
+
+        d = super().to_json()
+        d['massif'] = str(d['massif'])
+        
+        return d
+
 ####################################################################################################
 
 class BleauDataBase:
@@ -195,24 +218,29 @@ class BleauDataBase:
     def __init__(self, json_file=None):
 
         if json_file is not None:
-            with open(args.json_file, encoding='utf8') as f:
+            with open(json_file, encoding='utf8') as f:
                 data = json.load(f)
             massifs = [Massif(**massif_dict) for massif_dict in data['massifs']]
-            self._massifs = {massif.massif for massif in massifs}
-            self.circuits = [Circuit(**circuit_dict) for circuit_dict in data['circuits']]
+            self._massifs = {}
+            for massif in massifs:
+                self.add_massif(massif)
+            self._circuits = []
+            for circuit_dict in data['circuits']:
+                circuit_dict['massif'] = self._massifs[circuit_dict['massif']]
+                self.add_circuit(Circuit(**circuit_dict))
         else:
-            self.massifs = {}
-            self.circuits = []
+            self._massifs = {}
+            self._circuits = []
 
     ##############################################
 
     @property
     def nombre_de_circuits(self):
-        return len(self.circuits)
+        return len(self._circuits)
 
     @property
     def nombre_de_circuits_avec_fiches(self):
-        return len([circuit for circuit in self.circuits
+        return len([circuit for circuit in self._circuits
                     if circuit.has_fiche()])
 
     @property
@@ -223,13 +251,35 @@ class BleauDataBase:
     def massifs(self):
         return self._massifs.values()
 
+    @property
+    def circuits(self):
+        return iter(self._circuits)
+
+    ##############################################
+
+    def __getitem__(self, key):
+
+        return self._massifs[key]
+
+    ##############################################
+
+    def add_massif(self, massif):
+
+        self._massifs[str(massif)] = massif
+
+    ##############################################
+
+    def add_circuit(self, circuit):
+
+        self._circuits.append(circuit)
+
     ##############################################
 
     def to_json(self, json_file):
 
         data = OrderedDict(
             massifs=[massif.to_json() for massif in self.massifs],
-            circuits=[circuit.to_json() for circuit in self.circuits],
+            circuits=[circuit.to_json(self) for circuit in self.circuits],
         )
         
         with open(json_file, 'w', encoding='utf8') as f:
