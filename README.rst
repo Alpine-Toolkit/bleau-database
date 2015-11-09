@@ -26,12 +26,24 @@ Description en Français
 Ce dépôt contient une base de données au format JSON des sites d'escalade de la région de
 Fontainebleau (bleau) constitué à partir de données du |Cosiroc|_ et du |Gums|_.
 
+L'URL du fichier JSON est https://raw.githubusercontent.com/Cosiroc/bleau-database/master/bleau.json
+
 Contenu de la base de données:
 
 * Régions: Forêt Domaniale, Trois Pignons, Sud de Fontainebleau, Essonne, Yvelines
 * Nombre de massifs: 90
 * Nombre de circuits: 337
 * Nombre de circuits avec topos: 183
+
+Le dépôt contient un script qui permet de télécharger tous les topos répertoriés.
+
+Module Python
+-------------
+
+Ce dépôt contient un module Python qui permet d'exploiter cette base de données.
+
+Format du fichier JSON
+----------------------
 
 Le format JSON offre plusieurs avantages:
 
@@ -40,11 +52,6 @@ Le format JSON offre plusieurs avantages:
 * il peut être réinjecté dans une base de données SQL ou NoSQL.
 
 Un script Python permet de valider et normaliser le fichier.
-
-L'URL du fichier JSON est https://raw.githubusercontent.com/Cosiroc/bleau-database/master/bleau.json
-
-Format du fichier JSON
-----------------------
 
 Les clés sont triées par ordres alphabétiques afin de faciliter la comparaison entre versions.
 
