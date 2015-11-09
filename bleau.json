@@ -65,7 +65,7 @@
       "massif": "91_1",
       "numero": 5,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -149,7 +149,7 @@
       "massif": "95_2",
       "numero": 5,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2015,
@@ -215,7 +215,7 @@
       "massif": "Apremont Bizons",
       "numero": 4,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2013,
@@ -281,7 +281,7 @@
       "massif": "Apremont Désert",
       "numero": 1,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -296,7 +296,7 @@
       "massif": "Apremont Désert",
       "numero": 2,
       "status": "abandonné",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -311,7 +311,7 @@
       "massif": "Apremont Désert",
       "numero": 3,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -326,7 +326,7 @@
       "massif": "Apremont Désert",
       "numero": 4,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -341,7 +341,7 @@
       "massif": "Apremont Désert",
       "numero": 5,
       "status": "pas sur SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2012,
@@ -391,7 +391,7 @@
       "massif": "Apremont Envers",
       "numero": 2,
       "status": "abandonné",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -406,7 +406,7 @@
       "massif": "Apremont Envers",
       "numero": 3,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2013,
@@ -438,7 +438,7 @@
       "massif": "Apremont Gorges",
       "numero": 1,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -627,7 +627,7 @@
       "massif": "Apremont Gorges",
       "numero": 7,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2015,
@@ -642,7 +642,7 @@
       "massif": "Apremont Gorges",
       "numero": 9,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -654,7 +654,7 @@
       "massif": "Boigneville",
       "numero": 0,
       "status": "site privé",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -666,7 +666,7 @@
       "massif": "Boigneville",
       "numero": 0,
       "status": "site privé",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -678,7 +678,7 @@
       "massif": "Boigneville",
       "numero": 0,
       "status": "site privé",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -690,7 +690,7 @@
       "massif": "Boigneville",
       "numero": 1,
       "status": "site privé",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -705,7 +705,7 @@
       "massif": "Bois Rond",
       "numero": 3,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -720,7 +720,7 @@
       "massif": "Bois Rond",
       "numero": 4,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -735,7 +735,7 @@
       "massif": "Bois Rond",
       "numero": 5,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -747,7 +747,7 @@
       "massif": "Bouligny",
       "numero": 1,
       "status": "pas sur SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2015,
@@ -780,7 +780,7 @@
       "massif": "Buthiers Canard",
       "numero": 2,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2015,
@@ -812,7 +812,7 @@
       "massif": "Buthiers Canard",
       "numero": 4,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2015,
@@ -827,7 +827,7 @@
       "massif": "Buthiers Canard",
       "numero": 5,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2015,
@@ -842,7 +842,7 @@
       "massif": "Buthiers L'I",
       "numero": 1,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2015,
@@ -857,7 +857,7 @@
       "massif": "Buthiers L'I",
       "numero": 2,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2015,
@@ -889,7 +889,7 @@
       "massif": "Buthiers L'I",
       "numero": 4,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2015,
@@ -904,7 +904,7 @@
       "massif": "Buthiers L'I",
       "numero": 5,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2015,
@@ -919,7 +919,7 @@
       "massif": "Buthiers L'I",
       "numero": 6,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2014,
@@ -934,7 +934,7 @@
       "massif": "Calvaire",
       "numero": 1,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -983,7 +983,7 @@
       "massif": "Canche aux Merciers",
       "numero": 3,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -998,7 +998,7 @@
       "massif": "Canche aux Merciers",
       "numero": 5,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1030,7 +1030,7 @@
       "massif": "Canche aux Merciers",
       "numero": 7,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1042,7 +1042,7 @@
       "massif": "Chamarande",
       "numero": 1,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1057,7 +1057,7 @@
       "massif": "Chamarande",
       "numero": 11,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2004,
@@ -1107,7 +1107,7 @@
       "massif": "Chamarande",
       "numero": 2,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1122,7 +1122,7 @@
       "massif": "Chamarande",
       "numero": 5,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1137,7 +1137,7 @@
       "massif": "Chamarande",
       "numero": 6,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2004,
@@ -1169,7 +1169,7 @@
       "massif": "Chamarande",
       "numero": 9,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2015,
@@ -1237,7 +1237,7 @@
       "massif": "Cuvier Bas",
       "numero": 1,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1269,7 +1269,7 @@
       "massif": "Cuvier Bas",
       "numero": 3,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1337,7 +1337,7 @@
       "massif": "Cuvier Bas",
       "numero": 7,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1352,7 +1352,7 @@
       "massif": "Cuvier Rempart",
       "numero": 1,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1367,7 +1367,7 @@
       "massif": "Cuvier Rempart",
       "numero": 2,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2014,
@@ -1399,7 +1399,7 @@
       "massif": "Dame Jouanne",
       "numero": 1,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2012,
@@ -1414,7 +1414,7 @@
       "massif": "Dame Jouanne",
       "numero": 2,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1429,7 +1429,7 @@
       "massif": "Dame Jouanne",
       "numero": 3,
       "status": "abandonné",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1444,7 +1444,7 @@
       "massif": "Dame Jouanne",
       "numero": 4,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1459,7 +1459,7 @@
       "massif": "Dame Jouanne",
       "numero": 5,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1474,7 +1474,7 @@
       "massif": "Dame Jouanne",
       "numero": 6,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2012,
@@ -1489,7 +1489,7 @@
       "massif": "Dame Jouanne",
       "numero": 7,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1504,7 +1504,7 @@
       "massif": "Dame Jouanne",
       "numero": 8,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1519,7 +1519,7 @@
       "massif": "Dampierre Maincourt",
       "numero": 1,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1551,7 +1551,7 @@
       "massif": "Dampierre Maincourt",
       "numero": 3,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2014,
@@ -1563,7 +1563,7 @@
       "massif": "Dampierre Maincourt",
       "numero": 4,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1578,7 +1578,7 @@
       "massif": "Dampierre Maincourt",
       "numero": 5,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1593,7 +1593,7 @@
       "massif": "Dampierre Maincourt",
       "numero": 5,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1608,7 +1608,7 @@
       "massif": "Dampierre Maincourt",
       "numero": 5,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1623,7 +1623,7 @@
       "massif": "Dampierre Maincourt",
       "numero": 5,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1638,7 +1638,7 @@
       "massif": "Dampierre Maincourt",
       "numero": 5,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1653,7 +1653,7 @@
       "massif": "Dampierre Maincourt",
       "numero": 5,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1668,7 +1668,7 @@
       "massif": "Dampierre Maincourt",
       "numero": 5,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1683,7 +1683,7 @@
       "massif": "Dampierre Maincourt",
       "numero": 5,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1698,7 +1698,7 @@
       "massif": "Dampierre Maincourt",
       "numero": 5,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1713,7 +1713,7 @@
       "massif": "Dampierre Maincourt",
       "numero": 5,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1728,7 +1728,7 @@
       "massif": "Demoiselles",
       "numero": 1,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1743,7 +1743,7 @@
       "massif": "Diplodocus",
       "numero": 1,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1758,7 +1758,7 @@
       "massif": "Diplodocus",
       "numero": 2,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1821,7 +1821,7 @@
       "massif": "Eléphant",
       "numero": 1,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1836,7 +1836,7 @@
       "massif": "Eléphant",
       "numero": 2,
       "status": "à abandonner?",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1851,7 +1851,7 @@
       "massif": "Eléphant",
       "numero": 3,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1900,7 +1900,7 @@
       "massif": "Eléphant",
       "numero": 6,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1915,7 +1915,7 @@
       "massif": "Étréchy",
       "numero": 1,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1930,7 +1930,7 @@
       "massif": "Étréchy",
       "numero": 2,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1942,7 +1942,7 @@
       "massif": "Étréchy",
       "numero": 3,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1954,7 +1954,7 @@
       "massif": "Étréchy",
       "numero": 4,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1969,7 +1969,7 @@
       "massif": "Feuillardière",
       "numero": 1,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1984,7 +1984,7 @@
       "massif": "Franchard Crête Sud",
       "numero": 2,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -1999,7 +1999,7 @@
       "massif": "Franchard Crête Sud",
       "numero": 6,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -2031,7 +2031,7 @@
       "massif": "Franchard Cuisinière",
       "numero": 3,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -2078,7 +2078,7 @@
       "massif": "Franchard Ermitage",
       "numero": 0,
       "status": "abandonné",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -2090,7 +2090,7 @@
       "massif": "Franchard Ermitage",
       "numero": 1,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -2122,7 +2122,7 @@
       "massif": "Franchard Hautes-Plaines",
       "numero": 2,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -2137,7 +2137,7 @@
       "massif": "Franchard Hautes-Plaines",
       "numero": 3,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2012,
@@ -2166,7 +2166,7 @@
       "massif": "Franchard Isatis",
       "numero": 0,
       "status": "abandonné",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2014,
@@ -2315,7 +2315,7 @@
       "massif": "Gorge aux Châts",
       "numero": 3,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -2330,7 +2330,7 @@
       "massif": "Gorges du Houx",
       "numero": 1,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -2345,7 +2345,7 @@
       "massif": "Grande Montagne",
       "numero": 1,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -2360,7 +2360,7 @@
       "massif": "Gros Sablons",
       "numero": 1,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2012,
@@ -2426,7 +2426,7 @@
       "massif": "J.A. Martin / R. Cailleau",
       "numero": 1,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2014,
@@ -2477,7 +2477,7 @@
       "massif": "J.A. Martin / R. Cailleau",
       "numero": 5,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2014,
@@ -2509,7 +2509,7 @@
       "massif": "J.A. Martin / R. Cailleau",
       "numero": 7,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -2524,7 +2524,7 @@
       "massif": "J.A. Martin / R. Cailleau",
       "numero": 8,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -2539,7 +2539,7 @@
       "massif": "J.A. Martin / R. Cailleau",
       "numero": 9,
       "status": "pas sur SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -2554,7 +2554,7 @@
       "massif": "Jean des Vignes",
       "numero": 1,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2014,
@@ -2650,7 +2650,7 @@
       "massif": "Maisse le Patouillat",
       "numero": 1,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2012,
@@ -2800,7 +2800,7 @@
       "massif": "Monts et Merveille",
       "numero": 0,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2011,
@@ -3100,7 +3100,7 @@
       "massif": "Petit Bois de St Pierre de Nemours",
       "numero": 0,
       "status": "pas sur SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2011,
@@ -3514,7 +3514,7 @@
       "massif": "Restant du Long Rocher",
       "numero": 2,
       "status": "abandonné",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -3560,7 +3560,7 @@
       "massif": "Roche aux Dames - Mondeville",
       "numero": 1,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -3572,7 +3572,7 @@
       "massif": "Roche aux Dames - Mondeville",
       "numero": 10,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -3584,7 +3584,7 @@
       "massif": "Roche aux Dames - Mondeville",
       "numero": 11,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2008,
@@ -3596,7 +3596,7 @@
       "massif": "Roche aux Dames - Mondeville",
       "numero": 2,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -3608,7 +3608,7 @@
       "massif": "Roche aux Dames - Mondeville",
       "numero": 3,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -3620,7 +3620,7 @@
       "massif": "Roche aux Dames - Mondeville",
       "numero": 4,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -3632,7 +3632,7 @@
       "massif": "Roche aux Dames - Mondeville",
       "numero": 5,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -3644,7 +3644,7 @@
       "massif": "Roche aux Dames - Mondeville",
       "numero": 6,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -3656,7 +3656,7 @@
       "massif": "Roche aux Dames - Mondeville",
       "numero": 7,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2015,
@@ -3688,7 +3688,7 @@
       "massif": "Roche aux Sabots",
       "numero": 2,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2015,
@@ -3720,7 +3720,7 @@
       "massif": "Roche aux Sabots",
       "numero": 4,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2011,
@@ -3735,7 +3735,7 @@
       "massif": "Roche Hercule",
       "numero": 5,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -3750,7 +3750,7 @@
       "massif": "Rocher Canon",
       "numero": 0,
       "status": "abandonné",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -3782,7 +3782,7 @@
       "massif": "Rocher Canon",
       "numero": 2,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2014,
@@ -3797,7 +3797,7 @@
       "massif": "Rocher Canon",
       "numero": 4,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2011,
@@ -3846,7 +3846,7 @@
       "massif": "Rocher Canon",
       "numero": 7,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -3861,7 +3861,7 @@
       "massif": "Rocher Canon",
       "numero": 8,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -3893,7 +3893,7 @@
       "massif": "Rocher d'Avon",
       "numero": 2,
       "status": "pas sur SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -4001,7 +4001,7 @@
       "massif": "Rocher de la Cathédrale",
       "numero": 1,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2012,
@@ -4016,7 +4016,7 @@
       "massif": "Rocher de la Reine",
       "numero": 1,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -4031,7 +4031,7 @@
       "massif": "Rocher de la Reine",
       "numero": 2,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2015,
@@ -4046,7 +4046,7 @@
       "massif": "Rocher de Milly / Corne-Biche",
       "numero": 1,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2015,
@@ -4078,7 +4078,7 @@
       "massif": "Rocher de Milly / Corne-Biche",
       "numero": 3,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2015,
@@ -4121,7 +4121,7 @@
       "massif": "Rocher de Milly / Corne-Biche",
       "numero": 999,
       "status": "abandonné",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2011,
@@ -4153,7 +4153,7 @@
       "massif": "Rocher des Potets",
       "numero": 2,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -4612,7 +4612,7 @@
       "massif": "Rocher fin",
       "numero": 3,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2015,
@@ -4627,7 +4627,7 @@
       "massif": "Rocher fin",
       "numero": 4,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2013,
@@ -4693,7 +4693,7 @@
       "massif": "Rocher Mignot",
       "numero": 1,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -4708,7 +4708,7 @@
       "massif": "Rocher Mignot",
       "numero": 2,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -4723,7 +4723,7 @@
       "massif": "Rocher Saint-Germain",
       "numero": 1,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -4738,7 +4738,7 @@
       "massif": "Rocher Saint-Germain",
       "numero": 3,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -4753,7 +4753,7 @@
       "massif": "Rocher Saint-Germain",
       "numero": 4,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -4922,7 +4922,7 @@
       "massif": "Télégraphe",
       "numero": 4,
       "status": "liste SNE",
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -4982,7 +4982,7 @@
       "massif": "Vaux de Cernay",
       "numero": 1,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -4994,7 +4994,7 @@
       "massif": "Videlles les Roches",
       "numero": 10,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": 2014,
@@ -5006,7 +5006,7 @@
       "massif": "Videlles les Roches",
       "numero": 11,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -5018,7 +5018,7 @@
       "massif": "Videlles les Roches",
       "numero": 12,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -5030,7 +5030,7 @@
       "massif": "Videlles les Roches",
       "numero": 13,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -5042,7 +5042,7 @@
       "massif": "Videlles les Roches",
       "numero": 2,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -5057,7 +5057,7 @@
       "massif": "Videlles les Roches",
       "numero": 3,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -5072,7 +5072,7 @@
       "massif": "Videlles les Roches",
       "numero": 4,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -5084,7 +5084,7 @@
       "massif": "Videlles les Roches",
       "numero": 5,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -5096,7 +5096,7 @@
       "massif": "Videlles les Roches",
       "numero": 5,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -5108,7 +5108,7 @@
       "massif": "Videlles les Roches",
       "numero": 5,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -5120,7 +5120,7 @@
       "massif": "Videlles les Roches",
       "numero": 5,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -5132,7 +5132,7 @@
       "massif": "Videlles les Roches",
       "numero": 5,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -5144,7 +5144,7 @@
       "massif": "Videlles les Roches",
       "numero": 5,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -5156,7 +5156,7 @@
       "massif": "Videlles les Roches",
       "numero": 5,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -5168,7 +5168,7 @@
       "massif": "Videlles les Roches",
       "numero": 5,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -5180,7 +5180,7 @@
       "massif": "Videlles les Roches",
       "numero": 5,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -5192,7 +5192,7 @@
       "massif": "Videlles les Roches",
       "numero": 5,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -5204,7 +5204,7 @@
       "massif": "Videlles les Roches",
       "numero": 6,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -5216,7 +5216,7 @@
       "massif": "Videlles les Roches",
       "numero": 7,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -5228,7 +5228,7 @@
       "massif": "Videlles les Roches",
       "numero": 8,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -5240,7 +5240,7 @@
       "massif": "Videlles les Roches",
       "numero": 9,
       "status": null,
-      "topos": []
+      "topos": null
     },
     {
       "annee_refection": null,
@@ -5391,10 +5391,10 @@
       "massif": "Boigneville",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "Essonne",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -5423,10 +5423,10 @@
       "massif": "Bouligny",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "Essonne",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -5439,10 +5439,10 @@
       "massif": "Buthiers Canard",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "sud",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -5455,10 +5455,10 @@
       "massif": "Buthiers L'I",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "sud",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -5490,7 +5490,7 @@
       "parcelles": "106 107 TP",
       "rdv": "Du parking, suivre le chemin de la Charme vers l'Ouest sur 250 m. Traverser vers le N, une grande étendue sableuse, puis prendre une sente qui traverse le massif vers le NE. Rendez-vous près d'un auvent à hauteur du n° 16 Jaune.",
       "secteur": "Trois Pignons",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": "15 km depuis Fontainebleau (train Gare de Lyon, direction Montargis ou Laroche Migennes, 35’)"
     },
     {
@@ -5500,10 +5500,10 @@
       "massif": "Chaintreauville",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
-      "secteur": "",
-      "type_de_chaos": "",
+      "secteur": null,
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -5516,10 +5516,10 @@
       "massif": "Chamarande",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": "du parking, suivre un chemin le long de la voie ferrée, direction Lardy. Au niveau d'une dalle (dalle P.O.) avec les départs de deux circuits (dont le Rouge), monter à gauche jusqu'à une clairière près du n° 42 Orange.",
       "secteur": "Essonne",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": "500 m depuis Chamarande (RER C, direction St Martin d'Etampes, 50')"
     },
     {
@@ -5560,7 +5560,7 @@
         "latitude": 48.445441,
         "longitude": 2.647208
       },
-      "itineraire": "",
+      "itineraire": null,
       "massif": "Cuvier Rempart",
       "nom": null,
       "notes": null,
@@ -5568,7 +5568,7 @@
       "rdv": "Prendre l'allée forestière de Mory de Neuflieux jusqu'à croiser celle de Bellevue Monter dans la pente à gauche (flèches jaunes, aérolithe) jusqu'au sommet du rempart. Longer le versant N (GR) jusqu'à la fissure Mummery Rouge n°12.",
       "secteur": "forêt domaniale",
       "type_de_chaos": "C/E",
-      "velo": ""
+      "velo": null
     },
     {
       "acces": "A6, péage, sortie No 14 Malesherbes/Ury. Prendre à droite en direction de la Chapelle la Reine (RN 152). Dans La Chapelle, prendre à gauche au feu, en direction de Larchant (D16). Contourner Larchant, prendre la route de la Dame Jouanne à gauche (panneau) sur 2 km environ, puis chemin à droite (restaurant Jobert). Parking en bord de chemin à proximité du restaurant ou en bord de route.",
@@ -5576,7 +5576,7 @@
         "latitude": 48.30473,
         "longitude": 2.6014
       },
-      "itineraire": "",
+      "itineraire": null,
       "massif": "Dame Jouanne",
       "nom": "Dame Jouanne - Requin",
       "notes": "Secteur où les risques d'éboulements sont importants : ne pas franchir les barrières de protection interdisant l'accès aux endroits dangereux.",
@@ -5596,10 +5596,10 @@
       "massif": "Dampierre Maincourt",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "Yvelines",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -5608,7 +5608,7 @@
         "latitude": 48.379653,
         "longitude": 2.669802
       },
-      "itineraire": "",
+      "itineraire": null,
       "massif": "Demoiselles",
       "nom": null,
       "notes": null,
@@ -5616,7 +5616,7 @@
       "rdv": "Prendre la Route des Filles, puis gagner le plateau à droite par la route de la Séduction. Suivre à gauche le tracé Bleu n°9. Passer à droite de la Mare aux Salamandres. Au carrefour de chemins suivant, prendre à droite sur environ 100m puis à gauche le tracé bleu qui longe la base de la platière, jusqu'à un auvent marqué d'un Y. Rendez-vous au-dessus.",
       "secteur": "forêt domaniale",
       "type_de_chaos": "C",
-      "velo": ""
+      "velo": null
     },
     {
       "acces": "A6 sortie Milly. Du rond-point avant Milly, par la D 837, rejoindre la D 16 et continuer jusqu'à l'entrée du Vaudoué (5 Km). Prendre à gauche le Chemin du Rocher Cailleau, puis au premier carrefour, à gauche, le Chemin de la Vallee de la Mee. Parking.",
@@ -5676,10 +5676,10 @@
       "massif": "Étréchy",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "Essonne",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -5711,7 +5711,7 @@
       "parcelles": "764S",
       "rdv": null,
       "secteur": "forêt domaniale",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -5763,20 +5763,20 @@
       "velo": "12 km depuis Fontainebleau (train Gare de Lyon, direction Montargis ou Laroche Migennes, 35’)"
     },
     {
-      "acces": "",
+      "acces": null,
       "coordonne": {
         "latitude": 48.410065,
         "longitude": 2.599839
       },
-      "itineraire": "",
+      "itineraire": null,
       "massif": "Franchard Isatis",
       "nom": null,
       "notes": null,
       "parcelles": "766",
-      "rdv": "",
+      "rdv": null,
       "secteur": "forêt domaniale",
       "type_de_chaos": "E/D",
-      "velo": ""
+      "velo": null
     },
     {
       "acces": null,
@@ -5916,10 +5916,10 @@
       "massif": "La Troche",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "Essonne",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -5932,10 +5932,10 @@
       "massif": "Maisse le Patouillat",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "Essonne",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -5944,7 +5944,7 @@
         "latitude": 48.302683,
         "longitude": 2.607713
       },
-      "itineraire": "",
+      "itineraire": null,
       "massif": "Maunoury",
       "nom": null,
       "notes": null,
@@ -5980,10 +5980,10 @@
       "massif": "Mont Olivet",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "sud",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -5993,10 +5993,10 @@
       "massif": "Monts et Merveille",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "forêt domaniale",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -6006,10 +6006,10 @@
       "massif": "Montussiennes",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "forêt domaniale",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -6018,7 +6018,7 @@
         "latitude": 48.421371,
         "longitude": 2.693014
       },
-      "itineraire": "",
+      "itineraire": null,
       "massif": "Mont-Ussy",
       "nom": null,
       "notes": null,
@@ -6038,10 +6038,10 @@
       "massif": "Padôle",
       "nom": "La Padôle",
       "notes": "Certains blocs sont hauts et exposés. Des points d'assurages sont prévus. Corde utile.",
-      "parcelles": "",
+      "parcelles": null,
       "rdv": "Du parking, longer la lisière de forêt par un bon chemin direction WNW. Après 300m (pas moins) emprunter une sente peu visible à droite (indiquée sur IGN 2316 ET). On débouche rapidement dans un vallon. Le remonter jusqu'à une dalle. De là, suivre la sente au mieux à gauche pour rejoindre la platière.",
       "secteur": "Essonne",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": "8 km depuis La Ferté-Alais (RER D, direction Malesherbes, 55’)"
     },
     {
@@ -6054,10 +6054,10 @@
       "massif": "Padôle cent marches",
       "nom": "La Padôle cent marches",
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "Essonne",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -6066,15 +6066,15 @@
         "latitude": 48.453408,
         "longitude": 2.332586
       },
-      "itineraire": "",
+      "itineraire": null,
       "massif": "Pendu d'Huison",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": "Du parking, emprunter un long sentier vers le SO que l'on suit jusqu'au niveau de la Roche Cornue (très caractéristique). Le rendez-vous est un peu avant à gauche, près de l'auvent Gentet.",
       "secteur": "Essonne",
-      "type_de_chaos": "",
-      "velo": ""
+      "type_de_chaos": null,
+      "velo": null
     },
     {
       "acces": "A6, péage, sortie No 14 Malesherbes/Ury.  De Larchant prendre la D16 en dir. de St Pierre les Nemours. À l'entrée de St Pierre, au 1er rond-point (supermarché à gauche), prendre la 1ère à droite dans un lotissement (rue des Prunus). Au bout, faire un zigzag, gauche puis droite (rue des Acacias), puis prendre à droite (rue des Hêtres). Devant le centre de formation, prendre à droite un chemin de terre sur 300 mètres. Parking à l'entrée du chemin qui part vers la gauche (GR).",
@@ -6082,14 +6082,14 @@
         "latitude": 48.26367,
         "longitude": 2.670992
       },
-      "itineraire": "",
+      "itineraire": null,
       "massif": "Petit Bois de St Pierre de Nemours",
       "nom": null,
       "notes": "Voies parfois hautes, corde utile.",
-      "parcelles": "",
+      "parcelles": null,
       "rdv": "remonter la pente sur environ 50 m et rejoindre à gauche un replat au pied de la dalle du n° 9 Jaune.",
       "secteur": "sud",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": "1 km depuis Nemours (train Gare de Lyon, direction Montargis, 1h)"
     },
     {
@@ -6099,10 +6099,10 @@
       "massif": "Pierre Glissoire",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "Essonne",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -6147,10 +6147,10 @@
       "massif": "Puiselet",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": "Continuer 150m jusqu'à une grande clairière. Prendre le GR à l'extrémité NO de la clairière (passage sous un porche isolé). Le suivre sur 250m, jusqu'à une vaste esplanade au pied du pignon E du Mont Sarrasin. Quitter le GR en montant vers la droite, RdV à 30 m entre les n° 6 et 7 orange.",
       "secteur": "sud",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": "3 km depuis Nemours (train Gare de Lyon, direction Montargis, 1h)"
     },
     {
@@ -6163,10 +6163,10 @@
       "massif": "Recloses",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "forêt domaniale",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -6175,7 +6175,7 @@
         "latitude": 48.355455,
         "longitude": 2.729851
       },
-      "itineraire": "",
+      "itineraire": null,
       "massif": "Restant du Long Rocher",
       "nom": null,
       "notes": null,
@@ -6195,10 +6195,10 @@
       "massif": "Restant du Long Rocher Plaine verte",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "forêt domaniale",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -6211,10 +6211,10 @@
       "massif": "Restant du Long Rocher Sud",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "forêt domaniale",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -6223,14 +6223,14 @@
         "latitude": 48.493119,
         "longitude": 2.404331
       },
-      "itineraire": "",
+      "itineraire": null,
       "massif": "Roche aux Dames - Mondeville",
       "nom": "Mondeville",
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": "Prendre la rue de Ballancourt, et continuer par le sentier (GR). Après le camping, lorsque le chemin amorce une descente, prendre à gauche le long d'une clôture, jusqu'aux rochers. RdV environ 150 mètres après les départs des circuits Jaune et Orange (à gauche du chemin), au sommet du premier cap avancé.",
       "secteur": "Essonne",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": "6 km depuis La Ferté-Alais (RER D, direction Malesherbes, 55’)"
     },
     {
@@ -6243,10 +6243,10 @@
       "massif": "Roche aux Oiseaux",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "Trois Pignons",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -6278,7 +6278,7 @@
       "parcelles": "263",
       "rdv": null,
       "secteur": "forêt domaniale",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -6323,11 +6323,11 @@
       "massif": "Rocher de Chatillon",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": "Prendre un large chemin sur 250 m vers l'Ouest . Puis emprunter une sente à gauche (Sud) sur environ 200m. Ignorer le premier chemin qui descend à droite, et prendre immédiatement le suivant, vers la droite aussi, mais en restant à niveau.  Le suivre, sans jamais descendre, jusqu'au RdV au bord de la platière entre les numéros 23 jaune et 23 bleu.",
       "secteur": "Essonne",
-      "type_de_chaos": "",
-      "velo": ""
+      "type_de_chaos": null,
+      "velo": null
     },
     {
       "acces": null,
@@ -6419,7 +6419,7 @@
       "massif": "Rocher des Troubadours",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "Trois Pignons",
       "type_de_chaos": "E",
@@ -6435,10 +6435,10 @@
       "massif": "Rocher du Duc - Hameau",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "Essonne",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -6451,10 +6451,10 @@
       "massif": "Rocher du Duc - Loutteville",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "Essonne",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -6467,10 +6467,10 @@
       "massif": "Rocher du Duc - Nainville",
       "nom": "Beauvais Nainville",
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": "De l'extrémité Ouest du parking, un chemin monte dans le bois. Le suivre jusqu'à la crête (vaste col). A mi-pente départ des circuits Blanc Enfants et Saumon (F+). Obliquer légèrement à gauche (S) sur environ 100m jusqu'à un énorme pin tourmenté qui se voit de loin. Marques du sentier bleu. Rejoindre une clairière juste derrière l'arbre (n° 22 Noir sur blanc).",
       "secteur": "Essonne",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": "10 km depuis Mennecy (RER D , direction Malesherbes, 45')"
     },
     {
@@ -6483,10 +6483,10 @@
       "massif": "Rocher du Duc -Télégraphe",
       "nom": "Beauvais Télégraphe",
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": "Monter sur la crête vers le SE. Le Rendez-vous est dans la pente de sable, en versant Sud du premier pignon (suivre le GR).",
       "secteur": "Essonne",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": "10 km depuis Mennecy (RER D, direction Malesherbes, 45')"
     },
     {
@@ -6527,7 +6527,7 @@
         "latitude": 48.364111,
         "longitude": 2.524889
       },
-      "itineraire": "",
+      "itineraire": null,
       "massif": "Rocher Guichot",
       "nom": null,
       "notes": null,
@@ -6547,10 +6547,10 @@
       "massif": "Rocher Mignot",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "Essonne",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -6579,10 +6579,10 @@
       "massif": "Sanglier",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "Essonne",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -6627,10 +6627,10 @@
       "massif": "Troglodytes",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "sud",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -6643,10 +6643,10 @@
       "massif": "Vallée Casse-Pot",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "sud",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -6659,10 +6659,10 @@
       "massif": "Vaux de Cernay",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "Yvelines",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -6675,10 +6675,10 @@
       "massif": "Videlles les Roches",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "Essonne",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     },
     {
@@ -6691,10 +6691,10 @@
       "massif": "Villeneuve-sur-Auvers",
       "nom": null,
       "notes": null,
-      "parcelles": "",
+      "parcelles": null,
       "rdv": null,
       "secteur": "Essonne",
-      "type_de_chaos": "",
+      "type_de_chaos": null,
       "velo": null
     }
   ]
