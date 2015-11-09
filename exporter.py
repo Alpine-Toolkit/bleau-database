@@ -56,7 +56,7 @@ class Massif:
             latitude = float(lat)
             self.coordonné = OrderedDict(longitude=longitude, latitude=latitude)
         else:
-            self.coordonné = None
+            self.coordonné = None # {}
         
         type_de_chaos = first(args[4])
         if type_de_chaos:
@@ -126,7 +126,7 @@ class Circuit:
             ign = {key:float(ign[key]) for key in ('lat', 'lon')}
             self.coordonné = OrderedDict(longitude=ign['lon'], latitude=ign['lat'])
         else:
-            self.coordonné = {}
+            self.coordonné = None # {}
         
         année_réfection = args[6]
         if année_réfection:
@@ -139,7 +139,7 @@ class Circuit:
         self.status = first(args[8])
         liste_blocs = first(args[10])
         if liste_blocs == '(0)  blocs':
-            self.liste_blocs = []
+            self.liste_blocs = None # []
         else:
             self.liste_blocs = liste_blocs
 
@@ -167,7 +167,7 @@ liste_blocs: {0.liste_blocs}
 
     def to_json(self):
 
-        keys = ('massif', 'cotation', 'numéro', 'cotation', 'fiches', 'coordonné',
+        keys = ('massif', 'couleur', 'numéro', 'cotation', 'fiches', 'coordonné',
                 'année_réfection', 'gestion', 'status', 'liste_blocs')
         return OrderedDict([(fr_key(key), self.__dict__[key]) for key in keys])
 
@@ -256,7 +256,6 @@ class MyHTMLParser(HTMLParser):
             if data:
                 self._column.append(data)
             #     print(' '*4 + data)
-
 
 ####################################################################################################
 
