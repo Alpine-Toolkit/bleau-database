@@ -1,0 +1,51 @@
+{# -*- engine: jinja2 -*- #}
+<!DOCTYPE html>
+{# "{{ LANGUAGE_CODE }}" #}
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>Bleau Database - {% block title %}{% endblock %}</title>
+  <meta name="description" content="Financial Simulator">
+  <meta name="author" content="Fabrice Salvaire">
+
+  <link rel="stylesheet" href={{ url_for('static', filename='css/bootstrap.min.css') }}>
+  <link rel="stylesheet" href={{ url_for('static', filename='css/bleau-database.css') }}>
+  <style>
+  </style>
+  {% block head %}{% endblock %}
+</head>
+
+<nav class="navbar navbar-dark bg-inverse navbar-fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Bleau DB</a>
+    <ul class="nav navbar-nav">
+      <li class="nav-item active">
+	<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<body>
+  <div class="body">
+    <div class="container">
+    {% block body %}{% endblock %}
+
+    <hr />
+    <footer>
+      <p>&copy; Bleau Database 2015 / Fabrice Salvaire /
+	<a href="https://github.com/Cosiroc/bleau-database/releases/tag/v0.1 ">v0.1</a>
+	<span class="pull-right"><a href="https://github.com/Cosiroc/bleau-database">About</a></span>
+      </p>
+    </footer>
+    </div>
+  </div>
+
+  <script src={{ url_for('static', filename='js/jquery.min.js') }}></script>
+  <script src={{ url_for('static', filename='js/bootstrap.min.js') }}></script>
+  {% block script %}{% endblock %}
+</body>
+</html>

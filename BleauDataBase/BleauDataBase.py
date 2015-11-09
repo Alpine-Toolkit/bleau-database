@@ -168,9 +168,9 @@ class WithCoordinate(FromJsonMixin):
 
     ##############################################
 
-    def nearest(self, number_of_items=1):
+    def nearest(self, number_of_items=1, distance_max=None):
 
-        return self.bleau_database.nearest_massif(self, number_of_items)
+        return self.bleau_database.nearest_massif(self, number_of_items, distance_max)
 
     ##############################################
 
@@ -222,7 +222,17 @@ class Massif(WithCoordinate):
     ##############################################
 
     def __iter__(self):
-        return iter(self._circuits)
+        return iter(sorted(self._circuits, key=lambda x: x.cotation_number))
+
+    ##############################################
+
+    @property
+    def nom_or_massif(self):
+
+        if self.nom:
+            return self.nom
+        else:
+            return self.massif
 
     ##############################################
 
@@ -243,6 +253,13 @@ secteur: {0.secteur}
         return template.format(self)
 
 ####################################################################################################
+
+_cotation_bases = ('EN', 'PD', 'AD', 'D', 'TD', 'ED')
+_cotations = []
+for cotation in _cotation_bases:
+    for suffix in '-', '', '+':
+        _cotations.append(cotation + suffix)
+_cotation_to_number = {cotation:i for i, cotation in enumerate(_cotations)}
 
 class Circuit(WithCoordinate):
 
@@ -290,6 +307,12 @@ status: {0.status}
 liste_blocs: {0.liste_blocs}
 '''
         return template.format(self)
+
+    ##############################################
+
+    @property
+    def cotation_number(self):
+        return _cotation_to_number[self.cotation]
 
     ##############################################
 
@@ -436,14 +459,17 @@ class BleauDataBase:
 
     ##############################################
 
-    def nearest_massif(self, item, number_of_items=1):
+    def nearest_massif(self, item, number_of_items=1, distance_max=None):
 
         number_of_items += 1
         rtree_ = self.rtree_massif
         # Fixme: segfault ???
         # return [x.object for x in rtree.nearest(item.coordonne.bounding_box, number_of_items, objects=True)]
         items = [self._ids[x] for x in rtree_.nearest(item.coordonne.bounding_box, number_of_items)]
-        return [x for x in items if x is not item]
+        items = [x for x in items if x is not item]
+        if distance_max is not None:
+            items = [x for x in items if item.distance_to(x) <= distance_max]
+        return items
 
 ####################################################################################################
 #

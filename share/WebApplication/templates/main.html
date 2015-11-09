@@ -1,0 +1,14 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "base.html" %}
+{% block body %}
+  <div class="row">
+    <div class="col-xl-12">
+      <h2>Massifs</h2>
+      <ul>
+	{% for massif in bleau_database.massifs %}
+	  <li><a href="/main/massif/{{ massif.massif }}">{{ massif.massif }}</a></li>
+	{% endfor %}
+      </ul>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Bas Cuvier</title>
+<style type="text/css">
+    * {font-family: Arial;}
+</style>
+<style type="text/css">
+    div#mapign {
+        width:800px;
+		height:600px;
+        background-color:white;
+        background-image:url(http://api.ign.fr/geoportail/api/js/2.0.0/theme/geoportal/img/loading.gif);
+        background-position:center center;
+        background-repeat:no-repeat;
+    }
+</style>
+</head>
+<body>
+<h2 style="margin: 2px;">Bas Cuvier 
+<img src="images/M_images/punaise.gif" style="width: 35px; heigth: 35px; margin-bottom: -17px;" alt="Punaise"> 
+<span style="margin-left: 100px; font-size: 12px; font-weight: normal;">
+<a href="http://www.gumsparis.asso.fr/ign.php?lat=48.447261&amp;lng=2.640046&amp;lieu=Bas+Cuvier&amp;grand=0">Réduire la carte</a>
+</span></h2>
+<div id="mapign" style="width:1200px;height:800px; cursor: crosshair;"></div>
+<!-- <div id="mapign"></div> -->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+    window.onload= function() {
+        Geoportal.load(
+            // div's ID:
+            'mapign',
+			// API's keys prod:
+			['bqomnib6098qlnry57t6n7tf'],
+            {// map's center :
+                // longitude:
+                lon:2.640046,
+                // latitude:
+                lat:48.447261,
+            },
+			//zoom
+			15,
+			//options
+			{
+				layers:['ORTHOIMAGERY.ORTHOPHOTOS','GEOGRAPHICALGRIDSYSTEMS.MAPS'],
+				layersOptions:{'ORTHOIMAGERY.ORTHOPHOTOS':{visibility:false},
+				'GEOGRAPHICALGRIDSYSTEMS.MAPS':{opacity:1.0}},
+				viewerClass:Geoportal.Viewer.Default
+			}
+		);
+	};
+//--><!]]></script>
+<script
+    type="text/javascript"
+    src="http://api.ign.fr/geoportail/api/js/2.0.0/Geoportal.js">
+</script>
+</body>
+</html>
