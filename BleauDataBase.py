@@ -18,9 +18,14 @@
 ####################################################################################################
 
 import json
+import locale
 import urllib.request
 
 from collections import OrderedDict
+
+####################################################################################################
+
+locale.setlocale(locale.LC_ALL, 'fr_FR')
 
 ####################################################################################################
 
@@ -117,6 +122,13 @@ class WithCoordinate(FromJsonMixin):
         
         return d
 
+    ##############################################
+
+    def __lt__(self, other):
+
+        # return locale.strcoll(str(self), str(other))
+        return locale.strxfrm(str(self)) < locale.strxfrm(str(other))
+
 ####################################################################################################
 
 class Massif(WithCoordinate):
@@ -155,7 +167,7 @@ class Circuit(WithCoordinate):
         Field('couleur', str),
         Field('numero', int),
         Field('cotation', str),
-        Field('fiches', StringList),
+        Field('topos', StringList),
         Field('coordonne', Coordonne),
         Field('annee_refection', int),
         Field('gestion', str),
@@ -166,13 +178,18 @@ class Circuit(WithCoordinate):
     ##############################################
 
     def __str__(self):
+        return '{0.massif}-{0.numero}'.format(self)
+
+    ##############################################
+
+    def str_long(self):
 
         template = '''
 massif: {0.massif}
 couleur: {0.couleur}
 numéro: {0.numero}
 cotation: {0.cotation}
-fiches: {0.fiches}
+topos: {0.topos}
 coordonné: {0.coordonne}
 année_réfection: {0.annee_refection}
 gestion: {0.gestion}
@@ -183,15 +200,15 @@ liste_blocs: {0.liste_blocs}
 
     ##############################################
 
-    def has_fiche(self):
+    def has_topo(self):
 
-        return bool(self.fiches)
+        return bool(self.topos)
 
     ##############################################
 
-    def upload_fiches(self):
+    def upload_topos(self):
 
-        for url in self.fiches:
+        for url in self.topos:
             if url.endswith('.pdf'):
                 print('Get', url)
                 with urllib.request.urlopen(url) as response:
@@ -239,9 +256,9 @@ class BleauDataBase:
         return len(self._circuits)
 
     @property
-    def nombre_de_circuits_avec_fiches(self):
+    def nombre_de_circuits_avec_topos(self):
         return len([circuit for circuit in self._circuits
-                    if circuit.has_fiche()])
+                    if circuit.has_topo()])
 
     @property
     def nombre_de_massifs(self):
@@ -275,15 +292,15 @@ class BleauDataBase:
 
     ##############################################
 
-    def to_json(self, json_file):
+    def to_json(self, json_file, sort_keys=False):
 
         data = OrderedDict(
-            massifs=[massif.to_json() for massif in self.massifs],
-            circuits=[circuit.to_json(self) for circuit in self.circuits],
+            massifs=[massif.to_json() for massif in sorted(self.massifs)],
+            circuits=[circuit.to_json(self) for circuit in sorted(self.circuits)],
         )
         
         with open(json_file, 'w', encoding='utf8') as f:
-            json.dump(data, f, indent=2, ensure_ascii=False) # , sort_keys=True
+            json.dump(data, f, indent=2, ensure_ascii=False, sort_keys=sort_keys)
 
 ####################################################################################################
 #

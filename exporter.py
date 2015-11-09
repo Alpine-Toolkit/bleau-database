@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 ####################################################################################################
 #
 # Script Python pour exporter la base de données du Cosiroc vers un fichier JSON
@@ -25,7 +27,7 @@ from html.parser import HTMLParser
 
 ####################################################################################################
 
-from BleauDataBase import Coordonne, Massif, Circuit, BleauDataBase
+from BleauDataBase import Massif, Circuit, BleauDataBase
 
 ####################################################################################################
 
@@ -97,7 +99,7 @@ class CircuitExporter:
         couleur = first(args[1])
         numero = int(first(args[2]))
         cotation = first(args[3])
-        fiches = [url for url in args[4] if url.startswith('http')]
+        topos = [url for url in args[4] if url.startswith('http')]
         
         ign = first(args[5])
         if ign:
@@ -128,7 +130,7 @@ class CircuitExporter:
                        couleur=couleur,
                        numero=numero,
                        cotation=cotation,
-                       fiches=fiches,
+                       topos=topos,
                        coordonne=coordonne,
                        annee_refection=annee_refection,
                        gestion=gestion,
@@ -243,7 +245,7 @@ for i in range(1, 5):
 for circuit in parser.items:
     bleau_database.add_circuit(circuit)
 
-json_file = 'bleau.json'
+json_file = 'bleau-raw.json'
 bleau_database.to_json(json_file)
 
 ####################################################################################################
