@@ -1,6 +1,6 @@
 {# -*- engine: jinja2 -*- #}
-{% extends "geoportail.html" %}
-{% block body %}
+{% extends "geoportail-base.html" %}
+{% block content %}
   <ul class="breadcrumb">
     <li><a href="/main">Accueil</a></li>
     <li class="active">{{ massif.massif }}</li>
@@ -16,7 +16,7 @@
 	<dt>Accés en voiture</dt>
 	<dd>
 	  {{ massif.acces }}<br>
-	  <a href="{{ massif.itineraire }}">Itineraire Google Map</a>
+	  <a href="/main/google-map/{{ massif.massif }}?{{ massif.itineraire }}">Itineraire Google Map</a>
 	</dd>
         <dt>Accés à vélo {% if massif.a_pieds %}/ à pieds{% endif %}</dt>
 	<dd>{{ massif.velo }}</dd>
@@ -115,6 +115,7 @@
 	  <p id="mouse-position">Position : &nbsp;</p>
 	</div>
       </div>
+      <a href="/main/geoportail/{{ massif.massif }}">Grande carte</a>
       {{ geoportail_map() }}
     </div>
   </div>

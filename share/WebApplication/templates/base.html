@@ -17,6 +17,7 @@
   {% block head %}{% endblock %}
 </head>
 
+{% block nav %}
 <nav class="navbar navbar-dark bg-inverse navbar-fixed-top">
   <div class="container">
     <a class="navbar-brand" href="/main">Bleau DB</a>
@@ -27,12 +28,16 @@
     </ul>
   </div>
 </nav>
+{% endblock %}
 
+{% block body %}
 <body>
+  {% block body_container %}
   <div class="body">
     <div class="container">
-    {% block body %}{% endblock %}
+    {% block content %}{% endblock %}
 
+    {% block footer %}
     <hr />
     <footer>
       <p>&copy; Bleau Database 2015 / Fabrice Salvaire /
@@ -40,11 +45,14 @@
 	<span class="pull-right"><a href="https://github.com/Cosiroc/bleau-database">About</a></span>
       </p>
     </footer>
+    {% endblock %}
     </div>
   </div>
+  {% endblock %}
 
   <script src={{ url_for('static', filename='js/jquery.min.js') }}></script>
   <script src={{ url_for('static', filename='js/bootstrap.min.js') }}></script>
   {% block script %}{% endblock %}
 </body>
+{% endblock %}
 </html>

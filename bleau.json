@@ -5279,7 +5279,7 @@
         "latitude": 48.37722,
         "longitude": 2.51919
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.37258333%20&lng=2.51075&lieu=Parking+Cimeti%C3%A8re+de+Noisy+sur+Ecole",
+      "itineraire": "lat=48.37258333%20&lng=2.51075&lieu=Parking+Cimeti%C3%A8re+de+Noisy+sur+Ecole",
       "massif": "91_1",
       "nom": null,
       "notes": null,
@@ -5297,7 +5297,7 @@
         "latitude": 48.385867,
         "longitude": 2.529684
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.388116&lng=2.518397&lieu=Parking+de+la+Croix+Saint+J%C3%A9rome",
+      "itineraire": "lat=48.388116&lng=2.518397&lieu=Parking+de+la+Croix+Saint+J%C3%A9rome",
       "massif": "95_2",
       "nom": null,
       "notes": null,
@@ -5315,7 +5315,7 @@
         "latitude": 48.43563,
         "longitude": 2.62185
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.44042&lng=2.62453&lieu=Carrefour+du+Bas+Br%C3%A9au",
+      "itineraire": "lat=48.44042&lng=2.62453&lieu=Carrefour+du+Bas+Br%C3%A9au",
       "massif": "Apremont Bizons",
       "nom": null,
       "notes": " Pour rejoindre le circuit bleu continuer la route Marie-Thérèse sur 200 m et prendre à droite une sente qui mène au départ du circuit.",
@@ -5333,7 +5333,7 @@
         "latitude": 48.438109,
         "longitude": 2.621716
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.44042&lng=2.62453&lieu=Carrefour+du+Bas+Br%C3%A9au",
+      "itineraire": "lat=48.44042&lng=2.62453&lieu=Carrefour+du+Bas+Br%C3%A9au",
       "massif": "Apremont Dames",
       "nom": null,
       "notes": null,
@@ -5351,7 +5351,7 @@
         "latitude": 48.436966,
         "longitude": 2.644824
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.44042&lng=2.62453&lieu=Carrefour+du+Bas+Br%C3%A9au",
+      "itineraire": "lat=48.44042&lng=2.62453&lieu=Carrefour+du+Bas+Br%C3%A9au",
       "massif": "Apremont Désert",
       "nom": null,
       "notes": null,
@@ -5369,7 +5369,7 @@
         "latitude": 48.43825,
         "longitude": 2.63524
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.44042&lng=2.62453&lieu=Carrefour+du+Bas+Br%C3%A9au",
+      "itineraire": "lat=48.44042&lng=2.62453&lieu=Carrefour+du+Bas+Br%C3%A9au",
       "massif": "Apremont Envers",
       "nom": "Envers Apremont",
       "notes": null,
@@ -5387,7 +5387,7 @@
         "latitude": 48.43506,
         "longitude": 2.63236
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.44042&lng=2.62453&lieu=Carrefour+du+Bas+Br%C3%A9au",
+      "itineraire": "lat=48.44042&lng=2.62453&lieu=Carrefour+du+Bas+Br%C3%A9au",
       "massif": "Apremont Gorges",
       "nom": "Gorges Apremont",
       "notes": null,
@@ -5420,7 +5420,7 @@
         "latitude": 48.390819,
         "longitude": 2.562827
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.390963&lng=2.557555&lieu=Parking+Bois+Rond",
+      "itineraire": "lat=48.390963&lng=2.557555&lieu=Parking+Bois+Rond",
       "massif": "Bois Rond",
       "nom": null,
       "notes": null,
@@ -5510,7 +5510,7 @@
         "latitude": 48.392289,
         "longitude": 2.547469
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.390906&lng=2.557413&lieu=Parking+de+la+Canche+aux+Merciers",
+      "itineraire": "lat=48.390906&lng=2.557413&lieu=Parking+de+la+Canche+aux+Merciers",
       "massif": "Canche aux Merciers",
       "nom": null,
       "notes": null,
@@ -5543,7 +5543,7 @@
         "latitude": 48.516483,
         "longitude": 2.2325
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.516483&lng=2.232500&lieu=Chamarande",
+      "itineraire": "lat=48.516483&lng=2.232500&lieu=Chamarande",
       "massif": "Chamarande",
       "nom": null,
       "notes": null,
@@ -5561,7 +5561,7 @@
         "latitude": 48.376267,
         "longitude": 2.524167
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.37258333&lng=2.51075&lieu=Parking+Cimeti%C3%A8re+de+Noisy+sur+Ecole",
+      "itineraire": "lat=48.37258333&lng=2.51075&lieu=Parking+Cimeti%C3%A8re+de+Noisy+sur+Ecole",
       "massif": "Cul de Chien",
       "nom": null,
       "notes": null,
@@ -5579,7 +5579,7 @@
         "latitude": 48.447261,
         "longitude": 2.640046
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.445788&lng=2.637384&lieu=Bas+Cuvier",
+      "itineraire": "lat=48.445788&lng=2.637384&lieu=Bas+Cuvier",
       "massif": "Cuvier Bas",
       "nom": "Bas Cuvier",
       "notes": null,
@@ -5669,7 +5669,7 @@
         "latitude": 48.37138,
         "longitude": 2.53248
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.363619&lng=2.526842&lieu=Parking+de+la+Vall%C3%A9e+de+la+M%C3%A9e",
+      "itineraire": "lat=48.363619&lng=2.526842&lieu=Parking+de+la+Vall%C3%A9e+de+la+M%C3%A9e",
       "massif": "Diplodocus",
       "nom": null,
       "notes": null,
@@ -5705,7 +5705,7 @@
         "latitude": 48.294441,
         "longitude": 2.593137
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.293794&lng=2.597261&lieu=El%C3%A9phant",
+      "itineraire": "lat=48.293794&lng=2.597261&lieu=El%C3%A9phant",
       "massif": "Eléphant",
       "nom": null,
       "notes": null,
@@ -5777,7 +5777,7 @@
         "latitude": 48.410194,
         "longitude": 2.612113
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.41016&lng=2.61343&lieu=Franchard+Cuisiniere",
+      "itineraire": "lat=48.41016&lng=2.61343&lieu=Franchard+Cuisiniere",
       "massif": "Franchard Cuisinière",
       "nom": null,
       "notes": null,
@@ -5813,7 +5813,7 @@
         "latitude": 48.408448,
         "longitude": 2.598639
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.407570&lng=2.599546&lieu=Franchard+Hautes+Plaines",
+      "itineraire": "lat=48.407570&lng=2.599546&lieu=Franchard+Hautes+Plaines",
       "massif": "Franchard Hautes-Plaines",
       "nom": null,
       "notes": null,
@@ -5867,7 +5867,7 @@
         "latitude": 48.398909,
         "longitude": 2.520309
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.398009&lng=2.520309&lieu=Gorge+aux+Chats",
+      "itineraire": "lat=48.398009&lng=2.520309&lieu=Gorge+aux+Chats",
       "massif": "Gorge aux Châts",
       "nom": null,
       "notes": null,
@@ -5921,7 +5921,7 @@
         "latitude": 48.385573,
         "longitude": 2.537173
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.388116&lng=2.518397&lieu=Parking+de+la+Croix+Saint+J%C3%A9rome",
+      "itineraire": "lat=48.388116&lng=2.518397&lieu=Parking+de+la+Croix+Saint+J%C3%A9rome",
       "massif": "Gros Sablons",
       "nom": null,
       "notes": "Orange No 1 AD+ à droite du chemin des Cassis, long circuit historique; Orange No 2 AD à gauche du chemin des Cassis;",
@@ -5939,7 +5939,7 @@
         "latitude": 48.360158,
         "longitude": 2.535674
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.359386&lng=2.534573&lieu=J.A.+Martin",
+      "itineraire": "lat=48.359386&lng=2.534573&lieu=J.A.+Martin",
       "massif": "J.A. Martin - R. Cailleau",
       "nom": null,
       "notes": null,
@@ -5975,7 +5975,7 @@
         "latitude": 48.3942,
         "longitude": 2.51473
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.39420&lng=2.51473&lieu=Chateauveau",
+      "itineraire": "lat=48.39420&lng=2.51473&lieu=Chateauveau",
       "massif": "Justice de Chambergeot",
       "nom": "Justice de Chambergeot - Chateauveau ",
       "notes": null,
@@ -6047,7 +6047,7 @@
         "latitude": 48.401005,
         "longitude": 2.663016
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.404420%20&lng=2.677746&lieu=Mont+Aigu",
+      "itineraire": "lat=48.404420%20&lng=2.677746&lieu=Mont+Aigu",
       "massif": "Mont-Aigu",
       "nom": null,
       "notes": null,
@@ -6131,7 +6131,7 @@
         "latitude": 48.479919,
         "longitude": 2.46042
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.478489%20&lng=2.463886&lieu=La%20Padole",
+      "itineraire": "lat=48.478489%20&lng=2.463886&lieu=La%20Padole",
       "massif": "Padôle",
       "nom": "La Padôle",
       "notes": "Certains blocs sont hauts et exposés. Des points d'assurages sont prévus. Corde utile.",
@@ -6236,7 +6236,7 @@
         "latitude": 48.367609,
         "longitude": 2.533268
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.363619&lng=2.526842&lieu=Parking%20de+la+Vall%C3%A9e+de+la+M%C3%A9e",
+      "itineraire": "lat=48.363619&lng=2.526842&lieu=Parking%20de+la+Vall%C3%A9e+de+la+M%C3%A9e",
       "massif": "Potala",
       "nom": null,
       "notes": null,
@@ -6254,7 +6254,7 @@
         "latitude": 48.268468,
         "longitude": 2.648239
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.268895&lng=2.649144&lieu=Puiselet",
+      "itineraire": "lat=48.268895&lng=2.649144&lieu=Puiselet",
       "massif": "Puiselet",
       "nom": null,
       "notes": null,
@@ -6380,7 +6380,7 @@
         "latitude": 48.374468,
         "longitude": 2.514543
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.37258333%20&lng=2.51075&lieu=Parking+Cimeti%C3%A8re+de+Noisy+sur+Ecole",
+      "itineraire": "lat=48.37258333%20&lng=2.51075&lieu=Parking+Cimeti%C3%A8re+de+Noisy+sur+Ecole",
       "massif": "Roche aux Sabots",
       "nom": null,
       "notes": null,
@@ -6416,7 +6416,7 @@
         "latitude": 48.4626696,
         "longitude": 2.662866
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.462885&lng=2.666102&lieu=Rocher+Canon",
+      "itineraire": "lat=48.462885&lng=2.666102&lieu=Rocher+Canon",
       "massif": "Rocher Canon",
       "nom": null,
       "notes": null,
@@ -6452,7 +6452,7 @@
         "latitude": 48.422982,
         "longitude": 2.408614
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.425970&lng=2.412217&lieu=Rocher%20Ch%C3%A2tillon",
+      "itineraire": "lat=48.425970&lng=2.412217&lieu=Rocher%20Ch%C3%A2tillon",
       "massif": "Rocher de Chatillon",
       "nom": null,
       "notes": null,
@@ -6542,7 +6542,7 @@
         "latitude": 48.38278,
         "longitude": 2.52701
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.388116&lng=2.518397&lieu=Parking+de+la+Croix+Saint+J%C3%A9rome",
+      "itineraire": "lat=48.388116&lng=2.518397&lieu=Parking+de+la+Croix+Saint+J%C3%A9rome",
       "massif": "Rocher des Potets",
       "nom": null,
       "notes": null,
@@ -6614,7 +6614,7 @@
         "latitude": 48.503955,
         "longitude": 2.476883
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.503372&lng=2.480238&lieu=Beauvais+Nainville",
+      "itineraire": "lat=48.503372&lng=2.480238&lieu=Beauvais+Nainville",
       "massif": "Rocher du Duc - Nainville",
       "nom": "Beauvais Nainville",
       "notes": null,
@@ -6632,7 +6632,7 @@
         "latitude": 48.501188,
         "longitude": 2.471663
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.502718&lng=2.468608&lieu=Beauvais+T%C3%A9l%C3%A9graphe",
+      "itineraire": "lat=48.502718&lng=2.468608&lieu=Beauvais+T%C3%A9l%C3%A9graphe",
       "massif": "Rocher du Duc -Télégraphe",
       "nom": "Beauvais Télégraphe",
       "notes": null,
@@ -6650,7 +6650,7 @@
         "latitude": 48.371831,
         "longitude": 2.528414
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.363619&lng=2.526842&lieu=Parking+de+la+Vall%C3%A9e+de+la+M%C3%A9e",
+      "itineraire": "lat=48.363619&lng=2.526842&lieu=Parking+de+la+Vall%C3%A9e+de+la+M%C3%A9e",
       "massif": "Rocher du Général",
       "nom": null,
       "notes": null,
@@ -6668,7 +6668,7 @@
         "latitude": 48.37717,
         "longitude": 2.534828
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.363619&lng=2.526842&lieu=Parking+de+la+Vall%C3%A9e+de+la+M%C3%A9e",
+      "itineraire": "lat=48.363619&lng=2.526842&lieu=Parking+de+la+Vall%C3%A9e+de+la+M%C3%A9e",
       "massif": "Rocher fin",
       "nom": null,
       "notes": null,
@@ -6722,7 +6722,7 @@
         "latitude": 48.440286,
         "longitude": 2.686249
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.440349&lng=2.684836&lieu=Rocher+Saint+Germain",
+      "itineraire": "lat=48.440349&lng=2.684836&lieu=Rocher+Saint+Germain",
       "massif": "Rocher Saint-Germain",
       "nom": null,
       "notes": null,
@@ -6758,7 +6758,7 @@
         "latitude": 48.379913,
         "longitude": 2.504592
       },
-      "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.37258333%20&lng=2.51075&lieu=Parking+Cimeti%C3%A8re+de+Noisy+sur+Ecole",
+      "itineraire": "lat=48.37258333%20&lng=2.51075&lieu=Parking+Cimeti%C3%A8re+de+Noisy+sur+Ecole",
       "massif": "Ségognole",
       "nom": "La Saussaye - La Ségognole ",
       "notes": null,
