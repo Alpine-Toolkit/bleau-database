@@ -20,7 +20,10 @@
 
 ####################################################################################################
 
-from flask import current_app, Blueprint, render_template
+from flask import current_app, Blueprint, render_template, request
+
+# ?foo=bar&toto=tata
+# request.args) # .get('foo')
 
 ####################################################################################################
 
@@ -47,9 +50,14 @@ def massifs_par_secteur():
     return render_template('massifs-par-secteur.html', bleau_database=model.bleau_database)
 
 @main.route('/massif/<massif>')
-def journal(massif):
+def massif(massif):
     massif = model.bleau_database[massif]
     return render_template('massif.html', massif=massif)
+
+@main.route('/geoportail/<massif>')
+def geoportail(massif):
+    massif = model.bleau_database[massif]
+    return render_template('geoportail.html', massif=massif)
 
 ####################################################################################################
 #
