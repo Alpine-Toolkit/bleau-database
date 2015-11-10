@@ -185,14 +185,14 @@ class WithCoordinate(FromJsonMixin):
 class Massif(WithCoordinate):
 
     __fields__ = (
-        Field('acces', str),
         Field('a_pieds', bool),
+        Field('acces', str),
         Field('coordonne', Coordonne),
-        Field('itineraire', str),
         Field('massif', str),
         Field('nom', str),
         Field('notes', str),
         Field('parcelles', str),
+        Field('parking', str),
         Field('point_deau', str),
         Field('rdv', str),
         Field('secteur', str),
