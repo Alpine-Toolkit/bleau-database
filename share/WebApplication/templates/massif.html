@@ -8,32 +8,29 @@
 
   <div class="row">
     <div class="col-xl-12">
-      <h2>{{ massif.secteur }} ~ {{ massif.massif }} {% if massif.nom %} ~ {{ massif.nom }}{% endif %}</h2>
-      <h3>Accés</h3>
+
+      <h1>{{ massif.secteur }} ~ {{ massif.massif }} {% if massif.nom %} ~ {{ massif.nom }}{% endif %}</h1>
+
+      <h2>Accés</h2>
       <dl>
 	<dt>Accés en voiture</dt>
 	<dd>
-	  {{ massif.acces }}
-	  <br><a href="{{ massif.itineraire }}">Itineraire Google Map</a>
+	  {{ massif.acces }}<br>
+	  <a href="{{ massif.itineraire }}">Itineraire Google Map</a>
 	</dd>
         <dt>Accés à vélo {% if massif.a_pieds %}/ à pieds{% endif %}</dt>
 	<dd>{{ massif.velo }}</dd>
       </dl>
-      <h3>Informations</h3>
+      
+      <h2>Informations</h2>
       <dl>
-	<dt>Coordonnée WGS 84 (<a href="http://spatialreference.org/ref/epsg/wgs-84/">EPSG:4326</a>)</dt>
-	<dd>longitude, latitude = {{ massif.coordonne }}</dd>
-	<dt>Coordonnée Mercator (<a href="http://spatialreference.org/ref/sr-org/epsg3857-wgs84-web-mercator-auxiliary-sphere/">EPSG:3857</a>)</dt>
-	{% with mercator = massif.coordonne.mercator %}
-	  <dd>({{ mercator[0] | round | int }}, {{ mercator[1] | round | int }}) m</dd>
-	{% endwith %}
-        <dt>Parcelles ONF</dt><dd>{{ massif.parcelles }}</dd>
         <dt>Rendez-vous Gums</dt><dd>{{ massif.rdv }}</dd>
         <dt>Point d'eau</dt><dd>{{ massif.point_deau }}</dd>
         <dt>Notes</dt><dd>{{ massif.notes }}</dd>
 	<dt>Type de chaos</dt><dd>{{ massif.type_de_chaos }}</dd>
       </dl>
-      <h3>Circuits</h3>
+      
+      <h2>Circuits</h2>
       <table class="table table-sm">
 	<col style="width:5%">
 	<col style="width:5%">
@@ -54,7 +51,8 @@
 	  {% endfor %}
 	</tbody>
       </table>
-      <h3>Massifs à proximité</h3>
+      
+      <h2>Massifs à proximité</h2>
       <div class="alert alert-info" role="alert">
 	critère: 2 km à vol d'oiseau, donc prévoir plus long!
       </div>
@@ -83,6 +81,40 @@
 	  <p>aucun</p>
 	{% endif %}
       {% endwith %}
+      
+      <h2>Carte de situation</h2>
+      <div class="row">
+	<div class="col-xl-6">
+	  <dl class="dl-horizontal">
+	    <dt class="col-xl-4">Coordonnée WGS 84</dt>
+	    <dd class="col-xl-8">longitude, latitude =</dd>
+	    <dt class="col-xl-4">(<a href="http://spatialreference.org/ref/epsg/wgs-84/">EPSG:4326</a>)</dt>
+	    <dd class="col-xl-8">{{ massif.coordonne }} °</dd>
+	    <dt class="col-xl-4">Coordonnée Mercator</dt>
+	    {% with mercator = massif.coordonne.mercator %}
+            <dd class="col-xl-8">({{ mercator[0] | round | int }}, {{ mercator[1] | round | int }}) m</dd>
+	    {% endwith %}
+	    <dt class="col-xl-4">
+	      (<a href="http://spatialreference.org/ref/sr-org/epsg3857-wgs84-web-mercator-auxiliary-sphere/">EPSG:3857</a>)
+	    </dt>
+	    <dd class="col-xl-8"><br></dd>
+            <dt class="col-xl-4">Parcelles ONF</dt>
+	    <dd class="col-xl-8">{{ massif.parcelles }}</dd>
+	  </dl>
+	</div>
+	<div class="col-xl-6">
+	  <form>
+	    <label>Projection</label>
+	    <select id="projection">
+	      <option value="EPSG:4326">EPSG:4326</option>
+	      <option value="EPSG:3857">EPSG:3857</option>
+	    </select>
+	    <label>Precision</label>
+	    <input id="precision" type="number" min="0" max="12" value="4"/>
+	  </form>
+	  <p id="mouse-position">Position : &nbsp;</p>
+	</div>
+      </div>
       {{ geoportail_map() }}
     </div>
   </div>

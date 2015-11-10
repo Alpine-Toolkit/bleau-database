@@ -6,16 +6,50 @@ var proj_3857 = ol.proj.get('EPSG:3857');
 
 /**************************************************************************************************/
 
+var mouse_position_control = new ol.control.MousePosition({
+  coordinateFormat: ol.coordinate.createStringXY(4),
+  projection: 'EPSG:4326',
+  // comment the following two lines to have the mouse position be placed within the map.
+  className: 'custom-mouse-position',
+  target: document.getElementById('mouse-position'),
+  undefinedHTML: '&nbsp;'
+});
+
+var projection_select = $('#projection');
+projection_select.on('change', function() {
+  mouse_position_control.setProjection(ol.proj.get(this.value));
+});
+projection_select.val(mouse_position_control.getProjection().getCode());
+
+var precision_input = $('#precision');
+precision_input.on('change', function() {
+  var format = ol.coordinate.createStringXY(this.valueAsNumber);
+  mouse_position_control.setCoordinateFormat(format);
+});
+
+/**************************************************************************************************/
+
+var center_in_mercator = ol.proj.transform([center.longitude, center.latitude],
+					   'EPSG:4326', 'EPSG:3857');
+var extent_margin = 1000; // m
+
 var map = new ol.Map({
   target: 'map',
   controls: ol.control.defaults({
     attributionOptions: /** @type {olx.control.AttributionOptions} */ ({
       collapsible: false
     })
-  }),
+  }).extend([
+    new ol.control.ZoomToExtent({
+      extent: [
+	center_in_mercator[0] - extent_margin, center_in_mercator[1] - extent_margin,
+	center_in_mercator[0] + extent_margin, center_in_mercator[1] + extent_margin
+      ]
+    }),
+    mouse_position_control]),
   view: new ol.View({
     zoom: 15,
-    center: ol.proj.transform([center.longitude, center.latitude], 'EPSG:4326', 'EPSG:3857')
+    center: center_in_mercator
   })
 });
 
