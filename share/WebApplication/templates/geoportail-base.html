@@ -32,10 +32,10 @@
 
 {% block script %}
   <script type="text/javascript">
-var center = {
-    longitude: {{ massif.coordonne.longitude }},
-    latitude: {{ massif.coordonne.latitude }}
+   var center = {
+       longitude: {{ massif.coordonne.longitude }},
+       latitude: {{ massif.coordonne.latitude }}
    };
-{% include "geoportail-openlayers.js" %}
   </script>
+  <link rel="text/javascript" href={{ url_for('static', filename='js/geoportail-openlayers.js') }}>
 {% endblock %}

@@ -59,11 +59,7 @@ def geoportail(massif):
 @main.route('/google-map/<massif>')
 def google_map(massif):
     massif = model.bleau_database[massif]
-    args = request.args
-    lat = args.get('lat')
-    lng = args.get('lng')
-    lieu = args.get('lieu')
-    return render_template('google-map.html', massif=massif, lat=lat, lng=lng, lieu=lieu)
+    return render_template('google-map.html', massif=massif)
 
 ####################################################################################################
 #

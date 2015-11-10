@@ -16,7 +16,11 @@
 	<dt>Accés en voiture</dt>
 	<dd>
 	  {{ massif.acces }}<br>
-	  <a href="/main/google-map/{{ massif.massif }}?{{ massif.itineraire }}">Itineraire Google Map</a>
+	  {% if massif.parking %}
+	  <a href="/main/google-map/{{ massif.massif }}">Itineraire Google Map</a>
+	  {% else %}
+	  Pas d'itineraire renseigné
+	  {% endif %}
 	</dd>
         <dt>Accés à vélo {% if massif.a_pieds %}/ à pieds{% endif %}</dt>
 	<dd>{{ massif.velo }}</dd>
