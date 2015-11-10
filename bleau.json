@@ -2423,7 +2423,7 @@
       "couleur": "jaune",
       "gestion": "ONF77",
       "liste_blocs": null,
-      "massif": "J.A. Martin / R. Cailleau",
+      "massif": "J.A. Martin - R. Cailleau",
       "numero": 1,
       "status": "liste SNE",
       "topos": []
@@ -2438,7 +2438,7 @@
       "couleur": "orange",
       "gestion": "ONF77",
       "liste_blocs": null,
-      "massif": "J.A. Martin / R. Cailleau",
+      "massif": "J.A. Martin - R. Cailleau",
       "numero": 2,
       "status": "liste SNE",
       "topos": [
@@ -2455,7 +2455,7 @@
       "couleur": "orange",
       "gestion": "ONF77",
       "liste_blocs": null,
-      "massif": "J.A. Martin / R. Cailleau",
+      "massif": "J.A. Martin - R. Cailleau",
       "numero": 3,
       "status": "liste SNE",
       "topos": [
@@ -2474,7 +2474,7 @@
       "couleur": "bleu",
       "gestion": "ONF77",
       "liste_blocs": null,
-      "massif": "J.A. Martin / R. Cailleau",
+      "massif": "J.A. Martin - R. Cailleau",
       "numero": 5,
       "status": "liste SNE",
       "topos": []
@@ -2489,7 +2489,7 @@
       "couleur": "bleu",
       "gestion": "ONF77",
       "liste_blocs": null,
-      "massif": "J.A. Martin / R. Cailleau",
+      "massif": "J.A. Martin - R. Cailleau",
       "numero": 6,
       "status": "liste SNE",
       "topos": [
@@ -2506,7 +2506,7 @@
       "couleur": "rouge",
       "gestion": "ONF77",
       "liste_blocs": null,
-      "massif": "J.A. Martin / R. Cailleau",
+      "massif": "J.A. Martin - R. Cailleau",
       "numero": 7,
       "status": "liste SNE",
       "topos": []
@@ -2521,7 +2521,7 @@
       "couleur": "blanc",
       "gestion": "ONF77",
       "liste_blocs": null,
-      "massif": "J.A. Martin / R. Cailleau",
+      "massif": "J.A. Martin - R. Cailleau",
       "numero": 8,
       "status": "liste SNE",
       "topos": []
@@ -2536,7 +2536,7 @@
       "couleur": "blanc",
       "gestion": null,
       "liste_blocs": null,
-      "massif": "J.A. Martin / R. Cailleau",
+      "massif": "J.A. Martin - R. Cailleau",
       "numero": 9,
       "status": "pas sur SNE",
       "topos": []
@@ -4043,7 +4043,7 @@
       "couleur": "bleu",
       "gestion": "ONF77",
       "liste_blocs": null,
-      "massif": "Rocher de Milly / Corne-Biche",
+      "massif": "Rocher de Milly - Corne-Biche",
       "numero": 1,
       "status": "liste SNE",
       "topos": []
@@ -4058,7 +4058,7 @@
       "couleur": "jaune",
       "gestion": "ONF77",
       "liste_blocs": null,
-      "massif": "Rocher de Milly / Corne-Biche",
+      "massif": "Rocher de Milly - Corne-Biche",
       "numero": 2,
       "status": "liste SNE",
       "topos": [
@@ -4075,7 +4075,7 @@
       "couleur": "orange",
       "gestion": "ONF77",
       "liste_blocs": null,
-      "massif": "Rocher de Milly / Corne-Biche",
+      "massif": "Rocher de Milly - Corne-Biche",
       "numero": 3,
       "status": "liste SNE",
       "topos": []
@@ -4090,7 +4090,7 @@
       "couleur": "orange",
       "gestion": null,
       "liste_blocs": null,
-      "massif": "Rocher de Milly / Corne-Biche",
+      "massif": "Rocher de Milly - Corne-Biche",
       "numero": 4,
       "status": null,
       "topos": [
@@ -4104,7 +4104,7 @@
       "couleur": "noir",
       "gestion": null,
       "liste_blocs": null,
-      "massif": "Rocher de Milly / Corne-Biche",
+      "massif": "Rocher de Milly - Corne-Biche",
       "numero": 999,
       "status": "abandonné",
       "topos": [
@@ -4118,7 +4118,7 @@
       "couleur": "blanc",
       "gestion": null,
       "liste_blocs": null,
-      "massif": "Rocher de Milly / Corne-Biche",
+      "massif": "Rocher de Milly - Corne-Biche",
       "numero": 999,
       "status": "abandonné",
       "topos": []
@@ -5940,7 +5940,7 @@
         "longitude": 2.535674
       },
       "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.359386&lng=2.534573&lieu=J.A.+Martin",
-      "massif": "J.A. Martin / R. Cailleau",
+      "massif": "J.A. Martin - R. Cailleau",
       "nom": null,
       "notes": null,
       "parcelles": "170 TP",
@@ -5977,7 +5977,7 @@
       },
       "itineraire": "http://www.gumsparis.asso.fr/maps.php?lat=48.39420&lng=2.51473&lieu=Chateauveau",
       "massif": "Justice de Chambergeot",
-      "nom": "Justice de Chambergeot / Chateauveau ",
+      "nom": "Justice de Chambergeot - Chateauveau ",
       "notes": null,
       "parcelles": "116 TP",
       "point_deau": false,
@@ -6525,7 +6525,7 @@
         "longitude": 2.584325
       },
       "itineraire": null,
-      "massif": "Rocher de Milly / Corne-Biche",
+      "massif": "Rocher de Milly - Corne-Biche",
       "nom": null,
       "notes": null,
       "parcelles": "74 TP",
