@@ -54,11 +54,6 @@ def massif(massif):
     massif = model.bleau_database[massif]
     return render_template('massif.html', massif=massif)
 
-@main.route('/geoportail/<massif>')
-def geoportail(massif):
-    massif = model.bleau_database[massif]
-    return render_template('geoportail.html', massif=massif)
-
 ####################################################################################################
 #
 # End
