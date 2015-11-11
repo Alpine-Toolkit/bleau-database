@@ -71,8 +71,9 @@ var tile_grid = new ol.tilegrid.WMTS({
 });
 
 // Géoportail API Key
-var key = 'usho1r0e3pl581viejhrjfsf'; // localhost test key
-// var key = 'lbce0kg54b4zvaiq0ydxaobu'; // http://bleau.fabrice-salvaire.fr
+var localhost_key = 'usho1r0e3pl581viejhrjfsf'; // localhost test key
+var prod_key = 'lbce0kg54b4zvaiq0ydxaobu'; // http://bleau.fabrice-salvaire.fr
+var key = localhost_key;
 
 var ign_source = new ol.source.WMTS({
   url: 'http://wxs.ign.fr/' + key + '/wmts',
