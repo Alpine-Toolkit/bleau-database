@@ -4,6 +4,15 @@
 .. |GUMS| replace:: GUMS
 .. _GUMS: http://www.gumsparis.asso.fr
 
+========================
+Source and Data Licenses
+========================
+
+All the source code of the reposit is licensed under `GNU Affero General Public License V3
+<http://www.gnu.org/licenses/agpl.html>`_.
+
+The JSON database is licensed under `CC BY-NC-SA 3.0 <http://creativecommons.org/licenses/by-nc-sa/3.0/>`_.
+
 ==============
 English Resume
 ==============
