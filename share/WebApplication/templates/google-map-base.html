@@ -27,7 +27,7 @@
    {% endwith %}
    var destination_name = "{{ massif.parking }}";
   </script>
-  <link rel="text/javascript" href={{ url_for('static', filename='js/google-map.js') }}>
+  <script type="text/javascript" src={{ url_for('static', filename='js/google-map.js') }}></script>
 {% endblock %}
 
 {% macro google_bigmap() %}
