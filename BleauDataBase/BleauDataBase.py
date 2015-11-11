@@ -28,8 +28,13 @@ from collections import OrderedDict
 
 try:
     import rtree
-except:
+except ImportError:
     rtree = None
+
+try:
+    import geojson
+except ImportError:
+    geojson = None
 
 ####################################################################################################
 
@@ -138,6 +143,10 @@ class Coordonne(FromJsonMixin):
         x, y = self.geo_coordinate.mercator
         return (x, y, x, y)
 
+    @property
+    def __geo_interface__(self):
+        return {'type': 'Point', 'coordinates': (self.longitude, self.latitude)}
+
 ####################################################################################################
 
 class WithCoordinate(FromJsonMixin):
@@ -158,6 +167,16 @@ class WithCoordinate(FromJsonMixin):
             d['coordonne'] = d['coordonne'].to_json()
         
         return d
+
+    ##############################################
+
+    @property
+    def __geo_interface__(self):
+
+        properties = self.to_json()
+        del properties['coordonne']
+        
+        return {'type': 'Feature', 'geometry': self.coordonne, 'properties': properties}
 
     ##############################################
 
@@ -335,7 +354,7 @@ liste_blocs: {0.liste_blocs}
 
     ##############################################
 
-    def to_json(self, bleau_database):
+    def to_json(self):
 
         d = super().to_json()
         d['massif'] = str(d['massif'])
@@ -418,20 +437,48 @@ class BleauDataBase:
 
     ##############################################
 
-    def to_json(self, json_file, sort_keys=False):
+    def to_json(self, json_file=None, sort_keys=False):
 
         data = OrderedDict(
             massifs=[massif.to_json() for massif in self.massifs],
-            circuits=[circuit.to_json(self) for circuit in self.circuits],
+            circuits=[circuit.to_json() for circuit in self.circuits],
         )
+
+        kwargs = dict(indent=2, ensure_ascii=False, sort_keys=sort_keys)
+        if json_file is not None:
+            with open(json_file, 'w', encoding='utf8') as f:
+                json.dump(data, f, **kwargs)
+        else:
+            return json.dumps(data, **kwargs)
+
+    ##############################################
+
+    def to_geojson(self, json_file=None, massifs=True, circuits=True):
+
+        features = []
+        if massifs:
+            features.extend([massif for massif in self.massifs if massif.coordonne is not None])
+        if circuits:
+            features.extend([circuit for circuit in self.circuits if circuit.coordonne is not None])
+        feature_collections = geojson.FeatureCollection(features)
+        if not geojson.is_valid(feature_collections):
+            raise ValueError
+        # Fixme: crs geojson.named API
         
-        with open(json_file, 'w', encoding='utf8') as f:
-            json.dump(data, f, indent=2, ensure_ascii=False, sort_keys=sort_keys)
+        kwargs = dict(indent=2, ensure_ascii=False, sort_keys=True)
+        if json_file is not None:
+            with open(json_file, 'w', encoding='utf8') as f:
+                geojson.dump(feature_collections, f, **kwargs)
+        else:
+            return geojson.dumps(feature_collections, **kwargs)
 
     ##############################################
 
     def _build_rtree(self, items):
 
+        if rtree is None:
+            raise NotImplementedError
+        
         rtree_ = rtree.index.Index()
         for item in items:
             if item.coordonne is not None:
