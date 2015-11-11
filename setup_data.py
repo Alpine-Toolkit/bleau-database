@@ -1,19 +1,19 @@
 ####################################################################################################
 #
-# Bleau Database
+# Bleau Database - A database of the bouldering area of Fontainebleau
 # Copyright (C) 2015 Fabrice Salvaire
 #
 # This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
 #
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
+# GNU Affero General Public License for more details.
 #
-# You should have received a copy of the GNU General Public License
+# You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ####################################################################################################
@@ -45,7 +45,7 @@ setup_dict = dict(
     author='Fabrice Salvaire',
     author_email='fabrice.salvaire@orange.fr',
     description='Bleau Database',
-    license = "GPLv3",
+    license = "AGPLv3+",
     keywords = "bleau",
     url='https://github.com/Cosiroc/bleau-database',
     scripts=[],
@@ -57,7 +57,7 @@ setup_dict = dict(
         "Topic :: Other/Nonlisted Topic",
         "Intended Audience :: Other Audience",
         "Development Status :: 5 - Production/Stable",
-        "License :: OSI Approved :: GNU General Public License (GPL)",
+        "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
         "Operating System :: OS Independent",
         "Programming Language :: Python :: 3.4",
         ],
