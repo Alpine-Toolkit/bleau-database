@@ -1,6 +1,6 @@
 ./bin/importer --rewrite=test.json data/bleau.json
 rc=$(diff -q test.json data/bleau.json)
-if [ -n $rc ]; then
+if [ -n -$rc- ]; then
   echo
   echo Any changes to bleau.json
 else
