@@ -99,7 +99,8 @@ map.addLayer(ign);
 /**************************************************************************************************/
 
 var styles = {
-  'GeometryCollection': [new ol.style.Style({
+  // GeometryCollection
+  'default': [new ol.style.Style({
     image: new ol.style.Circle({
       radius: 10,
       fill: new ol.style.Fill({
@@ -114,32 +115,9 @@ var styles = {
 };
 
 var style_function = function(feature, resolution) {
-  return styles[feature.getGeometry().getType()];
-};
-
-var geojson_data = {
-  'type': 'FeatureCollection',
-  'crs': {
-    'type': 'name',
-    'properties': {
-      'name': 'EPSG:4326'
-    }
-  },
-  'features': [
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'GeometryCollection',
-        'geometries': [
-          {
-            'type': 'MultiPoint',
-	    'coordinates': [[center.longitude, center.latitude],
-			    [center.longitude + .01, center.latitude]]
-          },
-        ]
-      }
-    }
-  ]
+  // return styles[feature.getGeometry().getType()];
+  // console.log(feature, resolution);
+  return styles['default'];
 };
 
 var vector_source = new ol.source.Vector({
