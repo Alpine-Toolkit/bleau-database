@@ -5522,21 +5522,6 @@
       "velo": "15 km depuis Fontainebleau (train Gare de Lyon, direction Montargis ou Laroche Migennes, 35’)"
     },
     {
-      "a_pieds": false,
-      "acces": null,
-      "coordonne": null,
-      "massif": "Chaintreauville",
-      "nom": null,
-      "notes": null,
-      "parcelles": null,
-      "parking": null,
-      "point_deau": "False",
-      "rdv": null,
-      "secteur": null,
-      "type_de_chaos": null,
-      "velo": null
-    },
-    {
       "a_pieds": true,
       "acces": "Prendre l’A10 jusqu’à la sortie 5 (Montlhéry/Etampes/Orléans), puis la RN20 jusqu'à la sortie Etrechy, puis tout de suite à gauche vers Chamarande que l'on traverse en direction de Lardy. Passer sous le premier pont à gauche sous la voie ferrée en face de l'entrée du château de Chamarande. Parking.",
       "coordonne": {
