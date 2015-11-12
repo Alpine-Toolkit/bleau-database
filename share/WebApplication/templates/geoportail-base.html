@@ -23,19 +23,25 @@
 {% endblock %}
 
 {% macro geoportail_map() %}
-  <div id="map" class="map"></div>
+  <div id="map" class="map">
+    <div id="popup"></div>
+  </div>
 {% endmacro %}
 
 {% macro geoportail_bigmap() %}
-  <div id="map" class="bigmap"></div>
+  <div id="map" class="bigmap">
+    <div id="popup"></div>
+  </div>
 {% endmacro %}
 
 {% block script %}
   <script type="text/javascript">
+   var massif_name = "{{ massif.massif }}";
    var center = {
        longitude: {{ massif.coordonne.longitude }},
        latitude: {{ massif.coordonne.latitude }}
    };
+  {% include "geoportail_api_key.js" %}
   </script>
   <script type="text/javascript" src={{ url_for('static', filename='data/bleau-massifs-geo.json') }}></script>
   <script type="text/javascript" src={{ url_for('static', filename='js/geoportail-openlayers.js') }}></script>

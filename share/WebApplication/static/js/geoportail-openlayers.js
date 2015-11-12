@@ -1,6 +1,11 @@
 /**************************************************************************************************/
 
-// new OpenLayers.Projection("EPSG:4326");
+// Fixme: use JQuery
+// document.getElementById('mouse-position')
+
+/**************************************************************************************************/
+
+// new OpenLayers.Projection('EPSG:4326');
 var proj_4326 = ol.proj.get('EPSG:4326');
 var proj_3857 = ol.proj.get('EPSG:3857');
 
@@ -34,7 +39,7 @@ var center_in_mercator = ol.proj.transform([center.longitude, center.latitude],
 var extent_margin = 1000; // m
 
 var map = new ol.Map({
-  target: 'map',
+  target: document.getElementById('map'),
   controls: ol.control.defaults({
     attributionOptions: /** @type {olx.control.AttributionOptions} */ ({
       collapsible: false
@@ -70,13 +75,8 @@ var tile_grid = new ol.tilegrid.WMTS({
   matrixIds: matrix_ids
 });
 
-// Géoportail API Key
-var localhost_key = 'usho1r0e3pl581viejhrjfsf'; // localhost test key
-var prod_key = 'lbce0kg54b4zvaiq0ydxaobu'; // http://bleau.fabrice-salvaire.fr
-var key = localhost_key;
-
 var ign_source = new ol.source.WMTS({
-  url: 'http://wxs.ign.fr/' + key + '/wmts',
+  url: 'http://wxs.ign.fr/' + geoportail_api_key + '/wmts',
   layer: 'GEOGRAPHICALGRIDSYSTEMS.MAPS',
   matrixSet: 'PM',
   format: 'image/jpeg',
@@ -104,7 +104,19 @@ var styles = {
     image: new ol.style.Circle({
       radius: 10,
       fill: new ol.style.Fill({
-	color: 'rgba(255, 0, 0, .25)'
+	color: 'rgba(0, 0, 255, .5)'
+      }),
+      stroke: new ol.style.Stroke({
+        color: 'blue',
+	width: 2
+      })
+    })
+  })],
+  'current': [new ol.style.Style({
+    image: new ol.style.Circle({
+      radius: 10,
+      fill: new ol.style.Fill({
+	color: 'rgba(255, 0, 0, .5)'
       }),
       stroke: new ol.style.Stroke({
         color: 'red',
@@ -117,22 +129,91 @@ var styles = {
 var style_function = function(feature, resolution) {
   // return styles[feature.getGeometry().getType()];
   // console.log(feature, resolution);
-  return styles['default'];
+  // console.log(feature.getProperties());
+  if (feature.get('massif') == massif_name)
+    return styles['current'];
+  else
+    return styles['default'];
 };
 
-var vector_source = new ol.source.Vector({
+var geojson_source = new ol.source.Vector({
+  // feature loader http://openlayersbook.github.io/ch05-using-vector-layers/example-03.html
   // readProjection(geojson_object),
   features: (new ol.format.GeoJSON()).readFeatures(geojson_data,
 						   {'dataProjection': proj_4326,
 						    'featureProjection': proj_3857})
 });
 
-var vector_layer = new ol.layer.Vector({
-  source: vector_source,
+var geojson_layer = new ol.layer.Vector({
+  source: geojson_source,
   style: style_function
 });
 
-map.addLayer(vector_layer);
+map.addLayer(geojson_layer);
+
+/**************************************************************************************************/
+
+var popup_element = document.getElementById('popup');
+
+// Fixme: popup don't move with the map
+var popup = new ol.Overlay({
+  element: popup_element,
+  positioning: 'bottom-center',
+  stopEvent: false
+});
+map.addOverlay(popup);
+
+// display popup on click
+map.on('click', function(event) {
+  var feature = map.forEachFeatureAtPixel(event.pixel,
+      function(feature, layer) {
+        return feature;
+      });
+  if (feature) {
+    console.log("feature", feature.get('massif'))
+    var geometry = feature.getGeometry();
+    var coordinate = geometry.getCoordinates();
+    popup.setPosition(coordinate);
+    $(popup_element).popover({
+      'placement': 'top',
+      'html': true,
+      'content': feature.get('massif'),
+      // delay: { "show": 500, "hide": 100 } // Fixme: do nothing
+    });
+    $(popup_element).popover('show');
+  } else {
+    console.log("feature None")
+    // https://github.com/twbs/bootstrap/issues/17544
+    $('popup_element').popover('dispose'); // Fixme: do nothing
+  }
+});
+
+// change mouse cursor when over marker
+$(map.getViewport()).on('mousemove', function(e) {
+  var pixel = map.getEventPixel(e.originalEvent);
+  var hit = map.forEachFeatureAtPixel(pixel, function(feature, layer) {
+    return true;
+  });
+  if (hit) {
+    map.getTarget().style.cursor = 'pointer';
+  } else {
+    map.getTarget().style.cursor = '';
+  }
+});
+
+// var select_single_click = new ol.interaction.Select();
+// var select_mouse_move = new ol.interaction.Select({
+//   condition: ol.events.condition.mouseMove
+// });
+// var select = select_mouse_move;
+// map.addInteraction(select);
+// select.on('select', function(e) {
+//   features = e.target.getFeatures()
+//   console.log(features);
+//   // $('#status').html('&nbsp;' + e.target.getFeatures().getLength() +
+//   // 		    ' selected features (last operation selected ' + e.selected.length +
+//   // 		    ' and deselected ' + e.deselected.length + ' features)');
+// });
 
 /***************************************************************************************************
  *
