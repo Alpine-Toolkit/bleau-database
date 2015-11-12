@@ -72,8 +72,8 @@
 		  <td><a href="/main/massif/{{ massif_.massif }}">{{ massif_.massif }}</a></td>
 		  <td>
 		    <ul class="list-inline">
-		      {% for circuit in massif_ %}
-			<li>{{ circuit.cotation }}</li>
+		      {% for cotation in massif_.cotations %}
+			<li>{{ cotation }}</li>
 		      {% endfor %}
 		    </ul>
 		  </td>

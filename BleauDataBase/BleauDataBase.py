@@ -20,12 +20,18 @@
 
 ####################################################################################################
 
+import itertools
 import json
 import locale
 import math
 import urllib.request
 
 from collections import OrderedDict
+
+####################################################################################################
+#
+# Non standard modules
+#
 
 try:
     import rtree
@@ -43,18 +49,8 @@ from .Projection import GeoAngle, GeoCoordinate
 
 ####################################################################################################
 
+# Fixme: ?
 locale.setlocale(locale.LC_ALL, 'fr_FR')
-
-####################################################################################################
-
-class Field:
-
-    ##############################################
-
-    def __init__(self, name, factory):
-
-        self.name = name
-        self.factory = factory
 
 ####################################################################################################
 
@@ -70,6 +66,17 @@ def instance_checker(class_):
 
 ####################################################################################################
 
+class Field:
+
+    ##############################################
+
+    def __init__(self, name, factory):
+
+        self.name = name
+        self.factory = factory
+
+####################################################################################################
+
 class StringList(list):
 
     ##############################################
@@ -77,6 +84,59 @@ class StringList(list):
     def __init__(self, *args):
 
         super().__init__([str(x) for x in args])
+
+####################################################################################################
+
+class Cotation(str):
+
+    __cotation_majors__ = ('EN', 'F', 'PD', 'AD', 'D', 'TD', 'ED')
+    __cotation_minors__ = ('-', '', '+')
+    __cotations__ = tuple([major + minor
+                           for major, minor in
+                           itertools.product(__cotation_majors__, __cotation_minors__)])
+    __cotation_to_number__ = {cotation:i for i, cotation in enumerate(__cotations__)}
+
+    ##############################################
+
+    def __new__(cls, cotation):
+
+        cotation = cotation.upper()
+        if cotation not in cls.__cotations__:
+            raise ValueError
+        
+        return str.__new__(cls, cotation)
+
+    ##############################################
+
+    def __lt__(self, other):
+
+        return int(self) < int(other)
+
+    ##############################################
+
+    def __int__(self):
+        return self.__cotation_to_number__[self]
+
+    ##############################################
+
+    @property
+    def major(self):
+
+        # Fixme: cache ? but take care to recursion
+        if len(self) == 3:
+            return Cotation(self[:2])
+        else:
+            return self
+
+    ##############################################
+
+    @property
+    def minor(self):
+
+        if len(self) == 3:
+            return self[2]
+        else:
+            return ''
 
 ####################################################################################################
 
@@ -111,8 +171,14 @@ class FromJsonMixin:
 
     def to_json(self):
 
-        return OrderedDict([(field.name, self.__dict__[field.name])
-                            for field in self.__fields__])
+        fields = []
+        for field in self.__fields__:
+            value = self.__dict__[field.name]
+            if hasattr(value, '__json_interface__'):
+                value = value.__json_interface__
+            fields.append((field.name, value))
+        
+        return OrderedDict(fields)
 
 ####################################################################################################
 
@@ -145,6 +211,10 @@ class Coordonne(FromJsonMixin):
         return (x, y, x, y)
 
     @property
+    def __json_interface__(self):
+        return self.to_json()
+
+    @property
     def __geo_interface__(self):
         return {'type': 'Point', 'coordinates': (self.longitude, self.latitude)}
 
@@ -161,16 +231,6 @@ class WithCoordinate(FromJsonMixin):
 
     ##############################################
 
-    def to_json(self):
-
-        d = super().to_json()
-        if d['coordonne'] is not None:
-            d['coordonne'] = d['coordonne'].to_json()
-        
-        return d
-
-    ##############################################
-
     @property
     def __geo_interface__(self):
 
@@ -182,6 +242,8 @@ class WithCoordinate(FromJsonMixin):
     ##############################################
 
     def __lt__(self, other):
+
+        """ Compare name using French collation """
 
         # return locale.strcoll(str(self), str(other))
         return locale.strxfrm(str(self)) < locale.strxfrm(str(other))
@@ -236,19 +298,29 @@ class Massif(WithCoordinate):
 
     ##############################################
 
+    @property
+    def __json_interface__(self):
+        return str(self)
+
+    ##############################################
+
     def __len__(self):
         return len(self._circuits)
 
     ##############################################
 
     def __iter__(self):
-        return iter(sorted(self._circuits, key=lambda x: x.cotation_number))
+
+        # return iter(sorted(self._circuits, key=lambda x: x.cotation))
+        # return iter(sorted(self._circuits, key=lambda x: int(x.cotation)))
+        return iter(sorted(self._circuits))
 
     ##############################################
 
     @property
     def nom_or_massif(self):
 
+        # Fixme: purpose ?
         if self.nom:
             return self.nom
         else:
@@ -272,21 +344,38 @@ secteur: {0.secteur}
 '''
         return template.format(self)
 
-####################################################################################################
+    ##############################################
 
-_cotation_bases = ('EN', 'F', 'PD', 'AD', 'D', 'TD', 'ED')
-_cotations = []
-for cotation in _cotation_bases:
-    for suffix in '-', '', '+':
-        _cotations.append(cotation + suffix)
-_cotation_to_number = {cotation:i for i, cotation in enumerate(_cotations)}
+    @property
+    def cotations(self):
+
+        return tuple([circuit.cotation for circuit in self])
+
+    ##############################################
+
+    @property
+    def uniq_cotations(self):
+
+        # set lost order
+        cotations = {circuit.cotation for circuit in self._circuits}
+        return tuple(sorted(cotations))
+
+    ##############################################
+
+    @property
+    def major_cotations(self):
+
+        cotations = {circuit.cotation.major for circuit in self._circuits}
+        return tuple(sorted(cotations))
+
+####################################################################################################
 
 class Circuit(WithCoordinate):
 
     __fields__ = (
         Field('annee_refection', int),
         Field('coordonne', Coordonne),
-        Field('cotation', str),
+        Field('cotation', Cotation),
         Field('couleur', str),
         Field('gestion', str),
         Field('liste_blocs', StringList),
@@ -330,9 +419,14 @@ liste_blocs: {0.liste_blocs}
 
     ##############################################
 
-    @property
-    def cotation_number(self):
-        return _cotation_to_number[self.cotation]
+    def __lt__(self, other):
+
+        cotation1 = self.cotation
+        cotation2 = other.cotation
+        if cotation1 == cotation2:
+            return self.numero < other.numero
+        else:
+            return cotation1 < cotation2
 
     ##############################################
 
@@ -352,15 +446,6 @@ liste_blocs: {0.liste_blocs}
                     pdf_name = url[url.rfind('/')+1:]
                     with open(pdf_name, 'wb') as f:
                         f.write(document)
-
-    ##############################################
-
-    def to_json(self):
-
-        d = super().to_json()
-        d['massif'] = str(d['massif'])
-        
-        return d
 
 ####################################################################################################
 
@@ -442,7 +527,7 @@ class BleauDataBase:
 
         data = OrderedDict(
             massifs=[massif.to_json() for massif in self.massifs],
-            circuits=[circuit.to_json() for circuit in self.circuits],
+            circuits=[circuit.to_json() for circuit in self._circuits], # don't sort circuits
         )
 
         kwargs = dict(indent=2, ensure_ascii=False, sort_keys=sort_keys)
@@ -521,12 +606,29 @@ class BleauDataBase:
 
     ##############################################
 
-    def filter_by(self, secteur=None):
+    def filter_by(self,
+                  a_pieds=None,
+                  secteur=None,
+                  type_de_chaos=None,
+                  cotations=None,
+                  major_cotations=None,
+    ):
 
         massifs = self.massifs
+        if a_pieds is not None:
+            massifs = [massif for massif in massifs if massif.a_pieds]
         if secteur is not None:
             massifs = [massif for massif in massifs if massif.secteur == secteur]
-        
+        if type_de_chaos is not None:
+            massifs = [massif for massif in massifs if type_de_chaos in massif.type_de_chaos]
+        if cotations is not None or major_cotations is not None:
+            if cotations is not None:
+                cotations = set(cotations)
+                massifs = [massif for massif in massifs if set(massif.uniq_cotations) >= cotations]
+            else:
+                cotations = set(major_cotations)
+                massifs = [massif for massif in massifs if set(massif.major_cotations) >= cotations]
+
         return massifs
 
 ####################################################################################################
