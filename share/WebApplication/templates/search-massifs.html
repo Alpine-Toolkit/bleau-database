@@ -1,0 +1,48 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "base.html" %}
+{% block content %}
+  <ul class="breadcrumb">
+    <li><a href="/main">Accueil</a></li>
+    <li class="active"> Rechercher des Massifs </li>
+  </ul>
+
+  <div class="row">
+    <div class="col-xl-12">
+      {% from "_form_helpers.html" import render_field %}
+      <form method="post" action="/main/search-massifs"> {# class="form-inline" #}
+	{{ form.csrf_token }}
+	{{ render_field(form.a_pieds) }}
+	{#
+	<div class="checkbox">
+	  <label for="{{ form.a_pieds.name }}">
+	    <input type="checkbox" id="{{ form.a_pieds.id }}" name="{{ form.a_pieds.name }}" {% if form.a_pieds.data['checked'] %}checked=""{% endif %}>
+	    {{ form.a_pieds.label }}
+	  </label>
+	</div>
+	
+	<fieldset class="form-group">
+	  <label for="a_pieds">À pieds</label>
+	  <input checked class="form-control" id="a_pieds" name="a_pieds" type="checkbox" value="y">
+	</fieldset>
+	#}
+	<div class="row">
+	  <div class="col-xl-4">
+	    {{ render_field(form.secteurs, size=5) }} {# Fixme size #}
+	  </div>
+	  <div class="col-xl-4">
+	    {{ render_field(form.type_de_chaos, size=5) }}
+	  </div>
+	  <div class="col-xl-4">
+	    {{ render_field(form.cotations, size=7) }}
+	  </div>
+	</div>
+	<button type="submit" class="btn btn-primary">Rechercher</button>
+      </form>
+      <h2>Massifs</h2>
+      <ul>
+	{% for massif in massifs %}
+	  <li><a href="/main/massif/{{ massif.massif }}">{{ massif.massif }}</a></li>
+	{% endfor %}
+      </ul>
+  </div>
+{% endblock %}

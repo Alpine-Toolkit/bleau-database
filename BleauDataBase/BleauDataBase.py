@@ -503,6 +503,12 @@ class BleauDataBase:
     def circuits(self):
         return iter(sorted(self._circuits))
 
+    @property
+    def secteurs(self):
+        # Fixme: unsorted massif iter
+        return sorted({massif.secteur for massif in self._massifs.values()})
+                      # if massif.secteur is not None
+
     ##############################################
 
     def __getitem__(self, key):
@@ -608,19 +614,22 @@ class BleauDataBase:
 
     def filter_by(self,
                   a_pieds=None,
-                  secteur=None,
+                  secteurs=None,
                   type_de_chaos=None,
                   cotations=None,
                   major_cotations=None,
     ):
 
+        print(a_pieds, secteurs, type_de_chaos, cotations, major_cotations)
         massifs = self.massifs
         if a_pieds is not None:
             massifs = [massif for massif in massifs if massif.a_pieds]
-        if secteur is not None:
-            massifs = [massif for massif in massifs if massif.secteur == secteur]
+        if secteurs is not None:
+            # massif.secteur and 
+            massifs = [massif for massif in massifs if massif.secteur in secteurs]
         if type_de_chaos is not None:
-            massifs = [massif for massif in massifs if type_de_chaos in massif.type_de_chaos]
+            type_de_chaos = set(type_de_chaos)
+            massifs = [massif for massif in massifs if set(massif.type_de_chaos.split('/')) >= type_de_chaos]
         if cotations is not None or major_cotations is not None:
             if cotations is not None:
                 cotations = set(cotations)
@@ -628,6 +637,7 @@ class BleauDataBase:
             else:
                 cotations = set(major_cotations)
                 massifs = [massif for massif in massifs if set(massif.major_cotations) >= cotations]
+        # print(massifs)
 
         return massifs
 

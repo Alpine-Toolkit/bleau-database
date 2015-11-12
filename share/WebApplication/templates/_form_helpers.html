@@ -1,0 +1,25 @@
+{% macro render_field(field) %}
+<fieldset class="form-group">
+  {{ field.label }}
+  {{ field(class="form-control", **kwargs)|safe }}
+</fieldset>
+  {#
+  <div class="form-group">
+  </div>
+
+  <dt><label for="password">New Password</label></dt>
+  <dd><input id="password" name="password" type="password" value="">
+  </dd>
+  
+  <dt>{{ field.label }}</dt>
+  <dd>{{ field(**kwargs)|safe }}
+    {% if field.errors %}
+    <ul class=errors>
+      {% for error in field.errors %}
+      <li>{{ error }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </dd>
+  #}
+{% endmacro %}

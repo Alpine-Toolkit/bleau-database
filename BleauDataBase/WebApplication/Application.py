@@ -20,6 +20,8 @@
 
 ####################################################################################################
 
+import os
+
 from flask import Flask
 
 ####################################################################################################
@@ -38,6 +40,9 @@ def create_application(config_path, bleau_database):
     from .Views.Main import main
     application.register_blueprint(main)
 
+    application.secret_key = os.urandom(24)
+    # WTF_CSRF_SECRET_KEY =
+    
     return application
 
 ####################################################################################################

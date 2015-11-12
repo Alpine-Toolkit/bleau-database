@@ -8,10 +8,10 @@
 
   <div class="row">
     <div class="col-xl-12">
-      {% for secteur in ('Essonne', 'Forêt Domaniale', 'Sud', 'Trois Pignons', 'Yvelines') %}
+      {% for secteur in bleau_database.secteurs %}
 	<h2>{{ secteur }}</h2>
 	<ul>
-	  {% for massif in bleau_database.filter_by(secteur=secteur) %}
+	  {% for massif in bleau_database.filter_by(secteurs=secteur) %}
 	    <li><a href="/main/massif/{{ massif.massif }}">{{ massif.massif }}</a></li>
 	  {% endfor %}
 	</ul>
