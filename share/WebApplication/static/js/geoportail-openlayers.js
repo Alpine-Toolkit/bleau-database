@@ -171,20 +171,22 @@ map.on('click', function(event) {
       });
   if (feature) {
     console.log("feature", feature.get('massif'))
+    $('#massif-name').html('Massif : ' + feature.get('massif'))
     var geometry = feature.getGeometry();
     var coordinate = geometry.getCoordinates();
     popup.setPosition(coordinate);
     $(popup_element).popover({
       'placement': 'top',
       'html': true,
-      'content': feature.get('massif'),
-      // delay: { "show": 500, "hide": 100 } // Fixme: do nothing
+      'content': feature.get('massif'), // Fixme: not updated next time
+      // 'title': feature.get('massif')
+      // delay: { "show": 200, "hide": 100 } // Fixme: do nothing
     });
     $(popup_element).popover('show');
   } else {
     console.log("feature None")
     // https://github.com/twbs/bootstrap/issues/17544
-    $('popup_element').popover('dispose'); // Fixme: do nothing
+    $(popup_element).popover('dispose');
   }
 });
 
