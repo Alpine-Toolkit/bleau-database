@@ -18,6 +18,14 @@
 #
 ####################################################################################################
 
+"""This module implements an oriented object database for bouldering areas like Fontainebleau.
+
+Despite the implementation could apply to other areas rather than the area of Fontainebleau, some
+attributes are specific to this area like the type of sandstone chaos and the local grade
+system.
+
+"""
+
 ####################################################################################################
 
 import itertools
@@ -26,8 +34,6 @@ import locale
 import math
 import re
 import urllib.request
-
-from collections import OrderedDict
 
 ####################################################################################################
 #
@@ -50,24 +56,9 @@ from .Projection import GeoAngle, GeoCoordinate
 
 ####################################################################################################
 
-# To sort string using French collation
-locale.setlocale(locale.LC_ALL, 'fr_FR')
-
-####################################################################################################
-
-def instance_checker(class_):
-
-    def checker(obj):
-        if isinstance(obj, class_):
-            return obj
-        else:
-            raise ValueError
-    
-    return checker
-
-####################################################################################################
-
 class Field:
+
+    """This class defines a field by its name and factory."""
 
     ##############################################
 
@@ -78,7 +69,30 @@ class Field:
 
 ####################################################################################################
 
+class InstanceChecker:
+
+    """Factory to check the type of an instance object."""
+
+    ##############################################
+
+    def __init__(self, cls):
+
+        self._cls = cls
+
+    ##############################################
+
+    def __call__(self, obj):
+
+        if isinstance(obj, self._cls):
+            return obj
+        else:
+            raise ValueError
+
+####################################################################################################
+
 class StringList(list):
+
+    """Factory to check a string list."""
 
     ##############################################
 
@@ -90,7 +104,18 @@ class StringList(list):
 
 class Cotation(str):
 
+    """This class defines a circuit grade."""
+
     __cotation_majors__ = ('EN', 'F', 'PD', 'AD', 'D', 'TD', 'ED')
+    __cotation_major_descriptions__ = {
+        'EN': 'Enfant',
+        'F': 'Facile',
+        'PD': 'Peu Difficile',
+        'AD': 'Assez Difficile',
+        'D': 'Difficile',
+        'TD': 'Très Difficile',
+        'ED': 'Extrêmement Difficile',
+    }
     __cotation_minors__ = ('-', '', '+')
     __cotations__ = tuple([major + minor
                            for major, minor in
@@ -109,14 +134,13 @@ class Cotation(str):
 
     ##############################################
 
-    def __lt__(self, other):
-
-        return int(self) < int(other)
+    def __int__(self):
+        return self.__cotation_to_number__[self]
 
     ##############################################
 
-    def __int__(self):
-        return self.__cotation_to_number__[self]
+    def __lt__(self, other):
+        return int(self) < int(other)
 
     ##############################################
 
@@ -143,7 +167,16 @@ class Cotation(str):
 
 class ChaosType(str):
 
+    """This class defines a type of sandstone chaos."""
+
     __chaos_types__ = ('A', 'B', 'C', 'D', 'E')
+    __chaos_type_descriptions__ = {
+        'A': 'Rempart', # Banc de grès
+        'B': 'Ouverture des Diaclases',
+        'C': 'Chaos vif',
+        'D': 'Chaos achevé',
+        'E': 'Chaos mort',
+    }
     __chaos_type_re__ = re.compile('([A-E])(/([A-E]))?')
 
     ##############################################
@@ -161,20 +194,41 @@ class ChaosType(str):
 
 ####################################################################################################
 
-class FromJsonMixin:
+class FromJsonMixinMetaClass(type):
 
-    __fields__ = ()
+    """This metaclass lookup for fields."""
+
+    ##############################################
+
+    def __init__(cls, class_name, super_classes, class_attribute_dict):
+
+        type.__init__(cls, class_name, super_classes, class_attribute_dict)
+
+        fields = {}
+        for attribute, obj in class_attribute_dict.items():
+            if not attribute.startswith('__') and isinstance(obj, (type, InstanceChecker)):
+                fields[attribute] = Field(attribute, obj)
+        cls.__fields__ = fields
+        cls.__field_names__ = sorted([field for field in fields])
+
+####################################################################################################
+
+class FromJsonMixin(metaclass=FromJsonMixinMetaClass):
+
+    """This mixin class implements the import/export to JSON."""
+
+    __fields__ = {}
+    __field_names__ = []
 
     ##############################################
 
     def __init__(self, **kwargs):
 
-        field_names = [field.name for field in self.__fields__]
-        fields = {field.name:field for field in self.__fields__}
+        # Set and check given fields
         for key, value in kwargs.items():
-            if key not in field_names:
+            if key not in self.__field_names__:
                 raise ValueError('Unknown key {}'.format(key))
-            factory = fields[key].factory
+            factory = self.__fields__[key].factory
             # print(key, value, factory)
             if value is not None:
                 if isinstance(value, dict):
@@ -184,31 +238,40 @@ class FromJsonMixin:
                 else:
                     value = factory(value)
             setattr(self, key, value)
-        for key in fields:
+        
+        # Set to None missing fields
+        for key in self.__field_names__:
             if key not in kwargs:
                 setattr(self, key, None)
 
     ##############################################
 
+    def str_long(self):
+
+        return '\n'.join(['{}: {}'.format(field, self.__dict__[field])]
+                         for field in self.__field_names__)
+
+    ##############################################
+
     def to_json(self):
 
-        fields = []
-        for field in self.__fields__:
-            value = self.__dict__[field.name]
+        d = {}
+        for field in self.__field_names__:
+            value = self.__dict__[field]
             if hasattr(value, '__json_interface__'):
                 value = value.__json_interface__
-            fields.append((field.name, value))
+            d[field] = value
         
-        return OrderedDict(fields)
+        return d
 
 ####################################################################################################
 
-class Coordonne(FromJsonMixin):
+class Coordinate(FromJsonMixin):
 
-    __fields__ = (
-        Field('longitude', float),
-        Field('latitude', float),
-    )
+    """This class defines a coordinate."""
+
+    longitude = float
+    latitude = float
 
     ##############################################
 
@@ -242,6 +305,10 @@ class Coordonne(FromJsonMixin):
 ####################################################################################################
 
 class WithCoordinate(FromJsonMixin):
+
+    """Base class for :class:`Massif` and :class:`Circuit`."""
+
+    coordonne = None # Fixme: metaclass don't see this attribute
 
     ##############################################
 
@@ -287,22 +354,22 @@ class WithCoordinate(FromJsonMixin):
 
 class Massif(WithCoordinate):
 
-    __fields__ = (
-        Field('a_pieds', bool),
-        Field('acces', str),
-        Field('coordonne', Coordonne),
-        Field('massif', str),
-        Field('nom', str),
-        Field('notes', str),
-        Field('parcelles', str),
-        Field('parking', str),
-        Field('point_deau', str),
-        Field('rdv', str),
-        Field('secteur', str),
-        Field('type_de_chaos', ChaosType),
-        Field('velo', str),
-        # propreté fréquentation exposition débutant
-    )
+    """This class defines a « massif »."""
+
+    a_pieds = bool
+    acces = str
+    coordonne = Coordinate
+    massif = str
+    nom = str
+    notes = str
+    parcelles = str
+    parking = str
+    point_deau = str
+    rdv = str
+    secteur = str
+    type_de_chaos = ChaosType
+    velo = str
+    # propreté fréquentation exposition débutant
 
     ##############################################
 
@@ -338,6 +405,11 @@ class Massif(WithCoordinate):
 
     ##############################################
 
+    def __str__(self):
+        return self.massif
+
+    ##############################################
+
     @property
     def nom_or_massif(self):
 
@@ -346,24 +418,6 @@ class Massif(WithCoordinate):
             return self.nom
         else:
             return self.massif
-
-    ##############################################
-
-    def __str__(self):
-        return self.massif
-
-    ##############################################
-
-    def str_long(self):
-
-        template = '''
-massif: {0.massif}
-coordonné: {0.coordonne}
-type_de_chaos: {0.type_de_chaos}
-parcelles: {0.parcelles}
-secteur: {0.secteur}
-'''
-        return template.format(self)
 
     ##############################################
 
@@ -393,19 +447,19 @@ secteur: {0.secteur}
 
 class Circuit(WithCoordinate):
 
-    __fields__ = (
-        Field('annee_refection', int),
-        Field('coordonne', Coordonne),
-        Field('cotation', Cotation),
-        Field('couleur', str),
-        Field('gestion', str),
-        Field('liste_blocs', StringList),
-        Field('massif', instance_checker(Massif)),
-        Field('numero', int),
-        Field('status', str),
-        Field('topos', StringList),
-        # patiné
-    )
+    """This class defines a « circuit »."""
+
+    annee_refection = int
+    coordonne = Coordinate
+    cotation = Cotation
+    couleur = str
+    gestion = str
+    liste_blocs = StringList
+    massif = InstanceChecker(Massif)
+    numero = int
+    status = str
+    topos = StringList
+    # patiné
 
     ##############################################
 
@@ -419,24 +473,6 @@ class Circuit(WithCoordinate):
 
     def __str__(self):
         return '{0.massif}-{0.numero}-{0.cotation}'.format(self)
-
-    ##############################################
-
-    def str_long(self):
-
-        template = '''
-massif: {0.massif}
-couleur: {0.couleur}
-numéro: {0.numero}
-cotation: {0.cotation}
-topos: {0.topos}
-coordonné: {0.coordonne}
-année_réfection: {0.annee_refection}
-gestion: {0.gestion}
-status: {0.status}
-liste_blocs: {0.liste_blocs}
-'''
-        return template.format(self)
 
     ##############################################
 
@@ -461,7 +497,7 @@ liste_blocs: {0.liste_blocs}
 
         for url in self.topos:
             if url.endswith('.pdf'):
-                print('Get', url)
+                # print('Get', url)
                 with urllib.request.urlopen(url) as response:
                     document = response.read()
                     pdf_name = url[url.rfind('/')+1:]
@@ -472,10 +508,15 @@ liste_blocs: {0.liste_blocs}
 
 class BleauDataBase:
 
+    """This class represents the database."""
+
     ##############################################
 
-    def __init__(self, json_file=None):
+    def __init__(self, json_file=None, country_code='fr_FR'):
 
+        # To sort string using French collation
+        locale.setlocale(locale.LC_ALL, country_code)
+        
         self._rtree_massif = None
         self._rtree_circuit = None
         self._ids = {}
@@ -504,16 +545,16 @@ class BleauDataBase:
     ##############################################
 
     @property
-    def nombre_de_circuits(self):
+    def number_of_circuits(self):
         return len(self._circuits)
 
     @property
-    def nombre_de_circuits_avec_topos(self):
+    def number_of_circuits_with_topos(self):
         return len([circuit for circuit in self._circuits
                     if circuit.has_topo()])
 
     @property
-    def nombre_de_massifs(self):
+    def number_of_massifs(self):
         return len(self._massifs)
 
     @property
@@ -550,14 +591,14 @@ class BleauDataBase:
 
     ##############################################
 
-    def to_json(self, json_file=None, sort_keys=False):
+    def to_json(self, json_file=None):
 
-        data = OrderedDict(
-            massifs=[massif.to_json() for massif in self.massifs],
-            circuits=[circuit.to_json() for circuit in self._circuits], # don't sort circuits
-        )
+        data = {
+            'massifs': [massif.to_json() for massif in self.massifs],
+            'circuits': [circuit.to_json() for circuit in self._circuits], # don't sort circuits
+        }
 
-        kwargs = dict(indent=2, ensure_ascii=False, sort_keys=sort_keys)
+        kwargs = dict(indent=2, ensure_ascii=False, sort_keys=True)
         if json_file is not None:
             with open(json_file, 'w', encoding='utf8') as f:
                 json.dump(data, f, **kwargs)
@@ -641,12 +682,12 @@ class BleauDataBase:
                   major_cotations=None,
     ):
 
-        print(a_pieds, secteurs, type_de_chaos, cotations, major_cotations)
+        # print(a_pieds, secteurs, type_de_chaos, cotations, major_cotations)
         massifs = self.massifs
         if a_pieds is not None:
             massifs = [massif for massif in massifs if massif.a_pieds]
         if secteurs is not None:
-            # massif.secteur and 
+            # massif.secteur and
             massifs = [massif for massif in massifs if massif.secteur in secteurs]
         if type_de_chaos is not None:
             type_de_chaos = set(type_de_chaos)

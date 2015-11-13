@@ -65,7 +65,7 @@ if args.get_pdf:
         circuit.upload_topos()
 
 if args.rewrite is not None:
-    bleau_database.to_json(args.rewrite, sort_keys=True)
+    bleau_database.to_json(args.rewrite)
 
 if args.write_geojson is not None:
     bleau_database.to_geojson(args.write_geojson, massifs=args.massifs, circuits=args.circuits)
