@@ -24,6 +24,7 @@ import itertools
 import json
 import locale
 import math
+import re
 import urllib.request
 
 from collections import OrderedDict
@@ -49,7 +50,7 @@ from .Projection import GeoAngle, GeoCoordinate
 
 ####################################################################################################
 
-# Fixme: ?
+# To sort string using French collation
 locale.setlocale(locale.LC_ALL, 'fr_FR')
 
 ####################################################################################################
@@ -137,6 +138,26 @@ class Cotation(str):
             return self[2]
         else:
             return ''
+
+####################################################################################################
+
+class ChaosType(str):
+
+    __chaos_types__ = ('A', 'B', 'C', 'D', 'E')
+    __chaos_type_re__ = re.compile('([A-E])(/([A-E]))?')
+
+    ##############################################
+
+    def __new__(cls, chaos_type):
+
+        chaos_type = chaos_type.upper()
+        match = cls.__chaos_type_re__.match(chaos_type)
+        if not match:
+            raise ValueError
+        # else:
+        #     match.groups() # 0 2
+
+        return str.__new__(cls, chaos_type)
 
 ####################################################################################################
 
@@ -278,7 +299,7 @@ class Massif(WithCoordinate):
         Field('point_deau', str),
         Field('rdv', str),
         Field('secteur', str),
-        Field('type_de_chaos', str),
+        Field('type_de_chaos', ChaosType),
         Field('velo', str),
         # propreté fréquentation exposition débutant
     )
