@@ -32,7 +32,7 @@ from FlaskWebApplication.Application import create_application
 
 ####################################################################################################
 
-json_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'bleau.json')
+json_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'bleau.json')
 bleau_database = BleauDataBase(json_file)
 
 # Fixme: if DEBUG = True then reload ...
