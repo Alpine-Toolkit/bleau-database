@@ -3,7 +3,10 @@
 {% block content %}
   <div class="row">
     <div class="col-xl-12">
-      <div class="jumbotron">
+      <div class="jumbotron hidden-sm-up">
+	<h1 class="display-1">Bleau Database</h1>
+      </div>
+      <div class="jumbotron hidden-xs-down">
 	<h1 class="display-3">Bleau Database</h1>
 	<p class="lead">La base de données des sites d'escalade de la région de Fontainebleau</p>
 	<p class="lead">{{ bleau_database.nombre_de_massifs }} massifs
@@ -14,16 +17,15 @@
 	  <a class="btn btn-primary btn-lg" href="/main/a-propos" role="button">À propos</a>
 	</p>
       </div>
-      <div class="row">
-	<div class="col-xl-3">
-	  <a class="btn btn-primary btn-lg" href="/main/massifs">Tous les Massifs</a></li>
-	</div>
-	<div class="col-xl-3">
-	  <a class="btn btn-primary btn-lg" href="/main/massifs-par-secteur">Massifs par Secteur</a></li>
-	</div>
-	<div class="col-xl-3">
-	  <a class="btn btn-primary btn-lg" href="/main/search-massifs">Rechercher des Massifs</a></li>
-	</div>
+      <div class="hidden-sm-up">
+	<a class="btn btn-primary btn-lg btn-block" href="/main/search-massifs">Rechercher des Massifs</a>
+	<a class="btn btn-primary btn-lg btn-block" href="/main/massifs">Tous les Massifs</a>
+	<a class="btn btn-primary btn-lg btn-block" href="/main/massifs-par-secteur">Massifs par Secteur</a>
+      </div>
+      <div class="hidden-xs-down">
+	<a class="btn btn-primary btn-lg m-b m-r" href="/main/search-massifs">Rechercher des Massifs</a>
+	<a class="btn btn-primary btn-lg m-b m-r" href="/main/massifs">Tous les Massifs</a>
+	<a class="btn btn-primary btn-lg m-b m-r" href="/main/massifs-par-secteur">Massifs par Secteur</a>
       </div>
     </div>
   </div>
