@@ -28,7 +28,7 @@
 import os
 
 from BleauDataBase.BleauDataBase import BleauDataBase
-from WebApplication.Application import create_application
+from FlaskWebApplication.Application import create_application
 
 ####################################################################################################
 
