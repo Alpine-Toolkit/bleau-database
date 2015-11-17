@@ -57,11 +57,15 @@ parser.add_argument('--circuits',
                     action='store_true',
                     help='Export all the circuits')
 
+parser.add_argument('--dont-raise-for-unknown', dest='raise_for_unknown',
+                    action='store_false',
+                    help='')
+
 args = parser.parse_args()
 
 ####################################################################################################
 
-bleau_database = BleauDataBase(json_file=args.json_file)
+bleau_database = BleauDataBase(json_file=args.json_file, raise_for_unknown=args.raise_for_unknown)
 
 # Fixme: french
 print('Nombre de massifs:', bleau_database.number_of_massifs)

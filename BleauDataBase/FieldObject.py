@@ -94,12 +94,15 @@ class FromJsonMixin(metaclass=FromJsonMixinMetaClass):
 
     ##############################################
 
-    def __init__(self, **kwargs):
+    def __init__(self, raise_for_unknown=True, **kwargs):
 
         # Set and check given fields
         for key, value in kwargs.items():
             if key not in self.__field_names__:
-                raise ValueError('Unknown key {}'.format(key))
+                if raise_for_unknown:
+                    raise ValueError('Unknown key {}'.format(key))
+                else:
+                    continue
             factory = self.__fields__[key].factory
             # print(key, value, factory)
             if value is not None:

@@ -40,9 +40,11 @@ args = parser.parse_args()
 bleau_database = BleauDataBase(json_file=args.json_file)
 
 massif = bleau_database['91_1']
-print(massif.cotations)
-for circuit in massif:
-    print(circuit.cotation)
+for place in massif.nearest_point_deau():
+    print(place.nom, massif.distance_to(place))
+# print(massif.cotations)
+# for circuit in massif:
+#     print(circuit.cotation)
 
 ####################################################################################################
 #

@@ -274,16 +274,15 @@ class Massif(WithCoordinate):
     a_pieds = bool
     acces = str
     coordonne = Coordinate
-    massif = str
+    massif = str # Fixme: name ?
     nom = str
     notes = str
     parcelles = str
-    parking = str
-    point_deau = str
+    parking = str # Fixme: remove ?
     rdv = str
     secteur = str
     type_de_chaos = ChaosType
-    velo = str
+    velo = str # Fixme: gare
     # propreté fréquentation exposition débutant
 
     ##############################################
@@ -358,6 +357,15 @@ class Massif(WithCoordinate):
         cotations = {circuit.cotation.major for circuit in self._circuits}
         return tuple(sorted(cotations))
 
+    ##############################################
+
+    def nearest_point_deau(self, number_of_items=2, distance_max=2000):
+
+        return self.bleau_database.nearest_place(self,
+                                                 place_type="point d'eau",
+                                                 number_of_items=number_of_items,
+                                                 distance_max=distance_max)
+
 ####################################################################################################
 
 class Circuit(WithCoordinate):
@@ -427,7 +435,7 @@ class BleauDataBase:
 
     ##############################################
 
-    def __init__(self, json_file=None, country_code='fr_FR'):
+    def __init__(self, json_file=None, country_code='fr_FR', raise_for_unknown=True):
 
         # To sort string using French collation
         locale.setlocale(locale.LC_ALL, country_code)
@@ -441,12 +449,14 @@ class BleauDataBase:
             with open(json_file, encoding='utf8') as f:
                 data = json.load(f)
             
-            places = [Place(self, **place_dict) for place_dict in data['places']]
+            places = [Place(self, raise_for_unknown=raise_for_unknown, **place_dict)
+                      for place_dict in data['places']]
             self._places = {}
             for place in places:
                 self.add_place(place)
 
-            massifs = [Massif(self, **massif_dict) for massif_dict in data['massifs']]
+            massifs = [Massif(self, raise_for_unknown=raise_for_unknown, **massif_dict)
+                       for massif_dict in data['massifs']]
             self._massifs = {}
             for massif in massifs:
                 self.add_massif(massif)
@@ -454,7 +464,7 @@ class BleauDataBase:
             self._circuits = []
             for circuit_dict in data['circuits']:
                 circuit_dict['massif'] = self._massifs[circuit_dict['massif']]
-                self.add_circuit(Circuit(self, **circuit_dict))
+                self.add_circuit(Circuit(self, raise_for_unknown=raise_for_unknown, **circuit_dict))
         else:
             self._places = {}
             self._massifs = {}
@@ -607,10 +617,9 @@ class BleauDataBase:
 
     ##############################################
 
-    def nearest_massif(self, item, number_of_items=1, distance_max=None):
+    def _nearest(self, rtree_, item, number_of_items=1, distance_max=None):
 
         number_of_items += 1
-        rtree_ = self.rtree_massif
         # Fixme: segfault ???
         # return [x.object for x in rtree.nearest(item.coordonne.bounding_box, number_of_items, objects=True)]
         items = [self._ids[x] for x in rtree_.nearest(item.coordonne.bounding_box, number_of_items)]
@@ -618,6 +627,27 @@ class BleauDataBase:
         if distance_max is not None:
             items = [x for x in items if item.distance_to(x) <= distance_max]
         return items
+
+    ##############################################
+
+    def nearest_massif(self, item, number_of_items=1, distance_max=None):
+
+        return self._nearest(self.rtree_massif, item, number_of_items, distance_max)
+
+    ##############################################
+
+    def nearest_place(self, item, place_type, number_of_items=1, distance_max=None):
+
+        places = self._nearest(self.rtree_place, item, number_of_items=1000, distance_max=distance_max)
+        places = [place for place in places if place.type == place_type]
+        
+        return places[:number_of_items]
+
+    ##############################################
+
+    def nearest_circuit(self, item, number_of_items=1, distance_max=None):
+
+        return self._nearest(self.rtree_circuit, item, number_of_items, distance_max)
 
     ##############################################
 
