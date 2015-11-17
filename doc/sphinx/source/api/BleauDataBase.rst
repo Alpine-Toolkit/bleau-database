@@ -4,6 +4,7 @@
 
 .. toctree::
   BleauDataBase/BleauDataBase
+  BleauDataBase/GeoFormat
   BleauDataBase/Projection
   BleauDataBase/__init__
 
