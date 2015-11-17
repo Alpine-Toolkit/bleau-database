@@ -21,11 +21,9 @@
 ####################################################################################################
 
 try:
-    # import pykml
-    from pykml import parser as kml_parser
-    from lxml import etree
+    import fastkml
 except ImportError:
-    kml_parser = None
+    fastkml = None
 
 ####################################################################################################
 
@@ -36,27 +34,17 @@ from ..BleauDataBase import Place
 def import_kml_file(kml_path):
 
     with open(kml_path) as f:
-        doc = kml_parser.parse(f)
+        doc = f.read()
     
-    folder = doc.getroot().Folder # .Document.Folder
+    kml_document = fastkml.kml.KML()
+    kml_document.from_string(doc)
     
     places = []
-    for placemark in folder.iterchildren():
-        if etree.QName(placemark.tag).localname == 'Placemark':
-            if hasattr(placemark, 'Point'):
-                latitude, longitude = [float(x) for x in str(placemark.Point.coordinates).split(',')]
-                coordinate = dict(longitude=longitude, latitude=latitude)
-            else:
-                raise ValueError('Missing point coordinate')
-            if hasattr(placemark, 'name'):
-                name = placemark.name
-            else:
-                raise ValueError('Missing name')
-            if hasattr(placemark, 'description'):
-                description = placemark.description
-            else:
-                description = None
-            place = Place(coordonne=coordinate, nom=name, notes=description, bleau_database=None)
+    for folder in kml_document.features():
+        for placemark in folder.features():
+            coordinate = dict(longitude=placemark.geometry.x, latitude=placemark.geometry.y)
+            place = Place(coordonne=coordinate, nom=placemark.name, notes=placemark.description,
+                          bleau_database=None)
             places.append(place)
     
     return places
