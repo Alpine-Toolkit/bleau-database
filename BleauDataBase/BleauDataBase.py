@@ -26,6 +26,8 @@ system.
 
 """
 
+# Fixme: français -> english ?
+
 ####################################################################################################
 
 import itertools
@@ -99,6 +101,24 @@ class StringList(list):
     def __init__(self, *args):
 
         super().__init__([str(x) for x in args])
+
+####################################################################################################
+
+class PlaceType(str):
+
+    """This class defines a type of place."""
+
+    __types__ = ('parking', 'gare', "point d'eau")
+
+    ##############################################
+
+    def __new__(cls, type_de_place):
+
+        type_de_place = type_de_place.lower()
+        if type_de_place not in cls.__types__:
+            raise ValueError
+        
+        return str.__new__(cls, type_de_place)
 
 ####################################################################################################
 
@@ -253,14 +273,15 @@ class FromJsonMixin(metaclass=FromJsonMixinMetaClass):
 
     ##############################################
 
-    def to_json(self):
+    def to_json(self, only_defined=False):
 
         d = {}
         for field in self.__field_names__:
             value = self.__dict__[field]
             if hasattr(value, '__json_interface__'):
                 value = value.__json_interface__
-            d[field] = value
+            if not only_defined or value is not None:
+                d[field] = value
         
         return d
 
@@ -340,6 +361,7 @@ class WithCoordinate(FromJsonMixin):
 
     def nearest(self, number_of_items=1, distance_max=None):
 
+        # Fixme: call nearest_massif
         return self.bleau_database.nearest_massif(self, number_of_items, distance_max)
 
     ##############################################
@@ -349,6 +371,17 @@ class WithCoordinate(FromJsonMixin):
         x0, y0 = self.coordonne.mercator
         x1, y1 = item.coordonne.mercator
         return math.sqrt((x1 - x0)**2 + (y1 - y0)**2)
+
+####################################################################################################
+
+class Place(WithCoordinate):
+
+    """This class defines a place."""
+
+    coordonne = Coordinate
+    nom = str
+    type = PlaceType # Note: redefine type in this scope!
+    notes = str # aka commentaire
 
 ####################################################################################################
 
@@ -517,6 +550,7 @@ class BleauDataBase:
         # To sort string using French collation
         locale.setlocale(locale.LC_ALL, country_code)
         
+        self._rtree_place = None
         self._rtree_massif = None
         self._rtree_circuit = None
         self._ids = {}
@@ -524,15 +558,23 @@ class BleauDataBase:
         if json_file is not None:
             with open(json_file, encoding='utf8') as f:
                 data = json.load(f)
+            
+            places = [Place(self, **place_dict) for place_dict in data['places']]
+            self._places = {}
+            for place in places:
+                self.add_place(place)
+
             massifs = [Massif(self, **massif_dict) for massif_dict in data['massifs']]
             self._massifs = {}
             for massif in massifs:
                 self.add_massif(massif)
+            
             self._circuits = []
             for circuit_dict in data['circuits']:
                 circuit_dict['massif'] = self._massifs[circuit_dict['massif']]
                 self.add_circuit(Circuit(self, **circuit_dict))
         else:
+            self._places = {}
             self._massifs = {}
             self._circuits = []
 
@@ -558,6 +600,10 @@ class BleauDataBase:
         return len(self._massifs)
 
     @property
+    def places(self):
+        return iter(sorted(self._places.values()))
+
+    @property
     def massifs(self):
         return iter(sorted(self._massifs.values()))
 
@@ -575,7 +621,14 @@ class BleauDataBase:
 
     def __getitem__(self, key):
 
+        # Fixme: only massif
         return self._massifs[key]
+
+    ##############################################
+
+    def add_place(self, place):
+
+        self._places[str(place)] = place
 
     ##############################################
 
@@ -594,6 +647,7 @@ class BleauDataBase:
     def to_json(self, json_file=None):
 
         data = {
+            'places': [place.to_json() for place in self.places],
             'massifs': [massif.to_json() for massif in self.massifs],
             'circuits': [circuit.to_json() for circuit in self._circuits], # don't sort circuits
         }
@@ -607,9 +661,11 @@ class BleauDataBase:
 
     ##############################################
 
-    def to_geojson(self, json_file=None, massifs=True, circuits=True):
+    def to_geojson(self, json_file=None, places=True, massifs=True, circuits=True):
 
         features = []
+        if places:
+            features.extend([place for place in self.places if place.coordonne is not None])
         if massifs:
             features.extend([massif for massif in self.massifs if massif.coordonne is not None])
         if circuits:
@@ -639,6 +695,15 @@ class BleauDataBase:
                 rtree_.insert(id(item), item.coordonne.bounding_box, obj=item)
                 self._ids[id(item)] = item
         return rtree_
+
+    ##############################################
+
+    @property
+    def rtree_place(self):
+
+        if self._rtree_place is None:
+            self._rtree_place = self._build_rtree(self.places)
+        return self._rtree_place
 
     ##############################################
 
