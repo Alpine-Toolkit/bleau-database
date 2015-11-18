@@ -265,6 +265,11 @@ class Place(WithCoordinate):
     type = PlaceType # Note: redefine type in this scope!
     notes = str # aka commentaire
 
+    ##############################################
+
+    def __str__(self):
+        return self.nom
+
 ####################################################################################################
 
 class Massif(WithCoordinate):
@@ -320,6 +325,13 @@ class Massif(WithCoordinate):
     ##############################################
 
     def __str__(self):
+        return self.massif
+
+    ##############################################
+
+    @property
+    def name(self):
+        # Fixme
         return self.massif
 
     ##############################################
@@ -394,8 +406,15 @@ class Circuit(WithCoordinate):
 
     ##############################################
 
+    @property
+    def name(self):
+        # -{0.cotation}
+        return '{0.massif}-{0.numero}'.format(self)
+
+    ##############################################
+
     def __str__(self):
-        return '{0.massif}-{0.numero}-{0.cotation}'.format(self)
+        return self.name
 
     ##############################################
 
@@ -440,6 +459,12 @@ class BleauDataBase:
         # To sort string using French collation
         locale.setlocale(locale.LC_ALL, country_code)
         
+        self._items = {}
+        self._places = {}
+        self._massifs = {}
+        self._circuit_list = []
+        self._circuits = {}
+        
         self._rtree_place = None
         self._rtree_massif = None
         self._rtree_circuit = None
@@ -451,24 +476,18 @@ class BleauDataBase:
             
             places = [Place(self, raise_for_unknown=raise_for_unknown, **place_dict)
                       for place_dict in data['places']]
-            self._places = {}
             for place in places:
                 self.add_place(place)
 
             massifs = [Massif(self, raise_for_unknown=raise_for_unknown, **massif_dict)
                        for massif_dict in data['massifs']]
-            self._massifs = {}
             for massif in massifs:
                 self.add_massif(massif)
             
-            self._circuits = []
             for circuit_dict in data['circuits']:
                 circuit_dict['massif'] = self._massifs[circuit_dict['massif']]
+                # Fixme: circuit -> massif -> bleau_database
                 self.add_circuit(Circuit(self, raise_for_unknown=raise_for_unknown, **circuit_dict))
-        else:
-            self._places = {}
-            self._massifs = {}
-            self._circuits = []
 
     ##############################################
 
@@ -484,7 +503,7 @@ class BleauDataBase:
 
     @property
     def number_of_circuits_with_topos(self):
-        return len([circuit for circuit in self._circuits
+        return len([circuit for circuit in self._circuits.values()
                     if circuit.has_topo()])
 
     @property
@@ -501,7 +520,7 @@ class BleauDataBase:
 
     @property
     def circuits(self):
-        return iter(sorted(self._circuits))
+        return iter(sorted(self._circuits.values()))
 
     @property
     def secteurs(self):
@@ -513,26 +532,37 @@ class BleauDataBase:
 
     def __getitem__(self, key):
 
-        # Fixme: only massif
-        return self._massifs[key]
+        return self._items[key]
+
+    ##############################################
+
+    def _add_item(self, dictionary, item):
+
+        name = str(item)
+        if name not in self._items:
+            self._items[name] = item
+            dictionary[name] = item
+        else:
+            raise KeyError('Name is already registered: "{}"'.format(name))
 
     ##############################################
 
     def add_place(self, place):
 
-        self._places[str(place)] = place
+        self._add_item(self._places, place)
 
     ##############################################
 
     def add_massif(self, massif):
 
-        self._massifs[str(massif)] = massif
+        self._add_item(self._massifs, massif)
 
     ##############################################
 
     def add_circuit(self, circuit):
 
-        self._circuits.append(circuit)
+        self._add_item(self._circuits, circuit)
+        self._circuit_list.append(circuit)
 
     ##############################################
 
@@ -541,7 +571,7 @@ class BleauDataBase:
         data = {
             'places': [place.to_json() for place in self.places],
             'massifs': [massif.to_json() for massif in self.massifs],
-            'circuits': [circuit.to_json() for circuit in self._circuits], # don't sort circuits
+            'circuits': [circuit.to_json() for circuit in self._circuit_list],
         }
 
         kwargs = dict(indent=2, ensure_ascii=False, sort_keys=True)
