@@ -232,12 +232,18 @@ class WithCoordinate(FromJsonMixin):
 
     ##############################################
 
+    def strxfrm(self):
+
+        return locale.strxfrm(str(self))
+
+    ##############################################
+
     def __lt__(self, other):
 
         """ Compare name using French collation """
 
         # return locale.strcoll(str(self), str(other))
-        return locale.strxfrm(str(self)) < locale.strxfrm(str(other))
+        return self.strxfrm() < other.strxfrm()
 
     ##############################################
 
@@ -462,7 +468,6 @@ class BleauDataBase:
         self._items = {}
         self._places = {}
         self._massifs = {}
-        self._circuit_list = []
         self._circuits = {}
         
         self._rtree_place = None
@@ -520,7 +525,8 @@ class BleauDataBase:
 
     @property
     def circuits(self):
-        return iter(sorted(self._circuits.values()))
+        # Circuit.__lt__ sort by cotation
+        return iter(sorted(self._circuits.values(), key=lambda circuit: circuit.strxfrm()))
 
     @property
     def secteurs(self):
@@ -562,7 +568,6 @@ class BleauDataBase:
     def add_circuit(self, circuit):
 
         self._add_item(self._circuits, circuit)
-        self._circuit_list.append(circuit)
 
     ##############################################
 
@@ -571,7 +576,7 @@ class BleauDataBase:
         data = {
             'places': [place.to_json() for place in self.places],
             'massifs': [massif.to_json() for massif in self.massifs],
-            'circuits': [circuit.to_json() for circuit in self._circuit_list],
+            'circuits': [circuit.to_json() for circuit in self.circuits],
         }
 
         kwargs = dict(indent=2, ensure_ascii=False, sort_keys=True)
