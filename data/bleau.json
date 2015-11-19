@@ -6385,8 +6385,8 @@
         "longitude": 2.725392699242297
       },
       "nom": "Fontaine d'Avon",
-      "notes": "Point d'eau",
-      "type": null
+      "notes": null,
+      "type": "point d'eau"
     },
     {
       "coordonne": {
