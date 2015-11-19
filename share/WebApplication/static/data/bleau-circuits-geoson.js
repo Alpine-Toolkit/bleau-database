@@ -1,3 +1,4 @@
+var circuit_geojson = {
 {
   "features": [
     {
@@ -5407,4 +5408,4 @@
     }
   ],
   "type": "FeatureCollection"
-}
+}};

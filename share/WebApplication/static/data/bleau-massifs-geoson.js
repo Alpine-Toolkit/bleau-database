@@ -1,3 +1,4 @@
+var massif_geojson = {
 {
   "features": [
     {
@@ -1957,4 +1958,4 @@
     }
   ],
   "type": "FeatureCollection"
-}
+}};

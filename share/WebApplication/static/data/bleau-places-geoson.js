@@ -1,3 +1,4 @@
+var place_geojson = {
 {
   "features": [
     {
@@ -107,4 +108,4 @@
     }
   ],
   "type": "FeatureCollection"
-}
+}};
