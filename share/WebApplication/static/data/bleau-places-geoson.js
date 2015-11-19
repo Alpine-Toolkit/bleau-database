@@ -1,4 +1,4 @@
-var place_geojson = {
+var place_geojson =
 {
   "features": [
     {
@@ -12,6 +12,7 @@ var place_geojson = {
       "properties": {
         "nom": "Fontaine d'Avon",
         "notes": null,
+        "object": "Place",
         "type": "point d'eau"
       },
       "type": "Feature"
@@ -27,6 +28,7 @@ var place_geojson = {
       "properties": {
         "nom": "Fontaine de Bois-le-Roi",
         "notes": null,
+        "object": "Place",
         "type": "point d'eau"
       },
       "type": "Feature"
@@ -42,6 +44,7 @@ var place_geojson = {
       "properties": {
         "nom": "Fontaine du cimetière de Noisy-sur-École",
         "notes": null,
+        "object": "Place",
         "type": "point d'eau"
       },
       "type": "Feature"
@@ -57,6 +60,7 @@ var place_geojson = {
       "properties": {
         "nom": "Fontaine du parking de Noisy-sur-École",
         "notes": null,
+        "object": "Place",
         "type": "point d'eau"
       },
       "type": "Feature"
@@ -72,6 +76,7 @@ var place_geojson = {
       "properties": {
         "nom": "Gare d'Avon-Fontainebleau",
         "notes": null,
+        "object": "Place",
         "type": "gare"
       },
       "type": "Feature"
@@ -87,6 +92,7 @@ var place_geojson = {
       "properties": {
         "nom": "Gare de Bois-le-Roi",
         "notes": null,
+        "object": "Place",
         "type": "gare"
       },
       "type": "Feature"
@@ -102,10 +108,11 @@ var place_geojson = {
       "properties": {
         "nom": "Parking de Noisy-sur-École",
         "notes": null,
+        "object": "Place",
         "type": "parking"
       },
       "type": "Feature"
     }
   ],
   "type": "FeatureCollection"
-}};
+};

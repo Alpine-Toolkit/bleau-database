@@ -1,4 +1,4 @@
-var circuit_geojson = {
+var circuit_geojson =
 {
   "features": [
     {
@@ -17,6 +17,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "91_1",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.pofableau.com/cotation/topos/topo_91.1_rouge_1_TD-.pdf"
@@ -40,6 +41,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "91_1",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.pofableau.com/cotation/topos/topo_91.1_orange_2_AD+.pdf"
@@ -63,6 +65,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "91_1",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/91-1-orange-n4.pdf",
@@ -87,6 +90,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "91_1",
         "numero": 5,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -108,6 +112,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "95_2",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/95-2-bleu-n1.pdf"
@@ -131,6 +136,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "95_2",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/95-2-rouge-n2.pdf"
@@ -154,6 +160,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "95_2",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/95-2-blanc-n3.pdf",
@@ -178,6 +185,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "95_2",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/95-2-jaune-n4.pdf"
@@ -201,6 +209,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "95_2",
         "numero": 5,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -222,6 +231,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Bizons",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/ap-bizons-rouge-n1.pdf"
@@ -245,6 +255,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Bizons",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/ap-bizons-bleu-n2.pdf"
@@ -268,6 +279,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Bizons",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/ap-bizons-orange-n3.pdf"
@@ -291,6 +303,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Bizons",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -312,6 +325,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Dames",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKcFFCNlYxWk1NVnc/edit"
@@ -335,6 +349,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Dames",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKeFNTRDV1WGl0OG8/edit"
@@ -358,6 +373,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Dames",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKQ2JZbmYxanJ3VGM/edit"
@@ -381,6 +397,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Désert",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -402,6 +419,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Désert",
         "numero": 2,
+        "object": "Circuit",
         "status": "abandonné",
         "topos": []
       },
@@ -423,6 +441,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Désert",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -444,6 +463,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Désert",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -465,6 +485,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Désert",
         "numero": 5,
+        "object": "Circuit",
         "status": "pas sur SNE",
         "topos": []
       },
@@ -486,6 +507,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Désert",
         "numero": 6,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/ap-desert-bleu-n6.pdf"
@@ -509,6 +531,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Envers",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/ap-envers-rouge-n1.pdf",
@@ -533,6 +556,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Envers",
         "numero": 2,
+        "object": "Circuit",
         "status": "abandonné",
         "topos": []
       },
@@ -554,6 +578,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Envers",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -575,6 +600,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Envers",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/ap-envers-jaune-n4.pdf"
@@ -598,6 +624,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Gorges",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -619,6 +646,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Gorges",
         "numero": 10,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKU0NNR1VkVXVLRHM/edit"
@@ -642,6 +670,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Gorges",
         "numero": 11,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKaWNJT0dqSVphZ3M/edit"
@@ -665,6 +694,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Gorges",
         "numero": 12,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKalp0cklBaG85b2c/edit"
@@ -688,6 +718,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Gorges",
         "numero": 13,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/ap-gorges-bleu%20baltique-n13.pdf",
@@ -712,6 +743,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Gorges",
         "numero": 14,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://bleaumeconnu.free.fr/enfant.htm"
@@ -735,6 +767,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Gorges",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/ap-gorges-vert-n2.pdf"
@@ -758,6 +791,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Gorges",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/ap-gorges-orange-n3.pdf",
@@ -782,6 +816,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Gorges",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/ap-gorges-fraise-n4.pdf",
@@ -806,6 +841,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Gorges",
         "numero": 5,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.gumsparis.asso.fr/index.php/revue-le-crampon/doc_download/321-n36108apremontbleuoutremer"
@@ -829,6 +865,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Gorges",
         "numero": 6,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/ap-gorges-saumon-n6.pdf",
@@ -853,6 +890,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Gorges",
         "numero": 7,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -874,6 +912,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Apremont Gorges",
         "numero": 9,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -895,6 +934,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Bois Rond",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -916,6 +956,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Bois Rond",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -937,6 +978,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Bois Rond",
         "numero": 5,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -958,6 +1000,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Buthiers Canard",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.grimporama.com/francais/bleau/buthiers-canard-bleu.pdf",
@@ -982,6 +1025,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Buthiers Canard",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1003,6 +1047,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Buthiers Canard",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKVF9yR3k5emtGLXM/edit"
@@ -1026,6 +1071,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Buthiers Canard",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1047,6 +1093,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Buthiers Canard",
         "numero": 5,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1068,6 +1115,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Buthiers L'I",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1089,6 +1137,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Buthiers L'I",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1110,6 +1159,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Buthiers L'I",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKenF1cm1QeEU3NlE/edit"
@@ -1133,6 +1183,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Buthiers L'I",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1154,6 +1205,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Buthiers L'I",
         "numero": 5,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1175,6 +1227,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Buthiers L'I",
         "numero": 6,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1196,6 +1249,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Calvaire",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1217,6 +1271,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Canche aux Merciers",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.pofableau.com/cotation/topos/topo_canche_bleu_1_D+.pdf"
@@ -1240,6 +1295,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Canche aux Merciers",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.pofableau.com/cotation/topos/topo_canche_orange_2_AD.pdf"
@@ -1263,6 +1319,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Canche aux Merciers",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1284,6 +1341,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Canche aux Merciers",
         "numero": 5,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1305,6 +1363,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Canche aux Merciers",
         "numero": 6,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.pofableau.com/cotation/topos/topo_canche_rouge_6_TD+.pdf"
@@ -1328,6 +1387,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Canche aux Merciers",
         "numero": 7,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1349,6 +1409,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Chamarande",
         "numero": 11,
+        "object": "Circuit",
         "status": null,
         "topos": []
       },
@@ -1370,6 +1431,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Chamarande",
         "numero": 13,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "http://www.grimporama.com/francais/bleau/b8-chamarande.pdf",
@@ -1394,6 +1456,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Chamarande",
         "numero": 14,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKMEVqclR1bVMxVmc/edit"
@@ -1417,6 +1480,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Chamarande",
         "numero": 2,
+        "object": "Circuit",
         "status": null,
         "topos": []
       },
@@ -1438,6 +1502,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Chamarande",
         "numero": 5,
+        "object": "Circuit",
         "status": null,
         "topos": []
       },
@@ -1459,6 +1524,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Chamarande",
         "numero": 6,
+        "object": "Circuit",
         "status": null,
         "topos": []
       },
@@ -1480,6 +1546,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Chamarande",
         "numero": 8,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "http://www.grimporama.com/francais/bleau/chamarande-bl.htm"
@@ -1503,6 +1570,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Chamarande",
         "numero": 9,
+        "object": "Circuit",
         "status": null,
         "topos": []
       },
@@ -1524,6 +1592,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Cul de Chien",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/culdechien-bleu-n1.pdf"
@@ -1547,6 +1616,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Cul de Chien",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/culdechien-jaune-n3.pdf"
@@ -1570,6 +1640,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Cul de Chien",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/culdechien-rouge-n4.pdf"
@@ -1595,6 +1666,7 @@ var circuit_geojson = {
         ],
         "massif": "Cuvier Bas",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1616,6 +1688,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Cuvier Bas",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKaWlhWXN5c1p2Yzg/edit"
@@ -1639,6 +1712,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Cuvier Bas",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1662,6 +1736,7 @@ var circuit_geojson = {
         ],
         "massif": "Cuvier Bas",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKQU0teUlVeDJIN1U/edit"
@@ -1685,6 +1760,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Cuvier Bas",
         "numero": 5,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKcHdrTkZIb0l4Q00/edit"
@@ -1708,6 +1784,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Cuvier Bas",
         "numero": 6,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKMHhscTl1SjFaT1U/edit"
@@ -1731,6 +1808,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Cuvier Bas",
         "numero": 7,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1752,6 +1830,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Cuvier Rempart",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1773,6 +1852,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Cuvier Rempart",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1794,6 +1874,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Cuvier Rempart",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKUGxJVFdLc0ZRTzA/edit"
@@ -1817,6 +1898,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Dame Jouanne",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1838,6 +1920,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Dame Jouanne",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1859,6 +1942,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Dame Jouanne",
         "numero": 3,
+        "object": "Circuit",
         "status": "abandonné",
         "topos": []
       },
@@ -1880,6 +1964,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Dame Jouanne",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1901,6 +1986,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Dame Jouanne",
         "numero": 5,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1922,6 +2008,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Dame Jouanne",
         "numero": 6,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1943,6 +2030,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Dame Jouanne",
         "numero": 7,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1964,6 +2052,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Dame Jouanne",
         "numero": 8,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -1985,6 +2074,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Dampierre Maincourt",
         "numero": 1,
+        "object": "Circuit",
         "status": null,
         "topos": []
       },
@@ -2006,6 +2096,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Dampierre Maincourt",
         "numero": 2,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKNUdjWVFETGhuOGc/edit"
@@ -2029,6 +2120,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Dampierre Maincourt",
         "numero": 3,
+        "object": "Circuit",
         "status": null,
         "topos": []
       },
@@ -2050,6 +2142,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Dampierre Maincourt",
         "numero": 5,
+        "object": "Circuit",
         "status": null,
         "topos": []
       },
@@ -2071,6 +2164,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Demoiselles",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -2092,6 +2186,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Diplodocus",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -2113,6 +2208,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Diplodocus",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -2134,6 +2230,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Diplodocus",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.pofableau.com/cotation/topos/topo_dipodocus_bleu_3_D.pdf"
@@ -2157,6 +2254,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Drei Zinnen",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://bleau.info/zinnen/topo107.html"
@@ -2180,6 +2278,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Éléphant",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -2201,6 +2300,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Éléphant",
         "numero": 2,
+        "object": "Circuit",
         "status": "à abandonner?",
         "topos": []
       },
@@ -2222,6 +2322,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Éléphant",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -2243,6 +2344,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Éléphant",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://bleaumeconnu.free.fr/enfant.htm"
@@ -2266,6 +2368,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Éléphant",
         "numero": 5,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKRjdxcDZaTFJQeGM/edit"
@@ -2289,6 +2392,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Éléphant",
         "numero": 6,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -2310,6 +2414,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Étréchy",
         "numero": 1,
+        "object": "Circuit",
         "status": null,
         "topos": []
       },
@@ -2331,6 +2436,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Étréchy",
         "numero": 2,
+        "object": "Circuit",
         "status": null,
         "topos": []
       },
@@ -2352,6 +2458,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Feuillardière",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -2373,6 +2480,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Franchard Crête Sud",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -2394,6 +2502,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Franchard Crête Sud",
         "numero": 6,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -2415,6 +2524,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Franchard Cuisinière",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/fr-cuisiniere-orange-n1.pdf"
@@ -2438,6 +2548,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Franchard Cuisinière",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -2459,6 +2570,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Franchard Cuisinière",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/fr-cuisiniere-rouge-n4.pdf",
@@ -2483,6 +2595,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Franchard Cuisinière",
         "numero": 5,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKS1pqUkdRS2FSU2c/edit"
@@ -2506,6 +2619,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Franchard Ermitage",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKOC1pNjE1UlpvQlk/edit"
@@ -2529,6 +2643,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Franchard Hautes-Plaines",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -2550,6 +2665,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Franchard Hautes-Plaines",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -2571,6 +2687,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Franchard Hautes-Plaines",
         "numero": 5,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/fr-hautesplaines-orange-n5.pdf"
@@ -2594,6 +2711,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Franchard Isatis",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKODV1OVVQakUxRVk/edit"
@@ -2617,6 +2735,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Franchard Isatis",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://pofableau.com/cotation/topos/topo_isatis-ouest.pdf"
@@ -2640,6 +2759,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Franchard Isatis",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx0b3BvYmxlYXV8Z3g6NmFjY2VjNjliYzdkYjM0OQ"
@@ -2663,6 +2783,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Franchard Sablons",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKemhVdy1ReDhZZ3c/edit",
@@ -2687,6 +2808,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Franchard Sablons",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/fr-sablons-bleu-n4.pdf"
@@ -2710,6 +2832,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Gorge aux Châts",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://pofableau.com/cotation/topos/topo_gorge_aux_chats_bleu_D.pdf"
@@ -2733,6 +2856,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Gorge aux Châts",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKR1ItRnVlLXI4MU0/edit"
@@ -2756,6 +2880,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Gorge aux Châts",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -2777,6 +2902,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Gorges du Houx",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -2798,6 +2924,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Grande Montagne",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -2819,6 +2946,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Gros Sablons",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -2840,6 +2968,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Gros Sablons",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.pofableau.com/cotation/topos/topo_gros_sablons_AD_2.pdf"
@@ -2863,6 +2992,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Gros Sablons",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKbzB2UG5sQ0JYRnM/edit"
@@ -2886,6 +3016,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Gros Sablons",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKaDZST01BVEh4V0U/edit"
@@ -2909,6 +3040,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "J.A. Martin - R. Cailleau",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -2930,6 +3062,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "J.A. Martin - R. Cailleau",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/jamartin-orange-n2.pdf"
@@ -2953,6 +3086,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "J.A. Martin - R. Cailleau",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/jamartin-orange-n3.pdf",
@@ -2978,6 +3112,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "J.A. Martin - R. Cailleau",
         "numero": 5,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -2999,6 +3134,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "J.A. Martin - R. Cailleau",
         "numero": 6,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKUnJ6SEpIRU4xMkU/edit"
@@ -3022,6 +3158,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "J.A. Martin - R. Cailleau",
         "numero": 7,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -3043,6 +3180,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "J.A. Martin - R. Cailleau",
         "numero": 8,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -3064,6 +3202,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "J.A. Martin - R. Cailleau",
         "numero": 9,
+        "object": "Circuit",
         "status": "pas sur SNE",
         "topos": []
       },
@@ -3085,6 +3224,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Jean des Vignes",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -3106,6 +3246,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Justice de Chambergeot",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/justice-orange-n2.pdf"
@@ -3131,6 +3272,7 @@ var circuit_geojson = {
         ],
         "massif": "Justice de Chambergeot",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/justice-jaune-n1.pdf"
@@ -3154,6 +3296,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Maisse le Patouillat",
         "numero": 1,
+        "object": "Circuit",
         "status": null,
         "topos": []
       },
@@ -3175,6 +3318,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Maunoury",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/maunoury-orange-n1.pdf"
@@ -3198,6 +3342,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Maunoury",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/maunoury-bleu-n2.pdf"
@@ -3221,6 +3366,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Maunoury",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKZUtrT3lGbzVEZDg/edit"
@@ -3244,6 +3390,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Mont-Aigu",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/montaigu-orange-n1.pdf"
@@ -3267,6 +3414,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Mont-Aigu",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/montaigu-jaune-n2.pdf"
@@ -3290,6 +3438,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Mont-Aigu",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/montaigu-bleu-n3.pdf"
@@ -3313,6 +3462,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Mont Olivet",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/montolivet-orange-n1.pdf",
@@ -3337,6 +3487,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Mont Olivet",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/montolivet-bleu-n2.pdf",
@@ -3363,6 +3514,7 @@ var circuit_geojson = {
         ],
         "massif": "Mont-Ussy",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://bleaumeconnu.free.fr/ussy.htm"
@@ -3386,6 +3538,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Mont-Ussy",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://bleaumeconnu.free.fr/ussy.htm"
@@ -3409,6 +3562,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Mont-Ussy",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://bleaumeconnu.free.fr/ussy.htm",
@@ -3433,6 +3587,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Padôle",
         "numero": 1,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKNHZsa01UZ3lmVlU/edit"
@@ -3456,6 +3611,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Padôle",
         "numero": 2,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKUVFZRDdQRXdqZlk/edit",
@@ -3480,6 +3636,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Padôle",
         "numero": 4,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKeklsTjIwdVRxUHM/edit",
@@ -3504,6 +3661,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Padôle",
         "numero": 5,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKNHZsa01UZ3lmVlU/edit"
@@ -3527,6 +3685,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Padôle",
         "numero": 6,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "http://www.grimporama.com/francais/bleau/padole-bleu6.pdf"
@@ -3550,6 +3709,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Padôle",
         "numero": 7,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKZU5SZURUaTZqd3M/edit"
@@ -3573,6 +3733,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Padôle cent marches",
         "numero": 1,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "http://www.cosiroc.fr/images/fiches/centmarches-blanc-n1.pdf"
@@ -3596,6 +3757,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Padôle cent marches",
         "numero": 2,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "http://www.cosiroc.fr/images/fiches/centmarches-jaune-n2.pdf"
@@ -3619,6 +3781,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Padôle cent marches",
         "numero": 3,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "http://www.cosiroc.fr/images/fiches/centmarches-orange-n3.pdf"
@@ -3642,6 +3805,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Padôle cent marches",
         "numero": 4,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "http://www.cosiroc.fr/images/fiches/centmarches-caramel-n4.pdf"
@@ -3665,6 +3829,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Pendu d'Huison",
         "numero": 1,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "http://bleaumeconnu.free.fr/pendu.htm"
@@ -3688,6 +3853,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Pendu d'Huison",
         "numero": 3,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "http://bleaumeconnu.free.fr/pendu.htm"
@@ -3711,6 +3877,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Petit Bois de St Pierre de Nemours",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/nemours-jaune-n2.pdf"
@@ -3734,6 +3901,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Petit Bois de St Pierre de Nemours",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/nemours-bleu-n3.pdf",
@@ -3758,6 +3926,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Petit Bois de St Pierre de Nemours",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/nemours-rouge-n4.pdf",
@@ -3783,6 +3952,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Petit Bois de St Pierre de Nemours",
         "numero": 5,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/nemours-noir-n5.pdf",
@@ -3807,6 +3977,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Pignon Poteau",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/poteau-jaune-n1.pdf",
@@ -3831,6 +4002,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Pignon Poteau",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/poteau-orange-n2.pdf"
@@ -3854,6 +4026,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Potala",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/potala-bleu-n1.pdf"
@@ -3877,6 +4050,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Potala",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/potala-orange-n2.pdf",
@@ -3901,6 +4075,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Potala",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/potala-rouge-n3.pdf",
@@ -3926,6 +4101,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Potala",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/potala-jaune-n4.pdf"
@@ -3949,6 +4125,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Puiselet",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://bleaumeconnu.free.fr/MtSarrasin.htm"
@@ -3972,6 +4149,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Puiselet",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://bleaumeconnu.free.fr/MtSarrasin.htm"
@@ -3995,6 +4173,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Puiselet",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://bleaumeconnu.free.fr/MtSarrasin.htm"
@@ -4018,6 +4197,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Restant du Long Rocher",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/longrocher-orange-n1.pdf"
@@ -4041,6 +4221,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Restant du Long Rocher",
         "numero": 2,
+        "object": "Circuit",
         "status": "abandonné",
         "topos": []
       },
@@ -4062,6 +4243,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Restant du Long Rocher",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKOFQybHR6enpEaGM/edit"
@@ -4085,6 +4267,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Restant du Long Rocher",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/longrocher-orange-n4.pdf"
@@ -4108,6 +4291,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Roche aux Sabots",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.pofableau.com/cotation/topos/topo_roche_au_sabot_bleu_1_D.pdf"
@@ -4131,6 +4315,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Roche aux Sabots",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -4152,6 +4337,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Roche aux Sabots",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKQ2JZSVZVTkRud2M/edit"
@@ -4175,6 +4361,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Roche aux Sabots",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -4196,6 +4383,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Roche Hercule",
         "numero": 5,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -4217,6 +4405,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher Canon",
         "numero": 0,
+        "object": "Circuit",
         "status": "abandonné",
         "topos": []
       },
@@ -4238,6 +4427,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher Canon",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://bleau.info/canon/topo106.html"
@@ -4261,6 +4451,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher Canon",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -4282,6 +4473,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher Canon",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -4303,6 +4495,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher Canon",
         "numero": 5,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKVi1TVDFZQ2dJZ0k/edit"
@@ -4326,6 +4519,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher Canon",
         "numero": 6,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKdHByNUVSNTRUbkU/edit"
@@ -4349,6 +4543,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher Canon",
         "numero": 7,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -4370,6 +4565,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher Canon",
         "numero": 8,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -4391,6 +4587,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher d'Avon",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://grimporama.free.fr/topos-bleau/topo_rocher-avon.pdf"
@@ -4414,6 +4611,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher d'Avon",
         "numero": 2,
+        "object": "Circuit",
         "status": "pas sur SNE",
         "topos": []
       },
@@ -4435,6 +4633,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher d'Avon",
         "numero": 3,
+        "object": "Circuit",
         "status": "pas sur SNE",
         "topos": [
           "http://bleau.info/avon/topo103.html"
@@ -4458,6 +4657,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher de Chatillon",
         "numero": 1,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKbTItLWtCa0lKcVU/edit"
@@ -4481,6 +4681,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher de Chatillon",
         "numero": 2,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKWXV6WGdFOUQ5U0U/edit"
@@ -4504,6 +4705,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher de la Cathédrale",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -4525,6 +4727,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher de la Reine",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -4546,6 +4749,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher de la Reine",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -4567,6 +4771,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher de Milly - Corne-Biche",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -4588,6 +4793,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher de Milly - Corne-Biche",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/cornebiche-jaune-n2.pdf"
@@ -4611,6 +4817,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher de Milly - Corne-Biche",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -4632,6 +4839,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher de Milly - Corne-Biche",
         "numero": 4,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "http://www.cosiroc.fr/images/fiches/cornebiche-orange-n4.pdf"
@@ -4655,6 +4863,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher des Potets",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://bleau.info/images/topos/potetsjaune.pdf"
@@ -4678,6 +4887,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher des Potets",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -4701,6 +4911,7 @@ var circuit_geojson = {
         ],
         "massif": "Rocher du Duc - Hameau",
         "numero": 1,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "http://www.cosiroc.fr/images/fiches/av-hameau-jaune-nH1.pdf"
@@ -4726,6 +4937,7 @@ var circuit_geojson = {
         ],
         "massif": "Rocher du Duc - Hameau",
         "numero": 3,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "http://www.cosiroc.fr/images/fiches/av-hameau-bleu-nH3.pdf"
@@ -4751,6 +4963,7 @@ var circuit_geojson = {
         ],
         "massif": "Rocher du Duc - Hameau",
         "numero": 4,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "http://www.cosiroc.fr/images/fiches/av-hameau-rouge-nH4.pdf"
@@ -4776,6 +4989,7 @@ var circuit_geojson = {
         ],
         "massif": "Rocher du Duc - Hameau",
         "numero": 5,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "http://www.cosiroc.fr/images/fiches/av-hameau-noir-nH5.pdf"
@@ -4799,6 +5013,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher du Général",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.pofableau.com/cotation/topos/topo_71_1.pdf"
@@ -4822,6 +5037,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher du Général",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.pofableau.com/cotation/topos/topo_71_1.pdf"
@@ -4845,6 +5061,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher fin",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.pofableau.com/cotation/topos/topo_rocher_fin_bleu_1_D.pdf"
@@ -4868,6 +5085,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher fin",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKU1lHcnkzN0g1SEE/edit"
@@ -4891,6 +5109,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher fin",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -4912,6 +5131,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher fin",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -4933,6 +5153,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher Guichot",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKRVktbU1vOGc5QlE/edit"
@@ -4956,6 +5177,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher Guichot",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/guichot-orange-n2.pdf"
@@ -4979,6 +5201,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher Guichot",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/guichot-bleu-n3.pdf"
@@ -5002,6 +5225,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher Mignot",
         "numero": 1,
+        "object": "Circuit",
         "status": null,
         "topos": []
       },
@@ -5023,6 +5247,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher Mignot",
         "numero": 2,
+        "object": "Circuit",
         "status": null,
         "topos": []
       },
@@ -5044,6 +5269,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher Saint-Germain",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -5065,6 +5291,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher Saint-Germain",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -5086,6 +5313,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Rocher Saint-Germain",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -5107,6 +5335,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Sanglier",
         "numero": 1,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "http://bleaumeconnu.free.fr/sjaune.html"
@@ -5130,6 +5359,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Sanglier",
         "numero": 2,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "http://bleaumeconnu.free.fr/sorange.html"
@@ -5153,6 +5383,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Sanglier",
         "numero": 3,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "http://bleaumeconnu.free.fr/sbleu.html"
@@ -5176,6 +5407,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Sanglier",
         "numero": 4,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "http://bleaumeconnu.free.fr/srouge.html"
@@ -5199,6 +5431,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Sanglier",
         "numero": 5,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "http://bleaumeconnu.free.fr/srose.html"
@@ -5222,6 +5455,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Sanglier",
         "numero": 6,
+        "object": "Circuit",
         "status": null,
         "topos": [
           "http://bleaumeconnu.free.fr/noirP1.html"
@@ -5245,6 +5479,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Ségognole",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/segognole-jaune-n1.pdf"
@@ -5268,6 +5503,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Ségognole",
         "numero": 2,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/segognole-orange-n2.pdf"
@@ -5291,6 +5527,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Ségognole",
         "numero": 3,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/segognole-rouge-n3.pdf",
@@ -5315,6 +5552,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Télégraphe",
         "numero": 4,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": []
       },
@@ -5336,6 +5574,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Troglodytes",
         "numero": 1,
+        "object": "Circuit",
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/troglodytes-orange-n1.pdf"
@@ -5359,6 +5598,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Vaux de Cernay",
         "numero": 1,
+        "object": "Circuit",
         "status": null,
         "topos": []
       },
@@ -5380,6 +5620,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Videlles les Roches",
         "numero": 3,
+        "object": "Circuit",
         "status": null,
         "topos": []
       },
@@ -5401,6 +5642,7 @@ var circuit_geojson = {
         "liste_blocs": null,
         "massif": "Videlles les Roches",
         "numero": 4,
+        "object": "Circuit",
         "status": null,
         "topos": []
       },
@@ -5408,4 +5650,4 @@ var circuit_geojson = {
     }
   ],
   "type": "FeatureCollection"
-}};
+};
