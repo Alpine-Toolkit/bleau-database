@@ -54,8 +54,9 @@ except ImportError:
 
 ####################################################################################################
 
-from .Projection import GeoAngle, GeoCoordinate
 from .FieldObject import InstanceChecker, StringList, FromJsonMixin
+from .GeoFormat.GPX import GPX, WayPoint
+from .Projection import GeoAngle, GeoCoordinate
 
 ####################################################################################################
 
@@ -213,12 +214,31 @@ class WithCoordinate(FromJsonMixin):
 
     coordonne = None # Fixme: metaclass don't see this attribute
 
+    __gpx_type_prefix__ = 'Bleau/'
+
     ##############################################
 
     def __init__(self, bleau_database, **kwargs):
 
         super().__init__(**kwargs)
         self.bleau_database = bleau_database
+
+    ##############################################
+
+    def __bool__(self):
+        return self.coordonne is not None
+
+    ##############################################
+
+    @property
+    def pretty_name(self):
+        return str(self)
+
+    ##############################################
+
+    @property
+    def gpx_type(self):
+        return self.__class__.__name__
 
     ##############################################
 
@@ -229,6 +249,20 @@ class WithCoordinate(FromJsonMixin):
         del properties['coordonne']
         
         return {'type': 'Feature', 'geometry': self.coordonne, 'properties': properties}
+
+    ##############################################
+
+    @property
+    def waypoint(self):
+
+        return WayPoint(name=self.pretty_name,
+                        lat=self.coordonne.latitude,
+                        lon=self.coordonne.longitude,
+                        type=self.__gpx_type_prefix__ + self.gpx_type,
+                        # desc=
+                        # cmt=
+                        # link=
+        )
 
     ##############################################
 
@@ -275,6 +309,12 @@ class Place(WithCoordinate):
 
     def __str__(self):
         return self.nom
+
+    ##############################################
+
+    @property
+    def gpx_type(self):
+        return self.type.title()
 
 ####################################################################################################
 
@@ -409,6 +449,13 @@ class Circuit(WithCoordinate):
         super().__init__(bleau_database, **kwargs)
         
         self.massif.add_circuit(self)
+
+    ##############################################
+
+    @property
+    def pretty_name(self):
+        # Fixme
+        return '{0.massif} n°{0.numero} {0.cotation}'.format(self)
 
     ##############################################
 
@@ -592,11 +639,11 @@ class BleauDataBase:
 
         features = []
         if places:
-            features.extend([place for place in self.places if place.coordonne is not None])
+            features.extend([place for place in self.places if place])
         if massifs:
-            features.extend([massif for massif in self.massifs if massif.coordonne is not None])
+            features.extend([massif for massif in self.massifs if massif])
         if circuits:
-            features.extend([circuit for circuit in self.circuits if circuit.coordonne is not None])
+            features.extend([circuit for circuit in self.circuits if circuit])
         feature_collections = geojson.FeatureCollection(features)
         if not geojson.is_valid(feature_collections):
             raise ValueError
@@ -611,6 +658,25 @@ class BleauDataBase:
 
     ##############################################
 
+    def to_gpx(self, gpx_file=None, places=True, massifs=True, circuits=True):
+
+        # gpx_schema = 'doc/geo-formats/gpx/gpx-v1.1.xsd'
+        # gpx_schema = None
+
+        gpx = GPX()
+        if places:
+            gpx.add_waypoints([place.waypoint for place in self.places if place])
+        if massifs:
+            gpx.add_waypoints([massif.waypoint for massif in self.massifs if massif])
+        if circuits:
+            gpx.add_waypoints([circuit.waypoint for circuit in self.circuits if circuit])
+        if gpx_file is not None:
+            gpx.write(gpx_file)
+        else:
+            return gpx
+
+    ##############################################
+
     def _build_rtree(self, items):
 
         if rtree is None:
@@ -618,7 +684,7 @@ class BleauDataBase:
         
         rtree_ = rtree.index.Index()
         for item in items:
-            if item.coordonne is not None:
+            if item:
                 rtree_.insert(id(item), item.coordonne.bounding_box, obj=item)
                 self._ids[id(item)] = item
         return rtree_
@@ -702,8 +768,10 @@ class BleauDataBase:
             # massif.secteur and
             massifs = [massif for massif in massifs if massif.secteur in secteurs]
         if type_de_chaos is not None:
+            # Fixme: in ?
             type_de_chaos = set(type_de_chaos)
-            massifs = [massif for massif in massifs if set(massif.type_de_chaos.split('/')) >= type_de_chaos]
+            massifs = [massif for massif in massifs
+                       if massif.type_de_chaos and set(massif.type_de_chaos.split('/')) >= type_de_chaos]
         if cotations is not None or major_cotations is not None:
             if cotations is not None:
                 cotations = set(cotations)

@@ -81,7 +81,7 @@ class GPX:
 
     def __init__(self, gpx_path=None, schema_path=None):
 
-        self._way_points = []
+        self._waypoints = []
         
         if gpx_path is not None:
             self._parse(gpx_path, schema_path)
@@ -104,15 +104,15 @@ class GPX:
         # for item in root:
         #    print(item.tag, tree.getpath(item))
         
-        way_points = []
-        for way_point_element in tree.xpath('topografix:wpt', namespaces=namespaces):
-            d = self._attribute_to_dict(way_point_element, ('lat', 'lon'))
-            for element in way_point_element:
+        waypoints = []
+        for waypoint_element in tree.xpath('topografix:wpt', namespaces=namespaces):
+            d = self._attribute_to_dict(waypoint_element, ('lat', 'lon'))
+            for element in waypoint_element:
                 field = etree.QName(element.tag).localname
                 d[field] = element.text
-            way_point = WayPoint(**d)
-            way_points.append(way_point)
-        self._way_points = way_points
+            waypoint = WayPoint(**d)
+            waypoints.append(waypoint)
+        self._waypoints = waypoints
 
     ##############################################
 
@@ -125,13 +125,23 @@ class GPX:
     ##############################################
 
     @property
-    def way_points(self):
-        return self._way_points
+    def waypoints(self):
+        return self._waypoints
 
     ##############################################
 
-    def append_way_point(self, way_point):
-        self._way_points.append(way_point)
+    def add_waypoint(self, waypoint):
+        self._waypoints.append(waypoint)
+
+    ##############################################
+
+    def add_waypoints(self, waypoints):
+        self._waypoints.extend(waypoints)
+
+    ##############################################
+
+    def add_new_waypoint(self, **kwargs):
+        self.append_waypoint(WayPoint(**kwargs))
 
     ##############################################
 
@@ -151,14 +161,17 @@ class GPX:
                 'xsi:schemaLocation': 'http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd',
             }
             with xf.element('gpx', **attributes):
-                for way_point in self._way_points:
-                    attributes = {field:str(getattr(way_point, field)) for field in ('lon', 'lat')}
+                for waypoint in self._waypoints:
+                    d = waypoint.to_json(only_defined=True)
+                    attributes = {field:str(d[field]) for field in ('lon', 'lat')}
+                    del d['lon']
+                    del d['lat']
                     with xf.element('wpt', **attributes):
                         # Fixme: iter ?
-                        # for field in way_point.__field_names__:
-                        #     value = getattr(way_point, field)
+                        # for field in waypoint.__field_names__:
+                        #     value = getattr(waypoint, field)
                         #     if value is not None:
-                        for field, value in way_point.to_json(only_defined=True).items():
+                        for field, value in d.items():
                             with xf.element(field):
                                 xf.write(str(value))
             xf.flush()

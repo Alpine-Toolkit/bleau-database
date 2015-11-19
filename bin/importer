@@ -57,6 +57,10 @@ parser.add_argument('--circuits',
                     action='store_true',
                     help='Export all the circuits')
 
+parser.add_argument('--places',
+                    action='store_true',
+                    help='Export all the places')
+
 parser.add_argument('--dont-raise-for-unknown', dest='raise_for_unknown',
                     action='store_false',
                     help='')
@@ -80,10 +84,12 @@ if args.rewrite is not None:
     bleau_database.to_json(args.rewrite)
 
 if args.write_geojson is not None:
-    bleau_database.to_geojson(args.write_geojson, massifs=args.massifs, circuits=args.circuits)
+    bleau_database.to_geojson(args.write_geojson,
+                              massifs=args.massifs, circuits=args.circuits, places=args.places)
 
 if args.write_gpx is not None:
-    bleau_database.to_gpx(args.write_gpx, massifs=args.massifs, circuits=args.circuits)
+    bleau_database.to_gpx(args.write_gpx,
+                          massifs=args.massifs, circuits=args.circuits, places=args.places)
 
 ####################################################################################################
 #
