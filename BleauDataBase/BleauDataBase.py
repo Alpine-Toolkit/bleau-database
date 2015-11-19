@@ -246,6 +246,7 @@ class WithCoordinate(FromJsonMixin):
     def __geo_interface__(self):
 
         properties = self.to_json()
+        properties['object'] = self.__class__.__name__
         del properties['coordonne']
         
         return {'type': 'Feature', 'geometry': self.coordonne, 'properties': properties}
@@ -635,7 +636,7 @@ class BleauDataBase:
 
     ##############################################
 
-    def to_geojson(self, json_file=None, places=True, massifs=True, circuits=True):
+    def to_geojson(self, json_path=None, places=True, massifs=True, circuits=True):
 
         features = []
         if places:
@@ -650,15 +651,15 @@ class BleauDataBase:
         # Fixme: crs geojson.named API
         
         kwargs = dict(indent=2, ensure_ascii=False, sort_keys=True)
-        if json_file is not None:
-            with open(json_file, 'w', encoding='utf8') as f:
+        if json_path is not None:
+            with open(json_path, 'w', encoding='utf8') as f:
                 geojson.dump(feature_collections, f, **kwargs)
         else:
             return geojson.dumps(feature_collections, **kwargs)
 
     ##############################################
 
-    def to_gpx(self, gpx_file=None, places=True, massifs=True, circuits=True):
+    def to_gpx(self, gpx_path=None, places=True, massifs=True, circuits=True):
 
         # gpx_schema = 'doc/geo-formats/gpx/gpx-v1.1.xsd'
         # gpx_schema = None
@@ -670,8 +671,8 @@ class BleauDataBase:
             gpx.add_waypoints([massif.waypoint for massif in self.massifs if massif])
         if circuits:
             gpx.add_waypoints([circuit.waypoint for circuit in self.circuits if circuit])
-        if gpx_file is not None:
-            gpx.write(gpx_file)
+        if gpx_path is not None:
+            gpx.write(gpx_path)
         else:
             return gpx
 
