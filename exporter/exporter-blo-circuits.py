@@ -29,49 +29,7 @@ from html.parser import HTMLParser
 
 ####################################################################################################
 
-def get_attribute(attrs, attribute):
-
-    for key, value in attrs:
-        if key == attribute:
-            return key, value
-    return None, None
-
-####################################################################################################
-
-class Target:
-
-    ##############################################
-
-    def __init__(self):
-
-        self._str = ''
-
-    ##############################################
-
-    def __iadd__(self, text):
-        self._str += text
-        return self
-
-    ##############################################
-
-    def __str__(self):
-        return self._str
-
-####################################################################################################
-
-class ToJsonMixin(list):
-
-    __attributes__ = ()
-
-    ##############################################
-
-    def to_json(self):
-
-        d = {attribute:str(getattr(self, attribute)) for attribute in self.__attributes__}
-        if self:
-            d['items'] = [x.to_json() for x in self]
-        
-        return d
+from Exporter import get_attribute, Target, ToJsonMixin
 
 ####################################################################################################
 
@@ -158,9 +116,9 @@ class MyHTMLParser(HTMLParser):
 
     ##############################################
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self):
 
-        super().__init__(*args, **kwargs)
+        super().__init__(convert_charrefs=True)
         
         self._in_table = False
         self._in_secteur = False

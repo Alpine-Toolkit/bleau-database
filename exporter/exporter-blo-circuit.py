@@ -29,54 +29,7 @@ from html.parser import HTMLParser
 
 ####################################################################################################
 
-def get_attribute(attrs, attribute):
-
-    for key, value in attrs:
-        if key == attribute:
-            return key, value
-    return None, None
-
-####################################################################################################
-
-class Target:
-
-    ##############################################
-
-    def __init__(self):
-
-        self._str = ''
-
-    ##############################################
-
-    def __bool__(self):
-        return bool(self._str)
-
-    ##############################################
-
-    def __iadd__(self, text):
-        self._str += text
-        return self
-
-    ##############################################
-
-    def __str__(self):
-        return self._str
-
-####################################################################################################
-
-class ToJsonMixin(list):
-
-    __attributes__ = ()
-
-    ##############################################
-
-    def to_json(self):
-
-        d = {attribute:str(getattr(self, attribute)) for attribute in self.__attributes__}
-        if self:
-            d['items'] = [x.to_json() for x in self]
-        
-        return d
+from Exporter import get_attribute, Target, ToJsonMixin
 
 ####################################################################################################
 
@@ -119,9 +72,9 @@ class MyHTMLParser(HTMLParser):
 
     ##############################################
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self):
 
-        super().__init__(*args, **kwargs)
+        super().__init__(convert_charrefs=True)
         
         self.circuit = Circuit()
 
@@ -170,36 +123,59 @@ class MyHTMLParser(HTMLParser):
     def handle_data(self, data):
 
         if self._target is not None:
-            self._target += data.strip()
+            self._target += data #.strip()
 
 ####################################################################################################
 
-request = requests.get('http://bleaulib.org/spip.php?circuit94&lang=fr')
-source = request.text
+def upload_circuit(url):
 
-parser = MyHTMLParser()
-parser.feed(source)
+    request = requests.get('http://bleaulib.org/' + url)
+    source = request.text
+    
+    parser = MyHTMLParser()
+    parser.feed(source)
+    
+    circuit = parser.circuit
+    
+    # print(circuit.name)
+    # print(circuit.date)
+    # print(circuit.numero)
+    # print(circuit.descriptif)
+    
+    circuit.url = url
+    
+    for bloc in circuit:
+        numero = str(bloc.numero)
+        if ',' in numero:
+            i = numero.find(',')
+            bloc.numero = numero[:i].strip()
+            bloc.name = numero[i+1:].strip()
+        descriptif = str(bloc.descriptif)
+        if ',' in descriptif:
+            i = descriptif.find(',')
+            bloc.cotation = descriptif[:i].strip()
+            bloc.descriptif = descriptif[i+1:].strip()
+    
+    return circuit.to_json()
 
-circuit = parser.circuit
+####################################################################################################
 
-# print(circuit.name)
-# print(circuit.date)
-# print(circuit.numero)
-# print(circuit.descriptif)
+with open('blo-circuits.json') as f:
+    circuits_data = json.load(f)
 
-for bloc in circuit:
-    numero = str(bloc.numero)
-    if ',' in numero:
-        numero, name = numero.split(',')
-        bloc.numero = numero.strip()
-        bloc.name = name.strip()
-    descriptif = str(bloc.descriptif)
-    if ',' in descriptif:
-        i = descriptif.find(',')
-        bloc.cotation = descriptif[:i].strip()
-        bloc.descriptif = descriptif[i+1:].strip()
+circuits = []
+for secteur in circuits_data:
+    for massif in secteur['items']:
+        for circuit_data in massif['items']:
+            print(circuit_data['url'])
+            circuit = upload_circuit(circuit_data['url'])
+            circuits.append(circuit)
 
-        print(json.dumps(parser.circuit.to_json(), indent=2, ensure_ascii=False, sort_keys=True))
+# print(json.dumps(circuits, indent=2, ensure_ascii=False, sort_keys=True))
+
+json_path = 'blo-blocs.json'
+with open(json_path, 'w', encoding='utf8') as f:
+    json.dump(circuits, f, indent=2, ensure_ascii=False, sort_keys=True)
 
 ####################################################################################################
 #

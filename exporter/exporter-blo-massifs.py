@@ -29,15 +29,13 @@ from html.parser import HTMLParser
 
 ####################################################################################################
 
-def get_attribute(attrs, attribute):
-    for key, value in attrs:
-        if key == attribute:
-            return key, value
-    return None, None
+from Exporter import get_attribute, Target, ToJsonMixin
 
 ####################################################################################################
 
-class Item(list):
+class Item(ToJsonMixin):
+
+    __attributes__ = ('url', 'name')
 
     ##############################################
 
@@ -48,25 +46,15 @@ class Item(list):
         self.url = url
         self.name = name
 
-    ##############################################
-
-    def to_json(self):
-
-        d = {'name': self.name, 'url': self.url}
-        if self:
-            d['items'] = [x.to_json() for x in self]
-        
-        return d
-
 ####################################################################################################
 
 class MyHTMLParser(HTMLParser):
 
     ##############################################
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self):
 
-        super().__init__(*args, **kwargs)
+        super().__init__(convert_charrefs=True)
         
         self._in_column = False
         self._in_column_list = False
