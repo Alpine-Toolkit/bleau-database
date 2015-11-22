@@ -43,7 +43,7 @@ def import_kml_file(kml_path):
     for folder in kml_document.features():
         for placemark in folder.features():
             coordinate = dict(longitude=placemark.geometry.x, latitude=placemark.geometry.y)
-            place = Place(coordonne=coordinate, nom=placemark.name, notes=placemark.description,
+            place = Place(coordinate=coordinate, name=placemark.name, note=placemark.description,
                           bleau_database=None)
             places.append(place)
     

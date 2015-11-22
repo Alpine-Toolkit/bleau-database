@@ -60,34 +60,36 @@ from .Projection import GeoAngle, GeoCoordinate
 
 ####################################################################################################
 
-class PlaceType(str):
+class PlaceCategory(str):
 
-    """This class defines a type of place."""
+    """This class defines a category of place."""
 
-    __types__ = ('parking', 'gare', "point d'eau")
+    __categories__ = ('parking', 'gare', "point d'eau")
 
     ##############################################
 
-    def __new__(cls, type_de_place):
+    def __new__(cls, category):
 
-        type_de_place = type_de_place.lower()
-        if type_de_place not in cls.__types__:
+        category = category.lower()
+        if category not in cls.__categories__:
             raise ValueError
         
-        return str.__new__(cls, type_de_place)
+        return str.__new__(cls, category)
 
 ####################################################################################################
 
-class WayNumero:
+class WayNumber:
 
-    __numero_re__ = re.compile('([1-9]+)(bis)?')
+    """This class defines a way number."""
+
+    __number_re__ = re.compile('([1-9]+)(bis)?')
 
     ##############################################
 
-    def __init__(self, numero):
+    def __init__(self, number):
 
-        numero = str(numero).lower()
-        match = self.__numero_re__.match(numero)
+        number = str(number).lower()
+        match = self.__number_re__.match(number)
         if match is not None:
             number, variant = match.groups()
             self._number = int(number)
@@ -98,24 +100,21 @@ class WayNumero:
     ##############################################
 
     def __str__(self):
-        
+
         number = str(self._number)
         if self._variant is not None:
             number += self._variant
-        
         return number
 
     ##############################################
 
     @property
     def __json_interface__(self):
-
         return str(self)
 
     ##############################################
 
     def __int__(self):
-
         return self._number
 
     ##############################################
@@ -125,7 +124,6 @@ class WayNumero:
         number = float(self._number)
         if self._variant == 'bis':
             number += .1
-        
         return number
 
     ##############################################
@@ -146,21 +144,21 @@ class WayNumero:
 
 ####################################################################################################
 
-class IncompatibleCotationError(Exception):
+class IncompatibleGradeError(Exception):
     pass
 
-class Cotation:
+class Grade:
 
     """This class defines a French grade."""
 
-    __cotation_re__ = re.compile('([1-9])([a-c])?(\+|\-)?')
+    __grade_re__ = re.compile(r'([1-9])([a-c])?(\+|\-)?')
 
     ##############################################
 
-    def __init__(self, cotation):
+    def __init__(self, grade):
 
-        cotation = str(cotation).lower()
-        match = self.__cotation_re__.match(cotation)
+        grade = str(grade).lower()
+        match = self.__grade_re__.match(grade)
         if match is not None:
             number, self._letter, self._sign = match.groups()
             self._number = int(number)
@@ -171,19 +169,17 @@ class Cotation:
 
     def __str__(self):
 
-        cotation = str(self._number)
+        grade = str(self._number)
         if self._letter is not None:
-            cotation += self._letter
+            grade += self._letter
         if self._sign is not None:
-            cotation += self._sign
-        
-        return cotation
+            grade += self._sign
+        return grade
 
     ##############################################
 
     @property
     def __json_interface__(self):
-
         return str(self)
 
     ##############################################
@@ -212,7 +208,6 @@ class Cotation:
                 value += 1/3
             else:
                 value += 2/3
-        
         return value
 
     ##############################################
@@ -234,7 +229,7 @@ class Cotation:
     def __lt__(self, other):
 
         if self.is_incompatible_with(other):
-            raise IncompatibleCotationError
+            raise IncompatibleGradeError
         else:
             return float(self) < float(other)
 
@@ -254,12 +249,12 @@ class Cotation:
 
 ####################################################################################################
 
-class CotationAlpine(str):
+class AlpineGrade(str):
 
     """This class defines a French alpin grade."""
 
-    __cotation_majors__ = ('EN', 'F', 'PD', 'AD', 'D', 'TD', 'ED', 'EX') # , 'ABO'
-    __cotation_major_descriptions__ = {
+    __grade_majors__ = ('EN', 'F', 'PD', 'AD', 'D', 'TD', 'ED', 'EX') # , 'ABO'
+    __grade_major_descriptions__ = {
         'EN': 'Enfant',
         'F': 'Facile',
         'PD': 'Peu Difficile', # et non « Pas Difficile » !
@@ -271,7 +266,7 @@ class CotationAlpine(str):
         # or
         'ABO': 'Abominablement Difficile',
     }
-    __cotation_major_transcription__ = {
+    __grade_major_transcription__ = {
         'EN': None,
         'F': None,
         'PD': '3',
@@ -281,26 +276,26 @@ class CotationAlpine(str):
         'ED': ('6b', '7a'),
         'EX': '7b',
     }
-    __cotation_minors__ = ('-', '', '+')
-    __cotations__ = tuple([major + minor
-                           for major, minor in
-                           itertools.product(__cotation_majors__, __cotation_minors__)])
-    __cotation_to_number__ = {cotation:i for i, cotation in enumerate(__cotations__)}
+    __grade_minors__ = ('-', '', '+')
+    __grades__ = tuple([major + minor
+                        for major, minor in
+                        itertools.product(__grade_majors__, __grade_minors__)])
+    __grade_to_number__ = {grade:i for i, grade in enumerate(__grades__)}
 
     ##############################################
 
-    def __new__(cls, cotation):
+    def __new__(cls, grade):
 
-        cotation = cotation.upper()
-        if cotation not in cls.__cotations__:
+        grade = grade.upper()
+        if grade not in cls.__grades__:
             raise ValueError
         
-        return str.__new__(cls, cotation)
+        return str.__new__(cls, grade)
 
     ##############################################
 
     def __int__(self):
-        return self.__cotation_to_number__[self]
+        return self.__grade_to_number__[self]
 
     ##############################################
 
@@ -314,7 +309,7 @@ class CotationAlpine(str):
 
         # Fixme: cache ? but take care to recursion
         if len(self) == 3:
-            return CotationAlpine(self[:2])
+            return AlpineGrade(self[:2])
         else:
             return self
 
@@ -361,10 +356,12 @@ class ChaosType(str):
 
 class Coordinate(FromJsonMixin):
 
+    # Fixme: coordinate versus location ?
+
     """This class defines a coordinate."""
 
-    longitude = float
     latitude = float
+    longitude = float
 
     ##############################################
 
@@ -401,14 +398,14 @@ class WithCoordinate(FromJsonMixin):
 
     """Base class for :class:`Massif` and :class:`Circuit`."""
 
-    coordonne = None # Fixme: metaclass don't see this attribute
+    coordinate = None # Fixme: metaclass don't see this attribute
 
     __gpx_type_prefix__ = 'Bleau/'
 
     ##############################################
 
     def __bool__(self):
-        return self.coordonne is not None
+        return self.coordinate is not None
 
     ##############################################
 
@@ -429,9 +426,9 @@ class WithCoordinate(FromJsonMixin):
 
         properties = self.to_json()
         properties['object'] = self.__class__.__name__
-        del properties['coordonne']
+        del properties['coordinate']
         
-        return {'type': 'Feature', 'geometry': self.coordonne, 'properties': properties}
+        return {'type': 'Feature', 'geometry': self.coordinate, 'properties': properties}
 
     ##############################################
 
@@ -439,8 +436,8 @@ class WithCoordinate(FromJsonMixin):
     def waypoint(self):
 
         return WayPoint(name=self.pretty_name,
-                        lat=self.coordonne.latitude,
-                        lon=self.coordonne.longitude,
+                        lat=self.coordinate.latitude,
+                        lon=self.coordinate.longitude,
                         type=self.__gpx_type_prefix__ + self.gpx_type,
                         # desc=
                         # cmt=
@@ -473,8 +470,8 @@ class WithCoordinate(FromJsonMixin):
 
     def distance_to(self, item):
 
-        x0, y0 = self.coordonne.mercator
-        x1, y1 = item.coordonne.mercator
+        x0, y0 = self.coordinate.mercator
+        x1, y1 = item.coordinate.mercator
         return math.sqrt((x1 - x0)**2 + (y1 - y0)**2)
 
 ####################################################################################################
@@ -494,21 +491,22 @@ class Place(PlaceBase):
 
     """This class defines a place."""
 
-    coordonne = Coordinate
-    nom = str
-    type = PlaceType # Note: redefine type in this scope!
-    notes = str # aka commentaire
+    coordinate = Coordinate
+    name = str
+
+    category = PlaceCategory
+    note = str # aka commentaire
 
     ##############################################
 
     def __str__(self):
-        return self.nom
+        return self.name
 
     ##############################################
 
     @property
     def gpx_type(self):
-        return self.type.title()
+        return self.category.title()
 
 ####################################################################################################
 
@@ -516,19 +514,20 @@ class Massif(PlaceBase):
 
     """This class defines a « massif »."""
 
-    a_pieds = bool
-    acces = str
-    coordonne = Coordinate
-    massif = str # Fixme: name ?
-    nom = str
-    notes = str
-    parcelles = str
-    parking = str # Fixme: remove ?
-    rdv = str
-    secteur = str
-    type_de_chaos = ChaosType
-    velo = str # Fixme: gare
+    coordinate = Coordinate
+    name = str # Fixme: name ?
+
     # propreté fréquentation exposition débutant
+    a_pieds = bool # Fixme: fr
+    acces = str # Fixme: fr
+    alternative_name = str
+    chaos_type = ChaosType
+    note = str
+    parcelles = str # Fixme: fr
+    parking = str # Fixme: remove ?
+    rdv = str # Fixme: fr
+    secteur = str
+    velo = str # Fixme: fr, gare
 
     ##############################################
 
@@ -558,63 +557,56 @@ class Massif(PlaceBase):
 
     def __iter__(self):
 
-        # return iter(sorted(self._circuits, key=lambda x: x.cotation))
-        # return iter(sorted(self._circuits, key=lambda x: int(x.cotation)))
+        # return iter(sorted(self._circuits, key=lambda x: x.grade))
+        # return iter(sorted(self._circuits, key=lambda x: int(x.grade)))
         return iter(sorted(self._circuits))
 
     ##############################################
 
     def __str__(self):
-        return self.massif
+        return self.name
 
     ##############################################
 
     @property
-    def name(self):
-        # Fixme
-        return self.massif
-
-    ##############################################
-
-    @property
-    def nom_or_massif(self):
+    def alternative_name_or_name(self):
 
         # Fixme: purpose ?
-        if self.nom:
-            return self.nom
+        if self.alternative_name:
+            return self.alternative_name
         else:
-            return self.massif
+            return self.name
 
     ##############################################
 
     @property
-    def cotations(self):
+    def grades(self):
 
-        return tuple([circuit.cotation for circuit in self])
+        return tuple([circuit.grade for circuit in self])
 
     ##############################################
 
     @property
-    def uniq_cotations(self):
+    def uniq_grades(self):
 
         # set lost order
-        cotations = {circuit.cotation for circuit in self._circuits}
-        return tuple(sorted(cotations))
+        grades = {circuit.grade for circuit in self._circuits}
+        return tuple(sorted(grades))
 
     ##############################################
 
     @property
-    def major_cotations(self):
+    def major_grades(self):
 
-        cotations = {circuit.cotation.major for circuit in self._circuits}
-        return tuple(sorted(cotations))
+        grades = {circuit.grade.major for circuit in self._circuits}
+        return tuple(sorted(grades))
 
     ##############################################
 
     def nearest_point_deau(self, number_of_items=2, distance_max=2000):
 
         return self.bleau_database.nearest_place(self,
-                                                 place_type="point d'eau",
+                                                 place_category="point d'eau",
                                                  number_of_items=number_of_items,
                                                  distance_max=distance_max)
 
@@ -636,17 +628,18 @@ class Boulder(WithCoordinate):
 
     """This class defines a « boulder »."""
 
-    coordonne = Coordinate
-    numero = WayNumero
-    cotation = Cotation
+    coordinate = Coordinate
     name = str
+
     comment = str
+    grade = Grade
+    number = WayNumber
 
     ##############################################
 
     def __lt__(self, other):
 
-        return self.numero < other.numero
+        return self.number < other.number
 
 ####################################################################################################
 
@@ -654,20 +647,22 @@ class Circuit(PlaceBase):
 
     """This class defines a « circuit »."""
 
-    annee_creation = int
-    ouvreur = str
-    annee_refection = int
-    # refection historique
-    coordonne = Coordinate
-    cotation = CotationAlpine
-    couleur = str
-    gestion = str
+    coordinate = Coordinate
+
     boulders = BoulderList
+    colour = str
+    creation_date = int
+    gestion = str # Fixme: fr
+    grade = AlpineGrade
     massif = InstanceChecker(Massif)
-    numero = int
+    number = int
+    opener = str
+    refection_date = int
     status = str
     topos = StringList
+
     # patiné
+    # refection historique
 
     ##############################################
 
@@ -682,14 +677,14 @@ class Circuit(PlaceBase):
     @property
     def pretty_name(self):
         # Fixme
-        return '{0.massif} n°{0.numero} {0.cotation}'.format(self)
+        return '{0.massif} n°{0.number} {0.grade}'.format(self)
 
     ##############################################
 
     @property
     def name(self):
-        # -{0.cotation}
-        return '{0.massif}-{0.numero}'.format(self)
+        # -{0.grade}
+        return '{0.massif}-{0.number}'.format(self)
 
     ##############################################
 
@@ -700,12 +695,12 @@ class Circuit(PlaceBase):
 
     def __lt__(self, other):
 
-        cotation1 = self.cotation
-        cotation2 = other.cotation
-        if cotation1 == cotation2:
-            return self.numero < other.numero
+        grade1 = self.grade
+        grade2 = other.grade
+        if grade1 == grade2:
+            return self.number < other.number
         else:
-            return cotation1 < cotation2
+            return grade1 < grade2
 
     ##############################################
 
@@ -814,7 +809,7 @@ class BleauDataBase:
 
     @property
     def circuits(self):
-        # Circuit.__lt__ sort by cotation
+        # Circuit.__lt__ sort by grade
         return iter(sorted(self._circuits.values(), key=lambda circuit: circuit.strxfrm()))
 
     @property
@@ -928,7 +923,7 @@ class BleauDataBase:
         rtree_ = rtree.index.Index()
         for item in items:
             if item:
-                rtree_.insert(id(item), item.coordonne.bounding_box, obj=item)
+                rtree_.insert(id(item), item.coordinate.bounding_box, obj=item)
                 self._ids[id(item)] = item
         return rtree_
 
@@ -965,8 +960,8 @@ class BleauDataBase:
 
         number_of_items += 1
         # Fixme: segfault ???
-        # return [x.object for x in rtree.nearest(item.coordonne.bounding_box, number_of_items, objects=True)]
-        items = [self._ids[x] for x in rtree_.nearest(item.coordonne.bounding_box, number_of_items)]
+        # return [x.object for x in rtree.nearest(item.coordinate.bounding_box, number_of_items, objects=True)]
+        items = [self._ids[x] for x in rtree_.nearest(item.coordinate.bounding_box, number_of_items)]
         items = [x for x in items if x is not item]
         if distance_max is not None:
             items = [x for x in items if item.distance_to(x) <= distance_max]
@@ -980,10 +975,10 @@ class BleauDataBase:
 
     ##############################################
 
-    def nearest_place(self, item, place_type, number_of_items=1, distance_max=None):
+    def nearest_place(self, item, place_category, number_of_items=1, distance_max=None):
 
         places = self._nearest(self.rtree_place, item, number_of_items=1000, distance_max=distance_max)
-        places = [place for place in places if place.type == place_type]
+        places = [place for place in places if place.category == place_category]
         
         return places[:number_of_items]
 
@@ -998,30 +993,30 @@ class BleauDataBase:
     def filter_by(self,
                   a_pieds=None,
                   secteurs=None,
-                  type_de_chaos=None,
-                  cotations=None,
-                  major_cotations=None,
+                  chaos_type=None,
+                  grades=None,
+                  major_grades=None,
     ):
 
-        # print(a_pieds, secteurs, type_de_chaos, cotations, major_cotations)
+        # print(a_pieds, secteurs, chaos_type, grades, major_grades)
         massifs = self.massifs
         if a_pieds is not None:
             massifs = [massif for massif in massifs if massif.a_pieds]
         if secteurs is not None:
             # massif.secteur and
             massifs = [massif for massif in massifs if massif.secteur in secteurs]
-        if type_de_chaos is not None:
+        if chaos_type is not None:
             # Fixme: in ?
-            type_de_chaos = set(type_de_chaos)
+            chaos_type = set(chaos_type)
             massifs = [massif for massif in massifs
-                       if massif.type_de_chaos and set(massif.type_de_chaos.split('/')) >= type_de_chaos]
-        if cotations is not None or major_cotations is not None:
-            if cotations is not None:
-                cotations = set(cotations)
-                massifs = [massif for massif in massifs if set(massif.uniq_cotations) >= cotations]
+                       if massif.chaos_type and set(massif.chaos_type.split('/')) >= chaos_type]
+        if grades is not None or major_grades is not None:
+            if grades is not None:
+                grades = set(grades)
+                massifs = [massif for massif in massifs if set(massif.uniq_grades) >= grades]
             else:
-                cotations = set(major_cotations)
-                massifs = [massif for massif in massifs if set(massif.major_cotations) >= cotations]
+                grades = set(major_grades)
+                massifs = [massif for massif in massifs if set(massif.major_grades) >= grades]
         # print(massifs)
 
         return massifs
