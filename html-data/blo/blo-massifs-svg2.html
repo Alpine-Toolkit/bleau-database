@@ -1,0 +1,4084 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+
+<!DOCTYPE html>
+<html style="height: 100%;" xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+  <head>
+    <title>BLOcs (massifs) - bLo</title>
+
+    <link rel="stylesheet" type="text/css" href="squelettesui/css/semanticresetpage.css">
+    <!-- inclure/head sans INSERT_HEAD -->
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+    <link rel="alternate" type="application/rss+xml" title="Syndiquer tout le site" href="spip.php?page=backend" />
+
+
+    <meta name="viewport" content="width=device-width" />
+
+
+    <link rel="stylesheet" href="prive/themes/spip/clear.css" type="text/css" />
+
+
+    <link rel="stylesheet" href="squelettesui/css/spip.css" type="text/css" />
+    <script type="text/javascript">/* <![CDATA[ */
+     var box_settings = {tt_img:true,sel_g:"#documents_portfolio a[type='image/jpeg'],#documents_portfolio a[type='image/png'],#documents_portfolio a[type='image/gif']",sel_c:".mediabox",trans:"elastic",speed:"200",ssSpeed:"2500",maxW:"90%",maxH:"90%",minW:"400px",minH:"",opa:"0.9",str_ssStart:"Diaporama",str_ssStop:"Arrêter",str_cur:"{current}/{total}",str_prev:"Précédent",str_next:"Suivant",str_close:"Fermer",splash_url:""};
+     /* ]]> */</script>
+    <!-- insert_head_css --><link rel="stylesheet" href="plugins-dist/mediabox/colorbox/black-striped/colorbox.css" type="text/css" media="all" />
+    <!-- CS vide -->
+
+    <link rel="stylesheet" href="plugins/auto/notation/v2.0.10/css/notation.v2.css" type="text/css" media="all" /><link rel="stylesheet" href="squelettesui/css/menuder.css" type="text/css" media="projection, screen" />
+    <!-- CSS pour le plugin Vidéo(s) --><link rel="stylesheet" href="plugins/auto/videos/v0.10.15/theme/css/videos.css" type="text/css" media="all" /><!-- // Vidéo(s) -->
+    <link rel="stylesheet" href="plugins/auto/albums/v3.3.14/css/albums.css" type="text/css" />
+
+
+    <link rel="stylesheet" type="text/css" href="squelettesui/css/semantic.css"> <!-- origine semanticui/dist/semantic.min.css}" -->
+    <!--script src="plugins/auto/crayons/v1.24.1/js/jquery.js" NON car 2.0 /script -->
+    <script src="squelettesui/semanticui/dist/semantic.min.js"></script>
+    <script src=""></script>
+    <script src="squelettesui/blo.js"></script><!-- js apres le css ! -->
+
+
+
+
+
+
+
+
+    <meta name="generator" content="SPIP 3.0.17 [21515]" />
+
+
+    <link rel="icon" type="image/x-icon" href="squelettesui/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="squelettesui/favicon.ico" />
+
+    <!-- fin du inclure/head -->
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  </head>
+
+  <div class="ui inverted masthead segment">
+    <div class="ui fixed top inverted main menu">
+      <div class="ui padded grid">
+
+	<div class="one wide column">
+	  <a class="section" href="http://bleaulib.org/"><i class="university icon"></i></a>
+	</div>
+
+	<div class="one wide column">
+	  <ul id="nav" class="menuder">
+	    <li>
+	      <div class="text"><i class="crosshairs icon"></i></div>
+	      <ul>
+		<li><a href="spip.php?page=blocs">blocs</a></li>
+		<li><a href="spip.php?page=circuits">circuits</a></li>
+	      </ul>
+	    </li>
+	  </ul>
+	</div>
+
+	<div class="four wide column">
+	  <div id="formulaire_recherche">
+	    <div id="ui search">
+	      <form action="spip.php?page=recherche" method="get">
+		<input name="page" value="recherche" type="hidden"
+		       />
+		
+		<div class="ui inverted transparent left icon input">
+		  <input type="text" class="prompt" name="recherche" id="recherche" placeholder="recherche">
+		  <i class="search icon"></i>
+		</div>
+		<div class="results"></div>
+	      </form>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="six wide column">
+	  <a href="spip.php?page=login&amp;url=spip.php%3Fpage%3Dtopo%26amp%3Bid_rubrique%3D4%26amp%3Blang%3Dfr"><i class="sign in icon"></i>Se connecter</a>
+	  
+	</div>
+
+	<div class="column">
+   	  <!-- Rq à personnaliserer trop long pour smartphone -->
+	</div>
+
+
+	<div class="one wide right floated column">
+	  <ul id="nav" class="menuder">
+	    <li>
+	      <div class="text"><i class="fr flag"></i></div>
+	      <ul>
+		<li><a href="spip.php?page=topo&amp;id_rubrique=4&amp;lang=fr&amp;action=converser&amp;var_lang=en&amp;redirect=http%3A%2F%2Fbleaulib.org%2Fspip.php%3Fpage%3Dtopo%26amp%3Bid_rubrique%3D4%26amp%3Blang%3Dfr"><i class="gb flag"></i></a>
+		</li>
+	      </ul>
+	    </li>
+	  </ul>
+	</div>
+
+      </div>
+    </div>
+  </div>
+  <!-- navigation --><!-- fil ariane -->
+  <div class="ui inverted vertical segment">
+    <div class="ui page grid">
+      <div class="column">
+	<div class="ui breadcrumb">
+	  &nbsp; 
+	  <i class="angle right icon"></i> <div class="active section"> BLOcs (massifs)</div>
+	</div>
+      </div>
+    </div>
+  </div>
+  <div class="ui inverted vertical segment">
+    <div class="ui page grid">
+      <div class="white row">
+	<div class="column">
+
+	  <!-- onglets -->
+	  <div class="ui top attached tabular menu">
+	    <a class="item" href="spip.php?rubrique4&id_mot=">Info</a>
+	    <a class="active item" data-tab="svg">Topo</a>
+	    <a class="item" href="spip.php?page=geo&id_rubrique=4"><img src="squelettesui/img/geos.png" /></a>
+	  </div>
+	  <!-- fin onglets -->
+	  <!-- contenu onglets rubrique -->
+	  <div class="ui bottom attached active tab segment" data-tab="svg">
+	    <!-- le svg  -->
+	    <div class="ui fluid image"><!-- pour l'affichage à 100% du svg -->
+
+	      <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="960" height="960" id="svg1">
+		<style>
+		 a.anim{ fill-opacity:0.1; font-size:0px; fill: #2244aa;  }
+		 a.anim:hover{ font-size:6px; font-weight:bold; fill-opacity:1; }
+		 .zone { fill:#7bbf86;fill-opacity:0.6;stroke:#005918;stroke-width:1px;}
+		 .massif{ opacity:0.3; }
+		 .massif:hover{ opacity:1; }
+		 .compass{ fill: #fff; stroke: #000; stroke-width: 1.5; }
+		 .button{ fill: #225EA8; stroke: #0C2C84; stroke-miterlimit: 6; stroke-linecap: round; }
+		 .button:hover{ stroke-width: 2; }
+		 .plus-minus{ fill: #fff; pointer-events: none; }
+		</style>
+
+		<g transform="matrix(1.0099999904632568,0,0,1.0099999904632568,0,0)" width="960" height="960" style="width: 960px; height: 960px;">
+		  <image width="960px" height="960px"></image>  <!-- il faut ça pour pan zoom ... -->
+
+		  <!-- fond de carte -->
+		  
+		  <g id="layer3"
+		     transform="matrix(0.5,0,0,0.5,30,30)"
+		     id="zones">
+		    <rect
+		    style="fill:none;stroke:#c4c4c4;stroke-width:8;opacity:0.7;stroke-opacity:1;stroke-dasharray:1, 2;color:#000000;"
+id="cadre2"
+width="1492"
+height="1165"
+x="-50"
+y="-50"
+rx="10"
+ry="10" />
+		    <path
+		    d="m 720.2,-49.02 c -0.7,10.07 -90.6,74.79 -84.2,102.83 6.5,28.05 149.2,161.79 150.7,176.59 1.4,14.7 -22.3,64.3 -9.7,77.6 12.6,13.3 78,-19.4 91.3,1.1 13.3,20.5 -38.5,43.9 -22.6,61.8 15.8,18 60.7,8.3 65.4,17.7 4.7,9.3 10.8,42 33.8,42.7 23,0.8 55.1,-41.1 80.1,-33.4 48,15.1 12,91.3 42,105 30,13.6 98,-32.9 122,9.7 30,52.2 -30,61.9 -31,97.8 -4,81.6 69,27.3 70,47.5 0,20.1 -13,37.2 -4,49.2 10,12.2 10,-7.2 29,-5.4 18,1.6 62,25.9 62,25.9"
+id="seine"
+style="color:#000000;fill:none;stroke:#002aff;stroke-width:2.7;" />
+		    <path
+		    d="m 691,1099 c 15.1,-50 24.5,-72 15.9,-97 -8.7,-24.2 -36,-134.2 -46.1,-142.8 -10,-8.6 -41.1,-108.2 -27.3,-155.3 22.3,-76.3 -51.8,-119.4 -55.4,-154.6 -2.3,-22.9 27,-167.9 48.2,-199.9 19.5,-29.3 70.7,-49.6 101.4,-59 37,-11.4 51.4,-71.6 51.4,-71.6"
+id="essonne"
+style="fill:none;stroke:#002aff;stroke-width:1.8;stroke-opacity:1;stroke-dasharray:none" />
+		    <path
+		    d="m 110.3,986.6 c 14.1,-4 54.4,-3 70.7,-28 16.2,-23.9 8.3,-73.6 9.5,-87.6 1.3,-15.7 85.3,-107.6 88.6,-110.9 8.4,-8.4 2.5,-40.2 5.1,-70.4 2.6,-30.2 13.8,-58.8 21.9,-66.9 7.6,-7.7 22.8,-30 36.2,-70.5 9.4,-28.8 17,-60 32.2,-67.4 16.2,-7.9 17.4,-49.7 25.1,-49.8 56.5,-0.3 55,-19.8 70.7,-22.8 10.7,-2.1 86.8,15.1 92.1,10.1 22.3,-21.3 -10.7,-21.3 3.5,-37.6 6.7,-7.6 45.3,2 45.3,2"
+id="juine"
+style="color:#000000;fill:none;stroke:#002aff;stroke-width:1.8;" />
+		    <path
+		    d="m 1121,1159 c -2,-13 -36,-181.9 -36,-188.7 0,-6.8 -20,-92.7 6,-94.2 33,-1.8 171,-86 171,-105.4 0,-33.2 -26,-62.2 -26,-62.2"
+id="loing"
+style="color:#000000;fill:none;stroke:#002aff;stroke-width:1.8;" />
+		    <path
+		    d="m 882.7,383.1 c 0,7.4 -3,46.9 -15.4,60.7 -12.4,13.6 0.2,21.2 -0.4,35.2 -0.7,18.5 -45.7,38.8 -53,45 -30.9,26.3 -66,69.7 -67.7,75 -5.6,17 -2.6,69.6 4.6,81.6 7.1,11.9 17,47 33,52.6 5.4,1.9 55.2,44.4 55.2,44.4"
+id="lecole"
+style="color:#000000;fill:none;stroke:#002aff;stroke-width:1.3;" />
+		    <rect
+		    width="85"
+height="45"
+rx="20"
+ry="20"
+x="716.7"
+y="214"
+id="Corbeil"
+style="color:#000000;fill:#333333;fill-opacity:0.6;stroke-width:1;" />
+		    <text
+		      x="728"
+y="235"
+id="t_corbeil"
+xml:space="preserve"
+style="font-size:12px;font-weight:bold;fill:#000000;font-family:Sans"><tspan
+		      x="728"
+y="235"
+id="tspan6162">CORBEIL-</tspan><tspan
+		      x="728"
+y="248"
+id="tspan6164">Essonnes</tspan></text>
+		    <rect
+		    width="66"
+height="50"
+rx="20"
+ry="20"
+x="1010"
+y="350.5"
+id="Melun"
+style="opacity:0.8253;color:#000000;fill:#333333;fill-opacity:0.6;stroke-width:1;" />
+		    <text
+		      x="1016"
+y="380"
+id="t_melun"
+xml:space="preserve"
+style="font-size:14px;font-weight:bold;fill:#000000;display:inline;font-family:Sans">MELUN</text>
+		    <rect
+		    width="44"
+height="21"
+rx="12.5"
+ry="7.5"
+x="1060"
+y="507"
+id="BoisLeRoi"
+style="color:#000000;fill:#333333;fill-opacity:0.6;stroke-width:1;" />
+		    <text
+		      x="1065.3361"
+y="519.3299"
+id="t_boisleroi"
+xml:space="preserve"
+style="font-size:6px;font-weight:bold;fill:#000000;font-family:Sans">Bois-le-roi</text>
+		    <rect
+		    width="60"
+height="40"
+rx="20"
+ry="20"
+x="272.7"
+y="580"
+id="Etampes"
+style="color:#000000;fill:#333333;fill-opacity:0.6;stroke-width:1;" />
+		    <text
+		      x="278"
+y="602"
+id="t_etampes"
+xml:space="preserve"
+style="font-size:10px;font-weight:bold;fill:#000000;font-family:Sans">Etampes</text>
+		    <rect
+		    width="50"
+height="34"
+rx="20"
+ry="20"
+x="730"
+y="661.8"
+id="Milly"
+style="opacity:0.8253;color:#000000;fill:#333333;fill-opacity:0.6;stroke-width:1;" />
+		    <text
+		      x="736"
+y="682"
+id="t_milly"
+xml:space="preserve"
+style="font-size:12px;font-weight:bold;fill:#000000;font-family:Sans">Milly</text>
+		    <rect
+		    width="35"
+height="12"
+rx="7"
+ry="7"
+x="811.6"
+y="776.7"
+id="LeVaudoue"
+style="opacity:0.8253;color:#000000;fill:#333333;fill-opacity:0.6;stroke-width:1;" />
+		    <text
+		      x="807"
+y="785"
+id="t_vaudoué"
+xml:space="preserve"
+style="font-size:6px;font-weight:bold;fill:#000000;font-family:Sans">Le Vaudoué</text>
+		    <rect
+		    width="35"
+height="16"
+rx="7"
+ry="7"
+x="880.4"
+y="851"
+id="ChapelleLaReine"
+style="opacity:0.8253;color:#000000;fill:#333333;fill-opacity:0.6;stroke-width:1;" />
+		    <text
+		      x="880"
+y="858"
+id="t_LaChapelle"
+xml:space="preserve"
+style="font-size:6px;font-weight:bold;opacity:0.8253;fill:#000000;display:inline;font-family:Sans"><tspan
+		      x="875"
+y="858"
+id="tspan3515">La chapelle</tspan><tspan
+		      x="880"
+y="864"
+id="tspan3517"> -la-Reine</tspan></text>
+
+		    <a xlink:href="spip.php?page=topo&id_rubrique=11">
+		      <text
+			x="-80"
+y="130"
+transform="matrix(0.8698,-0.4934,0.4934,0.8698,0,0)"
+id="t_yvelines"
+xml:space="preserve"
+style="font-size:28px;font-weight:bold;fill:#005918;font-family:Sans">Yvelines - Chevreuse</text>
+		      <rect
+		      width="55"
+height="35"
+rx="10"
+ry="10"
+x="299"
+y="-4.018"
+id="Orsay"
+style="color:#000000;fill:#333333;fill-opacity:0.6;stroke-width:1;" />
+		      <text
+			x="309"
+y="15"
+id="t_orsay"
+xml:space="preserve"
+style="font-size:10px;font-weight:bold;fill:#000000;font-family:Sans">Orsay</text>
+		      <path
+		      d="m 12.7,-35.04 c -90,20 -120,220.04 -70,240.04 50,20 225.5,-46.6 270,-70 44.5,-23.5 180,-80.04 160,-140.035 -20,-60.005 -270,-50.005 -360,-30.005 z"
+id="Yvelines"
+class="zone" />
+		    </a>
+
+		    <a xlink:href="spip.php?page=topo&id_rubrique=12">
+		      <text
+			x="92"
+y="633"
+transform="matrix(0.8698,-0.4934,0.4934,0.8698,0,0)"
+id="tjuineessonnes"
+xml:space="preserve"
+style="font-size:28px;font-weight:bold;fill:#005918;font-family:Sans"><tspan
+			x="92"
+y="633"
+id="tspan6393">La Juine</tspan><tspan
+			x="92"
+y="668"
+id="tspan6395">L'Essonnes</tspan><tspan
+			x="92"
+y="703"
+id="tspan6397"> Ouest</tspan></text>
+		      <path
+		      d="m 392.7,405 c -60,30 -29.6,150.2 40,190 69.6,39.7 150,50 160,10 10,-40 30,-100 10,-150 -20,-50 -150,-80 -210,-50 z"
+id="juineessonne"
+class="zone" />
+		    </a>
+
+		    <a xlink:href="spip.php?page=topo&id_rubrique=13">
+		      <text
+			x="287"
+y="813"
+transform="matrix(0.8698,-0.4934,0.4934,0.8698,0,0)"
+id="t_essonneecole"
+xml:space="preserve"
+style="font-size:28px;font-weight:bold;fill:#005918;font-family:Sans"><tspan
+			x="287"
+y="813"
+id="tspan6428">L’Essonne Est</tspan><tspan
+			x="287"
+y="848"
+id="tspan6430">Vallée de l’École</tspan></text>
+		      <rect
+		      width="30"
+height="15"
+rx="7"
+ry="7"
+x="723.3"
+y="457.4"
+id="Beauvais"
+style="opacity:0.8253;color:#000000;fill:#333333;fill-opacity:0.6;stroke-width:1;" />
+		      <text
+			x="724"
+y="467"
+id="t_beauvais"
+xml:space="preserve"
+style="font-size:6px;font-weight:bold;fill:#000000;font-family:Sans">Beauvais</text>
+		      <path
+		      d="m 722.7,425 c -50,0 -80,10 -90,50 -10,40 -30,180 50,180 80,-0.1 180,-110 210,-170 30,-60 -100,-60 -170,-60 z"
+id="essonneecole"
+class="zone" />
+		    </a>
+
+		    <a xlink:href="spip.php?page=topo&id_rubrique=23">
+		      <text
+			x="78"
+y="984"
+transform="matrix(0.87,-0.5,0.5,0.87,0,0)"
+id="t_essonnesud"
+xml:space="preserve"
+style="font-size:28px;font-weight:bold;fill:#005918;font-family:Sans"><tspan
+			x="78"
+y="984"
+id="tspan6475">L’Essonne </tspan><tspan
+			x="78"
+y="1019"
+id="tspan6477">  Sud</tspan></text>
+		      <rect
+		      width="24"
+height="15"
+rx="7"
+ry="7"
+x="610.6"
+y="690.3"
+id="Maisse"
+style="opacity:0.8;color:#000000;fill:#333333;fill-opacity:0.6;stroke-width:1;" />
+		      <text
+			x="612"
+y="700"
+id="t_maisse"
+style="font-size:6px;font-weight:bold;fill:#000000;font-family:Sans">Maisse</text>
+		      <path
+		      d="m 632.7,655 c -80,0 -100,120 -90,160 10,40 100,80 140,80 40,0 30,-70 20,-130 -10,-60 -20,-110 -70,-110 z"
+id="essonneSud"
+class="zone" />
+		    </a>
+
+		    <a xlink:href="spip.php?page=topo&id_rubrique=14">
+		      <text
+			x="765"
+y="658"
+id="t_coquibus"
+style="font-size:16px;font-weight:bold;color:#000000;fill:#005918;font-family:Sans">Coquibus</text>
+		      <path
+		      d="m 779.7,622 c -19,5 -18.4,7.3 -20.6,13 -2.1,5.7 6.8,33.1 21.6,42.4 12,7.6 26.9,-7.4 48,-7.4 21,0 48,15 48,7 0,-8 -22,-43 -34,-48 -12,-5 -44,-12 -63,-7 z"
+id="coquibus"
+class="zone" />
+		    </a>
+
+		    <a xlink:href="spip.php?page=topo&id_rubrique=19">
+		      <text
+			x="1072"
+y="625"
+id="t_AutourFbleau"
+xml:space="preserve"
+style="font-size:16px;font-weight:bold;color:#000000;fill:#005918;stroke-width:1;font-family:Sans"><tspan
+			x="1062"
+y="625"
+id="ts_Autour">Autour</tspan><tspan
+			x="1050"
+y="643"
+id="ts_debleau">de</tspan></text>
+		      <rect
+		      width="70"
+height="50"
+rx="20"
+ry="20"
+x="1068"
+y="643"
+id="Fontainebleau"
+style="opacity:0.8253;color:#000000;fill:#333333;fill-opacity:0.6;stroke-width:1;" />
+		      <text
+			x="1075"
+y="666"
+id="tfbleau"
+xml:space="preserve"
+style="font-size:11px;font-weight:bold;fill:#000000;font-family:Sans"><tspan
+			x="1075"
+y="666"
+id="tspan5923">Fontaine</tspan><tspan
+			x="1084"
+y="681"
+id="tspan3841">bleau</tspan></text>
+		      <path
+		      d="m 1038.7,615 c -26,39.8 -47,77 -41,78 14,2.5 147,19.5 156,20.7 6,1 3,-92.3 -5,-98.7 -8,-6.5 -136,-110 -136,-70 0,30 52,30.1 26,70 z"
+id="autourdeFbleau"
+class="zone" />
+		    </a>
+
+		    <a xlink:href="spip.php?page=topo&id_rubrique=18">
+		      <text
+			x="1133.7592"
+y="132.38576"
+transform="matrix(0.9197,0.3927,-0.3927,0.9197,0,0)"
+id="t_cuvier"
+xml:space="preserve"
+style="font-size:12px;font-weight:bold;color:#000000;fill:#005918;font-family:Sans"><tspan
+			x="1133.7592"
+y="132.38576"
+id="tspan3992">Cuvier</tspan></text>
+		      <path
+		      d="m 992.7,559.20 c -12,6.5 -3,17.7 0,20.1 3,2.4 28,15.9 30,17.3 1,1.4 11,16.6 12,16 1,-0.6 10,-18.5 8,-24.6 -4,-11.4 -39,-35.2 -50,-28.8 z"
+id="cuvier"
+class="zone" />
+		    </a>
+
+		    <a xlink:href="spip.php?page=topo&id_rubrique=20">
+		      <text
+			x="1116"
+y="183"
+transform="matrix(0.9197,0.3927,-0.3927,0.9197,0,0)"
+id="t_apremont"
+xml:space="preserve"
+style="font-size:12px;font-weight:bold;color:#000000;fill:#005918;font-family:Sans">Apremont</text>
+		      <path
+		      d="m 959.7,586.89 c -4,1.5 -11,18.7 -10,20.6 2,1.9 68,29.4 70,28.6 1,-0.7 11,-16.5 11,-17.1 -1,-0.7 -13,-19.2 -15,-20.6 -3,-1.4 -25,-13.8 -26,-13.8 -2,0 -30,2.3 -30,2.3 z"
+id="Apremont"
+class="zone" />
+		    </a>
+
+		    <a xlink:href="spip.php?page=topo&id_rubrique=21">
+		      <text
+			x="906"
+y="672"
+id="t_franchard"
+xml:space="preserve"
+style="font-size:16px;font-weight:bold;color:#000000;fill:#005918;font-family:Sans">Franchard</text>
+		      <path
+		      d="m 908.7,657.39 c -16,7.5 -13,15.8 -11,16.3 2,0.5 85,20.5 88,21.2 3,0.8 17,-32.9 19,-37.6 1,-4.8 -81,-7.4 -96,0.1 z"
+id="Franchard"
+class="zone" />
+		    </a>
+
+		    <a xlink:href="spip.php?page=topo&id_rubrique=22">
+		      <text
+			x="1033"
+y="745"
+id="t_sudfbleau"
+xml:space="preserve"
+style="font-size:16px;font-weight:bold;color:#000000;fill:#005918;font-family:Sans"><tspan
+			x="1033"
+y="745"
+id="tspan3839">     Sud </tspan><tspan
+			x="1033"
+y="765"
+id="tspan3841">Fontainebleau</tspan></text>
+		      <path
+		      d="m 998.7,695.69 c -27,-3.6 34,172.4 64,139.3 30,-33.2 130,0 148,-46.5 18,-46.5 -10,-64.2 -31,-67.9 -21,-3.8 -153,-21.2 -181,-24.9 z"
+id="sudFbleau"
+class="zone" />
+		    </a>
+
+		    <path
+		    d="m 853.7,679.19 c -41.7,-12.9 -55.8,44.7 -53.5,50.3 2.4,5.7 16.2,16 26.4,27.8 10.1,11.9 17.1,25.1 27.1,27.3 9,1.7 26,-0.3 43,-4.9 18,-4.6 36,-11.8 47,-20.3 11,-8.5 51,-59.4 41,-62.9 -11,-3.6 -64,-15.1 -86,-20.9 -21,-5.8 -4,16.6 -45,3.6 z"
+id="3pignons"
+style="color:#000000;fill:none;stroke:#005918;stroke-width:1px;" />
+		    <text
+		      x="832"
+y="737"
+id="3pi"
+xml:space="preserve"
+style="font-size:20px;font-weight:bold;color:#000000;fill:#005918;font-family:Sans">3 pignons</text>
+
+		    <a xlink:href="spip.php?page=topo&id_rubrique=16">
+		      <text
+			x="810"
+y="711"
+id="t_3piouest"
+xml:space="preserve"
+style="font-size:9px;font-weight:bold;color:#000000;fill:#005918;font-family:Sans">Ouest</text>
+		      <path
+		      d="m 853.4,679.2 c -41.5,-12.9 -55.6,44.7 -53.2,50.3 2.4,5.6 16.2,16 26.3,27.8 21.2,-32.3 21.2,-32.3 48.7,-27.9 z"
+id="3pignonsOuest"
+class="zone" />
+		    </a>
+
+		    <a xlink:href="spip.php?page=topo&id_rubrique=15">
+		      <text
+			x="913"
+y="719"
+id="t_3piEst"
+xml:space="preserve"
+style="font-size:9px;font-weight:bold;color:#000000;fill:#005918;stroke-width:1;font-family:Sans">Est</text>
+		      <path
+		      d="m 853.4,679.2 43.5,100.5 c 17.5,-4.6 35.6,-11.8 46.8,-20.3 11.1,-8.5 51.4,-59.4 40.6,-62.9 -10.8,-3.6 -64,-15.1 -85.2,-20.9 -21.2,-5.8 -4.2,16.5 -45.7,3.6 z"
+id="3piEst"
+class="zone" />
+		    </a>
+
+		    <a xlink:href="spip.php?page=topo&id_rubrique=17">
+		      <text
+			x="856"
+y="767"
+id="t_3pisud"
+xml:space="preserve"
+style="font-size:9px;font-weight:bold;color:#000000;fill:#005918;stroke-width:1;font-family:Sans">Sud</text>
+		      <path
+		      d="m 826.5,757.3 c 10.2,11.9 16.7,25.1 27.3,27.2 8.8,1.8 25.7,-0.2 43.1,-4.8 L 875.2,729.4 C 847.7,725 847.7,725 826.5,757.3 z"
+id="3piSud"
+class="zone" />
+		    </a>
+
+		    <a xlink:href="spip.php?page=topo&id_rubrique=25">
+		      <rect
+		      width="35"
+height="16"
+rx="7"
+ry="7"
+x="777.7"
+y="849.3"
+id="Boissy"
+style="opacity:0.8253;color:#000000;fill:#333333;fill-opacity:0.6;stroke-width:1;" />
+		      <text
+			x="779"
+y="856"
+id="t_boissy"
+xml:space="preserve"
+style="font-size:6px;font-weight:bold;fill:#000000;font-family:Sans"><tspan
+			x="779"
+y="856"
+id="tspan6102">  Boissy</tspan><tspan
+			x="779"
+y="863"
+id="tspan6104">aux-Cailles</tspan></text>
+		      <path
+		      d="m 746.3,751 c -43.6,44.4 92.4,28 42.2,77.8 -49.8,49.8 9.1,61.9 34.2,60 25,-1.8 5.9,-77.9 -13.7,-97.8 -19.7,-19.9 -19.2,-84.4 -62.7,-40 z"
+id="boissy"
+class="zone" />
+		    </a>
+
+		    <a xlink:href="spip.php?page=topo&id_rubrique=24">
+		      <rect
+		      width="66"
+height="34"
+rx="20"
+ry="20"
+x="630"
+y="891"
+id="Malesherbes"
+style="opacity:0.8253;color:#000000;fill:#333333;fill-opacity:0.6;stroke-width:1;" />
+		      <text
+			x="634"
+y="911"
+id="t_malesherbes"
+xml:space="preserve"
+style="font-size:8px;font-weight:bold;fill:#000000;font-family:Sans">Malesherbes</text>
+		      <path
+		      d="m 697,893.39 c -12.2,2.9 -15,8.1 -11.5,21 3.5,13 12.5,36.2 18.6,46.2 6.2,9 44,-28.6 41.9,-44.9 -2,-16.3 -36.8,-25.2 -49,-22.3 z"
+id="buthiers"
+class="zone" />
+		    </a>
+
+		    <a xlink:href="spip.php?page=topo&id_rubrique=26">
+		      <rect
+		      width="35"
+height="16"
+rx="7"
+ry="7"
+x="931.4"
+y="932.7"
+id="Larchant"
+style="opacity:0.8253;color:#000000;fill:#333333;fill-opacity:0.6;stroke-width:1;" />
+		      <text
+			x="935"
+y="943"
+id="t_larchant"
+xml:space="preserve"
+style="font-size:6px;font-weight:bold;fill:#000000;font-family:Sans">Larchant</text>
+		      <text
+			x="955"
+y="905"
+id="tLaCommanderie"
+xml:space="preserve"
+style="font-size:13px;font-weight:bold;color:#000000;fill:#005918;stroke-width:1;font-family:Sans"><tspan
+			x="957"
+y="905"
+id="tspan5118">   Forêt de la </tspan><tspan
+			x="952"
+y="920"
+id="tspan5120">Commanderie</tspan></text>
+		      <path
+		      d="m 915.7,922 c 3,10 22,10 32,10 10,0 95.3,32.2 100.3,25 5,-7.3 20,-100 10,-110 -10,-10 -50,40 -70.3,40 -20,0 -47.4,-5 -65,0 -17.6,5 -10,25 -7,35 z"
+id="lachant"
+class="zone" />
+		    </a>
+
+		    <a xlink:href="spip.php?page=topo&id_rubrique=27">
+		      <rect
+		      width="26"
+height="10"
+rx="7"
+ry="7"
+x="1001"
+y="977"
+id="Puiselet"
+style="opacity:0.8253;color:#000000;fill:#333333;fill-opacity:0.6;stroke-width:1;" />
+		      <path
+		      d="m 1001.7,965.59 c -7,4 -5,12 1,12 5,0 30,8 31,5 2,-5 -1,-8 -7,-12 -6,-4 -18,-9 -25,-5 z"
+id="puiselet"
+class="zone" />
+		      <text
+			x="1002"
+y="984"
+id="t_puiselet"
+style="font-size:6px;font-weight:bold;fill:#000000;font-family:Sans">Puiselet</text>
+		    </a>
+
+		    <a xlink:href="spip.php?page=topo&id_rubrique=28">
+		      <rect
+		      width="66"
+height="35.98"
+rx="20"
+ry="20"
+x="1058"
+y="953.3"
+id="Nemours"
+style="opacity:0.8253;color:#000000;fill:#333333;fill-opacity:0.6;stroke-width:1;" />
+		      <text
+			x="1065"
+y="974"
+id="t_nemours"
+style="font-size:10px;font-weight:bold;fill:#000000;font-family:Sans">Nemours</text>
+		      <text
+			x="1130"
+y="1020"
+id="t_Nanteau"
+xml:space="preserve"
+style="font-size:16px;font-weight:bold;color:#000000;fill:#005918;stroke-width:1;font-family:Sans"><tspan
+			x="1130"
+y="1020"
+id="tspan5122"> Forêt de</tspan><tspan
+			x="1130"
+y="1040"
+id="tspan5124">  Nanteau</tspan></text>
+		      <path
+		      d="m 1036,979.6 c 0,15 15,25.4 30,35.4 15,10 30,10 35,30 5,20 80,30 115,20 35,-10 30,-50 25,-65 -5,-15.4 -12,-36 -30,-40.4 -20,-5 -85,10 -85,25 0,15.4 -90,-20 -90,-5 z"
+id="nemoursnanteau"
+class="zone" />
+		    </a>
+		  </g>
+		  
+		  
+
+		  <!-- coordonnées centrales et zoom carte -->
+		  
+		  <!-- (2^zoom)*0.71 -->
+		  
+		  
+
+		  <!-- placement des points géotagués sur la carte -->
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=11">
+		    <svg 
+    		      x="117.951872" y="45.214656000001"
+    >
+		      <image class="massif" id="11" x="0" y="0"
+			     
+			     alt="Yvelines - Vallée de Chevreuse -"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Yvelines - Vallée de Chevreuse -<set attributeName="font-size" attributeType="CSS" to="8" begin="11.mouseover" end="11.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=31">
+		    <svg 
+    		      x="51.261491040461" y="26.214805018523"
+    >
+		      <image class="massif" id="31" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Dampierre Maincourt"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Dampierre Maincourt<set attributeName="font-size" attributeType="CSS" to="8" begin="31.mouseover" end="31.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=32">
+		    <svg 
+    		      x="29.047104959488" y="64.236973804345"
+    >
+		      <image class="massif" id="32" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Vaux de Cernay"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Vaux de Cernay<set attributeName="font-size" attributeType="CSS" to="8" begin="32.mouseover" end="32.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=33">
+		    <svg 
+    		      x="206.86555529185" y="30.270297067474"
+    >
+		      <image class="massif" id="33" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="La Troche"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">La Troche<set attributeName="font-size" attributeType="CSS" to="8" begin="33.mouseover" end="33.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=34">
+		    <svg 
+    		      x="199.34181888" y="28.526906880003"
+    >
+		      <image class="massif" id="34" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Orsay"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Orsay<set attributeName="font-size" attributeType="CSS" to="8" begin="34.mouseover" end="34.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=12">
+		    <svg 
+    		      x="271.1392" y="276.740544"
+    >
+		      <image class="massif" id="12" x="0" y="0"
+			     
+			     alt="La Juine - L&#8217;Essonne Ouest"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">La Juine - L&#8217;Essonne Ouest<set attributeName="font-size" attributeType="CSS" to="8" begin="12.mouseover" end="12.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=35">
+		    <svg 
+    		      x="236.10859043062" y="244.27169717868"
+    >
+		      <image class="massif" id="35" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Gillevoisin"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Gillevoisin<set attributeName="font-size" attributeType="CSS" to="8" begin="35.mouseover" end="35.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=38">
+		    <svg 
+    		      x="234.72013828116" y="242.80375294756"
+    >
+		      <image class="massif" id="38" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Chamarande"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Chamarande<set attributeName="font-size" attributeType="CSS" to="8" begin="38.mouseover" end="38.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=39">
+		    <svg 
+    		      x="227.01344882575" y="241.71869851976"
+    >
+		      <image class="massif" id="39" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Chamarande Belvédère"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Chamarande Belvédère<set attributeName="font-size" attributeType="CSS" to="8" begin="39.mouseover" end="39.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=220">
+		    <svg 
+    		      x="191.22805248" y="275.69142528001"
+    >
+		      <image class="massif" id="220" x="0" y="0"
+			     
+			     alt="Étréchy"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Étréchy<set attributeName="font-size" attributeType="CSS" to="8" begin="220.mouseover" end="220.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=40">
+		    <svg 
+    		      x="240.7731656233" y="285.00872869033"
+    >
+		      <image class="massif" id="40" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Villeneuve sur Auvers"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Villeneuve sur Auvers<set attributeName="font-size" attributeType="CSS" to="8" begin="40.mouseover" end="40.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=41">
+		    <svg 
+    		      x="274.87604648817" y="295.19070793037"
+    >
+		      <image class="massif" id="41" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Boissy-le-Cutté"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Boissy-le-Cutté<set attributeName="font-size" attributeType="CSS" to="8" begin="41.mouseover" end="41.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=42">
+		    <svg 
+    		      x="279.18180820337" y="255.70203174805"
+    >
+		      <image class="massif" id="42" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Rocher Mignot"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher Mignot<set attributeName="font-size" attributeType="CSS" to="8" begin="42.mouseover" end="42.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=43">
+		    <svg 
+    		      x="300.05539219108" y="268.91142645412"
+    >
+		      <image class="massif" id="43" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Le Sanglier"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Le Sanglier<set attributeName="font-size" attributeType="CSS" to="8" begin="43.mouseover" end="43.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=44">
+		    <svg 
+    		      x="315.30291398226" y="269.21887928863"
+    >
+		      <image class="massif" id="44" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="La Ferté-Alais"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">La Ferté-Alais<set attributeName="font-size" attributeType="CSS" to="8" begin="44.mouseover" end="44.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=36">
+		    <svg 
+    		      x="307.81925274952" y="311.8015282282"
+    >
+		      <image class="massif" id="36" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Le Pendu d&#8217;Huison"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Le Pendu d&#8217;Huison<set attributeName="font-size" attributeType="CSS" to="8" begin="36.mouseover" end="36.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=13">
+		    <svg 
+    		      x="385.793408" y="294.84384"
+    >
+		      <image class="massif" id="13" x="0" y="0"
+			     
+			     alt="L&#8217;Essonne Est - Vallée de l&#8217;École"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">L&#8217;Essonne Est - Vallée de l&#8217;École<set attributeName="font-size" attributeType="CSS" to="8" begin="13.mouseover" end="13.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=54">
+		    <svg 
+    		      x="413.75246250045" y="257.6721736681"
+    >
+		      <image class="massif" id="54" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Rocher du Duc - côté Nainville"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher du Duc - côté Nainville<set attributeName="font-size" attributeType="CSS" to="8" begin="54.mouseover" end="54.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=53">
+		    <svg 
+    		      x="408.46386386647" y="259.67339712615"
+    >
+		      <image class="massif" id="53" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Rocher du Duc - côté Beauvais"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher du Duc - côté Beauvais<set attributeName="font-size" attributeType="CSS" to="8" begin="53.mouseover" end="53.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=51">
+		    <svg 
+    		      x="407.83984042516" y="256.55012370448"
+    >
+		      <image class="massif" id="51" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Rocher du Duc - côté Loutteville"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher du Duc - côté Loutteville<set attributeName="font-size" attributeType="CSS" to="8" begin="51.mouseover" end="51.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=55">
+		    <svg 
+    		      x="413.09723789036" y="260.22954522179"
+    >
+		      <image class="massif" id="55" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Rocher du Duc - Sud-Est"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher du Duc - Sud-Est<set attributeName="font-size" attributeType="CSS" to="8" begin="55.mouseover" end="55.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=52">
+		    <svg 
+    		      x="403.56527988603" y="257.29902327445"
+    >
+		      <image class="massif" id="52" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Bois de Beauvais - Télégraphe"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Bois de Beauvais - Télégraphe<set attributeName="font-size" attributeType="CSS" to="8" begin="52.mouseover" end="52.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=46">
+		    <svg 
+    		      x="391.50602695496" y="254.12059046216"
+    >
+		      <image class="massif" id="46" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Bois de la Valette"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Bois de la Valette<set attributeName="font-size" attributeType="CSS" to="8" begin="46.mouseover" end="46.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=56">
+		    <svg 
+    		      x="399.58713047224" y="281.94195295089"
+    >
+		      <image class="massif" id="56" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="La Padôle"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">La Padôle<set attributeName="font-size" attributeType="CSS" to="8" begin="56.mouseover" end="56.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=57">
+		    <svg 
+    		      x="385.12330722816" y="293.79434079453"
+    >
+		      <image class="massif" id="57" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Videlles-les-Roches"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Videlles-les-Roches<set attributeName="font-size" attributeType="CSS" to="8" begin="57.mouseover" end="57.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=45">
+		    <svg 
+    		      x="357.87931491819" y="267.81763316183"
+    >
+		      <image class="massif" id="45" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Mondeville"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Mondeville<set attributeName="font-size" attributeType="CSS" to="8" begin="45.mouseover" end="45.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=58">
+		    <svg 
+    		      x="390.809984" y="294.40761600001"
+    >
+		      <image class="massif" id="58" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Videlles l&#8217;Abattoir"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Videlles l&#8217;Abattoir<set attributeName="font-size" attributeType="CSS" to="8" begin="58.mouseover" end="58.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=47">
+		    <svg 
+    		      x="389.210496" y="335.52172800001"
+    >
+		      <image class="massif" id="47" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Moigny sur École"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Moigny sur École<set attributeName="font-size" attributeType="CSS" to="8" begin="47.mouseover" end="47.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=37">
+		    <svg 
+    		      x="362.62934238648" y="344.4535010559"
+    >
+		      <image class="massif" id="37" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Rocher de Châtillon"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher de Châtillon<set attributeName="font-size" attributeType="CSS" to="8" begin="37.mouseover" end="37.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=63">
+		    <svg 
+    		      x="432.9637632" y="357.54013440001"
+    >
+		      <image class="massif" id="63" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Coquibus Rumont"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Coquibus Rumont<set attributeName="font-size" attributeType="CSS" to="8" begin="63.mouseover" end="63.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=18">
+		    <svg 
+    		      x="537.163136" y="320.36294400001"
+    >
+		      <image class="massif" id="18" x="0" y="0"
+			     
+			     alt="Cuvier-Châtillon"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Cuvier-Châtillon<set attributeName="font-size" attributeType="CSS" to="8" begin="18.mouseover" end="18.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=121">
+		    <svg 
+    		      x="528.22956210964" y="317.9102400874"
+    >
+		      <image class="massif" id="121" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Cuvier Ouest"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Cuvier Ouest<set attributeName="font-size" attributeType="CSS" to="8" begin="121.mouseover" end="121.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=122">
+		    <svg 
+    		      x="529.96060312648" y="318.69234604247"
+    >
+		      <image class="massif" id="122" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Bas Cuvier"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Bas Cuvier<set attributeName="font-size" attributeType="CSS" to="8" begin="122.mouseover" end="122.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=123">
+		    <svg 
+    		      x="533.83017246065" y="319.67304440218"
+    >
+		      <image class="massif" id="123" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Cuvier Est"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Cuvier Est<set attributeName="font-size" attributeType="CSS" to="8" begin="123.mouseover" end="123.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=124">
+		    <svg 
+    		      x="536.5290738303" y="320.17649705303"
+    >
+		      <image class="massif" id="124" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Cuvier Rempart"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Cuvier Rempart<set attributeName="font-size" attributeType="CSS" to="8" begin="124.mouseover" end="124.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=125">
+		    <svg 
+    		      x="538.88113152" y="319.30946304"
+    >
+		      <image class="massif" id="125" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Petit Rempart"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Petit Rempart<set attributeName="font-size" attributeType="CSS" to="8" begin="125.mouseover" end="125.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=126">
+		    <svg 
+    		      x="539.93025024" y="321.24193536"
+    >
+		      <image class="massif" id="126" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="La Merveille"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">La Merveille<set attributeName="font-size" attributeType="CSS" to="8" begin="126.mouseover" end="126.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=127">
+		    <svg 
+    		      x="541.22874368" y="319.13824512"
+    >
+		      <image class="massif" id="127" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="La Reconnaissance"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">La Reconnaissance<set attributeName="font-size" attributeType="CSS" to="8" begin="127.mouseover" end="127.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=128">
+		    <svg 
+    		      x="543.270272" y="321.780672"
+    >
+		      <image class="massif" id="128" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Monts &amp; Merveilles"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Monts &amp; Merveilles<set attributeName="font-size" attributeType="CSS" to="8" begin="128.mouseover" end="128.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=129">
+		    <svg 
+    		      x="546.11736064" y="322.79598336"
+    >
+		      <image class="massif" id="129" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Mare à Piat"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Mare à Piat<set attributeName="font-size" attributeType="CSS" to="8" begin="129.mouseover" end="129.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=19">
+		    <svg 
+    		      x="567.189888" y="339.5568"
+    >
+		      <image class="massif" id="19" x="0" y="0"
+			     
+			     alt="Autour de Fontainebleau"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Autour de Fontainebleau<set attributeName="font-size" attributeType="CSS" to="8" begin="19.mouseover" end="19.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=130">
+		    <svg 
+    		      x="547.19987461192" y="302.23524858486"
+    >
+		      <image class="massif" id="130" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="R. Canon"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">R. Canon<set attributeName="font-size" attributeType="CSS" to="8" begin="130.mouseover" end="130.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=134">
+		    <svg 
+    		      x="542.86291172065" y="302.48353068733"
+    >
+		      <image class="massif" id="134" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Rocher Canon Ouest"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher Canon Ouest<set attributeName="font-size" attributeType="CSS" to="8" begin="134.mouseover" end="134.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=137">
+		    <svg 
+    		      x="563.39328281528" y="326.31809669023"
+    >
+		      <image class="massif" id="137" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Rocher Saint-Germain"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher Saint-Germain<set attributeName="font-size" attributeType="CSS" to="8" begin="137.mouseover" end="137.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=138">
+		    <svg 
+    		      x="573.22165195223" y="327.80069163526"
+    >
+		      <image class="massif" id="138" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Cassepot R. grises oranges roses"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Cassepot R. grises oranges roses<set attributeName="font-size" attributeType="CSS" to="8" begin="138.mouseover" end="138.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=139">
+		    <svg 
+    		      x="592.53156730317" y="332.66382931124"
+    >
+		      <image class="massif" id="139" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Tour Dénecourt"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Tour Dénecourt<set attributeName="font-size" attributeType="CSS" to="8" begin="139.mouseover" end="139.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=140">
+		    <svg 
+    		      x="551.02609045637" y="335.00005500334"
+    >
+		      <image class="massif" id="140" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Mont Chauvet"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Mont Chauvet<set attributeName="font-size" attributeType="CSS" to="8" begin="140.mouseover" end="140.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=141">
+		    <svg 
+    		      x="584.29588130447" y="347.17912465352"
+    >
+		      <image class="massif" id="141" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Le Calvaire"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Le Calvaire<set attributeName="font-size" attributeType="CSS" to="8" begin="141.mouseover" end="141.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=142">
+		    <svg 
+    		      x="575.34333164104" y="346.6188677095"
+    >
+		      <image class="massif" id="142" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Roche d&#8217;Hercule"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Roche d&#8217;Hercule<set attributeName="font-size" attributeType="CSS" to="8" begin="142.mouseover" end="142.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=143">
+		    <svg 
+    		      x="568.99389316628" y="346.42474262032"
+    >
+		      <image class="massif" id="143" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Mont Ussy"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Mont Ussy<set attributeName="font-size" attributeType="CSS" to="8" begin="143.mouseover" end="143.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=131">
+		    <svg 
+    		      x="547.60548984259" y="368.34861260529"
+    >
+		      <image class="massif" id="131" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Mont Aigu"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Mont Aigu<set attributeName="font-size" attributeType="CSS" to="8" begin="131.mouseover" end="131.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=132">
+		    <svg 
+    		      x="548.22951328389" y="371.02088981376"
+    >
+		      <image class="massif" id="132" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Long Boyau"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Long Boyau<set attributeName="font-size" attributeType="CSS" to="8" begin="132.mouseover" end="132.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=133">
+		    <svg 
+    		      x="541.83327304868" y="366.08038528128"
+    >
+		      <image class="massif" id="133" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Gorges du Houx"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Gorges du Houx<set attributeName="font-size" attributeType="CSS" to="8" begin="133.mouseover" end="133.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=135">
+		    <svg 
+    		      x="591.44313633075" y="376.92521442509"
+    >
+		      <image class="massif" id="135" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Rocher d&#8217;Avon"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher d&#8217;Avon<set attributeName="font-size" attributeType="CSS" to="8" begin="135.mouseover" end="135.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=136">
+		    <svg 
+    		      x="588.40882236385" y="376.4389680083"
+    >
+		      <image class="massif" id="136" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Rocher d&#8217;Avon Ouest"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher d&#8217;Avon Ouest<set attributeName="font-size" attributeType="CSS" to="8" begin="136.mouseover" end="136.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=20">
+		    <svg 
+    		      x="522.113408" y="329.523648"
+    >
+		      <image class="massif" id="20" x="0" y="0"
+			     
+			     alt="Les Âpres Monts"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Les Âpres Monts<set attributeName="font-size" attributeType="CSS" to="8" begin="20.mouseover" end="20.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=144">
+		    <svg 
+    		      x="509.82087070382" y="325.36129662244"
+    >
+		      <image class="massif" id="144" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Butte aux Peintres"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Butte aux Peintres<set attributeName="font-size" attributeType="CSS" to="8" begin="144.mouseover" end="144.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=146">
+		    <svg 
+    		      x="517.49635898317" y="327.78310579907"
+    >
+		      <image class="massif" id="146" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Butte aux Dames"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Butte aux Dames<set attributeName="font-size" attributeType="CSS" to="8" begin="146.mouseover" end="146.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=147">
+		    <svg 
+    		      x="517.77716953139" y="330.85709299738"
+    >
+		      <image class="massif" id="147" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Apremont Bizons"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Apremont Bizons<set attributeName="font-size" attributeType="CSS" to="8" begin="147.mouseover" end="147.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=148">
+		    <svg 
+    		      x="522.55094882939" y="329.2212255807"
+    >
+		      <image class="massif" id="148" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Apremont Varrapeurs"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Apremont Varrapeurs<set attributeName="font-size" attributeType="CSS" to="8" begin="148.mouseover" end="148.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=149">
+		    <svg 
+    		      x="524.25141269586" y="330.20605143737"
+    >
+		      <image class="massif" id="149" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Les Gorges d&#8217;Apremont"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Les Gorges d&#8217;Apremont<set attributeName="font-size" attributeType="CSS" to="8" begin="149.mouseover" end="149.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=150">
+		    <svg 
+    		      x="527.10631991675" y="333.65340790472"
+    >
+		      <image class="massif" id="150" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Vallon de Sully , Fond des Gorges"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Vallon de Sully , Fond des Gorges<set attributeName="font-size" attributeType="CSS" to="8" begin="150.mouseover" end="150.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=151">
+		    <svg 
+    		      x="526.62270175683" y="330.42340797374"
+    >
+		      <image class="massif" id="151" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Apremont - Solitude"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Apremont - Solitude<set attributeName="font-size" attributeType="CSS" to="8" begin="151.mouseover" end="151.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=152">
+		    <svg 
+    		      x="534.45396570655" y="331.16023972301"
+    >
+		      <image class="massif" id="152" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Désert d&#8217;Apremont"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Désert d&#8217;Apremont<set attributeName="font-size" attributeType="CSS" to="8" begin="152.mouseover" end="152.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=153">
+		    <svg 
+    		      x="527.09071933962" y="327.93265227433"
+    >
+		      <image class="massif" id="153" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Envers d&#8217;Apremont"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Envers d&#8217;Apremont<set attributeName="font-size" attributeType="CSS" to="8" begin="153.mouseover" end="153.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=145">
+		    <svg 
+    		      x="520.76692992" y="325.92480000001"
+    >
+		      <image class="massif" id="145" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Apremont - Brigands"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Apremont - Brigands<set attributeName="font-size" attributeType="CSS" to="8" begin="145.mouseover" end="145.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=21">
+		    <svg 
+    		      x="513.97056" y="364.20345600001"
+    >
+		      <image class="massif" id="21" x="0" y="0"
+			     
+			     alt="Les Franchards"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Les Franchards<set attributeName="font-size" attributeType="CSS" to="8" begin="21.mouseover" end="21.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=154">
+		    <svg 
+    		      x="502.02177378099" y="359.2276110419"
+    >
+		      <image class="massif" id="154" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="L&#8217;Isatis"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">L&#8217;Isatis<set attributeName="font-size" attributeType="CSS" to="8" begin="154.mouseover" end="154.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=162">
+		    <svg 
+    		      x="498.76410102815" y="360.68830517561"
+    >
+		      <image class="massif" id="162" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Sablons"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Sablons<set attributeName="font-size" attributeType="CSS" to="8" begin="162.mouseover" end="162.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=163">
+		    <svg 
+    		      x="501.64616367288" y="361.42199759524"
+    >
+		      <image class="massif" id="163" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Hautes Plaines"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Hautes Plaines<set attributeName="font-size" attributeType="CSS" to="8" begin="163.mouseover" end="163.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=164">
+		    <svg 
+    		      x="504.82847534172" y="361.66635965799"
+    >
+		      <image class="massif" id="164" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Point de Vue"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Point de Vue<set attributeName="font-size" attributeType="CSS" to="8" begin="164.mouseover" end="164.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=165">
+		    <svg 
+    		      x="496.41399808" y="364.803264"
+    >
+		      <image class="massif" id="165" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Basses Plaines"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Basses Plaines<set attributeName="font-size" attributeType="CSS" to="8" begin="165.mouseover" end="165.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=166">
+		    <svg 
+    		      x="491.01718016" y="360.45083904"
+    >
+		      <image class="massif" id="166" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Franchard Carriers"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Franchard Carriers<set attributeName="font-size" attributeType="CSS" to="8" begin="166.mouseover" end="166.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=167">
+		    <svg 
+    		      x="511.15895014861" y="358.65274281862"
+    >
+		      <image class="massif" id="167" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Franchard Cuisinière"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Franchard Cuisinière<set attributeName="font-size" attributeType="CSS" to="8" begin="167.mouseover" end="167.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=168">
+		    <svg 
+    		      x="509.7606041044" y="360.75201453481"
+    >
+		      <image class="massif" id="168" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Franchard Crête Sud"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Franchard Crête Sud<set attributeName="font-size" attributeType="CSS" to="8" begin="168.mouseover" end="168.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=169">
+		    <svg 
+    		      x="512.46108839281" y="361.25841140322"
+    >
+		      <image class="massif" id="169" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Franchard Meyer"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Franchard Meyer<set attributeName="font-size" attributeType="CSS" to="8" begin="169.mouseover" end="169.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=155">
+		    <svg 
+    		      x="513.49464500337" y="358.64934656394"
+    >
+		      <image class="massif" id="155" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Franchard Carnage"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Franchard Carnage<set attributeName="font-size" attributeType="CSS" to="8" begin="155.mouseover" end="155.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=156">
+		    <svg 
+    		      x="517.98963712" y="359.94590976"
+    >
+		      <image class="massif" id="156" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Franchard Ermitage"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Franchard Ermitage<set attributeName="font-size" attributeType="CSS" to="8" begin="156.mouseover" end="156.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=157">
+		    <svg 
+    		      x="522.19629056" y="363.4291584"
+    >
+		      <image class="massif" id="157" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Franchard Raymond"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Franchard Raymond<set attributeName="font-size" attributeType="CSS" to="8" begin="157.mouseover" end="157.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=158">
+		    <svg 
+    		      x="536.68110848" y="365.812032"
+    >
+		      <image class="massif" id="158" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Gorges du Houx Petit Paradis"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Gorges du Houx Petit Paradis<set attributeName="font-size" attributeType="CSS" to="8" begin="158.mouseover" end="158.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=159">
+		    <svg 
+    		      x="533.72496384" y="364.64295168"
+    >
+		      <image class="massif" id="159" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Gorges du Houx Oiseaux de Proie"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Gorges du Houx Oiseaux de Proie<set attributeName="font-size" attributeType="CSS" to="8" begin="159.mouseover" end="159.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=160">
+		    <svg 
+    		      x="533.13789645988" y="362.42122945506"
+    >
+		      <image class="massif" id="160" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Gorges du Houx Rocher du Renard"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Gorges du Houx Rocher du Renard<set attributeName="font-size" attributeType="CSS" to="8" begin="160.mouseover" end="160.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=161">
+		    <svg 
+    		      x="536.96974336" y="369.8361984"
+    >
+		      <image class="massif" id="161" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Gorge aux Merisiers"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Gorge aux Merisiers<set attributeName="font-size" attributeType="CSS" to="8" begin="161.mouseover" end="161.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=15">
+		    <svg 
+    		      x="479.872384" y="385.68748800001"
+    >
+		      <image class="massif" id="15" x="0" y="0"
+			     
+			     alt="Trois Pignons Est"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Trois Pignons Est<set attributeName="font-size" attributeType="CSS" to="8" begin="15.mouseover" end="15.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=74">
+		    <svg 
+    		      x="476.65402499727" y="368.79036252734"
+    >
+		      <image class="massif" id="74" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Rocher des Mariniers"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher des Mariniers<set attributeName="font-size" attributeType="CSS" to="8" begin="74.mouseover" end="74.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=84">
+		    <svg 
+    		      x="490.7569546879" y="371.93963541197"
+    >
+		      <image class="massif" id="84" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Corne-Biche, R. de Milly"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Corne-Biche, R. de Milly<set attributeName="font-size" attributeType="CSS" to="8" begin="84.mouseover" end="84.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=85">
+		    <svg 
+    		      x="498.18283359508" y="373.42345086812"
+    >
+		      <image class="massif" id="85" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Rocher de Milly"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher de Milly<set attributeName="font-size" attributeType="CSS" to="8" begin="85.mouseover" end="85.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=86">
+		    <svg 
+    		      x="470.33578769859" y="377.15932420962"
+    >
+		      <image class="massif" id="86" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Drei Zinnen"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Drei Zinnen<set attributeName="font-size" attributeType="CSS" to="8" begin="86.mouseover" end="86.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=87">
+		    <svg 
+    		      x="474.84435703276" y="378.10821768469"
+    >
+		      <image class="massif" id="87" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Rocher de la Reine"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher de la Reine<set attributeName="font-size" attributeType="CSS" to="8" begin="87.mouseover" end="87.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=88">
+		    <svg 
+    		      x="476.99723789036" y="377.60891364404"
+    >
+		      <image class="massif" id="88" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Reine Crête Nord"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Reine Crête Nord<set attributeName="font-size" attributeType="CSS" to="8" begin="88.mouseover" end="88.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=89">
+		    <svg 
+    		      x="480.7799698432" y="377.8172763648"
+    >
+		      <image class="massif" id="89" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Petite Reine"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Petite Reine<set attributeName="font-size" attributeType="CSS" to="8" begin="89.mouseover" end="89.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=90">
+		    <svg 
+    		      x="494.73817088" y="380.61856512"
+    >
+		      <image class="massif" id="90" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Touche aux Mulets"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Touche aux Mulets<set attributeName="font-size" attributeType="CSS" to="8" begin="90.mouseover" end="90.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=91">
+		    <svg 
+    		      x="474.56354648453" y="379.56682622055"
+    >
+		      <image class="massif" id="91" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Bois Rond"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Bois Rond<set attributeName="font-size" attributeType="CSS" to="8" begin="91.mouseover" end="91.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=75">
+		    <svg 
+    		      x="479.72757467382" y="382.98469698816"
+    >
+		      <image class="massif" id="75" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Bois Rond Auberge"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Bois Rond Auberge<set attributeName="font-size" attributeType="CSS" to="8" begin="75.mouseover" end="75.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=76">
+		    <svg 
+    		      x="464.4231656233" y="378.71320483046"
+    >
+		      <image class="massif" id="76" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Canche aux Merciers"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Canche aux Merciers<set attributeName="font-size" attributeType="CSS" to="8" begin="76.mouseover" end="76.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=77">
+		    <svg 
+    		      x="466.77885409987" y="378.37134735806"
+    >
+		      <image class="massif" id="77" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="L&#8217;Anarchodrome"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">L&#8217;Anarchodrome<set attributeName="font-size" attributeType="CSS" to="8" begin="77.mouseover" end="77.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=78">
+		    <svg 
+    		      x="463.29992343767" y="375.381215761"
+    >
+		      <image class="massif" id="78" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Rocher du Télégraphe"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher du Télégraphe<set attributeName="font-size" attributeType="CSS" to="8" begin="78.mouseover" end="78.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=79">
+		    <svg 
+    		      x="461.5838589868" y="373.94189819551"
+    >
+		      <image class="massif" id="79" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="La Feuillardière"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">La Feuillardière<set attributeName="font-size" attributeType="CSS" to="8" begin="79.mouseover" end="79.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=80">
+		    <svg 
+    		      x="473.61475072" y="387.6614016"
+    >
+		      <image class="massif" id="80" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Rocher de la Vallée Ronde"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher de la Vallée Ronde<set attributeName="font-size" attributeType="CSS" to="8" begin="80.mouseover" end="80.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=81">
+		    <svg 
+    		      x="477.79813888" y="388.8555648"
+    >
+		      <image class="massif" id="81" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Bois du Rocher"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Bois du Rocher<set attributeName="font-size" attributeType="CSS" to="8" begin="81.mouseover" end="81.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=82">
+		    <svg 
+    		      x="471.9488621568" y="393.1378340352"
+    >
+		      <image class="massif" id="82" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Vallée Chaude"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Vallée Chaude<set attributeName="font-size" attributeType="CSS" to="8" begin="82.mouseover" end="82.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=83">
+		    <svg 
+    		      x="495.40592929618" y="402.47642657265"
+    >
+		      <image class="massif" id="83" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Les Béorlots"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Les Béorlots<set attributeName="font-size" attributeType="CSS" to="8" begin="83.mouseover" end="83.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=16">
+		    <svg 
+    		      x="444.610944" y="384.924096"
+    >
+		      <image class="massif" id="16" x="0" y="0"
+			     
+			     alt="Trois Pignons Ouest"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Trois Pignons Ouest<set attributeName="font-size" attributeType="CSS" to="8" begin="16.mouseover" end="16.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=92">
+		    <svg 
+    		      x="443.58078281165" y="370.91213183109"
+    >
+		      <image class="massif" id="92" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Gorge aux Châts"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Gorge aux Châts<set attributeName="font-size" attributeType="CSS" to="8" begin="92.mouseover" end="92.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=102">
+		    <svg 
+    		      x="440.38840723702" y="375.9558623934"
+    >
+		      <image class="massif" id="102" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Justice de Chambergeot"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Justice de Chambergeot<set attributeName="font-size" attributeType="CSS" to="8" begin="102.mouseover" end="102.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=103">
+		    <svg 
+    		      x="452.31711093903" y="381.29583730898"
+    >
+		      <image class="massif" id="103" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Pignon Poteau"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Pignon Poteau<set attributeName="font-size" attributeType="CSS" to="8" begin="103.mouseover" end="103.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=104">
+		    <svg 
+    		      x="455.00041171702" y="383.45487259654"
+    >
+		      <image class="massif" id="104" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Gros Sablons Nord"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Gros Sablons Nord<set attributeName="font-size" attributeType="CSS" to="8" begin="104.mouseover" end="104.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=105">
+		    <svg 
+    		      x="456.81007968881" y="386.6262264639"
+    >
+		      <image class="massif" id="105" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Gros Sablons"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Gros Sablons<set attributeName="font-size" attributeType="CSS" to="8" begin="105.mouseover" end="105.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=106">
+		    <svg 
+    		      x="450.53864414331" y="385.06799787848"
+    >
+		      <image class="massif" id="106" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Pignon  95.2"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Pignon  95.2<set attributeName="font-size" attributeType="CSS" to="8" begin="106.mouseover" end="106.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=107">
+		    <svg 
+    		      x="448.91618320609" y="388.61815331236"
+    >
+		      <image class="massif" id="107" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Rocher des Potêts"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher des Potêts<set attributeName="font-size" attributeType="CSS" to="8" begin="107.mouseover" end="107.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=108">
+		    <svg 
+    		      x="446.07687656233" y="387.68565332061"
+    >
+		      <image class="massif" id="108" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Jean des Vignes"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Jean des Vignes<set attributeName="font-size" attributeType="CSS" to="8" begin="108.mouseover" end="108.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=109">
+		    <svg 
+    		      x="446.23288242084" y="385.54096277944"
+    >
+		      <image class="massif" id="109" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Rocher des Souris"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher des Souris<set attributeName="font-size" attributeType="CSS" to="8" begin="109.mouseover" end="109.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=93">
+		    <svg 
+    		      x="446.88810703094" y="382.30180385664"
+    >
+		      <image class="massif" id="93" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Roche au Four"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Roche au Four<set attributeName="font-size" attributeType="CSS" to="8" begin="93.mouseover" end="93.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=94">
+		    <svg 
+    		      x="441.89591952957" y="387.05828795997"
+    >
+		      <image class="massif" id="94" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Rocher du guetteur"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher du guetteur<set attributeName="font-size" attributeType="CSS" to="8" begin="94.mouseover" end="94.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=95">
+		    <svg 
+    		      x="432.4731656233" y="391.7509455016"
+    >
+		      <image class="massif" id="95" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="La Ségognole"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">La Ségognole<set attributeName="font-size" attributeType="CSS" to="8" begin="95.mouseover" end="95.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=96">
+		    <svg 
+    		      x="434.06442539172" y="392.65655489019"
+    >
+		      <image class="massif" id="96" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Roche aux Oiseaux"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Roche aux Oiseaux<set attributeName="font-size" attributeType="CSS" to="8" begin="96.mouseover" end="96.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=97">
+		    <svg 
+    		      x="436.87253085942" y="391.5400880703"
+    >
+		      <image class="massif" id="97" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Mont Pivot"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Mont Pivot<set attributeName="font-size" attributeType="CSS" to="8" begin="97.mouseover" end="97.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=98">
+		    <svg 
+    		      x="439.3124548738" y="397.14345593134"
+    >
+		      <image class="massif" id="98" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Roche aux Sabots"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Roche aux Sabots<set attributeName="font-size" attributeType="CSS" to="8" begin="98.mouseover" end="98.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=99">
+		    <svg 
+    		      x="439.69461296589" y="398.85314616807"
+    >
+		      <image class="massif" id="99" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Roche aux Sabots Sud"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Roche aux Sabots Sud<set attributeName="font-size" attributeType="CSS" to="8" begin="99.mouseover" end="99.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=100">
+		    <svg 
+    		      x="442.58234531574" y="394.69065219978"
+    >
+		      <image class="massif" id="100" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Pignon 91.1"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Pignon 91.1<set attributeName="font-size" attributeType="CSS" to="8" begin="100.mouseover" end="100.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=101">
+		    <svg 
+    		      x="445.919616" y="396.156864"
+    >
+		      <image class="massif" id="101" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Cul de Chien"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Cul de Chien<set attributeName="font-size" attributeType="CSS" to="8" begin="101.mouseover" end="101.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=17">
+		    <svg 
+    		      x="446.71936" y="393.430464"
+    >
+		      <image class="massif" id="17" x="0" y="0"
+			     
+			     alt="Trois Pignons Sud"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Trois Pignons Sud<set attributeName="font-size" attributeType="CSS" to="8" begin="17.mouseover" end="17.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=110">
+		    <svg 
+    		      x="447.41852695132" y="408.57479436119"
+    >
+		      <image class="massif" id="110" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Rocher Guichot"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher Guichot<set attributeName="font-size" attributeType="CSS" to="8" begin="110.mouseover" end="110.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=114">
+		    <svg 
+    		      x="454.09557773476" y="408.6017609873"
+    >
+		      <image class="massif" id="114" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="R. de la Cathédrale"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">R. de la Cathédrale<set attributeName="font-size" attributeType="CSS" to="8" begin="114.mouseover" end="114.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=115">
+		    <svg 
+    		      x="453.76796543334" y="405.08554833915"
+    >
+		      <image class="massif" id="115" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Vallée de la Mée -  Potala"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Vallée de la Mée -  Potala<set attributeName="font-size" attributeType="CSS" to="8" begin="115.mouseover" end="115.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=116">
+		    <svg 
+    		      x="455.68683750318" y="402.50751793659"
+    >
+		      <image class="massif" id="116" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Grande Montagne"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Grande Montagne<set attributeName="font-size" attributeType="CSS" to="8" begin="116.mouseover" end="116.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=117">
+		    <svg 
+    		      x="459.93019687352" y="398.65438546821"
+    >
+		      <image class="massif" id="117" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Le 111"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Le 111<set attributeName="font-size" attributeType="CSS" to="8" begin="117.mouseover" end="117.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=118">
+		    <svg 
+    		      x="454.42319003617" y="394.5352174421"
+    >
+		      <image class="massif" id="118" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Rocher Fin"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher Fin<set attributeName="font-size" attributeType="CSS" to="8" begin="118.mouseover" end="118.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=119">
+		    <svg 
+    		      x="450.50744296724" y="399.90677229251"
+    >
+		      <image class="massif" id="119" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Rocher du Général"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher du Général<set attributeName="font-size" attributeType="CSS" to="8" begin="119.mouseover" end="119.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=120">
+		    <svg 
+    		      x="452.19230624932" y="401.07368824351"
+    >
+		      <image class="massif" id="120" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Diplodocus"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Diplodocus<set attributeName="font-size" attributeType="CSS" to="8" begin="120.mouseover" end="120.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=111">
+		    <svg 
+    		      x="455.371136" y="412.406208"
+    >
+		      <image class="massif" id="111" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="J.A. Martin"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">J.A. Martin<set attributeName="font-size" attributeType="CSS" to="8" begin="111.mouseover" end="111.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=112">
+		    <svg 
+    		      x="460.9598355455" y="413.57714901166"
+    >
+		      <image class="massif" id="112" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Rocher Cailleau"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher Cailleau<set attributeName="font-size" attributeType="CSS" to="8" begin="112.mouseover" end="112.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=113">
+		    <svg 
+    		      x="455.44384" y="416.00505600001"
+    >
+		      <image class="massif" id="113" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Bois des Hauts de Milly"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Bois des Hauts de Milly<set attributeName="font-size" attributeType="CSS" to="8" begin="113.mouseover" end="113.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=22">
+		    <svg 
+    		      x="578.895232" y="408.916416"
+    >
+		      <image class="massif" id="22" x="0" y="0"
+			     
+			     alt="Sud Fontainebleau"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Sud Fontainebleau<set attributeName="font-size" attributeType="CSS" to="8" begin="22.mouseover" end="22.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=170">
+		    <svg 
+    		      x="532.437376" y="378.92601600001"
+    >
+		      <image class="massif" id="170" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Rocher de la Salamandre"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher de la Salamandre<set attributeName="font-size" attributeType="CSS" to="8" begin="170.mouseover" end="170.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=177">
+		    <svg 
+    		      x="530.401664" y="388.850112"
+    >
+		      <image class="massif" id="177" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Rocher de la Combe"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher de la Combe<set attributeName="font-size" attributeType="CSS" to="8" begin="177.mouseover" end="177.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=178">
+		    <svg 
+    		      x="534.254976" y="393.321408"
+    >
+		      <image class="massif" id="178" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Mare aux Corneilles"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Mare aux Corneilles<set attributeName="font-size" attributeType="CSS" to="8" begin="178.mouseover" end="178.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=179">
+		    <svg 
+    		      x="545.14059726797" y="391.40900772035"
+    >
+		      <image class="massif" id="179" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Rocher du Mauvais Passage"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher du Mauvais Passage<set attributeName="font-size" attributeType="CSS" to="8" begin="179.mouseover" end="179.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=180">
+		    <svg 
+    		      x="553.448832" y="391.90368"
+    >
+		      <image class="massif" id="180" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="R. des Demoiselles"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">R. des Demoiselles<set attributeName="font-size" attributeType="CSS" to="8" begin="180.mouseover" end="180.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=181">
+		    <svg 
+    		      x="559.95584" y="383.83353600001"
+    >
+		      <image class="massif" id="181" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Rocher du Mont Morillon"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher du Mont Morillon<set attributeName="font-size" attributeType="CSS" to="8" begin="181.mouseover" end="181.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=182">
+		    <svg 
+    		      x="574.22008945541" y="386.52988422328"
+    >
+		      <image class="massif" id="182" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Rocher de Bouligny"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher de Bouligny<set attributeName="font-size" attributeType="CSS" to="8" begin="182.mouseover" end="182.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=183">
+		    <svg 
+    		      x="616.919424" y="393.64857600001"
+    >
+		      <image class="massif" id="183" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Rocher Brûlé"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher Brûlé<set attributeName="font-size" attributeType="CSS" to="8" begin="183.mouseover" end="183.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=184">
+		    <svg 
+    		      x="611.28000937216" y="401.111258788"
+    >
+		      <image class="massif" id="184" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Rocher des Princes"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher des Princes<set attributeName="font-size" attributeType="CSS" to="8" begin="184.mouseover" end="184.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=171">
+		    <svg 
+    		      x="627.43089523794" y="420.4141491731"
+    >
+		      <image class="massif" id="171" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Marion des Roches"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Marion des Roches<set attributeName="font-size" attributeType="CSS" to="8" begin="171.mouseover" end="171.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=172">
+		    <svg 
+    		      x="599.48665699113" y="420.16392636458"
+    >
+		      <image class="massif" id="172" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Restant du Long Rocher"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Restant du Long Rocher<set attributeName="font-size" attributeType="CSS" to="8" begin="172.mouseover" end="172.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=173">
+		    <svg 
+    		      x="597.35598162913" y="415.59929789507"
+    >
+		      <image class="massif" id="173" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Restant du Long Rocher Nord"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Restant du Long Rocher Nord<set attributeName="font-size" attributeType="CSS" to="8" begin="173.mouseover" end="173.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=174">
+		    <svg 
+    		      x="592.345472" y="419.05862400001"
+    >
+		      <image class="massif" id="174" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Restant du Long Rocher Ouest"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Restant du Long Rocher Ouest<set attributeName="font-size" attributeType="CSS" to="8" begin="174.mouseover" end="174.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=175">
+		    <svg 
+    		      x="586.57568256" y="415.19476992001"
+    >
+		      <image class="massif" id="175" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Rocher des Étroitures"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher des Étroitures<set attributeName="font-size" attributeType="CSS" to="8" begin="175.mouseover" end="175.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=176">
+		    <svg 
+    		      x="554.41724928" y="439.015872"
+    >
+		      <image class="massif" id="176" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Recloses"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Recloses<set attributeName="font-size" attributeType="CSS" to="8" begin="176.mouseover" end="176.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=23">
+		    <svg 
+    		      x="353.876352" y="426.365376"
+    >
+		      <image class="massif" id="23" x="0" y="0"
+			     
+			     alt="L&#8217;Essonne Sud"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">L&#8217;Essonne Sud<set attributeName="font-size" attributeType="CSS" to="8" begin="23.mouseover" end="23.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=185">
+		    <svg 
+    		      x="338.5576382848" y="381.64912648935"
+    >
+		      <image class="massif" id="185" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Maisse Tramerolle"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Maisse Tramerolle<set attributeName="font-size" attributeType="CSS" to="8" begin="185.mouseover" end="185.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=186">
+		    <svg 
+    		      x="335.23471347384" y="413.11068745805"
+    >
+		      <image class="massif" id="186" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Le petit Gironville"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Le petit Gironville<set attributeName="font-size" attributeType="CSS" to="8" begin="186.mouseover" end="186.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=187">
+		    <svg 
+    		      x="336.53393027502" y="447.12484145188"
+    >
+		      <image class="massif" id="187" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Boigneville "
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Boigneville <set attributeName="font-size" attributeType="CSS" to="8" begin="187.mouseover" end="187.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=193">
+		    <svg 
+    		      x="372.5103872" y="471.05434368"
+    >
+		      <image class="massif" id="193" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Villetard"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Villetard<set attributeName="font-size" attributeType="CSS" to="8" begin="193.mouseover" end="193.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=194">
+		    <svg 
+    		      x="355.04397824" y="448.31071488001"
+    >
+		      <image class="massif" id="194" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Moulin de Roisneau"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Moulin de Roisneau<set attributeName="font-size" attributeType="CSS" to="8" begin="194.mouseover" end="194.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=195">
+		    <svg 
+    		      x="349.07134464" y="447.00640512001"
+    >
+		      <image class="massif" id="195" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Argeville"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Argeville<set attributeName="font-size" attributeType="CSS" to="8" begin="195.mouseover" end="195.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=24">
+		    <svg 
+    		      x="380.55872" y="481.87488000001"
+    >
+		      <image class="massif" id="24" x="0" y="0"
+			     
+			     alt="Malesherbes"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Malesherbes<set attributeName="font-size" attributeType="CSS" to="8" begin="24.mouseover" end="24.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=188">
+		    <svg 
+    		      x="383.176064" y="485.80089600001"
+    >
+		      <image class="massif" id="188" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Buthiers - Massif de L&#8217;I"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Buthiers - Massif de L&#8217;I<set attributeName="font-size" attributeType="CSS" to="8" begin="188.mouseover" end="188.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=190">
+		    <svg 
+    		      x="377.94911777638" y="484.47346248561"
+    >
+		      <image class="massif" id="190" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Buthiers Canard"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Buthiers Canard<set attributeName="font-size" attributeType="CSS" to="8" begin="190.mouseover" end="190.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=191">
+		    <svg 
+    		      x="382.61806113444" y="483.91651975342"
+    >
+		      <image class="massif" id="191" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Buthiers - Massif de la Coccinelle"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Buthiers - Massif de la Coccinelle<set attributeName="font-size" attributeType="CSS" to="8" begin="191.mouseover" end="191.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=192">
+		    <svg 
+    		      x="378.88515292744" y="477.85147691567"
+    >
+		      <image class="massif" id="192" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Buthiers Nord"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Buthiers Nord<set attributeName="font-size" attributeType="CSS" to="8" begin="192.mouseover" end="192.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=25">
+		    <svg 
+    		      x="421.563776" y="435.41702400001"
+    >
+		      <image class="massif" id="25" x="0" y="0"
+			     
+			     alt="Oncy, Noisy, Boissy"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Oncy, Noisy, Boissy<set attributeName="font-size" attributeType="CSS" to="8" begin="25.mouseover" end="25.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=196">
+		    <svg 
+    		      x="437.79203584" y="468.58749696"
+    >
+		      <image class="massif" id="196" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Marlanval"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Marlanval<set attributeName="font-size" attributeType="CSS" to="8" begin="196.mouseover" end="196.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=197">
+		    <svg 
+    		      x="434.96157102776" y="462.5933659432"
+    >
+		      <image class="massif" id="197" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Boissy aux Cailles"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Boissy aux Cailles<set attributeName="font-size" attributeType="CSS" to="8" begin="197.mouseover" end="197.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=189">
+		    <svg 
+    		      x="434.7013888" y="441.30059520001"
+    >
+		      <image class="massif" id="189" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Vallée de Boissy"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Vallée de Boissy<set attributeName="font-size" attributeType="CSS" to="8" begin="189.mouseover" end="189.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=48">
+		    <svg 
+    		      x="416.62297031301" y="402.18931485235"
+    >
+		      <image class="massif" id="48" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="La Charbonnière"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">La Charbonnière<set attributeName="font-size" attributeType="CSS" to="8" begin="48.mouseover" end="48.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=49">
+		    <svg 
+    		      x="405.350784" y="411.424704"
+    >
+		      <image class="massif" id="49" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Oncy sur École"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Oncy sur École<set attributeName="font-size" attributeType="CSS" to="8" begin="49.mouseover" end="49.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=26">
+		    <svg 
+    		      x="499.720576" y="480.67526400001"
+    >
+		      <image class="massif" id="26" x="0" y="0"
+			     
+			     alt="Larchant"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Larchant<set attributeName="font-size" attributeType="CSS" to="8" begin="26.mouseover" end="26.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=198">
+		    <svg 
+    		      x="507.85519687352" y="476.07379414533"
+    >
+		      <image class="massif" id="198" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Maunoury"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Maunoury<set attributeName="font-size" attributeType="CSS" to="8" begin="198.mouseover" end="198.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=201">
+		    <svg 
+    		      x="503.33882724352" y="475.49784522071"
+    >
+		      <image class="massif" id="201" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Dame Jouanne"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Dame Jouanne<set attributeName="font-size" attributeType="CSS" to="8" begin="201.mouseover" end="201.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=202">
+		    <svg 
+    		      x="502.72260410532" y="473.22420681063"
+    >
+		      <image class="massif" id="202" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Le Requin"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Le Requin<set attributeName="font-size" attributeType="CSS" to="8" begin="202.mouseover" end="202.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=203">
+		    <svg 
+    		      x="497.3322496" y="485.36794368001"
+    >
+		      <image class="massif" id="203" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="L&#8217; Éléphant"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">L&#8217; Éléphant<set attributeName="font-size" attributeType="CSS" to="8" begin="203.mouseover" end="203.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=204">
+		    <svg 
+    		      x="493.03464022794" y="487.85663897349"
+    >
+		      <image class="massif" id="204" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Les Crottes au Fer"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Les Crottes au Fer<set attributeName="font-size" attributeType="CSS" to="8" begin="204.mouseover" end="204.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=205">
+		    <svg 
+    		      x="496.60717441833" y="483.48279725814"
+    >
+		      <image class="massif" id="205" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Éléphant Nord"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Éléphant Nord<set attributeName="font-size" attributeType="CSS" to="8" begin="205.mouseover" end="205.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=206">
+		    <svg 
+    		      x="497.4958336" y="478.712256"
+    >
+		      <image class="massif" id="206" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Mt Simonet"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Mt Simonet<set attributeName="font-size" attributeType="CSS" to="8" begin="206.mouseover" end="206.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=207">
+		    <svg 
+    		      x="491.53698398771" y="481.00748632028"
+    >
+		      <image class="massif" id="207" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Bois d&#8217;Hyvers"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Bois d&#8217;Hyvers<set attributeName="font-size" attributeType="CSS" to="8" begin="207.mouseover" end="207.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=208">
+		    <svg 
+    		      x="492.50422031483" y="484.48489731257"
+    >
+		      <image class="massif" id="208" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Blomont les Roches"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Blomont les Roches<set attributeName="font-size" attributeType="CSS" to="8" begin="208.mouseover" end="208.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=199">
+		    <svg 
+    		      x="494.844308207" y="473.34769747369"
+    >
+		      <image class="massif" id="199" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Pentes du Marchais"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Pentes du Marchais<set attributeName="font-size" attributeType="CSS" to="8" begin="199.mouseover" end="199.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=200">
+		    <svg 
+    		      x="497.99562656051" y="488.14364309914"
+    >
+		      <image class="massif" id="200" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Éléphant R. au Diable &amp; Bout du Monde"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Éléphant R. au Diable &amp; Bout du Monde<set attributeName="font-size" attributeType="CSS" to="8" begin="200.mouseover" end="200.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=27">
+		    <svg 
+    		      x="536.436096" y="514.264512"
+    >
+		      <image class="massif" id="27" x="0" y="0"
+			     
+			     alt="Puiselet"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Puiselet<set attributeName="font-size" attributeType="CSS" to="8" begin="27.mouseover" end="27.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=209">
+		    <svg 
+    		      x="531.03766757734" y="513.58349591854"
+    >
+		      <image class="massif" id="209" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Le Paradis"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Le Paradis<set attributeName="font-size" attributeType="CSS" to="8" begin="209.mouseover" end="209.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=210">
+		    <svg 
+    		      x="535.3346304" y="512.7868032"
+    >
+		      <image class="massif" id="210" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Mont Sarrasin"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Mont Sarrasin<set attributeName="font-size" attributeType="CSS" to="8" begin="210.mouseover" end="210.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=211">
+		    <svg 
+    		      x="541.83327304868" y="515.82659359934"
+    >
+		      <image class="massif" id="211" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Puiselet Sablibum"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Puiselet Sablibum<set attributeName="font-size" attributeType="CSS" to="8" begin="211.mouseover" end="211.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=28">
+		    <svg 
+    		      x="595.180928" y="528.98707200001"
+    >
+		      <image class="massif" id="28" x="0" y="0"
+			     
+			     alt="Nemours"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Nemours<set attributeName="font-size" attributeType="CSS" to="8" begin="28.mouseover" end="28.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=212">
+		    <svg 
+    		      x="567.45361887365" y="531.26379878877"
+    >
+		      <image class="massif" id="212" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Chaintreauville"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Chaintreauville<set attributeName="font-size" attributeType="CSS" to="8" begin="212.mouseover" end="212.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=213">
+		    <svg 
+    		      x="637.34382790226" y="530.60920673618"
+    >
+		      <image class="massif" id="213" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Fosse aux Loups"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Fosse aux Loups<set attributeName="font-size" attributeType="CSS" to="8" begin="213.mouseover" end="213.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=214">
+		    <svg 
+    		      x="582.05158359327" y="539.35340169447"
+    >
+		      <image class="massif" id="214" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Le Troglodyte"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Le Troglodyte<set attributeName="font-size" attributeType="CSS" to="8" begin="214.mouseover" end="214.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=215">
+		    <svg 
+    		      x="585.23809820764" y="527.67657152349"
+    >
+		      <image class="massif" id="215" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="les Mammouths"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">les Mammouths<set attributeName="font-size" attributeType="CSS" to="8" begin="215.mouseover" end="215.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=216">
+		    <svg 
+    		      x="581.08434726615" y="523.36862409339"
+    >
+		      <image class="massif" id="216" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Mont d&#8217;Olivet"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Mont d&#8217;Olivet<set attributeName="font-size" attributeType="CSS" to="8" begin="216.mouseover" end="216.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=217">
+		    <svg 
+    		      x="553.08129551114" y="518.55373595444"
+    >
+		      <image class="massif" id="217" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Petit Bois de Saint-Pierre-lès-Nemours"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Petit Bois de Saint-Pierre-lès-Nemours<set attributeName="font-size" attributeType="CSS" to="8" begin="217.mouseover" end="217.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=218">
+		    <svg 
+    		      x="564.6456422956" y="519.84380357883"
+    >
+		      <image class="massif" id="218" x="0" y="0"
+			     xlink:href="IMG/moton62.png" 
+			     alt="Rocher Gréau"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Rocher Gréau<set attributeName="font-size" attributeType="CSS" to="8" begin="218.mouseover" end="218.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+		  <a class="anim" xlink:href="spip.php?page=topo&id_rubrique=219">
+		    <svg 
+    		      x="586.97013633075" y="530.15846597576"
+    >
+		      <image class="massif" id="219" x="0" y="0"
+			     xlink:href="IMG/moton61.gif" 
+			     alt="Vallon Cassepot"
+			     height="4"
+			     width="4" />
+		      <text x="0" y="12">Vallon Cassepot<set attributeName="font-size" attributeType="CSS" to="8" begin="219.mouseover" end="219.mouseout"/>
+		      </text>
+		    </svg>
+		  </a>
+		  
+		  
+		  
+		  
+
+		</g>
+		<img style="visibility: hidden" id="resize" class="resize">  <!-- il faut ça pour pan zoom ... -->
+
+	      </svg>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+  </div>
+  <div class="ui inverted vertical segment">
+    <div class="ui white page grid">
+    </div>
+  </div>
+
+  <script src="squelettesui/CariNavig/framework.js" charset="iso-8859-1"></script> <!-- -->
+  <script src="squelettesui/CariNavig/CariSVG.js" charset="iso-8859-1"></script> <!-- -->
+  <script src="squelettesui/CariNavig/shCore.js" charset="iso-8859-1"></script> <!-- -->
+  <script src="squelettesui/CariNavig/script2.js" charset="iso-8859-1"></script> <!-- -->
+</body></html>
+
