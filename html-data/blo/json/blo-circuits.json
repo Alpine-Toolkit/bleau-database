@@ -1,0 +1,4621 @@
+[
+  {
+    "items": [
+      {
+        "descriptif": "5 circuits",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par F. Decarout",
+            "info": "Validée SNE. n°3",
+            "lat": "48.436065",
+            "lon": "2.6298",
+            "maj": "Octobre 2014",
+            "name": "Blanc Enfants E",
+            "nombre_de_voie": "1",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit1"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°5",
+            "lat": "48.716409",
+            "lon": "1.975924",
+            "maj": "Octobre 2014",
+            "name": "Jaune PD",
+            "nombre_de_voie": "30",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit2"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°1",
+            "lat": "48.713396",
+            "lon": "1.984010",
+            "maj": "Octobre 2014",
+            "name": "Orange AD+",
+            "nombre_de_voie": "61",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit3"
+          },
+          {
+            "cree": "1999",
+            "descriptif": "Créé en 1999 par Jean Pilot & Michel Gouze CAF. 19 numéros + 4 variantes",
+            "info": "Validée SNE. n°4",
+            "lat": "48.716432",
+            "lon": "1.97675",
+            "maj": "Octobre 2014",
+            "name": "Bleu TD-",
+            "nombre_de_voie": "24",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit4"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par E. Vervueren",
+            "info": "Validée SNE. n°2",
+            "lat": "48.7134",
+            "lon": "1.98412",
+            "maj": "Octobre 2014",
+            "name": "Rouge TD+",
+            "nombre_de_voie": "28",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit5"
+          }
+        ],
+        "name": "Dampierre Maincourt",
+        "note": "",
+        "url": "spip.php?rubrique31"
+      },
+      {
+        "descriptif": "1 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Avec qcq bis \"rouges\". Créé par P Bocianowski FSGT RSCMontreuil.",
+            "info": "Validée SNE. n°1",
+            "lat": "48.68394",
+            "lon": "1.94178",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD+",
+            "nombre_de_voie": "45",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit6"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°2",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Orange AD+",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit7"
+          }
+        ],
+        "name": "Vaux de Cernay",
+        "note": "Jaune avec qcq bis \"rouges\". 1 hc en dehors du massif : le mur au trou",
+        "url": "spip.php?rubrique32"
+      },
+      {
+        "descriptif": "3 circuits.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Repeint en 2013 par Oleg Sokolsky",
+            "info": "Validée SNE. n°3",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Jaune PD+",
+            "nombre_de_voie": "40",
+            "renove": "2013",
+            "status": "",
+            "url": "spip.php?circuit8"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Repeint en 2013 par Oleg Sokolsky",
+            "info": "Validée SNE. n°1",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Bleu D+",
+            "nombre_de_voie": "24",
+            "renove": "2013",
+            "status": "",
+            "url": "spip.php?circuit9"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Repeint en 2013 par Oleg Sokolsky",
+            "info": "Validée SNE. n°2",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Rouge TD+",
+            "nombre_de_voie": "28",
+            "renove": "2013",
+            "status": "",
+            "url": "spip.php?circuit10"
+          }
+        ],
+        "name": "La Troche",
+        "note": "Jaune, Bleu Rouge et Nombreux hors circuits. Ancienne carrière dans un environnement urbain. Accessible en RER B. Environ 150 voies.",
+        "url": "spip.php?rubrique33"
+      }
+    ],
+    "name": "Yvelines - Vallée de Chevreuse -"
+  },
+  {
+    "items": [
+      {
+        "descriptif": "10 circuits.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par René Bonnette CAF. Peu fréquenté.",
+            "info": "Validée SNE. n°5",
+            "lat": "48.515768",
+            "lon": "2.232885",
+            "maj": "Octobre 2014",
+            "name": "Blanc Enfants E",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit18"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Michel Coquard, Louis Louvel FSGT Ivry , Très fréquenté, arrivée au très beau point de vue du \"belvédère\".",
+            "info": "Validée SNE. N°10",
+            "lat": "48.516216",
+            "lon": "2.229812",
+            "maj": "Octobre 2014",
+            "name": "Blanc Enfants E",
+            "nombre_de_voie": "1",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit19"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Pascal Etienne FSGT Ste Geneviève, modifié et raccourci par Jean-Jacques Naëls en 2005",
+            "info": "Validée SNE. n°9",
+            "lat": "48.516481",
+            "lon": "2.228744",
+            "maj": "Octobre 2014",
+            "name": "Jaune PD",
+            "nombre_de_voie": "65",
+            "renove": "2005",
+            "status": "",
+            "url": "spip.php?circuit20"
+          },
+          {
+            "cree": "1960",
+            "descriptif": "Créé en 1960, rocher assez patiné, quelques passages engagés.",
+            "info": "Validée SNE. n°2",
+            "lat": "48.515768",
+            "lon": "2.232885",
+            "maj": "Octobre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "24",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit21"
+          },
+          {
+            "cree": "2004",
+            "descriptif": "Créé par J-Jacques Naëls en 2004 à partir de vieilles classiques « faciles » du circuit rouge n°1.",
+            "info": "Validée SNE. n°13",
+            "lat": "48.51585",
+            "lon": "2.23176",
+            "maj": "Octobre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "30",
+            "renove": "2004",
+            "status": "",
+            "url": "spip.php?circuit22"
+          },
+          {
+            "cree": "1989",
+            "descriptif": "Créé par Din N’Guyen en 1989, repris en 2002",
+            "info": "Validée SNE. n°11",
+            "lat": "48.515827",
+            "lon": "2.232513",
+            "maj": "Octobre 2014",
+            "name": "Bleu Ciel D",
+            "nombre_de_voie": "50",
+            "renove": "2002",
+            "status": "",
+            "url": "spip.php?circuit23"
+          },
+          {
+            "cree": "2004",
+            "descriptif": "Créé par J-Jacques Naëls en 2004 à partir de vieilles classiques « dures » du circuit rouge, n°1 réalisé par Remy Cordurier et quelques autres, en lui enjoignant 9 nouveautés sur 36 passages du tracé (...)",
+            "info": "Validée SNE. n°14",
+            "lat": "48.51585",
+            "lon": "2.23176",
+            "maj": "Octobre 2014",
+            "name": "Rouge TD",
+            "nombre_de_voie": "36",
+            "renove": "2004",
+            "status": "",
+            "url": "spip.php?circuit24"
+          },
+          {
+            "cree": "1987",
+            "descriptif": "Créé par Philippe David, Manuel Marques, Pascal Etienne en 1987. Repris en 2004 par Jean-Jacques Naëls , quelques voies abandonnées et inclusion de 2 nouveautés.",
+            "info": "Validée SNE. n°8",
+            "lat": "48.51585",
+            "lon": "2.23176",
+            "maj": "Octobre 2014",
+            "name": "Blanc ED",
+            "nombre_de_voie": "26",
+            "renove": "2004",
+            "status": "",
+            "url": "spip.php?circuit25"
+          }
+        ],
+        "name": "Chamarande",
+        "note": "Circuits enfants et tous niveaux. 1500 voies , + de 50 hc > 6c ! Un des plus anciens massifs fréquentés par les grimpeurs, le seul avec La Troche à être desservi par une gare RER. Si certaines zones (...)",
+        "url": "spip.php?rubrique38"
+      },
+      {
+        "descriptif": "2 circuits.",
+        "items": [
+          {
+            "cree": "2007",
+            "descriptif": "Créé par Pascal Etienne, 2007. 29 passages.",
+            "info": "Validée SNE. n°6",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Blanc Enfants E",
+            "nombre_de_voie": "0",
+            "renove": "2007",
+            "status": "",
+            "url": "spip.php?circuit26"
+          },
+          {
+            "cree": "2007",
+            "descriptif": "Créé par Pascal Etienne, 2007. 29 passages.",
+            "info": "Validée SNE. n°7",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Caramel F",
+            "nombre_de_voie": "0",
+            "renove": "2007",
+            "status": "",
+            "url": "spip.php?circuit27"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°10",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Orange AD-",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit28"
+          }
+        ],
+        "name": "Chamarande Belvédère",
+        "note": "Circuits Enfants et Facile.",
+        "url": "spip.php?rubrique39"
+      },
+      {
+        "descriptif": "2 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°1",
+            "lat": "48.486062",
+            "lon": "2.172587",
+            "maj": "Octobre 2014",
+            "name": "Blanc Enfants E",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit29"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°2",
+            "lat": "48.486047",
+            "lon": "2.172458",
+            "maj": "Octobre 2014",
+            "name": "Jaune PD",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit30"
+          }
+        ],
+        "name": "Étréchy",
+        "note": "",
+        "url": "spip.php?rubrique220"
+      },
+      {
+        "descriptif": "2 circuits",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Francis et Michel Bocianowski du RSCMontreuil.  Initialement D- repris en 2005 par Dominique Yvorel qui a effectué une réfection totale du massif. 22 (...)",
+            "info": "Validée SNE. n°1",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Bleu D+",
+            "nombre_de_voie": "22",
+            "renove": "2005",
+            "status": "",
+            "url": "spip.php?circuit31"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Pascal Bocianowski RSCMontreuil. Initialement TD repris et complété en 2005 par Dominique Yvorel. 21 n° + 7 bis.",
+            "info": "Validée SNE. n°3",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Rouge TD+/ED",
+            "nombre_de_voie": "27",
+            "renove": "2005",
+            "status": "",
+            "url": "spip.php?circuit32"
+          }
+        ],
+        "name": "Villeneuve sur Auvers",
+        "note": "Plus un circuit Jaune PD inf en partie disparu dans une propriété privée. En hors circuits le pavé sur la droite du fronton de la carrière vaut vraiment le (...)",
+        "url": "spip.php?rubrique40"
+      },
+      {
+        "descriptif": "1 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°1",
+            "lat": "48.50442",
+            "lon": "2.29363",
+            "maj": "Octobre 2014",
+            "name": "Jaune PD-",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit33"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Tracé par un inconnu.",
+            "info": "Validée SNE. n°2",
+            "lat": "48.50442",
+            "lon": "2.29363",
+            "maj": "Octobre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit34"
+          }
+        ],
+        "name": "Rocher Mignot",
+        "note": "Joli point de vue mais massif peu intéressant. Blocs très moussus sur le flanc nord du plateau.",
+        "url": "spip.php?rubrique42"
+      },
+      {
+        "descriptif": "6 circuits.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Louis Louvel Repris par Jacques Peuch Daniel Dupuis en 1996 FSGT Ivry.",
+            "info": "Validée SNE. n°1",
+            "lat": "48.493775",
+            "lon": "2.324964",
+            "maj": "Octobre 2014",
+            "name": "Jaune PD",
+            "nombre_de_voie": "42",
+            "renove": "1996",
+            "status": "",
+            "url": "spip.php?circuit35"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Louis Louvel Repris par Jacques Peuch Daniel Dupuis FSGT Ivry en 1997, puis prolongé par Gilles Cottray en 1998.",
+            "info": "Validée SNE. n°2",
+            "lat": "48.493653",
+            "lon": "2.324731",
+            "maj": "Octobre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "65",
+            "renove": "2004",
+            "status": "",
+            "url": "spip.php?circuit36"
+          },
+          {
+            "cree": "1997",
+            "descriptif": "Créé par Gilles Cottray, Fred Buc, FSGT Ivry. Créé en 1997 , 41 numéros 1997",
+            "info": "Validée SNE. n°3",
+            "lat": "48.493653",
+            "lon": "2.324731",
+            "maj": "Octobre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "41",
+            "renove": "1997",
+            "status": "",
+            "url": "spip.php?circuit37"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Reprise de l’ancêtre circuit bleu D+, en rouge par la section escalade de la fac d’Orsay en 1997. Puis par Gilles Cottray, Fred Buc, FSGT Ivry. 18 numéros + 28 (...)",
+            "info": "Validée SNE. n°4",
+            "lat": "48.493653",
+            "lon": "2.324731",
+            "maj": "Octobre 2014",
+            "name": "Rouge TD-",
+            "nombre_de_voie": "74",
+            "renove": "1997",
+            "status": "",
+            "url": "spip.php?circuit38"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Gilles Cottray, Fred Buc, FSGT Ivry 40 numéros",
+            "info": "Validée SNE. n°5",
+            "lat": "48.493653",
+            "lon": "2.324731",
+            "maj": "Octobre 2014",
+            "name": "Rose TD+",
+            "nombre_de_voie": "40",
+            "renove": "1998",
+            "status": "",
+            "url": "spip.php?circuit39"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Gilles Cottray, Fred Buc, FSGT Ivry, 33 numéros + 2 variantes",
+            "info": "Validée SNE. n°6",
+            "lat": "48.493653",
+            "lon": "2.324731",
+            "maj": "Octobre 2014",
+            "name": "Noir ED",
+            "nombre_de_voie": "35",
+            "renove": "1998",
+            "status": "",
+            "url": "spip.php?circuit40"
+          }
+        ],
+        "name": "Le Sanglier",
+        "note": "En hors circuits , pas grand chose n’a été laissé dans le massif mais on trouve aux alentours dans une végétation luxuriantes qcqs gros blocs.",
+        "url": "spip.php?rubrique43"
+      },
+      {
+        "descriptif": "3 circuits.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Dit circuit Fantôme. Tracé par les frères Libert Michel et ? Le dessin du fantôme étant de ? Libert.",
+            "info": "Validée SNE. n°1",
+            "lat": "48.453377",
+            "lon": "2.333262",
+            "maj": "Octobre 2014",
+            "name": "Bleu D+",
+            "nombre_de_voie": "30",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit11"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Jérome Weiss.",
+            "info": "Validée SNE. n°3",
+            "lat": "48.453377",
+            "lon": "2.333262",
+            "maj": "Octobre 2014",
+            "name": "Blanc ED",
+            "nombre_de_voie": "25",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit12"
+          }
+        ],
+        "name": "Le Pendu d’Huison",
+        "note": "Site réglementé par son propriétaire, accès interdit aux groupes d’enfants.",
+        "url": "spip.php?rubrique36"
+      }
+    ],
+    "name": "La Juine - L’Essonne Ouest"
+  },
+  {
+    "items": [
+      {
+        "descriptif": "9 circuits.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°1",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Blanc Enfants E-",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit59"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°4",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Jaune PD",
+            "nombre_de_voie": "45",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit62"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°5",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Orange AD+",
+            "nombre_de_voie": "50",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit63"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Repeint en 2014",
+            "info": "Validée SNE. n°8",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Noir ED-",
+            "nombre_de_voie": "18",
+            "renove": "2014",
+            "status": "",
+            "url": "spip.php?circuit66"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°2",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Blanc Enfants E+",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit60"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°3",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Saumon F",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit61"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°6",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "58",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit64"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Repeint en 2014",
+            "info": "Validée SNE. n°7",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Rouge TD+",
+            "nombre_de_voie": "46",
+            "renove": "2014",
+            "status": "",
+            "url": "spip.php?circuit65"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°9",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Noir/Blanc ED+",
+            "nombre_de_voie": "52",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit67"
+          }
+        ],
+        "name": "Rocher du Duc - côté Nainville",
+        "note": "Plan des secteurs du Rocher du Duc. La présentation des circuits et des voies hors pistes se font suivant la proximité des aires de stationnement. Elles sont au nombre de trois. Au Nord -Est, pour (...)",
+        "url": "spip.php?rubrique54"
+      },
+      {
+        "descriptif": "5 circuits",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé en 2005 par Emmanuelle et Jean-Yves Derouck. Parallèle au Bleu. 33 numéros. Le départ et les 3 premiers numéros situés dans une cuvette peuvent être humides, en ce cas, commencez au numéro (...)",
+            "info": "Validée SNE. n°6 ou H1",
+            "lat": "48.499828",
+            "lon": "2.472855",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD-",
+            "nombre_de_voie": "33",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit54"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par les Amis des Rochers de Beauvais ce circuit reprend en partie le Safran tracé dans les années 70 par Lucien Deschamps. 100 numéros.",
+            "info": "Validée SNE n°5 ou H2",
+            "lat": "",
+            "lon": "",
+            "maj": "Novembre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "58",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit55"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Jean-Yves Derouck en 2005. Parallèle au Jaune.  Dans les années 70, Lucien Deschamp avait tracé dans ce secteur un parcours Emmeraude, repeind ensuite en orange. Les passages les plus (...)",
+            "info": "n°3",
+            "lat": "48.499828",
+            "lon": "2.472855",
+            "maj": "Novembre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "50",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit56"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°8",
+            "lat": "48.50068",
+            "lon": "2.473657",
+            "maj": "Octobre 2014",
+            "name": "Rouge TD-",
+            "nombre_de_voie": "56",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit57"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Réfection en cours, de nombreuses modifications prévues, départ sur l’ex 39 noir.  Les données ici ne sont donc pas exacts, ou ne le seront plus.",
+            "info": "Validée SNE",
+            "lat": "48.5005",
+            "lon": "2.473024",
+            "maj": "Novembre 2014",
+            "name": "Noir ED-",
+            "nombre_de_voie": "49",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit58"
+          }
+        ],
+        "name": "Rocher du Duc - côté Beauvais",
+        "note": "Plan des secteurs du Rocher du Duc. La présentation des circuits et des voies hors pistes se font suivant la proximité des aires de stationnement. Elles sont au nombre de trois. Au Nord -Est, pour (...)",
+        "url": "spip.php?rubrique53"
+      },
+      {
+        "descriptif": "9 circuits plus 1 noir officieux.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Jean et Danielle Pillot, repris en 2006 par Jean-Jacques Naëls. Entretenu en 2012 par Jean-Jacques Naëls. Ce circuit était à l’origine parallèle au circuit orange AD sup n°2 de sorte qu’un (...)",
+            "info": "Validée SNE.",
+            "lat": "",
+            "lon": "",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD+",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit47"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Jean Pillot en 1990. Repris suite à sa disparition partielle en même temps que le Jaune n°1 en 2006 par Jean-Jacques Naëls. Entretenu en 2012 Jean-Jacques (...)",
+            "info": "Validée SNE.",
+            "lat": "",
+            "lon": "",
+            "maj": "Novembre 2014",
+            "name": "Orange AD+",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit48"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Jean Pillot en 1991. Remanié avec le circuit rouge en 2006 et entretenu en 2014 par Jean-Jacques Naëls.",
+            "info": "Validée SNE.",
+            "lat": "48.504403",
+            "lon": "2.46903",
+            "maj": "Novembre 2014",
+            "name": "Bleu D+",
+            "nombre_de_voie": "28",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit49"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Repeint en 2014 par Jean-Jacques Naëls.",
+            "info": "Validée SNE",
+            "lat": "",
+            "lon": "",
+            "maj": "Novembre 2014",
+            "name": "Rouge TD",
+            "nombre_de_voie": "20",
+            "renove": "2014",
+            "status": "",
+            "url": "spip.php?circuit50"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE.",
+            "lat": "",
+            "lon": "",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD",
+            "nombre_de_voie": "44",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit52"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Repeint en 2013 par AFB. Circuit Bleu parallèle au Jaune PD n°5",
+            "info": "Validée SNE.",
+            "lat": "",
+            "lon": "",
+            "maj": "Novembre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "38",
+            "renove": "2014",
+            "status": "",
+            "url": "spip.php?circuit53"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Michel Coquard en 1986 instituteur et membre de la FSGT. Entretenu et légèrement modifié par l’USEP en 2008 puis en 2010 par l’ARB.  Il est situé à 120 au nord des autres circuits. Le départ (...)",
+            "info": "Validée SNE.",
+            "lat": "",
+            "lon": "",
+            "maj": "Novembre 2014",
+            "name": "Blanc Enfants E ( 5 à 8 ans)",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit291"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Pascal Etienne. Enfants de 9 à 99 ans",
+            "info": "Validée SNE.",
+            "lat": "",
+            "lon": "",
+            "maj": "Novembre 2014",
+            "name": "Caramel F/E+",
+            "nombre_de_voie": "1",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit292"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Pascal Etienne. E- , adapté aux enfants dès l’âge maternel",
+            "info": "Validée SNE.",
+            "lat": "",
+            "lon": "",
+            "maj": "27 mai",
+            "name": "Blanc Enfants E-",
+            "nombre_de_voie": "1",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit51"
+          },
+          {
+            "cree": "2014",
+            "descriptif": "Ce circuit a plus de vingt ans déjà et il toujours tracé et praticable. Aussi comme la numérotation existante est un moyen commode de repérer et retrouver les voies et qu’il est présenté aussi dans (...)",
+            "info": "Non Officiel",
+            "lat": "",
+            "lon": "",
+            "maj": "Novembre 2014",
+            "name": "Noir ED Sup",
+            "nombre_de_voie": "10",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit295"
+          }
+        ],
+        "name": "Rocher du Duc - côté Loutteville",
+        "note": "Plan des secteurs du Rocher du Duc. La présentation des circuits et des voies hors pistes se font suivant la proximité des aires de stationnement. Elles sont au nombre de trois. Au Nord -Est, pour (...)",
+        "url": "spip.php?rubrique51"
+      },
+      {
+        "descriptif": "1 circuit \"oublié\" et voies hors circuits...",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE.",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Rouge",
+            "nombre_de_voie": "30",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit68"
+          }
+        ],
+        "name": "Rocher du Duc - Sud-Est",
+        "note": "disparu et sans suite : 1 circuit rouge, 1 noir virtuel : hc...",
+        "url": "spip.php?rubrique55"
+      },
+      {
+        "descriptif": "7 circuits.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Michel Nouailles et Patrick Madore, repris par Pierre Arlie, puis modifié par Pascal Etienne en 2008, 24 numéros. Secteur les cent marches",
+            "info": "Validée SNE. n°1",
+            "lat": "48.478871",
+            "lon": "2.463451",
+            "maj": "Octobre 2014",
+            "name": "Blanc Enfants E+",
+            "nombre_de_voie": "0",
+            "renove": "2008",
+            "status": "",
+            "url": "spip.php?circuit69"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Pascal Etienne, 2008, 21 passages. Secteur les cent marches",
+            "info": "Validée SNE. n°4",
+            "lat": "48.478892",
+            "lon": "2.463429",
+            "maj": "Octobre 2014",
+            "name": "Caramel F-",
+            "nombre_de_voie": "0",
+            "renove": "2008",
+            "status": "",
+            "url": "spip.php?circuit70"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par P Etienne, 2009, 26 passages. Secteur les cent marches",
+            "info": "Validée SNE. n°2",
+            "lat": "48.478892",
+            "lon": "2.463504",
+            "maj": "Octobre 2014",
+            "name": "Jaune PD",
+            "nombre_de_voie": "26",
+            "renove": "2014",
+            "status": "",
+            "url": "spip.php?circuit71"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par P Etienne, 2009, 24 numéros. Secteur les cent marches",
+            "info": "Validée SNE. n°3",
+            "lat": "48.479167",
+            "lon": "2.464041",
+            "maj": "Octobre 2014",
+            "name": "Orange AD+",
+            "nombre_de_voie": "24",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit72"
+          },
+          {
+            "cree": "1978",
+            "descriptif": "Secteur Est, Loco à Jacques. Créé par  Jean-Jacques Naëls, FSGT Bagnolet. En 1989, il remplace l’orange AD+ de 1978, du même traceur. 35 passages en 2004. En parallèle se déroule un « deuxième » (...)",
+            "info": "Validée SNE. n°2",
+            "lat": "48.479892",
+            "lon": "2.461053",
+            "maj": "Octobre 2014",
+            "name": "Bleu D+",
+            "nombre_de_voie": "35",
+            "renove": "2004",
+            "status": "",
+            "url": "spip.php?circuit73"
+          },
+          {
+            "cree": "1977",
+            "descriptif": "Secteur Est, Loco à Jacques. Créé par Jean-Jacques Naëls, Philippe Berger, FSGT Bagnolet , créé en 1977 et balisé en bleu avec 18 passages, il a été rallongé par JJN en 1989 pour proposer 29 passages. (...)",
+            "info": "Validée SNE. n°1",
+            "lat": "48.479892",
+            "lon": "2.461053",
+            "maj": "Octobre 2014",
+            "name": "Rouge TD+",
+            "nombre_de_voie": "29",
+            "renove": "2004",
+            "status": "",
+            "url": "spip.php?circuit74"
+          },
+          {
+            "cree": "1982",
+            "descriptif": "Créé par Louis Louvel en 1982, ce long circuit style \"Montagne\" n’a jamais été repris depuis sa création, reste quelques flèche éparses réparties sur l’ensemble du massif. Un nouveau circuit jaune a été (...)",
+            "info": "Abandonnée. n°3",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Jaune PD+",
+            "nombre_de_voie": "0",
+            "renove": "2010",
+            "status": "",
+            "url": "spip.php?circuit75"
+          },
+          {
+            "cree": "1983",
+            "descriptif": "Créé par Louis Louvel, FSGT Ivry en 1983, puis repris par Jean Pilot du CAF en 1990 pour 50 passages numérotés. Ce circuit s’est perdu avec le temps car jamais parcouru. Un tracé plus court a été (...)",
+            "info": "Validée SNE. n°4",
+            "lat": "48.479618",
+            "lon": "2.460431",
+            "maj": "Octobre 2014",
+            "name": "Orange AD+",
+            "nombre_de_voie": "33",
+            "renove": "2008",
+            "status": "",
+            "url": "spip.php?circuit76"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Pascal Etienne et Jean-Jacques Naëls en 1990, modifié en 2004 par JJN pour ne conserver que 32 passages de 6a à 6c en 2004",
+            "info": "Validée SNE. n°7",
+            "lat": "48.479784",
+            "lon": "2.460058",
+            "maj": "Octobre 2014",
+            "name": "Blanc ED+",
+            "nombre_de_voie": "32",
+            "renove": "2004",
+            "status": "",
+            "url": "spip.php?circuit77"
+          },
+          {
+            "cree": "1989",
+            "descriptif": "Créé par Pascal Etienne et Jean-Jacques Naëls de la FSGT Ste Geneviève, avec à sa création en 1989 25 passages. Il a été prolongé en 1992 par Jean-Jacques Naëls et propose 30 passages en (...)",
+            "info": "Validée SNE. n°6",
+            "lat": "48.48106",
+            "lon": "2.45892",
+            "maj": "Octobre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "30",
+            "renove": "2004",
+            "status": "",
+            "url": "spip.php?circuit78"
+          },
+          {
+            "cree": "1989",
+            "descriptif": "Créé par Jean-Jacques Naëls FSGT Ste Geneviève en 1989, 30 numéros",
+            "info": "Validée SNE. n°5",
+            "lat": "48.48106",
+            "lon": "2.45892",
+            "maj": "Octobre 2014",
+            "name": "Rouge TD",
+            "nombre_de_voie": "30",
+            "renove": "2004",
+            "status": "",
+            "url": "spip.php?circuit79"
+          }
+        ],
+        "name": "La Padôle",
+        "note": "Massif principale, secteur Est \"Loco\" à \"Jacques\" , secteur Ouest ou \"Mandarins\" :  Les circuits 1 et 2 ne parcourent que les secteurs « Loco » et « Jacques » : Rouge TD+ n°1 ,  Bleu D+ n°2.  Les (...)",
+        "url": "spip.php?rubrique56"
+      },
+      {
+        "descriptif": "12 circuits.",
+        "items": [
+          {
+            "cree": "1994",
+            "descriptif": "Créé par Louis Louvel",
+            "info": "Validée SNE.",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Rando vertigineuse F",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit80"
+          },
+          {
+            "cree": "1994",
+            "descriptif": "Créé par Jean Pillot, Hugues Canal nrénové en 2014 par Robert Duhamelle , maintenant de type \"Bloc à Bloc\"",
+            "info": "Validée SNE.",
+            "lat": "48.46998",
+            "lon": "2.43906",
+            "maj": "Octobre 2014",
+            "name": "Jaune PD",
+            "nombre_de_voie": "42",
+            "renove": "Septembre 2014",
+            "status": "",
+            "url": "spip.php?circuit81"
+          },
+          {
+            "cree": "1994",
+            "descriptif": "Créé par Jean Pillot, Hugues Canal",
+            "info": "Validée SNE.",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "43",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit82"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Antoine Melchior, circuit parfois style montagne.",
+            "info": "Validée SNE.",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Orange AD+",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit83"
+          },
+          {
+            "cree": "1994",
+            "descriptif": "Créé par François Louvel, FSGT Ivry.",
+            "info": "Validée SNE.",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "LOsange et Orose D-",
+            "nombre_de_voie": "32",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit84"
+          },
+          {
+            "cree": "1994",
+            "descriptif": "Créé par Jean Pillot et Hugues Canal",
+            "info": "Validée SNE.",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "52",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit85"
+          },
+          {
+            "cree": "1994",
+            "descriptif": "Créé par François Louvel, FSGT Ivry, serait à reprendre en un seul circuit épuré des expos.",
+            "info": "Validée SNE. n° 5 et 6",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Bleu D+/TD-",
+            "nombre_de_voie": "78",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit86"
+          },
+          {
+            "cree": "1993",
+            "descriptif": "Créé par Gilles Cottray et François Louvel FSGT Ivry",
+            "info": "Validée SNE. n°3",
+            "lat": "48.46928",
+            "lon": "2.441607",
+            "maj": "Octobre 2014",
+            "name": "Rose ED-",
+            "nombre_de_voie": "70",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit87"
+          },
+          {
+            "cree": "1994",
+            "descriptif": "Créé par Gilles Cottray et François Louvel FSGT Ivry",
+            "info": "Validée SNE. n°4",
+            "lat": "48.468944",
+            "lon": "2.439442",
+            "maj": "Octobre 2014",
+            "name": "Noir ED",
+            "nombre_de_voie": "51",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit88"
+          }
+        ],
+        "name": "Videlles-les-Roches",
+        "note": "12 circuits tous niveaux, en grande partie à l’abandon. Seul les qcq beaux durs et pas expo blocs sont régulièrement visités. La zone \"Pillot\" qui s’aborde par le bas depuis le village de Videlles, (...)",
+        "url": "spip.php?rubrique57"
+      },
+      {
+        "descriptif": "Des circuits...",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°10",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Blanc Enfants E",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit41"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°2",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Jaune PD+",
+            "nombre_de_voie": "0",
+            "renove": "2008",
+            "status": "",
+            "url": "spip.php?circuit42"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°3",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit43"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°6",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit44"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°11",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Rouge D",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit45"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°4",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Noir TD",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit46"
+          }
+        ],
+        "name": "Mondeville",
+        "note": "MASSIF À ÉVITER ABSOLUMENT EN PÉRIODE DE CHASSE !  (ET TOUT LE TEMPS MAINTENANT POUR UN CERTAIN TEMPS)  Ce massif fût en réfection durant l’année 2014 , il aurait pu peut être promis à un bel avenir (...)",
+        "url": "spip.php?rubrique45"
+      },
+      {
+        "descriptif": "4 circuits",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé en 2013 par Jean-Jacques Naëls et Philippe Leduby FSGT Ste Geneviève.",
+            "info": "Validée SNE. n°2",
+            "lat": "48.422265",
+            "lon": "2.407964",
+            "maj": "Octobre 2014",
+            "name": "Jaune PD+",
+            "nombre_de_voie": "42",
+            "renove": "2013",
+            "status": "",
+            "url": "spip.php?circuit13"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé en 2013 par Frédéric Buc",
+            "info": "Validée SNE. n°4",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "40",
+            "renove": "2013",
+            "status": "",
+            "url": "spip.php?circuit14"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé en 2013 par Jean-Jacques Naëls, Yan Bruneau et Philippe Leduby FSGT Ste Geneviève.",
+            "info": "Validée SNE. n°1",
+            "lat": "48.422265",
+            "lon": "2.407964",
+            "maj": "Octobre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "35",
+            "renove": "2013",
+            "status": "",
+            "url": "spip.php?circuit15"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé en 2013 par Gilles Cottray et Frédéric Buc",
+            "info": "Validée SNE. n°3",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Rouge TD",
+            "nombre_de_voie": "60",
+            "renove": "2013",
+            "status": "",
+            "url": "spip.php?circuit16"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé en 2013 par Gilles Cottray et Frédéric Buc",
+            "info": "Validée SNE. n°5",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Noir ED",
+            "nombre_de_voie": "64",
+            "renove": "2013",
+            "status": "",
+            "url": "spip.php?circuit17"
+          }
+        ],
+        "name": "Rocher de Châtillon",
+        "note": "Ce massif peu fréquenté a connu un regain d’activité en 2012-2013 grâce à Gilles Cottray,  Frédéric Buc et Jean-Jacques notament. On trouve qcq autres blocs intéressant pas trés loin en face, dont un (...)",
+        "url": "spip.php?rubrique37"
+      }
+    ],
+    "name": "L’Essonne Est - Vallée de l’École"
+  },
+  {
+    "items": [
+      {
+        "descriptif": "1 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Dit bleu \"Philou\"",
+            "info": "n°4",
+            "lat": "48.44653",
+            "lon": "2.63701",
+            "maj": "Novembre 2014",
+            "name": "Bleu TD-",
+            "nombre_de_voie": "56",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit165"
+          }
+        ],
+        "name": "Cuvier Ouest",
+        "note": "circuit bleu et une 100aine d’ hors circuits",
+        "url": "spip.php?rubrique121"
+      },
+      {
+        "descriptif": "6 circuits.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "n°3",
+            "lat": "48.447059",
+            "lon": "2.639106",
+            "maj": "Novembre 2014",
+            "name": "Orange AD+",
+            "nombre_de_voie": "50",
+            "renove": "2012",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit166"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "n°7",
+            "lat": "48.44653",
+            "lon": "2.63701",
+            "maj": "Novembre 2014",
+            "name": "Bleu TD-",
+            "nombre_de_voie": "52",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit167"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Repeint en 2012.",
+            "info": "n°6",
+            "lat": "48.44654",
+            "lon": "2.63777",
+            "maj": "Novembre 2014",
+            "name": "Rouge TD+",
+            "nombre_de_voie": "42",
+            "renove": "2012",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit168"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Intéressant, peu fréquenté. Départ à 50m de La Prestat.",
+            "info": "n°1",
+            "lat": "48.446863",
+            "lon": "2.639573",
+            "maj": "10 février",
+            "name": "Bleu D inf (nord-est)",
+            "nombre_de_voie": "28",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit169"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Roland Trivellini, complété par Jo Montchaussé et Jacky Godoffe.",
+            "info": "n°2",
+            "lat": "",
+            "lon": "",
+            "maj": "Novembre 2014",
+            "name": "Noir ED-",
+            "nombre_de_voie": "33",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit290"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Abandonné",
+            "info": "n°5",
+            "lat": "",
+            "lon": "",
+            "maj": "Novembre 2014",
+            "name": "Blanc ED+",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit293"
+          }
+        ],
+        "name": "Bas Cuvier",
+        "note": "C’était la mecque... Lieu crade, voire répugnant ! Les grimpeurs n’étant pas les plus responsables. Les 30 m autour du parking étant assurément les plus sales.que faire ? nettoyer régulièrement  action (...)",
+        "url": "spip.php?rubrique122"
+      },
+      {
+        "descriptif": "3 circuits.",
+        "items": [
+          {
+            "cree": "1947",
+            "descriptif": "Créé par Fred Bernick. L’inventeur du circuit : 1er circuit de la forêt 1947. 16 numéros",
+            "info": "n°1",
+            "lat": "",
+            "lon": "",
+            "maj": "Novembre 2014",
+            "name": "Rouge AD",
+            "nombre_de_voie": "17",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit170"
+          },
+          {
+            "cree": "1948",
+            "descriptif": "Créé par Fred Bernick. 13 numéros, le circuit comptant plus de voies.",
+            "info": "n°2",
+            "lat": "",
+            "lon": "",
+            "maj": "Novembre 2014",
+            "name": "Jaune D",
+            "nombre_de_voie": "13",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit171"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par René Porta RSCMontreuil. 47 numéros. Rénové par Philippe Ledenmat, A. Desquet et leurs amis en 2014",
+            "info": "n°3",
+            "lat": "",
+            "lon": "",
+            "maj": "Novembre 2014",
+            "name": "Noir ED-",
+            "nombre_de_voie": "48",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit172"
+          }
+        ],
+        "name": "Cuvier Rempart",
+        "note": "La nouvelle mecque de l’escalade bleausarde ! délaissé pour le niveau moyen, circuits faciles sur blocs trop haut trop expo pour les goûts modernes, le rempart est très fréquenté et fort pourvu en (...)",
+        "url": "spip.php?rubrique124"
+      }
+    ],
+    "name": "Cuvier-Châtillon"
+  },
+  {
+    "items": [
+      {
+        "descriptif": "7 circuits.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Pascal Etienne, Michel Coquard et Louis Louvel FSGT Ivry et Ste Geneviève",
+            "info": "n°7",
+            "lat": "48.462538",
+            "lon": "2.665271",
+            "maj": "Novembre 2014",
+            "name": "Blanc Enfants E",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit173"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par G. Weyl très effacé , 40 numéros",
+            "info": "n°2",
+            "lat": "48.46291",
+            "lon": "2.66326",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD",
+            "nombre_de_voie": "53",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit174"
+          },
+          {
+            "cree": "1950",
+            "descriptif": "Créé en 1950 en rouge, il a été modifié en 1999 par Emmanuel Rémont CIHM. 43 numéros + 3 variantes.",
+            "info": "n°1",
+            "lat": "48.46273",
+            "lon": "2.66431",
+            "maj": "Novembre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "52",
+            "renove": "1999",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit175"
+          },
+          {
+            "cree": "1975",
+            "descriptif": "Créé par Philippe Berger J-Jacques Naëls FSGT Bagnolet en 1975 et remanié par les auteurs en 1983. Repeint en 2011.",
+            "info": "n°5",
+            "lat": "48.46273",
+            "lon": "2.66431",
+            "maj": "Novembre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "43",
+            "renove": "2011",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit176"
+          },
+          {
+            "cree": "1963",
+            "descriptif": "Créé par le Groupe Alpin Populaire en 1963 puis par Greg Clouzeau. 40 numéros + 6 variantes. Repeint en 2014 par Hervé Béranger et clubs Bleau.",
+            "info": "n°4",
+            "lat": "48.46107",
+            "lon": "2.66387",
+            "maj": "Novembre 2014",
+            "name": "Bleu Ciel D+",
+            "nombre_de_voie": "47",
+            "renove": "2014",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit177"
+          },
+          {
+            "cree": "1978",
+            "descriptif": "Créé par Philippe Berqer J-Jacques Naëls FSGT Bagnolet en 1978, ce circuit a été plusieurs fois repris, d’abord sous l impulsion d’Antoine Melchior avec Bernard Forest 1983 qui lui a adjoint des voies (...)",
+            "info": "n°6",
+            "lat": "48.461173",
+            "lon": "2.66367",
+            "maj": "Novembre 2014",
+            "name": "Rouge ED-",
+            "nombre_de_voie": "48",
+            "renove": "2000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit178"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Circuit sauvage invalidé en commission SNE, entretenu par, un inconnu, en 2002 et effacé. Ne doit plus être tracé.",
+            "info": "Invalidé",
+            "lat": "48.460816",
+            "lon": "2.660767",
+            "maj": "Décembre 2014",
+            "name": "Noir ED-",
+            "nombre_de_voie": "38",
+            "renove": "2002",
+            "status": "Abandonné SNE-ONF",
+            "url": "spip.php?circuit179"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Grég Clouzeau. 24 numéros + 2 variantes. Effacé.",
+            "info": "n°8",
+            "lat": "48.46273",
+            "lon": "2.66431",
+            "maj": "Novembre 2014",
+            "name": "Blanc ED+",
+            "nombre_de_voie": "26",
+            "renove": "2001",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit180"
+          }
+        ],
+        "name": "R. Canon",
+        "note": "Accessible en train sncf depuis la gare de Bois-le-roi. Massif souvent assez crade. (Le Jaune n°3 PD tracé au Monts de Fay a été abandonné)",
+        "url": "spip.php?rubrique130"
+      },
+      {
+        "descriptif": "3 circuits.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Michel Coquard FSGT d’Ivry. Première partie E- , 2ème partie E/E+",
+            "info": "n°3",
+            "lat": "48.440783",
+            "lon": "2.688375",
+            "maj": "Novembre 2014",
+            "name": "Blanc Enfants E",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit189"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Gaston Chédor Repris par N. Molle, JM. Garin Jean Pilot CAF. 49 numéros",
+            "info": "n°1",
+            "lat": "48.438756",
+            "lon": "2.684738",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD+",
+            "nombre_de_voie": "55",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit190"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Sophie et Alain Clément. 39 numéros + 15 variantes",
+            "info": "n°4",
+            "lat": "48.438756",
+            "lon": "2.684738",
+            "maj": "Novembre 2014",
+            "name": "Bleu D+",
+            "nombre_de_voie": "53",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit191"
+          }
+        ],
+        "name": "Rocher Saint-Germain",
+        "note": "Circuits Enfants, Jaune et Bleu et en h.c. que de blocs, que de blocs !",
+        "url": "spip.php?rubrique137"
+      },
+      {
+        "descriptif": "1 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Robert Christe Pierre Jourdain. 33 numéros. Repeint en 2014 par C. Forestier, P. Richard.",
+            "info": "n°1",
+            "lat": "",
+            "lon": "",
+            "maj": "Novembre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "34",
+            "renove": "2014",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit192"
+          }
+        ],
+        "name": "Le Calvaire",
+        "note": "Son auvent à l’escalade désormais déconseillé.",
+        "url": "spip.php?rubrique141"
+      },
+      {
+        "descriptif": "1 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Gilles Cottray. Un superbe circuit enfants !",
+            "info": "n°5",
+            "lat": "48.421092",
+            "lon": "2.699528",
+            "maj": "Novembre 2014",
+            "name": "Blanc Enfants E",
+            "nombre_de_voie": "0",
+            "renove": "2011",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit193"
+          }
+        ],
+        "name": "Roche d’Hercule",
+        "note": "Un superbe circuit enfants, la roche d’Hercule et autres superbes h.c.",
+        "url": "spip.php?rubrique142"
+      },
+      {
+        "descriptif": "3 circuits.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Fréderic Dulphy Laurent Maine ONF. 28 numéros",
+            "info": "n°2",
+            "lat": "48.420634",
+            "lon": "2.692895",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD-",
+            "nombre_de_voie": "36",
+            "renove": "2011",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit194"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Olivier Leray. 31 numéros",
+            "info": "n°3",
+            "lat": "48.420634",
+            "lon": "2.692895",
+            "maj": "Novembre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "31",
+            "renove": "2011",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit195"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Gilles Cottray. 33 numéros + 18 variantes \"amanitées\"",
+            "info": "n°4",
+            "lat": "48.420634",
+            "lon": "2.692895",
+            "maj": "Novembre 2014",
+            "name": "Rouge TD+",
+            "nombre_de_voie": "33",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit196"
+          }
+        ],
+        "name": "Mont Ussy",
+        "note": "Jaune, Orange, Rouge et  variantes \"amanitées\". Qcq blocs fuyant la foules du bas cuvier se sont retrouvés au Mont Ussy.",
+        "url": "spip.php?rubrique143"
+      },
+      {
+        "descriptif": "4 circuits",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Effacé, Abandonné.",
+            "info": "n°4",
+            "lat": "48.401144",
+            "lon": "2.662953",
+            "maj": "Novembre 2014",
+            "name": "Blanc Enfants E",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "Abandonné SNE-ONF",
+            "url": "spip.php?circuit181"
+          },
+          {
+            "cree": "1956",
+            "descriptif": "Créé par Pierre Bontemps CAF en 1956. 35 numéros. Repeint en 2012 par Georges Tsao et Léo Drevet.",
+            "info": "n°2",
+            "lat": "48.400681",
+            "lon": "2.663181",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD",
+            "nombre_de_voie": "35",
+            "renove": "2012",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit182"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Jean Pilot, Hugues Canal CAF. 48 numéros + 18 variantes. Repeint en 2009 par Georges Tsao.",
+            "info": "n°1",
+            "lat": "48.400681",
+            "lon": "2.663181",
+            "maj": "Novembre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "66",
+            "renove": "2009",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit183"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Pierre Odru, José Gros FSGT Montreuil. 56 numéros. Repeint en 2010 par Georges Tsao.",
+            "info": "n°3",
+            "lat": "48.400681",
+            "lon": "2.663181",
+            "maj": "Novembre 2014",
+            "name": "Bleu D+",
+            "nombre_de_voie": "58",
+            "renove": "2010",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit184"
+          }
+        ],
+        "name": "Mont Aigu",
+        "note": "Beaux cailloux dans belle forêt à proximité de la ville.",
+        "url": "spip.php?rubrique131"
+      },
+      {
+        "descriptif": "1 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Toujours entretenu ?...",
+            "info": "n°1",
+            "lat": "48.406013",
+            "lon": "2.645184",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD-",
+            "nombre_de_voie": "21",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit185"
+          }
+        ],
+        "name": "Gorges du Houx",
+        "note": "Des perles dans le 7. Un circuit jaune, toujours entretenu ?...",
+        "url": "spip.php?rubrique133"
+      },
+      {
+        "descriptif": "2 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Robert Christe CAF. 20 numéros + 5 variantes. Peu entretenu mais fréquentable.",
+            "info": "n°1",
+            "lat": "48.393726",
+            "lon": "2.722314",
+            "maj": "Novembre 2014",
+            "name": "Orange AD-",
+            "nombre_de_voie": "27",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit186"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Abandonné !..",
+            "info": "n°3",
+            "lat": "48.392932",
+            "lon": "2.727554",
+            "maj": "Novembre 2014",
+            "name": "Bleu AD",
+            "nombre_de_voie": "11",
+            "renove": "0000",
+            "status": "Abandonné SNE-ONF",
+            "url": "spip.php?circuit187"
+          }
+        ],
+        "name": "Rocher d’Avon",
+        "note": "Massif tranquille peu fréquenté des voies splendides dans tous les niveaux. Orange fréquentable, bleu abandonné.",
+        "url": "spip.php?rubrique135"
+      },
+      {
+        "descriptif": "1 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "abandonné.",
+            "info": "n°2",
+            "lat": "",
+            "lon": "",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD",
+            "nombre_de_voie": "12",
+            "renove": "0000",
+            "status": "Abandonné SNE-ONF",
+            "url": "spip.php?circuit188"
+          }
+        ],
+        "name": "Rocher d’Avon Ouest",
+        "note": "Circuit jaune …",
+        "url": "spip.php?rubrique136"
+      }
+    ],
+    "name": "Autour de Fontainebleau"
+  },
+  {
+    "items": [
+      {
+        "descriptif": "3 circuits.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Victor PINTO.",
+            "info": "n°1",
+            "lat": "48.438109",
+            "lon": "2.621716",
+            "maj": "Décembre 2014",
+            "name": "Orange",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit197"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Victor PINTO.",
+            "info": "n°2",
+            "lat": "48.438109",
+            "lon": "2.621716",
+            "maj": "Décembre 2014",
+            "name": "Bleu",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit198"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Victor PINTO.",
+            "info": "n°3",
+            "lat": "48.438109",
+            "lon": "2.621716",
+            "maj": "Décembre 2014",
+            "name": "Noir",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit199"
+          }
+        ],
+        "name": "Butte aux Dames",
+        "note": "Site officialisé en Nov 2014. Cette nouvelle zone d’escalade permettra d’alléger les gorges d’Apremont. — Commission SNE du 3 octobre 2013.",
+        "url": "spip.php?rubrique146"
+      },
+      {
+        "descriptif": "4 circuits",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Alain Vinouse. De la buvette, prendre la route sur 100 m, le circuit est juste à droite de la route.",
+            "info": "n°4",
+            "lat": "48.436715",
+            "lon": "2.623469",
+            "maj": "Novembre 2014",
+            "name": "Blanc Enfants E",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit200"
+          },
+          {
+            "cree": "1992",
+            "descriptif": "Créé par Jean Pilot, Hugues Canal CAF en 1992. 48 numéros + 16 variantes. Repeint en 2012 par Georges Tsao.",
+            "info": "n°3",
+            "lat": "48.43548",
+            "lon": "2.62286",
+            "maj": "Novembre 2014",
+            "name": "Orange AD+",
+            "nombre_de_voie": "64",
+            "renove": "2012",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit201"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Pierre Manuel. Repris par Jean Pilot CAF. 36 numéros + 7 variantes. Repeint en 2012 par J. Guinot.",
+            "info": "n°2",
+            "lat": "48.434285",
+            "lon": "2.622225",
+            "maj": "Novembre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "45",
+            "renove": "2012",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit202"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Daniel Lecointe. Repris par Hugues Canal. 42 numéros + 18 variantes",
+            "info": "n°1",
+            "lat": "48.435463",
+            "lon": "2.622844",
+            "maj": "Novembre 2014",
+            "name": "Rouge TD",
+            "nombre_de_voie": "61",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit203"
+          }
+        ],
+        "name": "Apremont Bizons",
+        "note": "et + de 300 voies h.c. Circuit enfants : prendre la route sur 100 m , le circuit est juste à droite. Circuits orange, bleu, rouge : 100 m derrière.",
+        "url": "spip.php?rubrique147"
+      },
+      {
+        "descriptif": "2 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Pierre Mercier, entretenu par l ASCEA. 46 numéros + 8 variantes. Repeint en 2011 par J. Guinot.",
+            "info": "n°3",
+            "lat": "48.436588",
+            "lon": "2.626608",
+            "maj": "Novembre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "54",
+            "renove": "2011",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit204"
+          },
+          {
+            "cree": "1978",
+            "descriptif": "Créé par Philippe Berger, J-Jacques Naëls FSGT Bagnolet en 1978, il a été bonifié de quelques passages en 1988. 40 numéros. Les dernier passage sont maintenant dans une zone interdite par (...)",
+            "info": "n°10",
+            "lat": "48.436335",
+            "lon": "2.627446",
+            "maj": "Novembre 2014",
+            "name": "Rouge TD+",
+            "nombre_de_voie": "40",
+            "renove": "2003",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit205"
+          }
+        ],
+        "name": "Apremont Varrapeurs",
+        "note": "",
+        "url": "spip.php?rubrique148"
+      },
+      {
+        "descriptif": "11 circuits.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Michel Coquard FSGT Ivry",
+            "info": "n°14",
+            "lat": "48.435661",
+            "lon": "2.629187",
+            "maj": "Novembre 2014",
+            "name": "Blanc Enfants E+",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit206"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Françoise et Jo Montchaussé, J-C Beauregard. 42 numéros",
+            "info": "n°9",
+            "lat": "48.4351",
+            "lon": "2.62917",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD+",
+            "nombre_de_voie": "43",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit207"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Appelé « Outremer ». Créé par Monique Fédoroff, Pierre Nédelec. 44 numéros + 6 variantes. Repeint en 2011 par J. Guinot.",
+            "info": "n°5",
+            "lat": "48.43586",
+            "lon": "2.62912",
+            "maj": "Novembre 2014",
+            "name": "Bleu Outremer D",
+            "nombre_de_voie": "50",
+            "renove": "2011",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit208"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Jacques Reppelin, Pierre Porta. 74 numéros + 2 variantes. Repeint en 2011 par Georges Tsao et Léo Drevet.",
+            "info": "n°6",
+            "lat": "48.436155",
+            "lon": "2.629943",
+            "maj": "Novembre 2014",
+            "name": "Saumon TD-",
+            "nombre_de_voie": "76",
+            "renove": "2011",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit209"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Robert Mizrahi c’est un circuit \"fissures\" de tous nivaux, homogénéité de style mais pas de difficulté. Original et intéressant, mais peu suivi. 35 numéros + 8 variantes. Retracé par Victor (...)",
+            "info": "n°11",
+            "lat": "48.437368",
+            "lon": "2.629592",
+            "maj": "Novembre 2014",
+            "name": "Bleu Ciel, \"fissure\" ED-",
+            "nombre_de_voie": "45",
+            "renove": "2014",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit210"
+          },
+          {
+            "cree": "1952",
+            "descriptif": "Créé par Pierre Mercier CAF en 1952. Très patiné. 42 numéros + 5 variantes. Sera repeint par V. Pinto, P. Richard ?",
+            "info": "n°2",
+            "lat": "48.435266",
+            "lon": "2.630823",
+            "maj": "Novembre 2014",
+            "name": "Vert AD",
+            "nombre_de_voie": "47",
+            "renove": "2014",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit211"
+          },
+          {
+            "cree": "1979",
+            "descriptif": "Créé par Jacques Reppelin. Repris par Lucien Guilloux, Jo Montchaussé en 1979. 46 numéros + 4 variantes",
+            "info": "n°12",
+            "lat": "48.435162",
+            "lon": "2.630711",
+            "maj": "Novembre 2014",
+            "name": "Rouge ED-",
+            "nombre_de_voie": "51",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit212"
+          },
+          {
+            "cree": "1979",
+            "descriptif": "Abandonné",
+            "info": "n°7",
+            "lat": "",
+            "lon": "",
+            "maj": "Novembre 2014",
+            "name": "Noir ED+",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit294"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Pierre Mercier CAF. 28 numéros + 2 variantes. Repeint en 2014 par Georges Tsao et Victor Pinto.",
+            "info": "n°1",
+            "lat": "48.435406",
+            "lon": "2.632194",
+            "maj": "Novembre 2014",
+            "name": "Orange AD+",
+            "nombre_de_voie": "30",
+            "renove": "2014",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit213"
+          },
+          {
+            "cree": "1981",
+            "descriptif": "Créé par JP Lebaleur, C Pétrof, P Cairola en 1981. Dit Bleu « baltique ». 39 numéros + 5 variantes. Repeint en 2011 par Georges Tsao.",
+            "info": "n°13",
+            "lat": "48.43564",
+            "lon": "2.63146",
+            "maj": "Novembre 2014",
+            "name": "Bleu Baltique D+",
+            "nombre_de_voie": "44",
+            "renove": "2011",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit214"
+          },
+          {
+            "cree": "1957",
+            "descriptif": "Dit « fraise écrasée » Apremont - Solitude. Créé en 1957, CAF. 32 numéros + 8 variantes. Repeint en 2010 par Georges Tsao.",
+            "info": "n°4",
+            "lat": "48.43659",
+            "lon": "2.6341",
+            "maj": "Novembre 2014",
+            "name": "Fraise écrasée TD-",
+            "nombre_de_voie": "42",
+            "renove": "2010",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit215"
+          }
+        ],
+        "name": "Les Gorges d’Apremont",
+        "note": "Nombreux circuits tous styles et tout niveaux, et nombreux h.c. Vaste massif qui demanderaient peut être un découpage, Gorges Est, Gorges Ouest + Vallon Solitude, pour plus de clarté. En venant du (...)",
+        "url": "spip.php?rubrique149"
+      },
+      {
+        "descriptif": "6 circuits.",
+        "items": [
+          {
+            "cree": "1970",
+            "descriptif": "Créé en 1970 par André Schlub. Repris par Jean-Claude Beauregard. 27 numéros + 8 variantes",
+            "info": "n°1",
+            "lat": "48.43701",
+            "lon": "2.64368",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD",
+            "nombre_de_voie": "36",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit216"
+          },
+          {
+            "cree": "1969",
+            "descriptif": "Créé en 1969 par André Schlub. 23 numéros",
+            "info": "n°3",
+            "lat": "48.43475",
+            "lon": "2.63892",
+            "maj": "15 février",
+            "name": "Orange AD",
+            "nombre_de_voie": "23",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit218"
+          },
+          {
+            "cree": "1969",
+            "descriptif": "Créé en 1969 par André Schlub. Repris par Jean Pilot CAF. 35 numéros + 6 variantes. Repeint en 2011 par Georges Tsao.",
+            "info": "n°4",
+            "lat": "48.435705",
+            "lon": "2.645562",
+            "maj": "15 février",
+            "name": "Orange AD",
+            "nombre_de_voie": "41",
+            "renove": "Novembre 2013",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit219"
+          },
+          {
+            "cree": "1989",
+            "descriptif": "Créé en 1989 par Jean Pilot CAF. 28 numéros + 6 variantes. Repeint en 2012 par J. Guinot.",
+            "info": "n°6",
+            "lat": "48.43599",
+            "lon": "2.64671",
+            "maj": "15 février",
+            "name": "Bleu D+",
+            "nombre_de_voie": "34",
+            "renove": "Novembre 2011",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit221"
+          }
+        ],
+        "name": "Désert d’Apremont",
+        "note": "",
+        "url": "spip.php?rubrique152"
+      },
+      {
+        "descriptif": "3 circuits.",
+        "items": [
+          {
+            "cree": "1999",
+            "descriptif": "Créé en 1999 par J-Yves Derouck. 50 numéros + 2 variantes 1999 (en remplacement du Jaune PD n°2. Louis Louvel FSGT Ivry. Abandonné). Repeint en 2013 par Jean-Yves (...)",
+            "info": "n°4",
+            "lat": "48.43969",
+            "lon": "2.63459",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD",
+            "nombre_de_voie": "52",
+            "renove": "2013",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit222"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé en 1973 par Louis Louvel FSGT Ivry. Repris par J.Y Derouck en 1999. 45 numéros + 3 variantes. Repeint en 2014 par Jean-Yves Derouck.",
+            "info": "n°3",
+            "lat": "48.43809",
+            "lon": "2.63443",
+            "maj": "Novembre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "48",
+            "renove": "2014",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit223"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Jacques Batkin FSGT RSCMontreuil en.... Ce magnifique circuit à été repris par Jean-Yves Derouck. 50 numéros + 20 variantes. Repeint en 2013 par Jean-Yves (...)",
+            "info": "n°1",
+            "lat": "48.439652",
+            "lon": "2.629115",
+            "maj": "Novembre 2014",
+            "name": "Rouge TD",
+            "nombre_de_voie": "70",
+            "renove": "2013",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit224"
+          }
+        ],
+        "name": "Envers d’Apremont",
+        "note": "",
+        "url": "spip.php?rubrique153"
+      }
+    ],
+    "name": "Les Âpres Monts"
+  },
+  {
+    "items": [
+      {
+        "descriptif": "5 circuits",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Jean Pillot. Ce circuit ne passe pas dans la zone proche du parking, trop difficile, mais parcourt le reste du massif. Long et parfois fastidieux, avec beaucoup de dalles pour (...)",
+            "info": "n°4",
+            "lat": "",
+            "lon": "",
+            "maj": "Novembre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "56",
+            "renove": "2013",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit225"
+          },
+          {
+            "cree": "1955",
+            "descriptif": "Un circuit historique de Bleau, créé en 1955 par Pierre Nédellec et Lucien Hincelin, légèrement modifié en 1999 par Jean-Jacques Naëls. Un monument. 50 numéros et 7 variantes. Repeint en 2014 par J. (...)",
+            "info": "n°2",
+            "lat": "48.41003",
+            "lon": "2.59926",
+            "maj": "Novembre 2014",
+            "name": "Bleu D-",
+            "nombre_de_voie": "58",
+            "renove": "2014",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit226"
+          },
+          {
+            "cree": "1970",
+            "descriptif": "Créé par Jacques Batkin, revu par Antoine Melchior du GUMS et dernièrement par Jean-Jacques Naëls. Avec 62 passages depuis 2001, il parcourt l’ensemble du massif et propose des voies parfois fines en (...)",
+            "info": "n°1",
+            "lat": "48.410164",
+            "lon": "2.599366",
+            "maj": "Novembre 2014",
+            "name": "Rouge TD-",
+            "nombre_de_voie": "63",
+            "renove": "2014",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit227"
+          },
+          {
+            "cree": "1970",
+            "descriptif": "Créé à l’origine par Jacques Reppelin, a été modifié comme le rouge par les mêmes personnes. Un véritable répertoire de ce qui fut la haute difficulté dans les années soixante-dix. Fait pour le (...)",
+            "info": "n°3",
+            "lat": "48.410164",
+            "lon": "2.599366",
+            "maj": "Novembre 2014",
+            "name": "Blanc ED",
+            "nombre_de_voie": "52",
+            "renove": "2014",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit228"
+          }
+        ],
+        "name": "L’Isatis",
+        "note": "Les circuits de Hautes Plaines et Sablons sont à 10 mn à pied. Grâce à la chasse à court les premiers blocs sont à 30 secondes du parking. Contre toute logique et respect d’engagement et volonté (...)",
+        "url": "spip.php?rubrique154"
+      },
+      {
+        "descriptif": "2 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Jean Pilot CAF. 40 numéros 15 variantes. Repeint en 2010 par Georges Tsao.",
+            "info": "n°4",
+            "lat": "48.409303",
+            "lon": "2.596046",
+            "maj": "Novembre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "43",
+            "renove": "2010",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit232"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par G Clément tracé en brun, puis en rouge ce long circuit assez fastidieux a été remanié par Jean-Jacques Naëls en 1998. 22 numéros.",
+            "info": "n°1",
+            "lat": "48.409303",
+            "lon": "2.596046",
+            "maj": "Novembre 2014",
+            "name": "Rouge TD",
+            "nombre_de_voie": "26",
+            "renove": "2004",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit233"
+          }
+        ],
+        "name": "Sablons",
+        "note": "derrière l’Isatis à droite. bleu rouge entretenus et tous niveaux h.c. En suivant la route des Gorges de Franchard vers l’Ouest, toujours plus à l’Ouest : Mur des Carriers, Voltane, La (...)",
+        "url": "spip.php?rubrique162"
+      },
+      {
+        "descriptif": "3 circuits.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "n°2",
+            "lat": "48.408829",
+            "lon": "2.597402",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD",
+            "nombre_de_voie": "21",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit234"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "n°3",
+            "lat": "48.408859",
+            "lon": "2.598065",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD+",
+            "nombre_de_voie": "31",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit235"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Repeint en 2012 par Georges Tsao.",
+            "info": "n°5",
+            "lat": "48.4085",
+            "lon": "2.5982",
+            "maj": "Novembre 2014",
+            "name": "Orange AD+",
+            "nombre_de_voie": "52",
+            "renove": "2012",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit236"
+          }
+        ],
+        "name": "Hautes Plaines",
+        "note": "Derrière l’Isatis à gauche. plus tranquille et plus sympa pour petit niveau. jaune orange.",
+        "url": "spip.php?rubrique163"
+      },
+      {
+        "descriptif": "4 circuits",
+        "items": [
+          {
+            "cree": "1960",
+            "descriptif": "Créé en 1960 par un groupe du CAF animé par Jacques Meynieu, la \"cerise du débutant\", maintenant tracé en orange, propose un parcours facile (quelques passages dépassent le 3) d’environ 6 km. Les 75 (...)",
+            "info": "n°3",
+            "lat": "48.410275",
+            "lon": "2.612018",
+            "maj": "27 avril",
+            "name": "Parcours Montagne F+",
+            "nombre_de_voie": "1",
+            "renove": "1er mai",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit237"
+          },
+          {
+            "cree": "1956",
+            "descriptif": "Créé par Pierre Bontemps tracé en bleu en 1956. 18 numéros",
+            "info": "n°1",
+            "lat": "48.409957",
+            "lon": "2.610892",
+            "maj": "Novembre 2014",
+            "name": "Orange AD+",
+            "nombre_de_voie": "18",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit238"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Pierre Nédélec, André Schwartz, Monique Fédoroff. 30 numéros. Repeint en 2010 par Xavier Crété.",
+            "info": "n°4",
+            "lat": "48.409957",
+            "lon": "2.610892",
+            "maj": "Novembre 2014",
+            "name": "Rouge TD-",
+            "nombre_de_voie": "31",
+            "renove": "2010",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit239"
+          },
+          {
+            "cree": "1967",
+            "descriptif": "Créé par Patrick Cordier en 1967 et repris par Pierre Bouilloux en 1975 qui lui a adjoint quelques nouveautés, ce circuit n a pas changé depuis. 48 numéros + 13 variantes. Repeint en 2009 par Xavier (...)",
+            "info": "n°5",
+            "lat": "48.410241",
+            "lon": "2.610701",
+            "maj": "Novembre 2014",
+            "name": "Blanc ED",
+            "nombre_de_voie": "61",
+            "renove": "2009",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit240"
+          }
+        ],
+        "name": "Franchard Cuisinière",
+        "note": "Depuis la fermeture du parking l’accès se fait depuis le Pk de l’Isatis, ça dissuade et ça l’engorge. Le stationnement le long de la route très pratiqué est (...)",
+        "url": "spip.php?rubrique167"
+      },
+      {
+        "descriptif": "1 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Emmanuel Ratouis. 33 numéros + 3 variantes. Effacé.",
+            "info": "n°6",
+            "lat": "48.41061",
+            "lon": "2.60938",
+            "maj": "Novembre 2014",
+            "name": "Noir ED",
+            "nombre_de_voie": "37",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit241"
+          }
+        ],
+        "name": "Franchard Crête Sud",
+        "note": "crête au Sud de franchard cuisinière se poursuivant sur Meyer et au delà.",
+        "url": "spip.php?rubrique168"
+      },
+      {
+        "descriptif": "1 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Pascal Meyer FSGT RSCMontreuil. Ce circuit retord et magnifique est à l’abandon. 26 numéros",
+            "info": "n°2",
+            "lat": "48.40786",
+            "lon": "2.616083",
+            "maj": "Novembre 2014",
+            "name": "Rouge D+",
+            "nombre_de_voie": "27",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit242"
+          }
+        ],
+        "name": "Franchard Meyer",
+        "note": "Circuit rouge retord à l’abandon et plein de belles voies dures hc.",
+        "url": "spip.php?rubrique169"
+      },
+      {
+        "descriptif": "1 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "n°1",
+            "lat": "48.409453",
+            "lon": "2.630595",
+            "maj": "Novembre 2014",
+            "name": "Blanc Enfants E-",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit229"
+          }
+        ],
+        "name": "Franchard Ermitage",
+        "note": "",
+        "url": "spip.php?rubrique156"
+      },
+      {
+        "descriptif": "1 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "n°3",
+            "lat": "48.406332",
+            "lon": "2.628242",
+            "maj": "Novembre 2014",
+            "name": "Rouge",
+            "nombre_de_voie": "30",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit230"
+          }
+        ],
+        "name": "Franchard Raymond",
+        "note": "",
+        "url": "spip.php?rubrique157"
+      },
+      {
+        "descriptif": "1 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "n°1",
+            "lat": "",
+            "lon": "",
+            "maj": "Novembre 2014",
+            "name": "Jaune",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit231"
+          }
+        ],
+        "name": "Gorges du Houx Petit Paradis",
+        "note": "",
+        "url": "spip.php?rubrique158"
+      }
+    ],
+    "name": "Les Franchards"
+  },
+  {
+    "items": [
+      {
+        "descriptif": "3 circuits.",
+        "items": [
+          {
+            "cree": "1980",
+            "descriptif": "Créé à l’origine en 1980 par Daniel Dupuis, FSGT Ivry, repris par Oleg Sokolsy (cosiroc) en 1981, en 1997, puis en 2012, pour 1 circuit en 2 parties (jaune/orange), qui a été scindé en avril 2015, (...)",
+            "info": "n°1",
+            "lat": "48.397511",
+            "lon": "2.583908",
+            "maj": "16 mai",
+            "name": "Jaune PD",
+            "nombre_de_voie": "48",
+            "renove": "Novembre 2011",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit97"
+          },
+          {
+            "cree": "2015",
+            "descriptif": "\"Créé\" en avril 2015, suite à l’acceptation de la commission SNE de novembre 2014 de considérer l’ancien Jaune/Orange comme étant bien 2 circuits différents.",
+            "info": "n°2",
+            "lat": "",
+            "lon": "",
+            "maj": "16 mai",
+            "name": "Orange AD",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit297"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par André Schwartz , 48 passages. Repeint en 2011.",
+            "info": "n°3",
+            "lat": "48.397466",
+            "lon": "2.58523",
+            "maj": "Novembre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "56",
+            "renove": "2011",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit98"
+          },
+          {
+            "cree": "1967",
+            "descriptif": "Créé en 1967 par M et V Fédoroff, Alain Laloup, Pierre Nédélec, André Schwartz. 38 passages. Réfection par JJ Naels en 2014.",
+            "info": "n°1",
+            "lat": "48.397436",
+            "lon": "2.585261",
+            "maj": "26 mars",
+            "name": "Bleu D+",
+            "nombre_de_voie": "47",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit99"
+          }
+        ],
+        "name": "Corne-Biche, R. de Milly",
+        "note": "Massif intéressant et tranquille qui se mérite : 20 mn de marche. 3 circuits : jaune, orange et bleu , et nombreux hors circuits (dont des vieux points bleus de (...)",
+        "url": "spip.php?rubrique84"
+      },
+      {
+        "descriptif": "2 circuits.",
+        "items": [
+          {
+            "cree": "1957",
+            "descriptif": "Ancien rouge créé en 1957 par Yvon Le Tiec. Repris par Jean Pilot CAF qui lui a adjoint quelques lignes d’un vieux circuit vert abandonné",
+            "info": "n°1",
+            "lat": "48.393003",
+            "lon": "2.556658",
+            "maj": "Novembre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "50",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit100"
+          },
+          {
+            "cree": "2015",
+            "descriptif": "En principe cette piste sera créée au cours des prochaines semaines suite à l’accord accordé par l’ONF.",
+            "info": "validé",
+            "lat": "48.393401",
+            "lon": "2.555249",
+            "maj": "26 mars",
+            "name": "Orange AD sup",
+            "nombre_de_voie": "36",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit296"
+          }
+        ],
+        "name": "Drei Zinnen",
+        "note": "1 circuit orange (à l’étude) 1 circuit Bleu  (version 2014). Nombreux hors circuits du 5a  au 8a+.",
+        "url": "spip.php?rubrique86"
+      },
+      {
+        "descriptif": "2 circuits",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par A. et M. Bertigny. Repris par Oleg Sokolsky. Repeint en 2012 par Léo Drevet.",
+            "info": "n°1",
+            "lat": "48.391673",
+            "lon": "2.56152",
+            "maj": "5 janvier",
+            "name": "Jaune PD+",
+            "nombre_de_voie": "59",
+            "renove": "2012",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit101"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par J-Pierre Bertigny. Repris par Oleg Sokolsky",
+            "info": "n°2",
+            "lat": "48.39177",
+            "lon": "2.562035",
+            "maj": "5 janvier",
+            "name": "Bleu D+",
+            "nombre_de_voie": "68",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit102"
+          }
+        ],
+        "name": "Rocher de la Reine",
+        "note": "2 circuits et nombreux hors circuits sur le versant sud, et sur le versant nord, soit à proximité immédiate (Hotline), un peu plus loin (Diable Rouge), plus loin, petite Reine, ou beaucoup plus (...)",
+        "url": "spip.php?rubrique87"
+      },
+      {
+        "descriptif": "3 circuits.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par André Schwartz",
+            "info": "n°3",
+            "lat": "48.39103",
+            "lon": "2.56294",
+            "maj": "Novembre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "48",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit103"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par André Schwartz",
+            "info": "n°4",
+            "lat": "48.39103",
+            "lon": "2.56294",
+            "maj": "Novembre 2014",
+            "name": "Bleu D+",
+            "nombre_de_voie": "35",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit104"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Alain Vinouze et Arnaud Ansard. Repris par Grégoire Clouzeau en intégrant quelques nouveautés",
+            "info": "n°5",
+            "lat": "48.39123",
+            "lon": "2.56186",
+            "maj": "Novembre 2014",
+            "name": "Rouge ED-",
+            "nombre_de_voie": "56",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit105"
+          }
+        ],
+        "name": "Bois Rond",
+        "note": "3 circuits et nombreux hors circuits. Massif paisible pour une pratique familiale.",
+        "url": "spip.php?rubrique91"
+      },
+      {
+        "descriptif": "6 circuits.",
+        "items": [
+          {
+            "cree": "1995",
+            "descriptif": "Créé par A.Vinouse, F.Florès-Garcia, F.Beaujard en 1995 pour des enfants âgés de 6 à 9 ans.",
+            "info": "n°7",
+            "lat": "48.392568",
+            "lon": "2.549115",
+            "maj": "Novembre 2014",
+            "name": "Blanc Enfants E-",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit89"
+          },
+          {
+            "cree": "1982",
+            "descriptif": "Créé par Michel Coquard en 1982 pour des enfants âgés de 8 à 12 ans.",
+            "info": "n°5",
+            "lat": "48.39167",
+            "lon": "2.54848",
+            "maj": "Novembre 2014",
+            "name": "Blanc Enfants E",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit90"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par la FSGT Villeneuve-le-Roi",
+            "info": "n°3",
+            "lat": "48.39165",
+            "lon": "2.54894",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD-",
+            "nombre_de_voie": "48",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit91"
+          },
+          {
+            "cree": "1966",
+            "descriptif": "Créé en 1966 par M et V Fédoroff, A. Laloup, P. Nédelec, A. Schwartz. Repeint en 2011",
+            "info": "n°2",
+            "lat": "48.391902",
+            "lon": "2.54954",
+            "maj": "Novembre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "43",
+            "renove": "2011",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit92"
+          },
+          {
+            "cree": "1966",
+            "descriptif": "Créé en 1966 par M et V Fédoroff, A. Laloup, P. Nédelec, A. Schwartz. Repeint en 2011",
+            "info": "n°1",
+            "lat": "48.391902",
+            "lon": "2.54954",
+            "maj": "Novembre 2014",
+            "name": "Bleu D+",
+            "nombre_de_voie": "59",
+            "renove": "2011",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit93"
+          },
+          {
+            "cree": "1991",
+            "descriptif": "Créé par Pascal Etienne en 1991 avec quelques voies classiques ainsi que plusieurs « bis » du bleu, et de nouveaux passages. Ce circuit a été revu par l’auteur en (...)",
+            "info": "n°6",
+            "lat": "48.3917",
+            "lon": "2.54895",
+            "maj": "19 mars",
+            "name": "Rouge TD+",
+            "nombre_de_voie": "41",
+            "renove": "Novembre 2005",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit94"
+          }
+        ],
+        "name": "Canche aux Merciers",
+        "note": "Massif très fréquenté. La petite marche pour rejoindre le massif évite que celui ci soit fréquenté par des touristes de passage. Le massif reste donc assez propre en général, grâce à la contribution de (...)",
+        "url": "spip.php?rubrique76"
+      },
+      {
+        "descriptif": "1 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Gilles et Noël Rotillon (ASL Ste Geneviève) et Michel Nicolaus (U.S.Ivry). Repris par Jean-Jacques en 1997 en le modifiant notablement. Repeint en 2006.Très beau circuit parfois un peu expo, (...)",
+            "info": "n°2",
+            "lat": "48.39465",
+            "lon": "2.548",
+            "maj": "Novembre 2014",
+            "name": "Bleu D+",
+            "nombre_de_voie": "34",
+            "renove": "2006",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit95"
+          }
+        ],
+        "name": "Rocher du Télégraphe",
+        "note": "peu fréquenté.",
+        "url": "spip.php?rubrique78"
+      },
+      {
+        "descriptif": "1 circuit.",
+        "items": [
+          {
+            "cree": "1997",
+            "descriptif": "Créé par Michel Coquard en 1997 pour des enfants âgés de 4 à 7 ans. Un joli bloc dans le vallon au-dessus pour les grands. Repeint en 2011 par M. Laroche.",
+            "info": "n°1",
+            "lat": "48.396751",
+            "lon": "2.544995",
+            "maj": "Novembre 2014",
+            "name": "Blanc Enfants E-",
+            "nombre_de_voie": "0",
+            "renove": "2011",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit96"
+          }
+        ],
+        "name": "La Feuillardière",
+        "note": "Un circuit enfants créé en 1997 par Michel Coquard pour des enfants âgés de 4 à 7 ans. Un joli bloc dans le vallon au-dessus pour les grands.",
+        "url": "spip.php?rubrique79"
+      }
+    ],
+    "name": "Trois Pignons Est"
+  },
+  {
+    "items": [
+      {
+        "descriptif": "2 circuits",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "n°1",
+            "lat": "48.39883",
+            "lon": "2.51921",
+            "maj": "Novembre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "33",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit106"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "n°2",
+            "lat": "48.39883",
+            "lon": "2.51921",
+            "maj": "Novembre 2014",
+            "name": "Rouge TD",
+            "nombre_de_voie": "38",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit107"
+          }
+        ],
+        "name": "Gorge aux Châts",
+        "note": "Pk problématique.massif intéressant assez fréquenté.circuit bleu et rouge.",
+        "url": "spip.php?rubrique92"
+      },
+      {
+        "descriptif": "2 circuits",
+        "items": [
+          {
+            "cree": "2014",
+            "descriptif": "Créé par Oleg Sokolsky en 2014 (41 passages numérotés, \"le 26.2 ayant été ajouté alors que la numérotation était peinte (ce qui fonctionne bien lorsque l’on ajoute une sortie sur une autoroute devrait (...)",
+            "info": "n°2",
+            "lat": "48.393437",
+            "lon": "2.515072",
+            "maj": "5 janvier",
+            "name": "Jaune PD",
+            "nombre_de_voie": "39",
+            "renove": "2014",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit123"
+          },
+          {
+            "cree": "1977",
+            "descriptif": "Créé en 1977 en jaune par Oleg Sokolsky, remaniés en 2014 avec la création du jaune. 35 n°",
+            "info": "n°1",
+            "lat": "48.393164",
+            "lon": "2.515145",
+            "maj": "5 janvier",
+            "name": "Orange AD+",
+            "nombre_de_voie": "11",
+            "renove": "2014",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit124"
+          }
+        ],
+        "name": "Justice de Chambergeot",
+        "note": "Petit massif tranquille.",
+        "url": "spip.php?rubrique102"
+      },
+      {
+        "descriptif": "2 circuits",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Jacques Superbie. Repris par Oleg Sokolsky. Repeint en 2012. 48 passages",
+            "info": "n°1",
+            "lat": "48.393164",
+            "lon": "2.515144",
+            "maj": "5 janvier",
+            "name": "Jaune PD",
+            "nombre_de_voie": "104",
+            "renove": "2012",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit125"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Repeint en 2012 par Oleg Sokolsky.",
+            "info": "n°2",
+            "lat": "48.389567",
+            "lon": "2.531237",
+            "maj": "Novembre 2014",
+            "name": "Orange AD+",
+            "nombre_de_voie": "0",
+            "renove": "2012",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit126"
+          }
+        ],
+        "name": "Pignon Poteau",
+        "note": "petit massif tranquille pouvant convenir à des débutants. circuits repeints en 2011. Tracé par Jacques Superbie durant les années 70, et modifié à plusieurs reprises par Oleg Sokolsky, l’ancien (...)",
+        "url": "spip.php?rubrique103"
+      },
+      {
+        "descriptif": "1 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Michel Gaillard Christian Gaillard FSGT. Repris par Oleg Sokolsky CAF. Repeint en 2012 par Christian Charreau. 40 passages",
+            "info": "n°2",
+            "lat": "",
+            "lon": "",
+            "maj": "5 janvier",
+            "name": "Orange AD",
+            "nombre_de_voie": "50",
+            "renove": "2012",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit127"
+          }
+        ],
+        "name": "Gros Sablons Nord",
+        "note": "circuit orange et hc (notamment flèches noires discrètes)",
+        "url": "spip.php?rubrique104"
+      },
+      {
+        "descriptif": "4 circuits",
+        "items": [
+          {
+            "cree": "1958",
+            "descriptif": "Créé en 1958 par Pierre Nedelec. Repris par Oleg Sokolsky CAF. 73 passages + 26 variantes.",
+            "info": "n°1",
+            "lat": "48.386468",
+            "lon": "2.535905",
+            "maj": "5 janvier",
+            "name": "Orange AD+",
+            "nombre_de_voie": "99",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit128"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Pascal Etienne FSGT Ste Geneviève. Repris par Bernard Forest et Michel Guillière. Repris par Jean-Jacques Naëls en 2014.",
+            "info": "n°4",
+            "lat": "48.384316",
+            "lon": "2.538249",
+            "maj": "Novembre 2014",
+            "name": "Bleu D+",
+            "nombre_de_voie": "43",
+            "renove": "2014",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit129"
+          },
+          {
+            "cree": "1972",
+            "descriptif": "Créé par Jacques Olivet en 1972 35 numéros + 4 variantes",
+            "info": "n°3",
+            "lat": "48.384316",
+            "lon": "2.538249",
+            "maj": "Novembre 2014",
+            "name": "Noir ED-",
+            "nombre_de_voie": "39",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit130"
+          }
+        ],
+        "name": "Gros Sablons",
+        "note": "superbes hauts blocs décourageant la foule.",
+        "url": "spip.php?rubrique105"
+      },
+      {
+        "descriptif": "5 circuits",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Louis Louvel FSGT Ivry. 54 passages",
+            "info": "n°4",
+            "lat": "48.386386",
+            "lon": "2.53208",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD+",
+            "nombre_de_voie": "54",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit131"
+          },
+          {
+            "cree": "1978",
+            "descriptif": "Créé par Laurent Maine Frédéric Dulphy GMM, créé en 1978. Repeint en 2014 par  Laurent Maine. 40 passages",
+            "info": "n°5",
+            "lat": "48.385456",
+            "lon": "2.527794",
+            "maj": "Novembre 2014",
+            "name": "Orange AD+",
+            "nombre_de_voie": "45",
+            "renove": "2014",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit132"
+          },
+          {
+            "cree": "1955",
+            "descriptif": "Créé en 1955 par Pierre Nédelec. 38 passages + 6 variantes",
+            "info": "n°1",
+            "lat": "48.384685",
+            "lon": "2.531113",
+            "maj": "Novembre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "44",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit133"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par M et V Fédoroff, Alain Laloup, Pierre Nédelec, André Schwartz Initialement bleu, il a été complété par Oleg Sokolsky CAF. 47 numéros + 12 variantes",
+            "info": "n°2",
+            "lat": "48.386593",
+            "lon": "2.530922",
+            "maj": "5 janvier",
+            "name": "Rouge TD-",
+            "nombre_de_voie": "59",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit134"
+          },
+          {
+            "cree": "1970",
+            "descriptif": "Créé par Patrick Cordier dans les années 70, et modifié par Jo Mauchaussé. 37 passages + 12 variantes",
+            "info": "n°3",
+            "lat": "48.384705",
+            "lon": "2.530814",
+            "maj": "Novembre 2014",
+            "name": "Blanc ED-",
+            "nombre_de_voie": "49",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit135"
+          }
+        ],
+        "name": "Pignon  95.2",
+        "note": "Site très populaire. La longue marche ne décourage pas. Une opération contre l’érosion avait été mené avec succès dans les années 80, ayant permis de stabiliser le plus critique. Mais l’érosion continu (...)",
+        "url": "spip.php?rubrique106"
+      },
+      {
+        "descriptif": "2 circuits",
+        "items": [
+          {
+            "cree": "1970",
+            "descriptif": "Créé en 1970 par Jacques Drouard FSGT Levalois il a été prolongé par JC Beauregard et M Théate AFF. 42 passages",
+            "info": "n°1",
+            "lat": "48.383073",
+            "lon": "2.52876",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD",
+            "nombre_de_voie": "46",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit136"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Jacques Drouart FSGT Levalois. Repris par JC Beauregard et Michel Théate. 37 numéros + 2 variantes",
+            "info": "n°2",
+            "lat": "48.383119",
+            "lon": "2.526094",
+            "maj": "Novembre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "39",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit137"
+          }
+        ],
+        "name": "Rocher des Potêts",
+        "note": "Très agréable petit massif. Le circuit bleu de Jean des Vignes est à 5 mn.",
+        "url": "spip.php?rubrique107"
+      },
+      {
+        "descriptif": "1 circuit.",
+        "items": [
+          {
+            "cree": "1974",
+            "descriptif": "Créé en 1974 par R Dadone, R Mizrahi, J et Y Tugaye, L Muguet, Y Rabeyroux. 35 passages",
+            "info": "n°1",
+            "lat": "48.3826",
+            "lon": "2.5232",
+            "maj": "Novembre 2014",
+            "name": "Bleu D+",
+            "nombre_de_voie": "47",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit138"
+          }
+        ],
+        "name": "Jean des Vignes",
+        "note": "Massif tranquille ne comportant qu’un beau circuit bleu, et pas mal de h.c. Le Rocher des Potêts est juste en face, avec ses circuits jaune et orange.",
+        "url": "spip.php?rubrique108"
+      },
+      {
+        "descriptif": "3 circuits.",
+        "items": [
+          {
+            "cree": "2004",
+            "descriptif": "Créé par Jean Pilot, Hugues Canal CAF 2004. repeints en 2014 par Antoine Melchior",
+            "info": "n°1",
+            "lat": "48.379821",
+            "lon": "2.504582",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD+",
+            "nombre_de_voie": "48",
+            "renove": "2014",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit108"
+          },
+          {
+            "cree": "2004",
+            "descriptif": "Créé par Jean Pilot, Hugues Canal CAF 2004. repeints en 2014 par Antoine Melchior et Christian",
+            "info": "n°2",
+            "lat": "48.379693",
+            "lon": "2.504427",
+            "maj": "Novembre 2014",
+            "name": "Orange AD+",
+            "nombre_de_voie": "48",
+            "renove": "2014",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit109"
+          },
+          {
+            "cree": "2004",
+            "descriptif": "Créé par Jean Pilot, Hugues Canal CAF 2004. repeints en 2014 par Christian Charreau.",
+            "info": "n°3",
+            "lat": "48.379693",
+            "lon": "2.504427",
+            "maj": "Novembre 2014",
+            "name": "Rouge TD",
+            "nombre_de_voie": "39",
+            "renove": "2014",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit110"
+          }
+        ],
+        "name": "La Ségognole",
+        "note": "Circuits jaune orange rouge , manque de voies dures mais la roche aux oiseaux n’est pas loin. Circuits repeints en 2014 par Antoine Melchior (jaune et orange) et Christian (orange et (...)",
+        "url": "spip.php?rubrique95"
+      },
+      {
+        "descriptif": "5 circuits",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Alain Vinouse, F Florès-Garcia. Ce circuit serait à retracer plus proprement",
+            "info": "n°4",
+            "lat": "48.374561",
+            "lon": "2.512414",
+            "maj": "Novembre 2014",
+            "name": "Blanc Enfants E",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit111"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par G, F et N Rotillon FSGT Ste Geneviève. Repris par O.Sokolsky CAF et F.Monchaussé. 31 n° + 6 variantes",
+            "info": "n°2",
+            "lat": "48.374311",
+            "lon": "2.514405",
+            "maj": "5 janvier",
+            "name": "Jaune PD+",
+            "nombre_de_voie": "37",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit112"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Gilles et Noël Rotillon, Daniel Badaroux FSGT Ste Geneviève. Repris par B Forest qui la rallongé de 10 numéros. 46 passages",
+            "info": "n°1",
+            "lat": "48.375147",
+            "lon": "2.513443",
+            "maj": "Novembre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "51",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit113"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par G et N Rotillon, Daniel Badaroux, JL Rapp, R Claveau FSGT Ste Geneviève. 34 n°.",
+            "info": "n°3",
+            "lat": "48.374311",
+            "lon": "2.514405",
+            "maj": "Novembre 2014",
+            "name": "Rouge TD+",
+            "nombre_de_voie": "48",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit114"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Dit « l’ amanite ». Créé par Jo Monchaussé. Non retracé. Invalidé.",
+            "info": "",
+            "lat": "",
+            "lon": "",
+            "maj": "Novembre 2014",
+            "name": "Amanite ED",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "Non tracé",
+            "url": "spip.php?circuit115"
+          }
+        ],
+        "name": "Roche aux Sabots",
+        "note": "Circuits enfants, jaune, bleu, rouge, amanite, et h.c.,  l’orange Nord du Pignon 91.1 est à 300 m. Massif trés populaire et patiné, le jaune surtout. Ne grimpez pas en basket avec du sable sous les (...)",
+        "url": "spip.php?rubrique98"
+      },
+      {
+        "descriptif": "4 circuits",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Oleg Sokolsky CAF. 50 n°. Repeint en 2011 par Oleg Sokolosky.",
+            "info": "n°5",
+            "lat": "48.377776",
+            "lon": "2.521189",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD+",
+            "nombre_de_voie": "71",
+            "renove": "2011",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit116"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Robert Claveau, Hervé Shaki, Gilles et Noël Rotillon FSGT Ste Geneviève. 37 n° + 14 variantes. Le départ de l’orange n°4 est proche de la Roche aux Sabots et se déroule sur le flanc Nord-Ouest du (...)",
+            "info": "n°4",
+            "lat": "48.37605",
+            "lon": "2.516615",
+            "maj": "Novembre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "51",
+            "renove": "2014",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit117"
+          },
+          {
+            "cree": "1966",
+            "descriptif": "Créé en 1966 par Monique Fédoroff Vladimir Fédoroff, Alain Laloup, Pierre Nédelec, André Schwartz. 47 n° + 3 variantes. Repeint en 2011 par Oleg Sokolosky.",
+            "info": "n°2",
+            "lat": "48.377866",
+            "lon": "2.521111",
+            "maj": "Novembre 2014",
+            "name": "Orange AD+",
+            "nombre_de_voie": "50",
+            "renove": "2011",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit118"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Monique Fédoroff Vladimir Fédoroff, Alain Laloup, Pierre Nédelec, André Schwartz. 34 n° + 24 variantes",
+            "info": "n°1",
+            "lat": "48.377501",
+            "lon": "2.519742",
+            "maj": "Novembre 2014",
+            "name": "Rouge TD-",
+            "nombre_de_voie": "58",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit119"
+          }
+        ],
+        "name": "Pignon 91.1",
+        "note": "Le départ de l’orange n°4 est proche de la Roche aux Sabots Sud et se déroule sur le flanc Nord-Ouest du 91.1. Les jaune, orange, bleu et rouge sont sur le (...)",
+        "url": "spip.php?rubrique100"
+      },
+      {
+        "descriptif": "3 circuits.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Michel Nicolaus, Daniel Dupuis FSGT Ivry. Entretenu par 4+ et Ivry en 1991. 59 n°. Repeint en 2014 par Bernard Commiot, Charles Deléglise, Jean-Yves Derouck, P. (...)",
+            "info": "n°3",
+            "lat": "48.37558",
+            "lon": "2.522945",
+            "maj": "Novembre 2014",
+            "name": "Jaune AD-",
+            "nombre_de_voie": "58",
+            "renove": "2014",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit120"
+          },
+          {
+            "cree": "1987",
+            "descriptif": "Créé par Antoine Melchior GUMS. Reprise de deux circuits créés pour l’ un par P Granier et P Nédelec en jaune et l’ autre créé par Bernard Canceill en vert en 1987. 50 n° + 11 (...)",
+            "info": "n°1",
+            "lat": "48.37894",
+            "lon": "2.5276",
+            "maj": "Novembre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "60",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit121"
+          },
+          {
+            "cree": "1988",
+            "descriptif": "Créé par JP Knock, P et M Doyen, D Courteix FSGT Choisy le roi en 1988. 30 n° + 3 variantes. Simplifié et prolongé par J.Y. Derouck & friends durant Juillet (...)",
+            "info": "n°4",
+            "lat": "48.37609",
+            "lon": "2.522639",
+            "maj": "24 août",
+            "name": "Rouge TD+",
+            "nombre_de_voie": "27",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit122"
+          }
+        ],
+        "name": "Cul de Chien",
+        "note": "Sa plage, son bilboquet, ses toits..",
+        "url": "spip.php?rubrique101"
+      }
+    ],
+    "name": "Trois Pignons Ouest"
+  },
+  {
+    "items": [
+      {
+        "descriptif": "3 circuits.",
+        "items": [
+          {
+            "cree": "1980",
+            "descriptif": "Créé par Françoise Queyrut, Jean-Jacques Naëls FSGT Bagnolet en 1980. Initialement jaune, ce circuit a été révisé en 2003. Repeint en 2013 par Jean-Jacques (...)",
+            "info": "n°2",
+            "lat": "48.363866",
+            "lon": "2.526206",
+            "maj": "Novembre 2014",
+            "name": "Orange AD-",
+            "nombre_de_voie": "31",
+            "renove": "2013",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit139"
+          },
+          {
+            "cree": "1995",
+            "descriptif": "Créé par J-Jacques Naëls en 1995, lors de la réfection du circuit rouge et du circuit jaune qui proposait alors de nombreux « bis ». Repeint en 2013 par Jean-Jacques (...)",
+            "info": "n°3",
+            "lat": "48.363866",
+            "lon": "2.526206",
+            "maj": "Novembre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "20",
+            "renove": "2013",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit140"
+          },
+          {
+            "cree": "1979",
+            "descriptif": "Créé par Philippe Berqer, J-Jacques Naëls FSGT Bagnolet en 1979. Ce circuit proposait à l origine 34 passages c est vu modifié pour permettre son homogénéisation et la création du Bleu - n°3. Repeints (...)",
+            "info": "n°1",
+            "lat": "48.363866",
+            "lon": "2.52613",
+            "maj": "Novembre 2014",
+            "name": "Rouge TD+",
+            "nombre_de_voie": "21",
+            "renove": "2013",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit141"
+          }
+        ],
+        "name": "Rocher Guichot",
+        "note": "",
+        "url": "spip.php?rubrique110"
+      },
+      {
+        "descriptif": "1 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Jacques Meynieux CAF. Repris par Antoine Melchior GUMS. 54 passages",
+            "info": "n°1",
+            "lat": "48.363876",
+            "lon": "2.533343",
+            "maj": "Novembre 2014",
+            "name": "Orange AD+",
+            "nombre_de_voie": "75",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit150"
+          }
+        ],
+        "name": "R. de la Cathédrale",
+        "note": "",
+        "url": "spip.php?rubrique114"
+      },
+      {
+        "descriptif": "4 circuits",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Repeint en 2011.",
+            "info": "n°4",
+            "lat": "48.367398",
+            "lon": "2.532713",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD+",
+            "nombre_de_voie": "36",
+            "renove": "2011",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit151"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par J Meynieux, G Téoulé CAF. Repris par Antoine Melchior GUMS. 40 passages + 7 variantes",
+            "info": "n°2",
+            "lat": "48.366917",
+            "lon": "2.534183",
+            "maj": "Novembre 2014",
+            "name": "Orange AD+",
+            "nombre_de_voie": "48",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit152"
+          },
+          {
+            "cree": "1965",
+            "descriptif": "Créé en 1965 par M et V Fédoroff, Alain Laloup, Pierre Nédelec, André Schwartz. 38 passages + 12 variantes",
+            "info": "n°1",
+            "lat": "48.367398",
+            "lon": "2.532713",
+            "maj": "Novembre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "51",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit153"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Jean Pierre Nogier, Régis Guillaume. Repris par Antoine Melchior GUMS qui lui a adjoint de nombreuses nouveautés. 48 passages + 10 variantes",
+            "info": "n°3",
+            "lat": "48.367954",
+            "lon": "2.532933",
+            "maj": "Novembre 2014",
+            "name": "Rouge TD+",
+            "nombre_de_voie": "57",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit154"
+          }
+        ],
+        "name": "Vallée de la Mée -  Potala",
+        "note": "",
+        "url": "spip.php?rubrique115"
+      },
+      {
+        "descriptif": "1 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Jacques Meynieux Repris par Antoine Melchior GUMS. 70 numéros",
+            "info": "n°1",
+            "lat": "48.369224",
+            "lon": "2.534991",
+            "maj": "Novembre 2014",
+            "name": "Orange D-",
+            "nombre_de_voie": "70",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit155"
+          }
+        ],
+        "name": "Grande Montagne",
+        "note": "",
+        "url": "spip.php?rubrique116"
+      },
+      {
+        "descriptif": "4 circuits",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Jean Touchanteau GUMS. Repris par Pierre Bontemps CAF. 14 numéros",
+            "info": "n°3",
+            "lat": "48.377511",
+            "lon": "2.535052",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD",
+            "nombre_de_voie": "14",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit156"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par D. Cazenave à partir d’un vieux circuit mauve. Repris par Jean Pilot et Hugues Canal. 40 numéros",
+            "info": "n°4",
+            "lat": "48.376897",
+            "lon": "2.536438",
+            "maj": "Novembre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "44",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit157"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Pierre Nédelec Initialement Jaune orangé. 53 numéros + 12 variantes",
+            "info": "n°1",
+            "lat": "48.376889",
+            "lon": "2.536411",
+            "maj": "Novembre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "66",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit158"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Rouge TD+ n°2. U.S.Ivry, J-Marie Ribault, Serge Martinet, Michel Nicolaus, Claude Vilotte. 34 numéros + 2 variantes",
+            "info": "n°2",
+            "lat": "48.376897",
+            "lon": "2.536438",
+            "maj": "Novembre 2014",
+            "name": "Rouge TD+",
+            "nombre_de_voie": "36",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit159"
+          }
+        ],
+        "name": "Rocher Fin",
+        "note": "",
+        "url": "spip.php?rubrique118"
+      },
+      {
+        "descriptif": "2 circuits",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Louis Louvel Rénové par le GM-TCF. 24 passages. Repeint en 2013 par Christian Charreau.",
+            "info": "n°2",
+            "lat": "48.371835",
+            "lon": "2.529801",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD+",
+            "nombre_de_voie": "26",
+            "renove": "2013",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit160"
+          },
+          {
+            "cree": "1964",
+            "descriptif": "Ex pist’H. Créé par le Cercle Olympique Parisien du 19° (COP 19°, gpe FSGT émanant de l’ESC 11° devenu par la suite groupe montagne de l’adret). Yvonne et Gérard Ardiot, Gérard Galleyran, Louis (...)",
+            "info": "n°1",
+            "lat": "48.371489",
+            "lon": "2.528701",
+            "maj": "Novembre 2014",
+            "name": "Bleu TD-",
+            "nombre_de_voie": "54",
+            "renove": "2013",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit161"
+          }
+        ],
+        "name": "Rocher du Général",
+        "note": "",
+        "url": "spip.php?rubrique119"
+      },
+      {
+        "descriptif": "2 circuits",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Gilles, Françoise, et Noël Rotillon FSGT Ste Geneviève. Repris par J.C Beauregard en 1996. 39 numéros.",
+            "info": "n°1",
+            "lat": "48.371152",
+            "lon": "2.532912",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD",
+            "nombre_de_voie": "39",
+            "renove": "1996",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit162"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Sylvie Richard, A. Bau, F. Dulphy, L. Maine, S. Zaegel. 23 numéros + 1 variante",
+            "info": "n°2",
+            "lat": "48.371152",
+            "lon": "2.532912",
+            "maj": "Novembre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "27",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit163"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Jean-Marc Blanche, Jacques et J-Pierre Prades FSGT Saut les Chartreux. Le circuit original de couleur vert a été grandement modifié par Sylvie Richard, A. Bau, F. Dulphy, L. Maine, S. Zaegel. (...)",
+            "info": "n°3",
+            "lat": "",
+            "lon": "",
+            "maj": "Novembre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "26",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit164"
+          }
+        ],
+        "name": "Diplodocus",
+        "note": "",
+        "url": "spip.php?rubrique120"
+      },
+      {
+        "descriptif": "7 circuits.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Alain Vinouse, F Florès-Garcia. Dans une Propriété Privée, il ne doit plus être tracé.",
+            "info": ".",
+            "lat": "48.361012",
+            "lon": "2.529763",
+            "maj": "Décembre 2014",
+            "name": "Blanc Enfants E",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "Dans Propriété Privé Interdit",
+            "url": "spip.php?circuit145"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Michel Nicolaus FSGT d lvry 54 passages.Repeint en 2014 par Daniel Vaubaillon et JJ Naels.",
+            "info": "n°1",
+            "lat": "48.36033",
+            "lon": "2.53586",
+            "maj": "Décembre 2014",
+            "name": "Jaune PD-",
+            "nombre_de_voie": "59",
+            "renove": "2014",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit146"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Jacques Meynieu Repris par Antoine Melchior GUMS. 61 n° avec 23 variantes. Réfection en 2010 par Antoine Melchior. Réfection en juin 2015 par Georges Tsao 61 n°, 15 (...)",
+            "info": "n°3",
+            "lat": "48.36045",
+            "lon": "2.53607",
+            "maj": "4 juillet",
+            "name": "Orange AD+",
+            "nombre_de_voie": "78",
+            "renove": "1er juillet",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit147"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Regroupant deux anciens circuits, l’un blanc, l’autre orange/noir (AD n°4) ce circuit a été tracé par Antoine Melchior GUMS, il comportait 86 voies numérotées. Il a été repris au printemps 2014 par (...)",
+            "info": "n°2",
+            "lat": "48.36048",
+            "lon": "2.53554",
+            "maj": "4 juillet",
+            "name": "Orange AD+",
+            "nombre_de_voie": "86",
+            "renove": "Novembre 2009",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit142"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Michel Coquard FSGT Ivry",
+            "info": "n°8",
+            "lat": "48.360193",
+            "lon": "2.535919",
+            "maj": "Novembre 2014",
+            "name": "Blanc Enfants E",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit144"
+          },
+          {
+            "cree": "1955",
+            "descriptif": "Créé par M Deschenaux créé en 1955, il fut prolongé par Pierre Nédelec et repris et modifié par Jean-Jacques Naëls, tout en conservant son esprit initial.  Repeint en 2014 par Jean-Jacques (...)",
+            "info": "n°5",
+            "lat": "48.36156",
+            "lon": "2.53639",
+            "maj": "Décembre 2014",
+            "name": "Bleu Ciel D",
+            "nombre_de_voie": "60",
+            "renove": "2014",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit148"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé en 1968 par Gilles Rotillon Noël Rotillon, P. Lhéry, Y. Méry, FSGT Ste Geneviève. Il fut amendé par Jean-Jacques Naëls, en l’allégeant de nombreux passages fastidieux et en lui apportant des (...)",
+            "info": "n°6",
+            "lat": "48.36048",
+            "lon": "2.53554",
+            "maj": "Décembre 2014",
+            "name": "Bleu D+",
+            "nombre_de_voie": "34",
+            "renove": "2014",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit143"
+          },
+          {
+            "cree": "1973",
+            "descriptif": "Créé en 1973 par Gilles et Noël Rotillon, Jean-Luc Rapp, Robert Claveau, FSGT Ste Geneviève avec l’aide parfois du burin. Repris, revu et complété par Jean-Jacques Naëls et Yann Bruneau en 2004. (...)",
+            "info": "n°7",
+            "lat": "48.36156",
+            "lon": "2.53639",
+            "maj": "Décembre 2014",
+            "name": "Rouge TD+",
+            "nombre_de_voie": "50",
+            "renove": "2011",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit149"
+          }
+        ],
+        "name": "J.A. Martin",
+        "note": "Plage de sable pour les enfants et voies de tous niveaux (mais peu à proximité de la plage). Site assez fréquenté avec conséquences sur l’érosion ayant nécessité intervention de l’ONF : gradine en (...)",
+        "url": "spip.php?rubrique111"
+      }
+    ],
+    "name": "Trois Pignons Sud"
+  },
+  {
+    "items": [
+      {
+        "descriptif": "1 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Beau ! mais effacé, à l’abandon.",
+            "info": "n°1",
+            "lat": "48.380113",
+            "lon": "2.668329",
+            "maj": "Novembre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "29",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit246"
+          }
+        ],
+        "name": "R. des Demoiselles",
+        "note": "La belle forêt et les beaux blocs de Fontainebleau. Massif tranquille.",
+        "url": "spip.php?rubrique180"
+      },
+      {
+        "descriptif": "3 circuits.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Stéphane Hamon. D’abord peint en bleu, étant plûtot AD, il a été repeint en Orange en juin 2015 par le club FFME Vertical plus et le Caf de Fontainebleau Il se déroule le long du sentier bleu (...)",
+            "info": "n°4",
+            "lat": "48.353568",
+            "lon": "2.730169",
+            "maj": "26 juin",
+            "name": "Orange AD",
+            "nombre_de_voie": "0",
+            "renove": "10 juin",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit243"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Alain Filippi. Repris par Bernard Forest. Entretenu par Michel Grillére. 34 numéros.. Repeint en 2010 par Michel Grillère.",
+            "info": "n°3",
+            "lat": "48.353766",
+            "lon": "2.735098",
+            "maj": "Novembre 2014",
+            "name": "Rouge TD",
+            "nombre_de_voie": "35",
+            "renove": "2010",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit244"
+          }
+        ],
+        "name": "Restant du Long Rocher",
+        "note": "Superbe massif bien exploité mais qui reste nature, sauvage. (Vert AD n°2 effacé)",
+        "url": "spip.php?rubrique172"
+      },
+      {
+        "descriptif": "1 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par ? Entretenu en 1997 par 4+, Vitry. En 2012 par Georges Tsao.",
+            "info": "n°1",
+            "lat": "48.358169",
+            "lon": "2.73278",
+            "maj": "Novembre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "39",
+            "renove": "2012",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit245"
+          }
+        ],
+        "name": "Restant du Long Rocher Nord",
+        "note": "",
+        "url": "spip.php?rubrique173"
+      }
+    ],
+    "name": "Sud Fontainebleau"
+  },
+  {
+    "items": [
+      {
+        "descriptif": "1 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Guy Méry",
+            "info": "Validé SNE. n°1",
+            "lat": "48.388548",
+            "lon": "2.375013",
+            "maj": "Novembre 2014",
+            "name": "Blanc Enfants E",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit247"
+          }
+        ],
+        "name": "Maisse Tramerolle",
+        "note": "circuit Blanc et hc",
+        "url": "spip.php?rubrique185"
+      },
+      {
+        "descriptif": "2 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par François Louvel en 1998, avant l’interdiction du massif, convention possible ? 26 numéros et 15 bis. Parfois très hauts ! même si à plus de 2m ce n’est jamais plus que du 2-, ce circuit ne (...)",
+            "info": "Propriété Privé d’Arvalis. Escalade Interdite.",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Orange AD+",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "Dans Propriété Privé Interdit",
+            "url": "spip.php?circuit248"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Jean-Jacques Naëls avec l’aide de François Louvel à la brosse en 1999, avant l’interdiction du massif, convention possible ? 28 numéros et des bis non fléchés. Haut mais jamais (...)",
+            "info": "Propriété Privé d’Arvalis. Escalade Interdite.",
+            "lat": "",
+            "lon": "",
+            "maj": "Novembre 2014",
+            "name": "Bleu D+/TD-",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "Dans Propriété Privé Interdit",
+            "url": "spip.php?circuit249"
+          }
+        ],
+        "name": "Boigneville",
+        "note": "Site majeur malheureusement excentré et, interdit. Dossier à suivre avec la société Arvalis. Accès :Boigneville est accessible en RER D ! Parkings (qcq places) : P cf plan ci contre     Les blocs (...)",
+        "url": "spip.php?rubrique187"
+      }
+    ],
+    "name": "L’Essonne Sud"
+  },
+  {
+    "items": [
+      {
+        "descriptif": "6 circuits.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Circuit concentré, intéressant pour les tout petits au début, mais laisse à désirer ensuite. Il y aurait bien mieux à faire sur le massif ! (un circuit idéal, testé 2 étés avec différents groupes est à (...)",
+            "info": "Validée SNE. n°6",
+            "lat": "48.294093",
+            "lon": "2.438879",
+            "maj": "23 février",
+            "name": "Blanc Enfants E",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit250"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Les premier numéros sont gênés par la présence des barrières des bungalows.",
+            "info": "Validée SNE. n°5",
+            "lat": "48.29246",
+            "lon": "2.434349",
+            "maj": "Octobre 2014",
+            "name": "Jaune F",
+            "nombre_de_voie": "23",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit251"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°1",
+            "lat": "48.292882",
+            "lon": "2.43677",
+            "maj": "Octobre 2014",
+            "name": "Orange AD-",
+            "nombre_de_voie": "44",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit252"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°2",
+            "lat": "48.292882",
+            "lon": "2.43677",
+            "maj": "Octobre 2014",
+            "name": "Bleu D+",
+            "nombre_de_voie": "43",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit253"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Effacé",
+            "info": "Validée SNE. n°4",
+            "lat": "48.294486",
+            "lon": "2.437892",
+            "maj": "Octobre 2014",
+            "name": "Rose TD+",
+            "nombre_de_voie": "35",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit254"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°3",
+            "lat": "48.292882",
+            "lon": "2.43677",
+            "maj": "Octobre 2014",
+            "name": "Noir ED",
+            "nombre_de_voie": "40",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit255"
+          }
+        ],
+        "name": "Buthiers - Massif de L’I",
+        "note": "Du beau et du haut et pour tous les niveaux.Mais massif souvent salle, proximité de la base, toujours plus envahissante,un projet de construction d’un torrent artificiel pour descente en kayac ? (...)",
+        "url": "spip.php?rubrique188"
+      },
+      {
+        "descriptif": "5 circuits",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°5",
+            "lat": "48.298234",
+            "lon": "2.42429",
+            "maj": "Octobre 2014",
+            "name": "Blanc Enfants E",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit256"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Effacé",
+            "info": "Validée SNE. n°2",
+            "lat": "48.294575",
+            "lon": "2.429979",
+            "maj": "Octobre 2014",
+            "name": "Jaune PD-",
+            "nombre_de_voie": "29",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit257"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°3",
+            "lat": "48.294575",
+            "lon": "2.429979",
+            "maj": "Octobre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "34",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit258"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "Validée SNE. n°1",
+            "lat": "48.294575",
+            "lon": "2.429529",
+            "maj": "Octobre 2014",
+            "name": "Bleu D+",
+            "nombre_de_voie": "39",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit259"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Effacé",
+            "info": "Validée SNE. n°4",
+            "lat": "48.294718",
+            "lon": "2.429808",
+            "maj": "Octobre 2014",
+            "name": "Noir ED",
+            "nombre_de_voie": "22",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit260"
+          }
+        ],
+        "name": "Buthiers Canard",
+        "note": "",
+        "url": "spip.php?rubrique190"
+      }
+    ],
+    "name": "Malesherbes"
+  },
+  {
+    "items": [
+      {
+        "descriptif": "3 circuits.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Repeint en 2012 par Georges Tsao, Bernard Commiot et Léo Drevet.",
+            "info": "n°1",
+            "lat": "48.30268",
+            "lon": "2.60741",
+            "maj": "Novembre 2014",
+            "name": "Orange AD-",
+            "nombre_de_voie": "60",
+            "renove": "2012",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit261"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Repeint en 2013 par Georges Tsao et Bernard Commiot.",
+            "info": "n°2",
+            "lat": "48.302908",
+            "lon": "2.607306",
+            "maj": "Novembre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "74",
+            "renove": "2012",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit262"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "n°3",
+            "lat": "48.301946",
+            "lon": "2.608641",
+            "maj": "Novembre 2014",
+            "name": "Rouge TD+",
+            "nombre_de_voie": "36",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit263"
+          }
+        ],
+        "name": "Maunoury",
+        "note": "Circulation plus facile, blocs moins haut et expo dans l’ensemble, le Maunoury est actuellement plus fréquenté que la Dame Jouanne.",
+        "url": "spip.php?rubrique198"
+      },
+      {
+        "descriptif": "6 circuits",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Repeint en 2012 par Léo Drevet.",
+            "info": "n°7",
+            "lat": "",
+            "lon": "",
+            "maj": "Novembre 2014",
+            "name": "Orange AD-",
+            "nombre_de_voie": "81",
+            "renove": "2012",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit264"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Repeint en 2000 par O. Cazeaux.",
+            "info": "n°1",
+            "lat": "48.304932",
+            "lon": "2.601021",
+            "maj": "Novembre 2014",
+            "name": "Mauve AD+",
+            "nombre_de_voie": "76",
+            "renove": "2000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit265"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "n°4",
+            "lat": "48.302822",
+            "lon": "2.602016",
+            "maj": "Novembre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "55",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit266"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Circuit à abandonner ou à reprendre : beaucoup de voies sont dans les zones de mise en défends, beaucoup sont sales et sableuses, devenues dangereuses ou ne sont plus faisables à cause de (...)",
+            "info": "n°3",
+            "lat": "48.302263",
+            "lon": "2.602344",
+            "maj": "Novembre 2014",
+            "name": "Rouge TD-",
+            "nombre_de_voie": "58",
+            "renove": "0000",
+            "status": "Abandonné SNE-ONF",
+            "url": "spip.php?circuit267"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "n°8",
+            "lat": "48.304932",
+            "lon": "2.601021",
+            "maj": "Novembre 2014",
+            "name": "Noir ED+",
+            "nombre_de_voie": "26",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit268"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "n°6",
+            "lat": "48.304274",
+            "lon": "2.602247",
+            "maj": "Novembre 2014",
+            "name": "Blanc ED",
+            "nombre_de_voie": "31",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit269"
+          }
+        ],
+        "name": "Dame Jouanne",
+        "note": "Les rochers les plus hauts ! et pas qu’un peu.",
+        "url": "spip.php?rubrique201"
+      },
+      {
+        "descriptif": "2 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Repeint en 2012 par Léo Drevet.",
+            "info": "n°2",
+            "lat": "48.304713",
+            "lon": "2.601963",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD",
+            "nombre_de_voie": "70",
+            "renove": "2012",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit270"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "n°5",
+            "lat": "48.304713",
+            "lon": "2.601963",
+            "maj": "Novembre 2014",
+            "name": "Rouge TD",
+            "nombre_de_voie": "48",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit271"
+          }
+        ],
+        "name": "Le Requin",
+        "note": "Derrière le chalet Jobert le groupe de rocher du Requin mérite sans doute d’être distingué de celui de la Dame Jouanne. Circuits jaune et rouge.",
+        "url": "spip.php?rubrique202"
+      },
+      {
+        "descriptif": "5 circuits",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Michel Coquard",
+            "info": "n°4",
+            "lat": "48.293779",
+            "lon": "2.594218",
+            "maj": "Novembre 2014",
+            "name": "Blanc Enfants E",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit272"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "n°6",
+            "lat": "48.29427",
+            "lon": "2.595667",
+            "maj": "Novembre 2014",
+            "name": "Jaune PD-",
+            "nombre_de_voie": "0",
+            "renove": "2013",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit273"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "n°1",
+            "lat": "48.293812",
+            "lon": "2.594705",
+            "maj": "Novembre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "47",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit274"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "n°3",
+            "lat": "48.293812",
+            "lon": "2.594705",
+            "maj": "Novembre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "126",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit275"
+          },
+          {
+            "cree": "?",
+            "descriptif": "",
+            "info": "n°5",
+            "lat": "48.293812",
+            "lon": "2.594705",
+            "maj": "Novembre 2014",
+            "name": "Noir ED-",
+            "nombre_de_voie": "43",
+            "renove": "0000",
+            "status": "Validé SNE-ONF",
+            "url": "spip.php?circuit276"
+          }
+        ],
+        "name": "L’ Éléphant",
+        "note": "La plage...Un des massifs les plus fréquentés. Problème d’érosion important. action érosion à l’éléphant,  L’ONF restaure le site de l’Éléphant,  Action érosion 2 à l’éléphant, we du 27-28 septembre. (...)",
+        "url": "spip.php?rubrique203"
+      }
+    ],
+    "name": "Larchant"
+  },
+  {
+    "items": [
+      {
+        "descriptif": "3 circuits.",
+        "items": [
+          {
+            "cree": "1950",
+            "descriptif": "Créé par Pierre Bontemps dans les années 50, repris et complété en 2009 par François Louvel. 48 n° et 20 bis.  Les 25 1er n° ne sont ni haut ni expo, conformément aux goûts modernes, la suite AD++ (...)",
+            "info": "Validée SNE. n°1",
+            "lat": "48.268356",
+            "lon": "2.650156",
+            "maj": "Octobre 2014",
+            "name": "Orange AD- ↑+",
+            "nombre_de_voie": "70",
+            "renove": "2009",
+            "status": "",
+            "url": "spip.php?circuit277"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé en 2010 par François Louvel il est ni trop haut ni expos à qcq exceptions faciles près. Il reprend beaucoup de voies de l’ancien noir-bleu de Jacques Vayr. 32 n° et 20 (...)",
+            "info": "Validée SNE. n°2",
+            "lat": "48.268227",
+            "lon": "2.647761",
+            "maj": "Octobre 2014",
+            "name": "Bleu  tD-",
+            "nombre_de_voie": "29",
+            "renove": "2010",
+            "status": "",
+            "url": "spip.php?circuit278"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Eddy Bouchet , Bruno Karaboghossian et Olivier Letarouilly. « Toutes les voies ont été parcourues sans assurage » ! Corde souvent utile. Circuit légendaire, parfois très impressionnant, mais (...)",
+            "info": "Validée SNE. n°4",
+            "lat": "48.268245",
+            "lon": "2.645247",
+            "maj": "Octobre 2014",
+            "name": "Noir TD+",
+            "nombre_de_voie": "36",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit279"
+          }
+        ],
+        "name": "Mont Sarrasin",
+        "note": "Le Mt Sarrasin est malheureusement en partie dans des Propriété Privée.  Petits blocs pour les enfants , Circuit jaune non finalisé. Un circuit rouge raisonnablement haut (corde inutile), avec une (...)",
+        "url": "spip.php?rubrique210"
+      }
+    ],
+    "name": "Puiselet"
+  },
+  {
+    "items": [
+      {
+        "descriptif": "1 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Pascal Etienne FSGT ASL Ste Geneviève",
+            "info": "Validée SNE. n°1",
+            "lat": "48.244116",
+            "lon": "2.711869",
+            "maj": "Octobre 2014",
+            "name": "Orange AD+",
+            "nombre_de_voie": "36",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit280"
+          }
+        ],
+        "name": "Le Troglodyte",
+        "note": "",
+        "url": "spip.php?rubrique214"
+      },
+      {
+        "descriptif": "2 circuit.",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Stéphane Hamon",
+            "info": "Validée SNE.",
+            "lat": "48.259097",
+            "lon": "2.707862",
+            "maj": "Octobre 2014",
+            "name": "Orange AD",
+            "nombre_de_voie": "31",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit281"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Stéphane Hamon",
+            "info": "Validée SNE.",
+            "lat": "48.259297",
+            "lon": "2.709006",
+            "maj": "Octobre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "34",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit282"
+          }
+        ],
+        "name": "Mont d’Olivet",
+        "note": "",
+        "url": "spip.php?rubrique216"
+      },
+      {
+        "descriptif": "4 circuits",
+        "items": [
+          {
+            "cree": "?",
+            "descriptif": "Créé par Bernard Théret. 54 numéros+ 3 variantes. Repeint en 2011 par Bernard Théret.",
+            "info": "Validée SNE. n°2",
+            "lat": "48.263753",
+            "lon": "2.669978",
+            "maj": "Octobre 2014",
+            "name": "Jaune AD-",
+            "nombre_de_voie": "57",
+            "renove": "2012",
+            "status": "",
+            "url": "spip.php?circuit283"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Bernard Théret. 70 numéros + 5 variantes. Repeint en 2011 par Bernard Théret.",
+            "info": "Validée SNE. n°3",
+            "lat": "48.263876",
+            "lon": "2.670155",
+            "maj": "Octobre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "75",
+            "renove": "2012",
+            "status": "",
+            "url": "spip.php?circuit284"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Bernard Théret. 53 numéros + 1 variante. Repeint en 2011 par Bernard Théret.",
+            "info": "Validée SNE. n°4",
+            "lat": "48.263876",
+            "lon": "2.670155",
+            "maj": "Octobre 2014",
+            "name": "Rouge TD+",
+            "nombre_de_voie": "51",
+            "renove": "2012",
+            "status": "",
+            "url": "spip.php?circuit285"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Bernard Théret. 36 numéros + 12 variantes",
+            "info": "Validée SNE. n°5",
+            "lat": "48.263876",
+            "lon": "2.670155",
+            "maj": "Octobre 2014",
+            "name": "Noir ED+",
+            "nombre_de_voie": "41",
+            "renove": "2013",
+            "status": "",
+            "url": "spip.php?circuit286"
+          }
+        ],
+        "name": "Petit Bois de Saint-Pierre-lès-Nemours",
+        "note": "",
+        "url": "spip.php?rubrique217"
+      },
+      {
+        "descriptif": "3 circuit.",
+        "items": [
+          {
+            "cree": "2011",
+            "descriptif": "Créé en 2011 par Léo Drevet",
+            "info": "Validée SNE.",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Blanc Enfants E",
+            "nombre_de_voie": "0",
+            "renove": "2011",
+            "status": "",
+            "url": "spip.php?circuit287"
+          },
+          {
+            "cree": "2011",
+            "descriptif": "Créé en 2011 par Léo Drevet",
+            "info": "Validée SNE.",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Jaune PD",
+            "nombre_de_voie": "0",
+            "renove": "2011",
+            "status": "",
+            "url": "spip.php?circuit288"
+          },
+          {
+            "cree": "?",
+            "descriptif": "Créé par Bernard Théret, abandonné, parfois très intéressant. À revoir.",
+            "info": "",
+            "lat": "",
+            "lon": "",
+            "maj": "Octobre 2014",
+            "name": "Bleu D",
+            "nombre_de_voie": "0",
+            "renove": "0000",
+            "status": "",
+            "url": "spip.php?circuit289"
+          }
+        ],
+        "name": "Vallon Cassepot",
+        "note": "un circuit bleu abandonné (qui serait à revoir), des flèches rouges par-ci par-là tracées par Bernard Theret, des blocs remarquables, sous la mousse la plupart...et quasiment rien de répertorié ! (3 (...)",
+        "url": "spip.php?rubrique219"
+      }
+    ],
+    "name": "Nemours"
+  }
+]
