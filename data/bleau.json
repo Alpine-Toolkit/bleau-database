@@ -1,7 +1,9 @@
 {
   "circuits": [
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.377501,
         "longitude": 2.519742
@@ -9,16 +11,18 @@
       "cotation": "TD-",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "91_1",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.pofableau.com/cotation/topos/topo_91.1_rouge_1_TD-.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.377842,
         "longitude": 2.521142
@@ -26,16 +30,18 @@
       "cotation": "AD+",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "91_1",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.pofableau.com/cotation/topos/topo_91.1_orange_2_AD+.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2014,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.37605,
         "longitude": 2.516615
@@ -43,9 +49,9 @@
       "cotation": "AD-",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "91_1",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/91-1-orange-n4.pdf",
@@ -53,7 +59,9 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.377842,
         "longitude": 2.521142
@@ -61,14 +69,16 @@
       "cotation": "PD+",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "91_1",
       "numero": 5,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.384685,
         "longitude": 2.531113
@@ -76,16 +86,18 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "95_2",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/95-2-bleu-n1.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.386593,
         "longitude": 2.530922
@@ -93,16 +105,18 @@
       "cotation": "TD-",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "95_2",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/95-2-rouge-n2.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.384705,
         "longitude": 2.530814
@@ -110,9 +124,9 @@
       "cotation": "ED-",
       "couleur": "blanc",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "95_2",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/95-2-blanc-n3.pdf",
@@ -120,7 +134,9 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.386386,
         "longitude": 2.53208
@@ -128,16 +144,18 @@
       "cotation": "PD+",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "95_2",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/95-2-jaune-n4.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.385456,
         "longitude": 2.527794
@@ -145,14 +163,16 @@
       "cotation": "AD+",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "95_2",
       "numero": 5,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.435463,
         "longitude": 2.622844
@@ -160,16 +180,18 @@
       "cotation": "TD",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Bizons",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/ap-bizons-rouge-n1.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2012,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.434285,
         "longitude": 2.622225
@@ -177,16 +199,18 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Bizons",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/ap-bizons-bleu-n2.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2012,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.43548,
         "longitude": 2.62286
@@ -194,16 +218,18 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Bizons",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/ap-bizons-orange-n3.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.436715,
         "longitude": 2.623469
@@ -211,14 +237,16 @@
       "cotation": "EN",
       "couleur": "blanc",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Bizons",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.438109,
         "longitude": 2.621716
@@ -226,16 +254,18 @@
       "cotation": "AD-",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Dames",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKcFFCNlYxWk1NVnc/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.438109,
         "longitude": 2.621716
@@ -243,16 +273,18 @@
       "cotation": "D-",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Dames",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKeFNTRDV1WGl0OG8/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.438109,
         "longitude": 2.621716
@@ -260,16 +292,18 @@
       "cotation": "TD",
       "couleur": "noir",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Dames",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKQ2JZbmYxanJ3VGM/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.43701,
         "longitude": 2.64368
@@ -277,14 +311,16 @@
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Désert",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.435617,
         "longitude": 2.642923
@@ -292,14 +328,16 @@
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Apremont Désert",
       "numero": 2,
+      "ouvreur": null,
       "status": "abandonné",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.43475,
         "longitude": 2.63892
@@ -307,14 +345,16 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Désert",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.435705,
         "longitude": 2.645562
@@ -322,14 +362,16 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Désert",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.432891,
         "longitude": 2.65155
@@ -337,14 +379,16 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Apremont Désert",
       "numero": 5,
+      "ouvreur": null,
       "status": "pas sur SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2012,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.43599,
         "longitude": 2.64671
@@ -352,16 +396,18 @@
       "cotation": "D+",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Désert",
       "numero": 6,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/ap-desert-bleu-n6.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.439652,
         "longitude": 2.629115
@@ -369,9 +415,9 @@
       "cotation": "TD",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Envers",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/ap-envers-rouge-n1.pdf",
@@ -379,7 +425,9 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.439652,
         "longitude": 2.629115
@@ -387,14 +435,16 @@
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Apremont Envers",
       "numero": 2,
+      "ouvreur": null,
       "status": "abandonné",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.43809,
         "longitude": 2.63443
@@ -402,14 +452,16 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Envers",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.43969,
         "longitude": 2.63459
@@ -417,16 +469,18 @@
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Envers",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/ap-envers-jaune-n4.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2014,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.435406,
         "longitude": 2.632194
@@ -434,14 +488,16 @@
       "cotation": "AD+",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Gorges",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.436437,
         "longitude": 2.6275
@@ -449,16 +505,18 @@
       "cotation": "TD+",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Gorges",
       "numero": 10,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKU0NNR1VkVXVLRHM/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.437368,
         "longitude": 2.629592
@@ -466,16 +524,18 @@
       "cotation": "ED-",
       "couleur": "bleu ciel",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Gorges",
       "numero": 11,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKaWNJT0dqSVphZ3M/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.435162,
         "longitude": 2.630711
@@ -483,16 +543,18 @@
       "cotation": "ED-",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Gorges",
       "numero": 12,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKalp0cklBaG85b2c/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.43564,
         "longitude": 2.63146
@@ -500,9 +562,9 @@
       "cotation": "D+",
       "couleur": "bleu baltique",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Gorges",
       "numero": 13,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/ap-gorges-bleu%20baltique-n13.pdf",
@@ -510,7 +572,9 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.435661,
         "longitude": 2.629187
@@ -518,16 +582,18 @@
       "cotation": "EN",
       "couleur": "blanc",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Gorges",
       "numero": 14,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://bleaumeconnu.free.fr/enfant.htm"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.435266,
         "longitude": 2.630823
@@ -535,16 +601,18 @@
       "cotation": "AD",
       "couleur": "vert",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Gorges",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/ap-gorges-vert-n2.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.43672,
         "longitude": 2.626722
@@ -552,9 +620,9 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Gorges",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/ap-gorges-orange-n3.pdf",
@@ -562,7 +630,9 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.43659,
         "longitude": 2.6341
@@ -570,9 +640,9 @@
       "cotation": "D+",
       "couleur": "fraise",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Gorges",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/ap-gorges-fraise-n4.pdf",
@@ -580,7 +650,9 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.43586,
         "longitude": 2.62912
@@ -588,16 +660,18 @@
       "cotation": "D",
       "couleur": "bleu outremer",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Gorges",
       "numero": 5,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.gumsparis.asso.fr/index.php/revue-le-crampon/doc_download/321-n36108apremontbleuoutremer"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.436155,
         "longitude": 2.629943
@@ -605,9 +679,9 @@
       "cotation": "TD-",
       "couleur": "saumon",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Gorges",
       "numero": 6,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/ap-gorges-saumon-n6.pdf",
@@ -615,7 +689,9 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.43574,
         "longitude": 2.63067
@@ -623,14 +699,16 @@
       "cotation": "ED+",
       "couleur": "noir et blanc",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Gorges",
       "numero": 7,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.4351,
         "longitude": 2.62917
@@ -638,62 +716,72 @@
       "cotation": "PD+",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Apremont Gorges",
       "numero": 9,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "AD",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Boigneville",
       "numero": 1,
+      "ouvreur": null,
       "status": "site privé",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "D",
       "couleur": "bleu",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Boigneville",
       "numero": 100,
+      "ouvreur": null,
       "status": "site privé",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "ED",
       "couleur": "virtuel",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Boigneville",
       "numero": 101,
+      "ouvreur": null,
       "status": "site privé",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "TD",
       "couleur": "virtuel",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Boigneville",
       "numero": 102,
+      "ouvreur": null,
       "status": "site privé",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.39103,
         "longitude": 2.56294
@@ -701,14 +789,16 @@
       "cotation": "AD+",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Bois Rond",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.39103,
         "longitude": 2.56294
@@ -716,14 +806,16 @@
       "cotation": "D+",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Bois Rond",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.39123,
         "longitude": 2.56186
@@ -731,26 +823,30 @@
       "cotation": "ED-",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Bois Rond",
       "numero": 5,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "D-",
       "couleur": "autre",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Bouligny",
       "numero": 1,
+      "ouvreur": null,
       "status": "pas sur SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.294575,
         "longitude": 2.429529
@@ -758,9 +854,9 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Buthiers Canard",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.grimporama.com/francais/bleau/buthiers-canard-bleu.pdf",
@@ -768,7 +864,9 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.294575,
         "longitude": 2.429979
@@ -776,14 +874,16 @@
       "cotation": "PD-",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Buthiers Canard",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.294575,
         "longitude": 2.429979
@@ -791,16 +891,18 @@
       "cotation": "AD+",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Buthiers Canard",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKVF9yR3k5emtGLXM/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.294718,
         "longitude": 2.429808
@@ -808,14 +910,16 @@
       "cotation": "ED",
       "couleur": "noir",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Buthiers Canard",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.298234,
         "longitude": 2.42429
@@ -823,14 +927,16 @@
       "cotation": "EN",
       "couleur": "blanc",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Buthiers Canard",
       "numero": 5,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.292882,
         "longitude": 2.43677
@@ -838,14 +944,16 @@
       "cotation": "AD-",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Buthiers L'I",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.292882,
         "longitude": 2.43677
@@ -853,14 +961,16 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Buthiers L'I",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.292882,
         "longitude": 2.43677
@@ -868,16 +978,18 @@
       "cotation": "ED",
       "couleur": "noir",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Buthiers L'I",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKenF1cm1QeEU3NlE/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.294486,
         "longitude": 2.437892
@@ -885,14 +997,16 @@
       "cotation": "TD",
       "couleur": "rouge",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Buthiers L'I",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.29246,
         "longitude": 2.434349
@@ -900,14 +1014,16 @@
       "cotation": "F",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Buthiers L'I",
       "numero": 5,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.294093,
         "longitude": 2.438879
@@ -915,14 +1031,16 @@
       "cotation": "EN",
       "couleur": "blanc",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Buthiers L'I",
       "numero": 6,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2014,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.420519,
         "longitude": 2.714438
@@ -930,14 +1048,16 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Calvaire",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.391902,
         "longitude": 2.54954
@@ -945,16 +1065,18 @@
       "cotation": "D+",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Canche aux Merciers",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.pofableau.com/cotation/topos/topo_canche_bleu_1_D+.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.391902,
         "longitude": 2.54954
@@ -962,16 +1084,18 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Canche aux Merciers",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.pofableau.com/cotation/topos/topo_canche_orange_2_AD.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.39165,
         "longitude": 2.54894
@@ -979,14 +1103,16 @@
       "cotation": "PD-",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Canche aux Merciers",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.39167,
         "longitude": 2.54848
@@ -994,14 +1120,304 @@
       "cotation": "EN",
       "couleur": "blanc",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Canche aux Merciers",
       "numero": 5,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": [
+        {
+          "comment": "dévers.",
+          "coordonne": null,
+          "cotation": "5-",
+          "name": "Ça Dérape Sec",
+          "numero": "1"
+        },
+        {
+          "comment": "mur, réglettes. départ un peu morpho (triangle rouge).",
+          "coordonne": null,
+          "cotation": "5+",
+          "name": "Morphoillogique",
+          "numero": "1"
+        },
+        {
+          "comment": "traversée.",
+          "coordonne": null,
+          "cotation": "6a",
+          "name": "Le Beau Final",
+          "numero": "1"
+        },
+        {
+          "comment": "traversée.",
+          "coordonne": null,
+          "cotation": "5+",
+          "name": "Les Nineties",
+          "numero": "2"
+        },
+        {
+          "comment": "réta.",
+          "coordonne": null,
+          "cotation": "6a",
+          "name": "Okilélé",
+          "numero": "2"
+        },
+        {
+          "comment": "mur, réglettes.",
+          "coordonne": null,
+          "cotation": "5+",
+          "name": "Le Tiroir Secret / Mémorium",
+          "numero": "3"
+        },
+        {
+          "comment": "dévers, réta. départ à gauche.",
+          "coordonne": null,
+          "cotation": "5+",
+          "name": "La Femme Léopard",
+          "numero": "3"
+        },
+        {
+          "comment": "dévers, jeté, réta.",
+          "coordonne": null,
+          "cotation": "5+",
+          "name": "L’Autoroute du Sud",
+          "numero": "4"
+        },
+        {
+          "comment": "dévers, plats. 1m à droite du 32.",
+          "coordonne": null,
+          "cotation": "6a",
+          "name": "",
+          "numero": "4"
+        },
+        {
+          "comment": "mur, réta.",
+          "coordonne": null,
+          "cotation": "4+",
+          "name": "La Débonnaire",
+          "numero": "5"
+        },
+        {
+          "comment": "dalle.",
+          "coordonne": null,
+          "cotation": "6a",
+          "name": "Maurice Gratton",
+          "numero": "6"
+        },
+        {
+          "comment": "mur, bidoigts.",
+          "coordonne": null,
+          "cotation": "6a",
+          "name": "La Goulotte à Dom",
+          "numero": "7"
+        },
+        {
+          "comment": "traversée.",
+          "coordonne": null,
+          "cotation": "5",
+          "name": "Le Croisé Magique",
+          "numero": "8"
+        },
+        {
+          "comment": "dévers, fissure. toujours faisable, quoiqu’un peu morpho, depuis que l’inversée en bas de la fissure a partiellement cassé (de façon directe ou en partant à droite à l’aide d’un gratton).",
+          "coordonne": null,
+          "cotation": "6a",
+          "name": "Par Toutatis",
+          "numero": "9"
+        },
+        {
+          "comment": "mur, réglettes.",
+          "coordonne": null,
+          "cotation": "6a+",
+          "name": "Bobol’s Come Back",
+          "numero": "11"
+        },
+        {
+          "comment": "surplomb, fissure, départ assis.",
+          "coordonne": null,
+          "cotation": "6a",
+          "name": "Pas pour Léon",
+          "numero": "12"
+        },
+        {
+          "comment": "réta. ancien n°12 rouge.",
+          "coordonne": null,
+          "cotation": "6b+",
+          "name": "Gueule Cassée",
+          "numero": "12bis"
+        },
+        {
+          "comment": "réta, traversée, plats.",
+          "coordonne": null,
+          "cotation": "6a",
+          "name": "Jeu de Jambes",
+          "numero": "13"
+        },
+        {
+          "comment": "réta.",
+          "coordonne": null,
+          "cotation": "5+",
+          "name": "Le Piston",
+          "numero": "13bis"
+        },
+        {
+          "comment": "surplomb, traversée.",
+          "coordonne": null,
+          "cotation": "6a",
+          "name": "La Sortie des Artistes",
+          "numero": "14"
+        },
+        {
+          "comment": "surplomb, réta.",
+          "coordonne": null,
+          "cotation": "6a",
+          "name": "L’Enfer des Nains",
+          "numero": "15"
+        },
+        {
+          "comment": "arête, traversée. ancien n°16 rouge.",
+          "coordonne": null,
+          "cotation": "6b",
+          "name": "Chouchou Chéri",
+          "numero": "15"
+        },
+        {
+          "comment": "surplomb, traversée. dans le couloir, sur le bloc du 15, L’Enfer des Nains. Partir de l’angle de droite, traverser d’abord par le haut sur des bossettes, redescendre au niveau de prises horizontales, poursuivre la traversée par le bas et sortir dans le surplomb du 15, L’Enfer des Nains.",
+          "coordonne": null,
+          "cotation": "7a+",
+          "name": "Coup Bas",
+          "numero": "15bis"
+        },
+        {
+          "comment": "mur, bidoigts, plats.",
+          "coordonne": null,
+          "cotation": "5+",
+          "name": "Équilibriste",
+          "numero": "16"
+        },
+        {
+          "comment": "dévers, proue.",
+          "coordonne": null,
+          "cotation": "5+",
+          "name": "Vous avez dit Gros Bœuf",
+          "numero": "17"
+        },
+        {
+          "comment": "surplomb.",
+          "coordonne": null,
+          "cotation": "5+",
+          "name": "Les Gazelles",
+          "numero": "18"
+        },
+        {
+          "comment": "mur, traversée.",
+          "coordonne": null,
+          "cotation": "5-",
+          "name": "Beau Pavé",
+          "numero": "19"
+        },
+        {
+          "comment": "dévers.",
+          "coordonne": null,
+          "cotation": "5",
+          "name": "Triste Sire",
+          "numero": "21"
+        },
+        {
+          "comment": "mur.",
+          "coordonne": null,
+          "cotation": "5+",
+          "name": "La Grande Classique",
+          "numero": "22"
+        },
+        {
+          "comment": "traversée. sur le même bloc que le n°24 rouge. voir aussi : Pleine Lune  6b",
+          "coordonne": null,
+          "cotation": "5",
+          "name": "Lune Rousse",
+          "numero": "23"
+        },
+        {
+          "comment": "traversée.",
+          "coordonne": null,
+          "cotation": "5+",
+          "name": "Rêve de Chevaux Blancs",
+          "numero": "24"
+        },
+        {
+          "comment": "traversée.",
+          "coordonne": null,
+          "cotation": "6a",
+          "name": "La Conti",
+          "numero": "25"
+        },
+        {
+          "comment": "mur. en départ bas (5b sinon).",
+          "coordonne": null,
+          "cotation": "6a",
+          "name": "Uhuru",
+          "numero": "26"
+        },
+        {
+          "comment": "traversée.",
+          "coordonne": null,
+          "cotation": "5+",
+          "name": "L’Air de Rien",
+          "numero": "27"
+        },
+        {
+          "comment": "mur.",
+          "coordonne": null,
+          "cotation": "5",
+          "name": "L’Hésitation",
+          "numero": "28"
+        },
+        {
+          "comment": "mur, réglettes.",
+          "coordonne": null,
+          "cotation": "6b",
+          "name": "Les Doigts de l’Homme",
+          "numero": "29"
+        },
+        {
+          "comment": "mur, bidoigts.",
+          "coordonne": null,
+          "cotation": "6c",
+          "name": "Kaki Dehors",
+          "numero": "29bis"
+        },
+        {
+          "comment": "mur.",
+          "coordonne": null,
+          "cotation": "5",
+          "name": "Hatari",
+          "numero": "31"
+        },
+        {
+          "comment": "traversée.",
+          "coordonne": null,
+          "cotation": "6b",
+          "name": "Glycolyse",
+          "numero": "32"
+        },
+        {
+          "comment": "mur.",
+          "coordonne": null,
+          "cotation": "5-",
+          "name": "Récupéractive",
+          "numero": "33"
+        },
+        {
+          "comment": "réta. à gauche du n°33 rouge.",
+          "coordonne": null,
+          "cotation": "5+",
+          "name": "Gros Os",
+          "numero": "33bis"
+        }
+      ],
       "coordonne": {
         "latitude": 48.3917,
         "longitude": 2.54895
@@ -1009,16 +1425,18 @@
       "cotation": "TD+",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Canche aux Merciers",
       "numero": 6,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.pofableau.com/cotation/topos/topo_canche_rouge_6_TD+.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2012,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.392568,
         "longitude": 2.549115
@@ -1026,26 +1444,30 @@
       "cotation": "EN",
       "couleur": "blanc",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Canche aux Merciers",
       "numero": 7,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Chamarande",
       "numero": 1,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.515827,
         "longitude": 2.232513
@@ -1053,14 +1475,16 @@
       "cotation": "D",
       "couleur": "bleu ciel",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Chamarande",
       "numero": 11,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2004,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.51585,
         "longitude": 2.23176
@@ -1068,9 +1492,9 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Chamarande",
       "numero": 13,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.grimporama.com/francais/bleau/b8-chamarande.pdf",
@@ -1078,7 +1502,9 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2004,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.51585,
         "longitude": 2.23176
@@ -1086,16 +1512,18 @@
       "cotation": "TD",
       "couleur": "rouge",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Chamarande",
       "numero": 14,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKMEVqclR1bVMxVmc/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.515768,
         "longitude": 2.232885
@@ -1103,14 +1531,16 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Chamarande",
       "numero": 2,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.515768,
         "longitude": 2.232885
@@ -1118,14 +1548,16 @@
       "cotation": "EN",
       "couleur": "blanc",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Chamarande",
       "numero": 5,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.51712,
         "longitude": 2.22124
@@ -1133,14 +1565,16 @@
       "cotation": "EN",
       "couleur": "blanc",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Chamarande",
       "numero": 6,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2004,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.51585,
         "longitude": 2.23176
@@ -1148,16 +1582,18 @@
       "cotation": "ED",
       "couleur": "blanc",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Chamarande",
       "numero": 8,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.grimporama.com/francais/bleau/chamarande-bl.htm"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.516481,
         "longitude": 2.228744
@@ -1165,14 +1601,16 @@
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Chamarande",
       "numero": 9,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.37894,
         "longitude": 2.5276
@@ -1180,16 +1618,18 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Cul de Chien",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/culdechien-bleu-n1.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2014,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.37558,
         "longitude": 2.522945
@@ -1197,16 +1637,18 @@
       "cotation": "AD-",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Cul de Chien",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/culdechien-jaune-n3.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.37609,
         "longitude": 2.522639
@@ -1214,16 +1656,18 @@
       "cotation": "TD+",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Cul de Chien",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/culdechien-rouge-n4.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.446863,
         "longitude": 2.639573
@@ -1231,16 +1675,16 @@
       "cotation": "D-",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=93&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Cuvier Bas",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.44654,
         "longitude": 2.63777
@@ -1248,16 +1692,18 @@
       "cotation": "ED-",
       "couleur": "noir",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Cuvier Bas",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKaWlhWXN5c1p2Yzg/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.447059,
         "longitude": 2.639106
@@ -1265,14 +1711,16 @@
       "cotation": "AD+",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Cuvier Bas",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.44653,
         "longitude": 2.63701
@@ -1280,18 +1728,18 @@
       "cotation": "TD",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=96&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Cuvier Bas",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKQU0teUlVeDJIN1U/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.44654,
         "longitude": 2.63777
@@ -1299,16 +1747,18 @@
       "cotation": "ED+",
       "couleur": "blanc",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Cuvier Bas",
       "numero": 5,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKcHdrTkZIb0l4Q00/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.44654,
         "longitude": 2.63777
@@ -1316,16 +1766,18 @@
       "cotation": "TD",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Cuvier Bas",
       "numero": 6,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKMHhscTl1SjFaT1U/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.44654,
         "longitude": 2.63777
@@ -1333,14 +1785,16 @@
       "cotation": "TD-",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Cuvier Bas",
       "numero": 7,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.44557,
         "longitude": 2.646593
@@ -1348,14 +1802,16 @@
       "cotation": "AD",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Cuvier Rempart",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.445527,
         "longitude": 2.647293
@@ -1363,14 +1819,16 @@
       "cotation": "D",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Cuvier Rempart",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2014,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.445584,
         "longitude": 2.64559
@@ -1378,16 +1836,18 @@
       "cotation": "ED-",
       "couleur": "noir",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Cuvier Rempart",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKUGxJVFdLc0ZRTzA/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.304932,
         "longitude": 2.601021
@@ -1395,14 +1855,16 @@
       "cotation": "AD+",
       "couleur": "mauve",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Dame Jouanne",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2012,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.304713,
         "longitude": 2.601963
@@ -1410,14 +1872,16 @@
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Dame Jouanne",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.302263,
         "longitude": 2.602344
@@ -1425,14 +1889,16 @@
       "cotation": "TD-",
       "couleur": "rouge",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Dame Jouanne",
       "numero": 3,
+      "ouvreur": null,
       "status": "abandonné",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.302822,
         "longitude": 2.602016
@@ -1440,14 +1906,16 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Dame Jouanne",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.304713,
         "longitude": 2.601963
@@ -1455,14 +1923,16 @@
       "cotation": "TD",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Dame Jouanne",
       "numero": 5,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.304274,
         "longitude": 2.602247
@@ -1470,14 +1940,16 @@
       "cotation": "ED",
       "couleur": "blanc",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Dame Jouanne",
       "numero": 6,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2012,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.302816,
         "longitude": 2.602431
@@ -1485,14 +1957,16 @@
       "cotation": "AD-",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Dame Jouanne",
       "numero": 7,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.304932,
         "longitude": 2.601021
@@ -1500,14 +1974,16 @@
       "cotation": "ED",
       "couleur": "noir",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Dame Jouanne",
       "numero": 8,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.7134,
         "longitude": 1.98412
@@ -1515,14 +1991,16 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Dampierre Maincourt",
       "numero": 1,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.7134,
         "longitude": 1.98412
@@ -1530,16 +2008,18 @@
       "cotation": "TD",
       "couleur": "rouge",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Dampierre Maincourt",
       "numero": 2,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKNUdjWVFETGhuOGc/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.71679,
         "longitude": 1.973154
@@ -1547,26 +2027,30 @@
       "cotation": "EN",
       "couleur": "blanc",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Dampierre Maincourt",
       "numero": 3,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2014,
+      "boulders": null,
       "coordonne": null,
       "cotation": "D",
       "couleur": "bleu",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Dampierre Maincourt",
       "numero": 4,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.716409,
         "longitude": 1.975924
@@ -1574,14 +2058,16 @@
       "cotation": "PD-",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Dampierre Maincourt",
       "numero": 5,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.380113,
         "longitude": 2.668329
@@ -1589,14 +2075,16 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Demoiselles",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.371152,
         "longitude": 2.532912
@@ -1604,14 +2092,16 @@
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Diplodocus",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.371152,
         "longitude": 2.532912
@@ -1619,14 +2109,16 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Diplodocus",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.37098,
         "longitude": 2.53267
@@ -1634,16 +2126,18 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Diplodocus",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.pofableau.com/cotation/topos/topo_dipodocus_bleu_3_D.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.371152,
         "longitude": 2.532912
@@ -1651,30 +2145,34 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Drei Zinnen",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://bleau.info/zinnen/topo107.html"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": null,
       "cotation": "AD",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Drei Zinnen",
       "numero": 2,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKR2ZQQXQ0enJ1VFU/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.293812,
         "longitude": 2.594705
@@ -1682,14 +2180,16 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Éléphant",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.293812,
         "longitude": 2.594705
@@ -1697,14 +2197,16 @@
       "cotation": "TD",
       "couleur": "vert",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Éléphant",
       "numero": 2,
+      "ouvreur": null,
       "status": "à abandonner?",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.293812,
         "longitude": 2.594705
@@ -1712,14 +2214,16 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Éléphant",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.294765,
         "longitude": 2.596193
@@ -1727,16 +2231,18 @@
       "cotation": "EN",
       "couleur": "blanc",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Éléphant",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://bleaumeconnu.free.fr/enfant.htm"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.293812,
         "longitude": 2.594705
@@ -1744,16 +2250,18 @@
       "cotation": "ED-",
       "couleur": "noir",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Éléphant",
       "numero": 5,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKRjdxcDZaTFJQeGM/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2012,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.2943,
         "longitude": 2.596333
@@ -1761,14 +2269,16 @@
       "cotation": "PD-",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Éléphant",
       "numero": 6,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.48619,
         "longitude": 2.17248
@@ -1776,14 +2286,16 @@
       "cotation": "EN",
       "couleur": "blanc",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Étréchy",
       "numero": 1,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.48619,
         "longitude": 2.17248
@@ -1791,38 +2303,44 @@
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Étréchy",
       "numero": 2,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "F",
       "couleur": "caramel",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Étréchy",
       "numero": 3,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "AD",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Étréchy",
       "numero": 4,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.39667,
         "longitude": 2.544998
@@ -1830,14 +2348,16 @@
       "cotation": "EN-",
       "couleur": "blanc",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Feuillardière",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.40786,
         "longitude": 2.616083
@@ -1845,14 +2365,16 @@
       "cotation": "D+",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Franchard Crête Sud",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.410973,
         "longitude": 2.609261
@@ -1860,14 +2382,16 @@
       "cotation": "ED",
       "couleur": "noir",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Franchard Crête Sud",
       "numero": 6,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.409957,
         "longitude": 2.610892
@@ -1875,16 +2399,18 @@
       "cotation": "AD+",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Franchard Cuisinière",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/fr-cuisiniere-orange-n1.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.410275,
         "longitude": 2.612018
@@ -1892,14 +2418,16 @@
       "cotation": "F",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Franchard Cuisinière",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.409957,
         "longitude": 2.610892
@@ -1907,9 +2435,9 @@
       "cotation": "TD-",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Franchard Cuisinière",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/fr-cuisiniere-rouge-n4.pdf",
@@ -1917,7 +2445,9 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.410241,
         "longitude": 2.610701
@@ -1925,40 +2455,46 @@
       "cotation": "ED",
       "couleur": "blanc",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Franchard Cuisinière",
       "numero": 5,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKS1pqUkdRS2FSU2c/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "AD+",
       "couleur": "vert",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Franchard Ermitage",
       "numero": 0,
+      "ouvreur": null,
       "status": "abandonné",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "EN-",
       "couleur": "blanc",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Franchard Ermitage",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.406595,
         "longitude": 2.629823
@@ -1966,16 +2502,18 @@
       "cotation": "TD",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Franchard Ermitage",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKOC1pNjE1UlpvQlk/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.408829,
         "longitude": 2.597402
@@ -1983,14 +2521,16 @@
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Franchard Hautes-Plaines",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.408859,
         "longitude": 2.598065
@@ -1998,14 +2538,16 @@
       "cotation": "PD+",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Franchard Hautes-Plaines",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2012,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.408483,
         "longitude": 2.600904
@@ -2013,28 +2555,32 @@
       "cotation": "AD+",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Franchard Hautes-Plaines",
       "numero": 5,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/fr-hautesplaines-orange-n5.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Franchard Isatis",
       "numero": 0,
+      "ouvreur": null,
       "status": "abandonné",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2014,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.410164,
         "longitude": 2.599366
@@ -2042,16 +2588,18 @@
       "cotation": "TD-",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Franchard Isatis",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKODV1OVVQakUxRVk/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2014,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.41003,
         "longitude": 2.59926
@@ -2059,16 +2607,18 @@
       "cotation": "D-",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Franchard Isatis",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://pofableau.com/cotation/topos/topo_isatis-ouest.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2014,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.410164,
         "longitude": 2.599366
@@ -2076,30 +2626,34 @@
       "cotation": "ED",
       "couleur": "blanc",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Franchard Isatis",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx0b3BvYmxlYXV8Z3g6NmFjY2VjNjliYzdkYjM0OQ"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": null,
       "cotation": "AD+",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Franchard Isatis",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/fr-isatis-orange-n4.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.409303,
         "longitude": 2.596046
@@ -2107,9 +2661,9 @@
       "cotation": "TD",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Franchard Sablons",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKemhVdy1ReDhZZ3c/edit",
@@ -2117,7 +2671,9 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.409303,
         "longitude": 2.596046
@@ -2125,16 +2681,18 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Franchard Sablons",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/fr-sablons-bleu-n4.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.39883,
         "longitude": 2.51921
@@ -2142,16 +2700,18 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Gorge aux Châts",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://pofableau.com/cotation/topos/topo_gorge_aux_chats_bleu_D.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.39883,
         "longitude": 2.51921
@@ -2159,16 +2719,18 @@
       "cotation": "TD",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Gorge aux Châts",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKR1ItRnVlLXI4MU0/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.3991,
         "longitude": 2.51987
@@ -2176,14 +2738,16 @@
       "cotation": "PD+",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Gorge aux Châts",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.406013,
         "longitude": 2.645184
@@ -2191,14 +2755,16 @@
       "cotation": "PD-",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Gorges du Houx",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.368905,
         "longitude": 2.535095
@@ -2206,14 +2772,16 @@
       "cotation": "D-",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Grande Montagne",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.386468,
         "longitude": 2.535905
@@ -2221,14 +2789,16 @@
       "cotation": "AD+",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Gros Sablons",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2012,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.38778,
         "longitude": 2.534277
@@ -2236,16 +2806,18 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Gros Sablons",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.pofableau.com/cotation/topos/topo_gros_sablons_AD_2.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.384316,
         "longitude": 2.538249
@@ -2253,16 +2825,18 @@
       "cotation": "ED-",
       "couleur": "noir",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Gros Sablons",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKbzB2UG5sQ0JYRnM/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.384316,
         "longitude": 2.538249
@@ -2270,16 +2844,18 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Gros Sablons",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKaDZST01BVEh4V0U/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2014,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.36033,
         "longitude": 2.53586
@@ -2287,14 +2863,16 @@
       "cotation": "PD-",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "J.A. Martin - R. Cailleau",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2014,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.36045,
         "longitude": 2.53607
@@ -2302,16 +2880,18 @@
       "cotation": "AD+",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "J.A. Martin - R. Cailleau",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/jamartin-orange-n2.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.36048,
         "longitude": 2.53554
@@ -2319,9 +2899,9 @@
       "cotation": "AD+",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "J.A. Martin - R. Cailleau",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/jamartin-orange-n3.pdf",
@@ -2330,7 +2910,9 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2014,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.36156,
         "longitude": 2.53639
@@ -2338,14 +2920,16 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "J.A. Martin - R. Cailleau",
       "numero": 5,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2014,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.36048,
         "longitude": 2.53554
@@ -2353,16 +2937,18 @@
       "cotation": "D+",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "J.A. Martin - R. Cailleau",
       "numero": 6,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKUnJ6SEpIRU4xMkU/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.36156,
         "longitude": 2.53639
@@ -2370,14 +2956,16 @@
       "cotation": "TD+",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "J.A. Martin - R. Cailleau",
       "numero": 7,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.360193,
         "longitude": 2.535919
@@ -2385,14 +2973,16 @@
       "cotation": "EN",
       "couleur": "blanc",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "J.A. Martin - R. Cailleau",
       "numero": 8,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.361012,
         "longitude": 2.529763
@@ -2400,14 +2990,16 @@
       "cotation": "EN",
       "couleur": "blanc",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "J.A. Martin - R. Cailleau",
       "numero": 9,
+      "ouvreur": null,
       "status": "pas sur SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.382432,
         "longitude": 2.523251
@@ -2415,14 +3007,16 @@
       "cotation": "D+",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Jean des Vignes",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2014,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.392848,
         "longitude": 2.515129
@@ -2430,16 +3024,18 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Justice de Chambergeot",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/justice-orange-n2.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2014,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.392848,
         "longitude": 2.515129
@@ -2447,25 +3043,25 @@
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=302&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Justice de Chambergeot",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/justice-jaune-n1.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "D",
       "couleur": "bleu",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "La Troche",
       "numero": 1,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/troche-bleu-n1.pdf",
@@ -2473,14 +3069,16 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "TD",
       "couleur": "rouge",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "La Troche",
       "numero": 2,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/troche-rouge-n2.pdf",
@@ -2488,14 +3086,16 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2014,
+      "boulders": null,
       "coordonne": null,
       "cotation": "AD-",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "La Troche",
       "numero": 3,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/troche-jaune-n3.pdf",
@@ -2503,7 +3103,9 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.388548,
         "longitude": 2.375013
@@ -2511,14 +3113,16 @@
       "cotation": "EN",
       "couleur": "blanc",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Maisse le Patouillat",
       "numero": 1,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2012,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.30268,
         "longitude": 2.60741
@@ -2526,16 +3130,18 @@
       "cotation": "AD-",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Maunoury",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/maunoury-orange-n1.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.302908,
         "longitude": 2.607306
@@ -2543,16 +3149,18 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Maunoury",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/maunoury-bleu-n2.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.301946,
         "longitude": 2.608641
@@ -2560,16 +3168,18 @@
       "cotation": "TD+",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Maunoury",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKZUtrT3lGbzVEZDg/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.400681,
         "longitude": 2.663181
@@ -2577,16 +3187,18 @@
       "cotation": "AD+",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Mont-Aigu",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/montaigu-orange-n1.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2012,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.400681,
         "longitude": 2.663181
@@ -2594,16 +3206,18 @@
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Mont-Aigu",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/montaigu-jaune-n2.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.400681,
         "longitude": 2.663181
@@ -2611,16 +3225,18 @@
       "cotation": "D+",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Mont-Aigu",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/montaigu-bleu-n3.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.259097,
         "longitude": 2.707862
@@ -2628,9 +3244,9 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Mont Olivet",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/montolivet-orange-n1.pdf",
@@ -2638,7 +3254,9 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.259297,
         "longitude": 2.709006
@@ -2646,9 +3264,9 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Mont Olivet",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/montolivet-bleu-n2.pdf",
@@ -2656,19 +3274,23 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "TD",
       "couleur": "virtuel",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Monts et Merveille",
       "numero": 0,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.420634,
         "longitude": 2.692895
@@ -2676,18 +3298,18 @@
       "cotation": "PD-",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=207&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Mont-Ussy",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://bleaumeconnu.free.fr/ussy.htm"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.420634,
         "longitude": 2.692895
@@ -2695,16 +3317,18 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Mont-Ussy",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://bleaumeconnu.free.fr/ussy.htm"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.420634,
         "longitude": 2.692895
@@ -2712,9 +3336,9 @@
       "cotation": "TD",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Mont-Ussy",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://bleaumeconnu.free.fr/ussy.htm",
@@ -2722,21 +3346,25 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "D",
       "couleur": "virtuel",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Mont-Ussy",
       "numero": 6,
+      "ouvreur": null,
       "status": "pas sur SNE",
       "topos": [
         "http://bleaumeconnu.free.fr/ussy.htm"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.479892,
         "longitude": 2.461053
@@ -2744,16 +3372,18 @@
       "cotation": "TD+",
       "couleur": "rouge",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Padôle",
       "numero": 1,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKNHZsa01UZ3lmVlU/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2004,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.479892,
         "longitude": 2.461053
@@ -2761,9 +3391,9 @@
       "cotation": "D+",
       "couleur": "bleu",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Padôle",
       "numero": 2,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKUVFZRDdQRXdqZlk/edit",
@@ -2771,21 +3401,25 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2014,
+      "boulders": null,
       "coordonne": null,
       "cotation": "PD+",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Padôle",
       "numero": 3,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKeklsTjIwdVRxUHM/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2006,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.479618,
         "longitude": 2.460431
@@ -2793,9 +3427,9 @@
       "cotation": "AD+",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Padôle",
       "numero": 4,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKeklsTjIwdVRxUHM/edit",
@@ -2803,7 +3437,9 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.48106,
         "longitude": 2.45892
@@ -2811,16 +3447,18 @@
       "cotation": "TD",
       "couleur": "rouge",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Padôle",
       "numero": 5,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKNHZsa01UZ3lmVlU/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2006,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.48106,
         "longitude": 2.45892
@@ -2828,16 +3466,18 @@
       "cotation": "D-",
       "couleur": "bleu",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Padôle",
       "numero": 6,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.grimporama.com/francais/bleau/padole-bleu6.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2004,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.479784,
         "longitude": 2.460058
@@ -2845,16 +3485,18 @@
       "cotation": "ED",
       "couleur": "blanc",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Padôle",
       "numero": 7,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKZU5SZURUaTZqd3M/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.478871,
         "longitude": 2.463451
@@ -2862,16 +3504,18 @@
       "cotation": "EN",
       "couleur": "blanc",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Padôle cent marches",
       "numero": 1,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/centmarches-blanc-n1.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.478871,
         "longitude": 2.463451
@@ -2879,16 +3523,18 @@
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Padôle cent marches",
       "numero": 2,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/centmarches-jaune-n2.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.479167,
         "longitude": 2.464041
@@ -2896,16 +3542,18 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Padôle cent marches",
       "numero": 3,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/centmarches-orange-n3.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.478871,
         "longitude": 2.463451
@@ -2913,16 +3561,18 @@
       "cotation": "EN",
       "couleur": "caramel",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Padôle cent marches",
       "numero": 4,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/centmarches-caramel-n4.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.453377,
         "longitude": 2.333262
@@ -2930,16 +3580,18 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Pendu d'Huison",
       "numero": 1,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://bleaumeconnu.free.fr/pendu.htm"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.453377,
         "longitude": 2.333262
@@ -2947,28 +3599,32 @@
       "cotation": "ED",
       "couleur": "blanc",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Pendu d'Huison",
       "numero": 3,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://bleaumeconnu.free.fr/pendu.htm"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "D",
       "couleur": "virtuel",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Petit Bois de St Pierre de Nemours",
       "numero": 0,
+      "ouvreur": null,
       "status": "pas sur SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.263753,
         "longitude": 2.669978
@@ -2976,16 +3632,18 @@
       "cotation": "AD-",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Petit Bois de St Pierre de Nemours",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/nemours-jaune-n2.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.263876,
         "longitude": 2.670155
@@ -2993,9 +3651,9 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Petit Bois de St Pierre de Nemours",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/nemours-bleu-n3.pdf",
@@ -3003,7 +3661,9 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.263876,
         "longitude": 2.670155
@@ -3011,9 +3671,9 @@
       "cotation": "TD",
       "couleur": "rouge",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Petit Bois de St Pierre de Nemours",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/nemours-rouge-n4.pdf",
@@ -3022,7 +3682,9 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.263876,
         "longitude": 2.670155
@@ -3030,9 +3692,9 @@
       "cotation": "ED",
       "couleur": "noir",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Petit Bois de St Pierre de Nemours",
       "numero": 5,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/nemours-noir-n5.pdf",
@@ -3040,7 +3702,9 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.38879,
         "longitude": 2.531899
@@ -3048,9 +3712,9 @@
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Pignon Poteau",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/poteau-jaune-n1.pdf",
@@ -3058,7 +3722,9 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.389507,
         "longitude": 2.531149
@@ -3066,16 +3732,18 @@
       "cotation": "AD+",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Pignon Poteau",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/poteau-orange-n2.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.367398,
         "longitude": 2.532713
@@ -3083,16 +3751,18 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Potala",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/potala-bleu-n1.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.366917,
         "longitude": 2.534183
@@ -3100,9 +3770,9 @@
       "cotation": "AD+",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Potala",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/potala-orange-n2.pdf",
@@ -3110,7 +3780,9 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.367954,
         "longitude": 2.532933
@@ -3118,9 +3790,9 @@
       "cotation": "TD+",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Potala",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/potala-rouge-n3.pdf",
@@ -3129,7 +3801,9 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.367398,
         "longitude": 2.532713
@@ -3137,16 +3811,18 @@
       "cotation": "PD+",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Potala",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/potala-jaune-n4.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.268245,
         "longitude": 2.645247
@@ -3154,16 +3830,18 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Puiselet",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://bleaumeconnu.free.fr/MtSarrasin.htm"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.268227,
         "longitude": 2.647761
@@ -3171,16 +3849,18 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Puiselet",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://bleaumeconnu.free.fr/MtSarrasin.htm"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.268245,
         "longitude": 2.645247
@@ -3188,16 +3868,18 @@
       "cotation": "TD",
       "couleur": "noir",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Puiselet",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://bleaumeconnu.free.fr/MtSarrasin.htm"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2012,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.358169,
         "longitude": 2.73278
@@ -3205,16 +3887,18 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Restant du Long Rocher",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/longrocher-orange-n1.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.352874,
         "longitude": 2.733321
@@ -3222,14 +3906,16 @@
       "cotation": "AD",
       "couleur": "vert",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Restant du Long Rocher",
       "numero": 2,
+      "ouvreur": null,
       "status": "abandonné",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.353766,
         "longitude": 2.735098
@@ -3237,16 +3923,18 @@
       "cotation": "TD",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Restant du Long Rocher",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKOFQybHR6enpEaGM/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.353584,
         "longitude": 2.730269
@@ -3254,124 +3942,144 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Restant du Long Rocher",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/longrocher-orange-n4.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "D",
       "couleur": "bleu ciel",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Roche aux Dames - Mondeville",
       "numero": 1,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "EN",
       "couleur": "blanc",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Roche aux Dames - Mondeville",
       "numero": 10,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "D",
       "couleur": "bleu ciel",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Roche aux Dames - Mondeville",
       "numero": 11,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2008,
+      "boulders": null,
       "coordonne": null,
       "cotation": "PD+",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Roche aux Dames - Mondeville",
       "numero": 2,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "AD",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Roche aux Dames - Mondeville",
       "numero": 3,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "TD",
       "couleur": "rouge",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Roche aux Dames - Mondeville",
       "numero": 4,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "AD",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Roche aux Dames - Mondeville",
       "numero": 5,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "D",
       "couleur": "bleu",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Roche aux Dames - Mondeville",
       "numero": 6,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "D-",
       "couleur": "blanc",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Roche aux Dames - Mondeville",
       "numero": 7,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.375147,
         "longitude": 2.513443
@@ -3379,16 +4087,18 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Roche aux Sabots",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.pofableau.com/cotation/topos/topo_roche_au_sabot_bleu_1_D.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.374311,
         "longitude": 2.514405
@@ -3396,14 +4106,16 @@
       "cotation": "AD+",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Roche aux Sabots",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.374311,
         "longitude": 2.514405
@@ -3411,16 +4123,18 @@
       "cotation": "TD+",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Roche aux Sabots",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKQ2JZSVZVTkRud2M/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.374561,
         "longitude": 2.512414
@@ -3428,14 +4142,16 @@
       "cotation": "EN",
       "couleur": "blanc",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Roche aux Sabots",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.421092,
         "longitude": 2.699528
@@ -3443,14 +4159,16 @@
       "cotation": "EN",
       "couleur": "blanc",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Roche Hercule",
       "numero": 5,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.460816,
         "longitude": 2.660767
@@ -3458,14 +4176,16 @@
       "cotation": "ED-",
       "couleur": "noir",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Rocher Canon",
       "numero": 0,
+      "ouvreur": null,
       "status": "abandonné",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.46273,
         "longitude": 2.66431
@@ -3473,16 +4193,18 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher Canon",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://bleau.info/canon/topo106.html"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.46291,
         "longitude": 2.66326
@@ -3490,14 +4212,16 @@
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher Canon",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2014,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.46107,
         "longitude": 2.66387
@@ -3505,14 +4229,16 @@
       "cotation": "D+",
       "couleur": "bleu ciel",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher Canon",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.46273,
         "longitude": 2.66431
@@ -3520,16 +4246,18 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher Canon",
       "numero": 5,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKVi1TVDFZQ2dJZ0k/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.461173,
         "longitude": 2.66367
@@ -3537,16 +4265,18 @@
       "cotation": "TD+",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher Canon",
       "numero": 6,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKdHByNUVSNTRUbkU/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.462538,
         "longitude": 2.665271
@@ -3554,14 +4284,16 @@
       "cotation": "EN",
       "couleur": "blanc",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher Canon",
       "numero": 7,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.46273,
         "longitude": 2.66431
@@ -3569,14 +4301,16 @@
       "cotation": "ED+",
       "couleur": "blanc",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher Canon",
       "numero": 8,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.393726,
         "longitude": 2.722314
@@ -3584,16 +4318,18 @@
       "cotation": "AD-",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher d'Avon",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://grimporama.free.fr/topos-bleau/topo_rocher-avon.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.39385,
         "longitude": 2.71621
@@ -3601,14 +4337,16 @@
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher d'Avon",
       "numero": 2,
+      "ouvreur": null,
       "status": "pas sur SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.392932,
         "longitude": 2.727554
@@ -3616,16 +4354,18 @@
       "cotation": "AD",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher d'Avon",
       "numero": 3,
+      "ouvreur": null,
       "status": "pas sur SNE",
       "topos": [
         "http://bleau.info/avon/topo103.html"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.422265,
         "longitude": 2.407964
@@ -3633,16 +4373,18 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Rocher de Chatillon",
       "numero": 1,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKbTItLWtCa0lKcVU/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.422265,
         "longitude": 2.407964
@@ -3650,58 +4392,66 @@
       "cotation": "PD+",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Rocher de Chatillon",
       "numero": 2,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKWXV6WGdFOUQ5U0U/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": null,
       "cotation": "TD",
       "couleur": "rouge",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Rocher de Chatillon",
       "numero": 3,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKSGhtUXhBTFFfNG8/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2012,
+      "boulders": null,
       "coordonne": null,
       "cotation": "AD+",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Rocher de Chatillon",
       "numero": 4,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKTXY1WXdmZkxCcGc/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": null,
       "cotation": "ED",
       "couleur": "noir",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Rocher de Chatillon",
       "numero": 5,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKSGhtUXhBTFFfNG8/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.363876,
         "longitude": 2.533343
@@ -3709,14 +4459,16 @@
       "cotation": "AD+",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher de la Cathédrale",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2012,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.391788,
         "longitude": 2.56138
@@ -3724,14 +4476,16 @@
       "cotation": "PD+",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher de la Reine",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.391788,
         "longitude": 2.561915
@@ -3739,14 +4493,16 @@
       "cotation": "D+",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher de la Reine",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.397533,
         "longitude": 2.585196
@@ -3754,40 +4510,46 @@
       "cotation": "D+",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher de Milly - Corne-Biche",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "AD+",
       "couleur": "noir",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Rocher de Milly - Corne-Biche",
       "numero": 101,
+      "ouvreur": null,
       "status": "abandonné",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/cornebiche-noir-n3.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "EN-",
       "couleur": "blanc",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Rocher de Milly - Corne-Biche",
       "numero": 102,
+      "ouvreur": null,
       "status": "abandonné",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.397533,
         "longitude": 2.58426
@@ -3795,16 +4557,18 @@
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher de Milly - Corne-Biche",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/cornebiche-jaune-n2.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.397533,
         "longitude": 2.585196
@@ -3812,14 +4576,16 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher de Milly - Corne-Biche",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.397533,
         "longitude": 2.58426
@@ -3827,16 +4593,18 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Rocher de Milly - Corne-Biche",
       "numero": 4,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/cornebiche-orange-n4.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.383073,
         "longitude": 2.52876
@@ -3844,16 +4612,18 @@
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher des Potets",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://bleau.info/images/topos/potetsjaune.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.383119,
         "longitude": 2.526094
@@ -3861,14 +4631,16 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher des Potets",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.499828,
         "longitude": 2.472855
@@ -3876,34 +4648,34 @@
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=39&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Rocher du Duc - Hameau",
       "numero": 1,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/av-hameau-jaune-nH1.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2012,
+      "boulders": null,
       "coordonne": null,
       "cotation": "AD",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=37&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Rocher du Duc - Hameau",
       "numero": 2,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/av-hameau-orange-nH2.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.499828,
         "longitude": 2.472855
@@ -3911,18 +4683,18 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": null,
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=38&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Rocher du Duc - Hameau",
       "numero": 3,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/av-hameau-bleu-nH3.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.50068,
         "longitude": 2.473657
@@ -3930,18 +4702,18 @@
       "cotation": "TD-",
       "couleur": "rouge",
       "gestion": null,
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=40&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Rocher du Duc - Hameau",
       "numero": 4,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/av-hameau-rouge-nH4.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2012,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.500499,
         "longitude": 2.473024
@@ -3949,302 +4721,306 @@
       "cotation": "ED",
       "couleur": "noir",
       "gestion": null,
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=41&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Rocher du Duc - Hameau",
       "numero": 5,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/av-hameau-noir-nH5.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2012,
+      "boulders": null,
       "coordonne": null,
       "cotation": "PD+",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=52&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Rocher du Duc - Loutteville",
       "numero": 1,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/av-loutteville-jaune-nL1.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "AD+",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=51&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Rocher du Duc - Loutteville",
       "numero": 2,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/av-loutteville-orange-nL2.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2014,
+      "boulders": null,
       "coordonne": null,
       "cotation": "D+",
       "couleur": "bleu",
       "gestion": null,
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=53&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Rocher du Duc - Loutteville",
       "numero": 3,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/av-loutteville-bleu-nL3.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2014,
+      "boulders": null,
       "coordonne": null,
       "cotation": "TD",
       "couleur": "rouge",
       "gestion": null,
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=54&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Rocher du Duc - Loutteville",
       "numero": 4,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/av-loutteville-rouge-nL4.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "EN-",
       "couleur": "blanc",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Rocher du Duc - Nainville",
       "numero": 1,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/av-nainville-blanc-nN1.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": null,
       "cotation": "EN",
       "couleur": "blanc",
       "gestion": null,
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=45&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Rocher du Duc - Nainville",
       "numero": 2,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/av-nainville-blanc-nN2.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": null,
       "cotation": "F",
       "couleur": "saumon",
       "gestion": null,
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=297&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Rocher du Duc - Nainville",
       "numero": 3,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/av-nainville-saumon-nN3.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": null,
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=43&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Rocher du Duc - Nainville",
       "numero": 4,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/av-nainville-jaune-nN4.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2012,
+      "boulders": null,
       "coordonne": null,
       "cotation": "AD+",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=47&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Rocher du Duc - Nainville",
       "numero": 5,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/av-nainville-orange-nN5.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": null,
       "cotation": "D",
       "couleur": "bleu",
       "gestion": null,
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=42&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Rocher du Duc - Nainville",
       "numero": 6,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/av-nainville-bleu-nN6.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "TD",
       "couleur": "rouge",
       "gestion": null,
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=44&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Rocher du Duc - Nainville",
       "numero": 7,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/av-nainville-rouge-nN7.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2014,
+      "boulders": null,
       "coordonne": null,
       "cotation": "ED-",
       "couleur": "noir",
       "gestion": null,
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=36&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Rocher du Duc - Nainville",
       "numero": 8,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/av-nainville-noir-nN8.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "ED+",
       "couleur": "noir",
       "gestion": null,
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=46&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Rocher du Duc - Nainville",
       "numero": 9,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/av-nainville-noir-nN9.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2012,
+      "boulders": null,
       "coordonne": null,
       "cotation": "EN",
       "couleur": "blanc",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Rocher du Duc -Télégraphe",
       "numero": 1,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/av-telegraphe-blanc-nT1.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "EN+",
       "couleur": "blanc",
       "gestion": null,
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=50&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Rocher du Duc -Télégraphe",
       "numero": 2,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/av-telegraphe-blanc-nT2.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "F",
       "couleur": "saumon",
       "gestion": null,
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=56&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Rocher du Duc -Télégraphe",
       "numero": 3,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/av-telegraphe-saumon-nT3.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2012,
+      "boulders": null,
       "coordonne": null,
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=294&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Rocher du Duc -Télégraphe",
       "numero": 4,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/av-telegraphe-jaune-nT4.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": null,
       "cotation": "D",
       "couleur": "bleu",
       "gestion": null,
-      "liste_blocs": [
-        "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=49&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-      ],
       "massif": "Rocher du Duc -Télégraphe",
       "numero": 5,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://www.cosiroc.fr/images/fiches/av-telegraphe-bleu-nT5.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.371489,
         "longitude": 2.528701
@@ -4252,16 +5028,18 @@
       "cotation": "TD-",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher du Général",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.pofableau.com/cotation/topos/topo_71_1.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.371835,
         "longitude": 2.529801
@@ -4269,16 +5047,18 @@
       "cotation": "PD+",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher du Général",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.pofableau.com/cotation/topos/topo_71_1.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.376897,
         "longitude": 2.536438
@@ -4286,16 +5066,18 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher fin",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.pofableau.com/cotation/topos/topo_rocher_fin_bleu_1_D.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.376897,
         "longitude": 2.536438
@@ -4303,16 +5085,18 @@
       "cotation": "TD+",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher fin",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKU1lHcnkzN0g1SEE/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.377511,
         "longitude": 2.535052
@@ -4320,14 +5104,16 @@
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher fin",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.376897,
         "longitude": 2.536438
@@ -4335,14 +5121,16 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher fin",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.363866,
         "longitude": 2.52613
@@ -4350,16 +5138,18 @@
       "cotation": "TD+",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher Guichot",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "https://docs.google.com/file/d/0B3XigPbnEqfKRVktbU1vOGc5QlE/edit"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.363866,
         "longitude": 2.526206
@@ -4367,16 +5157,18 @@
       "cotation": "AD-",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher Guichot",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/guichot-orange-n2.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.363866,
         "longitude": 2.526206
@@ -4384,16 +5176,18 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher Guichot",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/guichot-bleu-n3.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.50442,
         "longitude": 2.29363
@@ -4401,14 +5195,16 @@
       "cotation": "PD-",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Rocher Mignot",
       "numero": 1,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.50442,
         "longitude": 2.29363
@@ -4416,14 +5212,16 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Rocher Mignot",
       "numero": 2,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.438756,
         "longitude": 2.684738
@@ -4431,14 +5229,16 @@
       "cotation": "PD+",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher Saint-Germain",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.440783,
         "longitude": 2.688375
@@ -4446,14 +5246,16 @@
       "cotation": "EN",
       "couleur": "blanc",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher Saint-Germain",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.438756,
         "longitude": 2.684738
@@ -4461,14 +5263,16 @@
       "cotation": "D+",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Rocher Saint-Germain",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.493775,
         "longitude": 2.324964
@@ -4476,16 +5280,18 @@
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Sanglier",
       "numero": 1,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://bleaumeconnu.free.fr/sjaune.html"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.493653,
         "longitude": 2.324731
@@ -4493,16 +5299,18 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Sanglier",
       "numero": 2,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://bleaumeconnu.free.fr/sorange.html"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.493653,
         "longitude": 2.324731
@@ -4510,16 +5318,18 @@
       "cotation": "D",
       "couleur": "bleu",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Sanglier",
       "numero": 3,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://bleaumeconnu.free.fr/sbleu.html"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.493653,
         "longitude": 2.324731
@@ -4527,16 +5337,18 @@
       "cotation": "TD-",
       "couleur": "rouge",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Sanglier",
       "numero": 4,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://bleaumeconnu.free.fr/srouge.html"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.493653,
         "longitude": 2.324731
@@ -4544,16 +5356,18 @@
       "cotation": "TD",
       "couleur": "rose",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Sanglier",
       "numero": 5,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://bleaumeconnu.free.fr/srose.html"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.493653,
         "longitude": 2.324731
@@ -4561,16 +5375,18 @@
       "cotation": "ED",
       "couleur": "noir",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Sanglier",
       "numero": 6,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://bleaumeconnu.free.fr/noirP1.html"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.379821,
         "longitude": 2.504582
@@ -4578,16 +5394,18 @@
       "cotation": "PD+",
       "couleur": "jaune",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Ségognole",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/segognole-jaune-n1.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.379693,
         "longitude": 2.504427
@@ -4595,16 +5413,18 @@
       "cotation": "AD+",
       "couleur": "orange",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Ségognole",
       "numero": 2,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/segognole-orange-n2.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2013,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.379693,
         "longitude": 2.504427
@@ -4612,9 +5432,9 @@
       "cotation": "TD",
       "couleur": "rouge",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Ségognole",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/segognole-rouge-n3.pdf",
@@ -4622,7 +5442,9 @@
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2015,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.39465,
         "longitude": 2.548
@@ -4630,14 +5452,16 @@
       "cotation": "D+",
       "couleur": "bleu",
       "gestion": "ONF77",
-      "liste_blocs": null,
       "massif": "Télégraphe",
       "numero": 4,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.244116,
         "longitude": 2.711869
@@ -4645,44 +5469,50 @@
       "cotation": "AD",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Troglodytes",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/troglodytes-orange-n1.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": null,
       "cotation": "EN",
       "couleur": "blanc",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Vallée Casse-Pot",
       "numero": 1,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/casse-pot-blanc-n1.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": 2011,
+      "boulders": null,
       "coordonne": null,
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Vallée Casse-Pot",
       "numero": 3,
+      "ouvreur": null,
       "status": "liste SNE",
       "topos": [
         "http://www.cosiroc.fr/images/fiches/casse-pot-jaune-n3bis.pdf"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.68394,
         "longitude": 1.94178
@@ -4690,74 +5520,86 @@
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Vaux de Cernay",
       "numero": 1,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "AD",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Videlles les Roches",
       "numero": 10,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": 2014,
+      "boulders": null,
       "coordonne": null,
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Videlles les Roches",
       "numero": 11,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "AD",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Videlles les Roches",
       "numero": 12,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "D-",
       "couleur": "bleu",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Videlles les Roches",
       "numero": 13,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "AD",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Videlles les Roches",
       "numero": 2,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.469243,
         "longitude": 2.441601
@@ -4765,14 +5607,16 @@
       "cotation": "ED-",
       "couleur": "rose",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Videlles les Roches",
       "numero": 3,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": {
         "latitude": 48.468944,
         "longitude": 2.439442
@@ -4780,95 +5624,109 @@
       "cotation": "ED",
       "couleur": "noir",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Videlles les Roches",
       "numero": 4,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "D",
       "couleur": "bleu",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Videlles les Roches",
       "numero": 5,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "D",
       "couleur": "bleu",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Videlles les Roches",
       "numero": 6,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "AD",
       "couleur": "orange",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Videlles les Roches",
       "numero": 7,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "F",
       "couleur": "blanc",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Videlles les Roches",
       "numero": 8,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "PD",
       "couleur": "jaune",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Videlles les Roches",
       "numero": 9,
+      "ouvreur": null,
       "status": null,
       "topos": []
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "D",
       "couleur": "bleu",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Villeneuve-sur-Auvers",
       "numero": 1,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://bleaumeconnu.free.fr/villeneuve.htm"
       ]
     },
     {
+      "annee_creation": null,
       "annee_refection": null,
+      "boulders": null,
       "coordonne": null,
       "cotation": "TD",
       "couleur": "rouge",
       "gestion": null,
-      "liste_blocs": null,
       "massif": "Villeneuve-sur-Auvers",
       "numero": 3,
+      "ouvreur": null,
       "status": null,
       "topos": [
         "http://bleaumeconnu.free.fr/villeneuve.htm"
