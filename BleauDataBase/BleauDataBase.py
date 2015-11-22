@@ -78,19 +78,208 @@ class PlaceType(str):
 
 ####################################################################################################
 
-class Cotation(str):
+class WayNumero:
 
-    """This class defines a circuit grade."""
+    __numero_re__ = re.compile('([1-9]+)(bis)?')
 
-    __cotation_majors__ = ('EN', 'F', 'PD', 'AD', 'D', 'TD', 'ED')
+    ##############################################
+
+    def __init__(self, numero):
+
+        numero = str(numero).lower()
+        match = self.__numero_re__.match(numero)
+        if match is not None:
+            number, variant = match.groups()
+            self._number = int(number)
+            self._variant = variant
+        else:
+            raise ValueError
+
+    ##############################################
+
+    def __str__(self):
+        
+        number = str(self._number)
+        if self._variant is not None:
+            number += self._variant
+        
+        return number
+
+    ##############################################
+
+    @property
+    def __json_interface__(self):
+
+        return str(self)
+
+    ##############################################
+
+    def __int__(self):
+
+        return self._number
+
+    ##############################################
+
+    def __float__(self):
+
+        number = float(self._number)
+        if self._variant == 'bis':
+            number += .1
+        
+        return number
+
+    ##############################################
+
+    def __lt__(self, other):
+
+        return float(self) < float(other)
+
+    ##############################################
+
+    @property
+    def number(self):
+        return self._number
+
+    @property
+    def variant(self):
+        return self._variant
+
+####################################################################################################
+
+class IncompatibleCotationError(Exception):
+    pass
+
+class Cotation:
+
+    """This class defines a French grade."""
+
+    __cotation_re__ = re.compile('([1-9])([a-c])?(\+|\-)?')
+
+    ##############################################
+
+    def __init__(self, cotation):
+
+        cotation = str(cotation).lower()
+        match = self.__cotation_re__.match(cotation)
+        if match is not None:
+            number, self._letter, self._sign = match.groups()
+            self._number = int(number)
+        else:
+            raise ValueError
+
+    ##############################################
+
+    def __str__(self):
+
+        cotation = str(self._number)
+        if self._letter is not None:
+            cotation += self._letter
+        if self._sign is not None:
+            cotation += self._sign
+        
+        return cotation
+
+    ##############################################
+
+    @property
+    def __json_interface__(self):
+
+        return str(self)
+
+    ##############################################
+
+    def __float__(self):
+
+        value = float(self._number)
+        letter = self._letter
+        sign = self._sign
+        if letter is not None:
+            # split the grade in four
+            if letter == 'a':
+                value += 1/4
+            elif letter == 'b':
+                value += 2/4
+            else: # c
+                value += 3/4
+            if sign is not None:
+                if sign == '-':
+                    value -= 1/8
+                else:
+                    value += 1/8
+        elif sign is not None:
+            if sign == '-':
+                # Fixme: right ?
+                value += 1/3
+            else:
+                value += 2/3
+        
+        return value
+
+    ##############################################
+
+    def is_incompatible_with(self, other):
+
+        """For exemple the grade 5c+ is incompatible with 5+."""
+
+        if (self._number == other._number
+            and (self._sign is not None or other._sign is not None)):
+            has_letter1 = self._letter is not None
+            has_letter2 = other._letter is not None
+            return has_letter1 ^ has_letter2
+        else:
+            return False
+
+    ##############################################
+
+    def __lt__(self, other):
+
+        if self.is_incompatible_with(other):
+            raise IncompatibleCotationError
+        else:
+            return float(self) < float(other)
+
+    ##############################################
+
+    @property
+    def number(self):
+        return self._number
+
+    @property
+    def letter(self):
+        return self._letter
+
+    @property
+    def sign(self):
+        return self._sign
+
+####################################################################################################
+
+class CotationAlpine(str):
+
+    """This class defines a French alpin grade."""
+
+    __cotation_majors__ = ('EN', 'F', 'PD', 'AD', 'D', 'TD', 'ED', 'EX') # , 'ABO'
     __cotation_major_descriptions__ = {
         'EN': 'Enfant',
         'F': 'Facile',
-        'PD': 'Peu Difficile',
+        'PD': 'Peu Difficile', # et non « Pas Difficile » !
         'AD': 'Assez Difficile',
         'D': 'Difficile',
         'TD': 'Très Difficile',
         'ED': 'Extrêmement Difficile',
+        'EX': 'Exceptionnellement Difficile',
+        # or
+        'ABO': 'Abominablement Difficile',
+    }
+    __cotation_major_transcription__ = {
+        'EN': None,
+        'F': None,
+        'PD': '3',
+        'AD': '4',
+        'D': ('4c', '5b'),
+        'TD': ('5c', '6a'),
+        'ED': ('6b', '7a'),
+        'EX': '7b',
     }
     __cotation_minors__ = ('-', '', '+')
     __cotations__ = tuple([major + minor
@@ -125,7 +314,7 @@ class Cotation(str):
 
         # Fixme: cache ? but take care to recursion
         if len(self) == 3:
-            return Cotation(self[:2])
+            return CotationAlpine(self[:2])
         else:
             return self
 
@@ -218,13 +407,6 @@ class WithCoordinate(FromJsonMixin):
 
     ##############################################
 
-    def __init__(self, bleau_database, **kwargs):
-
-        super().__init__(**kwargs)
-        self.bleau_database = bleau_database
-
-    ##############################################
-
     def __bool__(self):
         return self.coordonne is not None
 
@@ -297,7 +479,18 @@ class WithCoordinate(FromJsonMixin):
 
 ####################################################################################################
 
-class Place(WithCoordinate):
+class PlaceBase(WithCoordinate):
+
+    ##############################################
+
+    def __init__(self, bleau_database, **kwargs):
+
+        super().__init__(**kwargs)
+        self.bleau_database = bleau_database
+
+####################################################################################################
+
+class Place(PlaceBase):
 
     """This class defines a place."""
 
@@ -319,7 +512,7 @@ class Place(WithCoordinate):
 
 ####################################################################################################
 
-class Massif(WithCoordinate):
+class Massif(PlaceBase):
 
     """This class defines a « massif »."""
 
@@ -427,16 +620,49 @@ class Massif(WithCoordinate):
 
 ####################################################################################################
 
-class Circuit(WithCoordinate):
+class BoulderList(list):
+
+    """Factory to check a Boulder list."""
+
+    ##############################################
+
+    def __init__(self, *args):
+
+        super().__init__([Boulder(**kwargs) for kwargs in args])
+
+####################################################################################################
+
+class Boulder(WithCoordinate):
+
+    """This class defines a « boulder »."""
+
+    coordonne = Coordinate
+    numero = WayNumero
+    cotation = Cotation
+    name = str
+    comment = str
+
+    ##############################################
+
+    def __lt__(self, other):
+
+        return self.numero < other.numero
+
+####################################################################################################
+
+class Circuit(PlaceBase):
 
     """This class defines a « circuit »."""
 
+    annee_creation = int
+    ouvreur = str
     annee_refection = int
+    # refection historique
     coordonne = Coordinate
-    cotation = Cotation
+    cotation = CotationAlpine
     couleur = str
     gestion = str
-    liste_blocs = StringList
+    boulders = BoulderList
     massif = InstanceChecker(Massif)
     numero = int
     status = str
@@ -502,6 +728,20 @@ class Circuit(WithCoordinate):
 
 ####################################################################################################
 
+class JsonEncoder(json.JSONEncoder):
+
+    ##############################################
+
+    def default(self, obj):
+
+        if isinstance(obj, Boulder):
+            return obj.to_json()
+
+        # Let the base class default method raise the TypeError
+        return json.JSONEncoder.default(self, obj)
+
+####################################################################################################
+
 class BleauDataBase:
 
     """This class represents the database."""
@@ -525,6 +765,7 @@ class BleauDataBase:
         
         if json_file is not None:
             with open(json_file, encoding='utf8') as f:
+                # Fixme: object_hook= for Coordinate
                 data = json.load(f)
             
             places = [Place(self, raise_for_unknown=raise_for_unknown, **place_dict)
@@ -627,7 +868,7 @@ class BleauDataBase:
             'circuits': [circuit.to_json() for circuit in self.circuits],
         }
 
-        kwargs = dict(indent=2, ensure_ascii=False, sort_keys=True)
+        kwargs = dict(cls=JsonEncoder, indent=2, ensure_ascii=False, sort_keys=True)
         if json_file is not None:
             with open(json_file, 'w', encoding='utf8') as f:
                 json.dump(data, f, **kwargs)
@@ -644,6 +885,7 @@ class BleauDataBase:
         if massifs:
             features.extend([massif for massif in self.massifs if massif])
         if circuits:
+            # Fixme: boulders
             features.extend([circuit for circuit in self.circuits if circuit])
         feature_collections = geojson.FeatureCollection(features)
         if not geojson.is_valid(feature_collections):
