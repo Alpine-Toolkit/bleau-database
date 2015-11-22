@@ -30,10 +30,10 @@
 	    {{ render_field(form.secteurs, size=5) }} {# Fixme size #}
 	  </div>
 	  <div class="col-xl-4">
-	    {{ render_field(form.type_de_chaos, size=5) }}
+	    {{ render_field(form.chaos_type, size=5) }}
 	  </div>
 	  <div class="col-xl-4">
-	    {{ render_field(form.cotations, size=7) }}
+	    {{ render_field(form.grades, size=7) }}
 	  </div>
 	</div>
 	<button type="submit" class="btn btn-primary">Rechercher</button>
@@ -41,11 +41,24 @@
     </div>
     <div class="col-xl-12 m-t-md">
       <h2>Massifs</h2>
-      <ul>
-	{% for massif in massifs %}
-	  <li><a href="/main/massif/{{ massif.massif }}">{{ massif.massif }}</a></li>
-	{% endfor %}
-      </ul>
+      <table class="table table-sm">
+	<tbody>
+	  {% for massif in massifs %}
+	    <tr>
+	      <td><a href="/main/massif/{{ massif.name }}">{{ massif.name }}</a></td>
+	      <td>{{ massif.secteur }}</td>
+	      <td>{{ massif.chaos_type }}</td>
+	      <td>
+		<ul class="list-inline">
+		  {% for grade in massif.grades %}
+		    <li>{{ grade }}</li>
+		  {% endfor %}
+		</ul>
+	      </td>
+	    </tr>
+	  {% endfor %}
+	</tbody>
+      </table>
     </div>
   </div>
 {% endblock %}

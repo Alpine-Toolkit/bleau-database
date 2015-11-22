@@ -3,13 +3,17 @@
 {% block content %}
   <ul class="breadcrumb">
     <li><a href="/main">Accueil</a></li>
-    <li class="active">{{ massif.massif }}</li>
+    <li>{{ massif.secteur }}</li>
+    <li class="active">{{ massif.name }}</li>
   </ul>
 
   <div class="row">
     <div class="col-xl-12">
 
-      <h1>{{ massif.secteur }} ~ {{ massif.massif }} {% if massif.nom %} ~ {{ massif.nom }}{% endif %}</h1>
+      <h1>
+	{{ massif.secteur }} ~ {{ massif.name }}
+	{% if massif.alternative_name %} ~ {{ massif.alternative_name }}{% endif %}
+      </h1>
 
       <h2>Accés</h2>
       <dl>
@@ -17,7 +21,7 @@
 	<dd>
 	  {{ massif.acces }}<br>
 	  {% if massif.parking %}
-	  <a href="/main/google-map/{{ massif.massif }}">Itineraire Google Map</a>
+	  <a href="/main/google-map/{{ massif.name }}">Itineraire Google Map</a>
 	  {% else %}
 	  Pas d'itineraire renseigné
 	  {% endif %}
@@ -28,10 +32,22 @@
       
       <h2>Informations</h2>
       <dl>
+	<dt>Type de chaos</dt><dd>{{ massif.chaos_type }}</dd>
+        <dt>Notes</dt><dd>{{ massif.note }}</dd>
         <dt>Rendez-vous Gums</dt><dd>{{ massif.rdv }}</dd>
-        <dt>Point d'eau</dt><dd>{{ massif.point_deau }}</dd>
-        <dt>Notes</dt><dd>{{ massif.notes }}</dd>
-	<dt>Type de chaos</dt><dd>{{ massif.type_de_chaos }}</dd>
+	{% with places = massif.nearest_point_deau(distance_max=5000) %}
+	  {% if places %}
+	    <dt>Point d'eau</dt>
+	    <dd>
+	      {% for place in places %}
+		{% if loop.index > 1  %}<br>{% endif %}
+		<a href="/main/place/{{ place.name }}">
+		  {{ place.name }} ({{ massif.distance_to(place) | round | int }} m)
+		</a>
+	      {% endfor %}
+	    </dd>
+	  {% endif %}
+	{% endwith %}
       </dl>
       
       <h2>Circuits</h2>
@@ -45,9 +61,9 @@
 	<tbody>
 	  {% for circuit in massif %}
 	    <tr>
-	      <td>{{ circuit.cotation }}</td>
-	      <td>N° {{ circuit.numero }}</td>
-	      <td>{{ circuit.couleur }}</td>
+	      <td>{{ circuit.grade }}</td>
+	      <td><a href="/main/circuit/{{ circuit.name }}">N° {{ circuit.number }}</a></td>
+	      <td>{{ circuit.colour }}</td>
 	      <td>
 		{% for topo in circuit.topos %}
 		  <a class="hidden-sm-up" href="{{ topo }}">lien</a>
@@ -73,7 +89,7 @@
 		<tr>
 		  <td class="text-right">{{ massif.distance_to(massif_) | round | int }} m</td>
 		  <td/>
-		  <td><a href="/main/massif/{{ massif_.massif }}">{{ massif_.massif }}</a></td>
+		  <td><a href="/main/massif/{{ massif_.name }}">{{ massif_.name }}</a></td>
 		  <td>
 		    <ul class="list-inline">
 		      {% for cotation in massif_.cotations %}
@@ -101,8 +117,8 @@
 		    Coordonnée WGS 84
 		  </a></td>
 		<td>
-		  {% with coordonne = massif.coordonne %}
-		    {{ coordonne.longitude }}, {{ coordonne.latitude }}°
+		  {% with coordinate = massif.coordinate %}
+		    {{ coordinate.longitude }}, {{ coordinate.latitude }}°
 		  {% endwith %}
 		</td>
 	      </tr>
@@ -112,7 +128,7 @@
 		    Coordonnée Mercator
 		  </a></td>
 		<td>
-		  {% with mercator = massif.coordonne.mercator %}
+		  {% with mercator = massif.coordinate.mercator %}
 		    {{ mercator[0] | round | int }}, {{ mercator[1] | round | int }} m
 		  {% endwith %}
 		</td>
@@ -138,7 +154,7 @@
 	  <p id="massif-name">Massif : &nbsp;</p>
 	</div>
       </div>
-      <a href="/main/geoportail/{{ massif.massif }}">Grande carte</a>
+      <a href="/main/geoportail/{{ massif.name }}">Grande carte</a>
       {{ geoportail_map() }}
     </div>
   </div>

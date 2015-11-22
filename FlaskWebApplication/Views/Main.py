@@ -27,7 +27,7 @@ from flask_wtf import Form
 from wtforms import BooleanField, TextField, SelectMultipleField, SubmitField
 # from wtforms import validators
 
-from BleauDataBase.BleauDataBase import Cotation
+from BleauDataBase.BleauDataBase import AlpineGrade
 
 ####################################################################################################
 
@@ -53,20 +53,30 @@ def massifs():
 def massifs_par_secteur():
     return render_template('massifs-par-secteur.html', bleau_database=model.bleau_database)
 
+@main.route('/place/<place>')
+def place(place):
+    place = model.bleau_database[place]
+    return render_template('place.html', place=place)
+
 @main.route('/massif/<massif>')
 def massif(massif):
     massif = model.bleau_database[massif]
-    return render_template('massif.html', massif=massif)
+    return render_template('massif.html', massif=massif, place=massif)
+
+@main.route('/circuit/<circuit>')
+def circuit(circuit):
+    circuit = model.bleau_database[circuit]
+    return render_template('circuit.html', massif=circuit.massif, circuit=circuit, place=circuit)
 
 @main.route('/geoportail/<massif>')
 def geoportail(massif):
     massif = model.bleau_database[massif]
-    return render_template('geoportail-map.html', massif=massif)
+    return render_template('geoportail-map.html', massif=massif, place=massif)
 
 @main.route('/google-map/<massif>')
 def google_map(massif):
     massif = model.bleau_database[massif]
-    return render_template('google-map.html', massif=massif)
+    return render_template('google-map.html', massif=massif, place=massif)
 
 ####################################################################################################
 
@@ -75,11 +85,11 @@ class MassifSearchForm(Form):
     secteurs = SelectMultipleField('Secteurs',
                                    choices=[(secteur, secteur)
                                             for secteur in model.bleau_database.secteurs])
-    type_de_chaos = SelectMultipleField('Type de chaos',
-                                        choices=[(x, x) for x in ('A', 'B', 'C', 'D', 'E')])
+    chaos_type = SelectMultipleField('Type de chaos',
+                                     choices=[(x, x) for x in ('A', 'B', 'C', 'D', 'E')])
     # cotation = TextField('Cotation')
-    cotations = SelectMultipleField('Cotations',
-                                    choices=[(x, x) for x in Cotation.__cotation_majors__])
+    grades = SelectMultipleField('Cotations',
+                                 choices=[(x, x) for x in AlpineGrade.__grade_majors__])
 
 @main.route('/search-massifs', methods=['GET', 'POST'])
 def search_massifs():
@@ -87,10 +97,10 @@ def search_massifs():
     if request.method == 'POST' and form.validate():
         a_pieds = form.a_pieds.data
         secteurs = form.secteurs.data
-        type_de_chaos = form.type_de_chaos.data
-        cotations = form.cotations.data
-        # cotations = form.cotation.data.strip()
-        # cotations = {cotation.upper() for cotation in cotations.split(' ') if cotation}
+        chaos_type = form.chaos_type.data
+        grades = form.grades.data
+        # grades = form.grade.data.strip()
+        # grades = {grade.upper() for grade in grades.split(' ') if grade}
         # flash('Thanks for registering')
         # return redirect(url_for('login'))
         kwargs = {}
@@ -98,10 +108,10 @@ def search_massifs():
             kwargs['a_pieds'] = a_pieds
         if secteurs:
             kwargs['secteurs'] = secteurs
-        if type_de_chaos:
-            kwargs['type_de_chaos'] = type_de_chaos
-        if cotations:
-            kwargs['major_cotations'] = cotations
+        if chaos_type:
+            kwargs['chaos_type'] = chaos_type
+        if grades:
+            kwargs['major_grades'] = grades
         massifs = model.bleau_database.filter_by(**kwargs)
         return render_template('search-massifs.html', form=form, massifs=massifs)
     return render_template('search-massifs.html', form=form, massifs=[])

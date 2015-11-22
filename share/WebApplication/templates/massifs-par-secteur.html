@@ -12,7 +12,7 @@
 	<h2>{{ secteur }}</h2>
 	<ul>
 	  {% for massif in bleau_database.filter_by(secteurs=secteur) %}
-	    <li><a href="/main/massif/{{ massif.massif }}">{{ massif.massif }}</a></li>
+	    <li><a href="/main/massif/{{ massif.name }}">{{ massif.name }}</a></li>
 	  {% endfor %}
 	</ul>
       {% endfor %}

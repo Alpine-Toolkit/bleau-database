@@ -1,0 +1,97 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "geoportail-base.html" %}
+{% block content %}
+  <ul class="breadcrumb">
+    <li><a href="/main">Accueil</a></li>
+    <li>{{ massif.secteur }}</li>
+    <li><a href="/main/massif/{{ massif.name }}">{{ massif.name }}</a></li>
+    <li class="active">Circuit n° {{ circuit.number }} {{ circuit.grade }} {{ circuit.colour }}</li>
+  </ul>
+
+  <div class="row">
+    <div class="col-xl-12">
+
+      <h1>
+	{# {{ massif.secteur }} ~ #}
+	<a href="/main/massif/{{ massif.name }}">{{ massif.name }}</a>
+	~ Circuit n° {{ circuit.number }} {{ circuit.grade }} {{ circuit.colour }}
+      </h1>
+
+      <h2>Informations</h2>
+      <dl>
+	{#
+	<dt>Cotation</dt><dd>{{ circuit.grade }}</dd>
+	<dt>Couleur</dt><dd>{{ circuit.colour }}</dd>
+	#}
+	<dt>Type de chaos</dt><dd>{{ massif.chaos_type }}</dd>
+	<dt>Gestion</dt><dd>{{ circuit.gestion }}</dd>
+	<dt>Status</dt><dd>{{ circuit.status }}</dd>
+	<dt>Année de création</dt><dd>{{ circuit.creation_date }}</dd>
+	<dt>Année de réfection</dt><dd>{{ circuit.refection_date }}</dd>
+      </dl>
+
+      <h2>Blocs</h2>
+      <table class="table table-sm">
+	<tbody>
+	  {% if circuit.boulders %}
+	    {% for boulder in circuit.boulders %}
+	      <tr>
+		<td>{{ boulder.number }}</td> {# N° #}
+		<td>{{ boulder.name }}</td>
+		<td>{{ boulder.grade }}</td>
+		<td>{{ boulder.comment }}</td>
+	      </tr>
+	    {% endfor %}
+	  {% endif %}
+	</tbody>
+      </table>
+
+      <h2>Carte de situation</h2>
+      <div class="row">
+	<div class="col-xl-4">
+	  <table class="table table-sm">
+	    <tbody>
+	      <tr>
+		<td>
+		  <a href="http://spatialreference.org/ref/epsg/wgs-84/">
+		    Coordonnée WGS 84
+		  </a></td>
+		<td>
+		  {% with coordinate = place.coordinate %}
+		    {{ coordinate.longitude }}, {{ coordinate.latitude }}°
+		  {% endwith %}
+		</td>
+	      </tr>
+	      <tr>
+		<td>
+		  <a href="http://spatialreference.org/ref/sr-org/epsg3857-wgs84-web-mercator-auxiliary-sphere/">
+		    Coordonnée Mercator
+		  </a></td>
+		<td>
+		  {% with mercator = place.coordinate.mercator %}
+		    {{ mercator[0] | round | int }}, {{ mercator[1] | round | int }} m
+		  {% endwith %}
+		</td>
+	      </tr>
+	    </tbody>
+	  </table>
+	</div>
+	<div class="col-xl-4">
+	  <form>
+	    <label>Projection</label>
+	    <select id="projection">
+	      <option value="EPSG:4326">WGS 84</option>
+	      <option value="EPSG:3857">Mercator</option>
+	    </select>
+	    <label>Precision</label>
+	    <input id="precision" style="width: 3em" type="number" min="0" max="12" value="4"/>
+	  </form>
+	  <p id="mouse-position">Position : &nbsp;</p>
+	  {# <p id="massif-name">Massif : &nbsp;</p> #}
+	</div>
+      </div>
+      {# <a href="/main/geoportail/{{ massif.massif }}">Grande carte</a> #}
+      {{ geoportail_map() }}
+    </div>
+  </div>
+{% endblock %}
