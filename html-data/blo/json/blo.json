@@ -35799,8 +35799,8 @@
                 "numero": 9
               },
               {
-                "cotation": "pilier",
-                "descriptif": "5 , bombé. Angle à gauche du 9 bleu.",
+                "cotation": "5",
+                "descriptif": "pilier, bombé. Angle à gauche du 9 bleu.",
                 "name": "La Cadillac",
                 "numero": "9b"
               },
@@ -49052,14 +49052,14 @@
               {
                 "cotation": "5+",
                 "descriptif": "",
-                "name": "",
-                "numero": "6 Le Bilbo"
+                "name": "Le Bilbo",
+                "numero": "6"
               },
               {
                 "cotation": "6a",
                 "descriptif": "fissure.",
                 "name": "La Nano",
-                "numero": "^"
+                "numero": "6bis"
               },
               {
                 "cotation": "6a",
