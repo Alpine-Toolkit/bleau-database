@@ -86,7 +86,7 @@ class WayNumber:
 
     """This class defines a way number."""
 
-    __number_re__ = re.compile('^([1-9][0-9]*)(bis|ter)?( ex)?$')
+    __number_re__ = re.compile('^([1-9][0-9]*)(bis|ter|quater)?( ex)?$')
     # tierce
 
     ##############################################
@@ -137,8 +137,10 @@ class WayNumber:
             number += .1
         elif self._variant == 'ter':
             number += .2
-        if self._variant == 'ex':
+        elif self._variant == 'quater':
             number += .3
+        if self._variant == 'ex':
+            number += .5
         return number
 
     ##############################################
@@ -718,6 +720,15 @@ class Circuit(PlaceBase):
 
     ##############################################
 
+    @property
+    def number_of_boulders(self):
+        if self.boulders is not None:
+            return len(self.boulders)
+        else:
+            return 0 # None
+
+    ##############################################
+
     def __str__(self):
         return self.name
 
@@ -848,6 +859,12 @@ class BleauDataBase:
         # Fixme: unsorted massif iter
         return sorted({massif.secteur for massif in self._massifs.values()})
                       # if massif.secteur is not None
+
+    ##############################################
+
+    def __contains__(self, key):
+
+        return key in self._items
 
     ##############################################
 
