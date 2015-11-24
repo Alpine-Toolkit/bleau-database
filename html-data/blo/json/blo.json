@@ -35879,8 +35879,8 @@
               {
                 "cotation": "4+",
                 "descriptif": "mur, expo. une tige de tendeur est installée au sommet du bloc.",
-                "name": "",
-                "numero": "17b Vol Interdit"
+                "name": "Vol Interdit",
+                "numero": "17b"
               },
               {
                 "cotation": "4+",
@@ -39580,14 +39580,14 @@
               {
                 "cotation": "4-",
                 "descriptif": "dalle.",
-                "name": "(sans nom)",
+                "name": "",
                 "numero": 6
               },
               {
                 "cotation": "3",
                 "descriptif": "traversée.",
                 "name": "",
-                "numero": "7bis (sans nom)"
+                "numero": "7bis"
               },
               {
                 "cotation": "4+",
@@ -39598,13 +39598,13 @@
               {
                 "cotation": "4",
                 "descriptif": "dalle, dévers.",
-                "name": "(sans nom)",
+                "name": "",
                 "numero": 8
               },
               {
                 "cotation": "5",
                 "descriptif": "dévers.",
-                "name": "(sans nom)",
+                "name": "",
                 "numero": 9
               },
               {
@@ -39622,7 +39622,7 @@
               {
                 "cotation": "4-",
                 "descriptif": "dalle.",
-                "name": "(sans nom)",
+                "name": "",
                 "numero": 12
               },
               {
@@ -39640,7 +39640,7 @@
               {
                 "cotation": "3+",
                 "descriptif": "dalle.",
-                "name": "(sans nom)",
+                "name": "",
                 "numero": 14
               },
               {
@@ -39653,7 +39653,7 @@
                 "cotation": "4-",
                 "descriptif": "mur, expo. sous la mousse actuellement (août 2008).",
                 "name": "",
-                "numero": "16 (sans nom)"
+                "numero": "16"
               },
               {
                 "cotation": "4",
@@ -39677,7 +39677,7 @@
                 "cotation": "3+",
                 "descriptif": "fissure.",
                 "name": "",
-                "numero": "20 (sans nom)"
+                "numero": "20"
               },
               {
                 "cotation": "4+",
@@ -39700,7 +39700,7 @@
               {
                 "cotation": "3+",
                 "descriptif": "fissure, traversée.",
-                "name": "(sans nom)",
+                "name": "",
                 "numero": 24
               },
               {
@@ -39718,7 +39718,7 @@
               {
                 "cotation": "4-",
                 "descriptif": "fissure.",
-                "name": "(sans nom)",
+                "name": "",
                 "numero": 27
               },
               {
@@ -39730,19 +39730,19 @@
               {
                 "cotation": "3+",
                 "descriptif": "dalle.",
-                "name": "(sans nom)",
+                "name": "",
                 "numero": 29
               },
               {
                 "cotation": "3+",
                 "descriptif": "dalle.",
-                "name": "(sans nom)",
+                "name": "",
                 "numero": 30
               },
               {
                 "cotation": "4",
                 "descriptif": "mur.",
-                "name": "(sans nom)",
+                "name": "",
                 "numero": 31
               }
             ],
@@ -39876,8 +39876,8 @@
               {
                 "cotation": "5-",
                 "descriptif": "expo.",
-                "name": "",
-                "numero": "16 Moussu Pitou"
+                "name": "Moussu Pitou",
+                "numero": "16"
               },
               {
                 "cotation": "6a",
@@ -40253,7 +40253,7 @@
                 "cotation": "4",
                 "descriptif": "",
                 "name": "Ciboire",
-                "numero": "35 A"
+                "numero": "35"
               }
             ],
             "lat": 48.393437,
@@ -40339,7 +40339,7 @@
                 "cotation": "4",
                 "descriptif": "",
                 "name": "Ciboire",
-                "numero": "35 A"
+                "numero": "35"
               }
             ],
             "lat": 48.393164,
@@ -48744,20 +48744,20 @@
               {
                 "cotation": "4",
                 "descriptif": "ex 43 (ou la borgne ?)",
-                "name": "",
-                "numero": "11 La Borne"
+                "name": "La Borne",
+                "numero": "11"
               },
               {
                 "cotation": "3+",
                 "descriptif": "ex 44",
-                "name": "",
-                "numero": "12 La Pacotille"
+                "name": "La Pacotille",
+                "numero": "12"
               },
               {
                 "cotation": "5-",
                 "descriptif": "ex 42",
-                "name": "Le vitrail ou la Dalle Polisson ?",
-                "numero": "13b Sois Poli"
+                "name": "Sois Poli, Le vitrail ou la Dalle Polisson ?",
+                "numero": "13b"
               },
               {
                 "cotation": "3",
@@ -48780,8 +48780,8 @@
               {
                 "cotation": "5-",
                 "descriptif": "",
-                "name": "",
-                "numero": "15bis L’Audacieux"
+                "name": "L’Audacieux",
+                "numero": "15bis"
               },
               {
                 "cotation": "4",
@@ -48876,8 +48876,8 @@
               {
                 "cotation": "3+",
                 "descriptif": "",
-                "name": "",
-                "numero": "30bis Le Bas de Caisse"
+                "name": "Le Bas de Caisse",
+                "numero": "30bis"
               },
               {
                 "cotation": "4",
@@ -48953,9 +48953,9 @@
               },
               {
                 "cotation": "4-",
-                "descriptif": "",
+                "descriptif": "ex bleu",
                 "name": "",
-                "numero": "ex 12 bleu"
+                "numero": "ex 12"
               },
               {
                 "cotation": "4-",
