@@ -23,6 +23,7 @@
 ####################################################################################################
 
 import json
+import re
 
 ####################################################################################################
 
@@ -46,16 +47,52 @@ def convert_to(item, key, factory):
 
 ####################################################################################################
 
+cotation_re = re.compile(r'^(([1-9])([a-c]?)(\-|\+)?)')
+alpine_cotation_re = re.compile(r'.* (en|f|pd|ad|d|td|ed)(\-|\+)?.*')
+
+####################################################################################################
+
 def fix_bloc(bloc):
 
+    if bloc['numero'] == "09.9b":
+        bloc['numero'] = "9b"
+    
     convert_to(bloc, 'numero', int)
     
-    if not bloc['cotation'] and len(bloc['descriptif']) <= 4:
-        cotation = bloc['descriptif']
-        if cotation.endswith('.'):
-            cotation = cotation[:-1]
-        bloc['cotation'] = cotation
-        bloc['descriptif'] = ''
+    if not bloc['cotation']:
+        match = cotation_re.match(bloc['descriptif'])
+        if match is not None:
+            cotation = match.group(0)
+            descriptif = bloc['descriptif'][len(cotation):]
+            if descriptif.startswith('.'):
+                descriptif = descriptif[1:].strip()
+            bloc['cotation'] = cotation
+            bloc['descriptif'] = descriptif
+
+####################################################################################################
+
+def fix_circuit_blocs(circuit):
+
+    old_blocs = circuit['items']
+    new_blocs = []
+    for bloc in old_blocs:
+        cotation = bloc['cotation']
+        descriptif = bloc['descriptif']
+        numero = bloc['numero']
+        if not (descriptif.startswith('(PNG')
+                or descriptif.startswith('(SVG')
+                or descriptif.startswith('(JPG')
+                or descriptif.startswith('(GIF')
+                or cotation.startswith('(SVG')
+                or cotation.startswith('(PNG')
+                or numero == "?. ?"
+                or numero == "26 Blanc Enfant n°1"
+        ):
+            new_blocs.append(bloc)
+    circuit['items'] = new_blocs
+    
+    for bloc in new_blocs:
+        fix_bloc(bloc)
 
 ####################################################################################################
 
@@ -65,6 +102,31 @@ def fix_circuit(secteur, massif, circuit):
     convert_to(circuit, 'lon', float)
     convert_to(circuit, 'renove', int)
     convert_to(circuit, 'nombre_de_voie', int)
+    
+    name = circuit['name']
+    info = circuit['info']
+
+    circuit['numero'] = None
+    if 'n°' in info:
+        try:
+            numero = int(info[info.find('n°')+2:])
+            info = info[:info.find('n°')].strip()
+            circuit['numero'] = numero
+        except:
+            pass
+    
+    circuit['couleur'] = None
+    couleur_match = False
+    for couleur in ('blanc', 'jaune', 'orange', 'bleu', 'rouge', 'noir',
+                    'amanite', 'caramel', 'fraise', 'mauve', 'rose', 'saumon', 'vert', 'violet'):
+        if couleur in name.lower():
+            couleur_match = True
+            circuit['couleur'] = couleur
+    
+    circuit['cotation'] = None
+    match = alpine_cotation_re.match(name.lower())
+    if match:
+        circuit['cotation'] = ''.join([x for x in match.groups() if x]).upper()
     
     circuit['secteur'] = secteur['name']
     circuit['massif'] = massif['name']
@@ -95,7 +157,7 @@ for secteur in secteurs_and_massifs:
 ####################################################################################################
 
 with open('html-data/blo/json/blo-blocs.json') as f:
-    blocs = json.load(f)
+    circuit_blocs = json.load(f)
 
 # "date": "",
 # "descriptif": "Créé par F. Decarout",
@@ -112,10 +174,9 @@ with open('html-data/blo/json/blo-blocs.json') as f:
 # "url": "spip.php?circuit1"
 
 bloc_map = {}
-for circuit in blocs:
+for circuit in circuit_blocs:
     if 'items' in circuit:
-        for bloc in circuit['items']:
-            fix_bloc(bloc)
+        fix_circuit_blocs(circuit)
     blo_url = convert_url(circuit)
     bloc_map[blo_url] = circuit
 
