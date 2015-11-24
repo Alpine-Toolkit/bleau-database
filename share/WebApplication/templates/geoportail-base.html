@@ -2,54 +2,26 @@
 {% extends "base.html" %}
 
 {% block head %}
-  {# <link rel="stylesheet" href="http://openlayers.org/en/v3.10.1/css/ol.css" type="text/css"> #}
-  <script type="text/css" src={{ url_for('static', filename='css/ol.css') }}></script>
+  <link rel="stylesheet" href="http://openlayers.org/en/v3.10.1/css/ol.css" type="text/css">
+  {# <script type="text/css" src={{ url_for('static', filename='css/ol.css') }}></script> #}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <style>
    .map {
        width: 100%;
        height: 500px;
    }
-   .bigmap {
-       display: block;
-       position: fixed;
-       left: 0;
-       right: 0;
-       top: 0;
-       bottom: 0;
-       width: 100%;
-       height: 100%;
-   }
   </style>
-  {# <script type="text/javascript" src="http://openlayers.org/en/v3.10.1/build/ol.js"></script> #}
-  <script type="text/javascript" src={{ url_for('static', filename='js/ol.js') }}></script>
+  <script type="text/javascript" src="http://openlayers.org/en/v3.10.1/build/ol.js"></script>
+  {# <script type="text/javascript" src={{ url_for('static', filename='js/ol-debug.js') }}></script> #}
 {% endblock %}
 
 {% macro geoportail_map() %}
-  <div id="map-toolbar" class="btn-group btn-group-sm" data-toggle="buttons">
-    <label class="btn btn-primary active" id="pan">
-      <input type="radio" name="map-toolbar-radio" autocomplete="off" checked> Pan
-    </label>
-    <label class="btn btn-primary" id="select">
-      <input type="radio" name="map-toolbar-radio" autocomplete="off"> Selectioner
-    </label>
-    <label class="btn btn-primary" id="point">
-      <input type="radio" name="map-toolbar-radio" autocomplete="off"> Place
-    </label>
-    <label class="btn btn-primary" id="modify">
-      <input type="radio" name="map-toolbar-radio" autocomplete="off"> Modifier
-    </label>
-  </div>
-  {# href="#" download="data.json" #}
-  <a id="download-button" class="btn btn-sm btn-primary" role="button">Download places</a>
   <div id="map" class="map">
     <div id="popup"></div>
   </div>
 {% endmacro %}
 
 {% macro geoportail_bigmap() %}
-  <div id="map" class="bigmap">
-    <div id="popup"></div>
-  </div>
 {% endmacro %}
 
 {% block script %}
@@ -59,7 +31,10 @@
        longitude: {{ place.coordinate.longitude }},
        latitude: {{ place.coordinate.latitude }}
    };
-  {% include "geoportail_api_key.js" %}
+   {% block geoportail_script %}
+   var show_edit_toolbar = false;
+   {% endblock %}
+   {% include "geoportail_api_key.js" %}
   </script>
   <script type="text/javascript" src={{ url_for('static', filename='data/bleau-places-geoson.js') }}></script>
   <script type="text/javascript" src={{ url_for('static', filename='data/bleau-massifs-geoson.js') }}></script>

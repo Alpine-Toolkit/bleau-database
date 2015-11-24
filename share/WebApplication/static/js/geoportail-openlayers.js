@@ -1,7 +1,11 @@
 /**************************************************************************************************/
 
-// Fixme: use JQuery
-// document.getElementById('mouse-position')
+// var place_name = "...";
+// var center = {longitude: ..., latitude: ...}
+
+// var geoportail_api_key = "...";
+
+// var show_edit_toolbar = false;
 
 /**************************************************************************************************/
 
@@ -42,15 +46,35 @@ var mouse_position_control = new ol.control.MousePosition({
 });
 
 var projection_select = $('#projection');
+var precision_input = $('#precision');
+
+function set_precision(value) {
+  var format = ol.coordinate.createStringXY(value);
+  mouse_position_control.setCoordinateFormat(format);
+}
+
+// Fixme: last_precision
+var last_precision = precision_input.valueAsNumber;
 projection_select.on('change', function() {
-  mouse_position_control.setProjection(ol.proj.get(this.value));
+  var value = this.value;
+  if (value == 'EPSG:3857') {
+    last_precision = precision_input.valueAsNumber;
+    precision_input.val(0);
+    set_precision(0);
+  }
+  else if (value == 'EPSG:4326') {
+    last_precision = 4;
+    precision_input.val(last_precision);
+    set_precision(last_precision);
+  }
+  mouse_position_control.setProjection(ol.proj.get(value));
 });
 projection_select.val(mouse_position_control.getProjection().getCode());
 
-var precision_input = $('#precision');
 precision_input.on('change', function() {
-  var format = ol.coordinate.createStringXY(this.valueAsNumber);
-  mouse_position_control.setCoordinateFormat(format);
+  var value = this.valueAsNumber;
+  last_precision = value;
+  set_precision(value);
 });
 
 /**************************************************************************************************/
@@ -90,11 +114,19 @@ var tile_grid = new ol.tilegrid.WMTS({
   matrixIds: matrix_ids
 });
 
+  // http://wxs.ign.fr/j5tcdln4ya4xggpdu4j0f0cn/geoportail/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=ORTHOIMAGERY.ORTHOPHOTOS&STYLE=normal&TILEMATRIXSET=PM&TILEMATRIX=15&TILEROW=11316&TILECOL=16615&FORMAT=image%2Fjpeg
+  // http://wxs.ign.fr/j5tcdln4ya4xggpdu4j0f0cn/geoportail/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD&STYLE=normal&TILEMATRIXSET=PM&TILEMATRIX=15&TILEROW=11318&TILECOL=16614&FORMAT=image%2Fjpeg
+  // http://wxs.ign.fr/j5tcdln4ya4xggpdu4j0f0cn/geoportail/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TRANSPORTNETWORKS.ROADS&STYLE=normal&TILEMATRIXSET=PM&TILEMATRIX=15&TILEROW=11316&TILECOL=16614&FORMAT=image%2Fpng
+  // http://wxs.ign.fr/j5tcdln4ya4xggpdu4j0f0cn/geoportail/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=CADASTRALPARCELS.PARCELS&STYLE=bdparcellaire&TILEMATRIXSET=PM&TILEMATRIX=15&TILEROW=11317&TILECOL=16614&FORMAT=image%2Fpng
+  // http://wxs.ign.fr/j5tcdln4ya4xggpdu4j0f0cn/geoportail/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25TOUR&STYLE=normal&TILEMATRIXSET=PM&TILEMATRIX=15&TILEROW=11316&TILECOL=16611&FORMAT=image%2Fjpeg
+
 var ign_source = new ol.source.WMTS({
   url: 'http://wxs.ign.fr/' + geoportail_api_key + '/wmts',
-  layer: 'GEOGRAPHICALGRIDSYSTEMS.MAPS',
+  // layer: 'GEOGRAPHICALGRIDSYSTEMS.MAPS',
+  layer: 'ORTHOIMAGERY.ORTHOPHOTOS',
   matrixSet: 'PM',
   format: 'image/jpeg',
+  // format: 'image/png',
   projection: 'EPSG:3857',
   tileGrid: tile_grid,
   style: 'normal',
@@ -195,167 +227,272 @@ var massif_geojson_layer = new ol.layer.Vector({
   source: massif_geojson_source,
   style: style_function
 });
-map.addLayer(massif_geojson_layer);
+// map.addLayer(massif_geojson_layer);
 
-var circuit_geojson_source = new ol.source.Vector({
-  features: (new ol.format.GeoJSON()).readFeatures(circuit_geojson, feature_options)
-});
-var circuit_geojson_layer = new ol.layer.Vector({
-  source: circuit_geojson_source,
-  style: style_function
-});
-map.addLayer(circuit_geojson_layer);
-
-var place_geojson_source = new ol.source.Vector({
-  features: (new ol.format.GeoJSON()).readFeatures(place_geojson, feature_options)
-});
-var place_geojson_layer = new ol.layer.Vector({
-  source: place_geojson_source,
-  style: style_function
-});
-map.addLayer(place_geojson_layer);
-
-/**************************************************************************************************/
-
-//////var popup_element = document.getElementById('popup');
-//////
-//////// Fixme: popup don't move with the map
-//////var popup = new ol.Overlay({
-//////  element: popup_element,
-//////  positioning: 'bottom-center',
-//////  stopEvent: false
-//////});
-//////map.addOverlay(popup);
-//////
-//////// display popup on click
-//////map.on('click', function(event) {
-//////  var feature = map.forEachFeatureAtPixel(event.pixel,
-//////      function(feature, layer) {
-//////        return feature;
-//////      });
-//////  if (feature) {
-//////    console.log("feature", feature.get('massif'))
-//////    $('#massif-name').html('Massif : ' + feature.get('massif'))
-//////    var geometry = feature.getGeometry();
-//////    var coordinate = geometry.getCoordinates();
-//////    popup.setPosition(coordinate);
-//////    $(popup_element).popover({
-//////      'placement': 'top',
-//////      'html': true,
-//////      'content': feature.get('massif'), // Fixme: not updated next time
-//////      // 'title': feature.get('massif')
-//////      // delay: { "show": 200, "hide": 100 } // Fixme: do nothing
-//////    });
-//////    $(popup_element).popover('show');
-//////  } else {
-//////    console.log("feature None")
-//////    // https://github.com/twbs/bootstrap/issues/17544
-//////    $(popup_element).popover('dispose');
-//////  }
-//////});
-//////
-//////// change mouse cursor when over marker
-//////$(map.getViewport()).on('mousemove', function(e) {
-//////  var pixel = map.getEventPixel(e.originalEvent);
-//////  var hit = map.forEachFeatureAtPixel(pixel, function(feature, layer) {
-//////    return true;
-//////  });
-//////  if (hit) {
-//////    map.getTarget().style.cursor = 'pointer';
-//////  } else {
-//////    map.getTarget().style.cursor = '';
-//////  }
-//////});
-
-// var select_single_click = new ol.interaction.Select();
-// var select_mouse_move = new ol.interaction.Select({
-//   condition: ol.events.condition.mouseMove
+// var circuit_geojson_source = new ol.source.Vector({
+//   features: (new ol.format.GeoJSON()).readFeatures(circuit_geojson, feature_options)
 // });
-// var select = select_mouse_move;
-// map.addInteraction(select);
-// select.on('select', function(e) {
-//   features = e.target.getFeatures()
-//   console.log(features);
-//   // $('#status').html('&nbsp;' + e.target.getFeatures().getLength() +
-//   // 		    ' selected features (last operation selected ' + e.selected.length +
-//   // 		    ' and deselected ' + e.deselected.length + ' features)');
+// var circuit_geojson_layer = new ol.layer.Vector({
+//   source: circuit_geojson_source,
+//   style: style_function
 // });
+// map.addLayer(circuit_geojson_layer);
 
-/**************************************************************************************************/
+// var place_geojson_source = new ol.source.Vector({
+//   features: (new ol.format.GeoJSON()).readFeatures(place_geojson, feature_options)
+// });
+// var place_geojson_layer = new ol.layer.Vector({
+//   source: place_geojson_source,
+//   style: style_function
+// });
+// map.addLayer(place_geojson_layer);
 
-var style_function_custom = function(feature, resolution) {
-  return [new ol.style.Style({
-    image: new ol.style.Circle({
-      radius: 10,
-      fill: new ol.style.Fill({
-	color: 'rgba(255, 0, 255, .5)'
-      }),
-      stroke: new ol.style.Stroke({
-        color: 'blue',
-	width: 2
-      })
-    })
-  })]
-}
-
-var custom_source = new ol.source.Vector({
-  features: new ol.format.GeoJSON()
+var cluster_source = new ol.source.Cluster({
+  distance: 20,
+  source: massif_geojson_source
 });
 
-var custom_layer = new ol.layer.Vector({
-  source: custom_source,
-  style: style_function_custom
-});
+var style_cache = {};
 
-map.addLayer(custom_layer);
-
-var interaction;
-$('#map-toolbar label').on('click', function(event) {
-  map.removeInteraction(interaction);
-
-  var id = event.target.id;
-  console.log("click on ", id)
-  switch(id) {
-  case "select":
-    interaction = new ol.interaction.Select();
-    map.addInteraction(interaction);
-    break;
-
-  case "point":
-    interaction = new ol.interaction.Draw({
-      type: 'Point',
-      source: custom_layer.getSource()
-    });
-    map.addInteraction(interaction);
-    interaction.on('drawend', onDrawEnd);
-    break;
-
-  case "modify":
-    interaction = new ol.interaction.Modify({
-      features: new ol.Collection(custom_layer.getSource().getFeatures())
-    });
-    map.addInteraction(interaction);
-    break;
-
-  default:
-    break;
+var clusters = new ol.layer.Vector({
+  source: cluster_source,
+  style: function(feature, resolution) {
+    var size = feature.get('features').length;
+    var style = style_cache[size];
+    if (!style) {
+      style = [new ol.style.Style({
+        image: new ol.style.Circle({
+          radius: 10,
+          stroke: new ol.style.Stroke({
+            color: '#fff'
+          }),
+          fill: new ol.style.Fill({
+            color: '#3399CC'
+          })
+        }),
+        text: new ol.style.Text({
+          text: size.toString(),
+          fill: new ol.style.Fill({
+            color: '#fff'
+          })
+        })
+      })];
+      style_cache[size] = style;
+    }
+    return style;
   }
 });
+map.addLayer(clusters);
 
-function onDrawEnd(event) {
-  console.log(event.feature)
+/**************************************************************************************************/
+
+// Define styles
+
+var normal_style = new ol.style.Style({
+  image: new ol.style.Circle({
+    radius: 4,
+    fill: new ol.style.Fill({
+      color: 'rgba(20,150,200,0.3)'
+    }),
+    stroke: new ol.style.Stroke({
+      color: 'rgba(20,130,150,0.8)',
+      width: 1
+    })
+  })
+});
+
+var selected_style = new ol.style.Style({
+  image: new ol.style.Circle({
+    radius: 40,
+    fill: new ol.style.Fill({
+      color: 'rgba(150,150,200,0.6)'
+    }),
+    stroke: new ol.style.Stroke({
+      color: 'rgba(20,30,100,0.8)',
+      width: 3
+    })
+  })
+});
+
+var selected_text_style_function = function(name, coordinate) {
+  // var box_width = feature_name.length * ...;
+  // var margin = box_width * ...;
+  // map.getView().getResolution();
+  return new ol.style.Style({
+    // geometry: new ol.geom.Polygon([[[coordinate[0] -margin, coordinate[1] -margin],
+    // 				   [coordinate[0] +margin, coordinate[1] -margin],
+    // 				   [coordinate[0] +margin, coordinate[1] +margin],
+    // 				   [coordinate[0] -margin, coordinate[1] +margin]
+    // 				  ]]),
+    // fill: new ol.style.Fill({
+    //   color: '#FFF'
+    // }),
+    text: new ol.style.Text({
+      font: '20px helvetica, sans-serif',
+      text: name,
+      fill: new ol.style.Fill({
+        color: '#000'
+      }),
+      stroke: new ol.style.Stroke({
+        color: '#fff', // #fff #DEFFCD #D1FEBB
+        width: 20
+      })
+    })
+  });
+};
+
+var selected_features = [];
+
+// Unselect previous selected features
+function unselect_previous_features() {
+  var i;
+  for(i=0; i < selected_features.length; i++) {
+    selected_features[i].setStyle(null);
+  }
+  selected_features = [];
 }
 
-$("#download-button").click(function(event) {
-  console.log("download-button");
-  // ???
-  var obj_geojson = (new ol.format.GeoJSON()).writeFeatures(custom_source.getFeatures(), feature_options);
-  console.log(obj_geojson);
-  var obj_json = JSON.stringify(obj_geojson);
-  console.log(obj_json);
-  var blob = new Blob([obj_geojson], {type: "text/plain;charset=utf-8"});
-  saveAs(blob, "bleau-geo.json");
+// Handle pointer
+map.on('pointermove', function(event) {
+  unselect_previous_features();
+  map.forEachFeatureAtPixel(event.pixel, function(feature) {
+    features = feature.get('features');
+    if (features) {
+      feature1 = features[0];
+      feature_name = feature1.get('massif');
+      coordinate = feature1.getGeometry().getCoordinates();
+      feature.setStyle([
+	// selected_style,
+	selected_text_style_function(feature_name, coordinate)
+      ]);
+      selected_features.push(feature);
+    }});
 });
+
+/**************************************************************************************************/
+
+if (show_edit_toolbar) {
+  
+  var style_function_custom = function(feature, resolution) {
+    return [new ol.style.Style({
+      image: new ol.style.Circle({
+        radius: 10,
+        fill: new ol.style.Fill({
+  	color: 'rgba(255, 0, 255, .5)'
+        }),
+        stroke: new ol.style.Stroke({
+          color: 'blue',
+  	width: 2
+        })
+      })
+    })]
+  }
+  
+  var custom_source = new ol.source.Vector({
+    features: new ol.format.GeoJSON()
+  });
+  
+  var custom_layer = new ol.layer.Vector({
+    source: custom_source,
+    style: style_function_custom
+  });
+  map.addLayer(custom_layer);
+  
+  var interaction;
+  $('#map-toolbar label').on('click', function(event) {
+    map.removeInteraction(interaction);
+    
+    var id = event.target.id;
+    switch(id) {
+    case "select":
+      interaction = new ol.interaction.Select();
+      map.addInteraction(interaction);
+      break;
+      
+    case "point":
+      interaction = new ol.interaction.Draw({
+        type: 'Point',
+        source: custom_source
+      });
+      map.addInteraction(interaction);
+      interaction.on('drawend', onDrawEnd);
+      break;
+      
+    case "modify":
+      interaction = new ol.interaction.Modify({
+        features: new ol.Collection(custom_source.getFeatures())
+      });
+      map.addInteraction(interaction);
+      break;
+      
+    default:
+      break;
+    }
+  });
+  
+  var current_feature = null;
+  var feature_modal = $('#feature-modal');
+  var feature_wgs84_position = feature_modal.find('#feature-wsg84-position');
+  var feature_mercator_position = feature_modal.find('#feature-mercator-position');
+  var feature_name_group = feature_modal.find('#feature-name-group');
+  var feature_name_input = feature_modal.find('#feature-name');
+  var feature_category_input = feature_modal.find('#feature-category');
+  var feature_note_input = feature_modal.find('#feature-note');
+  var cancel_feature_button = feature_modal.find('#cancel-feature-button');
+  var save_feature_button = feature_modal.find('#save-feature-button');
+  var download_feature_button = $("#download-feature-button");
+  var number_of_features_label = $("#number-of-features");
+
+  function show_feature_modal(feature) {
+    current_feature = feature;
+    mercator_coordinate = feature.getGeometry().getCoordinates();
+    coordinate = ol.proj.transform(mercator_coordinate, 'EPSG:3857', 'EPSG:4326');
+    feature_wgs84_position.text(coordinate[0].toFixed(5) + ', ' + coordinate[1].toFixed(5))
+    feature_mercator_position.text(mercator_coordinate[0].toFixed(0) + ', ' + mercator_coordinate[1].toFixed(0))
+    feature_modal.modal();
+  }
+  
+  function hide_feature_modal() {
+    feature_modal.modal('hide');
+    feature_name_group.removeClass('has-error')
+    feature_name_input.removeClass('form-control-error')
+    features = custom_source.getFeatures();
+    number_of_features_label.text(features.length.toString());
+    feature_name_input.val('');
+    feature_note_input.val('');
+    current_feature = null;
+  }
+  
+  function onDrawEnd(event) {
+    show_feature_modal(event.feature);
+  }
+  
+  save_feature_button.on('click', function(event) {
+    var name = feature_name_input.val();
+    if (name) {
+      current_feature.set('name', name);
+      current_feature.set('category', feature_category_input.val());
+      current_feature.set('note', feature_note_input.val());
+      hide_feature_modal();
+    }
+    else {
+      feature_name_group.addClass('has-error')
+      feature_name_input.addClass('form-control-error')
+    }
+  });
+  
+  cancel_feature_button.on('click', function(event) {
+    custom_source.removeFeature(current_feature)
+    hide_feature_modal();
+  });
+  
+  download_feature_button.click(function(event) {
+    var obj_geojson = (new ol.format.GeoJSON()).writeFeatures(custom_source.getFeatures(), feature_options);
+    var obj_json = JSON.stringify(obj_geojson);
+    var blob = new Blob([obj_geojson], {type: "text/plain;charset=utf-8"});
+    saveAs(blob, "bleau-geo.json");
+  });
+}
 
 /***************************************************************************************************
  *
