@@ -76,7 +76,7 @@ class PlaceCategory(str):
         # Normalise and check
         category = category.lower()
         if category not in cls.__categories__:
-            raise ValueError
+            raise ValueError('Unknown category "{}"'.format(category))
         
         return str.__new__(cls, category)
 
@@ -86,7 +86,7 @@ class WayNumber:
 
     """This class defines a way number."""
 
-    __number_re__ = re.compile('([1-9]+)(bis)?')
+    __number_re__ = re.compile('([1-9]+)(bis|terx|ex)?')
     # tierce
 
     ##############################################
@@ -100,7 +100,7 @@ class WayNumber:
             self._number = int(number)
             self._variant = variant
         else:
-            raise ValueError
+            raise ValueError('Bad way number "{}"'.format(number))
 
     ##############################################
 
@@ -115,7 +115,10 @@ class WayNumber:
 
     @property
     def __json_interface__(self):
-        return str(self)
+        if self._variant is None:
+            return self._number
+        else:
+            return str(self)
 
     ##############################################
 
@@ -168,7 +171,7 @@ class Grade:
             number, self._letter, self._sign = match.groups()
             self._number = int(number)
         else:
-            raise ValueError
+            raise ValueError('Bad grade "{}"'.format(grade))
 
     ##############################################
 
@@ -295,7 +298,7 @@ class AlpineGrade(str):
 
         grade = grade.upper()
         if grade not in cls.__grades__:
-            raise ValueError
+            raise ValueError('Bad alpine grade "{}"'.format(grade))
         
         return str.__new__(cls, grade)
 
@@ -353,7 +356,7 @@ class ChaosType(str):
         chaos_type = chaos_type.upper()
         match = cls.__chaos_type_re__.match(chaos_type)
         if not match:
-            raise ValueError
+            raise ValueError('Bad chaos type "{}"'.format(chaos_type))
         # else:
         #     match.groups() # 0 2
 
@@ -652,6 +655,9 @@ class Boulder(WithCoordinate):
 
     def __lt__(self, other):
 
+        # if self.number is None or self.other is None:
+        #     return self.number is None
+        # else:
         return self.number < other.number
 
 ####################################################################################################
@@ -898,7 +904,7 @@ class BleauDataBase:
             features.extend([circuit for circuit in self.circuits if circuit])
         feature_collections = geojson.FeatureCollection(features)
         if not geojson.is_valid(feature_collections):
-            raise ValueError
+            raise ValueError('Non valid GeoJSON')
         # Fixme: crs geojson.named API
         
         kwargs = dict(indent=2, ensure_ascii=False, sort_keys=True)
