@@ -86,7 +86,7 @@ class WayNumber:
 
     """This class defines a way number."""
 
-    __number_re__ = re.compile('([1-9]+)(bis|terx|ex)?')
+    __number_re__ = re.compile('^([1-9][0-9]*)(bis|ter)?( ex)?$')
     # tierce
 
     ##############################################
@@ -96,9 +96,10 @@ class WayNumber:
         number = str(number).lower()
         match = self.__number_re__.match(number)
         if match is not None:
-            number, variant = match.groups()
+            number, variant, ex = match.groups()
             self._number = int(number)
             self._variant = variant
+            self._ex = ex
         else:
             raise ValueError('Bad way number "{}"'.format(number))
 
@@ -109,13 +110,15 @@ class WayNumber:
         number = str(self._number)
         if self._variant is not None:
             number += self._variant
+        if self._ex is not None:
+            number += self._ex
         return number
 
     ##############################################
 
     @property
     def __json_interface__(self):
-        if self._variant is None:
+        if self._variant is None and self._ex is None:
             return self._number
         else:
             return str(self)
@@ -132,6 +135,10 @@ class WayNumber:
         number = float(self._number)
         if self._variant == 'bis':
             number += .1
+        elif self._variant == 'ter':
+            number += .2
+        if self._variant == 'ex':
+            number += .3
         return number
 
     ##############################################
@@ -149,6 +156,10 @@ class WayNumber:
     @property
     def variant(self):
         return self._variant
+
+    @property
+    def ex(self):
+        return self._ex
 
 ####################################################################################################
 
