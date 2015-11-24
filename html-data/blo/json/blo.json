@@ -4928,7 +4928,7 @@
                 "cotation": "5-",
                 "descriptif": "",
                 "name": "Le Bec de Gaz",
-                "numero": "1 rouge"
+                "numero": "1"
               },
               {
                 "cotation": "5-",
@@ -5366,7 +5366,7 @@
                 "cotation": "6b+",
                 "descriptif": "",
                 "name": "Le Rab Dément",
-                "numero": "49 A rouge"
+                "numero": "49"
               }
             ],
             "lat": 48.493653,
@@ -5392,7 +5392,7 @@
                 "cotation": "5",
                 "descriptif": "",
                 "name": "Face Sud du Bec",
-                "numero": "1 rose"
+                "numero": "1"
               },
               {
                 "cotation": "5",
@@ -5626,7 +5626,7 @@
                 "cotation": "6a",
                 "descriptif": "fissure.",
                 "name": "La Fissure du Sanglier",
-                "numero": "40 A rose"
+                "numero": "40"
               }
             ],
             "lat": 48.493653,
@@ -6291,7 +6291,7 @@
                 "cotation": "2",
                 "descriptif": "",
                 "name": "La Voie de Sonia",
-                "numero": "D"
+                "numero": "1bis"
               },
               {
                 "cotation": "1",
@@ -6900,110 +6900,110 @@
               {
                 "cotation": "6a",
                 "descriptif": "traversée. traversée ascendante.",
-                "name": "",
-                "numero": "Le Sémaphore"
+                "name": "Le Sémaphore",
+                "numero": 1
               },
               {
                 "cotation": "6a",
                 "descriptif": "traversée, plats. traverser à gauche et sortir sur des plats.",
-                "name": "",
-                "numero": "Le Trou Duc"
+                "name": "Le Trou Duc",
+                "numero": 2
               },
               {
                 "cotation": "6a",
                 "descriptif": "traversée, plats. traverser à gauche et sortir sur des plats.",
-                "name": "",
-                "numero": "La Ventrèche"
+                "name": "La Ventrèche",
+                "numero": 3
               },
               {
                 "cotation": "6b",
                 "descriptif": "traversée, réglettes.",
-                "name": "",
-                "numero": "Le Dahlia Noir DG"
+                "name": "Le Dahlia Noir DG",
+                "numero": 4
               },
               {
                 "cotation": "6a",
                 "descriptif": "traversée, plats. traverser à droite et sortir sur des plats.",
-                "name": "",
-                "numero": "La Praline"
+                "name": "La Praline",
+                "numero": 5
               },
               {
                 "cotation": "6c",
                 "descriptif": "expo, traversée.",
-                "name": "",
-                "numero": "Danse Macabre raccourci"
+                "name": "Danse Macabre raccourci",
+                "numero": 6
               },
               {
                 "cotation": "6a+",
                 "descriptif": "réta, traversée, réglettes.",
-                "name": "",
-                "numero": "La Coquille"
+                "name": "La Coquille",
+                "numero": 7
               },
               {
                 "cotation": "6b",
                 "descriptif": "traversée, réglettes.",
-                "name": "",
-                "numero": "L’Œuvre au Noir GD"
+                "name": "L’Œuvre au Noir GD",
+                "numero": 8
               },
               {
                 "cotation": "6b",
                 "descriptif": "traversée, plats. traverser à droite et sortir sur des plats.",
-                "name": "",
-                "numero": "La Gosse"
+                "name": "La Gosse",
+                "numero": 9
               },
               {
                 "cotation": "6c",
                 "descriptif": "traversée.",
-                "name": "",
-                "numero": "Les Barrettes"
+                "name": "Les Barrettes",
+                "numero": 10
               },
               {
                 "cotation": "6b",
                 "descriptif": "traversée.",
-                "name": "",
-                "numero": "Les Pleurs"
+                "name": "Les Pleurs",
+                "numero": 11
               },
               {
                 "cotation": "5+",
                 "descriptif": "traversée, plats.",
-                "name": "",
-                "numero": "La Métropolitaine raccourci"
+                "name": "La Métropolitaine raccourci",
+                "numero": 12
               },
               {
                 "cotation": "6a",
                 "descriptif": "mur, plats.",
-                "name": "",
-                "numero": "Le Médaillé"
+                "name": "Le Médaillé",
+                "numero": 13
               },
               {
                 "cotation": "6c",
                 "descriptif": "traversée.",
-                "name": "",
-                "numero": "La Ballade du Chamion raccourci"
+                "name": "La Ballade du Chamion raccourci",
+                "numero": 14
               },
               {
                 "cotation": "6b",
                 "descriptif": "traversée, plats.",
-                "name": "",
-                "numero": "Le Dragon"
+                "name": "Le Dragon",
+                "numero": 15
               },
               {
                 "cotation": "6a+",
                 "descriptif": "traversée. tour quasi complet du bloc.",
-                "name": "",
-                "numero": "Le Donjon"
+                "name": "Le Donjon",
+                "numero": 16
               },
               {
                 "cotation": "6c",
                 "descriptif": "mur, réglettes.",
-                "name": "",
-                "numero": "La Mesure"
+                "name": "La Mesure",
+                "numero": 17
               },
               {
                 "cotation": "6a",
                 "descriptif": "traversée, plats. traverser à gauche et sortir sur des plats.",
-                "name": "",
-                "numero": "Olympisme"
+                "name": "Olympisme",
+                "numero": 18
               }
             ],
             "lat": "",
@@ -7728,8 +7728,8 @@
               {
                 "cotation": "7a",
                 "descriptif": "expo, traversée. partir tout à gauche, redescendre sous le surplomb et sortir à droite du 36, Mauvais Sang  (flèche blanche ; expo). voir aussi : Noir Désir  7a+",
-                "name": "",
-                "numero": "Danse Macabre"
+                "name": "Danse Macabre",
+                "numero": "1bis"
               },
               {
                 "cotation": "6c",
@@ -7980,62 +7980,62 @@
               {
                 "cotation": "6c",
                 "descriptif": "traversée. sortie à l’angle (la version prolongée à gauche, avec traversée basse s’appelle Le Diéséliste  et cote 7a).",
-                "name": "",
-                "numero": "922quat. Le Cambouis du Diéséliste"
+                "name": "Le Cambouis du Diéséliste",
+                "numero": "2quater"
               },
               {
                 "cotation": "6b",
                 "descriptif": "traversée.",
-                "name": "",
-                "numero": "923quat. L’Amoco"
+                "name": "L’Amoco",
+                "numero": "3quater"
               },
               {
                 "cotation": "7c",
                 "descriptif": "traversée. sur la gauche du secteur principal, dans la pente au dessus du parking. NB : l’aller-retour est connu sous le nom de \"Return Ticket\" (7c+).",
-                "name": "",
-                "numero": "924quat. Le Dahlia Noir"
+                "name": "Le Dahlia Noir",
+                "numero": "4quater"
               },
               {
                 "cotation": "7a",
                 "descriptif": "traversée. sur la gauche du secteur principal, dans la pente au dessus du parking. Partir de l’angle tout à droite, traverser par le bas et sortir dans un bombé. voir aussi : L’Œuvre au Noir en aller-retour  7b+ (7b)",
-                "name": "",
-                "numero": "924quat. L’Œuvre au Noir"
+                "name": "L’Œuvre au Noir",
+                "numero": "924quater"
               },
               {
                 "cotation": "6b",
                 "descriptif": "mur, traversée.",
-                "name": "",
-                "numero": "925quat. La Veuve du Fossoyeur"
+                "name": "La Veuve du Fossoyeur",
+                "numero": "5quater"
               },
               {
                 "cotation": "6a",
                 "descriptif": "traversée.",
-                "name": "",
-                "numero": "926quat. Le Mâle Blanchi"
+                "name": "Le Mâle Blanchi",
+                "numero": "6quater"
               },
               {
                 "cotation": "6a",
                 "descriptif": "mur, expo.",
-                "name": "",
-                "numero": "927quat. Le Café Crème"
+                "name": "Le Café Crème",
+                "numero": "7quater"
               },
               {
                 "cotation": "6b",
                 "descriptif": "mur.",
-                "name": "",
-                "numero": "928quat. Le Cappuccino"
+                "name": "Le Cappuccino",
+                "numero": "8quater"
               },
               {
                 "cotation": "6c",
                 "descriptif": "mur, traversée. longue traversée ; le mouvement de \"crawl\" n’est pas obligatoire.",
-                "name": "",
-                "numero": "929quat. Le Crawl en Mer Noire"
+                "name": "Le Crawl en Mer Noire",
+                "numero": "9quater"
               },
               {
                 "cotation": "6c",
                 "descriptif": "mur.",
-                "name": "",
-                "numero": "930quat. La Perle de Jais"
+                "name": "La Perle de Jais",
+                "numero": "930quater"
               }
             ],
             "lat": "",
@@ -18908,7 +18908,7 @@
                 "cotation": "2",
                 "descriptif": "fissure.",
                 "name": "",
-                "numero": "-"
+                "numero": "1bis"
               },
               {
                 "cotation": "2+",
@@ -19578,7 +19578,7 @@
                 "cotation": "4-",
                 "descriptif": "bleu foncé",
                 "name": "Fantaisie",
-                "numero": "D"
+                "numero": "1bis"
               },
               {
                 "cotation": "4",
@@ -23914,7 +23914,7 @@
                 "cotation": "2",
                 "descriptif": "dalle, mur, fissure. sur la crête, 150 m à l’Est de la Route de Diane.",
                 "name": "",
-                "numero": "-"
+                "numero": "1bis"
               },
               {
                 "cotation": "5-",
@@ -28409,7 +28409,7 @@
                 "cotation": "3",
                 "descriptif": "dalle. circuit fraise écrasée.",
                 "name": "",
-                "numero": "Départ circuit fraise écrasée"
+                "numero": "1bis"
               },
               {
                 "cotation": "4",
@@ -34749,7 +34749,7 @@
                 "cotation": "1+",
                 "descriptif": "",
                 "name": "",
-                "numero": "Départ"
+                "numero": "1"
               },
               {
                 "cotation": "2+",
@@ -35076,7 +35076,7 @@
                 "cotation": "2-",
                 "descriptif": "",
                 "name": "",
-                "numero": "Départ"
+                "numero": "1"
               },
               {
                 "cotation": "4-",
@@ -35432,7 +35432,7 @@
                 "cotation": "4",
                 "descriptif": "",
                 "name": "",
-                "numero": "Départ"
+                "numero": "1"
               },
               {
                 "cotation": "4",
@@ -44139,7 +44139,7 @@
                 "cotation": "2",
                 "descriptif": "voie de départ du circuit jaune.",
                 "name": "",
-                "numero": "Le Départ"
+                "numero": "1bis"
               },
               {
                 "cotation": "2",
@@ -46807,7 +46807,7 @@
                 "cotation": "2",
                 "descriptif": "",
                 "name": "",
-                "numero": "1 Départ Jaune"
+                "numero": "1"
               },
               {
                 "cotation": "2-",
@@ -47579,7 +47579,7 @@
                 "cotation": "3-",
                 "descriptif": "orange Est",
                 "name": "",
-                "numero": "1 Départ Orange Est"
+                "numero": "1"
               },
               {
                 "cotation": "3+",
@@ -47899,7 +47899,7 @@
                 "cotation": "5-",
                 "descriptif": "mur.",
                 "name": "",
-                "numero": "1 Départ Rouge"
+                "numero": "1"
               },
               {
                 "cotation": "5",
@@ -50443,8 +50443,8 @@
               {
                 "cotation": "4-",
                 "descriptif": "",
-                "name": "",
-                "numero": "3  Le Manchot"
+                "name": "Le Manchot",
+                "numero": "3"
               },
               {
                 "cotation": "3+",
@@ -50545,14 +50545,14 @@
               {
                 "cotation": "4",
                 "descriptif": "",
-                "name": "",
-                "numero": "18 La Descente Exposée"
+                "name": "La Descente Exposée",
+                "numero": "18"
               },
               {
                 "cotation": "2+",
                 "descriptif": "",
-                "name": "",
-                "numero": "19  Le Doute"
+                "name": "Le Doute",
+                "numero": "19"
               },
               {
                 "cotation": "3-",
@@ -50569,8 +50569,8 @@
               {
                 "cotation": "3+",
                 "descriptif": "",
-                "name": "",
-                "numero": "22 La Sans Nom"
+                "name": "La Sans Nom",
+                "numero": "22"
               },
               {
                 "cotation": "4-",
@@ -50605,20 +50605,20 @@
               {
                 "cotation": "2+",
                 "descriptif": "",
-                "name": "",
-                "numero": "26 Prise d’Élan"
+                "name": "Prise d’Élan",
+                "numero": "26"
               },
               {
                 "cotation": "3+",
                 "descriptif": "",
-                "name": "",
-                "numero": "27  Passage Difficile"
+                "name": "Passage Difficile",
+                "numero": "27"
               },
               {
                 "cotation": "3",
                 "descriptif": "",
-                "name": "",
-                "numero": "28 Le Contentement"
+                "name": "Le Contentement",
+                "numero": "28"
               },
               {
                 "cotation": "3-",
@@ -50647,8 +50647,8 @@
               {
                 "cotation": "2",
                 "descriptif": "",
-                "name": "",
-                "numero": "31 La Quelconque"
+                "name": "La Quelconque",
+                "numero": "31"
               },
               {
                 "cotation": "4",
@@ -51884,7 +51884,7 @@
                 "cotation": "2",
                 "descriptif": "réta.",
                 "name": "",
-                "numero": "Départ"
+                "numero": "1bis"
               },
               {
                 "cotation": "3",
@@ -55514,7 +55514,7 @@
                 "cotation": "5-",
                 "descriptif": "Départ bleu ciel",
                 "name": "La Tête à Queue",
-                "numero": "D"
+                "numero": "1bis"
               },
               {
                 "cotation": "3+",
@@ -55592,7 +55592,7 @@
                 "cotation": "5",
                 "descriptif": "Variante bleu clair.",
                 "name": "La Truande",
-                "numero": "111b. 11bis"
+                "numero": "11bis"
               },
               {
                 "cotation": "4+",
@@ -56043,8 +56043,8 @@
               {
                 "cotation": "5",
                 "descriptif": "dalle. Dalle. 5c sans la bonne main gauche en sortie.   5c without the good hold left hand for the exit.",
-                "name": "",
-                "numero": "26.26. Fine de Claire"
+                "name": "Fine de Claire",
+                "numero": "26bis"
               },
               {
                 "cotation": "4+",
@@ -56089,8 +56089,8 @@
                 "numero": 33
               },
               {
-                "cotation": "mur",
-                "descriptif": "5-. Mur déversant direct. Arrivée",
+                "cotation": "5-",
+                "descriptif": "Mur déversant direct. Arrivée",
                 "name": "Incendie",
                 "numero": 34
               }
@@ -56163,8 +56163,8 @@
                 "numero": 8
               },
               {
-                "cotation": "plats",
-                "descriptif": "6a, mur. Mur et plat en sortie, engagé et un peu morphologique.",
+                "cotation": "6a",
+                "descriptif": "Mur et plat en sortie, engagé et un peu morphologique.",
                 "name": "Le Majordome",
                 "numero": 9
               },
@@ -64486,8 +64486,8 @@
               {
                 "cotation": "5+",
                 "descriptif": "mur.",
-                "name": "",
-                "numero": "16 Le Médaillon"
+                "name": "Le Médaillon",
+                "numero": "16"
               },
               {
                 "cotation": "6b",
@@ -64682,7 +64682,7 @@
                 "cotation": "3-",
                 "descriptif": "surplomb.",
                 "name": "",
-                "numero": "Départ"
+                "numero": "1"
               },
               {
                 "cotation": "2+",
