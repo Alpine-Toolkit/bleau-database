@@ -48,15 +48,14 @@ def convert_boulder(circuit_blo):
 
         if isinstance(number, str):
             if number.startswith('ex '):
-                number = number.replace('ex ', '')
-                number += 'ex'
+                number = number.replace('ex ', '') + ' ex'
             if number.endswith('b'):
-                number.replace('b', 'bis')
+                number = number.replace('b', 'bis')
             if number.endswith('t'):
-                number.replace('t', 'ter')
+                number = number.replace('t', 'ter')
 
         comment = comment.replace('  ', ' ')
-        
+
         boulder = Boulder(bleau_database,
                           number=number,
                           name=name,
@@ -90,7 +89,7 @@ def merge_circuit(circuit_blo):
 
     if found_circuit is not None:
         boulders = convert_boulder(circuit_blo)
-        print(str(found_circuit), len(boulders))
+        # print(str(found_circuit), len(boulders))
         found_circuit.boulders = boulders
     else:
         pass 
