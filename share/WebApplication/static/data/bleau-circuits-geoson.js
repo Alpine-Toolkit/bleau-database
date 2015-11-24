@@ -10,14 +10,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2011,
-        "cotation": "TD-",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD-",
         "massif": "91_1",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2011,
         "status": "liste SNE",
         "topos": [
           "http://www.pofableau.com/cotation/topos/topo_91.1_rouge_1_TD-.pdf"
@@ -34,14 +36,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2011,
-        "cotation": "AD+",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD+",
         "massif": "91_1",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2011,
         "status": "liste SNE",
         "topos": [
           "http://www.pofableau.com/cotation/topos/topo_91.1_orange_2_AD+.pdf"
@@ -58,14 +62,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2014,
-        "cotation": "AD-",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD-",
         "massif": "91_1",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2014,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/91-1-orange-n4.pdf",
@@ -83,14 +89,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2011,
-        "cotation": "PD+",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD+",
         "massif": "91_1",
-        "numero": 5,
+        "number": 5,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2011,
         "status": "liste SNE",
         "topos": []
       },
@@ -105,14 +113,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "95_2",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/95-2-bleu-n1.pdf"
@@ -129,14 +139,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD-",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD-",
         "massif": "95_2",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/95-2-rouge-n2.pdf"
@@ -153,14 +165,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "ED-",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "ED-",
         "massif": "95_2",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/95-2-blanc-n3.pdf",
@@ -178,14 +192,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "PD+",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD+",
         "massif": "95_2",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/95-2-jaune-n4.pdf"
@@ -202,14 +218,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD+",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD+",
         "massif": "95_2",
-        "numero": 5,
+        "number": 5,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -224,14 +242,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "TD",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD",
         "massif": "Apremont Bizons",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/ap-bizons-rouge-n1.pdf"
@@ -248,14 +268,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2012,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Apremont Bizons",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2012,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/ap-bizons-bleu-n2.pdf"
@@ -272,14 +294,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2012,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Apremont Bizons",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2012,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/ap-bizons-orange-n3.pdf"
@@ -296,14 +320,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "EN",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "EN",
         "massif": "Apremont Bizons",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -318,14 +344,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2013,
-        "cotation": "AD-",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD-",
         "massif": "Apremont Dames",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2013,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKcFFCNlYxWk1NVnc/edit"
@@ -342,14 +370,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2013,
-        "cotation": "D-",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D-",
         "massif": "Apremont Dames",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2013,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKeFNTRDV1WGl0OG8/edit"
@@ -366,14 +396,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2013,
-        "cotation": "TD",
-        "couleur": "noir",
+        "boulders": null,
+        "colour": "noir",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD",
         "massif": "Apremont Dames",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2013,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKQ2JZbmYxanJ3VGM/edit"
@@ -390,14 +422,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "PD",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD",
         "massif": "Apremont Désert",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -412,14 +446,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "PD",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "PD",
         "massif": "Apremont Désert",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "abandonné",
         "topos": []
       },
@@ -434,14 +470,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Apremont Désert",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -456,14 +494,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Apremont Désert",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -478,14 +518,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Apremont Désert",
-        "numero": 5,
+        "number": 5,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "pas sur SNE",
         "topos": []
       },
@@ -500,14 +542,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2012,
-        "cotation": "D+",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D+",
         "massif": "Apremont Désert",
-        "numero": 6,
+        "number": 6,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2012,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/ap-desert-bleu-n6.pdf"
@@ -524,14 +568,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2013,
-        "cotation": "TD",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD",
         "massif": "Apremont Envers",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2013,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/ap-envers-rouge-n1.pdf",
@@ -549,14 +595,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "PD",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "PD",
         "massif": "Apremont Envers",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "abandonné",
         "topos": []
       },
@@ -571,14 +619,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Apremont Envers",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -593,14 +643,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2013,
-        "cotation": "PD",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD",
         "massif": "Apremont Envers",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2013,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/ap-envers-jaune-n4.pdf"
@@ -617,14 +669,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2014,
-        "cotation": "AD+",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD+",
         "massif": "Apremont Gorges",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2014,
         "status": "liste SNE",
         "topos": []
       },
@@ -639,14 +693,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD+",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD+",
         "massif": "Apremont Gorges",
-        "numero": 10,
+        "number": 10,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKU0NNR1VkVXVLRHM/edit"
@@ -663,14 +719,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2013,
-        "cotation": "ED-",
-        "couleur": "bleu ciel",
+        "boulders": null,
+        "colour": "bleu ciel",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "ED-",
         "massif": "Apremont Gorges",
-        "numero": 11,
+        "number": 11,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2013,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKaWNJT0dqSVphZ3M/edit"
@@ -687,14 +745,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "ED-",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "ED-",
         "massif": "Apremont Gorges",
-        "numero": 12,
+        "number": 12,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKalp0cklBaG85b2c/edit"
@@ -711,14 +771,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2011,
-        "cotation": "D+",
-        "couleur": "bleu baltique",
+        "boulders": null,
+        "colour": "bleu baltique",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D+",
         "massif": "Apremont Gorges",
-        "numero": 13,
+        "number": 13,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2011,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/ap-gorges-bleu%20baltique-n13.pdf",
@@ -736,14 +798,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "EN",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "EN",
         "massif": "Apremont Gorges",
-        "numero": 14,
+        "number": 14,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://bleaumeconnu.free.fr/enfant.htm"
@@ -760,14 +824,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "AD",
-        "couleur": "vert",
+        "boulders": null,
+        "colour": "vert",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Apremont Gorges",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/ap-gorges-vert-n2.pdf"
@@ -784,14 +850,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2011,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Apremont Gorges",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2011,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/ap-gorges-orange-n3.pdf",
@@ -809,14 +877,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D+",
-        "couleur": "fraise",
+        "boulders": null,
+        "colour": "fraise",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D+",
         "massif": "Apremont Gorges",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/ap-gorges-fraise-n4.pdf",
@@ -834,14 +904,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2011,
-        "cotation": "D",
-        "couleur": "bleu outremer",
+        "boulders": null,
+        "colour": "bleu outremer",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Apremont Gorges",
-        "numero": 5,
+        "number": 5,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2011,
         "status": "liste SNE",
         "topos": [
           "http://www.gumsparis.asso.fr/index.php/revue-le-crampon/doc_download/321-n36108apremontbleuoutremer"
@@ -858,14 +930,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2011,
-        "cotation": "TD-",
-        "couleur": "saumon",
+        "boulders": null,
+        "colour": "saumon",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD-",
         "massif": "Apremont Gorges",
-        "numero": 6,
+        "number": 6,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2011,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/ap-gorges-saumon-n6.pdf",
@@ -883,14 +957,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "ED+",
-        "couleur": "noir et blanc",
+        "boulders": null,
+        "colour": "noir et blanc",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "ED+",
         "massif": "Apremont Gorges",
-        "numero": 7,
+        "number": 7,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": []
       },
@@ -905,14 +981,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "PD+",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD+",
         "massif": "Apremont Gorges",
-        "numero": 9,
+        "number": 9,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": []
       },
@@ -927,14 +1005,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD+",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD+",
         "massif": "Bois Rond",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -949,14 +1029,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D+",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D+",
         "massif": "Bois Rond",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -971,14 +1053,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "ED-",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "ED-",
         "massif": "Bois Rond",
-        "numero": 5,
+        "number": 5,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -993,14 +1077,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Buthiers Canard",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": [
           "http://www.grimporama.com/francais/bleau/buthiers-canard-bleu.pdf",
@@ -1018,14 +1104,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "PD-",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "PD-",
         "massif": "Buthiers Canard",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": []
       },
@@ -1040,14 +1128,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "AD+",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "AD+",
         "massif": "Buthiers Canard",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKVF9yR3k5emtGLXM/edit"
@@ -1064,14 +1154,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "ED",
-        "couleur": "noir",
+        "boulders": null,
+        "colour": "noir",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "ED",
         "massif": "Buthiers Canard",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": []
       },
@@ -1086,14 +1178,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "EN",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "EN",
         "massif": "Buthiers Canard",
-        "numero": 5,
+        "number": 5,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": []
       },
@@ -1108,14 +1202,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "AD-",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "AD-",
         "massif": "Buthiers L'I",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": []
       },
@@ -1130,14 +1226,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Buthiers L'I",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": []
       },
@@ -1152,14 +1250,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "ED",
-        "couleur": "noir",
+        "boulders": null,
+        "colour": "noir",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "ED",
         "massif": "Buthiers L'I",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKenF1cm1QeEU3NlE/edit"
@@ -1176,14 +1276,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "TD",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "TD",
         "massif": "Buthiers L'I",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": []
       },
@@ -1198,14 +1300,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "F",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "F",
         "massif": "Buthiers L'I",
-        "numero": 5,
+        "number": 5,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": []
       },
@@ -1220,14 +1324,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "EN",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "EN",
         "massif": "Buthiers L'I",
-        "numero": 6,
+        "number": 6,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": []
       },
@@ -1242,14 +1348,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2014,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Calvaire",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2014,
         "status": "liste SNE",
         "topos": []
       },
@@ -1264,14 +1372,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D+",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D+",
         "massif": "Canche aux Merciers",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://www.pofableau.com/cotation/topos/topo_canche_bleu_1_D+.pdf"
@@ -1288,14 +1398,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Canche aux Merciers",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://www.pofableau.com/cotation/topos/topo_canche_orange_2_AD.pdf"
@@ -1312,14 +1424,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "PD-",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD-",
         "massif": "Canche aux Merciers",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -1334,14 +1448,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "EN",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "EN",
         "massif": "Canche aux Merciers",
-        "numero": 5,
+        "number": 5,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -1356,14 +1472,468 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD+",
-        "couleur": "rouge",
+        "boulders": [
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "dévers.",
+              "grade": "5-",
+              "name": "Ça Dérape Sec",
+              "number": "1",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "mur, réglettes. départ un peu morpho (triangle rouge).",
+              "grade": "5+",
+              "name": "Morphoillogique",
+              "number": "1",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "traversée.",
+              "grade": "6a",
+              "name": "Le Beau Final",
+              "number": "1",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "traversée.",
+              "grade": "5+",
+              "name": "Les Nineties",
+              "number": "2",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "réta.",
+              "grade": "6a",
+              "name": "Okilélé",
+              "number": "2",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "mur, réglettes.",
+              "grade": "5+",
+              "name": "Le Tiroir Secret / Mémorium",
+              "number": "3",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "dévers, réta. départ à gauche.",
+              "grade": "5+",
+              "name": "La Femme Léopard",
+              "number": "3",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "dévers, jeté, réta.",
+              "grade": "5+",
+              "name": "L’Autoroute du Sud",
+              "number": "4",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "dévers, plats. 1m à droite du 32.",
+              "grade": "6a",
+              "name": "",
+              "number": "4",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "mur, réta.",
+              "grade": "4+",
+              "name": "La Débonnaire",
+              "number": "5",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "dalle.",
+              "grade": "6a",
+              "name": "Maurice Gratton",
+              "number": "6",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "mur, bidoigts.",
+              "grade": "6a",
+              "name": "La Goulotte à Dom",
+              "number": "7",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "traversée.",
+              "grade": "5",
+              "name": "Le Croisé Magique",
+              "number": "8",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "dévers, fissure. toujours faisable, quoiqu’un peu morpho, depuis que l’inversée en bas de la fissure a partiellement cassé (de façon directe ou en partant à droite à l’aide d’un gratton).",
+              "grade": "6a",
+              "name": "Par Toutatis",
+              "number": "9",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "mur, réglettes.",
+              "grade": "6a+",
+              "name": "Bobol’s Come Back",
+              "number": "11",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "surplomb, fissure, départ assis.",
+              "grade": "6a",
+              "name": "Pas pour Léon",
+              "number": "12",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "réta. ancien n°12 rouge.",
+              "grade": "6b+",
+              "name": "Gueule Cassée",
+              "number": "12bis",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "réta, traversée, plats.",
+              "grade": "6a",
+              "name": "Jeu de Jambes",
+              "number": "13",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "réta.",
+              "grade": "5+",
+              "name": "Le Piston",
+              "number": "13bis",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "surplomb, traversée.",
+              "grade": "6a",
+              "name": "La Sortie des Artistes",
+              "number": "14",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "surplomb, réta.",
+              "grade": "6a",
+              "name": "L’Enfer des Nains",
+              "number": "15",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "arête, traversée. ancien n°16 rouge.",
+              "grade": "6b",
+              "name": "Chouchou Chéri",
+              "number": "15",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "surplomb, traversée. dans le couloir, sur le bloc du 15, L’Enfer des Nains. Partir de l’angle de droite, traverser d’abord par le haut sur des bossettes, redescendre au niveau de prises horizontales, poursuivre la traversée par le bas et sortir dans le surplomb du 15, L’Enfer des Nains.",
+              "grade": "7a+",
+              "name": "Coup Bas",
+              "number": "15bis",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "mur, bidoigts, plats.",
+              "grade": "5+",
+              "name": "Équilibriste",
+              "number": "16",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "dévers, proue.",
+              "grade": "5+",
+              "name": "Vous avez dit Gros Bœuf",
+              "number": "17",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "surplomb.",
+              "grade": "5+",
+              "name": "Les Gazelles",
+              "number": "18",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "mur, traversée.",
+              "grade": "5-",
+              "name": "Beau Pavé",
+              "number": "19",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "dévers.",
+              "grade": "5",
+              "name": "Triste Sire",
+              "number": "21",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "mur.",
+              "grade": "5+",
+              "name": "La Grande Classique",
+              "number": "22",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "traversée. sur le même bloc que le n°24 rouge. voir aussi : Pleine Lune  6b",
+              "grade": "5",
+              "name": "Lune Rousse",
+              "number": "23",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "traversée.",
+              "grade": "5+",
+              "name": "Rêve de Chevaux Blancs",
+              "number": "24",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "traversée.",
+              "grade": "6a",
+              "name": "La Conti",
+              "number": "25",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "mur. en départ bas (5b sinon).",
+              "grade": "6a",
+              "name": "Uhuru",
+              "number": "26",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "traversée.",
+              "grade": "5+",
+              "name": "L’Air de Rien",
+              "number": "27",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "mur.",
+              "grade": "5",
+              "name": "L’Hésitation",
+              "number": "28",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "mur, réglettes.",
+              "grade": "6b",
+              "name": "Les Doigts de l’Homme",
+              "number": "29",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "mur, bidoigts.",
+              "grade": "6c",
+              "name": "Kaki Dehors",
+              "number": "29bis",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "mur.",
+              "grade": "5",
+              "name": "Hatari",
+              "number": "31",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "traversée.",
+              "grade": "6b",
+              "name": "Glycolyse",
+              "number": "32",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "mur.",
+              "grade": "5-",
+              "name": "Récupéractive",
+              "number": "33",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": null,
+            "properties": {
+              "comment": "réta. à gauche du n°33 rouge.",
+              "grade": "5+",
+              "name": "Gros Os",
+              "number": "33bis",
+              "object": "Boulder"
+            },
+            "type": "Feature"
+          }
+        ],
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD+",
         "massif": "Canche aux Merciers",
-        "numero": 6,
+        "number": 6,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://www.pofableau.com/cotation/topos/topo_canche_rouge_6_TD+.pdf"
@@ -1380,14 +1950,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2012,
-        "cotation": "EN",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "EN",
         "massif": "Canche aux Merciers",
-        "numero": 7,
+        "number": 7,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2012,
         "status": "liste SNE",
         "topos": []
       },
@@ -1402,14 +1974,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D",
-        "couleur": "bleu ciel",
+        "boulders": null,
+        "colour": "bleu ciel",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Chamarande",
-        "numero": 11,
+        "number": 11,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": []
       },
@@ -1424,14 +1998,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2004,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Chamarande",
-        "numero": 13,
+        "number": 13,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2004,
         "status": null,
         "topos": [
           "http://www.grimporama.com/francais/bleau/b8-chamarande.pdf",
@@ -1449,14 +2025,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2004,
-        "cotation": "TD",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "TD",
         "massif": "Chamarande",
-        "numero": 14,
+        "number": 14,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2004,
         "status": null,
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKMEVqclR1bVMxVmc/edit"
@@ -1473,14 +2051,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Chamarande",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": []
       },
@@ -1495,14 +2075,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "EN",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "EN",
         "massif": "Chamarande",
-        "numero": 5,
+        "number": 5,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": []
       },
@@ -1517,14 +2099,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "EN",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "EN",
         "massif": "Chamarande",
-        "numero": 6,
+        "number": 6,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": []
       },
@@ -1539,14 +2123,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2004,
-        "cotation": "ED",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "ED",
         "massif": "Chamarande",
-        "numero": 8,
+        "number": 8,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2004,
         "status": null,
         "topos": [
           "http://www.grimporama.com/francais/bleau/chamarande-bl.htm"
@@ -1563,14 +2149,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "PD",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "PD",
         "massif": "Chamarande",
-        "numero": 9,
+        "number": 9,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": []
       },
@@ -1585,14 +2173,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Cul de Chien",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/culdechien-bleu-n1.pdf"
@@ -1609,14 +2199,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2014,
-        "cotation": "AD-",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD-",
         "massif": "Cul de Chien",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2014,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/culdechien-jaune-n3.pdf"
@@ -1633,14 +2225,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "TD+",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD+",
         "massif": "Cul de Chien",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/culdechien-rouge-n4.pdf"
@@ -1657,16 +2251,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D-",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": [
-          "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=93&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-        ],
+        "grade": "D-",
         "massif": "Cuvier Bas",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -1681,14 +2275,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "ED-",
-        "couleur": "noir",
+        "boulders": null,
+        "colour": "noir",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "ED-",
         "massif": "Cuvier Bas",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKaWlhWXN5c1p2Yzg/edit"
@@ -1705,14 +2301,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD+",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD+",
         "massif": "Cuvier Bas",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -1727,16 +2325,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": [
-          "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=96&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-        ],
+        "grade": "TD",
         "massif": "Cuvier Bas",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKQU0teUlVeDJIN1U/edit"
@@ -1753,14 +2351,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "ED+",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "ED+",
         "massif": "Cuvier Bas",
-        "numero": 5,
+        "number": 5,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKcHdrTkZIb0l4Q00/edit"
@@ -1777,14 +2377,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD",
         "massif": "Cuvier Bas",
-        "numero": 6,
+        "number": 6,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKMHhscTl1SjFaT1U/edit"
@@ -1801,14 +2403,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD-",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD-",
         "massif": "Cuvier Bas",
-        "numero": 7,
+        "number": 7,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -1823,14 +2427,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Cuvier Rempart",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -1845,14 +2451,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Cuvier Rempart",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -1867,14 +2475,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2014,
-        "cotation": "ED-",
-        "couleur": "noir",
+        "boulders": null,
+        "colour": "noir",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "ED-",
         "massif": "Cuvier Rempart",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2014,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKUGxJVFdLc0ZRTzA/edit"
@@ -1891,14 +2501,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD+",
-        "couleur": "mauve",
+        "boulders": null,
+        "colour": "mauve",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD+",
         "massif": "Dame Jouanne",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -1913,14 +2525,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2012,
-        "cotation": "PD",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD",
         "massif": "Dame Jouanne",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2012,
         "status": "liste SNE",
         "topos": []
       },
@@ -1935,14 +2549,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD-",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "TD-",
         "massif": "Dame Jouanne",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "abandonné",
         "topos": []
       },
@@ -1957,14 +2573,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Dame Jouanne",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -1979,14 +2597,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD",
         "massif": "Dame Jouanne",
-        "numero": 5,
+        "number": 5,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -2001,14 +2621,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "ED",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "ED",
         "massif": "Dame Jouanne",
-        "numero": 6,
+        "number": 6,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -2023,14 +2645,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2012,
-        "cotation": "AD-",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD-",
         "massif": "Dame Jouanne",
-        "numero": 7,
+        "number": 7,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2012,
         "status": "liste SNE",
         "topos": []
       },
@@ -2045,14 +2669,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "ED",
-        "couleur": "noir",
+        "boulders": null,
+        "colour": "noir",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "ED",
         "massif": "Dame Jouanne",
-        "numero": 8,
+        "number": 8,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -2067,14 +2693,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Dampierre Maincourt",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": []
       },
@@ -2089,14 +2717,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "TD",
         "massif": "Dampierre Maincourt",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKNUdjWVFETGhuOGc/edit"
@@ -2113,14 +2743,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "EN",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "EN",
         "massif": "Dampierre Maincourt",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": []
       },
@@ -2135,14 +2767,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "PD-",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "PD-",
         "massif": "Dampierre Maincourt",
-        "numero": 5,
+        "number": 5,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": []
       },
@@ -2157,14 +2791,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Demoiselles",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -2179,14 +2815,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "PD",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD",
         "massif": "Diplodocus",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -2201,14 +2839,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Diplodocus",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -2223,14 +2863,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Diplodocus",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://www.pofableau.com/cotation/topos/topo_dipodocus_bleu_3_D.pdf"
@@ -2247,14 +2889,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Drei Zinnen",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://bleau.info/zinnen/topo107.html"
@@ -2271,14 +2915,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Éléphant",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -2293,14 +2939,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD",
-        "couleur": "vert",
+        "boulders": null,
+        "colour": "vert",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD",
         "massif": "Éléphant",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "à abandonner?",
         "topos": []
       },
@@ -2315,14 +2963,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Éléphant",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -2337,14 +2987,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "EN",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "EN",
         "massif": "Éléphant",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://bleaumeconnu.free.fr/enfant.htm"
@@ -2361,14 +3013,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "ED-",
-        "couleur": "noir",
+        "boulders": null,
+        "colour": "noir",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "ED-",
         "massif": "Éléphant",
-        "numero": 5,
+        "number": 5,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKRjdxcDZaTFJQeGM/edit"
@@ -2385,14 +3039,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2012,
-        "cotation": "PD-",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD-",
         "massif": "Éléphant",
-        "numero": 6,
+        "number": 6,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2012,
         "status": "liste SNE",
         "topos": []
       },
@@ -2407,14 +3063,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "EN",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "EN",
         "massif": "Étréchy",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": []
       },
@@ -2429,14 +3087,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "PD",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "PD",
         "massif": "Étréchy",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": []
       },
@@ -2451,14 +3111,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "EN-",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "EN-",
         "massif": "Feuillardière",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -2473,14 +3135,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D+",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D+",
         "massif": "Franchard Crête Sud",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -2495,14 +3159,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "ED",
-        "couleur": "noir",
+        "boulders": null,
+        "colour": "noir",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "ED",
         "massif": "Franchard Crête Sud",
-        "numero": 6,
+        "number": 6,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -2517,14 +3183,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD+",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD+",
         "massif": "Franchard Cuisinière",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/fr-cuisiniere-orange-n1.pdf"
@@ -2541,14 +3209,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "F",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "F",
         "massif": "Franchard Cuisinière",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": []
       },
@@ -2563,14 +3233,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD-",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD-",
         "massif": "Franchard Cuisinière",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/fr-cuisiniere-rouge-n4.pdf",
@@ -2588,14 +3260,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "ED",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "ED",
         "massif": "Franchard Cuisinière",
-        "numero": 5,
+        "number": 5,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKS1pqUkdRS2FSU2c/edit"
@@ -2612,14 +3286,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD",
         "massif": "Franchard Ermitage",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKOC1pNjE1UlpvQlk/edit"
@@ -2636,14 +3312,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "PD",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD",
         "massif": "Franchard Hautes-Plaines",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -2658,14 +3336,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "PD+",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD+",
         "massif": "Franchard Hautes-Plaines",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -2680,14 +3360,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2012,
-        "cotation": "AD+",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD+",
         "massif": "Franchard Hautes-Plaines",
-        "numero": 5,
+        "number": 5,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2012,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/fr-hautesplaines-orange-n5.pdf"
@@ -2704,14 +3386,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2014,
-        "cotation": "TD-",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD-",
         "massif": "Franchard Isatis",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2014,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKODV1OVVQakUxRVk/edit"
@@ -2728,14 +3412,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2014,
-        "cotation": "D-",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D-",
         "massif": "Franchard Isatis",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2014,
         "status": "liste SNE",
         "topos": [
           "http://pofableau.com/cotation/topos/topo_isatis-ouest.pdf"
@@ -2752,14 +3438,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2014,
-        "cotation": "ED",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "ED",
         "massif": "Franchard Isatis",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2014,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx0b3BvYmxlYXV8Z3g6NmFjY2VjNjliYzdkYjM0OQ"
@@ -2776,14 +3464,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD",
         "massif": "Franchard Sablons",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKemhVdy1ReDhZZ3c/edit",
@@ -2801,14 +3491,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Franchard Sablons",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/fr-sablons-bleu-n4.pdf"
@@ -2825,14 +3517,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Gorge aux Châts",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://pofableau.com/cotation/topos/topo_gorge_aux_chats_bleu_D.pdf"
@@ -2849,14 +3543,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD",
         "massif": "Gorge aux Châts",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKR1ItRnVlLXI4MU0/edit"
@@ -2873,14 +3569,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "PD+",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD+",
         "massif": "Gorge aux Châts",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -2895,14 +3593,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "PD-",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD-",
         "massif": "Gorges du Houx",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -2917,14 +3617,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D-",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D-",
         "massif": "Grande Montagne",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -2939,14 +3641,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD+",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD+",
         "massif": "Gros Sablons",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -2961,14 +3665,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2012,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Gros Sablons",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2012,
         "status": "liste SNE",
         "topos": [
           "http://www.pofableau.com/cotation/topos/topo_gros_sablons_AD_2.pdf"
@@ -2985,14 +3691,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "ED-",
-        "couleur": "noir",
+        "boulders": null,
+        "colour": "noir",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "ED-",
         "massif": "Gros Sablons",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKbzB2UG5sQ0JYRnM/edit"
@@ -3009,14 +3717,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2013,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Gros Sablons",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2013,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKaDZST01BVEh4V0U/edit"
@@ -3033,14 +3743,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2014,
-        "cotation": "PD-",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD-",
         "massif": "J.A. Martin - R. Cailleau",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2014,
         "status": "liste SNE",
         "topos": []
       },
@@ -3055,14 +3767,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2014,
-        "cotation": "AD+",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD+",
         "massif": "J.A. Martin - R. Cailleau",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2014,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/jamartin-orange-n2.pdf"
@@ -3079,14 +3793,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "AD+",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD+",
         "massif": "J.A. Martin - R. Cailleau",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/jamartin-orange-n3.pdf",
@@ -3105,14 +3821,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2014,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "J.A. Martin - R. Cailleau",
-        "numero": 5,
+        "number": 5,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2014,
         "status": "liste SNE",
         "topos": []
       },
@@ -3127,14 +3845,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2014,
-        "cotation": "D+",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D+",
         "massif": "J.A. Martin - R. Cailleau",
-        "numero": 6,
+        "number": 6,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2014,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKUnJ6SEpIRU4xMkU/edit"
@@ -3151,14 +3871,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2011,
-        "cotation": "TD+",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD+",
         "massif": "J.A. Martin - R. Cailleau",
-        "numero": 7,
+        "number": 7,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2011,
         "status": "liste SNE",
         "topos": []
       },
@@ -3173,14 +3895,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "EN",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "EN",
         "massif": "J.A. Martin - R. Cailleau",
-        "numero": 8,
+        "number": 8,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -3195,14 +3919,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "EN",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "EN",
         "massif": "J.A. Martin - R. Cailleau",
-        "numero": 9,
+        "number": 9,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "pas sur SNE",
         "topos": []
       },
@@ -3217,14 +3943,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D+",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D+",
         "massif": "Jean des Vignes",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -3239,14 +3967,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2014,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Justice de Chambergeot",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2014,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/justice-orange-n2.pdf"
@@ -3263,16 +3993,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2014,
-        "cotation": "PD",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": [
-          "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=302&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-        ],
+        "grade": "PD",
         "massif": "Justice de Chambergeot",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2014,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/justice-jaune-n1.pdf"
@@ -3289,14 +4019,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "EN",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "EN",
         "massif": "Maisse le Patouillat",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": []
       },
@@ -3311,14 +4043,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2012,
-        "cotation": "AD-",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD-",
         "massif": "Maunoury",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2012,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/maunoury-orange-n1.pdf"
@@ -3335,14 +4069,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2013,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Maunoury",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2013,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/maunoury-bleu-n2.pdf"
@@ -3359,14 +4095,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD+",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD+",
         "massif": "Maunoury",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKZUtrT3lGbzVEZDg/edit"
@@ -3383,14 +4121,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD+",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD+",
         "massif": "Mont-Aigu",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/montaigu-orange-n1.pdf"
@@ -3407,14 +4147,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2012,
-        "cotation": "PD",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD",
         "massif": "Mont-Aigu",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2012,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/montaigu-jaune-n2.pdf"
@@ -3431,14 +4173,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D+",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D+",
         "massif": "Mont-Aigu",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/montaigu-bleu-n3.pdf"
@@ -3455,14 +4199,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Mont Olivet",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/montolivet-orange-n1.pdf",
@@ -3480,14 +4226,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Mont Olivet",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/montolivet-bleu-n2.pdf",
@@ -3505,16 +4253,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2011,
-        "cotation": "PD-",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": [
-          "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=207&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-        ],
+        "grade": "PD-",
         "massif": "Mont-Ussy",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2011,
         "status": "liste SNE",
         "topos": [
           "http://bleaumeconnu.free.fr/ussy.htm"
@@ -3531,14 +4279,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2011,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Mont-Ussy",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2011,
         "status": "liste SNE",
         "topos": [
           "http://bleaumeconnu.free.fr/ussy.htm"
@@ -3555,14 +4305,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD",
         "massif": "Mont-Ussy",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://bleaumeconnu.free.fr/ussy.htm",
@@ -3580,14 +4332,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD+",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "TD+",
         "massif": "Padôle",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKNHZsa01UZ3lmVlU/edit"
@@ -3604,14 +4358,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2004,
-        "cotation": "D+",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "D+",
         "massif": "Padôle",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2004,
         "status": null,
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKUVFZRDdQRXdqZlk/edit",
@@ -3629,14 +4385,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2006,
-        "cotation": "AD+",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "AD+",
         "massif": "Padôle",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2006,
         "status": null,
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKeklsTjIwdVRxUHM/edit",
@@ -3654,14 +4412,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "TD",
         "massif": "Padôle",
-        "numero": 5,
+        "number": 5,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKNHZsa01UZ3lmVlU/edit"
@@ -3678,14 +4438,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2006,
-        "cotation": "D-",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "D-",
         "massif": "Padôle",
-        "numero": 6,
+        "number": 6,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2006,
         "status": null,
         "topos": [
           "http://www.grimporama.com/francais/bleau/padole-bleu6.pdf"
@@ -3702,14 +4464,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2004,
-        "cotation": "ED",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "ED",
         "massif": "Padôle",
-        "numero": 7,
+        "number": 7,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2004,
         "status": null,
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKZU5SZURUaTZqd3M/edit"
@@ -3726,14 +4490,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "EN",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "EN",
         "massif": "Padôle cent marches",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": [
           "http://www.cosiroc.fr/images/fiches/centmarches-blanc-n1.pdf"
@@ -3750,14 +4516,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "PD",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "PD",
         "massif": "Padôle cent marches",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": [
           "http://www.cosiroc.fr/images/fiches/centmarches-jaune-n2.pdf"
@@ -3774,14 +4542,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Padôle cent marches",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": [
           "http://www.cosiroc.fr/images/fiches/centmarches-orange-n3.pdf"
@@ -3798,14 +4568,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "EN",
-        "couleur": "caramel",
+        "boulders": null,
+        "colour": "caramel",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "EN",
         "massif": "Padôle cent marches",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": [
           "http://www.cosiroc.fr/images/fiches/centmarches-caramel-n4.pdf"
@@ -3822,14 +4594,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Pendu d'Huison",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": [
           "http://bleaumeconnu.free.fr/pendu.htm"
@@ -3846,14 +4620,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "ED",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "ED",
         "massif": "Pendu d'Huison",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": [
           "http://bleaumeconnu.free.fr/pendu.htm"
@@ -3870,14 +4646,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2011,
-        "cotation": "AD-",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "AD-",
         "massif": "Petit Bois de St Pierre de Nemours",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2011,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/nemours-jaune-n2.pdf"
@@ -3894,14 +4672,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2011,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Petit Bois de St Pierre de Nemours",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2011,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/nemours-bleu-n3.pdf",
@@ -3919,14 +4699,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2011,
-        "cotation": "TD",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "TD",
         "massif": "Petit Bois de St Pierre de Nemours",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2011,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/nemours-rouge-n4.pdf",
@@ -3945,14 +4727,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2011,
-        "cotation": "ED",
-        "couleur": "noir",
+        "boulders": null,
+        "colour": "noir",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "ED",
         "massif": "Petit Bois de St Pierre de Nemours",
-        "numero": 5,
+        "number": 5,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2011,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/nemours-noir-n5.pdf",
@@ -3970,14 +4754,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2011,
-        "cotation": "PD",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD",
         "massif": "Pignon Poteau",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2011,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/poteau-jaune-n1.pdf",
@@ -3995,14 +4781,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2011,
-        "cotation": "AD+",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD+",
         "massif": "Pignon Poteau",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2011,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/poteau-orange-n2.pdf"
@@ -4019,14 +4807,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Potala",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/potala-bleu-n1.pdf"
@@ -4043,14 +4833,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "AD+",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD+",
         "massif": "Potala",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/potala-orange-n2.pdf",
@@ -4068,14 +4860,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD+",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD+",
         "massif": "Potala",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/potala-rouge-n3.pdf",
@@ -4094,14 +4888,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "PD+",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD+",
         "massif": "Potala",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/potala-jaune-n4.pdf"
@@ -4118,14 +4914,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Puiselet",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://bleaumeconnu.free.fr/MtSarrasin.htm"
@@ -4142,14 +4940,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2011,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Puiselet",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2011,
         "status": "liste SNE",
         "topos": [
           "http://bleaumeconnu.free.fr/MtSarrasin.htm"
@@ -4166,14 +4966,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD",
-        "couleur": "noir",
+        "boulders": null,
+        "colour": "noir",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "TD",
         "massif": "Puiselet",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://bleaumeconnu.free.fr/MtSarrasin.htm"
@@ -4190,14 +4992,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2012,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Restant du Long Rocher",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2012,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/longrocher-orange-n1.pdf"
@@ -4214,14 +5018,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD",
-        "couleur": "vert",
+        "boulders": null,
+        "colour": "vert",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Restant du Long Rocher",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "abandonné",
         "topos": []
       },
@@ -4236,14 +5042,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD",
         "massif": "Restant du Long Rocher",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKOFQybHR6enpEaGM/edit"
@@ -4260,14 +5068,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Restant du Long Rocher",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/longrocher-orange-n4.pdf"
@@ -4284,14 +5094,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Roche aux Sabots",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": [
           "http://www.pofableau.com/cotation/topos/topo_roche_au_sabot_bleu_1_D.pdf"
@@ -4308,14 +5120,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "AD+",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD+",
         "massif": "Roche aux Sabots",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": []
       },
@@ -4330,14 +5144,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "TD+",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD+",
         "massif": "Roche aux Sabots",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKQ2JZSVZVTkRud2M/edit"
@@ -4354,14 +5170,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "EN",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "EN",
         "massif": "Roche aux Sabots",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": []
       },
@@ -4376,14 +5194,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2011,
-        "cotation": "EN",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "EN",
         "massif": "Roche Hercule",
-        "numero": 5,
+        "number": 5,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2011,
         "status": "liste SNE",
         "topos": []
       },
@@ -4398,14 +5218,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "ED-",
-        "couleur": "noir",
+        "boulders": null,
+        "colour": "noir",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "ED-",
         "massif": "Rocher Canon",
-        "numero": 0,
+        "number": 0,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "abandonné",
         "topos": []
       },
@@ -4420,14 +5242,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Rocher Canon",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://bleau.info/canon/topo106.html"
@@ -4444,14 +5268,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "PD",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD",
         "massif": "Rocher Canon",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -4466,14 +5292,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2014,
-        "cotation": "D+",
-        "couleur": "bleu ciel",
+        "boulders": null,
+        "colour": "bleu ciel",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D+",
         "massif": "Rocher Canon",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2014,
         "status": "liste SNE",
         "topos": []
       },
@@ -4488,14 +5316,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2011,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Rocher Canon",
-        "numero": 5,
+        "number": 5,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2011,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKVi1TVDFZQ2dJZ0k/edit"
@@ -4512,14 +5342,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD+",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD+",
         "massif": "Rocher Canon",
-        "numero": 6,
+        "number": 6,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKdHByNUVSNTRUbkU/edit"
@@ -4536,14 +5368,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "EN",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "EN",
         "massif": "Rocher Canon",
-        "numero": 7,
+        "number": 7,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -4558,14 +5392,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "ED+",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "ED+",
         "massif": "Rocher Canon",
-        "numero": 8,
+        "number": 8,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -4580,14 +5416,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD-",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD-",
         "massif": "Rocher d'Avon",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://grimporama.free.fr/topos-bleau/topo_rocher-avon.pdf"
@@ -4604,14 +5442,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "PD",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD",
         "massif": "Rocher d'Avon",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "pas sur SNE",
         "topos": []
       },
@@ -4626,14 +5466,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Rocher d'Avon",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "pas sur SNE",
         "topos": [
           "http://bleau.info/avon/topo103.html"
@@ -4650,14 +5492,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2013,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Rocher de Chatillon",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2013,
         "status": null,
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKbTItLWtCa0lKcVU/edit"
@@ -4674,14 +5518,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2013,
-        "cotation": "PD+",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "PD+",
         "massif": "Rocher de Chatillon",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2013,
         "status": null,
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKWXV6WGdFOUQ5U0U/edit"
@@ -4698,14 +5544,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2013,
-        "cotation": "AD+",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD+",
         "massif": "Rocher de la Cathédrale",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2013,
         "status": "liste SNE",
         "topos": []
       },
@@ -4720,14 +5568,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2012,
-        "cotation": "PD+",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD+",
         "massif": "Rocher de la Reine",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2012,
         "status": "liste SNE",
         "topos": []
       },
@@ -4742,14 +5592,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D+",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D+",
         "massif": "Rocher de la Reine",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -4764,14 +5616,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "D+",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D+",
         "massif": "Rocher de Milly - Corne-Biche",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": []
       },
@@ -4786,14 +5640,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "PD",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD",
         "massif": "Rocher de Milly - Corne-Biche",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/cornebiche-jaune-n2.pdf"
@@ -4810,14 +5666,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Rocher de Milly - Corne-Biche",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": []
       },
@@ -4832,14 +5690,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Rocher de Milly - Corne-Biche",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": null,
         "topos": [
           "http://www.cosiroc.fr/images/fiches/cornebiche-orange-n4.pdf"
@@ -4856,14 +5716,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2011,
-        "cotation": "PD",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD",
         "massif": "Rocher des Potets",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2011,
         "status": "liste SNE",
         "topos": [
           "http://bleau.info/images/topos/potetsjaune.pdf"
@@ -4880,14 +5742,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Rocher des Potets",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -4902,16 +5766,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "PD",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": [
-          "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=39&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-        ],
+        "grade": "PD",
         "massif": "Rocher du Duc - Hameau",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": [
           "http://www.cosiroc.fr/images/fiches/av-hameau-jaune-nH1.pdf"
@@ -4928,16 +5792,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": [
-          "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=38&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-        ],
+        "grade": "D",
         "massif": "Rocher du Duc - Hameau",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": [
           "http://www.cosiroc.fr/images/fiches/av-hameau-bleu-nH3.pdf"
@@ -4954,16 +5818,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2011,
-        "cotation": "TD-",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": [
-          "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=40&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-        ],
+        "grade": "TD-",
         "massif": "Rocher du Duc - Hameau",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2011,
         "status": null,
         "topos": [
           "http://www.cosiroc.fr/images/fiches/av-hameau-rouge-nH4.pdf"
@@ -4980,16 +5844,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2012,
-        "cotation": "ED",
-        "couleur": "noir",
+        "boulders": null,
+        "colour": "noir",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": [
-          "http://www.cosiroc.fr/index.php?option=com_fabrik&view=list&listid=6&Itemid=239&Itemid=239&bcfab_blocs___id_circuit_raw=41&limitstart6=0&&resetfilters=1&&fabrik_incsessionfilters=0"
-        ],
+        "grade": "ED",
         "massif": "Rocher du Duc - Hameau",
-        "numero": 5,
+        "number": 5,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2012,
         "status": null,
         "topos": [
           "http://www.cosiroc.fr/images/fiches/av-hameau-noir-nH5.pdf"
@@ -5006,14 +5870,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2013,
-        "cotation": "TD-",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD-",
         "massif": "Rocher du Général",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2013,
         "status": "liste SNE",
         "topos": [
           "http://www.pofableau.com/cotation/topos/topo_71_1.pdf"
@@ -5030,14 +5896,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2013,
-        "cotation": "PD+",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD+",
         "massif": "Rocher du Général",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2013,
         "status": "liste SNE",
         "topos": [
           "http://www.pofableau.com/cotation/topos/topo_71_1.pdf"
@@ -5054,14 +5922,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Rocher fin",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://www.pofableau.com/cotation/topos/topo_rocher_fin_bleu_1_D.pdf"
@@ -5078,14 +5948,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD+",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD+",
         "massif": "Rocher fin",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKU1lHcnkzN0g1SEE/edit"
@@ -5102,14 +5974,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "PD",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD",
         "massif": "Rocher fin",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": []
       },
@@ -5124,14 +5998,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Rocher fin",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": []
       },
@@ -5146,14 +6022,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2013,
-        "cotation": "TD+",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD+",
         "massif": "Rocher Guichot",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2013,
         "status": "liste SNE",
         "topos": [
           "https://docs.google.com/file/d/0B3XigPbnEqfKRVktbU1vOGc5QlE/edit"
@@ -5170,14 +6048,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2013,
-        "cotation": "AD-",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD-",
         "massif": "Rocher Guichot",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2013,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/guichot-orange-n2.pdf"
@@ -5194,14 +6074,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Rocher Guichot",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/guichot-bleu-n3.pdf"
@@ -5218,14 +6100,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "PD-",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "PD-",
         "massif": "Rocher Mignot",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": []
       },
@@ -5240,14 +6124,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Rocher Mignot",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": []
       },
@@ -5262,14 +6148,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "PD+",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD+",
         "massif": "Rocher Saint-Germain",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -5284,14 +6172,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "EN",
-        "couleur": "blanc",
+        "boulders": null,
+        "colour": "blanc",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "EN",
         "massif": "Rocher Saint-Germain",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -5306,14 +6196,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D+",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D+",
         "massif": "Rocher Saint-Germain",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": []
       },
@@ -5328,14 +6220,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "PD",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "PD",
         "massif": "Sanglier",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": [
           "http://bleaumeconnu.free.fr/sjaune.html"
@@ -5352,14 +6246,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Sanglier",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": [
           "http://bleaumeconnu.free.fr/sorange.html"
@@ -5376,14 +6272,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "D",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "D",
         "massif": "Sanglier",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": [
           "http://bleaumeconnu.free.fr/sbleu.html"
@@ -5400,14 +6298,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD-",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "TD-",
         "massif": "Sanglier",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": [
           "http://bleaumeconnu.free.fr/srouge.html"
@@ -5424,14 +6324,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "TD",
-        "couleur": "rose",
+        "boulders": null,
+        "colour": "rose",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "TD",
         "massif": "Sanglier",
-        "numero": 5,
+        "number": 5,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": [
           "http://bleaumeconnu.free.fr/srose.html"
@@ -5448,14 +6350,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "ED",
-        "couleur": "noir",
+        "boulders": null,
+        "colour": "noir",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "ED",
         "massif": "Sanglier",
-        "numero": 6,
+        "number": 6,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": [
           "http://bleaumeconnu.free.fr/noirP1.html"
@@ -5472,14 +6376,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2013,
-        "cotation": "PD+",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "PD+",
         "massif": "Ségognole",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2013,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/segognole-jaune-n1.pdf"
@@ -5496,14 +6402,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2013,
-        "cotation": "AD+",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "AD+",
         "massif": "Ségognole",
-        "numero": 2,
+        "number": 2,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2013,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/segognole-orange-n2.pdf"
@@ -5520,14 +6428,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2013,
-        "cotation": "TD",
-        "couleur": "rouge",
+        "boulders": null,
+        "colour": "rouge",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "TD",
         "massif": "Ségognole",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2013,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/segognole-rouge-n3.pdf",
@@ -5545,14 +6455,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": 2015,
-        "cotation": "D+",
-        "couleur": "bleu",
+        "boulders": null,
+        "colour": "bleu",
+        "creation_date": null,
         "gestion": "ONF77",
-        "liste_blocs": null,
+        "grade": "D+",
         "massif": "Télégraphe",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": 2015,
         "status": "liste SNE",
         "topos": []
       },
@@ -5567,14 +6479,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "AD",
-        "couleur": "orange",
+        "boulders": null,
+        "colour": "orange",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "AD",
         "massif": "Troglodytes",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": "liste SNE",
         "topos": [
           "http://www.cosiroc.fr/images/fiches/troglodytes-orange-n1.pdf"
@@ -5591,14 +6505,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "PD",
-        "couleur": "jaune",
+        "boulders": null,
+        "colour": "jaune",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "PD",
         "massif": "Vaux de Cernay",
-        "numero": 1,
+        "number": 1,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": []
       },
@@ -5613,14 +6529,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "ED-",
-        "couleur": "rose",
+        "boulders": null,
+        "colour": "rose",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "ED-",
         "massif": "Videlles les Roches",
-        "numero": 3,
+        "number": 3,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": []
       },
@@ -5635,14 +6553,16 @@ var circuit_geojson =
         "type": "Point"
       },
       "properties": {
-        "annee_refection": null,
-        "cotation": "ED",
-        "couleur": "noir",
+        "boulders": null,
+        "colour": "noir",
+        "creation_date": null,
         "gestion": null,
-        "liste_blocs": null,
+        "grade": "ED",
         "massif": "Videlles les Roches",
-        "numero": 4,
+        "number": 4,
         "object": "Circuit",
+        "opener": null,
+        "refection_date": null,
         "status": null,
         "topos": []
       },

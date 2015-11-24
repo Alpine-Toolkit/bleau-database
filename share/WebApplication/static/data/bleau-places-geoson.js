@@ -10,10 +10,10 @@ var place_geojson =
         "type": "Point"
       },
       "properties": {
-        "nom": "Fontaine d'Avon",
-        "notes": null,
-        "object": "Place",
-        "type": "point d'eau"
+        "category": "point d'eau",
+        "name": "Fontaine d'Avon",
+        "note": null,
+        "object": "Place"
       },
       "type": "Feature"
     },
@@ -26,10 +26,10 @@ var place_geojson =
         "type": "Point"
       },
       "properties": {
-        "nom": "Fontaine de Bois-le-Roi",
-        "notes": null,
-        "object": "Place",
-        "type": "point d'eau"
+        "category": "point d'eau",
+        "name": "Fontaine de Bois-le-Roi",
+        "note": null,
+        "object": "Place"
       },
       "type": "Feature"
     },
@@ -42,10 +42,10 @@ var place_geojson =
         "type": "Point"
       },
       "properties": {
-        "nom": "Fontaine du cimetière de Noisy-sur-École",
-        "notes": null,
-        "object": "Place",
-        "type": "point d'eau"
+        "category": "point d'eau",
+        "name": "Fontaine du cimetière de Noisy-sur-École",
+        "note": null,
+        "object": "Place"
       },
       "type": "Feature"
     },
@@ -58,10 +58,10 @@ var place_geojson =
         "type": "Point"
       },
       "properties": {
-        "nom": "Fontaine du parking de Noisy-sur-École",
-        "notes": null,
-        "object": "Place",
-        "type": "point d'eau"
+        "category": "point d'eau",
+        "name": "Fontaine du parking de Noisy-sur-École",
+        "note": null,
+        "object": "Place"
       },
       "type": "Feature"
     },
@@ -74,10 +74,10 @@ var place_geojson =
         "type": "Point"
       },
       "properties": {
-        "nom": "Gare d'Avon-Fontainebleau",
-        "notes": null,
-        "object": "Place",
-        "type": "gare"
+        "category": "gare",
+        "name": "Gare d'Avon-Fontainebleau",
+        "note": null,
+        "object": "Place"
       },
       "type": "Feature"
     },
@@ -90,10 +90,10 @@ var place_geojson =
         "type": "Point"
       },
       "properties": {
-        "nom": "Gare de Bois-le-Roi",
-        "notes": null,
-        "object": "Place",
-        "type": "gare"
+        "category": "gare",
+        "name": "Gare de Bois-le-Roi",
+        "note": null,
+        "object": "Place"
       },
       "type": "Feature"
     },
@@ -106,10 +106,10 @@ var place_geojson =
         "type": "Point"
       },
       "properties": {
-        "nom": "Parking de Noisy-sur-École",
-        "notes": null,
-        "object": "Place",
-        "type": "parking"
+        "category": "parking",
+        "name": "Parking de Noisy-sur-École",
+        "note": null,
+        "object": "Place"
       },
       "type": "Feature"
     }
