@@ -179,30 +179,9 @@
           "number": 1
         },
         {
-          "comment": "surplomb, proue.",
-          "coordinate": null,
-          "grade": "5",
-          "name": "",
-          "number": 1
-        },
-        {
-          "comment": "surplomb, réta, traversée.",
-          "coordinate": null,
-          "grade": "6a",
-          "name": "",
-          "number": 1
-        },
-        {
           "comment": "réta, traversée. jeté",
           "coordinate": null,
           "grade": "5",
-          "name": "",
-          "number": 2
-        },
-        {
-          "comment": "traversée.",
-          "coordinate": null,
-          "grade": "4",
           "name": "",
           "number": 2
         },
@@ -221,23 +200,9 @@
           "number": 3
         },
         {
-          "comment": "traversée.",
-          "coordinate": null,
-          "grade": "6a",
-          "name": "",
-          "number": 3
-        },
-        {
           "comment": "réta.",
           "coordinate": null,
           "grade": "4+",
-          "name": "",
-          "number": 4
-        },
-        {
-          "comment": "mur.",
-          "coordinate": null,
-          "grade": "5",
           "name": "",
           "number": 4
         },
@@ -310,6 +275,20 @@
           "grade": "5",
           "name": "",
           "number": 9
+        },
+        {
+          "comment": "surplomb, proue.",
+          "coordinate": null,
+          "grade": "5",
+          "name": "",
+          "number": 10
+        },
+        {
+          "comment": "surplomb, réta, traversée.",
+          "coordinate": null,
+          "grade": "6a",
+          "name": "",
+          "number": "10bis"
         },
         {
           "comment": "mur.",
@@ -396,6 +375,13 @@
           "number": "19bis"
         },
         {
+          "comment": "traversée.",
+          "coordinate": null,
+          "grade": "4",
+          "name": "",
+          "number": 20
+        },
+        {
           "comment": "dévers.",
           "coordinate": null,
           "grade": "4+",
@@ -464,6 +450,13 @@
           "grade": "5-",
           "name": "",
           "number": 29
+        },
+        {
+          "comment": "traversée.",
+          "coordinate": null,
+          "grade": "6a",
+          "name": "",
+          "number": 30
         },
         {
           "comment": "mur, expo.",
@@ -571,6 +564,13 @@
           "number": "39bis"
         },
         {
+          "comment": "mur.",
+          "coordinate": null,
+          "grade": "5",
+          "name": "",
+          "number": 40
+        },
+        {
           "comment": "dévers, arête, expo.",
           "coordinate": null,
           "grade": "5-",
@@ -628,13 +628,6 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "4+",
-          "name": "",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "3+",
           "name": "",
           "number": "1bis"
@@ -647,30 +640,9 @@
           "number": 2
         },
         {
-          "comment": "dalle. NB : bien repérer les possibilités de descente avant d’essayer ce bloc.",
-          "coordinate": null,
-          "grade": "3",
-          "name": "",
-          "number": 2
-        },
-        {
           "comment": "",
           "coordinate": null,
           "grade": "3+",
-          "name": "",
-          "number": 3
-        },
-        {
-          "comment": "dalle.",
-          "coordinate": null,
-          "grade": "4",
-          "name": "",
-          "number": 3
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "5-",
           "name": "",
           "number": 3
         },
@@ -729,6 +701,13 @@
           "grade": "5-",
           "name": "",
           "number": "9bis"
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4+",
+          "name": "",
+          "number": 10
         },
         {
           "comment": "",
@@ -808,6 +787,13 @@
           "number": 19
         },
         {
+          "comment": "dalle. NB : bien repérer les possibilités de descente avant d’essayer ce bloc.",
+          "coordinate": null,
+          "grade": "3",
+          "name": "",
+          "number": 20
+        },
+        {
           "comment": "",
           "coordinate": null,
           "grade": "3+",
@@ -876,6 +862,20 @@
           "grade": "4",
           "name": "",
           "number": "29bis"
+        },
+        {
+          "comment": "dalle.",
+          "coordinate": null,
+          "grade": "4",
+          "name": "",
+          "number": 30
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "5-",
+          "name": "",
+          "number": "30bis"
         },
         {
           "comment": "",
@@ -961,13 +961,6 @@
           "number": 1
         },
         {
-          "comment": "réta, traversée.",
-          "coordinate": null,
-          "grade": "4+",
-          "name": "La Pulpe et les Pépins",
-          "number": 1
-        },
-        {
           "comment": "mur.",
           "coordinate": null,
           "grade": "3",
@@ -982,31 +975,10 @@
           "number": 2
         },
         {
-          "comment": "dalle.",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "L’Orange Technique",
-          "number": 2
-        },
-        {
-          "comment": "dalle.",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "",
-          "number": 2
-        },
-        {
           "comment": "réta.",
           "coordinate": null,
           "grade": "3-",
           "name": "L’Orange Écrasée",
-          "number": 3
-        },
-        {
-          "comment": "dalle.",
-          "coordinate": null,
-          "grade": "3+",
-          "name": "L’Orange Isolée",
           "number": 3
         },
         {
@@ -1021,20 +993,6 @@
           "coordinate": null,
           "grade": "4-",
           "name": "L’Orange Dodue",
-          "number": 4
-        },
-        {
-          "comment": "réta, traversée.",
-          "coordinate": null,
-          "grade": "4",
-          "name": "",
-          "number": 4
-        },
-        {
-          "comment": "réta, traversée.",
-          "coordinate": null,
-          "grade": "3",
-          "name": "Marmalade d’Orange",
           "number": 4
         },
         {
@@ -1059,13 +1017,6 @@
           "number": 6
         },
         {
-          "comment": "réta, traversée.",
-          "coordinate": null,
-          "grade": "4",
-          "name": "Le Rab",
-          "number": 7
-        },
-        {
           "comment": "dalle, traversée.",
           "coordinate": null,
           "grade": "3+",
@@ -1080,6 +1031,13 @@
           "number": "7bis"
         },
         {
+          "comment": "réta, traversée.",
+          "coordinate": null,
+          "grade": "4",
+          "name": "Le Rab",
+          "number": "7ter"
+        },
+        {
           "comment": "dalle.",
           "coordinate": null,
           "grade": "2",
@@ -1092,6 +1050,13 @@
           "grade": "3",
           "name": "La Clémentine",
           "number": 9
+        },
+        {
+          "comment": "réta, traversée.",
+          "coordinate": null,
+          "grade": "4+",
+          "name": "La Pulpe et les Pépins",
+          "number": 10
         },
         {
           "comment": "fissure, traversée.",
@@ -1169,6 +1134,20 @@
           "grade": "4-",
           "name": "L’Orange Râpeuse",
           "number": 19
+        },
+        {
+          "comment": "dalle.",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "L’Orange Technique",
+          "number": 20
+        },
+        {
+          "comment": "dalle.",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "",
+          "number": "20bis"
         },
         {
           "comment": "surplomb.",
@@ -1258,6 +1237,13 @@
           "comment": "dalle.",
           "coordinate": null,
           "grade": "3+",
+          "name": "L’Orange Isolée",
+          "number": 30
+        },
+        {
+          "comment": "dalle.",
+          "coordinate": null,
+          "grade": "3+",
           "name": "L’Orange à Doigts",
           "number": 31
         },
@@ -1337,6 +1323,20 @@
           "grade": "2+",
           "name": "Pelure d’Orange",
           "number": 39
+        },
+        {
+          "comment": "réta, traversée.",
+          "coordinate": null,
+          "grade": "3",
+          "name": "Marmalade d’Orange",
+          "number": 40
+        },
+        {
+          "comment": "réta, traversée.",
+          "coordinate": null,
+          "grade": "4",
+          "name": "",
+          "number": "40bis"
         },
         {
           "comment": "mur.",
@@ -1981,20 +1981,6 @@
           "number": 1
         },
         {
-          "comment": "",
-          "coordinate": null,
-          "grade": "2",
-          "name": "",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3-",
-          "name": "",
-          "number": 1
-        },
-        {
           "comment": "mur, trous.",
           "coordinate": null,
           "grade": "3+",
@@ -2002,14 +1988,14 @@
           "number": "1bis"
         },
         {
-          "comment": "dalle.",
+          "comment": "",
           "coordinate": null,
-          "grade": "3",
+          "grade": "2",
           "name": "",
-          "number": 2
+          "number": "1ter"
         },
         {
-          "comment": "",
+          "comment": "dalle.",
           "coordinate": null,
           "grade": "3",
           "name": "",
@@ -2024,13 +2010,6 @@
         },
         {
           "comment": "dalle, réglettes.",
-          "coordinate": null,
-          "grade": "3+",
-          "name": "",
-          "number": 3
-        },
-        {
-          "comment": "",
           "coordinate": null,
           "grade": "3+",
           "name": "",
@@ -2098,6 +2077,13 @@
           "grade": "2+",
           "name": "",
           "number": 9
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "3-",
+          "name": "",
+          "number": 10
         },
         {
           "comment": "mur.",
@@ -2186,6 +2172,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "3",
+          "name": "",
+          "number": 20
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "2+",
           "name": "",
           "number": 21
@@ -2259,6 +2252,13 @@
           "grade": "3-",
           "name": "",
           "number": 29
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "3+",
+          "name": "",
+          "number": 30
         },
         {
           "comment": "",
@@ -2337,13 +2337,6 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "4+",
-          "name": "",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "5+",
           "name": "",
           "number": 2
@@ -2351,21 +2344,7 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "4",
-          "name": "",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "4+",
-          "name": "",
-          "number": 3
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "5-",
           "name": "",
           "number": 3
         },
@@ -2410,6 +2389,13 @@
           "grade": "5-",
           "name": "",
           "number": 9
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4+",
+          "name": "",
+          "number": 10
         },
         {
           "comment": "",
@@ -2484,6 +2470,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "4",
+          "name": "",
+          "number": 20
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "4+",
           "name": "",
           "number": 21
@@ -2554,6 +2547,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "5-",
+          "name": "",
+          "number": 30
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "5",
           "name": "",
           "number": 31
@@ -2598,24 +2598,10 @@
           "number": 1
         },
         {
-          "comment": "arête.",
-          "coordinate": null,
-          "grade": "5+",
-          "name": "Objectif Grand Angle",
-          "number": 1
-        },
-        {
           "comment": "dalle.",
           "coordinate": null,
           "grade": "6a",
           "name": "Au Pied Levé",
-          "number": 2
-        },
-        {
-          "comment": "mur, réglettes.",
-          "coordinate": null,
-          "grade": "6a",
-          "name": "Ponction Lombaire",
           "number": 2
         },
         {
@@ -2624,27 +2610,6 @@
           "grade": "6a",
           "name": "Petite Insoutenable debout",
           "number": 3
-        },
-        {
-          "comment": "traversée.",
-          "coordinate": null,
-          "grade": "6b+",
-          "name": "Super Vista",
-          "number": 3
-        },
-        {
-          "comment": "traversée.",
-          "coordinate": null,
-          "grade": "5+",
-          "name": "Vita Stop",
-          "number": 3
-        },
-        {
-          "comment": "arête.",
-          "coordinate": null,
-          "grade": "5+",
-          "name": "Fritz l’Angle",
-          "number": 4
         },
         {
           "comment": "monodoigts, inversée.",
@@ -2696,6 +2661,13 @@
           "number": 9
         },
         {
+          "comment": "arête.",
+          "coordinate": null,
+          "grade": "5+",
+          "name": "Objectif Grand Angle",
+          "number": 10
+        },
+        {
           "comment": "mur.",
           "coordinate": null,
           "grade": "6a",
@@ -2738,18 +2710,18 @@
           "number": 15
         },
         {
-          "comment": "traversée.",
-          "coordinate": null,
-          "grade": "6b+",
-          "name": "Morphotype",
-          "number": 15
-        },
-        {
           "comment": "surplomb, traversée, réglettes.",
           "coordinate": null,
           "grade": "6a",
           "name": "Les Grattons Laveurs",
           "number": "15bis"
+        },
+        {
+          "comment": "traversée.",
+          "coordinate": null,
+          "grade": "6b+",
+          "name": "Morphotype",
+          "number": "15ter"
         },
         {
           "comment": "mur. sans l’arête.",
@@ -2787,17 +2759,17 @@
           "number": 19
         },
         {
-          "comment": "mur.",
+          "comment": "mur, réglettes.",
           "coordinate": null,
-          "grade": "5",
-          "name": "Le Système D Bloc",
-          "number": 21
+          "grade": "6a",
+          "name": "Ponction Lombaire",
+          "number": 20
         },
         {
           "comment": "mur.",
           "coordinate": null,
-          "grade": "5-",
-          "name": "L’Encéphalite",
+          "grade": "5",
+          "name": "Le Système D Bloc",
           "number": 21
         },
         {
@@ -2806,6 +2778,13 @@
           "grade": "7a",
           "name": "Le Tourniquet du 93.7",
           "number": "21bis"
+        },
+        {
+          "comment": "mur.",
+          "coordinate": null,
+          "grade": "5-",
+          "name": "L’Encéphalite",
+          "number": "21ter"
         },
         {
           "comment": "mur.",
@@ -2892,6 +2871,20 @@
           "number": "29bis"
         },
         {
+          "comment": "traversée.",
+          "coordinate": null,
+          "grade": "6b+",
+          "name": "Super Vista",
+          "number": 30
+        },
+        {
+          "comment": "traversée.",
+          "coordinate": null,
+          "grade": "5+",
+          "name": "Vita Stop",
+          "number": "30bis"
+        },
+        {
           "comment": "mur, plats.",
           "coordinate": null,
           "grade": "5",
@@ -2962,13 +2955,6 @@
           "number": 38
         },
         {
-          "comment": "mur.",
-          "coordinate": null,
-          "grade": "5+",
-          "name": "Le T.A.",
-          "number": 38
-        },
-        {
           "comment": "traversée.",
           "coordinate": null,
           "grade": "6c",
@@ -2978,9 +2964,23 @@
         {
           "comment": "mur.",
           "coordinate": null,
+          "grade": "5+",
+          "name": "Le T.A.",
+          "number": "38ter"
+        },
+        {
+          "comment": "mur.",
+          "coordinate": null,
           "grade": "5",
           "name": "La Pince Multi-prises",
           "number": 39
+        },
+        {
+          "comment": "arête.",
+          "coordinate": null,
+          "grade": "5+",
+          "name": "Fritz l’Angle",
+          "number": 40
         }
       ],
       "colour": "rouge",
@@ -3022,13 +3022,6 @@
           "number": 1
         },
         {
-          "comment": "surplomb.",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "Le Surplomb du Fourchu",
-          "number": 1
-        },
-        {
           "comment": "",
           "coordinate": null,
           "grade": "4-",
@@ -3036,24 +3029,10 @@
           "number": 2
         },
         {
-          "comment": "expo.",
-          "coordinate": null,
-          "grade": "3+",
-          "name": "L’Oblique de la Grotte",
-          "number": 2
-        },
-        {
           "comment": "dalle.",
           "coordinate": null,
           "grade": "4+",
           "name": "La Dalle Noire de gauche",
-          "number": 3
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "5-",
-          "name": "Roc Hot",
           "number": 3
         },
         {
@@ -3104,6 +3083,13 @@
           "grade": "4",
           "name": "La Dalle du Téton",
           "number": 9
+        },
+        {
+          "comment": "surplomb.",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "Le Surplomb du Fourchu",
+          "number": 10
         },
         {
           "comment": "",
@@ -3169,6 +3155,13 @@
           "number": 19
         },
         {
+          "comment": "expo.",
+          "coordinate": null,
+          "grade": "3+",
+          "name": "L’Oblique de la Grotte",
+          "number": 20
+        },
+        {
           "comment": "",
           "coordinate": null,
           "grade": "3+",
@@ -3230,6 +3223,13 @@
           "grade": "5",
           "name": "La Sancho directe",
           "number": 29
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "5-",
+          "name": "Roc Hot",
+          "number": 30
         },
         {
           "comment": "",
@@ -3318,21 +3318,7 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "1",
-          "name": "",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "2",
-          "name": "",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "1",
           "name": "",
           "number": 2
         },
@@ -3384,6 +3370,13 @@
           "grade": "1",
           "name": "",
           "number": 9
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "1",
+          "name": "",
+          "number": 10
         },
         {
           "comment": "",
@@ -3447,6 +3440,13 @@
           "grade": "2",
           "name": "",
           "number": 19
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "1",
+          "name": "",
+          "number": 20
         },
         {
           "comment": "",
@@ -3537,13 +3537,6 @@
           "number": 1
         },
         {
-          "comment": "",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "La Fissure droite de la Dalle Richard",
-          "number": 1
-        },
-        {
           "comment": "plats.",
           "coordinate": null,
           "grade": "3+",
@@ -3551,24 +3544,10 @@
           "number": 2
         },
         {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3",
-          "name": "",
-          "number": 2
-        },
-        {
           "comment": "jeté.",
           "coordinate": null,
           "grade": "3-",
           "name": "",
-          "number": 3
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3+",
-          "name": "La Rampe d’Escalier",
           "number": 3
         },
         {
@@ -3612,6 +3591,13 @@
           "grade": "2+",
           "name": "",
           "number": 9
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "La Fissure droite de la Dalle Richard",
+          "number": 10
         },
         {
           "comment": "",
@@ -3679,6 +3665,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "3",
+          "name": "",
+          "number": 20
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "3-",
           "name": "La Buvette",
           "number": 21
@@ -3742,6 +3735,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "3+",
+          "name": "La Rampe d’Escalier",
+          "number": 30
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "5-",
           "name": "Le Monodoigt",
           "number": 31
@@ -3795,24 +3795,10 @@
           "number": 1
         },
         {
-          "comment": "dalle.",
-          "coordinate": null,
-          "grade": "5",
-          "name": "Mystère Klein",
-          "number": 1
-        },
-        {
           "comment": "fissure, haut. 40m à gauche de l’auberge Canard.",
           "coordinate": null,
           "grade": "6c+",
           "name": "La Fissure des J3",
-          "number": 2
-        },
-        {
-          "comment": "mur, haut.",
-          "coordinate": null,
-          "grade": "6a",
-          "name": "Bouledogue direct",
           "number": 2
         },
         {
@@ -3863,6 +3849,13 @@
           "grade": "6a",
           "name": "Lopo Table",
           "number": 9
+        },
+        {
+          "comment": "dalle.",
+          "coordinate": null,
+          "grade": "5",
+          "name": "Mystère Klein",
+          "number": 10
         },
         {
           "comment": "arête. au dessus du bar Mivaux.",
@@ -3926,6 +3919,13 @@
           "grade": "7a",
           "name": "Musclor",
           "number": 19
+        },
+        {
+          "comment": "mur, haut.",
+          "coordinate": null,
+          "grade": "6a",
+          "name": "Bouledogue direct",
+          "number": 20
         },
         {
           "comment": "arête, haut.",
@@ -4105,20 +4105,6 @@
           "number": 1
         },
         {
-          "comment": "mur.",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "",
-          "number": 1
-        },
-        {
-          "comment": "mur.",
-          "coordinate": null,
-          "grade": "4+",
-          "name": "",
-          "number": 1
-        },
-        {
           "comment": "dévers.",
           "coordinate": null,
           "grade": "5-",
@@ -4126,13 +4112,6 @@
           "number": 2
         },
         {
-          "comment": "",
-          "coordinate": null,
-          "grade": "4",
-          "name": "",
-          "number": 2
-        },
-        {
           "comment": "mur.",
           "coordinate": null,
           "grade": "4+",
@@ -4140,30 +4119,9 @@
           "number": 3
         },
         {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3+",
-          "name": "",
-          "number": 3
-        },
-        {
           "comment": "mur.",
           "coordinate": null,
           "grade": "5-",
-          "name": "",
-          "number": 4
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "",
-          "number": 4
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3+",
           "name": "",
           "number": 4
         },
@@ -4208,6 +4166,20 @@
           "grade": "3+",
           "name": "",
           "number": 9
+        },
+        {
+          "comment": "mur.",
+          "coordinate": null,
+          "grade": "4+",
+          "name": "",
+          "number": 10
+        },
+        {
+          "comment": "mur.",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "",
+          "number": "10bis"
         },
         {
           "comment": "mur, plats.",
@@ -4296,6 +4268,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "4",
+          "name": "",
+          "number": 20
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "3+",
           "name": "",
           "number": 21
@@ -4380,6 +4359,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "3+",
+          "name": "",
+          "number": 30
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "5-",
           "name": "",
           "number": 31
@@ -4417,14 +4403,14 @@
           "coordinate": null,
           "grade": "4",
           "name": "",
-          "number": 34
+          "number": "34bis"
         },
         {
           "comment": "",
           "coordinate": null,
           "grade": "4",
           "name": "",
-          "number": "34bis"
+          "number": "34ter"
         },
         {
           "comment": "",
@@ -4467,6 +4453,20 @@
           "grade": "4-",
           "name": "",
           "number": "39bis"
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "",
+          "number": 40
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "3+",
+          "name": "",
+          "number": "40bis"
         },
         {
           "comment": "",
@@ -4540,21 +4540,7 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "2+",
-          "name": "",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "3-",
-          "name": "",
-          "number": 2
-        },
-        {
-          "comment": "sur le bloc du 23.",
-          "coordinate": null,
-          "grade": "2+",
           "name": "",
           "number": 2
         },
@@ -4564,20 +4550,6 @@
           "grade": "3",
           "name": "",
           "number": 3
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3-",
-          "name": "",
-          "number": 3
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3-",
-          "name": "",
-          "number": 4
         },
         {
           "comment": "",
@@ -4627,6 +4599,13 @@
           "grade": "3",
           "name": "",
           "number": 9
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2+",
+          "name": "",
+          "number": 10
         },
         {
           "comment": "",
@@ -4690,6 +4669,13 @@
           "grade": "3+",
           "name": "",
           "number": 19
+        },
+        {
+          "comment": "sur le bloc du 23.",
+          "coordinate": null,
+          "grade": "2+",
+          "name": "",
+          "number": 20
         },
         {
           "comment": "",
@@ -4764,6 +4750,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "3-",
+          "name": "",
+          "number": 30
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "2",
           "name": "",
           "number": 31
@@ -4827,6 +4820,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "3-",
+          "name": "",
+          "number": 40
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "3+",
           "name": "",
           "number": 41
@@ -4861,13 +4861,6 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "3",
-          "name": "",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "1",
           "name": "",
           "number": 2
@@ -4875,21 +4868,7 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "3+",
-          "name": "",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "1",
-          "name": "",
-          "number": 3
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "2+",
           "name": "",
           "number": 3
         },
@@ -4897,13 +4876,6 @@
           "comment": "",
           "coordinate": null,
           "grade": "2",
-          "name": "",
-          "number": 4
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3-",
           "name": "",
           "number": 4
         },
@@ -4941,6 +4913,13 @@
           "grade": "1",
           "name": "",
           "number": 9
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "3",
+          "name": "",
+          "number": 10
         },
         {
           "comment": "",
@@ -5015,6 +4994,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "3+",
+          "name": "",
+          "number": 20
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "1",
           "name": "",
           "number": 21
@@ -5081,6 +5067,13 @@
           "grade": "1",
           "name": "",
           "number": 29
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2+",
+          "name": "",
+          "number": 30
         },
         {
           "comment": "",
@@ -5162,6 +5155,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "3-",
+          "name": "",
+          "number": 40
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "2",
           "name": "",
           "number": 41
@@ -5230,20 +5230,6 @@
           "number": 1
         },
         {
-          "comment": "mur, réglettes. départ un peu morpho (triangle rouge).",
-          "coordinate": null,
-          "grade": "5+",
-          "name": "Morphoillogique",
-          "number": 1
-        },
-        {
-          "comment": "traversée.",
-          "coordinate": null,
-          "grade": "6a",
-          "name": "Le Beau Final",
-          "number": 1
-        },
-        {
           "comment": "traversée.",
           "coordinate": null,
           "grade": "5+",
@@ -5251,24 +5237,10 @@
           "number": 2
         },
         {
-          "comment": "réta.",
-          "coordinate": null,
-          "grade": "6a",
-          "name": "Okilélé",
-          "number": 2
-        },
-        {
           "comment": "mur, réglettes.",
           "coordinate": null,
           "grade": "5+",
           "name": "Le Tiroir Secret / Mémorium",
-          "number": 3
-        },
-        {
-          "comment": "dévers, réta. départ à gauche.",
-          "coordinate": null,
-          "grade": "5+",
-          "name": "La Femme Léopard",
           "number": 3
         },
         {
@@ -5321,6 +5293,20 @@
           "number": 9
         },
         {
+          "comment": "traversée.",
+          "coordinate": null,
+          "grade": "6a",
+          "name": "Le Beau Final",
+          "number": 10
+        },
+        {
+          "comment": "mur, réglettes. départ un peu morpho (triangle rouge).",
+          "coordinate": null,
+          "grade": "5+",
+          "name": "Morphoillogique",
+          "number": "10bis"
+        },
+        {
           "comment": "mur, réglettes.",
           "coordinate": null,
           "grade": "6a+",
@@ -5370,18 +5356,18 @@
           "number": 15
         },
         {
-          "comment": "arête, traversée. ancien n°16 rouge.",
-          "coordinate": null,
-          "grade": "6b",
-          "name": "Chouchou Chéri",
-          "number": 15
-        },
-        {
           "comment": "surplomb, traversée. dans le couloir, sur le bloc du 15, L’Enfer des Nains. Partir de l’angle de droite, traverser d’abord par le haut sur des bossettes, redescendre au niveau de prises horizontales, poursuivre la traversée par le bas et sortir dans le surplomb du 15, L’Enfer des Nains.",
           "coordinate": null,
           "grade": "7a+",
           "name": "Coup Bas",
           "number": "15bis"
+        },
+        {
+          "comment": "arête, traversée. ancien n°16 rouge.",
+          "coordinate": null,
+          "grade": "6b",
+          "name": "Chouchou Chéri",
+          "number": "15ter"
         },
         {
           "comment": "mur, bidoigts, plats.",
@@ -5410,6 +5396,13 @@
           "grade": "5-",
           "name": "Beau Pavé",
           "number": 19
+        },
+        {
+          "comment": "réta.",
+          "coordinate": null,
+          "grade": "6a",
+          "name": "Okilélé",
+          "number": 20
         },
         {
           "comment": "dévers.",
@@ -5480,6 +5473,13 @@
           "grade": "6c",
           "name": "Kaki Dehors",
           "number": "29bis"
+        },
+        {
+          "comment": "dévers, réta. départ à gauche.",
+          "coordinate": null,
+          "grade": "5+",
+          "name": "La Femme Léopard",
+          "number": 30
         },
         {
           "comment": "mur.",
@@ -5585,13 +5585,6 @@
           "number": 1
         },
         {
-          "comment": "dalle, fissure.",
-          "coordinate": null,
-          "grade": "4",
-          "name": "La Dalle des Alpinistes",
-          "number": 1
-        },
-        {
           "comment": "mur. mur à bombé (ex n°3 de l’ancien circuit rouge).",
           "coordinate": null,
           "grade": "4-",
@@ -5599,24 +5592,10 @@
           "number": 2
         },
         {
-          "comment": "mur.",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "L’Empi de droite",
-          "number": 2
-        },
-        {
           "comment": "réta. n°7 de l’ancien circuit rouge.",
           "coordinate": null,
           "grade": "4+",
           "name": "La Bascule",
-          "number": 3
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "5-",
-          "name": "Le Dernier Problème",
           "number": 3
         },
         {
@@ -5660,6 +5639,13 @@
           "grade": "4-",
           "name": "Le Bombé Menteur",
           "number": 9
+        },
+        {
+          "comment": "dalle, fissure.",
+          "coordinate": null,
+          "grade": "4",
+          "name": "La Dalle des Alpinistes",
+          "number": 10
         },
         {
           "comment": "traversée. partir dans une arête verticale et traverser vers la gauche dans la dalle marbrée.",
@@ -5725,6 +5711,13 @@
           "number": 19
         },
         {
+          "comment": "mur.",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "L’Empi de droite",
+          "number": 20
+        },
+        {
           "comment": "",
           "coordinate": null,
           "grade": "5-",
@@ -5786,6 +5779,13 @@
           "grade": "4-",
           "name": "La Diagonale du Trou",
           "number": 29
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "5-",
+          "name": "Le Dernier Problème",
+          "number": 30
         }
       ],
       "colour": "bleu",
@@ -5816,13 +5816,6 @@
           "number": 1
         },
         {
-          "comment": "mur, réta, plats. mur avec une sortie en réta engagée, sur le bloc en dessous du Portique.",
-          "coordinate": null,
-          "grade": "5",
-          "name": "La Directe Zavatta",
-          "number": 1
-        },
-        {
           "comment": "dalle, dièdre. voie de gauche sur la \"Dalle P.O.\".",
           "coordinate": null,
           "grade": "5-",
@@ -5830,24 +5823,10 @@
           "number": 2
         },
         {
-          "comment": "mur.",
-          "coordinate": null,
-          "grade": "5",
-          "name": "La Nouvelle",
-          "number": 2
-        },
-        {
           "comment": "mur. mur marbré.",
           "coordinate": null,
           "grade": "5",
           "name": "Le Sémaphore",
-          "number": 3
-        },
-        {
-          "comment": "fissure. fissure ronde malcommode restant longtemps humide.",
-          "coordinate": null,
-          "grade": "5+",
-          "name": "Doc Excentric",
           "number": 3
         },
         {
@@ -5891,6 +5870,13 @@
           "grade": "5-",
           "name": "La Directe d’Alex",
           "number": 9
+        },
+        {
+          "comment": "mur, réta, plats. mur avec une sortie en réta engagée, sur le bloc en dessous du Portique.",
+          "coordinate": null,
+          "grade": "5",
+          "name": "La Directe Zavatta",
+          "number": 10
         },
         {
           "comment": "mur. mur légèrement déversant dans le couloir en face du Portique ; sans les prises de droite.",
@@ -5959,6 +5945,13 @@
           "comment": "mur.",
           "coordinate": null,
           "grade": "5",
+          "name": "La Nouvelle",
+          "number": 20
+        },
+        {
+          "comment": "mur.",
+          "coordinate": null,
+          "grade": "5",
           "name": "La Cascade",
           "number": 21
         },
@@ -6017,6 +6010,13 @@
           "grade": "5",
           "name": "La Dédicace",
           "number": 29
+        },
+        {
+          "comment": "fissure. fissure ronde malcommode restant longtemps humide.",
+          "coordinate": null,
+          "grade": "5+",
+          "name": "Doc Excentric",
+          "number": 30
         },
         {
           "comment": "mur. attention aux ronces en sortie !",
@@ -6090,13 +6090,6 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "3-",
-          "name": "Le Fort",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "2",
           "name": "",
           "number": "1bis"
@@ -6106,13 +6099,6 @@
           "coordinate": null,
           "grade": "4+",
           "name": "Le Sémaphore",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "2+",
-          "name": "L’Anatole",
           "number": 2
         },
         {
@@ -6181,6 +6167,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "3-",
+          "name": "Le Fort",
+          "number": 10
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "4",
           "name": "L’Alex Face Sud",
           "number": 11
@@ -6240,6 +6233,13 @@
           "grade": "3-",
           "name": "Le grand Écart",
           "number": 19
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2+",
+          "name": "L’Anatole",
+          "number": 20
         },
         {
           "comment": "",
@@ -6308,24 +6308,10 @@
           "number": 1
         },
         {
-          "comment": "mur, traversée, réglettes.",
-          "coordinate": null,
-          "grade": "6a",
-          "name": "Illusion",
-          "number": 1
-        },
-        {
           "comment": "dalle, arête. arête évidente un peu morpho. voir aussi : L’Arête de Zmutt assis 6b (6a)",
           "coordinate": null,
           "grade": "6a",
           "name": "L’Arête de Zmutt",
-          "number": 2
-        },
-        {
-          "comment": "mur.",
-          "coordinate": null,
-          "grade": "6c",
-          "name": "Pierre de Thaï",
           "number": 2
         },
         {
@@ -6376,6 +6362,13 @@
           "grade": "6b",
           "name": "Autopsie d’un Bœuf",
           "number": 9
+        },
+        {
+          "comment": "mur, traversée, réglettes.",
+          "coordinate": null,
+          "grade": "6a",
+          "name": "Illusion",
+          "number": 10
         },
         {
           "comment": "mur, réglettes. mur morpho, avec départ surélevé.",
@@ -6439,6 +6432,13 @@
           "grade": "6b",
           "name": "Ton Dernier Trango",
           "number": 19
+        },
+        {
+          "comment": "mur.",
+          "coordinate": null,
+          "grade": "6c",
+          "name": "Pierre de Thaï",
+          "number": 20
         },
         {
           "comment": "mur. éliminante (sans les prises à droite de la fissure).",
@@ -6512,22 +6512,8 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "2+",
-          "name": "J’Ose, j’Ose pas",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "1",
           "name": "Des Coups Verts",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "2",
-          "name": "Les Taggers",
           "number": 2
         },
         {
@@ -6540,13 +6526,6 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "2",
-          "name": "Les Celtiques",
-          "number": 3
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "1",
           "name": "C’est du Boulot",
           "number": 4
@@ -6554,22 +6533,8 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "2",
-          "name": "En Catimini",
-          "number": 4
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "1",
           "name": "Santiano",
-          "number": 5
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "1",
-          "name": "Histoire d’E",
           "number": 5
         },
         {
@@ -6584,13 +6549,6 @@
           "coordinate": null,
           "grade": "2+",
           "name": "Mine de Rien",
-          "number": 6
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "1",
-          "name": "Dupleix",
           "number": 6
         },
         {
@@ -6613,6 +6571,13 @@
           "grade": "2",
           "name": "La Vasque",
           "number": 9
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2+",
+          "name": "J’Ose, j’Ose pas",
+          "number": 10
         },
         {
           "comment": "",
@@ -6681,6 +6646,13 @@
           "comment": "",
           "coordinate": null,
           "grade": "2",
+          "name": "Les Taggers",
+          "number": 20
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2",
           "name": "Descente",
           "number": 21
         },
@@ -6739,6 +6711,13 @@
           "grade": "2",
           "name": "Géant Jaune",
           "number": 29
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2",
+          "name": "Les Celtiques",
+          "number": 30
         },
         {
           "comment": "",
@@ -6807,6 +6786,13 @@
           "comment": "",
           "coordinate": null,
           "grade": "2",
+          "name": "En Catimini",
+          "number": 40
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2",
           "name": "La Massue",
           "number": 41
         },
@@ -6865,6 +6851,13 @@
           "grade": "1",
           "name": "Ma Planète",
           "number": 49
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "1",
+          "name": "Histoire d’E",
+          "number": 50
         },
         {
           "comment": "",
@@ -6933,6 +6926,13 @@
           "comment": "",
           "coordinate": null,
           "grade": "1",
+          "name": "Dupleix",
+          "number": 60
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "1",
           "name": "Irradié",
           "number": 61
         },
@@ -6983,53 +6983,11 @@
           "number": 1
         },
         {
-          "comment": "ex 46",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "Le bac à Sable",
-          "number": 1
-        },
-        {
           "comment": "",
           "coordinate": null,
           "grade": "3-",
           "name": "",
           "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3+",
-          "name": "L’Excroissance",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3+",
-          "name": "",
-          "number": 3
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "4",
-          "name": "Le Phare",
-          "number": 3
-        },
-        {
-          "comment": "dalle.",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "",
-          "number": 4
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "4",
-          "name": "La Dépêche",
-          "number": 4
         },
         {
           "comment": "ex 49",
@@ -7050,7 +7008,7 @@
           "coordinate": null,
           "grade": "4",
           "name": "",
-          "number": "7ex"
+          "number": "7 ex"
         },
         {
           "comment": "",
@@ -7067,32 +7025,39 @@
           "number": 9
         },
         {
+          "comment": "ex 46",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "Le bac à Sable",
+          "number": 10
+        },
+        {
           "comment": "ex 43 (ou la borgne ?)",
           "coordinate": null,
           "grade": "4",
-          "name": "",
+          "name": "La Borne",
           "number": 11
         },
         {
           "comment": "ex 44",
           "coordinate": null,
           "grade": "3+",
-          "name": "",
+          "name": "La Pacotille",
           "number": 12
         },
         {
-          "comment": "",
+          "comment": "ex bleu",
           "coordinate": null,
           "grade": "4-",
           "name": "",
-          "number": 12
+          "number": "12 ex"
         },
         {
           "comment": "ex 42",
           "coordinate": null,
           "grade": "5-",
-          "name": "Le vitrail ou la Dalle Polisson ?",
-          "number": 13
+          "name": "Sois Poli, Le vitrail ou la Dalle Polisson ?",
+          "number": "13bis"
         },
         {
           "comment": "",
@@ -7120,13 +7085,13 @@
           "coordinate": null,
           "grade": "3+",
           "name": "",
-          "number": "15ex"
+          "number": "15 ex"
         },
         {
           "comment": "",
           "coordinate": null,
           "grade": "5-",
-          "name": "",
+          "name": "L’Audacieux",
           "number": "15bis"
         },
         {
@@ -7141,7 +7106,7 @@
           "coordinate": null,
           "grade": "4-",
           "name": "",
-          "number": "16ex"
+          "number": "16 ex"
         },
         {
           "comment": "",
@@ -7169,14 +7134,14 @@
           "coordinate": null,
           "grade": "4+",
           "name": "",
-          "number": "18ex"
+          "number": "18 ex"
         },
         {
           "comment": "",
           "coordinate": null,
           "grade": "4-",
           "name": "",
-          "number": "18bis"
+          "number": "18bis ex"
         },
         {
           "comment": "",
@@ -7184,6 +7149,13 @@
           "grade": "4-",
           "name": "L’Existentiel",
           "number": 19
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "3+",
+          "name": "L’Excroissance",
+          "number": 20
         },
         {
           "comment": "",
@@ -7197,7 +7169,7 @@
           "coordinate": null,
           "grade": "4-",
           "name": "",
-          "number": "21ex"
+          "number": "21 ex"
         },
         {
           "comment": "",
@@ -7239,14 +7211,28 @@
           "coordinate": null,
           "grade": "4+",
           "name": "",
-          "number": 29
+          "number": "29ter ex"
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4",
+          "name": "Le Phare",
+          "number": 30
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "3+",
+          "name": "Le Bas de Caisse",
+          "number": "30bis"
         },
         {
           "comment": "traversée.",
           "coordinate": null,
           "grade": "3+",
           "name": "",
-          "number": "31ex"
+          "number": "31 ex"
         },
         {
           "comment": "",
@@ -7260,7 +7246,7 @@
           "coordinate": null,
           "grade": "3+",
           "name": "",
-          "number": "32ex"
+          "number": "32 ex"
         },
         {
           "comment": "",
@@ -7274,7 +7260,7 @@
           "coordinate": null,
           "grade": "4+",
           "name": "",
-          "number": "33ex"
+          "number": "33 ex"
         },
         {
           "comment": "",
@@ -7288,7 +7274,7 @@
           "coordinate": null,
           "grade": "4+",
           "name": "",
-          "number": "34ex"
+          "number": "34 ex"
         },
         {
           "comment": "",
@@ -7316,14 +7302,14 @@
           "coordinate": null,
           "grade": "5-",
           "name": "La Poulette droite",
-          "number": 35
+          "number": "35ter"
         },
         {
           "comment": "",
           "coordinate": null,
           "grade": "4+",
           "name": "",
-          "number": "36ex"
+          "number": "36 ex"
         },
         {
           "comment": "",
@@ -7337,7 +7323,7 @@
           "coordinate": null,
           "grade": "4",
           "name": "",
-          "number": "38ex"
+          "number": "38 ex"
         },
         {
           "comment": "",
@@ -7361,11 +7347,25 @@
           "number": 39
         },
         {
+          "comment": "dalle.",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "",
+          "number": "40 ex"
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4",
+          "name": "La Dépêche",
+          "number": 40
+        },
+        {
           "comment": "",
           "coordinate": null,
           "grade": "3",
           "name": "",
-          "number": "41ex"
+          "number": "41 ex"
         },
         {
           "comment": "fissure.",
@@ -7393,7 +7393,7 @@
           "coordinate": null,
           "grade": "4",
           "name": "",
-          "number": "46bis"
+          "number": "46bis ex"
         }
       ],
       "colour": "bleu",
@@ -7439,13 +7439,6 @@
           "coordinate": null,
           "grade": "5+",
           "name": "Pince sans Rire",
-          "number": 1
-        },
-        {
-          "comment": "traversée.",
-          "coordinate": null,
-          "grade": "5-",
-          "name": "Le Cyanure Sucré",
           "number": 1
         },
         {
@@ -7510,6 +7503,13 @@
           "grade": "4+",
           "name": "Indécence",
           "number": 9
+        },
+        {
+          "comment": "traversée.",
+          "coordinate": null,
+          "grade": "5-",
+          "name": "Le Cyanure Sucré",
+          "number": 10
         },
         {
           "comment": "dalle.",
@@ -7780,13 +7780,6 @@
         {
           "comment": "traversée. rouge",
           "coordinate": null,
-          "grade": "3+",
-          "name": "Le Contour",
-          "number": 1
-        },
-        {
-          "comment": "traversée. rouge",
-          "coordinate": null,
           "grade": "2+",
           "name": "La Traversée de l’Envers du Culot",
           "number": 2
@@ -7846,6 +7839,13 @@
           "grade": "2+",
           "name": "La Cheminée du Lac",
           "number": 9
+        },
+        {
+          "comment": "traversée. rouge",
+          "coordinate": null,
+          "grade": "3+",
+          "name": "Le Contour",
+          "number": 10
         },
         {
           "comment": "mur, fissure. rouge",
@@ -7917,13 +7917,6 @@
         {
           "comment": "jaune",
           "coordinate": null,
-          "grade": "4",
-          "name": "La Demi-Lune du S",
-          "number": 1
-        },
-        {
-          "comment": "jaune",
-          "coordinate": null,
           "grade": "3",
           "name": "La Bifur",
           "number": 2
@@ -7981,6 +7974,13 @@
           "comment": "jaune",
           "coordinate": null,
           "grade": "4",
+          "name": "La Demi-Lune du S",
+          "number": 10
+        },
+        {
+          "comment": "jaune",
+          "coordinate": null,
+          "grade": "4",
           "name": "La Gaby",
           "number": 11
         },
@@ -8026,22 +8026,8 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "5",
-          "name": "Le Petit Trou",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "5-",
           "name": "L’Imprévu",
-          "number": 2
-        },
-        {
-          "comment": "dalle.",
-          "coordinate": null,
-          "grade": "5+",
-          "name": "La Dalle Cassée (Voie des J3)",
           "number": 2
         },
         {
@@ -8052,24 +8038,10 @@
           "number": 3
         },
         {
-          "comment": "mur.",
-          "coordinate": null,
-          "grade": "4+",
-          "name": "Le Mur Lepiney",
-          "number": 3
-        },
-        {
           "comment": "",
           "coordinate": null,
           "grade": "5+",
           "name": "La Pile (face Est)",
-          "number": 4
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "5",
-          "name": "Le Bouleau",
           "number": 4
         },
         {
@@ -8106,6 +8078,13 @@
           "grade": "5+",
           "name": "La Dalle des 3 Étages",
           "number": 9
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "5",
+          "name": "Le Petit Trou",
+          "number": 10
         },
         {
           "comment": "",
@@ -8171,6 +8150,13 @@
           "number": 19
         },
         {
+          "comment": "dalle.",
+          "coordinate": null,
+          "grade": "5+",
+          "name": "La Dalle Cassée (Voie des J3)",
+          "number": 20
+        },
+        {
           "comment": "expo.",
           "coordinate": null,
           "grade": "5",
@@ -8232,6 +8218,13 @@
           "grade": "4+",
           "name": "Le Mouchoir (Pilier Est)",
           "number": 29
+        },
+        {
+          "comment": "mur.",
+          "coordinate": null,
+          "grade": "4+",
+          "name": "Le Mur Lepiney",
+          "number": 30
         },
         {
           "comment": "dalle.",
@@ -8302,6 +8295,13 @@
           "grade": "5+",
           "name": "La Pyramide Marbrée",
           "number": 39
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "5",
+          "name": "Le Bouleau",
+          "number": 40
         },
         {
           "comment": "",
@@ -8380,24 +8380,10 @@
           "number": 1
         },
         {
-          "comment": "mur, traversée. circuit mauve.",
-          "coordinate": null,
-          "grade": "3-",
-          "name": "L’Accès au Simplon",
-          "number": 1
-        },
-        {
           "comment": "mur. circuit mauve.",
           "coordinate": null,
           "grade": "3",
           "name": "Le Mur à Jules",
-          "number": 2
-        },
-        {
-          "comment": "haut. sur le bloc de La Dame Jouanne.",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "La Tubulaire",
           "number": 2
         },
         {
@@ -8408,24 +8394,10 @@
           "number": 3
         },
         {
-          "comment": "circuit mauve.",
-          "coordinate": null,
-          "grade": "3+",
-          "name": "La Muraille de Chine (suite)",
-          "number": 3
-        },
-        {
           "comment": "traversée. circuit mauve.",
           "coordinate": null,
           "grade": "4",
           "name": "La Mine aux Demis",
-          "number": 4
-        },
-        {
-          "comment": "mur. circuit mauve.",
-          "coordinate": null,
-          "grade": "3-",
-          "name": "Le Mur de la Gitane",
           "number": 4
         },
         {
@@ -8436,13 +8408,6 @@
           "number": 5
         },
         {
-          "comment": "circuit mauve.",
-          "coordinate": null,
-          "grade": "2",
-          "name": "",
-          "number": 5
-        },
-        {
           "comment": "haut. circuit mauve.",
           "coordinate": null,
           "grade": "3",
@@ -8450,24 +8415,10 @@
           "number": 6
         },
         {
-          "comment": "dalle. circuit mauve.",
-          "coordinate": null,
-          "grade": "3+",
-          "name": "La Dalle Brégeault",
-          "number": 6
-        },
-        {
           "comment": "traversée. circuit mauve.",
           "coordinate": null,
           "grade": "2",
           "name": "Le Rocher Bouffé aux Mites",
-          "number": 7
-        },
-        {
-          "comment": "circuit mauve.",
-          "coordinate": null,
-          "grade": "3-",
-          "name": "Le Pas de Barbe-Bleue",
           "number": 7
         },
         {
@@ -8483,6 +8434,13 @@
           "grade": "3+",
           "name": "La Traversée du Rocher Rond",
           "number": 9
+        },
+        {
+          "comment": "mur, traversée. circuit mauve.",
+          "coordinate": null,
+          "grade": "3-",
+          "name": "L’Accès au Simplon",
+          "number": 10
         },
         {
           "comment": "mur, fissure. circuit mauve.",
@@ -8548,6 +8506,13 @@
           "number": 19
         },
         {
+          "comment": "haut. sur le bloc de La Dame Jouanne.",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "La Tubulaire",
+          "number": 20
+        },
+        {
           "comment": "descente. circuit mauve.",
           "coordinate": null,
           "grade": "3",
@@ -8609,6 +8574,13 @@
           "grade": "3+",
           "name": "La Muraille de Chine",
           "number": 29
+        },
+        {
+          "comment": "circuit mauve.",
+          "coordinate": null,
+          "grade": "3+",
+          "name": "La Muraille de Chine (suite)",
+          "number": 30
         },
         {
           "comment": "réglettes. circuit mauve.",
@@ -8677,6 +8649,13 @@
           "comment": "mur. circuit mauve.",
           "coordinate": null,
           "grade": "3-",
+          "name": "Le Mur de la Gitane",
+          "number": 40
+        },
+        {
+          "comment": "mur. circuit mauve.",
+          "coordinate": null,
+          "grade": "3-",
           "name": "Les Oreilles de Cocu",
           "number": 41
         },
@@ -8735,6 +8714,13 @@
           "grade": "3-",
           "name": "La Face Sud de l’Hippopotame",
           "number": 49
+        },
+        {
+          "comment": "circuit mauve.",
+          "coordinate": null,
+          "grade": "2",
+          "name": "",
+          "number": 50
         },
         {
           "comment": "circuit mauve.",
@@ -8800,6 +8786,13 @@
           "number": 59
         },
         {
+          "comment": "dalle. circuit mauve.",
+          "coordinate": null,
+          "grade": "3+",
+          "name": "La Dalle Brégeault",
+          "number": 60
+        },
+        {
           "comment": "traversée. circuit mauve.",
           "coordinate": null,
           "grade": "3+",
@@ -8861,6 +8854,13 @@
           "grade": "3",
           "name": "Le Rocher du Jeune Marié",
           "number": 69
+        },
+        {
+          "comment": "circuit mauve.",
+          "coordinate": null,
+          "grade": "3-",
+          "name": "Le Pas de Barbe-Bleue",
+          "number": 70
         },
         {
           "comment": "traversée. circuit mauve.",
@@ -8947,24 +8947,10 @@
           "number": 1
         },
         {
-          "comment": "traversée.",
-          "coordinate": null,
-          "grade": "5-",
-          "name": "La Traversée",
-          "number": 1
-        },
-        {
           "comment": "",
           "coordinate": null,
           "grade": "4+",
           "name": "La Crevette",
-          "number": 2
-        },
-        {
-          "comment": "traversée.",
-          "coordinate": null,
-          "grade": "4+",
-          "name": "Double Bloc",
           "number": 2
         },
         {
@@ -8977,22 +8963,8 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "4",
-          "name": "La Dher",
-          "number": 3
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "4+",
           "name": "L’Avion",
-          "number": 4
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "4+",
-          "name": "Sans l’Arête",
           "number": 4
         },
         {
@@ -9000,13 +8972,6 @@
           "coordinate": null,
           "grade": "4",
           "name": "La Dalle Bruneau",
-          "number": 5
-        },
-        {
-          "comment": "trous.",
-          "coordinate": null,
-          "grade": "5-",
-          "name": "Les Trous de l’Anord",
           "number": 5
         },
         {
@@ -9036,6 +9001,13 @@
           "grade": "5",
           "name": "La Morpho",
           "number": 9
+        },
+        {
+          "comment": "traversée.",
+          "coordinate": null,
+          "grade": "5-",
+          "name": "La Traversée",
+          "number": 10
         },
         {
           "comment": "",
@@ -9099,6 +9071,13 @@
           "grade": "4+",
           "name": "Le Tiroir",
           "number": 19
+        },
+        {
+          "comment": "traversée.",
+          "coordinate": null,
+          "grade": "4+",
+          "name": "Double Bloc",
+          "number": 20
         },
         {
           "comment": "",
@@ -9167,6 +9146,13 @@
           "comment": "",
           "coordinate": null,
           "grade": "4",
+          "name": "La Dher",
+          "number": 30
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4",
           "name": "La Petite Verte",
           "number": 31
         },
@@ -9230,6 +9216,13 @@
           "comment": "",
           "coordinate": null,
           "grade": "4+",
+          "name": "Sans l’Arête",
+          "number": 40
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4+",
           "name": "La Droite",
           "number": 41
         },
@@ -9288,6 +9281,13 @@
           "grade": "5-",
           "name": "La Fissure Prise",
           "number": 49
+        },
+        {
+          "comment": "trous.",
+          "coordinate": null,
+          "grade": "5-",
+          "name": "Les Trous de l’Anord",
+          "number": 50
         },
         {
           "comment": "",
@@ -9374,28 +9374,7 @@
           "comment": "",
           "coordinate": null,
           "grade": "4",
-          "name": "L’Élancé",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "4",
           "name": "Les Gratton de l’Anord",
-          "number": 2
-        },
-        {
-          "comment": "trous.",
-          "coordinate": null,
-          "grade": "4",
-          "name": "Le Pil",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "Le Ventru",
           "number": 2
         },
         {
@@ -9413,13 +9392,6 @@
           "number": 3
         },
         {
-          "comment": "",
-          "coordinate": null,
-          "grade": "4",
-          "name": "La Piste aux Étoiles",
-          "number": 3
-        },
-        {
           "comment": "dalle.",
           "coordinate": null,
           "grade": "4-",
@@ -9429,29 +9401,8 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "4+",
-          "name": "Directe du Z",
-          "number": 4
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "4",
-          "name": "Le Zede",
-          "number": 4
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "4-",
           "name": "L’Écarte",
-          "number": 5
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "4",
-          "name": "Le Réveil Matin",
           "number": 5
         },
         {
@@ -9488,6 +9439,13 @@
           "grade": "4",
           "name": "L’Angle Droit",
           "number": 9
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4",
+          "name": "L’Élancé",
+          "number": 10
         },
         {
           "comment": "",
@@ -9551,6 +9509,20 @@
           "grade": "4+",
           "name": "L’Arrachée",
           "number": 19
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "Le Ventru",
+          "number": 20
+        },
+        {
+          "comment": "trous.",
+          "coordinate": null,
+          "grade": "4",
+          "name": "Le Pil",
+          "number": "20bis"
         },
         {
           "comment": "fissure.",
@@ -9618,6 +9590,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "4",
+          "name": "La Piste aux Étoiles",
+          "number": 30
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "4-",
           "name": "Le Bidule",
           "number": 31
@@ -9677,6 +9656,20 @@
           "grade": "4-",
           "name": "L’Équilibriste",
           "number": 39
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4",
+          "name": "Le Zede",
+          "number": 40
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4+",
+          "name": "Directe du Z",
+          "number": "40bis"
         },
         {
           "comment": "",
@@ -9747,6 +9740,13 @@
           "grade": "4",
           "name": "La Fourche",
           "number": 49
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4",
+          "name": "Le Réveil Matin",
+          "number": 50
         }
       ],
       "colour": "bleu",
@@ -9791,13 +9791,6 @@
           "number": 1
         },
         {
-          "comment": "mur, expo. sur la face de gauche du 9, La Rampe et du 48, Main Gauche (arrivée du circuit TD n°5).",
-          "coordinate": null,
-          "grade": "5+",
-          "name": "La Gouttière",
-          "number": 1
-        },
-        {
           "comment": "dévers, expo, traversée. sur le bloc du Temple, au Nord-Ouest de 68, La Dalle du Feu.",
           "coordinate": null,
           "grade": "6a",
@@ -9805,24 +9798,10 @@
           "number": 2
         },
         {
-          "comment": "mur, traversée. sur le bloc du Culot.",
-          "coordinate": null,
-          "grade": "6b",
-          "name": "Le Bras Carré",
-          "number": 2
-        },
-        {
           "comment": "toit, expo, traversée. tout au sommet du massif, sous la platière, au niveau d’un panneau \"Danger, rochers instables\". Partir sous le surplomb, remonter vers la droite en suivant une fissure et sortir directement dans le toit. voir aussi : Le Toit du Koala direct 7a",
           "coordinate": null,
           "grade": "6b",
           "name": "Le Toit du Koala",
-          "number": 3
-        },
-        {
-          "comment": "dévers, traversée. traversée en aller-retour.",
-          "coordinate": null,
-          "grade": "6a",
-          "name": "Tetehamor",
           "number": 3
         },
         {
@@ -9866,6 +9845,13 @@
           "grade": "5+",
           "name": "La Rampe",
           "number": 9
+        },
+        {
+          "comment": "mur, expo. sur la face de gauche du 9, La Rampe et du 48, Main Gauche (arrivée du circuit TD n°5).",
+          "coordinate": null,
+          "grade": "5+",
+          "name": "La Gouttière",
+          "number": 10
         },
         {
           "comment": "mur, expo, traversée. sur le bloc de l’Ours.",
@@ -9931,6 +9917,13 @@
           "number": 19
         },
         {
+          "comment": "mur, traversée. sur le bloc du Culot.",
+          "coordinate": null,
+          "grade": "6b",
+          "name": "Le Bras Carré",
+          "number": 20
+        },
+        {
           "comment": "mur, haut, réglettes. 50m en dessous de 23, L’Angle Parfait.",
           "coordinate": null,
           "grade": "7a",
@@ -9994,6 +9987,13 @@
           "number": 29
         },
         {
+          "comment": "dévers, traversée. traversée en aller-retour.",
+          "coordinate": null,
+          "grade": "6a",
+          "name": "Tetehamor",
+          "number": 30
+        },
+        {
           "comment": "expo, traversée. complètement à l’Est du massif, une vingtaine de mètres à gauche des escaliers, un peu en dessous du sommet de la pente. Partir debout sur la droite, traverser sur des grosses prises, passer dans le creux et sortir juste après. voir aussi : 25, Stretchin 7a+ (7b)",
           "coordinate": null,
           "grade": "6b",
@@ -10028,21 +10028,7 @@
         {
           "comment": "circuit orange.",
           "coordinate": null,
-          "grade": "2+",
-          "name": "",
-          "number": 1
-        },
-        {
-          "comment": "circuit orange.",
-          "coordinate": null,
           "grade": "4-",
-          "name": "",
-          "number": 2
-        },
-        {
-          "comment": "circuit orange.",
-          "coordinate": null,
-          "grade": "3-",
           "name": "",
           "number": 2
         },
@@ -10056,21 +10042,7 @@
         {
           "comment": "circuit orange.",
           "coordinate": null,
-          "grade": "3-",
-          "name": "",
-          "number": 3
-        },
-        {
-          "comment": "circuit orange.",
-          "coordinate": null,
           "grade": "2",
-          "name": "",
-          "number": 4
-        },
-        {
-          "comment": "circuit orange.",
-          "coordinate": null,
-          "grade": "3-",
           "name": "",
           "number": 4
         },
@@ -10084,13 +10056,6 @@
         {
           "comment": "circuit orange.",
           "coordinate": null,
-          "grade": "4-",
-          "name": "",
-          "number": 5
-        },
-        {
-          "comment": "circuit orange.",
-          "coordinate": null,
           "grade": "2",
           "name": "",
           "number": 6
@@ -10098,21 +10063,7 @@
         {
           "comment": "circuit orange.",
           "coordinate": null,
-          "grade": "2+",
-          "name": "",
-          "number": 6
-        },
-        {
-          "comment": "circuit orange.",
-          "coordinate": null,
           "grade": "2",
-          "name": "",
-          "number": 7
-        },
-        {
-          "comment": "circuit orange.",
-          "coordinate": null,
-          "grade": "4-",
           "name": "",
           "number": 7
         },
@@ -10120,13 +10071,6 @@
           "comment": "circuit orange.",
           "coordinate": null,
           "grade": "3-",
-          "name": "",
-          "number": 8
-        },
-        {
-          "comment": "circuit orange.",
-          "coordinate": null,
-          "grade": "3",
           "name": "",
           "number": 8
         },
@@ -10136,6 +10080,13 @@
           "grade": "3",
           "name": "",
           "number": 9
+        },
+        {
+          "comment": "circuit orange.",
+          "coordinate": null,
+          "grade": "2+",
+          "name": "",
+          "number": 10
         },
         {
           "comment": "circuit orange.",
@@ -10205,6 +10156,13 @@
           "coordinate": null,
           "grade": "3-",
           "name": "",
+          "number": 20
+        },
+        {
+          "comment": "circuit orange.",
+          "coordinate": null,
+          "grade": "3-",
+          "name": "",
           "number": 21
         },
         {
@@ -10262,6 +10220,13 @@
           "grade": "2+",
           "name": "",
           "number": 29
+        },
+        {
+          "comment": "circuit orange.",
+          "coordinate": null,
+          "grade": "3-",
+          "name": "",
+          "number": 30
         },
         {
           "comment": "circuit orange.",
@@ -10329,6 +10294,13 @@
         {
           "comment": "circuit orange.",
           "coordinate": null,
+          "grade": "3-",
+          "name": "",
+          "number": 40
+        },
+        {
+          "comment": "circuit orange.",
+          "coordinate": null,
           "grade": "1",
           "name": "",
           "number": 41
@@ -10392,6 +10364,13 @@
         {
           "comment": "circuit orange.",
           "coordinate": null,
+          "grade": "4-",
+          "name": "",
+          "number": 50
+        },
+        {
+          "comment": "circuit orange.",
+          "coordinate": null,
           "grade": "3-",
           "name": "",
           "number": 51
@@ -10451,6 +10430,13 @@
           "grade": "2+",
           "name": "",
           "number": 59
+        },
+        {
+          "comment": "circuit orange.",
+          "coordinate": null,
+          "grade": "2+",
+          "name": "",
+          "number": 60
         },
         {
           "comment": "circuit orange.",
@@ -10525,6 +10511,13 @@
         {
           "comment": "circuit orange.",
           "coordinate": null,
+          "grade": "4-",
+          "name": "",
+          "number": 70
+        },
+        {
+          "comment": "circuit orange.",
+          "coordinate": null,
           "grade": "2+",
           "name": "",
           "number": 71
@@ -10584,6 +10577,13 @@
           "grade": "2+",
           "name": "",
           "number": 79
+        },
+        {
+          "comment": "circuit orange.",
+          "coordinate": null,
+          "grade": "3",
+          "name": "",
+          "number": 80
         }
       ],
       "colour": "orange",
@@ -10611,24 +10611,10 @@
           "number": 1
         },
         {
-          "comment": "traversée. n°J du circuit noir, sous le rebord de la platière. Partir dans 41, Pour Quelques Betteraves ! (n°41 rouge du circuit TD n°5) mais continuer à traverser à gauche sur un second bloc après la fissure. NB : cette traversée est située juste à gauche d’une zone de défens incluant le 42, Eh ! Encore.",
-          "coordinate": null,
-          "grade": "7b",
-          "name": "Le Kilo de Betteraves",
-          "number": 1
-        },
-        {
           "comment": "mur, haut. n°B du circuit noir, derrière le 8, L’Envers , sur le \"Mur des Lamentations\" (engagé).",
           "coordinate": null,
           "grade": "6b+",
           "name": "Moselle",
-          "number": 2
-        },
-        {
-          "comment": "mur. n°T du circuit noir, 1m à droite du 24, Les P’tits Plats.",
-          "coordinate": null,
-          "grade": "7a",
-          "name": "Anti-G",
           "number": 2
         },
         {
@@ -10679,6 +10665,13 @@
           "grade": "7a+",
           "name": "Sacrée Soirée",
           "number": 9
+        },
+        {
+          "comment": "traversée. n°J du circuit noir, sous le rebord de la platière. Partir dans 41, Pour Quelques Betteraves ! (n°41 rouge du circuit TD n°5) mais continuer à traverser à gauche sur un second bloc après la fissure. NB : cette traversée est située juste à gauche d’une zone de défens incluant le 42, Eh ! Encore.",
+          "coordinate": null,
+          "grade": "7b",
+          "name": "Le Kilo de Betteraves",
+          "number": 10
         },
         {
           "comment": "fissure, expo, traversée. n°K du circuit noir, juste en dessous de la platière, quelques mètres à gauche d’une zone de défens, au niveau de l’ancien n°23 bleu. Commencer par une légère descente, remonter un petit dièdre, traverser à gauche à l’aide d’inversées, remonter en suivant une écaille, poursuivre 3m environ sur la gauche et sortir au niveau du plateau par une fissure déversante engagée.",
@@ -10742,6 +10735,13 @@
           "grade": "7b",
           "name": "Machine à Jambon",
           "number": 19
+        },
+        {
+          "comment": "mur. n°T du circuit noir, 1m à droite du 24, Les P’tits Plats.",
+          "coordinate": null,
+          "grade": "7a",
+          "name": "Anti-G",
+          "number": 20
         },
         {
           "comment": "fissure, départ assis, traversée. n°U du circuit noir, sur l’envers du bloc du 35, La Forêt Vierge , en dessous et 10m avant le gros bloc de 34, Les Trous de gauche de la Caroline. Partir assis sur la gauche, traverser à droite avec de grosses prises et sortir par la fissure.",
@@ -10811,13 +10811,6 @@
           "number": 1
         },
         {
-          "comment": "dalle.",
-          "coordinate": null,
-          "grade": "2+",
-          "name": "L’Équilibre Élémentaire",
-          "number": 1
-        },
-        {
           "comment": "réta.",
           "coordinate": null,
           "grade": "3",
@@ -10828,21 +10821,7 @@
           "comment": "mur.",
           "coordinate": null,
           "grade": "3",
-          "name": "La Montagne",
-          "number": 2
-        },
-        {
-          "comment": "mur.",
-          "coordinate": null,
-          "grade": "3",
           "name": "Le Culot qui Manque",
-          "number": 3
-        },
-        {
-          "comment": "mur.",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "Le Mur du Chemin",
           "number": 3
         },
         {
@@ -10853,13 +10832,6 @@
           "number": 4
         },
         {
-          "comment": "mur.",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "L’Écaille Cassée",
-          "number": 4
-        },
-        {
           "comment": "dévers.",
           "coordinate": null,
           "grade": "3+",
@@ -10867,24 +10839,10 @@
           "number": 5
         },
         {
-          "comment": "dalle.",
-          "coordinate": null,
-          "grade": "3+",
-          "name": "Le Transfert",
-          "number": 5
-        },
-        {
           "comment": "dièdre.",
           "coordinate": null,
           "grade": "4-",
           "name": "Le Dièdre Suspendu",
-          "number": 6
-        },
-        {
-          "comment": "dalle, expo.",
-          "coordinate": null,
-          "grade": "4+",
-          "name": "La Dalle Noire (voie de droite)",
           "number": 6
         },
         {
@@ -10907,6 +10865,13 @@
           "grade": "3+",
           "name": "Les Bossettes",
           "number": 9
+        },
+        {
+          "comment": "dalle.",
+          "coordinate": null,
+          "grade": "2+",
+          "name": "L’Équilibre Élémentaire",
+          "number": 10
         },
         {
           "comment": "mur. 3b en départ assis.",
@@ -10979,6 +10944,13 @@
           "number": 19
         },
         {
+          "comment": "mur.",
+          "coordinate": null,
+          "grade": "3",
+          "name": "La Montagne",
+          "number": 20
+        },
+        {
           "comment": "dalle, mur, arête.",
           "coordinate": null,
           "grade": "3-",
@@ -11040,6 +11012,13 @@
           "grade": "2",
           "name": "Le Pilier du Vide-Ordure",
           "number": 29
+        },
+        {
+          "comment": "mur.",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "Le Mur du Chemin",
+          "number": 30
         },
         {
           "comment": "fissure.",
@@ -11105,6 +11084,13 @@
           "number": 39
         },
         {
+          "comment": "mur.",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "L’Écaille Cassée",
+          "number": 40
+        },
+        {
           "comment": "",
           "coordinate": null,
           "grade": "3-",
@@ -11168,6 +11154,13 @@
           "number": 49
         },
         {
+          "comment": "dalle.",
+          "coordinate": null,
+          "grade": "3+",
+          "name": "Le Transfert",
+          "number": 50
+        },
+        {
           "comment": "",
           "coordinate": null,
           "grade": "2+",
@@ -11229,6 +11222,13 @@
           "grade": "4",
           "name": "La Dalle Noire (voie de gauche)",
           "number": 59
+        },
+        {
+          "comment": "dalle, expo.",
+          "coordinate": null,
+          "grade": "4+",
+          "name": "La Dalle Noire (voie de droite)",
+          "number": 60
         }
       ],
       "colour": "orange",
@@ -11256,24 +11256,10 @@
           "number": 1
         },
         {
-          "comment": "mur, réglettes. sur le bloc de Tout Couleur  ; sortie directe.",
-          "coordinate": null,
-          "grade": "5-",
-          "name": "L’Enclume",
-          "number": 1
-        },
-        {
           "comment": "surplomb, plats. dans le secteur Dampierre (surplomb de la Butte Ronde).",
           "coordinate": null,
           "grade": "6a",
           "name": "La Vicieuse",
-          "number": 2
-        },
-        {
-          "comment": "traversée.",
-          "coordinate": null,
-          "grade": "5+",
-          "name": "La Longitudinale",
           "number": 2
         },
         {
@@ -11312,18 +11298,18 @@
           "number": 7
         },
         {
-          "comment": "mur. dans le secteur Dampierre. Partir à gauche de 7, La Tronçonneuse (n°7 rouge) et sortir directement.",
-          "coordinate": null,
-          "grade": "5-",
-          "name": "En Direct",
-          "number": 7
-        },
-        {
           "comment": "mur, traversée. dans le secteur Dampierre. Traverser à droite et sortir dans 7, La Tronçonneuse (n°7 rouge). voir aussi : Flynt 7a+",
           "coordinate": null,
           "grade": "5+",
           "name": "La Traversée de la Tronçonneuse",
           "number": "7bis"
+        },
+        {
+          "comment": "mur. dans le secteur Dampierre. Partir à gauche de 7, La Tronçonneuse (n°7 rouge) et sortir directement.",
+          "coordinate": null,
+          "grade": "5-",
+          "name": "En Direct",
+          "number": "7ter"
         },
         {
           "comment": "dalle. dalle sur la droite du bloc de Tout Couleur , dans le couloir.",
@@ -11338,6 +11324,13 @@
           "grade": "5+",
           "name": "Belle Vue",
           "number": 9
+        },
+        {
+          "comment": "mur, réglettes. sur le bloc de Tout Couleur  ; sortie directe.",
+          "coordinate": null,
+          "grade": "5-",
+          "name": "L’Enclume",
+          "number": 10
         },
         {
           "comment": "mur, plats, réglettes. sur le bloc de Tout Couleur.",
@@ -11401,6 +11394,13 @@
           "grade": "7a",
           "name": "Le Toit aux Grattons de Maincourt",
           "number": 19
+        },
+        {
+          "comment": "traversée.",
+          "coordinate": null,
+          "grade": "5+",
+          "name": "La Longitudinale",
+          "number": 20
         },
         {
           "comment": "dévers, réta.",
@@ -11489,13 +11489,6 @@
           "number": 1
         },
         {
-          "comment": "traversée.",
-          "coordinate": null,
-          "grade": "4+",
-          "name": "Le Strobile",
-          "number": 1
-        },
-        {
           "comment": "traversée. franchir l’angle et finir dans la dalle de gauche.",
           "coordinate": null,
           "grade": "5",
@@ -11573,6 +11566,13 @@
           "number": 9
         },
         {
+          "comment": "traversée.",
+          "coordinate": null,
+          "grade": "4+",
+          "name": "Le Strobile",
+          "number": 10
+        },
+        {
           "comment": "dévers. attention à l’écaille qui, un jour...",
           "coordinate": null,
           "grade": "4+",
@@ -11594,13 +11594,6 @@
           "number": 13
         },
         {
-          "comment": "réglettes.",
-          "coordinate": null,
-          "grade": "5",
-          "name": "La Limmée",
-          "number": 14
-        },
-        {
           "comment": "traversée.",
           "coordinate": null,
           "grade": "4+",
@@ -11613,6 +11606,13 @@
           "grade": "5-",
           "name": "La Phalène",
           "number": "14bis"
+        },
+        {
+          "comment": "réglettes.",
+          "coordinate": null,
+          "grade": "5",
+          "name": "La Limmée",
+          "number": "14ter"
         },
         {
           "comment": "réta, traversée.",
@@ -11674,13 +11674,6 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "2",
-          "name": "La Farandole",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "3",
           "name": "L’Œilleton",
           "number": 2
@@ -11688,22 +11681,8 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "3-",
-          "name": "La Ronceraie",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "2+",
           "name": "La Marbrée",
-          "number": 3
-        },
-        {
-          "comment": "dalle.",
-          "coordinate": null,
-          "grade": "2",
-          "name": "Usagé dans le Neuf",
           "number": 3
         },
         {
@@ -11747,6 +11726,13 @@
           "grade": "2+",
           "name": "Le Petit Poucet",
           "number": 9
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2",
+          "name": "La Farandole",
+          "number": 10
         },
         {
           "comment": "",
@@ -11814,6 +11800,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "3-",
+          "name": "La Ronceraie",
+          "number": 20
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "3+",
           "name": "Voyage sur le Rempart",
           "number": 21
@@ -11873,6 +11866,13 @@
           "grade": "2",
           "name": "Diagonale",
           "number": 29
+        },
+        {
+          "comment": "dalle.",
+          "coordinate": null,
+          "grade": "2",
+          "name": "Usagé dans le Neuf",
+          "number": 30
         }
       ],
       "colour": "jaune",
@@ -11917,13 +11917,6 @@
           "number": 1
         },
         {
-          "comment": "traversée.",
-          "coordinate": null,
-          "grade": "2",
-          "name": "",
-          "number": 1
-        },
-        {
           "comment": "dalle, trous.",
           "coordinate": null,
           "grade": "2",
@@ -11931,23 +11924,9 @@
           "number": 2
         },
         {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3-",
-          "name": "",
-          "number": 2
-        },
-        {
           "comment": "dalle.",
           "coordinate": null,
           "grade": "2",
-          "name": "",
-          "number": 3
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3-",
           "name": "",
           "number": 3
         },
@@ -11992,6 +11971,13 @@
           "grade": "2",
           "name": "",
           "number": 9
+        },
+        {
+          "comment": "traversée.",
+          "coordinate": null,
+          "grade": "2",
+          "name": "",
+          "number": 10
         },
         {
           "comment": "",
@@ -12059,6 +12045,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "3-",
+          "name": "",
+          "number": 20
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "2+",
           "name": "",
           "number": 21
@@ -12118,6 +12111,13 @@
           "grade": "2+",
           "name": "",
           "number": 29
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "3-",
+          "name": "",
+          "number": 30
         },
         {
           "comment": "",
@@ -12210,13 +12210,6 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "3-",
-          "name": "Le Fou",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "2+",
           "name": "Le Bout du Simon",
           "number": "1bis"
@@ -12226,13 +12219,6 @@
           "coordinate": null,
           "grade": "3",
           "name": "Le Premier Jeu",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "2+",
-          "name": "La Couleuvre",
           "number": 2
         },
         {
@@ -12283,6 +12269,13 @@
           "grade": "3-",
           "name": "Fer à Cheval",
           "number": 9
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "3-",
+          "name": "Le Fou",
+          "number": 10
         },
         {
           "comment": "",
@@ -12371,6 +12364,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "2+",
+          "name": "La Couleuvre",
+          "number": 20
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "3+",
           "name": "Le 4ème Réflexe",
           "number": 21
@@ -12418,21 +12418,7 @@
           "comment": "",
           "coordinate": null,
           "grade": "4",
-          "name": "Le T.G.V.",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "4",
           "name": "La Murène",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "4+",
-          "name": "Le Cercle de Mohr",
           "number": 2
         },
         {
@@ -12490,6 +12476,13 @@
           "grade": "5-",
           "name": "",
           "number": "9bis"
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4",
+          "name": "Le T.G.V.",
+          "number": 10
         },
         {
           "comment": "",
@@ -12555,6 +12548,13 @@
           "number": 19
         },
         {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4+",
+          "name": "Le Cercle de Mohr",
+          "number": 20
+        },
+        {
           "comment": "réta.",
           "coordinate": null,
           "grade": "4",
@@ -12617,27 +12617,6 @@
           "number": 1
         },
         {
-          "comment": "mur, arête, haut. Marqué avec un triangle. Engagé.",
-          "coordinate": null,
-          "grade": "4+",
-          "name": "Plein des Sens",
-          "number": 1
-        },
-        {
-          "comment": "dalle. 10 bleu direct.",
-          "coordinate": null,
-          "grade": "5-",
-          "name": "La Bugatti-Gordini",
-          "number": 1
-        },
-        {
-          "comment": "mur. mur en légère diagonale à droite.",
-          "coordinate": null,
-          "grade": "4+",
-          "name": "La Bugatti",
-          "number": 1
-        },
-        {
           "comment": "mur direct",
           "coordinate": null,
           "grade": "4-",
@@ -12645,31 +12624,10 @@
           "number": 2
         },
         {
-          "comment": "mur. Mur à grattons",
-          "coordinate": null,
-          "grade": "5",
-          "name": "La Levure",
-          "number": 2
-        },
-        {
-          "comment": "dalle, réglettes.",
-          "coordinate": null,
-          "grade": "4+",
-          "name": "La Titine",
-          "number": 2
-        },
-        {
           "comment": "dévers.",
           "coordinate": null,
           "grade": "4+",
           "name": "Le Piston",
-          "number": 3
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "L’Équilibrage",
           "number": 3
         },
         {
@@ -12691,7 +12649,7 @@
           "coordinate": null,
           "grade": "5-",
           "name": "Coup de Frein",
-          "number": 5
+          "number": "5bis"
         },
         {
           "comment": "mur.",
@@ -12726,7 +12684,28 @@
           "coordinate": null,
           "grade": "5",
           "name": "La Cadillac",
-          "number": 9
+          "number": "9bis"
+        },
+        {
+          "comment": "mur. mur en légère diagonale à droite.",
+          "coordinate": null,
+          "grade": "4+",
+          "name": "La Bugatti",
+          "number": 10
+        },
+        {
+          "comment": "dalle. 10 bleu direct.",
+          "coordinate": null,
+          "grade": "5-",
+          "name": "La Bugatti-Gordini",
+          "number": "10bis"
+        },
+        {
+          "comment": "mur, arête, haut. Marqué avec un triangle. Engagé.",
+          "coordinate": null,
+          "grade": "4+",
+          "name": "Plein des Sens",
+          "number": "10ter"
         },
         {
           "comment": "mur.",
@@ -12743,18 +12722,18 @@
           "number": 12
         },
         {
-          "comment": "mur. Mur marbré.",
-          "coordinate": null,
-          "grade": "5",
-          "name": "La Centrale",
-          "number": 13
-        },
-        {
           "comment": "mur, haut.",
           "coordinate": null,
           "grade": "4",
           "name": "Montlhéry",
           "number": 13
+        },
+        {
+          "comment": "mur. Mur marbré.",
+          "coordinate": null,
+          "grade": "5",
+          "name": "La Centrale",
+          "number": "13bis"
         },
         {
           "comment": "trous, mur.",
@@ -12782,7 +12761,7 @@
           "coordinate": null,
           "grade": "5",
           "name": "Le Doux Crissement",
-          "number": 16
+          "number": "16bis"
         },
         {
           "comment": "mur.",
@@ -12795,8 +12774,8 @@
           "comment": "mur, expo. une tige de tendeur est installée au sommet du bloc.",
           "coordinate": null,
           "grade": "4+",
-          "name": "",
-          "number": 17
+          "name": "Vol Interdit",
+          "number": "17bis"
         },
         {
           "comment": "mur. mur en opposition.",
@@ -12811,6 +12790,20 @@
           "grade": "3+",
           "name": "La Verdâtre",
           "number": 19
+        },
+        {
+          "comment": "dalle, réglettes.",
+          "coordinate": null,
+          "grade": "4+",
+          "name": "La Titine",
+          "number": 20
+        },
+        {
+          "comment": "mur. Mur à grattons",
+          "coordinate": null,
+          "grade": "5",
+          "name": "La Levure",
+          "number": "20bis"
         },
         {
           "comment": "monodoigts, mur. mur à trou direct (plusieurs méthodes intéressantes).",
@@ -12845,7 +12838,7 @@
           "coordinate": null,
           "grade": "5",
           "name": "Tête de Clou",
-          "number": 24
+          "number": "24bis"
         },
         {
           "comment": "mur.",
@@ -12880,7 +12873,7 @@
           "coordinate": null,
           "grade": "5-",
           "name": "Souvenir d’O.S.",
-          "number": 27
+          "number": "27bis"
         },
         {
           "comment": "dévers, proue.",
@@ -12901,14 +12894,14 @@
           "coordinate": null,
           "grade": "5",
           "name": "La Directe du Dièdre",
-          "number": 29
+          "number": "29bis"
         },
         {
-          "comment": "mur, plats. mur un peu morphologique à droite de \"Nostalgie\".",
+          "comment": "",
           "coordinate": null,
-          "grade": "5-",
-          "name": "La Rolls Royce",
-          "number": 31
+          "grade": "4-",
+          "name": "L’Équilibrage",
+          "number": 30
         },
         {
           "comment": "dalle.",
@@ -12918,18 +12911,18 @@
           "number": 31
         },
         {
+          "comment": "mur, plats. mur un peu morphologique à droite de \"Nostalgie\".",
+          "coordinate": null,
+          "grade": "5-",
+          "name": "La Rolls Royce",
+          "number": "31bis"
+        },
+        {
           "comment": "arête, traversée, trous.",
           "coordinate": null,
           "grade": "4",
           "name": "Le Périphérique",
           "number": 32
-        },
-        {
-          "comment": "dévers.",
-          "coordinate": null,
-          "grade": null,
-          "name": "Le Frisson",
-          "number": 33
         },
         {
           "comment": "trous.",
@@ -12939,6 +12932,13 @@
           "number": 33
         },
         {
+          "comment": "dévers.",
+          "coordinate": null,
+          "grade": null,
+          "name": "Le Frisson",
+          "number": "33bis"
+        },
+        {
           "comment": "fissure.",
           "coordinate": null,
           "grade": "4-",
@@ -12946,18 +12946,18 @@
           "number": 34
         },
         {
-          "comment": "dalle, haut. attention : désescalade par le même chemin ! (sinon rappel ou saut sur le bloc central toujours possibles...)",
-          "coordinate": null,
-          "grade": "3+",
-          "name": "La Grande Dalle",
-          "number": 35
-        },
-        {
           "comment": "mur.",
           "coordinate": null,
           "grade": "4-",
           "name": "L’Os",
           "number": 35
+        },
+        {
+          "comment": "dalle, haut. attention : désescalade par le même chemin ! (sinon rappel ou saut sur le bloc central toujours possibles...)",
+          "coordinate": null,
+          "grade": "3+",
+          "name": "La Grande Dalle",
+          "number": "35bis"
         }
       ],
       "colour": "bleu",
@@ -13205,13 +13205,6 @@
           "number": 1
         },
         {
-          "comment": "mur.",
-          "coordinate": null,
-          "grade": "6a+",
-          "name": "Le Pommeau Rédempteur",
-          "number": 1
-        },
-        {
           "comment": "traversée. traversée sur trois faces à 10m du chemin à droite du parking. Sans les prises du haut dans la dernière face.",
           "coordinate": null,
           "grade": "7a+",
@@ -13226,24 +13219,10 @@
           "number": 2
         },
         {
-          "comment": "mur. au dessus de la Route du Renardeau, juste avant qu’elle ne rejoigne la Route des Gorges de Franchard. Mur direct juste à gauche de l’arête de 21, Jambon Volant (n°21 noir).",
-          "coordinate": null,
-          "grade": "6a",
-          "name": "La Cochonnaille",
-          "number": 2
-        },
-        {
           "comment": "pilier, réta, plats. pilier direct avec une sortie engagée en réta sur des plats. NB : une variante en 6c un peu morpho est devenue classique depuis qu’une prise MD dans la face de droite a été brossée. voir aussi : Excalibur droite 6b+ (6c), La Traversée d’Excalibur 7a+",
           "coordinate": null,
           "grade": "7a",
           "name": "Excalibur",
-          "number": 3
-        },
-        {
-          "comment": "arête. en face Nord, dans la pente au dessus de la Route Amédée, une quarantaine de mètres avant 32, La Châtaigne. Partir avec l’arête MG, remonter celle-ci en se servant d’une fissure verticale dans la face et sortir au sommet.",
-          "coordinate": null,
-          "grade": "6c",
-          "name": "De Fil en Aiguille",
           "number": 3
         },
         {
@@ -13287,6 +13266,13 @@
           "grade": "6b",
           "name": "Blocage Mental",
           "number": 9
+        },
+        {
+          "comment": "mur.",
+          "coordinate": null,
+          "grade": "6a+",
+          "name": "Le Pommeau Rédempteur",
+          "number": 10
         },
         {
           "comment": "mur, fissure, réta.",
@@ -13366,6 +13352,13 @@
           "number": "19bis"
         },
         {
+          "comment": "mur. au dessus de la Route du Renardeau, juste avant qu’elle ne rejoigne la Route des Gorges de Franchard. Mur direct juste à gauche de l’arête de 21, Jambon Volant (n°21 noir).",
+          "coordinate": null,
+          "grade": "6a",
+          "name": "La Cochonnaille",
+          "number": 20
+        },
+        {
           "comment": "mur, arête. au dessus de la Route du Renardeau, juste avant qu’elle ne rejoigne la Route des Gorges de Franchard. Arête de droite sur le bloc juste derrière Paris-Chamonix. voir aussi : Jambon Fumé 7a",
           "coordinate": null,
           "grade": "6b",
@@ -13429,6 +13422,13 @@
           "number": 29
         },
         {
+          "comment": "arête. en face Nord, dans la pente au dessus de la Route Amédée, une quarantaine de mètres avant 32, La Châtaigne. Partir avec l’arête MG, remonter celle-ci en se servant d’une fissure verticale dans la face et sortir au sommet.",
+          "coordinate": null,
+          "grade": "6c",
+          "name": "De Fil en Aiguille",
+          "number": 30
+        },
+        {
           "comment": "dévers, plats.",
           "coordinate": null,
           "grade": "6c",
@@ -13479,13 +13479,6 @@
           "coordinate": null,
           "grade": "3",
           "name": "La Deuxième Voie",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "L’Équerre",
           "number": 1
         },
         {
@@ -13543,6 +13536,13 @@
           "grade": "3+",
           "name": "Le Petit Mur",
           "number": 9
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "L’Équerre",
+          "number": 10
         },
         {
           "comment": "",
@@ -13645,13 +13645,6 @@
           "number": 1
         },
         {
-          "comment": "",
-          "coordinate": null,
-          "grade": "4",
-          "name": "",
-          "number": 1
-        },
-        {
           "comment": "mur.",
           "coordinate": null,
           "grade": "4+",
@@ -13659,21 +13652,7 @@
           "number": 2
         },
         {
-          "comment": "",
-          "coordinate": null,
-          "grade": "5-",
-          "name": "",
-          "number": 2
-        },
-        {
           "comment": "mur.",
-          "coordinate": null,
-          "grade": "4+",
-          "name": "",
-          "number": 3
-        },
-        {
-          "comment": "mur, réglettes.",
           "coordinate": null,
           "grade": "4+",
           "name": "",
@@ -13727,6 +13706,13 @@
           "grade": "4+",
           "name": "",
           "number": "9bis"
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4",
+          "name": "",
+          "number": 10
         },
         {
           "comment": "mur.",
@@ -13792,6 +13778,13 @@
           "number": 19
         },
         {
+          "comment": "",
+          "coordinate": null,
+          "grade": "5-",
+          "name": "",
+          "number": 20
+        },
+        {
           "comment": "fissure.",
           "coordinate": null,
           "grade": "4+",
@@ -13853,6 +13846,13 @@
           "grade": "4",
           "name": "",
           "number": 29
+        },
+        {
+          "comment": "mur, réglettes.",
+          "coordinate": null,
+          "grade": "4+",
+          "name": "",
+          "number": 30
         }
       ],
       "colour": "rouge",
@@ -13883,20 +13883,6 @@
           "number": 1
         },
         {
-          "comment": "mur, expo.",
-          "coordinate": null,
-          "grade": "6b",
-          "name": "",
-          "number": 1
-        },
-        {
-          "comment": "mur, expo, réglettes.",
-          "coordinate": null,
-          "grade": "6c",
-          "name": "",
-          "number": 1
-        },
-        {
           "comment": "mur, arête.",
           "coordinate": null,
           "grade": "5+",
@@ -13911,30 +13897,9 @@
           "number": 2
         },
         {
-          "comment": "dévers. dévers un peu sableux.",
-          "coordinate": null,
-          "grade": "5+",
-          "name": "",
-          "number": 2
-        },
-        {
           "comment": "mur.",
           "coordinate": null,
           "grade": "5-",
-          "name": "",
-          "number": 3
-        },
-        {
-          "comment": "arête, expo, plats.",
-          "coordinate": null,
-          "grade": "5+",
-          "name": "",
-          "number": 3
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "6a",
           "name": "",
           "number": 3
         },
@@ -13950,13 +13915,6 @@
           "coordinate": null,
           "grade": "5+",
           "name": "Le Hareng Saur",
-          "number": 4
-        },
-        {
-          "comment": "mur, bidoigts, plats.",
-          "coordinate": null,
-          "grade": "5+",
-          "name": "",
           "number": 4
         },
         {
@@ -14000,6 +13958,20 @@
           "grade": "5",
           "name": "",
           "number": 9
+        },
+        {
+          "comment": "mur, expo.",
+          "coordinate": null,
+          "grade": "6b",
+          "name": "",
+          "number": 10
+        },
+        {
+          "comment": "mur, expo, réglettes.",
+          "coordinate": null,
+          "grade": "6c",
+          "name": "",
+          "number": "10bis"
         },
         {
           "comment": "dalle, haut, réglettes.",
@@ -14070,6 +14042,13 @@
           "grade": "5+",
           "name": "",
           "number": 19
+        },
+        {
+          "comment": "dévers. dévers un peu sableux.",
+          "coordinate": null,
+          "grade": "5+",
+          "name": "",
+          "number": 20
         },
         {
           "comment": "mur. en contrebas des numéros précédents.",
@@ -14156,6 +14135,20 @@
           "number": "29bis"
         },
         {
+          "comment": "arête, expo, plats.",
+          "coordinate": null,
+          "grade": "5+",
+          "name": "",
+          "number": 30
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "6a",
+          "name": "",
+          "number": "30bis"
+        },
+        {
           "comment": "arête, expo.",
           "coordinate": null,
           "grade": "5+",
@@ -14226,6 +14219,13 @@
           "number": 39
         },
         {
+          "comment": "mur, bidoigts, plats.",
+          "coordinate": null,
+          "grade": "5+",
+          "name": "",
+          "number": 40
+        },
+        {
           "comment": "arête, réta, réglettes.",
           "coordinate": null,
           "grade": "5+",
@@ -14240,13 +14240,6 @@
           "number": 42
         },
         {
-          "comment": "mur. le long du GR11, juste à droite de 43, Mathusalem (n°43 blanc)",
-          "coordinate": null,
-          "grade": "7a",
-          "name": "Le Mur Cordier / Acier Damas",
-          "number": 43
-        },
-        {
           "comment": "mur. à gauche du 43ter, Le Mur Cordier / Acier Damas",
           "coordinate": null,
           "grade": "6b",
@@ -14259,6 +14252,13 @@
           "grade": "6b",
           "name": "",
           "number": "43bis"
+        },
+        {
+          "comment": "mur. le long du GR11, juste à droite de 43, Mathusalem (n°43 blanc)",
+          "coordinate": null,
+          "grade": "7a",
+          "name": "Le Mur Cordier / Acier Damas",
+          "number": "43ter"
         },
         {
           "comment": "dévers, expo, réta.",
@@ -14558,22 +14558,8 @@
         {
           "comment": "dalle.",
           "coordinate": null,
-          "grade": "4-",
-          "name": "Vue sur Jardin",
-          "number": 1
-        },
-        {
-          "comment": "dalle.",
-          "coordinate": null,
           "grade": "4",
           "name": "Pantomine",
-          "number": 2
-        },
-        {
-          "comment": "fissure.",
-          "coordinate": null,
-          "grade": "3+",
-          "name": "",
           "number": 2
         },
         {
@@ -14581,13 +14567,6 @@
           "coordinate": null,
           "grade": "5-",
           "name": "L’arête ouest",
-          "number": 3
-        },
-        {
-          "comment": "dalle.",
-          "coordinate": null,
-          "grade": "3+",
-          "name": "(sans nom)",
           "number": 3
         },
         {
@@ -14608,7 +14587,7 @@
           "comment": "dalle.",
           "coordinate": null,
           "grade": "4-",
-          "name": "(sans nom)",
+          "name": "",
           "number": 6
         },
         {
@@ -14629,15 +14608,22 @@
           "comment": "dalle, dévers.",
           "coordinate": null,
           "grade": "4",
-          "name": "(sans nom)",
+          "name": "",
           "number": 8
         },
         {
           "comment": "dévers.",
           "coordinate": null,
           "grade": "5",
-          "name": "(sans nom)",
+          "name": "",
           "number": 9
+        },
+        {
+          "comment": "dalle.",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "Vue sur Jardin",
+          "number": 10
         },
         {
           "comment": "mur.",
@@ -14650,7 +14636,7 @@
           "comment": "dalle.",
           "coordinate": null,
           "grade": "4-",
-          "name": "(sans nom)",
+          "name": "",
           "number": 12
         },
         {
@@ -14671,7 +14657,7 @@
           "comment": "dalle.",
           "coordinate": null,
           "grade": "3+",
-          "name": "(sans nom)",
+          "name": "",
           "number": 14
         },
         {
@@ -14710,6 +14696,13 @@
           "number": 19
         },
         {
+          "comment": "fissure.",
+          "coordinate": null,
+          "grade": "3+",
+          "name": "",
+          "number": 20
+        },
+        {
           "comment": "dalle, réglettes.",
           "coordinate": null,
           "grade": "4+",
@@ -14734,7 +14727,7 @@
           "comment": "fissure, traversée.",
           "coordinate": null,
           "grade": "3+",
-          "name": "(sans nom)",
+          "name": "",
           "number": 24
         },
         {
@@ -14755,7 +14748,7 @@
           "comment": "fissure.",
           "coordinate": null,
           "grade": "4-",
-          "name": "(sans nom)",
+          "name": "",
           "number": 27
         },
         {
@@ -14769,14 +14762,21 @@
           "comment": "dalle.",
           "coordinate": null,
           "grade": "3+",
-          "name": "(sans nom)",
+          "name": "",
           "number": 29
+        },
+        {
+          "comment": "dalle.",
+          "coordinate": null,
+          "grade": "3+",
+          "name": "",
+          "number": 30
         },
         {
           "comment": "mur.",
           "coordinate": null,
           "grade": "4",
-          "name": "(sans nom)",
+          "name": "",
           "number": 31
         }
       ],
@@ -14807,13 +14807,6 @@
           "number": 1
         },
         {
-          "comment": "dalle, mur.",
-          "coordinate": null,
-          "grade": "6a",
-          "name": "Le Gratiche et la Cuisse",
-          "number": 1
-        },
-        {
           "comment": "surplomb, fissure.",
           "coordinate": null,
           "grade": "5+",
@@ -14825,34 +14818,13 @@
           "coordinate": null,
           "grade": "6a",
           "name": "La Dulf",
-          "number": 2
-        },
-        {
-          "comment": "réta.",
-          "coordinate": null,
-          "grade": "6a+",
-          "name": "Rouleau de Printemps",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "5-",
-          "name": "Grésouille",
-          "number": 2
+          "number": "2bis"
         },
         {
           "comment": "surplomb. voir aussi : L’Ami Sanglier du fond 6c+ (7a)",
           "coordinate": null,
           "grade": "6a",
           "name": "L’Ami Sanglier",
-          "number": 3
-        },
-        {
-          "comment": "dalle.",
-          "coordinate": null,
-          "grade": "5+",
-          "name": "Dalle Rouge",
           "number": 3
         },
         {
@@ -14898,6 +14870,13 @@
           "number": 9
         },
         {
+          "comment": "dalle, mur.",
+          "coordinate": null,
+          "grade": "6a",
+          "name": "Le Gratiche et la Cuisse",
+          "number": 10
+        },
+        {
           "comment": "réta.",
           "coordinate": null,
           "grade": "5-",
@@ -14909,7 +14888,7 @@
           "coordinate": null,
           "grade": "6b",
           "name": "Lève Popotin",
-          "number": 11
+          "number": "11bis"
         },
         {
           "comment": "mur, réta.",
@@ -14923,7 +14902,7 @@
           "coordinate": null,
           "grade": "4",
           "name": "",
-          "number": 12
+          "number": "12bis"
         },
         {
           "comment": "fissure, réta.",
@@ -14950,7 +14929,7 @@
           "comment": "expo.",
           "coordinate": null,
           "grade": "5-",
-          "name": "",
+          "name": "Moussu Pitou",
           "number": 16
         },
         {
@@ -14979,7 +14958,21 @@
           "coordinate": null,
           "grade": "4+",
           "name": "Guibolotte",
-          "number": 19
+          "number": "19bis"
+        },
+        {
+          "comment": "réta.",
+          "coordinate": null,
+          "grade": "6a+",
+          "name": "Rouleau de Printemps",
+          "number": 20
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "5-",
+          "name": "Grésouille",
+          "number": "20bis"
         },
         {
           "comment": "mur, fissure.",
@@ -15031,18 +15024,18 @@
           "number": 27
         },
         {
-          "comment": "arête. à gauche du n°28 rouge",
-          "coordinate": null,
-          "grade": "5+",
-          "name": "Le grand Mur",
-          "number": 28
-        },
-        {
           "comment": "mur, réglettes.",
           "coordinate": null,
           "grade": "6a",
           "name": "Beginenette",
           "number": 28
+        },
+        {
+          "comment": "arête. à gauche du n°28 rouge",
+          "coordinate": null,
+          "grade": "5+",
+          "name": "Le grand Mur",
+          "number": "28bis"
         },
         {
           "comment": "mur, réglettes. juste à gauche de l’arête",
@@ -15056,7 +15049,14 @@
           "coordinate": null,
           "grade": "4+",
           "name": "Quineau",
-          "number": 29
+          "number": "29bis"
+        },
+        {
+          "comment": "dalle.",
+          "coordinate": null,
+          "grade": "5+",
+          "name": "Dalle Rouge",
+          "number": 30
         },
         {
           "comment": "mur. voir aussi : La Grève des Nains assis",
@@ -15110,24 +15110,10 @@
           "number": 1
         },
         {
-          "comment": "fissure, cheminée.",
-          "coordinate": null,
-          "grade": "2+",
-          "name": "La Cheminée Étroite",
-          "number": 1
-        },
-        {
           "comment": "arête.",
           "coordinate": null,
           "grade": "3-",
           "name": "L’Arête Raide",
-          "number": 2
-        },
-        {
-          "comment": "mur, réta.",
-          "coordinate": null,
-          "grade": "3-",
-          "name": "Le Rétablissement du Mur Gris",
           "number": 2
         },
         {
@@ -15178,6 +15164,13 @@
           "grade": "2",
           "name": "Le Rocher Bossu",
           "number": 9
+        },
+        {
+          "comment": "fissure, cheminée.",
+          "coordinate": null,
+          "grade": "2+",
+          "name": "La Cheminée Étroite",
+          "number": 10
         },
         {
           "comment": "",
@@ -15243,6 +15236,13 @@
           "number": 19
         },
         {
+          "comment": "mur, réta.",
+          "coordinate": null,
+          "grade": "3-",
+          "name": "Le Rétablissement du Mur Gris",
+          "number": 20
+        },
+        {
           "comment": "dalle.",
           "coordinate": null,
           "grade": "2+",
@@ -15277,13 +15277,6 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "2+",
-          "name": "",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "3",
           "name": "",
           "number": 2
@@ -15291,21 +15284,7 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "4-",
-          "name": "",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "3+",
-          "name": "",
-          "number": 3
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "4",
           "name": "",
           "number": 3
         },
@@ -15320,20 +15299,6 @@
           "comment": "",
           "coordinate": null,
           "grade": "3+",
-          "name": "",
-          "number": 4
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3+",
-          "name": "",
-          "number": 5
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "4-",
           "name": "",
           "number": 5
         },
@@ -15347,22 +15312,8 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "3-",
-          "name": "",
-          "number": 6
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "4+",
           "name": "La Clé",
-          "number": 7
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3-",
-          "name": "",
           "number": 7
         },
         {
@@ -15378,6 +15329,13 @@
           "grade": "4+",
           "name": "",
           "number": 9
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2+",
+          "name": "",
+          "number": 10
         },
         {
           "comment": "",
@@ -15447,6 +15405,13 @@
           "coordinate": null,
           "grade": "4-",
           "name": "",
+          "number": 20
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "",
           "number": 21
         },
         {
@@ -15504,6 +15469,13 @@
           "grade": "4",
           "name": "",
           "number": 29
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4",
+          "name": "",
+          "number": 30
         },
         {
           "comment": "",
@@ -15567,6 +15539,13 @@
           "grade": "4",
           "name": "",
           "number": 39
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "3+",
+          "name": "",
+          "number": 40
         },
         {
           "comment": "",
@@ -15636,6 +15615,13 @@
           "coordinate": null,
           "grade": "4-",
           "name": "",
+          "number": 50
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "",
           "number": 51
         },
         {
@@ -15693,6 +15679,13 @@
           "grade": "2+",
           "name": "",
           "number": 59
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "3-",
+          "name": "",
+          "number": 60
         },
         {
           "comment": "",
@@ -15756,6 +15749,13 @@
           "grade": "3+",
           "name": "",
           "number": 69
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "3-",
+          "name": "",
+          "number": 70
         }
       ],
       "colour": "orange",
@@ -15783,27 +15783,6 @@
           "number": 1
         },
         {
-          "comment": "mur, expo.",
-          "coordinate": null,
-          "grade": "3+",
-          "name": "",
-          "number": 1
-        },
-        {
-          "comment": "dalle, arête. 2m à gauche du n°10",
-          "coordinate": null,
-          "grade": "2+",
-          "name": "",
-          "number": 1
-        },
-        {
-          "comment": "dévers, expo, trous. sur le côté opposé du n°10",
-          "coordinate": null,
-          "grade": "3-",
-          "name": "",
-          "number": 1
-        },
-        {
           "comment": "dévers, expo, traversée. finir dans le n°1",
           "coordinate": null,
           "grade": "4",
@@ -15818,28 +15797,7 @@
           "number": 2
         },
         {
-          "comment": "dalle. dalle marbrée à 30m du n°19",
-          "coordinate": null,
-          "grade": "2",
-          "name": "",
-          "number": 2
-        },
-        {
           "comment": "expo, traversée.",
-          "coordinate": null,
-          "grade": "3+",
-          "name": "",
-          "number": 3
-        },
-        {
-          "comment": "dévers.",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "La Petite Piscine",
-          "number": 3
-        },
-        {
-          "comment": "expo, réta. à droite après la descente du n°30",
           "coordinate": null,
           "grade": "3+",
           "name": "",
@@ -15853,30 +15811,9 @@
           "number": 4
         },
         {
-          "comment": "expo, réta, traversée.",
-          "coordinate": null,
-          "grade": "3",
-          "name": "",
-          "number": 4
-        },
-        {
           "comment": "surplomb, expo.",
           "coordinate": null,
           "grade": "4",
-          "name": "",
-          "number": 5
-        },
-        {
-          "comment": "mur, expo.",
-          "coordinate": null,
-          "grade": "3-",
-          "name": "",
-          "number": 5
-        },
-        {
-          "comment": "mur, expo, traversée. départ du bombé à gauche, sortie par le n°50",
-          "coordinate": null,
-          "grade": "3+",
           "name": "",
           "number": 5
         },
@@ -15895,37 +15832,9 @@
           "number": 6
         },
         {
-          "comment": "dévers.",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "",
-          "number": 6
-        },
-        {
-          "comment": "dévers.",
-          "coordinate": null,
-          "grade": "3+",
-          "name": "",
-          "number": 6
-        },
-        {
           "comment": "dévers, expo.",
           "coordinate": null,
           "grade": "3",
-          "name": "",
-          "number": 7
-        },
-        {
-          "comment": "dalle, traversée.",
-          "coordinate": null,
-          "grade": "3-",
-          "name": "",
-          "number": 7
-        },
-        {
-          "comment": "mur. 2m à gauche du n°68",
-          "coordinate": null,
-          "grade": "3+",
           "name": "",
           "number": 7
         },
@@ -15949,6 +15858,27 @@
           "grade": "3+",
           "name": "",
           "number": "9bis"
+        },
+        {
+          "comment": "mur, expo.",
+          "coordinate": null,
+          "grade": "3+",
+          "name": "",
+          "number": 10
+        },
+        {
+          "comment": "dalle, arête. 2m à gauche du n°10",
+          "coordinate": null,
+          "grade": "2+",
+          "name": "",
+          "number": "10bis"
+        },
+        {
+          "comment": "dévers, expo, trous. sur le côté opposé du n°10",
+          "coordinate": null,
+          "grade": "3-",
+          "name": "",
+          "number": "10ter"
         },
         {
           "comment": "surplomb, expo.",
@@ -15993,13 +15923,6 @@
           "number": "15bis"
         },
         {
-          "comment": "",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "",
-          "number": 16
-        },
-        {
           "comment": "mur, expo. mur marbré",
           "coordinate": null,
           "grade": "2+",
@@ -16012,6 +15935,13 @@
           "grade": "3-",
           "name": "",
           "number": "16bis"
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "",
+          "number": "16ter"
         },
         {
           "comment": "surplomb. départ 1m sous le point orange",
@@ -16033,6 +15963,13 @@
           "grade": "3-",
           "name": "",
           "number": 19
+        },
+        {
+          "comment": "dalle. dalle marbrée à 30m du n°19",
+          "coordinate": null,
+          "grade": "2",
+          "name": "",
+          "number": 20
         },
         {
           "comment": "fissure, expo, traversée. départ en descente, sortie par une fissure-cheminée",
@@ -16112,6 +16049,20 @@
           "number": 29
         },
         {
+          "comment": "dévers.",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "La Petite Piscine",
+          "number": 30
+        },
+        {
+          "comment": "expo, réta. à droite après la descente du n°30",
+          "coordinate": null,
+          "grade": "3+",
+          "name": "",
+          "number": "30bis"
+        },
+        {
           "comment": "surplomb, expo.",
           "coordinate": null,
           "grade": "4-",
@@ -16187,6 +16138,13 @@
           "grade": "2+",
           "name": "",
           "number": 39
+        },
+        {
+          "comment": "expo, réta, traversée.",
+          "coordinate": null,
+          "grade": "3",
+          "name": "",
+          "number": 40
         },
         {
           "comment": "expo, réta.",
@@ -16273,6 +16231,20 @@
           "number": 49
         },
         {
+          "comment": "mur, expo.",
+          "coordinate": null,
+          "grade": "3-",
+          "name": "",
+          "number": 50
+        },
+        {
+          "comment": "mur, expo, traversée. départ du bombé à gauche, sortie par le n°50",
+          "coordinate": null,
+          "grade": "3+",
+          "name": "",
+          "number": "50bis"
+        },
+        {
           "comment": "dalle, expo.",
           "coordinate": null,
           "grade": "2",
@@ -16341,6 +16313,20 @@
           "grade": "3+",
           "name": "",
           "number": 59
+        },
+        {
+          "comment": "dévers.",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "",
+          "number": 60
+        },
+        {
+          "comment": "dévers.",
+          "coordinate": null,
+          "grade": "3+",
+          "name": "",
+          "number": "60bis"
         },
         {
           "comment": "dalle. dalle + rampe",
@@ -16441,6 +16427,20 @@
           "number": "69bis"
         },
         {
+          "comment": "dalle, traversée.",
+          "coordinate": null,
+          "grade": "3-",
+          "name": "",
+          "number": 70
+        },
+        {
+          "comment": "mur. 2m à gauche du n°68",
+          "coordinate": null,
+          "grade": "3+",
+          "name": "",
+          "number": "70bis"
+        },
+        {
           "comment": "dalle.",
           "coordinate": null,
           "grade": "3+",
@@ -16513,13 +16513,6 @@
           "number": 1
         },
         {
-          "comment": "mur.",
-          "coordinate": null,
-          "grade": "5",
-          "name": "La Colique",
-          "number": 1
-        },
-        {
           "comment": "dévers, expo.",
           "coordinate": null,
           "grade": "6a",
@@ -16527,24 +16520,10 @@
           "number": 2
         },
         {
-          "comment": "dévers. dans un couloir, à droite du 19, La Fusée.",
-          "coordinate": null,
-          "grade": "4+",
-          "name": "Le Treuil",
-          "number": 2
-        },
-        {
           "comment": "dévers, expo.",
           "coordinate": null,
           "grade": "5",
           "name": "La Râpeuse",
-          "number": 3
-        },
-        {
-          "comment": "arête, expo. même départ que le album 8753.",
-          "coordinate": null,
-          "grade": "5",
-          "name": "Les Chauves-Souris",
           "number": 3
         },
         {
@@ -16590,6 +16569,13 @@
           "number": 9
         },
         {
+          "comment": "mur.",
+          "coordinate": null,
+          "grade": "5",
+          "name": "La Colique",
+          "number": 10
+        },
+        {
           "comment": "mur. à gauche du n°36 orange",
           "coordinate": null,
           "grade": "5+",
@@ -16618,13 +16604,6 @@
           "number": 14
         },
         {
-          "comment": "",
-          "coordinate": null,
-          "grade": "6c",
-          "name": "",
-          "number": 15
-        },
-        {
           "comment": "mur, fissure. sur un bloc au rocher jaune, au dessus du 14, Le Mobile.",
           "coordinate": null,
           "grade": "5+",
@@ -16637,6 +16616,13 @@
           "grade": "6a",
           "name": "L’Antillais",
           "number": "15bis"
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "6c",
+          "name": "",
+          "number": "15ter"
         },
         {
           "comment": "dévers, fissure. dans le couloir, sur la droite du bloc du 15, L’Anti-Lerch.",
@@ -16665,6 +16651,13 @@
           "grade": "5",
           "name": "La Fusée",
           "number": 19
+        },
+        {
+          "comment": "dévers. dans un couloir, à droite du 19, La Fusée.",
+          "coordinate": null,
+          "grade": "4+",
+          "name": "Le Treuil",
+          "number": 20
         },
         {
           "comment": "fissure, expo.",
@@ -16737,6 +16730,13 @@
           "number": 29
         },
         {
+          "comment": "arête, expo. même départ que le album 8753.",
+          "coordinate": null,
+          "grade": "5",
+          "name": "Les Chauves-Souris",
+          "number": 30
+        },
+        {
           "comment": "mur, expo.",
           "coordinate": null,
           "grade": "5",
@@ -16806,31 +16806,10 @@
           "number": 1
         },
         {
-          "comment": "mur, arête. angle MD, sans la grosse prise MG.",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "La Zone Interdite",
-          "number": 1
-        },
-        {
           "comment": "mur, arête.",
           "coordinate": null,
           "grade": "4-",
           "name": "Coup de Vent",
-          "number": 2
-        },
-        {
-          "comment": "mur, fissure. mur en sortie par la fissure.",
-          "coordinate": null,
-          "grade": "4+",
-          "name": "La Rusée",
-          "number": 2
-        },
-        {
-          "comment": "mur.",
-          "coordinate": null,
-          "grade": "5",
-          "name": "L’Atout Maître",
           "number": 2
         },
         {
@@ -16845,13 +16824,6 @@
           "coordinate": null,
           "grade": "5",
           "name": "Le Vérin",
-          "number": 3
-        },
-        {
-          "comment": "pilier.",
-          "coordinate": null,
-          "grade": "4+",
-          "name": "Le Pilier de gauche",
           "number": 3
         },
         {
@@ -16909,6 +16881,13 @@
           "grade": "4+",
           "name": "Le Rire Jaune",
           "number": 9
+        },
+        {
+          "comment": "mur, arête. angle MD, sans la grosse prise MG.",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "La Zone Interdite",
+          "number": 10
         },
         {
           "comment": "dévers, arête.",
@@ -16995,6 +16974,20 @@
           "number": 19
         },
         {
+          "comment": "mur, fissure. mur en sortie par la fissure.",
+          "coordinate": null,
+          "grade": "4+",
+          "name": "La Rusée",
+          "number": 20
+        },
+        {
+          "comment": "mur.",
+          "coordinate": null,
+          "grade": "5",
+          "name": "L’Atout Maître",
+          "number": "20bis"
+        },
+        {
           "comment": "mur.",
           "coordinate": null,
           "grade": "4+",
@@ -17023,18 +17016,18 @@
           "number": 24
         },
         {
-          "comment": "traversée. traverser et sortir par la fissure du 15, L’Anti-Lerch.",
-          "coordinate": null,
-          "grade": "5",
-          "name": "Coucher de Soleil",
-          "number": 24
-        },
-        {
           "comment": "mur, expo.",
           "coordinate": null,
           "grade": "4+",
           "name": "Le Superbe",
           "number": "24bis"
+        },
+        {
+          "comment": "traversée. traverser et sortir par la fissure du 15, L’Anti-Lerch.",
+          "coordinate": null,
+          "grade": "5",
+          "name": "Coucher de Soleil",
+          "number": "24ter"
         },
         {
           "comment": "dalle. dalle en opposition.",
@@ -17084,6 +17077,13 @@
           "grade": "4",
           "name": "Le Rasoir",
           "number": 29
+        },
+        {
+          "comment": "pilier.",
+          "coordinate": null,
+          "grade": "4+",
+          "name": "Le Pilier de gauche",
+          "number": 30
         },
         {
           "comment": "pilier.",
@@ -17271,20 +17271,6 @@
           "number": 1
         },
         {
-          "comment": "",
-          "coordinate": null,
-          "grade": "6a",
-          "name": "La Sablière",
-          "number": 1
-        },
-        {
-          "comment": "mur, réglettes.",
-          "coordinate": null,
-          "grade": "4",
-          "name": "L’Autoroute",
-          "number": 1
-        },
-        {
           "comment": "traversée.",
           "coordinate": null,
           "grade": "5-",
@@ -17299,31 +17285,10 @@
           "number": 2
         },
         {
-          "comment": "mur. mur direct en 5b.",
-          "coordinate": null,
-          "grade": "4",
-          "name": "Le Coude à Sophie",
-          "number": 2
-        },
-        {
-          "comment": "mur, arête.",
-          "coordinate": null,
-          "grade": "5",
-          "name": "",
-          "number": 2
-        },
-        {
           "comment": "mur, réta.",
           "coordinate": null,
           "grade": "4-",
           "name": "La Ventouse",
-          "number": 3
-        },
-        {
-          "comment": "plats.",
-          "coordinate": null,
-          "grade": "4+",
-          "name": "L’Invisible",
           "number": 3
         },
         {
@@ -17395,6 +17360,20 @@
           "grade": "4-",
           "name": "Le Mur des Frelons",
           "number": 9
+        },
+        {
+          "comment": "mur, réglettes.",
+          "coordinate": null,
+          "grade": "4",
+          "name": "L’Autoroute",
+          "number": 10
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "6a",
+          "name": "La Sablière",
+          "number": "10bis"
         },
         {
           "comment": "mur, trous.",
@@ -17474,18 +17453,32 @@
           "number": 19
         },
         {
-          "comment": "mur.",
-          "coordinate": null,
-          "grade": "3-",
-          "name": "La Pause",
-          "number": 19
-        },
-        {
           "comment": "arête.",
           "coordinate": null,
           "grade": "4",
           "name": "La Matoutou",
           "number": "19bis"
+        },
+        {
+          "comment": "mur.",
+          "coordinate": null,
+          "grade": "3-",
+          "name": "La Pause",
+          "number": "19ter"
+        },
+        {
+          "comment": "mur. mur direct en 5b.",
+          "coordinate": null,
+          "grade": "4",
+          "name": "Le Coude à Sophie",
+          "number": 20
+        },
+        {
+          "comment": "mur, arête.",
+          "coordinate": null,
+          "grade": "5",
+          "name": "",
+          "number": "20bis"
         },
         {
           "comment": "mur, trous.",
@@ -17551,6 +17544,13 @@
           "number": 29
         },
         {
+          "comment": "plats.",
+          "coordinate": null,
+          "grade": "4+",
+          "name": "L’Invisible",
+          "number": 30
+        },
+        {
           "comment": "traversée.",
           "coordinate": null,
           "grade": "4-",
@@ -17613,13 +17613,6 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "2+",
-          "name": "Adhérente",
-          "number": 3
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "2",
           "name": "Temps Suisse",
           "number": 4
@@ -17657,7 +17650,7 @@
           "coordinate": null,
           "grade": "2-",
           "name": "Talon d’Achille",
-          "number": 16
+          "number": "16bis"
         },
         {
           "comment": "",
@@ -17672,6 +17665,13 @@
           "grade": "2+",
           "name": "Le Dièdre Noir",
           "number": 27
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2+",
+          "name": "Adhérente",
+          "number": 30
         },
         {
           "comment": "",
@@ -17717,13 +17717,6 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "4-",
-          "name": "",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "2+",
           "name": "",
           "number": "1bis"
@@ -17732,20 +17725,6 @@
           "comment": "",
           "coordinate": null,
           "grade": "2-",
-          "name": "",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "2+",
-          "name": "",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "4-",
           "name": "",
           "number": 2
         },
@@ -17822,6 +17801,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "4-",
+          "name": "",
+          "number": 10
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "2+",
           "name": "",
           "number": 12
@@ -17864,16 +17850,16 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "3-",
+          "grade": "3+",
           "name": "",
-          "number": 16
+          "number": "16bis"
         },
         {
           "comment": "",
           "coordinate": null,
-          "grade": "3+",
+          "grade": "3-",
           "name": "",
-          "number": "16bis"
+          "number": "16ter"
         },
         {
           "comment": "",
@@ -17895,6 +17881,20 @@
           "grade": "3-",
           "name": "",
           "number": 19
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2+",
+          "name": "",
+          "number": 20
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "",
+          "number": "20bis"
         },
         {
           "comment": "",
@@ -18008,24 +18008,10 @@
           "number": 1
         },
         {
-          "comment": "mur.",
-          "coordinate": null,
-          "grade": "4",
-          "name": "",
-          "number": 1
-        },
-        {
           "comment": "mur, réglettes. voir aussi : Rude Journée 7a",
           "coordinate": null,
           "grade": "4",
           "name": "",
-          "number": 2
-        },
-        {
-          "comment": "arête, traversée.",
-          "coordinate": null,
-          "grade": "6a+",
-          "name": "Le Grand Bleu",
           "number": 2
         },
         {
@@ -18059,13 +18045,6 @@
         {
           "comment": "dalle.",
           "coordinate": null,
-          "grade": "4",
-          "name": "La Bidon",
-          "number": 5
-        },
-        {
-          "comment": "dalle.",
-          "coordinate": null,
           "grade": "4-",
           "name": "",
           "number": 5
@@ -18076,6 +18055,13 @@
           "grade": "4",
           "name": "",
           "number": "5bis"
+        },
+        {
+          "comment": "dalle.",
+          "coordinate": null,
+          "grade": "4",
+          "name": "La Bidon",
+          "number": "5ter"
         },
         {
           "comment": "arête.",
@@ -18104,6 +18090,13 @@
           "grade": "4",
           "name": "Tire-Bouchon",
           "number": 9
+        },
+        {
+          "comment": "mur.",
+          "coordinate": null,
+          "grade": "4",
+          "name": "",
+          "number": 10
         },
         {
           "comment": "dalle.",
@@ -18167,6 +18160,13 @@
           "grade": "4",
           "name": "",
           "number": 19
+        },
+        {
+          "comment": "arête, traversée.",
+          "coordinate": null,
+          "grade": "6a+",
+          "name": "Le Grand Bleu",
+          "number": 20
         }
       ],
       "colour": "bleu",
@@ -18194,24 +18194,10 @@
           "number": 1
         },
         {
-          "comment": "mur, réglettes.",
-          "coordinate": null,
-          "grade": "5",
-          "name": "",
-          "number": 1
-        },
-        {
           "comment": "mur.",
           "coordinate": null,
           "grade": "6a",
           "name": "",
-          "number": 2
-        },
-        {
-          "comment": "dévers. voie initialement 6b, dont la cotation a été considérablement revue à la hausse (8a/8b à confirmer) du fait de prises détruites par des feux.",
-          "coordinate": null,
-          "grade": "8a+",
-          "name": "Aller simple pour Bombay",
           "number": 2
         },
         {
@@ -18278,6 +18264,13 @@
           "number": "9bis"
         },
         {
+          "comment": "mur, réglettes.",
+          "coordinate": null,
+          "grade": "5",
+          "name": "",
+          "number": 10
+        },
+        {
           "comment": "",
           "coordinate": null,
           "grade": "5",
@@ -18339,6 +18332,13 @@
           "grade": "5",
           "name": "La Fumeuse",
           "number": 19
+        },
+        {
+          "comment": "dévers. voie initialement 6b, dont la cotation a été considérablement revue à la hausse (8a/8b à confirmer) du fait de prises détruites par des feux.",
+          "coordinate": null,
+          "grade": "8a+",
+          "name": "Aller simple pour Bombay",
+          "number": 20
         },
         {
           "comment": "dalle, mur.",
@@ -18417,22 +18417,8 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "2-",
-          "name": "",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "1+",
           "name": "Bas le Pied",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "2+",
-          "name": "Sortie de Secours",
           "number": 2
         },
         {
@@ -18483,6 +18469,13 @@
           "grade": "1",
           "name": "Plage",
           "number": 9
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2-",
+          "name": "",
+          "number": 10
         },
         {
           "comment": "",
@@ -18588,6 +18581,13 @@
           "grade": "1+",
           "name": "",
           "number": "19bis"
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2+",
+          "name": "Sortie de Secours",
+          "number": 20
         },
         {
           "comment": "saut.",
@@ -18725,21 +18725,7 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "2+",
-          "name": "",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "2",
-          "name": "",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3",
           "name": "",
           "number": 2
         },
@@ -18753,21 +18739,7 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "3+",
-          "name": "",
-          "number": 3
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "2-",
-          "name": "",
-          "number": 4
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "2",
           "name": "",
           "number": 4
         },
@@ -18775,13 +18747,6 @@
           "comment": "",
           "coordinate": null,
           "grade": "3-",
-          "name": "",
-          "number": 5
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "4",
           "name": "",
           "number": 5
         },
@@ -18819,6 +18784,13 @@
           "grade": "2-",
           "name": "",
           "number": "9bis"
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2+",
+          "name": "",
+          "number": 10
         },
         {
           "comment": "",
@@ -18889,6 +18861,13 @@
           "grade": "3-",
           "name": "",
           "number": 19
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "3",
+          "name": "",
+          "number": 20
         },
         {
           "comment": "",
@@ -18970,6 +18949,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "3+",
+          "name": "",
+          "number": 30
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "2",
           "name": "",
           "number": 31
@@ -19036,6 +19022,13 @@
           "grade": "2-",
           "name": "",
           "number": 39
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2",
+          "name": "",
+          "number": 40
         },
         {
           "comment": "",
@@ -19110,6 +19103,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "4",
+          "name": "",
+          "number": 50
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "2",
           "name": "",
           "number": 51
@@ -19163,24 +19163,10 @@
           "number": 1
         },
         {
-          "comment": "dalle.",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "La Gifle",
-          "number": 1
-        },
-        {
           "comment": "",
           "coordinate": null,
           "grade": "3",
           "name": "",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3",
-          "name": "La Descente de la Loco",
           "number": 2
         },
         {
@@ -19193,22 +19179,8 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "4",
-          "name": "La Petit Z",
-          "number": 3
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "3",
           "name": "Le Miroir aux Alouettes",
-          "number": 4
-        },
-        {
-          "comment": "fissure.",
-          "coordinate": null,
-          "grade": "4",
-          "name": "La Fissure des Signes Rupestres",
           "number": 4
         },
         {
@@ -19219,13 +19191,6 @@
           "number": 5
         },
         {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3",
-          "name": "Le Collier du Dogue",
-          "number": 5
-        },
-        {
           "comment": "arête.",
           "coordinate": null,
           "grade": "3+",
@@ -19233,24 +19198,10 @@
           "number": 6
         },
         {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3",
-          "name": "L’Aérolithe",
-          "number": 6
-        },
-        {
           "comment": "surplomb.",
           "coordinate": null,
           "grade": "4",
           "name": "Le Surplomb du Boxeur",
-          "number": 7
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3-",
-          "name": "Le Marchepied de l’Autobus",
           "number": 7
         },
         {
@@ -19266,6 +19217,13 @@
           "grade": "4",
           "name": "Le Surplomb du Cuveton",
           "number": 9
+        },
+        {
+          "comment": "dalle.",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "La Gifle",
+          "number": 10
         },
         {
           "comment": "mur, réta.",
@@ -19336,6 +19294,13 @@
           "grade": "2",
           "name": "La Pâtissière",
           "number": 19
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "3",
+          "name": "La Descente de la Loco",
+          "number": 20
         },
         {
           "comment": "dalle.",
@@ -19415,6 +19380,13 @@
           "number": "29bis"
         },
         {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4",
+          "name": "La Petit Z",
+          "number": 30
+        },
+        {
           "comment": "surplomb.",
           "coordinate": null,
           "grade": "3+",
@@ -19476,6 +19448,13 @@
           "grade": "3+",
           "name": "La Paire de Bretelles",
           "number": 39
+        },
+        {
+          "comment": "fissure.",
+          "coordinate": null,
+          "grade": "4",
+          "name": "La Fissure des Signes Rupestres",
+          "number": 40
         },
         {
           "comment": "",
@@ -19543,6 +19522,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "3",
+          "name": "Le Collier du Dogue",
+          "number": 50
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "4",
           "name": "Les Spoutniks",
           "number": 51
@@ -19602,6 +19588,13 @@
           "grade": "3",
           "name": "La Glissière à Toto",
           "number": 59
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "3",
+          "name": "L’Aérolithe",
+          "number": 60
         },
         {
           "comment": "",
@@ -19669,6 +19662,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "3-",
+          "name": "Le Marchepied de l’Autobus",
+          "number": 70
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "3+",
           "name": "La Voie de la Fin",
           "number": 71
@@ -19701,13 +19701,6 @@
           "number": 1
         },
         {
-          "comment": "",
-          "coordinate": null,
-          "grade": "6b",
-          "name": "La Petitesse",
-          "number": 1
-        },
-        {
           "comment": "arête.",
           "coordinate": null,
           "grade": "5-",
@@ -19715,24 +19708,10 @@
           "number": 2
         },
         {
-          "comment": "",
-          "coordinate": null,
-          "grade": "6b",
-          "name": "Pierre à Savon",
-          "number": 2
-        },
-        {
           "comment": "dalle, réglettes.",
           "coordinate": null,
           "grade": "5+",
           "name": "Monsieur Camembert",
-          "number": 3
-        },
-        {
-          "comment": "pilier.",
-          "coordinate": null,
-          "grade": "5+",
-          "name": "Le Pilier Sacré",
           "number": 3
         },
         {
@@ -19776,6 +19755,13 @@
           "grade": "6b",
           "name": "Le Secret de la Licorne",
           "number": 9
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "6b",
+          "name": "La Petitesse",
+          "number": 10
         },
         {
           "comment": "fissure.",
@@ -19841,6 +19827,13 @@
           "number": 19
         },
         {
+          "comment": "",
+          "coordinate": null,
+          "grade": "6b",
+          "name": "Pierre à Savon",
+          "number": 20
+        },
+        {
           "comment": "dalle, mur.",
           "coordinate": null,
           "grade": "5",
@@ -19902,6 +19895,13 @@
           "grade": "5",
           "name": "Le Pédiluve",
           "number": 29
+        },
+        {
+          "comment": "pilier.",
+          "coordinate": null,
+          "grade": "5+",
+          "name": "Le Pilier Sacré",
+          "number": 30
         },
         {
           "comment": "",
@@ -20502,33 +20502,12 @@
           "coordinate": null,
           "grade": "2-",
           "name": "",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "2-",
-          "name": "",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "2-",
-          "name": "",
           "number": 2
         },
         {
           "comment": "",
           "coordinate": null,
           "grade": "2",
-          "name": "",
-          "number": 3
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3-",
           "name": "",
           "number": 3
         },
@@ -20549,28 +20528,7 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "2-",
-          "name": "",
-          "number": 4
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "2+",
-          "name": "",
-          "number": 5
-        },
-        {
-          "comment": "saut.",
-          "coordinate": null,
-          "grade": "2",
-          "name": "",
-          "number": 5
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3-",
           "name": "",
           "number": 5
         },
@@ -20591,13 +20549,6 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "2-",
-          "name": "",
-          "number": 6
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "3-",
           "name": "",
           "number": "6bis"
@@ -20612,35 +20563,7 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "2",
-          "name": "",
-          "number": 7
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "2-",
-          "name": "",
-          "number": 8
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "2-",
-          "name": "",
-          "number": 8
-        },
-        {
-          "comment": "saut.",
-          "coordinate": null,
-          "grade": "2",
-          "name": "",
-          "number": 8
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3",
           "name": "",
           "number": 8
         },
@@ -20657,6 +20580,13 @@
           "grade": "1",
           "name": "",
           "number": 9
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2-",
+          "name": "",
+          "number": 10
         },
         {
           "comment": "",
@@ -20740,6 +20670,13 @@
           "coordinate": null,
           "grade": "2-",
           "name": "",
+          "number": 20
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2-",
+          "name": "",
           "number": 21
         },
         {
@@ -20804,6 +20741,13 @@
           "grade": "2",
           "name": "",
           "number": 29
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "3-",
+          "name": "",
+          "number": 30
         },
         {
           "comment": "",
@@ -20883,6 +20827,13 @@
           "number": 39
         },
         {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2-",
+          "name": "",
+          "number": 40
+        },
+        {
           "comment": "saut.",
           "coordinate": null,
           "grade": "2+",
@@ -20960,6 +20911,20 @@
           "number": "49bis"
         },
         {
+          "comment": "saut.",
+          "coordinate": null,
+          "grade": "2",
+          "name": "",
+          "number": 50
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "3-",
+          "name": "",
+          "number": "50bis"
+        },
+        {
           "comment": "",
           "coordinate": null,
           "grade": "1",
@@ -21034,6 +20999,13 @@
           "coordinate": null,
           "grade": "2-",
           "name": "",
+          "number": 60
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2-",
+          "name": "",
           "number": 61
         },
         {
@@ -21062,14 +21034,14 @@
           "coordinate": null,
           "grade": "3+",
           "name": "",
-          "number": 63
+          "number": "63bis"
         },
         {
           "comment": "",
           "coordinate": null,
           "grade": "3+",
           "name": "",
-          "number": "63bis"
+          "number": "63ter"
         },
         {
           "comment": "",
@@ -21130,6 +21102,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "2",
+          "name": "",
+          "number": 70
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "2-",
           "name": "",
           "number": 71
@@ -21158,16 +21137,16 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "3-",
+          "grade": "2-",
           "name": "",
-          "number": 74
+          "number": "74bis"
         },
         {
           "comment": "",
           "coordinate": null,
-          "grade": "2-",
+          "grade": "3-",
           "name": "",
-          "number": "74bis"
+          "number": "74ter"
         },
         {
           "comment": "",
@@ -21203,6 +21182,27 @@
           "grade": "2",
           "name": "",
           "number": 79
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2-",
+          "name": "",
+          "number": 80
+        },
+        {
+          "comment": "saut.",
+          "coordinate": null,
+          "grade": "2",
+          "name": "",
+          "number": "80bis"
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "3",
+          "name": "",
+          "number": "80ter"
         },
         {
           "comment": "",
@@ -21438,13 +21438,6 @@
           "number": 1
         },
         {
-          "comment": "expo.",
-          "coordinate": null,
-          "grade": "5",
-          "name": "Le Triangle",
-          "number": 1
-        },
-        {
           "comment": "dévers.",
           "coordinate": null,
           "grade": "6a",
@@ -21452,24 +21445,10 @@
           "number": 2
         },
         {
-          "comment": "expo. dans un couloir",
-          "coordinate": null,
-          "grade": "5",
-          "name": "La Couleuvre",
-          "number": 2
-        },
-        {
           "comment": "traversée.",
           "coordinate": null,
           "grade": "6a+",
           "name": "Élixir de Bouldering",
-          "number": 3
-        },
-        {
-          "comment": "mur, dévers. à gauche de l’ancien n°30 rouge (qui était coté 4c).",
-          "coordinate": null,
-          "grade": "6a+",
-          "name": "La Gouttière",
           "number": 3
         },
         {
@@ -21520,6 +21499,13 @@
           "grade": "5",
           "name": "L’Œuf",
           "number": 9
+        },
+        {
+          "comment": "expo.",
+          "coordinate": null,
+          "grade": "5",
+          "name": "Le Triangle",
+          "number": 10
         },
         {
           "comment": "dalle, expo.",
@@ -21585,6 +21571,13 @@
           "number": 19
         },
         {
+          "comment": "expo. dans un couloir",
+          "coordinate": null,
+          "grade": "5",
+          "name": "La Couleuvre",
+          "number": 20
+        },
+        {
           "comment": "dalle, réglettes.",
           "coordinate": null,
           "grade": "5",
@@ -21646,6 +21639,13 @@
           "grade": "5-",
           "name": "L’Os à Moelle",
           "number": 29
+        },
+        {
+          "comment": "mur, dévers. à gauche de l’ancien n°30 rouge (qui était coté 4c).",
+          "coordinate": null,
+          "grade": "6a+",
+          "name": "La Gouttière",
+          "number": 30
         },
         {
           "comment": "surplomb.",
@@ -21848,24 +21848,10 @@
           "number": 1
         },
         {
-          "comment": "dalle.",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "Page de Lecture",
-          "number": 1
-        },
-        {
           "comment": "mur.",
           "coordinate": null,
           "grade": "4",
           "name": "Doigt dans l’Œil",
-          "number": 2
-        },
-        {
-          "comment": "mur.",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "Château de Cartes",
           "number": 2
         },
         {
@@ -21876,31 +21862,10 @@
           "number": 3
         },
         {
-          "comment": "",
-          "coordinate": null,
-          "grade": "5-",
-          "name": "",
-          "number": 3
-        },
-        {
-          "comment": "dalle.",
-          "coordinate": null,
-          "grade": "3+",
-          "name": "Le Prélat",
-          "number": 3
-        },
-        {
           "comment": "surplomb.",
           "coordinate": null,
           "grade": "4",
           "name": "Tire à Vue",
-          "number": 4
-        },
-        {
-          "comment": "réta.",
-          "coordinate": null,
-          "grade": "4+",
-          "name": "Tord-Boyau",
           "number": 4
         },
         {
@@ -21937,6 +21902,13 @@
           "grade": "4",
           "name": "Carie Dentaire",
           "number": 9
+        },
+        {
+          "comment": "dalle.",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "Page de Lecture",
+          "number": 10
         },
         {
           "comment": "dalle.",
@@ -22009,6 +21981,13 @@
           "number": 19
         },
         {
+          "comment": "mur.",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "Château de Cartes",
+          "number": 20
+        },
+        {
           "comment": "dalle.",
           "coordinate": null,
           "grade": "4-",
@@ -22077,6 +22056,20 @@
           "grade": "5-",
           "name": "Pense Bête",
           "number": 29
+        },
+        {
+          "comment": "dalle.",
+          "coordinate": null,
+          "grade": "3+",
+          "name": "Le Prélat",
+          "number": 30
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "5-",
+          "name": "",
+          "number": "30bis"
         },
         {
           "comment": "dalle.",
@@ -22154,6 +22147,13 @@
           "grade": "3+",
           "name": "Risque de Verglas",
           "number": 39
+        },
+        {
+          "comment": "réta.",
+          "coordinate": null,
+          "grade": "4+",
+          "name": "Tord-Boyau",
+          "number": 40
         },
         {
           "comment": "dalle, réglettes.",
@@ -22242,13 +22242,6 @@
           "number": 1
         },
         {
-          "comment": "mur, monodoigts. NB : le départ assis cote 7a. voir aussi : Danger Majeur assis 7a",
-          "coordinate": null,
-          "grade": "6a",
-          "name": "Danger Majeur",
-          "number": 1
-        },
-        {
           "comment": "mur.",
           "coordinate": null,
           "grade": "6a",
@@ -22256,38 +22249,10 @@
           "number": 2
         },
         {
-          "comment": "dalle. à droite du 20, Passage à l’Acte , sans les bonnes réglettes de droite.",
-          "coordinate": null,
-          "grade": "6c+",
-          "name": "Amanite Dalloïde",
-          "number": 2
-        },
-        {
-          "comment": "mur.",
-          "coordinate": null,
-          "grade": "5+",
-          "name": "Passage à l’Acte",
-          "number": 2
-        },
-        {
-          "comment": "fissure.",
-          "coordinate": null,
-          "grade": "6c",
-          "name": "Bazooka-Jo",
-          "number": 2
-        },
-        {
           "comment": "surplomb.",
           "coordinate": null,
           "grade": "6a",
           "name": "Le Surplomb à Coulisse",
-          "number": 3
-        },
-        {
-          "comment": "mur, traversée.",
-          "coordinate": null,
-          "grade": "5",
-          "name": "La Barquette de Beurre",
           "number": 3
         },
         {
@@ -22354,6 +22319,13 @@
           "number": 9
         },
         {
+          "comment": "mur, monodoigts. NB : le départ assis cote 7a. voir aussi : Danger Majeur assis 7a",
+          "coordinate": null,
+          "grade": "6a",
+          "name": "Danger Majeur",
+          "number": 10
+        },
+        {
           "comment": "mur.",
           "coordinate": null,
           "grade": "5+",
@@ -22410,13 +22382,6 @@
           "number": 16
         },
         {
-          "comment": "surplomb, proue. angle déversant à droite du 17, Vol au Vent. NB : cette voie, parfois appelée incorrectement \"L’Enlevée\", a été brossée et ouverte par Jo Montchaussé et des amis. voir aussi : Le Niveau Baisse 7b+",
-          "coordinate": null,
-          "grade": "7a",
-          "name": "Le Flippeur",
-          "number": 17
-        },
-        {
           "comment": "dévers.",
           "coordinate": null,
           "grade": "5",
@@ -22431,11 +22396,11 @@
           "number": "17bis"
         },
         {
-          "comment": "mur, réglettes, inversée. version sans convention du bis rouge et blanc à droite du 24, Coup de Pompe. NB : la voie d’origine était en fait une éliminante directe en 7a n’utilisant que l’inversée, mais la version sans convention est devenue classique. voir aussi : L’Inversée Satanique directe 7a (6c)",
+          "comment": "surplomb, proue. angle déversant à droite du 17, Vol au Vent. NB : cette voie, parfois appelée incorrectement \"L’Enlevée\", a été brossée et ouverte par Jo Montchaussé et des amis. voir aussi : Le Niveau Baisse 7b+",
           "coordinate": null,
-          "grade": "6b",
-          "name": "L’Inversée Satanique",
-          "number": 18
+          "grade": "7a",
+          "name": "Le Flippeur",
+          "number": "17ter"
         },
         {
           "comment": "dévers, réta.",
@@ -22452,11 +22417,39 @@
           "number": "18bis"
         },
         {
+          "comment": "mur, réglettes, inversée. version sans convention du bis rouge et blanc à droite du 24, Coup de Pompe. NB : la voie d’origine était en fait une éliminante directe en 7a n’utilisant que l’inversée, mais la version sans convention est devenue classique. voir aussi : L’Inversée Satanique directe 7a (6c)",
+          "coordinate": null,
+          "grade": "6b",
+          "name": "L’Inversée Satanique",
+          "number": "18ter"
+        },
+        {
           "comment": "dalle.",
           "coordinate": null,
           "grade": "6a+",
           "name": "Les Joyeuses de Noël",
           "number": 19
+        },
+        {
+          "comment": "mur.",
+          "coordinate": null,
+          "grade": "5+",
+          "name": "Passage à l’Acte",
+          "number": 20
+        },
+        {
+          "comment": "fissure.",
+          "coordinate": null,
+          "grade": "6c",
+          "name": "Bazooka-Jo",
+          "number": "20bis"
+        },
+        {
+          "comment": "dalle. à droite du 20, Passage à l’Acte , sans les bonnes réglettes de droite.",
+          "coordinate": null,
+          "grade": "6c+",
+          "name": "Amanite Dalloïde",
+          "number": "20ter"
         },
         {
           "comment": "mur, réglettes.",
@@ -22527,6 +22520,13 @@
           "grade": "6b",
           "name": "Le Mur à Michaud",
           "number": 29
+        },
+        {
+          "comment": "mur, traversée.",
+          "coordinate": null,
+          "grade": "5",
+          "name": "La Barquette de Beurre",
+          "number": 30
         },
         {
           "comment": "arête, expo.",
@@ -22934,20 +22934,6 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "2+",
-          "name": "",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "2",
-          "name": "",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "2",
           "name": "",
           "number": 2
@@ -22962,20 +22948,6 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "2",
-          "name": "",
-          "number": 3
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "2+",
-          "name": "",
-          "number": 4
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "2+",
           "name": "",
           "number": 4
@@ -22984,13 +22956,6 @@
           "comment": "",
           "coordinate": null,
           "grade": "2",
-          "name": "",
-          "number": 5
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3-",
           "name": "",
           "number": 5
         },
@@ -23021,6 +22986,13 @@
           "grade": "2",
           "name": "",
           "number": 9
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2+",
+          "name": "",
+          "number": 10
         },
         {
           "comment": "",
@@ -23088,6 +23060,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "2",
+          "name": "",
+          "number": 20
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "2+",
           "name": "",
           "number": 21
@@ -23147,6 +23126,13 @@
           "grade": "2",
           "name": "",
           "number": 29
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2",
+          "name": "",
+          "number": 30
         },
         {
           "comment": "",
@@ -23214,6 +23200,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "2+",
+          "name": "",
+          "number": 40
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "2",
           "name": "",
           "number": 41
@@ -23273,6 +23266,13 @@
           "grade": "3",
           "name": "",
           "number": 49
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "3-",
+          "name": "",
+          "number": 50
         },
         {
           "comment": "saut. incotable.",
@@ -23365,21 +23365,7 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "4",
-          "name": "",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "4-",
-          "name": "",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "5-",
           "name": "",
           "number": 2
         },
@@ -23402,40 +23388,12 @@
           "coordinate": null,
           "grade": "4",
           "name": "",
-          "number": 3
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "4",
-          "name": "",
-          "number": 4
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3-",
-          "name": "",
-          "number": 4
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3+",
-          "name": "",
           "number": 4
         },
         {
           "comment": "",
           "coordinate": null,
           "grade": "4-",
-          "name": "",
-          "number": 5
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "5-",
           "name": "",
           "number": 5
         },
@@ -23473,6 +23431,13 @@
           "grade": "4",
           "name": "",
           "number": "9bis"
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4",
+          "name": "",
+          "number": 10
         },
         {
           "comment": "jeté.",
@@ -23536,6 +23501,13 @@
           "grade": "3",
           "name": "",
           "number": 19
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "5-",
+          "name": "",
+          "number": 20
         },
         {
           "comment": "",
@@ -23624,6 +23596,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "4",
+          "name": "",
+          "number": 30
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "3",
           "name": "",
           "number": 31
@@ -23690,6 +23669,20 @@
           "grade": "4-",
           "name": "",
           "number": 39
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "3-",
+          "name": "",
+          "number": 40
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "3+",
+          "name": "",
+          "number": "40bis"
         },
         {
           "comment": "jeté.",
@@ -23767,6 +23760,13 @@
           "grade": "4",
           "name": "",
           "number": 49
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "5-",
+          "name": "",
+          "number": 50
         },
         {
           "comment": "",
@@ -24377,35 +24377,7 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "4-",
-          "name": "",
-          "number": 1
-        },
-        {
-          "comment": "expo.",
-          "coordinate": null,
-          "grade": "5",
-          "name": "",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "4+",
-          "name": "",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "4",
-          "name": "",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "5-",
           "name": "",
           "number": 2
         },
@@ -24417,27 +24389,6 @@
           "number": 3
         },
         {
-          "comment": "mur.",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "",
-          "number": 3
-        },
-        {
-          "comment": "mur, réglettes.",
-          "coordinate": null,
-          "grade": "4+",
-          "name": "",
-          "number": 3
-        },
-        {
-          "comment": "dalle.",
-          "coordinate": null,
-          "grade": "4-",
-          "name": "",
-          "number": 3
-        },
-        {
           "comment": "traversée.",
           "coordinate": null,
           "grade": "5+",
@@ -24445,16 +24396,16 @@
           "number": "3bis"
         },
         {
+          "comment": "mur.",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "",
+          "number": "3ter"
+        },
+        {
           "comment": "réglettes.",
           "coordinate": null,
           "grade": "5",
-          "name": "",
-          "number": 4
-        },
-        {
-          "comment": "mur, réglettes.",
-          "coordinate": null,
-          "grade": "4+",
           "name": "",
           "number": 4
         },
@@ -24513,6 +24464,20 @@
           "grade": "6b+",
           "name": "Coup Double",
           "number": "9bis"
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "",
+          "number": 10
+        },
+        {
+          "comment": "expo.",
+          "coordinate": null,
+          "grade": "5",
+          "name": "",
+          "number": "10bis"
         },
         {
           "comment": "surplomb.",
@@ -24592,6 +24557,20 @@
           "number": "19bis"
         },
         {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4",
+          "name": "",
+          "number": 20
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "5-",
+          "name": "",
+          "number": "20bis"
+        },
+        {
           "comment": "mur.",
           "coordinate": null,
           "grade": "5",
@@ -24669,6 +24648,20 @@
           "number": 29
         },
         {
+          "comment": "mur, réglettes.",
+          "coordinate": null,
+          "grade": "4+",
+          "name": "",
+          "number": 30
+        },
+        {
+          "comment": "dalle.",
+          "coordinate": null,
+          "grade": "4-",
+          "name": "",
+          "number": "30bis"
+        },
+        {
           "comment": "",
           "coordinate": null,
           "grade": "4-",
@@ -24739,6 +24732,13 @@
           "number": 39
         },
         {
+          "comment": "mur, réglettes.",
+          "coordinate": null,
+          "grade": "4+",
+          "name": "",
+          "number": 40
+        },
+        {
           "comment": "mur, fissure, inversée. NB : une variante en 5a/5b sur la gauche est également possible.",
           "coordinate": null,
           "grade": "5-",
@@ -24771,20 +24771,6 @@
           "grade": "2+",
           "name": "",
           "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "2",
-          "name": "",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "2+",
-          "name": "",
-          "number": 2
         },
         {
           "comment": "",
@@ -24848,6 +24834,13 @@
           "grade": "3-",
           "name": "",
           "number": "9bis"
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2",
+          "name": "",
+          "number": 10
         },
         {
           "comment": "",
@@ -24918,6 +24911,13 @@
           "grade": "2",
           "name": "",
           "number": 19
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2+",
+          "name": "",
+          "number": 20
         },
         {
           "comment": "",
@@ -25047,24 +25047,10 @@
           "number": 1
         },
         {
-          "comment": "dalle, réglettes. dalle marbrée sur le même bloc que les numéros 11 et 12.",
-          "coordinate": null,
-          "grade": "5+",
-          "name": "Soubrette",
-          "number": 1
-        },
-        {
           "comment": "dalle, réglettes.",
           "coordinate": null,
           "grade": "6a",
           "name": "Courtisane",
-          "number": 2
-        },
-        {
-          "comment": "mur, plats.",
-          "coordinate": null,
-          "grade": "6b",
-          "name": "Vieille Fille",
           "number": 2
         },
         {
@@ -25115,6 +25101,13 @@
           "grade": "5",
           "name": "Gouge",
           "number": 9
+        },
+        {
+          "comment": "dalle, réglettes. dalle marbrée sur le même bloc que les numéros 11 et 12.",
+          "coordinate": null,
+          "grade": "5+",
+          "name": "Soubrette",
+          "number": 10
         },
         {
           "comment": "dévers, réta, traversée.",
@@ -25180,6 +25173,13 @@
           "number": 19
         },
         {
+          "comment": "mur, plats.",
+          "coordinate": null,
+          "grade": "6b",
+          "name": "Vieille Fille",
+          "number": 20
+        },
+        {
           "comment": "surplomb. morpho. voir aussi : La Duègne (départ assis) 7b",
           "coordinate": null,
           "grade": "6a",
@@ -25214,20 +25214,6 @@
           "number": 1
         },
         {
-          "comment": "",
-          "coordinate": null,
-          "grade": "2",
-          "name": "La Lunule de Miel",
-          "number": 1
-        },
-        {
-          "comment": "fissure, réta.",
-          "coordinate": null,
-          "grade": "3-",
-          "name": "La Dulf",
-          "number": 1
-        },
-        {
           "comment": "fissure, cheminée.",
           "coordinate": null,
           "grade": "2",
@@ -25237,22 +25223,8 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "3+",
-          "name": "Le Ballet Aérien",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "2",
           "name": "L’Opposition",
-          "number": 3
-        },
-        {
-          "comment": "dalle.",
-          "coordinate": null,
-          "grade": "3+",
-          "name": "La Patinoire",
           "number": 3
         },
         {
@@ -25296,6 +25268,20 @@
           "grade": "3-",
           "name": "Les Manettes",
           "number": 9
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2",
+          "name": "La Lunule de Miel",
+          "number": 10
+        },
+        {
+          "comment": "fissure, réta.",
+          "coordinate": null,
+          "grade": "3-",
+          "name": "La Dulf",
+          "number": "10bis"
         },
         {
           "comment": "",
@@ -25363,6 +25349,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "3+",
+          "name": "Le Ballet Aérien",
+          "number": 20
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "2",
           "name": "La Flûte à Bec",
           "number": 21
@@ -25422,6 +25415,13 @@
           "grade": "3",
           "name": "L’Y",
           "number": 29
+        },
+        {
+          "comment": "dalle.",
+          "coordinate": null,
+          "grade": "3+",
+          "name": "La Patinoire",
+          "number": 30
         }
       ],
       "colour": "orange",
@@ -25451,24 +25451,10 @@
           "number": 1
         },
         {
-          "comment": "dalle.",
-          "coordinate": null,
-          "grade": "4",
-          "name": "Abattement",
-          "number": 1
-        },
-        {
           "comment": "mur.",
           "coordinate": null,
           "grade": "4+",
           "name": "Lassitude",
-          "number": 2
-        },
-        {
-          "comment": "pilier.",
-          "coordinate": null,
-          "grade": "5",
-          "name": "Rancœur",
           "number": 2
         },
         {
@@ -25519,6 +25505,13 @@
           "grade": "5-",
           "name": "Aigreur",
           "number": 9
+        },
+        {
+          "comment": "dalle.",
+          "coordinate": null,
+          "grade": "4",
+          "name": "Abattement",
+          "number": 10
         },
         {
           "comment": "mur, réglettes.",
@@ -25582,6 +25575,13 @@
           "grade": "4+",
           "name": "Affliction",
           "number": 19
+        },
+        {
+          "comment": "pilier.",
+          "coordinate": null,
+          "grade": "5",
+          "name": "Rancœur",
+          "number": 20
         }
       ],
       "colour": "bleu",
@@ -25645,24 +25645,10 @@
           "number": 1
         },
         {
-          "comment": "",
-          "coordinate": null,
-          "grade": "2",
-          "name": "Le Retour",
-          "number": 1
-        },
-        {
           "comment": "fissure.",
           "coordinate": null,
           "grade": "2",
           "name": "La Fissure Oblique",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "2",
-          "name": "Les Doigts",
           "number": 2
         },
         {
@@ -25682,22 +25668,8 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "3-",
-          "name": "La Voie du Cyclope",
-          "number": 3
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "3",
           "name": "Le Boulevard Saint-Germain",
-          "number": 4
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "3",
-          "name": "Le Bénitier",
           "number": 4
         },
         {
@@ -25734,6 +25706,13 @@
           "grade": "2+",
           "name": "La Brèche",
           "number": 9
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2",
+          "name": "Le Retour",
+          "number": 10
         },
         {
           "comment": "arête.",
@@ -25813,6 +25792,13 @@
           "number": 19
         },
         {
+          "comment": "",
+          "coordinate": null,
+          "grade": "2",
+          "name": "Les Doigts",
+          "number": 20
+        },
+        {
           "comment": "mur.",
           "coordinate": null,
           "grade": "2",
@@ -25885,6 +25871,13 @@
         {
           "comment": "",
           "coordinate": null,
+          "grade": "3-",
+          "name": "La Voie du Cyclope",
+          "number": 30
+        },
+        {
+          "comment": "",
+          "coordinate": null,
           "grade": "2",
           "name": "La Reposante",
           "number": 31
@@ -25951,6 +25944,13 @@
           "grade": "2",
           "name": "Mise à Plat",
           "number": 39
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "3",
+          "name": "Le Bénitier",
+          "number": 40
         },
         {
           "comment": "",
@@ -26067,23 +26067,16 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "6a+",
-          "name": "La Caresse",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "5-",
-          "name": "Mauve Égoût",
-          "number": 1
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "6a",
           "name": "La Fiesta des Merguez",
           "number": "1bis"
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "6a+",
+          "name": "La Caresse",
+          "number": "1ter"
         },
         {
           "comment": "",
@@ -26095,22 +26088,8 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "4+",
-          "name": "",
-          "number": 2
-        },
-        {
-          "comment": "",
-          "coordinate": null,
           "grade": "4",
           "name": "Bruit de Couloir",
-          "number": 3
-        },
-        {
-          "comment": "",
-          "coordinate": null,
-          "grade": "5-",
-          "name": "",
           "number": 3
         },
         {
@@ -26173,15 +26152,22 @@
           "comment": "",
           "coordinate": null,
           "grade": "6a+",
-          "name": "Le Casse-Noisette",
-          "number": 9
+          "name": "Le Casse-Tête",
+          "number": "9bis"
         },
         {
           "comment": "",
           "coordinate": null,
           "grade": "6a+",
-          "name": "Le Casse-Tête",
-          "number": "9bis"
+          "name": "Le Casse-Noisette",
+          "number": "9ter"
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "5-",
+          "name": "Mauve Égoût",
+          "number": 10
         },
         {
           "comment": "",
@@ -26242,16 +26228,16 @@
         {
           "comment": "",
           "coordinate": null,
-          "grade": "6a+",
-          "name": "Isa",
-          "number": 17
+          "grade": "5+",
+          "name": "Mortelle Randonnée",
+          "number": "17bis"
         },
         {
           "comment": "",
           "coordinate": null,
-          "grade": "5+",
-          "name": "Mortelle Randonnée",
-          "number": "17bis"
+          "grade": "6a+",
+          "name": "Isa",
+          "number": "17ter"
         },
         {
           "comment": "",
@@ -26273,6 +26259,13 @@
           "grade": "6a",
           "name": "L’Incroyable Randonnée",
           "number": "19bis"
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "4+",
+          "name": "",
+          "number": 20
         },
         {
           "comment": "",
@@ -26343,6 +26336,13 @@
           "grade": "4",
           "name": "",
           "number": 29
+        },
+        {
+          "comment": "",
+          "coordinate": null,
+          "grade": "5-",
+          "name": "",
+          "number": 30
         },
         {
           "comment": "",
@@ -26694,13 +26694,6 @@
           "number": 1
         },
         {
-          "comment": "mur.",
-          "coordinate": null,
-          "grade": "2",
-          "name": "L’Éperon",
-          "number": 1
-        },
-        {
           "comment": "surplomb.",
           "coordinate": null,
           "grade": "3+",
@@ -26708,24 +26701,10 @@
           "number": 2
         },
         {
-          "comment": "traversée.",
-          "coordinate": null,
-          "grade": "3",
-          "name": "Le Trou Sauveur",
-          "number": 2
-        },
-        {
           "comment": "surplomb.",
           "coordinate": null,
           "grade": "3-",
           "name": "Le Trapéziste",
-          "number": 3
-        },
-        {
-          "comment": "mur.",
-          "coordinate": null,
-          "grade": "2",
-          "name": "L’Ancien Jaune",
           "number": 3
         },
         {
@@ -26776,6 +26755,13 @@
           "grade": "3+",
           "name": "Soul River",
           "number": 9
+        },
+        {
+          "comment": "mur.",
+          "coordinate": null,
+          "grade": "2",
+          "name": "L’Éperon",
+          "number": 10
         },
         {
           "comment": "mur.",
@@ -26855,6 +26841,13 @@
           "number": "19bis"
         },
         {
+          "comment": "traversée.",
+          "coordinate": null,
+          "grade": "3",
+          "name": "Le Trou Sauveur",
+          "number": 20
+        },
+        {
           "comment": "surplomb, réta.",
           "coordinate": null,
           "grade": "3-",
@@ -26918,6 +26911,13 @@
           "number": 29
         },
         {
+          "comment": "mur.",
+          "coordinate": null,
+          "grade": "2",
+          "name": "L’Ancien Jaune",
+          "number": 30
+        },
+        {
           "comment": "dalle.",
           "coordinate": null,
           "grade": "2+",
@@ -26974,18 +26974,18 @@
           "number": 36
         },
         {
-          "comment": "traversée.",
-          "coordinate": null,
-          "grade": "5+",
-          "name": "L’Exil",
-          "number": 36
-        },
-        {
           "comment": "surplomb.",
           "coordinate": null,
           "grade": "4",
           "name": "La Mâchoire",
           "number": "36bis"
+        },
+        {
+          "comment": "traversée.",
+          "coordinate": null,
+          "grade": "5+",
+          "name": "L’Exil",
+          "number": "36ter"
         },
         {
           "comment": "dalle.",
