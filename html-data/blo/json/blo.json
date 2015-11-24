@@ -7,6 +7,8 @@
         "items": [
           {
             "blo_url": 1,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "Créé par F. Decarout",
             "info": "Validée SNE. n°3",
@@ -24,12 +26,15 @@
             "massif": "Dampierre Maincourt",
             "name": "Blanc Enfants E",
             "nombre_de_voie": 1,
+            "numero": 3,
             "renove": 0,
             "secteur": "Yvelines - Vallée de Chevreuse -",
             "status": ""
           },
           {
             "blo_url": 2,
+            "cotation": "PD",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°5",
@@ -221,12 +226,15 @@
             "massif": "Dampierre Maincourt",
             "name": "Jaune PD",
             "nombre_de_voie": 30,
+            "numero": 5,
             "renove": 0,
             "secteur": "Yvelines - Vallée de Chevreuse -",
             "status": ""
           },
           {
             "blo_url": 3,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°1",
@@ -604,12 +612,15 @@
             "massif": "Dampierre Maincourt",
             "name": "Orange AD+",
             "nombre_de_voie": 61,
+            "numero": 1,
             "renove": 0,
             "secteur": "Yvelines - Vallée de Chevreuse -",
             "status": ""
           },
           {
             "blo_url": 4,
+            "cotation": "TD-",
+            "couleur": "bleu",
             "cree": "1999",
             "descriptif": "Créé en 1999 par Jean Pilot & Michel Gouze CAF. 19 numéros + 4 variantes",
             "info": "Validée SNE. n°4",
@@ -765,12 +776,15 @@
             "massif": "Dampierre Maincourt",
             "name": "Bleu TD-",
             "nombre_de_voie": 24,
+            "numero": 4,
             "renove": 0,
             "secteur": "Yvelines - Vallée de Chevreuse -",
             "status": ""
           },
           {
             "blo_url": 5,
+            "cotation": "TD+",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "Créé par E. Vervueren",
             "info": "Validée SNE. n°2",
@@ -950,6 +964,7 @@
             "massif": "Dampierre Maincourt",
             "name": "Rouge TD+",
             "nombre_de_voie": 28,
+            "numero": 2,
             "renove": 0,
             "secteur": "Yvelines - Vallée de Chevreuse -",
             "status": ""
@@ -964,6 +979,8 @@
         "items": [
           {
             "blo_url": 6,
+            "cotation": "PD+",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Avec qcq bis \"rouges\". Créé par P Bocianowski FSGT RSCMontreuil.",
             "info": "Validée SNE. n°1",
@@ -1245,12 +1262,15 @@
             "massif": "Vaux de Cernay",
             "name": "Jaune PD+",
             "nombre_de_voie": 45,
+            "numero": 1,
             "renove": 0,
             "secteur": "Yvelines - Vallée de Chevreuse -",
             "status": ""
           },
           {
             "blo_url": 7,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°2",
@@ -1260,6 +1280,7 @@
             "massif": "Vaux de Cernay",
             "name": "Orange AD+",
             "nombre_de_voie": 0,
+            "numero": 2,
             "renove": 0,
             "secteur": "Yvelines - Vallée de Chevreuse -",
             "status": ""
@@ -1274,6 +1295,8 @@
         "items": [
           {
             "blo_url": 8,
+            "cotation": "PD+",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Repeint en 2013 par Oleg Sokolsky",
             "info": "Validée SNE. n°3",
@@ -1525,12 +1548,15 @@
             "massif": "La Troche",
             "name": "Jaune PD+",
             "nombre_de_voie": 40,
+            "numero": 3,
             "renove": 2013,
             "secteur": "Yvelines - Vallée de Chevreuse -",
             "status": ""
           },
           {
             "blo_url": 9,
+            "cotation": "D+",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Repeint en 2013 par Oleg Sokolsky",
             "info": "Validée SNE. n°1",
@@ -1686,12 +1712,15 @@
             "massif": "La Troche",
             "name": "Bleu D+",
             "nombre_de_voie": 24,
+            "numero": 1,
             "renove": 2013,
             "secteur": "Yvelines - Vallée de Chevreuse -",
             "status": ""
           },
           {
             "blo_url": 10,
+            "cotation": "TD+",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "Repeint en 2013 par Oleg Sokolsky",
             "info": "Validée SNE. n°2",
@@ -1871,6 +1900,7 @@
             "massif": "La Troche",
             "name": "Rouge TD+",
             "nombre_de_voie": 28,
+            "numero": 2,
             "renove": 2013,
             "secteur": "Yvelines - Vallée de Chevreuse -",
             "status": ""
@@ -1890,6 +1920,8 @@
         "items": [
           {
             "blo_url": 18,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "Créé par René Bonnette CAF. Peu fréquenté.",
             "info": "Validée SNE. n°5",
@@ -1899,12 +1931,15 @@
             "massif": "Chamarande",
             "name": "Blanc Enfants E",
             "nombre_de_voie": 0,
+            "numero": 5,
             "renove": 0,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
           },
           {
             "blo_url": 19,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "Créé par Michel Coquard, Louis Louvel FSGT Ivry , Très fréquenté, arrivée au très beau point de vue du \"belvédère\".",
             "info": "Validée SNE. N°10",
@@ -1922,12 +1957,15 @@
             "massif": "Chamarande",
             "name": "Blanc Enfants E",
             "nombre_de_voie": 1,
+            "numero": null,
             "renove": 0,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
           },
           {
             "blo_url": 20,
+            "cotation": "PD",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Créé par Pascal Etienne FSGT Ste Geneviève, modifié et raccourci par Jean-Jacques Naëls en 2005",
             "info": "Validée SNE. n°9",
@@ -2329,12 +2367,15 @@
             "massif": "Chamarande",
             "name": "Jaune PD",
             "nombre_de_voie": 65,
+            "numero": 9,
             "renove": 2005,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
           },
           {
             "blo_url": 21,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "1960",
             "descriptif": "Créé en 1960, rocher assez patiné, quelques passages engagés.",
             "info": "Validée SNE. n°2",
@@ -2490,12 +2531,15 @@
             "massif": "Chamarande",
             "name": "Orange AD",
             "nombre_de_voie": 24,
+            "numero": 2,
             "renove": 0,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
           },
           {
             "blo_url": 22,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "2004",
             "descriptif": "Créé par J-Jacques Naëls en 2004 à partir de vieilles classiques « faciles » du circuit rouge n°1.",
             "info": "Validée SNE. n°13",
@@ -2687,12 +2731,15 @@
             "massif": "Chamarande",
             "name": "Bleu D",
             "nombre_de_voie": 30,
+            "numero": 13,
             "renove": 2004,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
           },
           {
             "blo_url": 23,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "1989",
             "descriptif": "Créé par Din N’Guyen en 1989, repris en 2002",
             "info": "Validée SNE. n°11",
@@ -3004,12 +3051,15 @@
             "massif": "Chamarande",
             "name": "Bleu Ciel D",
             "nombre_de_voie": 50,
+            "numero": 11,
             "renove": 2002,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
           },
           {
             "blo_url": 24,
+            "cotation": "TD",
+            "couleur": "rouge",
             "cree": "2004",
             "descriptif": "Créé par J-Jacques Naëls en 2004 à partir de vieilles classiques « dures » du circuit rouge, n°1 réalisé par Remy Cordurier et quelques autres, en lui enjoignant 9 nouveautés sur 36 passages du tracé (...)",
             "info": "Validée SNE. n°14",
@@ -3237,12 +3287,15 @@
             "massif": "Chamarande",
             "name": "Rouge TD",
             "nombre_de_voie": 36,
+            "numero": 14,
             "renove": 2004,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
           },
           {
             "blo_url": 25,
+            "cotation": "ED",
+            "couleur": "blanc",
             "cree": "1987",
             "descriptif": "Créé par Philippe David, Manuel Marques, Pascal Etienne en 1987. Repris en 2004 par Jean-Jacques Naëls , quelques voies abandonnées et inclusion de 2 nouveautés.",
             "info": "Validée SNE. n°8",
@@ -3410,6 +3463,7 @@
             "massif": "Chamarande",
             "name": "Blanc ED",
             "nombre_de_voie": 26,
+            "numero": 8,
             "renove": 2004,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
@@ -3424,6 +3478,8 @@
         "items": [
           {
             "blo_url": 26,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "2007",
             "descriptif": "Créé par Pascal Etienne, 2007. 29 passages.",
             "info": "Validée SNE. n°6",
@@ -3433,12 +3489,15 @@
             "massif": "Chamarande Belvédère",
             "name": "Blanc Enfants E",
             "nombre_de_voie": 0,
+            "numero": 6,
             "renove": 2007,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
           },
           {
             "blo_url": 27,
+            "cotation": "F",
+            "couleur": "caramel",
             "cree": "2007",
             "descriptif": "Créé par Pascal Etienne, 2007. 29 passages.",
             "info": "Validée SNE. n°7",
@@ -3448,12 +3507,15 @@
             "massif": "Chamarande Belvédère",
             "name": "Caramel F",
             "nombre_de_voie": 0,
+            "numero": 7,
             "renove": 2007,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
           },
           {
             "blo_url": 28,
+            "cotation": "AD-",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°10",
@@ -3463,6 +3525,7 @@
             "massif": "Chamarande Belvédère",
             "name": "Orange AD-",
             "nombre_de_voie": 0,
+            "numero": 10,
             "renove": 0,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
@@ -3477,6 +3540,8 @@
         "items": [
           {
             "blo_url": 29,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°1",
@@ -3486,12 +3551,15 @@
             "massif": "Étréchy",
             "name": "Blanc Enfants E",
             "nombre_de_voie": 0,
+            "numero": 1,
             "renove": 0,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
           },
           {
             "blo_url": 30,
+            "cotation": "PD",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°2",
@@ -3501,6 +3569,7 @@
             "massif": "Étréchy",
             "name": "Jaune PD",
             "nombre_de_voie": 0,
+            "numero": 2,
             "renove": 0,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
@@ -3515,6 +3584,8 @@
         "items": [
           {
             "blo_url": 31,
+            "cotation": "D+",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Créé par Francis et Michel Bocianowski du RSCMontreuil.  Initialement D- repris en 2005 par Dominique Yvorel qui a effectué une réfection totale du massif. 22 (...)",
             "info": "Validée SNE. n°1",
@@ -3658,12 +3729,15 @@
             "massif": "Villeneuve sur Auvers",
             "name": "Bleu D+",
             "nombre_de_voie": 22,
+            "numero": 1,
             "renove": 2005,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
           },
           {
             "blo_url": 32,
+            "cotation": "TD+",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "Créé par Pascal Bocianowski RSCMontreuil. Initialement TD repris et complété en 2005 par Dominique Yvorel. 21 n° + 7 bis.",
             "info": "Validée SNE. n°3",
@@ -3837,6 +3911,7 @@
             "massif": "Villeneuve sur Auvers",
             "name": "Rouge TD+/ED",
             "nombre_de_voie": 27,
+            "numero": 3,
             "renove": 2005,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
@@ -3851,6 +3926,8 @@
         "items": [
           {
             "blo_url": 33,
+            "cotation": "PD-",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°1",
@@ -3860,12 +3937,15 @@
             "massif": "Rocher Mignot",
             "name": "Jaune PD-",
             "nombre_de_voie": 0,
+            "numero": 1,
             "renove": 0,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
           },
           {
             "blo_url": 34,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Tracé par un inconnu.",
             "info": "Validée SNE. n°2",
@@ -3875,6 +3955,7 @@
             "massif": "Rocher Mignot",
             "name": "Orange AD",
             "nombre_de_voie": 0,
+            "numero": 2,
             "renove": 0,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
@@ -3889,6 +3970,8 @@
         "items": [
           {
             "blo_url": 35,
+            "cotation": "PD",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Créé par Louis Louvel Repris par Jacques Peuch Daniel Dupuis en 1996 FSGT Ivry.",
             "info": "Validée SNE. n°1",
@@ -4152,12 +4235,15 @@
             "massif": "Le Sanglier",
             "name": "Jaune PD",
             "nombre_de_voie": 42,
+            "numero": 1,
             "renove": 1996,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
           },
           {
             "blo_url": 36,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par Louis Louvel Repris par Jacques Peuch Daniel Dupuis FSGT Ivry en 1997, puis prolongé par Gilles Cottray en 1998.",
             "info": "Validée SNE. n°2",
@@ -4559,12 +4645,15 @@
             "massif": "Le Sanglier",
             "name": "Orange AD",
             "nombre_de_voie": 65,
+            "numero": 2,
             "renove": 2004,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
           },
           {
             "blo_url": 37,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "1997",
             "descriptif": "Créé par Gilles Cottray, Fred Buc, FSGT Ivry. Créé en 1997 , 41 numéros 1997",
             "info": "Validée SNE. n°3",
@@ -4822,12 +4911,15 @@
             "massif": "Le Sanglier",
             "name": "Bleu D",
             "nombre_de_voie": 41,
+            "numero": 3,
             "renove": 1997,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
           },
           {
             "blo_url": 38,
+            "cotation": "TD-",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "Reprise de l’ancêtre circuit bleu D+, en rouge par la section escalade de la fac d’Orsay en 1997. Puis par Gilles Cottray, Fred Buc, FSGT Ivry. 18 numéros + 28 (...)",
             "info": "Validée SNE. n°4",
@@ -5283,12 +5375,15 @@
             "massif": "Le Sanglier",
             "name": "Rouge TD-",
             "nombre_de_voie": 74,
+            "numero": 4,
             "renove": 1997,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
           },
           {
             "blo_url": 39,
+            "cotation": "TD+",
+            "couleur": "rose",
             "cree": "?",
             "descriptif": "Créé par Gilles Cottray, Fred Buc, FSGT Ivry 40 numéros",
             "info": "Validée SNE. n°5",
@@ -5540,12 +5635,15 @@
             "massif": "Le Sanglier",
             "name": "Rose TD+",
             "nombre_de_voie": 40,
+            "numero": 5,
             "renove": 1998,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
           },
           {
             "blo_url": 40,
+            "cotation": "ED",
+            "couleur": "noir",
             "cree": "?",
             "descriptif": "Créé par Gilles Cottray, Fred Buc, FSGT Ivry, 33 numéros + 2 variantes",
             "info": "Validée SNE. n°6",
@@ -5767,6 +5865,7 @@
             "massif": "Le Sanglier",
             "name": "Noir ED",
             "nombre_de_voie": 35,
+            "numero": 6,
             "renove": 1998,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
@@ -5781,6 +5880,8 @@
         "items": [
           {
             "blo_url": 11,
+            "cotation": "D+",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Dit circuit Fantôme. Tracé par les frères Libert Michel et ? Le dessin du fantôme étant de ? Libert.",
             "info": "Validée SNE. n°1",
@@ -5972,12 +6073,15 @@
             "massif": "Le Pendu d’Huison",
             "name": "Bleu D+",
             "nombre_de_voie": 30,
+            "numero": 1,
             "renove": 0,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
           },
           {
             "blo_url": 12,
+            "cotation": "ED",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "Créé par Jérome Weiss.",
             "info": "Validée SNE. n°3",
@@ -6139,6 +6243,7 @@
             "massif": "Le Pendu d’Huison",
             "name": "Blanc ED",
             "nombre_de_voie": 25,
+            "numero": 3,
             "renove": 0,
             "secteur": "La Juine - L’Essonne Ouest",
             "status": ""
@@ -6158,6 +6263,8 @@
         "items": [
           {
             "blo_url": 59,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°1",
@@ -6167,12 +6274,15 @@
             "massif": "Rocher du Duc - côté Nainville",
             "name": "Blanc Enfants E-",
             "nombre_de_voie": 0,
+            "numero": 1,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 62,
+            "cotation": "PD",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°4",
@@ -6454,12 +6564,15 @@
             "massif": "Rocher du Duc - côté Nainville",
             "name": "Jaune PD",
             "nombre_de_voie": 45,
+            "numero": 4,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 63,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°5",
@@ -6777,12 +6890,15 @@
             "massif": "Rocher du Duc - côté Nainville",
             "name": "Orange AD+",
             "nombre_de_voie": 50,
+            "numero": 5,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 66,
+            "cotation": "ED-",
+            "couleur": "noir",
             "cree": "?",
             "descriptif": "Repeint en 2014",
             "info": "Validée SNE. n°8",
@@ -6902,12 +7018,15 @@
             "massif": "Rocher du Duc - côté Nainville",
             "name": "Noir ED-",
             "nombre_de_voie": 18,
+            "numero": 8,
             "renove": 2014,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 60,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°2",
@@ -6917,12 +7036,15 @@
             "massif": "Rocher du Duc - côté Nainville",
             "name": "Blanc Enfants E+",
             "nombre_de_voie": 0,
+            "numero": 2,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 61,
+            "cotation": "F",
+            "couleur": "saumon",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°3",
@@ -6932,12 +7054,15 @@
             "massif": "Rocher du Duc - côté Nainville",
             "name": "Saumon F",
             "nombre_de_voie": 0,
+            "numero": 3,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 64,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°6",
@@ -7297,12 +7422,15 @@
             "massif": "Rocher du Duc - côté Nainville",
             "name": "Bleu D",
             "nombre_de_voie": 58,
+            "numero": 6,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 65,
+            "cotation": "TD+",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "Repeint en 2014",
             "info": "Validée SNE. n°7",
@@ -7590,12 +7718,15 @@
             "massif": "Rocher du Duc - côté Nainville",
             "name": "Rouge TD+",
             "nombre_de_voie": 46,
+            "numero": 7,
             "renove": 2014,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 67,
+            "cotation": "ED+",
+            "couleur": "noir",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°9",
@@ -7919,6 +8050,7 @@
             "massif": "Rocher du Duc - côté Nainville",
             "name": "Noir/Blanc ED+",
             "nombre_de_voie": 52,
+            "numero": 9,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
@@ -7933,6 +8065,8 @@
         "items": [
           {
             "blo_url": 54,
+            "cotation": "PD-",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Créé en 2005 par Emmanuelle et Jean-Yves Derouck. Parallèle au Bleu. 33 numéros. Le départ et les 3 premiers numéros situés dans une cuvette peuvent être humides, en ce cas, commencez au numéro (...)",
             "info": "Validée SNE. n°6 ou H1",
@@ -8148,12 +8282,15 @@
             "massif": "Rocher du Duc - côté Beauvais",
             "name": "Jaune PD-",
             "nombre_de_voie": 33,
+            "numero": null,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 55,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par les Amis des Rochers de Beauvais ce circuit reprend en partie le Safran tracé dans les années 70 par Lucien Deschamps. 100 numéros.",
             "info": "Validée SNE n°5 ou H2",
@@ -8519,12 +8656,15 @@
             "massif": "Rocher du Duc - côté Beauvais",
             "name": "Orange AD",
             "nombre_de_voie": 58,
+            "numero": null,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 56,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Créé par Jean-Yves Derouck en 2005. Parallèle au Jaune.  Dans les années 70, Lucien Deschamp avait tracé dans ce secteur un parcours Emmeraude, repeind ensuite en orange. Les passages les plus (...)",
             "info": "n°3",
@@ -8842,12 +8982,15 @@
             "massif": "Rocher du Duc - côté Beauvais",
             "name": "Bleu D",
             "nombre_de_voie": 50,
+            "numero": 3,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 57,
+            "cotation": "TD-",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°8",
@@ -9201,12 +9344,15 @@
             "massif": "Rocher du Duc - côté Beauvais",
             "name": "Rouge TD-",
             "nombre_de_voie": 56,
+            "numero": 8,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 58,
+            "cotation": "ED-",
+            "couleur": "noir",
             "cree": "?",
             "descriptif": "Réfection en cours, de nombreuses modifications prévues, départ sur l’ex 39 noir.  Les données ici ne sont donc pas exacts, ou ne le seront plus.",
             "info": "Validée SNE",
@@ -9512,6 +9658,7 @@
             "massif": "Rocher du Duc - côté Beauvais",
             "name": "Noir ED-",
             "nombre_de_voie": 49,
+            "numero": null,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
@@ -9526,6 +9673,8 @@
         "items": [
           {
             "blo_url": 47,
+            "cotation": "PD+",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Créé par Jean et Danielle Pillot, repris en 2006 par Jean-Jacques Naëls. Entretenu en 2012 par Jean-Jacques Naëls. Ce circuit était à l’origine parallèle au circuit orange AD sup n°2 de sorte qu’un (...)",
             "info": "Validée SNE.",
@@ -9543,12 +9692,15 @@
             "massif": "Rocher du Duc - côté Loutteville",
             "name": "Jaune PD+",
             "nombre_de_voie": 0,
+            "numero": null,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 48,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par Jean Pillot en 1990. Repris suite à sa disparition partielle en même temps que le Jaune n°1 en 2006 par Jean-Jacques Naëls. Entretenu en 2012 Jean-Jacques (...)",
             "info": "Validée SNE.",
@@ -9566,12 +9718,15 @@
             "massif": "Rocher du Duc - côté Loutteville",
             "name": "Orange AD+",
             "nombre_de_voie": 0,
+            "numero": null,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 49,
+            "cotation": "D+",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Créé par Jean Pillot en 1991. Remanié avec le circuit rouge en 2006 et entretenu en 2014 par Jean-Jacques Naëls.",
             "info": "Validée SNE.",
@@ -9757,12 +9912,15 @@
             "massif": "Rocher du Duc - côté Loutteville",
             "name": "Bleu D+",
             "nombre_de_voie": 28,
+            "numero": null,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 50,
+            "cotation": "TD",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "Repeint en 2014 par Jean-Jacques Naëls.",
             "info": "Validée SNE",
@@ -9900,12 +10058,15 @@
             "massif": "Rocher du Duc - côté Loutteville",
             "name": "Rouge TD",
             "nombre_de_voie": 20,
+            "numero": null,
             "renove": 2014,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 52,
+            "cotation": "PD",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE.",
@@ -10187,12 +10348,15 @@
             "massif": "Rocher du Duc - côté Loutteville",
             "name": "Jaune PD",
             "nombre_de_voie": 44,
+            "numero": null,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 53,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Repeint en 2013 par AFB. Circuit Bleu parallèle au Jaune PD n°5",
             "info": "Validée SNE.",
@@ -10438,12 +10602,15 @@
             "massif": "Rocher du Duc - côté Loutteville",
             "name": "Bleu D",
             "nombre_de_voie": 38,
+            "numero": null,
             "renove": 2014,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 291,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "Créé par Michel Coquard en 1986 instituteur et membre de la FSGT. Entretenu et légèrement modifié par l’USEP en 2008 puis en 2010 par l’ARB.  Il est situé à 120 au nord des autres circuits. Le départ (...)",
             "info": "Validée SNE.",
@@ -10461,12 +10628,15 @@
             "massif": "Rocher du Duc - côté Loutteville",
             "name": "Blanc Enfants E ( 5 à 8 ans)",
             "nombre_de_voie": 0,
+            "numero": null,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 292,
+            "cotation": "F",
+            "couleur": "caramel",
             "cree": "?",
             "descriptif": "Créé par Pascal Etienne. Enfants de 9 à 99 ans",
             "info": "Validée SNE.",
@@ -10490,12 +10660,15 @@
             "massif": "Rocher du Duc - côté Loutteville",
             "name": "Caramel F/E+",
             "nombre_de_voie": 1,
+            "numero": null,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 51,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "Créé par Pascal Etienne. E- , adapté aux enfants dès l’âge maternel",
             "info": "Validée SNE.",
@@ -10519,12 +10692,15 @@
             "massif": "Rocher du Duc - côté Loutteville",
             "name": "Blanc Enfants E-",
             "nombre_de_voie": 1,
+            "numero": null,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 295,
+            "cotation": "ED",
+            "couleur": "noir",
             "cree": "2014",
             "descriptif": "Ce circuit a plus de vingt ans déjà et il toujours tracé et praticable. Aussi comme la numérotation existante est un moyen commode de repérer et retrouver les voies et qu’il est présenté aussi dans (...)",
             "info": "Non Officiel",
@@ -10602,6 +10778,7 @@
             "massif": "Rocher du Duc - côté Loutteville",
             "name": "Noir ED Sup",
             "nombre_de_voie": 10,
+            "numero": null,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
@@ -10616,6 +10793,8 @@
         "items": [
           {
             "blo_url": 68,
+            "cotation": null,
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE.",
@@ -10813,6 +10992,7 @@
             "massif": "Rocher du Duc - Sud-Est",
             "name": "Rouge",
             "nombre_de_voie": 30,
+            "numero": null,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
@@ -10827,6 +11007,8 @@
         "items": [
           {
             "blo_url": 69,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "Créé par Michel Nouailles et Patrick Madore, repris par Pierre Arlie, puis modifié par Pascal Etienne en 2008, 24 numéros. Secteur les cent marches",
             "info": "Validée SNE. n°1",
@@ -10836,12 +11018,15 @@
             "massif": "La Padôle",
             "name": "Blanc Enfants E+",
             "nombre_de_voie": 0,
+            "numero": 1,
             "renove": 2008,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 70,
+            "cotation": "F-",
+            "couleur": "caramel",
             "cree": "?",
             "descriptif": "Créé par Pascal Etienne, 2008, 21 passages. Secteur les cent marches",
             "info": "Validée SNE. n°4",
@@ -10851,12 +11036,15 @@
             "massif": "La Padôle",
             "name": "Caramel F-",
             "nombre_de_voie": 0,
+            "numero": 4,
             "renove": 2008,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 71,
+            "cotation": "PD",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Créé par P Etienne, 2009, 26 passages. Secteur les cent marches",
             "info": "Validée SNE. n°2",
@@ -11024,12 +11212,15 @@
             "massif": "La Padôle",
             "name": "Jaune PD",
             "nombre_de_voie": 26,
+            "numero": 2,
             "renove": 2014,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 72,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par P Etienne, 2009, 24 numéros. Secteur les cent marches",
             "info": "Validée SNE. n°3",
@@ -11185,12 +11376,15 @@
             "massif": "La Padôle",
             "name": "Orange AD+",
             "nombre_de_voie": 24,
+            "numero": 3,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 73,
+            "cotation": "D+",
+            "couleur": "bleu",
             "cree": "1978",
             "descriptif": "Secteur Est, Loco à Jacques. Créé par  Jean-Jacques Naëls, FSGT Bagnolet. En 1989, il remplace l’orange AD+ de 1978, du même traceur. 35 passages en 2004. En parallèle se déroule un « deuxième » (...)",
             "info": "Validée SNE. n°2",
@@ -11412,12 +11606,15 @@
             "massif": "La Padôle",
             "name": "Bleu D+",
             "nombre_de_voie": 35,
+            "numero": 2,
             "renove": 2004,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 74,
+            "cotation": "TD+",
+            "couleur": "rouge",
             "cree": "1977",
             "descriptif": "Secteur Est, Loco à Jacques. Créé par Jean-Jacques Naëls, Philippe Berger, FSGT Bagnolet , créé en 1977 et balisé en bleu avec 18 passages, il a été rallongé par JJN en 1989 pour proposer 29 passages. (...)",
             "info": "Validée SNE. n°1",
@@ -11603,12 +11800,15 @@
             "massif": "La Padôle",
             "name": "Rouge TD+",
             "nombre_de_voie": 29,
+            "numero": 1,
             "renove": 2004,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 75,
+            "cotation": "PD+",
+            "couleur": "jaune",
             "cree": "1982",
             "descriptif": "Créé par Louis Louvel en 1982, ce long circuit style \"Montagne\" n’a jamais été repris depuis sa création, reste quelques flèche éparses réparties sur l’ensemble du massif. Un nouveau circuit jaune a été (...)",
             "info": "Abandonnée. n°3",
@@ -11618,12 +11818,15 @@
             "massif": "La Padôle",
             "name": "Jaune PD+",
             "nombre_de_voie": 0,
+            "numero": 3,
             "renove": 2010,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 76,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "1983",
             "descriptif": "Créé par Louis Louvel, FSGT Ivry en 1983, puis repris par Jean Pilot du CAF en 1990 pour 50 passages numérotés. Ce circuit s’est perdu avec le temps car jamais parcouru. Un tracé plus court a été (...)",
             "info": "Validée SNE. n°4",
@@ -11833,12 +12036,15 @@
             "massif": "La Padôle",
             "name": "Orange AD+",
             "nombre_de_voie": 33,
+            "numero": 4,
             "renove": 2008,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 77,
+            "cotation": "ED+",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "Créé par Pascal Etienne et Jean-Jacques Naëls en 1990, modifié en 2004 par JJN pour ne conserver que 32 passages de 6a à 6c en 2004",
             "info": "Validée SNE. n°7",
@@ -12042,12 +12248,15 @@
             "massif": "La Padôle",
             "name": "Blanc ED+",
             "nombre_de_voie": 32,
+            "numero": 7,
             "renove": 2004,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 78,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "1989",
             "descriptif": "Créé par Pascal Etienne et Jean-Jacques Naëls de la FSGT Ste Geneviève, avec à sa création en 1989 25 passages. Il a été prolongé en 1992 par Jean-Jacques Naëls et propose 30 passages en (...)",
             "info": "Validée SNE. n°6",
@@ -12239,12 +12448,15 @@
             "massif": "La Padôle",
             "name": "Bleu D",
             "nombre_de_voie": 30,
+            "numero": 6,
             "renove": 2004,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 79,
+            "cotation": "TD",
+            "couleur": "rouge",
             "cree": "1989",
             "descriptif": "Créé par Jean-Jacques Naëls FSGT Ste Geneviève en 1989, 30 numéros",
             "info": "Validée SNE. n°5",
@@ -12436,6 +12648,7 @@
             "massif": "La Padôle",
             "name": "Rouge TD",
             "nombre_de_voie": 30,
+            "numero": 5,
             "renove": 2004,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
@@ -12450,6 +12663,8 @@
         "items": [
           {
             "blo_url": 80,
+            "cotation": "F",
+            "couleur": "vert",
             "cree": "1994",
             "descriptif": "Créé par Louis Louvel",
             "info": "Validée SNE.",
@@ -12473,12 +12688,15 @@
             "massif": "Videlles-les-Roches",
             "name": "Rando vertigineuse F",
             "nombre_de_voie": 0,
+            "numero": null,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 81,
+            "cotation": "PD",
+            "couleur": "jaune",
             "cree": "1994",
             "descriptif": "Créé par Jean Pillot, Hugues Canal nrénové en 2014 par Robert Duhamelle , maintenant de type \"Bloc à Bloc\"",
             "info": "Validée SNE.",
@@ -12754,12 +12972,15 @@
             "massif": "Videlles-les-Roches",
             "name": "Jaune PD",
             "nombre_de_voie": 42,
+            "numero": null,
             "renove": "Septembre 2014",
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 82,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "1994",
             "descriptif": "Créé par Jean Pillot, Hugues Canal",
             "info": "Validée SNE.",
@@ -13041,12 +13262,15 @@
             "massif": "Videlles-les-Roches",
             "name": "Orange AD",
             "nombre_de_voie": 43,
+            "numero": null,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 83,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par Antoine Melchior, circuit parfois style montagne.",
             "info": "Validée SNE.",
@@ -13070,12 +13294,15 @@
             "massif": "Videlles-les-Roches",
             "name": "Orange AD+",
             "nombre_de_voie": 0,
+            "numero": null,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 84,
+            "cotation": "D-",
+            "couleur": "rose",
             "cree": "1994",
             "descriptif": "Créé par François Louvel, FSGT Ivry.",
             "info": "Validée SNE.",
@@ -13291,12 +13518,15 @@
             "massif": "Videlles-les-Roches",
             "name": "LOsange et Orose D-",
             "nombre_de_voie": 32,
+            "numero": null,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 85,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "1994",
             "descriptif": "Créé par Jean Pillot et Hugues Canal",
             "info": "Validée SNE.",
@@ -13632,12 +13862,15 @@
             "massif": "Videlles-les-Roches",
             "name": "Bleu D",
             "nombre_de_voie": 52,
+            "numero": null,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 86,
+            "cotation": "D+",
+            "couleur": "bleu",
             "cree": "1994",
             "descriptif": "Créé par François Louvel, FSGT Ivry, serait à reprendre en un seul circuit épuré des expos.",
             "info": "Validée SNE. n° 5 et 6",
@@ -14129,12 +14362,15 @@
             "massif": "Videlles-les-Roches",
             "name": "Bleu D+/TD-",
             "nombre_de_voie": 78,
+            "numero": null,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 87,
+            "cotation": "ED-",
+            "couleur": "rose",
             "cree": "1993",
             "descriptif": "Créé par Gilles Cottray et François Louvel FSGT Ivry",
             "info": "Validée SNE. n°3",
@@ -14578,12 +14814,15 @@
             "massif": "Videlles-les-Roches",
             "name": "Rose ED-",
             "nombre_de_voie": 70,
+            "numero": 3,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 88,
+            "cotation": "ED",
+            "couleur": "noir",
             "cree": "1994",
             "descriptif": "Créé par Gilles Cottray et François Louvel FSGT Ivry",
             "info": "Validée SNE. n°4",
@@ -14913,6 +15152,7 @@
             "massif": "Videlles-les-Roches",
             "name": "Noir ED",
             "nombre_de_voie": 51,
+            "numero": 4,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
@@ -14927,6 +15167,8 @@
         "items": [
           {
             "blo_url": 41,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°10",
@@ -14936,12 +15178,15 @@
             "massif": "Mondeville",
             "name": "Blanc Enfants E",
             "nombre_de_voie": 0,
+            "numero": 10,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 42,
+            "cotation": "PD+",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°2",
@@ -14951,12 +15196,15 @@
             "massif": "Mondeville",
             "name": "Jaune PD+",
             "nombre_de_voie": 0,
+            "numero": 2,
             "renove": 2008,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 43,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°3",
@@ -14966,12 +15214,15 @@
             "massif": "Mondeville",
             "name": "Orange AD",
             "nombre_de_voie": 0,
+            "numero": 3,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 44,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°6",
@@ -14981,12 +15232,15 @@
             "massif": "Mondeville",
             "name": "Bleu D",
             "nombre_de_voie": 0,
+            "numero": 6,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 45,
+            "cotation": "D",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°11",
@@ -14996,12 +15250,15 @@
             "massif": "Mondeville",
             "name": "Rouge D",
             "nombre_de_voie": 0,
+            "numero": 11,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 46,
+            "cotation": "TD",
+            "couleur": "noir",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°4",
@@ -15011,6 +15268,7 @@
             "massif": "Mondeville",
             "name": "Noir TD",
             "nombre_de_voie": 0,
+            "numero": 4,
             "renove": 0,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
@@ -15025,6 +15283,8 @@
         "items": [
           {
             "blo_url": 13,
+            "cotation": "PD+",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Créé en 2013 par Jean-Jacques Naëls et Philippe Leduby FSGT Ste Geneviève.",
             "info": "Validée SNE. n°2",
@@ -15288,12 +15548,15 @@
             "massif": "Rocher de Châtillon",
             "name": "Jaune PD+",
             "nombre_de_voie": 42,
+            "numero": 2,
             "renove": 2013,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 14,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé en 2013 par Frédéric Buc",
             "info": "Validée SNE. n°4",
@@ -15545,12 +15808,15 @@
             "massif": "Rocher de Châtillon",
             "name": "Orange AD",
             "nombre_de_voie": 40,
+            "numero": 4,
             "renove": 2013,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 15,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Créé en 2013 par Jean-Jacques Naëls, Yan Bruneau et Philippe Leduby FSGT Ste Geneviève.",
             "info": "Validée SNE. n°1",
@@ -15772,12 +16038,15 @@
             "massif": "Rocher de Châtillon",
             "name": "Bleu D",
             "nombre_de_voie": 35,
+            "numero": 1,
             "renove": 2013,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 16,
+            "cotation": "TD",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "Créé en 2013 par Gilles Cottray et Frédéric Buc",
             "info": "Validée SNE. n°3",
@@ -16149,12 +16418,15 @@
             "massif": "Rocher de Châtillon",
             "name": "Rouge TD",
             "nombre_de_voie": 60,
+            "numero": 3,
             "renove": 2013,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
           },
           {
             "blo_url": 17,
+            "cotation": "ED",
+            "couleur": "noir",
             "cree": "?",
             "descriptif": "Créé en 2013 par Gilles Cottray et Frédéric Buc",
             "info": "Validée SNE. n°5",
@@ -16550,6 +16822,7 @@
             "massif": "Rocher de Châtillon",
             "name": "Noir ED",
             "nombre_de_voie": 64,
+            "numero": 5,
             "renove": 2013,
             "secteur": "L’Essonne Est - Vallée de l’École",
             "status": ""
@@ -16569,6 +16842,8 @@
         "items": [
           {
             "blo_url": 165,
+            "cotation": "TD-",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Dit bleu \"Philou\"",
             "info": "n°4",
@@ -16916,6 +17191,7 @@
             "massif": "Cuvier Ouest",
             "name": "Bleu TD-",
             "nombre_de_voie": 56,
+            "numero": 4,
             "renove": 0,
             "secteur": "Cuvier-Châtillon",
             "status": "Validé SNE-ONF"
@@ -16930,6 +17206,8 @@
         "items": [
           {
             "blo_url": 166,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "",
             "info": "n°3",
@@ -17241,12 +17519,15 @@
             "massif": "Bas Cuvier",
             "name": "Orange AD+",
             "nombre_de_voie": 50,
+            "numero": 3,
             "renove": 2012,
             "secteur": "Cuvier-Châtillon",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 167,
+            "cotation": "TD-",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "",
             "info": "n°7",
@@ -17570,12 +17851,15 @@
             "massif": "Bas Cuvier",
             "name": "Bleu TD-",
             "nombre_de_voie": 52,
+            "numero": 7,
             "renove": 0,
             "secteur": "Cuvier-Châtillon",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 168,
+            "cotation": "TD+",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "Repeint en 2012.",
             "info": "n°6",
@@ -17839,12 +18123,15 @@
             "massif": "Bas Cuvier",
             "name": "Rouge TD+",
             "nombre_de_voie": 42,
+            "numero": 6,
             "renove": 2012,
             "secteur": "Cuvier-Châtillon",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 169,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Intéressant, peu fréquenté. Départ à 50m de La Prestat.",
             "info": "n°1",
@@ -18024,12 +18311,15 @@
             "massif": "Bas Cuvier",
             "name": "Bleu D inf (nord-est)",
             "nombre_de_voie": 28,
+            "numero": 1,
             "renove": 0,
             "secteur": "Cuvier-Châtillon",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 290,
+            "cotation": "ED-",
+            "couleur": "noir",
             "cree": "?",
             "descriptif": "Créé par Roland Trivellini, complété par Jo Montchaussé et Jacky Godoffe.",
             "info": "n°2",
@@ -18239,12 +18529,15 @@
             "massif": "Bas Cuvier",
             "name": "Noir ED-",
             "nombre_de_voie": 33,
+            "numero": 2,
             "renove": 0,
             "secteur": "Cuvier-Châtillon",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 293,
+            "cotation": "ED+",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "Abandonné",
             "info": "n°5",
@@ -18254,6 +18547,7 @@
             "massif": "Bas Cuvier",
             "name": "Blanc ED+",
             "nombre_de_voie": 0,
+            "numero": 5,
             "renove": 0,
             "secteur": "Cuvier-Châtillon",
             "status": "Validé SNE-ONF"
@@ -18268,6 +18562,8 @@
         "items": [
           {
             "blo_url": 170,
+            "cotation": "AD",
+            "couleur": "rouge",
             "cree": "1947",
             "descriptif": "Créé par Fred Bernick. L’inventeur du circuit : 1er circuit de la forêt 1947. 16 numéros",
             "info": "n°1",
@@ -18381,12 +18677,15 @@
             "massif": "Cuvier Rempart",
             "name": "Rouge AD",
             "nombre_de_voie": 17,
+            "numero": 1,
             "renove": 0,
             "secteur": "Cuvier-Châtillon",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 171,
+            "cotation": "D",
+            "couleur": "jaune",
             "cree": "1948",
             "descriptif": "Créé par Fred Bernick. 13 numéros, le circuit comptant plus de voies.",
             "info": "n°2",
@@ -18476,12 +18775,15 @@
             "massif": "Cuvier Rempart",
             "name": "Jaune D",
             "nombre_de_voie": 13,
+            "numero": 2,
             "renove": 0,
             "secteur": "Cuvier-Châtillon",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 172,
+            "cotation": "ED-",
+            "couleur": "noir",
             "cree": "?",
             "descriptif": "Créé par René Porta RSCMontreuil. 47 numéros. Rénové par Philippe Ledenmat, A. Desquet et leurs amis en 2014",
             "info": "n°3",
@@ -18781,6 +19083,7 @@
             "massif": "Cuvier Rempart",
             "name": "Noir ED-",
             "nombre_de_voie": 48,
+            "numero": 3,
             "renove": 0,
             "secteur": "Cuvier-Châtillon",
             "status": "Validé SNE-ONF"
@@ -18800,6 +19103,8 @@
         "items": [
           {
             "blo_url": 173,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "Créé par Pascal Etienne, Michel Coquard et Louis Louvel FSGT Ivry et Ste Geneviève",
             "info": "n°7",
@@ -18809,12 +19114,15 @@
             "massif": "R. Canon",
             "name": "Blanc Enfants E",
             "nombre_de_voie": 0,
+            "numero": 7,
             "renove": 0,
             "secteur": "Autour de Fontainebleau",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 174,
+            "cotation": "PD",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Créé par G. Weyl très effacé , 40 numéros",
             "info": "n°2",
@@ -19144,12 +19452,15 @@
             "massif": "R. Canon",
             "name": "Jaune PD",
             "nombre_de_voie": 53,
+            "numero": 2,
             "renove": 0,
             "secteur": "Autour de Fontainebleau",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 175,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "1950",
             "descriptif": "Créé en 1950 en rouge, il a été modifié en 1999 par Emmanuel Rémont CIHM. 43 numéros + 3 variantes.",
             "info": "n°1",
@@ -19473,12 +19784,15 @@
             "massif": "R. Canon",
             "name": "Orange AD",
             "nombre_de_voie": 52,
+            "numero": 1,
             "renove": 1999,
             "secteur": "Autour de Fontainebleau",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 176,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "1975",
             "descriptif": "Créé par Philippe Berger J-Jacques Naëls FSGT Bagnolet en 1975 et remanié par les auteurs en 1983. Repeint en 2011.",
             "info": "n°5",
@@ -19748,12 +20062,15 @@
             "massif": "R. Canon",
             "name": "Bleu D",
             "nombre_de_voie": 43,
+            "numero": 5,
             "renove": 2011,
             "secteur": "Autour de Fontainebleau",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 177,
+            "cotation": "D+",
+            "couleur": "bleu",
             "cree": "1963",
             "descriptif": "Créé par le Groupe Alpin Populaire en 1963 puis par Greg Clouzeau. 40 numéros + 6 variantes. Repeint en 2014 par Hervé Béranger et clubs Bleau.",
             "info": "n°4",
@@ -20047,12 +20364,15 @@
             "massif": "R. Canon",
             "name": "Bleu Ciel D+",
             "nombre_de_voie": 47,
+            "numero": 4,
             "renove": 2014,
             "secteur": "Autour de Fontainebleau",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 178,
+            "cotation": "ED-",
+            "couleur": "rouge",
             "cree": "1978",
             "descriptif": "Créé par Philippe Berqer J-Jacques Naëls FSGT Bagnolet en 1978, ce circuit a été plusieurs fois repris, d’abord sous l impulsion d’Antoine Melchior avec Bernard Forest 1983 qui lui a adjoint des voies (...)",
             "info": "n°6",
@@ -20352,12 +20672,15 @@
             "massif": "R. Canon",
             "name": "Rouge ED-",
             "nombre_de_voie": 48,
+            "numero": 6,
             "renove": 2000,
             "secteur": "Autour de Fontainebleau",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 179,
+            "cotation": "ED-",
+            "couleur": "noir",
             "cree": "?",
             "descriptif": "Circuit sauvage invalidé en commission SNE, entretenu par, un inconnu, en 2002 et effacé. Ne doit plus être tracé.",
             "info": "Invalidé",
@@ -20597,12 +20920,15 @@
             "massif": "R. Canon",
             "name": "Noir ED-",
             "nombre_de_voie": 38,
+            "numero": null,
             "renove": 2002,
             "secteur": "Autour de Fontainebleau",
             "status": "Abandonné SNE-ONF"
           },
           {
             "blo_url": 180,
+            "cotation": "ED+",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "Créé par Grég Clouzeau. 24 numéros + 2 variantes. Effacé.",
             "info": "n°8",
@@ -20770,6 +21096,7 @@
             "massif": "R. Canon",
             "name": "Blanc ED+",
             "nombre_de_voie": 26,
+            "numero": 8,
             "renove": 2001,
             "secteur": "Autour de Fontainebleau",
             "status": "Validé SNE-ONF"
@@ -20784,6 +21111,8 @@
         "items": [
           {
             "blo_url": 189,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "Créé par Michel Coquard FSGT d’Ivry. Première partie E- , 2ème partie E/E+",
             "info": "n°3",
@@ -20793,12 +21122,15 @@
             "massif": "Rocher Saint-Germain",
             "name": "Blanc Enfants E",
             "nombre_de_voie": 0,
+            "numero": 3,
             "renove": 0,
             "secteur": "Autour de Fontainebleau",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 190,
+            "cotation": "PD+",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Créé par Gaston Chédor Repris par N. Molle, JM. Garin Jean Pilot CAF. 49 numéros",
             "info": "n°1",
@@ -21140,12 +21472,15 @@
             "massif": "Rocher Saint-Germain",
             "name": "Jaune PD+",
             "nombre_de_voie": 55,
+            "numero": 1,
             "renove": 0,
             "secteur": "Autour de Fontainebleau",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 191,
+            "cotation": "D+",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Créé par Sophie et Alain Clément. 39 numéros + 15 variantes",
             "info": "n°4",
@@ -21475,6 +21810,7 @@
             "massif": "Rocher Saint-Germain",
             "name": "Bleu D+",
             "nombre_de_voie": 53,
+            "numero": 4,
             "renove": 0,
             "secteur": "Autour de Fontainebleau",
             "status": "Validé SNE-ONF"
@@ -21489,6 +21825,8 @@
         "items": [
           {
             "blo_url": 192,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par Robert Christe Pierre Jourdain. 33 numéros. Repeint en 2014 par C. Forestier, P. Richard.",
             "info": "n°1",
@@ -21704,6 +22042,7 @@
             "massif": "Le Calvaire",
             "name": "Orange AD",
             "nombre_de_voie": 34,
+            "numero": 1,
             "renove": 2014,
             "secteur": "Autour de Fontainebleau",
             "status": "Validé SNE-ONF"
@@ -21718,6 +22057,8 @@
         "items": [
           {
             "blo_url": 193,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "Créé par Gilles Cottray. Un superbe circuit enfants !",
             "info": "n°5",
@@ -21727,6 +22068,7 @@
             "massif": "Roche d’Hercule",
             "name": "Blanc Enfants E",
             "nombre_de_voie": 0,
+            "numero": 5,
             "renove": 2011,
             "secteur": "Autour de Fontainebleau",
             "status": "Validé SNE-ONF"
@@ -21741,6 +22083,8 @@
         "items": [
           {
             "blo_url": 194,
+            "cotation": "PD-",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Créé par Fréderic Dulphy Laurent Maine ONF. 28 numéros",
             "info": "n°2",
@@ -21968,12 +22312,15 @@
             "massif": "Mont Ussy",
             "name": "Jaune PD-",
             "nombre_de_voie": 36,
+            "numero": 2,
             "renove": 2011,
             "secteur": "Autour de Fontainebleau",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 195,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par Olivier Leray. 31 numéros",
             "info": "n°3",
@@ -22171,12 +22518,15 @@
             "massif": "Mont Ussy",
             "name": "Orange AD",
             "nombre_de_voie": 31,
+            "numero": 3,
             "renove": 2011,
             "secteur": "Autour de Fontainebleau",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 196,
+            "cotation": "TD+",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "Créé par Gilles Cottray. 33 numéros + 18 variantes \"amanitées\"",
             "info": "n°4",
@@ -22386,6 +22736,7 @@
             "massif": "Mont Ussy",
             "name": "Rouge TD+",
             "nombre_de_voie": 33,
+            "numero": 4,
             "renove": 0,
             "secteur": "Autour de Fontainebleau",
             "status": "Validé SNE-ONF"
@@ -22400,6 +22751,8 @@
         "items": [
           {
             "blo_url": 181,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "Effacé, Abandonné.",
             "info": "n°4",
@@ -22409,12 +22762,15 @@
             "massif": "Mont Aigu",
             "name": "Blanc Enfants E",
             "nombre_de_voie": 0,
+            "numero": 4,
             "renove": 0,
             "secteur": "Autour de Fontainebleau",
             "status": "Abandonné SNE-ONF"
           },
           {
             "blo_url": 182,
+            "cotation": "PD",
+            "couleur": "jaune",
             "cree": "1956",
             "descriptif": "Créé par Pierre Bontemps CAF en 1956. 35 numéros. Repeint en 2012 par Georges Tsao et Léo Drevet.",
             "info": "n°2",
@@ -22636,12 +22992,15 @@
             "massif": "Mont Aigu",
             "name": "Jaune PD",
             "nombre_de_voie": 35,
+            "numero": 2,
             "renove": 2012,
             "secteur": "Autour de Fontainebleau",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 183,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par Jean Pilot, Hugues Canal CAF. 48 numéros + 18 variantes. Repeint en 2009 par Georges Tsao.",
             "info": "n°1",
@@ -23049,12 +23408,15 @@
             "massif": "Mont Aigu",
             "name": "Orange AD",
             "nombre_de_voie": 66,
+            "numero": 1,
             "renove": 2009,
             "secteur": "Autour de Fontainebleau",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 184,
+            "cotation": "D+",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Créé par Pierre Odru, José Gros FSGT Montreuil. 56 numéros. Repeint en 2010 par Georges Tsao.",
             "info": "n°3",
@@ -23420,6 +23782,7 @@
             "massif": "Mont Aigu",
             "name": "Bleu D+",
             "nombre_de_voie": 58,
+            "numero": 3,
             "renove": 2010,
             "secteur": "Autour de Fontainebleau",
             "status": "Validé SNE-ONF"
@@ -23434,6 +23797,8 @@
         "items": [
           {
             "blo_url": 185,
+            "cotation": "PD-",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Toujours entretenu ?...",
             "info": "n°1",
@@ -23571,6 +23936,7 @@
             "massif": "Gorges du Houx",
             "name": "Jaune PD-",
             "nombre_de_voie": 21,
+            "numero": 1,
             "renove": 0,
             "secteur": "Autour de Fontainebleau",
             "status": "Validé SNE-ONF"
@@ -23585,6 +23951,8 @@
         "items": [
           {
             "blo_url": 186,
+            "cotation": "AD-",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par Robert Christe CAF. 20 numéros + 5 variantes. Peu entretenu mais fréquentable.",
             "info": "n°1",
@@ -23758,12 +24126,15 @@
             "massif": "Rocher d’Avon",
             "name": "Orange AD-",
             "nombre_de_voie": 27,
+            "numero": 1,
             "renove": 0,
             "secteur": "Autour de Fontainebleau",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 187,
+            "cotation": "AD",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Abandonné !..",
             "info": "n°3",
@@ -23841,6 +24212,7 @@
             "massif": "Rocher d’Avon",
             "name": "Bleu AD",
             "nombre_de_voie": 11,
+            "numero": 3,
             "renove": 0,
             "secteur": "Autour de Fontainebleau",
             "status": "Abandonné SNE-ONF"
@@ -23855,6 +24227,8 @@
         "items": [
           {
             "blo_url": 188,
+            "cotation": "PD",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "abandonné.",
             "info": "n°2",
@@ -23938,6 +24312,7 @@
             "massif": "Rocher d’Avon Ouest",
             "name": "Jaune PD",
             "nombre_de_voie": 12,
+            "numero": 2,
             "renove": 0,
             "secteur": "Autour de Fontainebleau",
             "status": "Abandonné SNE-ONF"
@@ -23957,6 +24332,8 @@
         "items": [
           {
             "blo_url": 197,
+            "cotation": null,
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par Victor PINTO.",
             "info": "n°1",
@@ -23974,12 +24351,15 @@
             "massif": "Butte aux Dames",
             "name": "Orange",
             "nombre_de_voie": 0,
+            "numero": 1,
             "renove": 0,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 198,
+            "cotation": null,
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Créé par Victor PINTO.",
             "info": "n°2",
@@ -23997,12 +24377,15 @@
             "massif": "Butte aux Dames",
             "name": "Bleu",
             "nombre_de_voie": 0,
+            "numero": 2,
             "renove": 0,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 199,
+            "cotation": null,
+            "couleur": "noir",
             "cree": "?",
             "descriptif": "Créé par Victor PINTO.",
             "info": "n°3",
@@ -24020,6 +24403,7 @@
             "massif": "Butte aux Dames",
             "name": "Noir",
             "nombre_de_voie": 0,
+            "numero": 3,
             "renove": 0,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
@@ -24034,6 +24418,8 @@
         "items": [
           {
             "blo_url": 200,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "Créé par Alain Vinouse. De la buvette, prendre la route sur 100 m, le circuit est juste à droite de la route.",
             "info": "n°4",
@@ -24051,12 +24437,15 @@
             "massif": "Apremont Bizons",
             "name": "Blanc Enfants E",
             "nombre_de_voie": 0,
+            "numero": 4,
             "renove": 0,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 201,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "1992",
             "descriptif": "Créé par Jean Pilot, Hugues Canal CAF en 1992. 48 numéros + 16 variantes. Repeint en 2012 par Georges Tsao.",
             "info": "n°3",
@@ -24458,12 +24847,15 @@
             "massif": "Apremont Bizons",
             "name": "Orange AD+",
             "nombre_de_voie": 64,
+            "numero": 3,
             "renove": 2012,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 202,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Créé par Pierre Manuel. Repris par Jean Pilot CAF. 36 numéros + 7 variantes. Repeint en 2012 par J. Guinot.",
             "info": "n°2",
@@ -24751,12 +25143,15 @@
             "massif": "Apremont Bizons",
             "name": "Bleu D",
             "nombre_de_voie": 45,
+            "numero": 2,
             "renove": 2012,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 203,
+            "cotation": "TD",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "Créé par Daniel Lecointe. Repris par Hugues Canal. 42 numéros + 18 variantes",
             "info": "n°1",
@@ -25140,6 +25535,7 @@
             "massif": "Apremont Bizons",
             "name": "Rouge TD",
             "nombre_de_voie": 61,
+            "numero": 1,
             "renove": 0,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
@@ -25154,6 +25550,8 @@
         "items": [
           {
             "blo_url": 204,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par Pierre Mercier, entretenu par l ASCEA. 46 numéros + 8 variantes. Repeint en 2011 par J. Guinot.",
             "info": "n°3",
@@ -25489,12 +25887,15 @@
             "massif": "Apremont Varrapeurs",
             "name": "Orange AD",
             "nombre_de_voie": 54,
+            "numero": 3,
             "renove": 2011,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 205,
+            "cotation": "TD+",
+            "couleur": "rouge",
             "cree": "1978",
             "descriptif": "Créé par Philippe Berger, J-Jacques Naëls FSGT Bagnolet en 1978, il a été bonifié de quelques passages en 1988. 40 numéros. Les dernier passage sont maintenant dans une zone interdite par (...)",
             "info": "n°10",
@@ -25746,6 +26147,7 @@
             "massif": "Apremont Varrapeurs",
             "name": "Rouge TD+",
             "nombre_de_voie": 40,
+            "numero": 10,
             "renove": 2003,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
@@ -25760,6 +26162,8 @@
         "items": [
           {
             "blo_url": 206,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "Créé par Michel Coquard FSGT Ivry",
             "info": "n°14",
@@ -25769,12 +26173,15 @@
             "massif": "Les Gorges d’Apremont",
             "name": "Blanc Enfants E+",
             "nombre_de_voie": 0,
+            "numero": 14,
             "renove": 0,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 207,
+            "cotation": "PD+",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Créé par Françoise et Jo Montchaussé, J-C Beauregard. 42 numéros",
             "info": "n°9",
@@ -26044,12 +26451,15 @@
             "massif": "Les Gorges d’Apremont",
             "name": "Jaune PD+",
             "nombre_de_voie": 43,
+            "numero": 9,
             "renove": 0,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 208,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Appelé « Outremer ». Créé par Monique Fédoroff, Pierre Nédelec. 44 numéros + 6 variantes. Repeint en 2011 par J. Guinot.",
             "info": "n°5",
@@ -26361,12 +26771,15 @@
             "massif": "Les Gorges d’Apremont",
             "name": "Bleu Outremer D",
             "nombre_de_voie": 50,
+            "numero": 5,
             "renove": 2011,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 209,
+            "cotation": "TD-",
+            "couleur": "saumon",
             "cree": "?",
             "descriptif": "Créé par Jacques Reppelin, Pierre Porta. 74 numéros + 2 variantes. Repeint en 2011 par Georges Tsao et Léo Drevet.",
             "info": "n°6",
@@ -26834,12 +27247,15 @@
             "massif": "Les Gorges d’Apremont",
             "name": "Saumon TD-",
             "nombre_de_voie": 76,
+            "numero": 6,
             "renove": 2011,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 210,
+            "cotation": "ED-",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Créé par Robert Mizrahi c’est un circuit \"fissures\" de tous nivaux, homogénéité de style mais pas de difficulté. Original et intéressant, mais peu suivi. 35 numéros + 8 variantes. Retracé par Victor (...)",
             "info": "n°11",
@@ -27121,12 +27537,15 @@
             "massif": "Les Gorges d’Apremont",
             "name": "Bleu Ciel, \"fissure\" ED-",
             "nombre_de_voie": 45,
+            "numero": 11,
             "renove": 2014,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 211,
+            "cotation": "AD",
+            "couleur": "vert",
             "cree": "1952",
             "descriptif": "Créé par Pierre Mercier CAF en 1952. Très patiné. 42 numéros + 5 variantes. Sera repeint par V. Pinto, P. Richard ?",
             "info": "n°2",
@@ -27420,12 +27839,15 @@
             "massif": "Les Gorges d’Apremont",
             "name": "Vert AD",
             "nombre_de_voie": 47,
+            "numero": 2,
             "renove": 2014,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 212,
+            "cotation": "ED-",
+            "couleur": "rouge",
             "cree": "1979",
             "descriptif": "Créé par Jacques Reppelin. Repris par Lucien Guilloux, Jo Montchaussé en 1979. 46 numéros + 4 variantes",
             "info": "n°12",
@@ -27743,12 +28165,15 @@
             "massif": "Les Gorges d’Apremont",
             "name": "Rouge ED-",
             "nombre_de_voie": 51,
+            "numero": 12,
             "renove": 0,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 294,
+            "cotation": "ED+",
+            "couleur": "noir",
             "cree": "1979",
             "descriptif": "Abandonné",
             "info": "n°7",
@@ -27758,12 +28183,15 @@
             "massif": "Les Gorges d’Apremont",
             "name": "Noir ED+",
             "nombre_de_voie": 0,
+            "numero": 7,
             "renove": 0,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 213,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par Pierre Mercier CAF. 28 numéros + 2 variantes. Repeint en 2014 par Georges Tsao et Victor Pinto.",
             "info": "n°1",
@@ -27955,12 +28383,15 @@
             "massif": "Les Gorges d’Apremont",
             "name": "Orange AD+",
             "nombre_de_voie": 30,
+            "numero": 1,
             "renove": 2014,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 214,
+            "cotation": "D+",
+            "couleur": "bleu",
             "cree": "1981",
             "descriptif": "Créé par JP Lebaleur, C Pétrof, P Cairola en 1981. Dit Bleu « baltique ». 39 numéros + 5 variantes. Repeint en 2011 par Georges Tsao.",
             "info": "n°13",
@@ -28236,12 +28667,15 @@
             "massif": "Les Gorges d’Apremont",
             "name": "Bleu Baltique D+",
             "nombre_de_voie": 44,
+            "numero": 13,
             "renove": 2011,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 215,
+            "cotation": "TD-",
+            "couleur": "fraise",
             "cree": "1957",
             "descriptif": "Dit « fraise écrasée » Apremont - Solitude. Créé en 1957, CAF. 32 numéros + 8 variantes. Repeint en 2010 par Georges Tsao.",
             "info": "n°4",
@@ -28505,6 +28939,7 @@
             "massif": "Les Gorges d’Apremont",
             "name": "Fraise écrasée TD-",
             "nombre_de_voie": 42,
+            "numero": 4,
             "renove": 2010,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
@@ -28519,6 +28954,8 @@
         "items": [
           {
             "blo_url": 216,
+            "cotation": "PD",
+            "couleur": "jaune",
             "cree": "1970",
             "descriptif": "Créé en 1970 par André Schlub. Repris par Jean-Claude Beauregard. 27 numéros + 8 variantes",
             "info": "n°1",
@@ -28746,12 +29183,15 @@
             "massif": "Désert d’Apremont",
             "name": "Jaune PD",
             "nombre_de_voie": 36,
+            "numero": 1,
             "renove": 0,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 218,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "1969",
             "descriptif": "Créé en 1969 par André Schlub. 23 numéros",
             "info": "n°3",
@@ -28901,12 +29341,15 @@
             "massif": "Désert d’Apremont",
             "name": "Orange AD",
             "nombre_de_voie": 23,
+            "numero": 3,
             "renove": 0,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 219,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "1969",
             "descriptif": "Créé en 1969 par André Schlub. Repris par Jean Pilot CAF. 35 numéros + 6 variantes. Repeint en 2011 par Georges Tsao.",
             "info": "n°4",
@@ -29164,12 +29607,15 @@
             "massif": "Désert d’Apremont",
             "name": "Orange AD",
             "nombre_de_voie": 41,
+            "numero": 4,
             "renove": "Novembre 2013",
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 221,
+            "cotation": "D+",
+            "couleur": "bleu",
             "cree": "1989",
             "descriptif": "Créé en 1989 par Jean Pilot CAF. 28 numéros + 6 variantes. Repeint en 2012 par J. Guinot.",
             "info": "n°6",
@@ -29385,6 +29831,7 @@
             "massif": "Désert d’Apremont",
             "name": "Bleu D+",
             "nombre_de_voie": 34,
+            "numero": 6,
             "renove": "Novembre 2011",
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
@@ -29399,6 +29846,8 @@
         "items": [
           {
             "blo_url": 222,
+            "cotation": "PD",
+            "couleur": "jaune",
             "cree": "1999",
             "descriptif": "Créé en 1999 par J-Yves Derouck. 50 numéros + 2 variantes 1999 (en remplacement du Jaune PD n°2. Louis Louvel FSGT Ivry. Abandonné). Repeint en 2013 par Jean-Yves (...)",
             "info": "n°4",
@@ -29722,12 +30171,15 @@
             "massif": "Envers d’Apremont",
             "name": "Jaune PD",
             "nombre_de_voie": 52,
+            "numero": 4,
             "renove": 2013,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 223,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé en 1973 par Louis Louvel FSGT Ivry. Repris par J.Y Derouck en 1999. 45 numéros + 3 variantes. Repeint en 2014 par Jean-Yves Derouck.",
             "info": "n°3",
@@ -30027,12 +30479,15 @@
             "massif": "Envers d’Apremont",
             "name": "Orange AD",
             "nombre_de_voie": 48,
+            "numero": 3,
             "renove": 2014,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 224,
+            "cotation": "TD",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "Créé par Jacques Batkin FSGT RSCMontreuil en.... Ce magnifique circuit à été repris par Jean-Yves Derouck. 50 numéros + 20 variantes. Repeint en 2013 par Jean-Yves (...)",
             "info": "n°1",
@@ -30464,6 +30919,7 @@
             "massif": "Envers d’Apremont",
             "name": "Rouge TD",
             "nombre_de_voie": 70,
+            "numero": 1,
             "renove": 2013,
             "secteur": "Les Âpres Monts",
             "status": "Validé SNE-ONF"
@@ -30483,6 +30939,8 @@
         "items": [
           {
             "blo_url": 225,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par Jean Pillot. Ce circuit ne passe pas dans la zone proche du parking, trop difficile, mais parcourt le reste du massif. Long et parfois fastidieux, avec beaucoup de dalles pour (...)",
             "info": "n°4",
@@ -30830,12 +31288,15 @@
             "massif": "L’Isatis",
             "name": "Orange AD",
             "nombre_de_voie": 56,
+            "numero": 4,
             "renove": 2013,
             "secteur": "Les Franchards",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 226,
+            "cotation": "D-",
+            "couleur": "bleu",
             "cree": "1955",
             "descriptif": "Un circuit historique de Bleau, créé en 1955 par Pierre Nédellec et Lucien Hincelin, légèrement modifié en 1999 par Jean-Jacques Naëls. Un monument. 50 numéros et 7 variantes. Repeint en 2014 par J. (...)",
             "info": "n°2",
@@ -31195,12 +31656,15 @@
             "massif": "L’Isatis",
             "name": "Bleu D-",
             "nombre_de_voie": 58,
+            "numero": 2,
             "renove": 2014,
             "secteur": "Les Franchards",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 227,
+            "cotation": "TD-",
+            "couleur": "rouge",
             "cree": "1970",
             "descriptif": "Créé par Jacques Batkin, revu par Antoine Melchior du GUMS et dernièrement par Jean-Jacques Naëls. Avec 62 passages depuis 2001, il parcourt l’ensemble du massif et propose des voies parfois fines en (...)",
             "info": "n°1",
@@ -31590,12 +32054,15 @@
             "massif": "L’Isatis",
             "name": "Rouge TD-",
             "nombre_de_voie": 63,
+            "numero": 1,
             "renove": 2014,
             "secteur": "Les Franchards",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 228,
+            "cotation": "ED",
+            "couleur": "blanc",
             "cree": "1970",
             "descriptif": "Créé à l’origine par Jacques Reppelin, a été modifié comme le rouge par les mêmes personnes. Un véritable répertoire de ce qui fut la haute difficulté dans les années soixante-dix. Fait pour le (...)",
             "info": "n°3",
@@ -31919,6 +32386,7 @@
             "massif": "L’Isatis",
             "name": "Blanc ED",
             "nombre_de_voie": 52,
+            "numero": 3,
             "renove": 2014,
             "secteur": "Les Franchards",
             "status": "Validé SNE-ONF"
@@ -31933,6 +32401,8 @@
         "items": [
           {
             "blo_url": 232,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Créé par Jean Pilot CAF. 40 numéros 15 variantes. Repeint en 2010 par Georges Tsao.",
             "info": "n°4",
@@ -32202,12 +32672,15 @@
             "massif": "Sablons",
             "name": "Bleu D",
             "nombre_de_voie": 43,
+            "numero": 4,
             "renove": 2010,
             "secteur": "Les Franchards",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 233,
+            "cotation": "TD",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "Créé par G Clément tracé en brun, puis en rouge ce long circuit assez fastidieux a été remanié par Jean-Jacques Naëls en 1998. 22 numéros.",
             "info": "n°1",
@@ -32375,6 +32848,7 @@
             "massif": "Sablons",
             "name": "Rouge TD",
             "nombre_de_voie": 26,
+            "numero": 1,
             "renove": 2004,
             "secteur": "Les Franchards",
             "status": "Validé SNE-ONF"
@@ -32389,6 +32863,8 @@
         "items": [
           {
             "blo_url": 234,
+            "cotation": "PD",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "",
             "info": "n°2",
@@ -32526,12 +33002,15 @@
             "massif": "Hautes Plaines",
             "name": "Jaune PD",
             "nombre_de_voie": 21,
+            "numero": 2,
             "renove": 0,
             "secteur": "Les Franchards",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 235,
+            "cotation": "PD+",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "",
             "info": "n°3",
@@ -32729,12 +33208,15 @@
             "massif": "Hautes Plaines",
             "name": "Jaune PD+",
             "nombre_de_voie": 31,
+            "numero": 3,
             "renove": 0,
             "secteur": "Les Franchards",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 236,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Repeint en 2012 par Georges Tsao.",
             "info": "n°5",
@@ -33058,6 +33540,7 @@
             "massif": "Hautes Plaines",
             "name": "Orange AD+",
             "nombre_de_voie": 52,
+            "numero": 5,
             "renove": 2012,
             "secteur": "Les Franchards",
             "status": "Validé SNE-ONF"
@@ -33072,6 +33555,8 @@
         "items": [
           {
             "blo_url": 237,
+            "cotation": "F+",
+            "couleur": null,
             "cree": "1960",
             "descriptif": "Créé en 1960 par un groupe du CAF animé par Jacques Meynieu, la \"cerise du débutant\", maintenant tracé en orange, propose un parcours facile (quelques passages dépassent le 3) d’environ 6 km. Les 75 (...)",
             "info": "n°3",
@@ -33089,12 +33574,15 @@
             "massif": "Franchard Cuisinière",
             "name": "Parcours Montagne F+",
             "nombre_de_voie": 1,
+            "numero": 3,
             "renove": "1er mai",
             "secteur": "Les Franchards",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 238,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "1956",
             "descriptif": "Créé par Pierre Bontemps tracé en bleu en 1956. 18 numéros",
             "info": "n°1",
@@ -33214,12 +33702,15 @@
             "massif": "Franchard Cuisinière",
             "name": "Orange AD+",
             "nombre_de_voie": 18,
+            "numero": 1,
             "renove": 0,
             "secteur": "Les Franchards",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 239,
+            "cotation": "TD-",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "Créé par Pierre Nédélec, André Schwartz, Monique Fédoroff. 30 numéros. Repeint en 2010 par Xavier Crété.",
             "info": "n°4",
@@ -33417,12 +33908,15 @@
             "massif": "Franchard Cuisinière",
             "name": "Rouge TD-",
             "nombre_de_voie": 31,
+            "numero": 4,
             "renove": 2010,
             "secteur": "Les Franchards",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 240,
+            "cotation": "ED",
+            "couleur": "blanc",
             "cree": "1967",
             "descriptif": "Créé par Patrick Cordier en 1967 et repris par Pierre Bouilloux en 1975 qui lui a adjoint quelques nouveautés, ce circuit n a pas changé depuis. 48 numéros + 13 variantes. Repeint en 2009 par Xavier (...)",
             "info": "n°5",
@@ -33800,6 +34294,7 @@
             "massif": "Franchard Cuisinière",
             "name": "Blanc ED",
             "nombre_de_voie": 61,
+            "numero": 5,
             "renove": 2009,
             "secteur": "Les Franchards",
             "status": "Validé SNE-ONF"
@@ -33814,6 +34309,8 @@
         "items": [
           {
             "blo_url": 241,
+            "cotation": "ED",
+            "couleur": "noir",
             "cree": "?",
             "descriptif": "Créé par Emmanuel Ratouis. 33 numéros + 3 variantes. Effacé.",
             "info": "n°6",
@@ -34047,6 +34544,7 @@
             "massif": "Franchard Crête Sud",
             "name": "Noir ED",
             "nombre_de_voie": 37,
+            "numero": 6,
             "renove": 0,
             "secteur": "Les Franchards",
             "status": "Validé SNE-ONF"
@@ -34061,6 +34559,8 @@
         "items": [
           {
             "blo_url": 242,
+            "cotation": "D+",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "Créé par Pascal Meyer FSGT RSCMontreuil. Ce circuit retord et magnifique est à l’abandon. 26 numéros",
             "info": "n°2",
@@ -34234,6 +34734,7 @@
             "massif": "Franchard Meyer",
             "name": "Rouge D+",
             "nombre_de_voie": 27,
+            "numero": 2,
             "renove": 0,
             "secteur": "Les Franchards",
             "status": "Validé SNE-ONF"
@@ -34248,6 +34749,8 @@
         "items": [
           {
             "blo_url": 229,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "",
             "info": "n°1",
@@ -34257,6 +34760,7 @@
             "massif": "Franchard Ermitage",
             "name": "Blanc Enfants E-",
             "nombre_de_voie": 0,
+            "numero": 1,
             "renove": 0,
             "secteur": "Les Franchards",
             "status": "Validé SNE-ONF"
@@ -34271,6 +34775,8 @@
         "items": [
           {
             "blo_url": 230,
+            "cotation": null,
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "",
             "info": "n°3",
@@ -34462,6 +34968,7 @@
             "massif": "Franchard Raymond",
             "name": "Rouge",
             "nombre_de_voie": 30,
+            "numero": 3,
             "renove": 0,
             "secteur": "Les Franchards",
             "status": "Validé SNE-ONF"
@@ -34476,6 +34983,8 @@
         "items": [
           {
             "blo_url": 231,
+            "cotation": null,
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "",
             "info": "n°1",
@@ -34485,6 +34994,7 @@
             "massif": "Gorges du Houx Petit Paradis",
             "name": "Jaune",
             "nombre_de_voie": 0,
+            "numero": 1,
             "renove": 0,
             "secteur": "Les Franchards",
             "status": "Validé SNE-ONF"
@@ -34504,6 +35014,8 @@
         "items": [
           {
             "blo_url": 97,
+            "cotation": "PD",
+            "couleur": "jaune",
             "cree": "1980",
             "descriptif": "Créé à l’origine en 1980 par Daniel Dupuis, FSGT Ivry, repris par Oleg Sokolsy (cosiroc) en 1981, en 1997, puis en 2012, pour 1 circuit en 2 parties (jaune/orange), qui a été scindé en avril 2015, (...)",
             "info": "n°1",
@@ -34815,12 +35327,15 @@
             "massif": "Corne-Biche, R. de Milly",
             "name": "Jaune PD",
             "nombre_de_voie": 48,
+            "numero": 1,
             "renove": "Novembre 2011",
             "secteur": "Trois Pignons Est",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 297,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "2015",
             "descriptif": "\"Créé\" en avril 2015, suite à l’acceptation de la commission SNE de novembre 2014 de considérer l’ancien Jaune/Orange comme étant bien 2 circuits différents.",
             "info": "n°2",
@@ -34844,12 +35359,15 @@
             "massif": "Corne-Biche, R. de Milly",
             "name": "Orange AD",
             "nombre_de_voie": 0,
+            "numero": 2,
             "renove": 0,
             "secteur": "Trois Pignons Est",
             "status": ""
           },
           {
             "blo_url": 98,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par André Schwartz , 48 passages. Repeint en 2011.",
             "info": "n°3",
@@ -35209,12 +35727,15 @@
             "massif": "Corne-Biche, R. de Milly",
             "name": "Orange AD",
             "nombre_de_voie": 56,
+            "numero": 3,
             "renove": 2011,
             "secteur": "Trois Pignons Est",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 99,
+            "cotation": "D+",
+            "couleur": "bleu",
             "cree": "1967",
             "descriptif": "Créé en 1967 par M et V Fédoroff, Alain Laloup, Pierre Nédélec, André Schwartz. 38 passages. Réfection par JJ Naels en 2014.",
             "info": "n°1",
@@ -35520,6 +36041,7 @@
             "massif": "Corne-Biche, R. de Milly",
             "name": "Bleu D+",
             "nombre_de_voie": 47,
+            "numero": 1,
             "renove": 0,
             "secteur": "Trois Pignons Est",
             "status": "Validé SNE-ONF"
@@ -35534,6 +36056,8 @@
         "items": [
           {
             "blo_url": 100,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "1957",
             "descriptif": "Ancien rouge créé en 1957 par Yvon Le Tiec. Repris par Jean Pilot CAF qui lui a adjoint quelques lignes d’un vieux circuit vert abandonné",
             "info": "n°1",
@@ -35845,12 +36369,15 @@
             "massif": "Drei Zinnen",
             "name": "Bleu D",
             "nombre_de_voie": 50,
+            "numero": 1,
             "renove": 0,
             "secteur": "Trois Pignons Est",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 296,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "2015",
             "descriptif": "En principe cette piste sera créée au cours des prochaines semaines suite à l’accord accordé par l’ONF.",
             "info": "validé",
@@ -36078,6 +36605,7 @@
             "massif": "Drei Zinnen",
             "name": "Orange AD sup",
             "nombre_de_voie": 36,
+            "numero": null,
             "renove": 0,
             "secteur": "Trois Pignons Est",
             "status": ""
@@ -36092,6 +36620,8 @@
         "items": [
           {
             "blo_url": 101,
+            "cotation": "PD+",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Créé par A. et M. Bertigny. Repris par Oleg Sokolsky. Repeint en 2012 par Léo Drevet.",
             "info": "n°1",
@@ -36457,12 +36987,15 @@
             "massif": "Rocher de la Reine",
             "name": "Jaune PD+",
             "nombre_de_voie": 59,
+            "numero": 1,
             "renove": 2012,
             "secteur": "Trois Pignons Est",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 102,
+            "cotation": "D+",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Créé par J-Pierre Bertigny. Repris par Oleg Sokolsky",
             "info": "n°2",
@@ -36882,6 +37415,7 @@
             "massif": "Rocher de la Reine",
             "name": "Bleu D+",
             "nombre_de_voie": 68,
+            "numero": 2,
             "renove": 0,
             "secteur": "Trois Pignons Est",
             "status": "Validé SNE-ONF"
@@ -36896,6 +37430,8 @@
         "items": [
           {
             "blo_url": 103,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par André Schwartz",
             "info": "n°3",
@@ -37195,12 +37731,15 @@
             "massif": "Bois Rond",
             "name": "Orange AD",
             "nombre_de_voie": 48,
+            "numero": 3,
             "renove": 0,
             "secteur": "Trois Pignons Est",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 104,
+            "cotation": "D+",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Créé par André Schwartz",
             "info": "n°4",
@@ -37422,12 +37961,15 @@
             "massif": "Bois Rond",
             "name": "Bleu D+",
             "nombre_de_voie": 35,
+            "numero": 4,
             "renove": 0,
             "secteur": "Trois Pignons Est",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 105,
+            "cotation": "ED-",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "Créé par Alain Vinouze et Arnaud Ansard. Repris par Grégoire Clouzeau en intégrant quelques nouveautés",
             "info": "n°5",
@@ -37775,6 +38317,7 @@
             "massif": "Bois Rond",
             "name": "Rouge ED-",
             "nombre_de_voie": 56,
+            "numero": 5,
             "renove": 0,
             "secteur": "Trois Pignons Est",
             "status": "Validé SNE-ONF"
@@ -37789,6 +38332,8 @@
         "items": [
           {
             "blo_url": 89,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "1995",
             "descriptif": "Créé par A.Vinouse, F.Florès-Garcia, F.Beaujard en 1995 pour des enfants âgés de 6 à 9 ans.",
             "info": "n°7",
@@ -37798,12 +38343,15 @@
             "massif": "Canche aux Merciers",
             "name": "Blanc Enfants E-",
             "nombre_de_voie": 0,
+            "numero": 7,
             "renove": 0,
             "secteur": "Trois Pignons Est",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 90,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "1982",
             "descriptif": "Créé par Michel Coquard en 1982 pour des enfants âgés de 8 à 12 ans.",
             "info": "n°5",
@@ -37813,12 +38361,15 @@
             "massif": "Canche aux Merciers",
             "name": "Blanc Enfants E",
             "nombre_de_voie": 0,
+            "numero": 5,
             "renove": 0,
             "secteur": "Trois Pignons Est",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 91,
+            "cotation": "PD-",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Créé par la FSGT Villeneuve-le-Roi",
             "info": "n°3",
@@ -38118,12 +38669,15 @@
             "massif": "Canche aux Merciers",
             "name": "Jaune PD-",
             "nombre_de_voie": 48,
+            "numero": 3,
             "renove": 0,
             "secteur": "Trois Pignons Est",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 92,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "1966",
             "descriptif": "Créé en 1966 par M et V Fédoroff, A. Laloup, P. Nédelec, A. Schwartz. Repeint en 2011",
             "info": "n°2",
@@ -38393,12 +38947,15 @@
             "massif": "Canche aux Merciers",
             "name": "Orange AD",
             "nombre_de_voie": 43,
+            "numero": 2,
             "renove": 2011,
             "secteur": "Trois Pignons Est",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 93,
+            "cotation": "D+",
+            "couleur": "bleu",
             "cree": "1966",
             "descriptif": "Créé en 1966 par M et V Fédoroff, A. Laloup, P. Nédelec, A. Schwartz. Repeint en 2011",
             "info": "n°1",
@@ -38764,12 +39321,15 @@
             "massif": "Canche aux Merciers",
             "name": "Bleu D+",
             "nombre_de_voie": 59,
+            "numero": 1,
             "renove": 2011,
             "secteur": "Trois Pignons Est",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 94,
+            "cotation": "TD+",
+            "couleur": "rouge",
             "cree": "1991",
             "descriptif": "Créé par Pascal Etienne en 1991 avec quelques voies classiques ainsi que plusieurs « bis » du bleu, et de nouveaux passages. Ce circuit a été revu par l’auteur en (...)",
             "info": "n°6",
@@ -39027,6 +39587,7 @@
             "massif": "Canche aux Merciers",
             "name": "Rouge TD+",
             "nombre_de_voie": 41,
+            "numero": 6,
             "renove": "Novembre 2005",
             "secteur": "Trois Pignons Est",
             "status": "Validé SNE-ONF"
@@ -39041,6 +39602,8 @@
         "items": [
           {
             "blo_url": 95,
+            "cotation": "D+",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Créé par Gilles et Noël Rotillon (ASL Ste Geneviève) et Michel Nicolaus (U.S.Ivry). Repris par Jean-Jacques en 1997 en le modifiant notablement. Repeint en 2006.Très beau circuit parfois un peu expo, (...)",
             "info": "n°2",
@@ -39256,6 +39819,7 @@
             "massif": "Rocher du Télégraphe",
             "name": "Bleu D+",
             "nombre_de_voie": 34,
+            "numero": 2,
             "renove": 2006,
             "secteur": "Trois Pignons Est",
             "status": "Validé SNE-ONF"
@@ -39270,6 +39834,8 @@
         "items": [
           {
             "blo_url": 96,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "1997",
             "descriptif": "Créé par Michel Coquard en 1997 pour des enfants âgés de 4 à 7 ans. Un joli bloc dans le vallon au-dessus pour les grands. Repeint en 2011 par M. Laroche.",
             "info": "n°1",
@@ -39279,6 +39845,7 @@
             "massif": "La Feuillardière",
             "name": "Blanc Enfants E-",
             "nombre_de_voie": 0,
+            "numero": 1,
             "renove": 2011,
             "secteur": "Trois Pignons Est",
             "status": "Validé SNE-ONF"
@@ -39298,6 +39865,8 @@
         "items": [
           {
             "blo_url": 106,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "",
             "info": "n°1",
@@ -39507,12 +40076,15 @@
             "massif": "Gorge aux Châts",
             "name": "Bleu D",
             "nombre_de_voie": 33,
+            "numero": 1,
             "renove": 0,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 107,
+            "cotation": "TD",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "",
             "info": "n°2",
@@ -39752,6 +40324,7 @@
             "massif": "Gorge aux Châts",
             "name": "Rouge TD",
             "nombre_de_voie": 38,
+            "numero": 2,
             "renove": 0,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
@@ -39766,6 +40339,8 @@
         "items": [
           {
             "blo_url": 123,
+            "cotation": "PD",
+            "couleur": "jaune",
             "cree": "2014",
             "descriptif": "Créé par Oleg Sokolsky en 2014 (41 passages numérotés, \"le 26.2 ayant été ajouté alors que la numérotation était peinte (ce qui fonctionne bien lorsque l’on ajoute une sortie sur une autoroute devrait (...)",
             "info": "n°2",
@@ -40017,12 +40592,15 @@
             "massif": "Justice de Chambergeot",
             "name": "Jaune PD",
             "nombre_de_voie": 39,
+            "numero": 2,
             "renove": 2014,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 124,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "1977",
             "descriptif": "Créé en 1977 en jaune par Oleg Sokolsky, remaniés en 2014 avec la création du jaune. 35 n°",
             "info": "n°1",
@@ -40106,6 +40684,7 @@
             "massif": "Justice de Chambergeot",
             "name": "Orange AD+",
             "nombre_de_voie": 11,
+            "numero": 1,
             "renove": 2014,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
@@ -40120,6 +40699,8 @@
         "items": [
           {
             "blo_url": 125,
+            "cotation": "PD",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Créé par Jacques Superbie. Repris par Oleg Sokolsky. Repeint en 2012. 48 passages",
             "info": "n°1",
@@ -40755,12 +41336,15 @@
             "massif": "Pignon Poteau",
             "name": "Jaune PD",
             "nombre_de_voie": 104,
+            "numero": 1,
             "renove": 2012,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 126,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Repeint en 2012 par Oleg Sokolsky.",
             "info": "n°2",
@@ -40770,6 +41354,7 @@
             "massif": "Pignon Poteau",
             "name": "Orange AD+",
             "nombre_de_voie": 0,
+            "numero": 2,
             "renove": 2012,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
@@ -40784,6 +41369,8 @@
         "items": [
           {
             "blo_url": 127,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par Michel Gaillard Christian Gaillard FSGT. Repris par Oleg Sokolsky CAF. Repeint en 2012 par Christian Charreau. 40 passages",
             "info": "n°2",
@@ -41095,6 +41682,7 @@
             "massif": "Gros Sablons Nord",
             "name": "Orange AD",
             "nombre_de_voie": 50,
+            "numero": 2,
             "renove": 2012,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
@@ -41109,6 +41697,8 @@
         "items": [
           {
             "blo_url": 128,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "1958",
             "descriptif": "Créé en 1958 par Pierre Nedelec. Repris par Oleg Sokolsky CAF. 73 passages + 26 variantes.",
             "info": "n°1",
@@ -41714,12 +42304,15 @@
             "massif": "Gros Sablons",
             "name": "Orange AD+",
             "nombre_de_voie": 99,
+            "numero": 1,
             "renove": 0,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 129,
+            "cotation": "D+",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Créé par Pascal Etienne FSGT Ste Geneviève. Repris par Bernard Forest et Michel Guillière. Repris par Jean-Jacques Naëls en 2014.",
             "info": "n°4",
@@ -41989,12 +42582,15 @@
             "massif": "Gros Sablons",
             "name": "Bleu D+",
             "nombre_de_voie": 43,
+            "numero": 4,
             "renove": 2014,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 130,
+            "cotation": "ED-",
+            "couleur": "noir",
             "cree": "1972",
             "descriptif": "Créé par Jacques Olivet en 1972 35 numéros + 4 variantes",
             "info": "n°3",
@@ -42240,6 +42836,7 @@
             "massif": "Gros Sablons",
             "name": "Noir ED-",
             "nombre_de_voie": 39,
+            "numero": 3,
             "renove": 0,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
@@ -42254,6 +42851,8 @@
         "items": [
           {
             "blo_url": 131,
+            "cotation": "PD+",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Créé par Louis Louvel FSGT Ivry. 54 passages",
             "info": "n°4",
@@ -42589,12 +43188,15 @@
             "massif": "Pignon  95.2",
             "name": "Jaune PD+",
             "nombre_de_voie": 54,
+            "numero": 4,
             "renove": 0,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 132,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "1978",
             "descriptif": "Créé par Laurent Maine Frédéric Dulphy GMM, créé en 1978. Repeint en 2014 par  Laurent Maine. 40 passages",
             "info": "n°5",
@@ -42876,12 +43478,15 @@
             "massif": "Pignon  95.2",
             "name": "Orange AD+",
             "nombre_de_voie": 45,
+            "numero": 5,
             "renove": 2014,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 133,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "1955",
             "descriptif": "Créé en 1955 par Pierre Nédelec. 38 passages + 6 variantes",
             "info": "n°1",
@@ -43157,12 +43762,15 @@
             "massif": "Pignon  95.2",
             "name": "Bleu D",
             "nombre_de_voie": 44,
+            "numero": 1,
             "renove": 0,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 134,
+            "cotation": "TD-",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "Créé par M et V Fédoroff, Alain Laloup, Pierre Nédelec, André Schwartz Initialement bleu, il a été complété par Oleg Sokolsky CAF. 47 numéros + 12 variantes",
             "info": "n°2",
@@ -43528,12 +44136,15 @@
             "massif": "Pignon  95.2",
             "name": "Rouge TD-",
             "nombre_de_voie": 59,
+            "numero": 2,
             "renove": 0,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 135,
+            "cotation": "ED-",
+            "couleur": "blanc",
             "cree": "1970",
             "descriptif": "Créé par Patrick Cordier dans les années 70, et modifié par Jo Mauchaussé. 37 passages + 12 variantes",
             "info": "n°3",
@@ -43839,6 +44450,7 @@
             "massif": "Pignon  95.2",
             "name": "Blanc ED-",
             "nombre_de_voie": 49,
+            "numero": 3,
             "renove": 0,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
@@ -43853,6 +44465,8 @@
         "items": [
           {
             "blo_url": 136,
+            "cotation": "PD",
+            "couleur": "jaune",
             "cree": "1970",
             "descriptif": "Créé en 1970 par Jacques Drouard FSGT Levalois il a été prolongé par JC Beauregard et M Théate AFF. 42 passages",
             "info": "n°1",
@@ -44140,12 +44754,15 @@
             "massif": "Rocher des Potêts",
             "name": "Jaune PD",
             "nombre_de_voie": 46,
+            "numero": 1,
             "renove": 0,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 137,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par Jacques Drouart FSGT Levalois. Repris par JC Beauregard et Michel Théate. 37 numéros + 2 variantes",
             "info": "n°2",
@@ -44391,6 +45008,7 @@
             "massif": "Rocher des Potêts",
             "name": "Orange AD",
             "nombre_de_voie": 39,
+            "numero": 2,
             "renove": 0,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
@@ -44405,6 +45023,8 @@
         "items": [
           {
             "blo_url": 138,
+            "cotation": "D+",
+            "couleur": "bleu",
             "cree": "1974",
             "descriptif": "Créé en 1974 par R Dadone, R Mizrahi, J et Y Tugaye, L Muguet, Y Rabeyroux. 35 passages",
             "info": "n°1",
@@ -44698,6 +45318,7 @@
             "massif": "Jean des Vignes",
             "name": "Bleu D+",
             "nombre_de_voie": 47,
+            "numero": 1,
             "renove": 0,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
@@ -44712,6 +45333,8 @@
         "items": [
           {
             "blo_url": 108,
+            "cotation": "PD+",
+            "couleur": "jaune",
             "cree": "2004",
             "descriptif": "Créé par Jean Pilot, Hugues Canal CAF 2004. repeints en 2014 par Antoine Melchior",
             "info": "n°1",
@@ -45011,12 +45634,15 @@
             "massif": "La Ségognole",
             "name": "Jaune PD+",
             "nombre_de_voie": 48,
+            "numero": 1,
             "renove": 2014,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 109,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "2004",
             "descriptif": "Créé par Jean Pilot, Hugues Canal CAF 2004. repeints en 2014 par Antoine Melchior et Christian",
             "info": "n°2",
@@ -45316,12 +45942,15 @@
             "massif": "La Ségognole",
             "name": "Orange AD+",
             "nombre_de_voie": 48,
+            "numero": 2,
             "renove": 2014,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 110,
+            "cotation": "TD",
+            "couleur": "rouge",
             "cree": "2004",
             "descriptif": "Créé par Jean Pilot, Hugues Canal CAF 2004. repeints en 2014 par Christian Charreau.",
             "info": "n°3",
@@ -45567,6 +46196,7 @@
             "massif": "La Ségognole",
             "name": "Rouge TD",
             "nombre_de_voie": 39,
+            "numero": 3,
             "renove": 2014,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
@@ -45581,6 +46211,8 @@
         "items": [
           {
             "blo_url": 111,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "Créé par Alain Vinouse, F Florès-Garcia. Ce circuit serait à retracer plus proprement",
             "info": "n°4",
@@ -45604,12 +46236,15 @@
             "massif": "Roche aux Sabots",
             "name": "Blanc Enfants E",
             "nombre_de_voie": 0,
+            "numero": 4,
             "renove": 0,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 112,
+            "cotation": "PD+",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Créé par G, F et N Rotillon FSGT Ste Geneviève. Repris par O.Sokolsky CAF et F.Monchaussé. 31 n° + 6 variantes",
             "info": "n°2",
@@ -45855,12 +46490,15 @@
             "massif": "Roche aux Sabots",
             "name": "Jaune PD+",
             "nombre_de_voie": 37,
+            "numero": 2,
             "renove": 0,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 113,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Créé par Gilles et Noël Rotillon, Daniel Badaroux FSGT Ste Geneviève. Repris par B Forest qui la rallongé de 10 numéros. 46 passages",
             "info": "n°1",
@@ -46190,12 +46828,15 @@
             "massif": "Roche aux Sabots",
             "name": "Bleu D",
             "nombre_de_voie": 51,
+            "numero": 1,
             "renove": 0,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 114,
+            "cotation": "TD+",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "Créé par G et N Rotillon, Daniel Badaroux, JL Rapp, R Claveau FSGT Ste Geneviève. 34 n°.",
             "info": "n°3",
@@ -46507,12 +47148,15 @@
             "massif": "Roche aux Sabots",
             "name": "Rouge TD+",
             "nombre_de_voie": 48,
+            "numero": 3,
             "renove": 0,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 115,
+            "cotation": "ED",
+            "couleur": "amanite",
             "cree": "?",
             "descriptif": "Dit « l’ amanite ». Créé par Jo Monchaussé. Non retracé. Invalidé.",
             "info": "",
@@ -46536,6 +47180,7 @@
             "massif": "Roche aux Sabots",
             "name": "Amanite ED",
             "nombre_de_voie": 0,
+            "numero": null,
             "renove": 0,
             "secteur": "Trois Pignons Ouest",
             "status": "Non tracé"
@@ -46550,6 +47195,8 @@
         "items": [
           {
             "blo_url": 116,
+            "cotation": "PD+",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Créé par Oleg Sokolsky CAF. 50 n°. Repeint en 2011 par Oleg Sokolosky.",
             "info": "n°5",
@@ -46987,12 +47634,15 @@
             "massif": "Pignon 91.1",
             "name": "Jaune PD+",
             "nombre_de_voie": 71,
+            "numero": 5,
             "renove": 2011,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 117,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par Robert Claveau, Hervé Shaki, Gilles et Noël Rotillon FSGT Ste Geneviève. 37 n° + 14 variantes. Le départ de l’orange n°4 est proche de la Roche aux Sabots et se déroule sur le flanc Nord-Ouest du (...)",
             "info": "n°4",
@@ -47310,12 +47960,15 @@
             "massif": "Pignon 91.1",
             "name": "Orange AD",
             "nombre_de_voie": 51,
+            "numero": 4,
             "renove": 2014,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 118,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "1966",
             "descriptif": "Créé en 1966 par Monique Fédoroff Vladimir Fédoroff, Alain Laloup, Pierre Nédelec, André Schwartz. 47 n° + 3 variantes. Repeint en 2011 par Oleg Sokolosky.",
             "info": "n°2",
@@ -47627,12 +48280,15 @@
             "massif": "Pignon 91.1",
             "name": "Orange AD+",
             "nombre_de_voie": 50,
+            "numero": 2,
             "renove": 2011,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 119,
+            "cotation": "TD-",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "Créé par Monique Fédoroff Vladimir Fédoroff, Alain Laloup, Pierre Nédelec, André Schwartz. 34 n° + 24 variantes",
             "info": "n°1",
@@ -47992,6 +48648,7 @@
             "massif": "Pignon 91.1",
             "name": "Rouge TD-",
             "nombre_de_voie": 58,
+            "numero": 1,
             "renove": 0,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
@@ -48006,6 +48663,8 @@
         "items": [
           {
             "blo_url": 120,
+            "cotation": "AD-",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Créé par Michel Nicolaus, Daniel Dupuis FSGT Ivry. Entretenu par 4+ et Ivry en 1991. 59 n°. Repeint en 2014 par Bernard Commiot, Charles Deléglise, Jean-Yves Derouck, P. (...)",
             "info": "n°3",
@@ -48371,12 +49030,15 @@
             "massif": "Cul de Chien",
             "name": "Jaune AD-",
             "nombre_de_voie": 58,
+            "numero": 3,
             "renove": 2014,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 121,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "1987",
             "descriptif": "Créé par Antoine Melchior GUMS. Reprise de deux circuits créés pour l’ un par P Granier et P Nédelec en jaune et l’ autre créé par Bernard Canceill en vert en 1987. 50 n° + 11 (...)",
             "info": "n°1",
@@ -48754,12 +49416,15 @@
             "massif": "Cul de Chien",
             "name": "Bleu D",
             "nombre_de_voie": 60,
+            "numero": 1,
             "renove": 0,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 122,
+            "cotation": "TD+",
+            "couleur": "rouge",
             "cree": "1988",
             "descriptif": "Créé par JP Knock, P et M Doyen, D Courteix FSGT Choisy le roi en 1988. 30 n° + 3 variantes. Simplifié et prolongé par J.Y. Derouck & friends durant Juillet (...)",
             "info": "n°4",
@@ -48939,6 +49604,7 @@
             "massif": "Cul de Chien",
             "name": "Rouge TD+",
             "nombre_de_voie": 27,
+            "numero": 4,
             "renove": 0,
             "secteur": "Trois Pignons Ouest",
             "status": "Validé SNE-ONF"
@@ -48958,6 +49624,8 @@
         "items": [
           {
             "blo_url": 139,
+            "cotation": "AD-",
+            "couleur": "orange",
             "cree": "1980",
             "descriptif": "Créé par Françoise Queyrut, Jean-Jacques Naëls FSGT Bagnolet en 1980. Initialement jaune, ce circuit a été révisé en 2003. Repeint en 2013 par Jean-Jacques (...)",
             "info": "n°2",
@@ -49161,12 +49829,15 @@
             "massif": "Rocher Guichot",
             "name": "Orange AD-",
             "nombre_de_voie": 31,
+            "numero": 2,
             "renove": 2013,
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 140,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "1995",
             "descriptif": "Créé par J-Jacques Naëls en 1995, lors de la réfection du circuit rouge et du circuit jaune qui proposait alors de nombreux « bis ». Repeint en 2013 par Jean-Jacques (...)",
             "info": "n°3",
@@ -49304,12 +49975,15 @@
             "massif": "Rocher Guichot",
             "name": "Bleu D",
             "nombre_de_voie": 20,
+            "numero": 3,
             "renove": 2013,
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 141,
+            "cotation": "TD+",
+            "couleur": "rouge",
             "cree": "1979",
             "descriptif": "Créé par Philippe Berqer, J-Jacques Naëls FSGT Bagnolet en 1979. Ce circuit proposait à l origine 34 passages c est vu modifié pour permettre son homogénéisation et la création du Bleu - n°3. Repeints (...)",
             "info": "n°1",
@@ -49447,6 +50121,7 @@
             "massif": "Rocher Guichot",
             "name": "Rouge TD+",
             "nombre_de_voie": 21,
+            "numero": 1,
             "renove": 2013,
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
@@ -49461,6 +50136,8 @@
         "items": [
           {
             "blo_url": 150,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par Jacques Meynieux CAF. Repris par Antoine Melchior GUMS. 54 passages",
             "info": "n°1",
@@ -49922,6 +50599,7 @@
             "massif": "R. de la Cathédrale",
             "name": "Orange AD+",
             "nombre_de_voie": 75,
+            "numero": 1,
             "renove": 0,
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
@@ -49936,6 +50614,8 @@
         "items": [
           {
             "blo_url": 151,
+            "cotation": "PD+",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Repeint en 2011.",
             "info": "n°4",
@@ -50163,12 +50843,15 @@
             "massif": "Vallée de la Mée -  Potala",
             "name": "Jaune PD+",
             "nombre_de_voie": 36,
+            "numero": 4,
             "renove": 2011,
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 152,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par J Meynieux, G Téoulé CAF. Repris par Antoine Melchior GUMS. 40 passages + 7 variantes",
             "info": "n°2",
@@ -50474,12 +51157,15 @@
             "massif": "Vallée de la Mée -  Potala",
             "name": "Orange AD+",
             "nombre_de_voie": 48,
+            "numero": 2,
             "renove": 0,
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 153,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "1965",
             "descriptif": "Créé en 1965 par M et V Fédoroff, Alain Laloup, Pierre Nédelec, André Schwartz. 38 passages + 12 variantes",
             "info": "n°1",
@@ -50797,12 +51483,15 @@
             "massif": "Vallée de la Mée -  Potala",
             "name": "Bleu D",
             "nombre_de_voie": 51,
+            "numero": 1,
             "renove": 0,
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 154,
+            "cotation": "TD+",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "Créé par Jean Pierre Nogier, Régis Guillaume. Repris par Antoine Melchior GUMS qui lui a adjoint de nombreuses nouveautés. 48 passages + 10 variantes",
             "info": "n°3",
@@ -51156,6 +51845,7 @@
             "massif": "Vallée de la Mée -  Potala",
             "name": "Rouge TD+",
             "nombre_de_voie": 57,
+            "numero": 3,
             "renove": 0,
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
@@ -51170,6 +51860,8 @@
         "items": [
           {
             "blo_url": 155,
+            "cotation": "D-",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par Jacques Meynieux Repris par Antoine Melchior GUMS. 70 numéros",
             "info": "n°1",
@@ -51601,6 +52293,7 @@
             "massif": "Grande Montagne",
             "name": "Orange D-",
             "nombre_de_voie": 70,
+            "numero": 1,
             "renove": 0,
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
@@ -51615,6 +52308,8 @@
         "items": [
           {
             "blo_url": 156,
+            "cotation": "PD",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Créé par Jean Touchanteau GUMS. Repris par Pierre Bontemps CAF. 14 numéros",
             "info": "n°3",
@@ -51710,12 +52405,15 @@
             "massif": "Rocher Fin",
             "name": "Jaune PD",
             "nombre_de_voie": 14,
+            "numero": 3,
             "renove": 0,
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 157,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par D. Cazenave à partir d’un vieux circuit mauve. Repris par Jean Pilot et Hugues Canal. 40 numéros",
             "info": "n°4",
@@ -51991,12 +52689,15 @@
             "massif": "Rocher Fin",
             "name": "Orange AD",
             "nombre_de_voie": 44,
+            "numero": 4,
             "renove": 0,
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 158,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Créé par Pierre Nédelec Initialement Jaune orangé. 53 numéros + 12 variantes",
             "info": "n°1",
@@ -52404,12 +53105,15 @@
             "massif": "Rocher Fin",
             "name": "Bleu D",
             "nombre_de_voie": 66,
+            "numero": 1,
             "renove": 0,
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 159,
+            "cotation": "TD+",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "Rouge TD+ n°2. U.S.Ivry, J-Marie Ribault, Serge Martinet, Michel Nicolaus, Claude Vilotte. 34 numéros + 2 variantes",
             "info": "n°2",
@@ -52637,6 +53341,7 @@
             "massif": "Rocher Fin",
             "name": "Rouge TD+",
             "nombre_de_voie": 36,
+            "numero": 2,
             "renove": 0,
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
@@ -52651,6 +53356,8 @@
         "items": [
           {
             "blo_url": 160,
+            "cotation": "PD+",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Créé par Louis Louvel Rénové par le GM-TCF. 24 passages. Repeint en 2013 par Christian Charreau.",
             "info": "n°2",
@@ -52818,12 +53525,15 @@
             "massif": "Rocher du Général",
             "name": "Jaune PD+",
             "nombre_de_voie": 26,
+            "numero": 2,
             "renove": 2013,
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 161,
+            "cotation": "TD-",
+            "couleur": "bleu",
             "cree": "1964",
             "descriptif": "Ex pist’H. Créé par le Cercle Olympique Parisien du 19° (COP 19°, gpe FSGT émanant de l’ESC 11° devenu par la suite groupe montagne de l’adret). Yvonne et Gérard Ardiot, Gérard Galleyran, Louis (...)",
             "info": "n°1",
@@ -53159,6 +53869,7 @@
             "massif": "Rocher du Général",
             "name": "Bleu TD-",
             "nombre_de_voie": 54,
+            "numero": 1,
             "renove": 2013,
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
@@ -53173,6 +53884,8 @@
         "items": [
           {
             "blo_url": 162,
+            "cotation": "PD",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Créé par Gilles, Françoise, et Noël Rotillon FSGT Ste Geneviève. Repris par J.C Beauregard en 1996. 39 numéros.",
             "info": "n°1",
@@ -53418,12 +54131,15 @@
             "massif": "Diplodocus",
             "name": "Jaune PD",
             "nombre_de_voie": 39,
+            "numero": 1,
             "renove": 1996,
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 163,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par Sylvie Richard, A. Bau, F. Dulphy, L. Maine, S. Zaegel. 23 numéros + 1 variante",
             "info": "n°2",
@@ -53597,12 +54313,15 @@
             "massif": "Diplodocus",
             "name": "Orange AD",
             "nombre_de_voie": 27,
+            "numero": 2,
             "renove": 0,
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 164,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Créé par Jean-Marc Blanche, Jacques et J-Pierre Prades FSGT Saut les Chartreux. Le circuit original de couleur vert a été grandement modifié par Sylvie Richard, A. Bau, F. Dulphy, L. Maine, S. Zaegel. (...)",
             "info": "n°3",
@@ -53770,6 +54489,7 @@
             "massif": "Diplodocus",
             "name": "Bleu D",
             "nombre_de_voie": 26,
+            "numero": 3,
             "renove": 0,
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
@@ -53784,6 +54504,8 @@
         "items": [
           {
             "blo_url": 145,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "Créé par Alain Vinouse, F Florès-Garcia. Dans une Propriété Privée, il ne doit plus être tracé.",
             "info": ".",
@@ -53793,12 +54515,15 @@
             "massif": "J.A. Martin",
             "name": "Blanc Enfants E",
             "nombre_de_voie": 0,
+            "numero": null,
             "renove": 0,
             "secteur": "Trois Pignons Sud",
             "status": "Dans Propriété Privé Interdit"
           },
           {
             "blo_url": 146,
+            "cotation": "PD-",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Créé par Michel Nicolaus FSGT d lvry 54 passages.Repeint en 2014 par Daniel Vaubaillon et JJ Naels.",
             "info": "n°1",
@@ -54164,12 +54889,15 @@
             "massif": "J.A. Martin",
             "name": "Jaune PD-",
             "nombre_de_voie": 59,
+            "numero": 1,
             "renove": 2014,
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 147,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par Jacques Meynieu Repris par Antoine Melchior GUMS. 61 n° avec 23 variantes. Réfection en 2010 par Antoine Melchior. Réfection en juin 2015 par Georges Tsao 61 n°, 15 (...)",
             "info": "n°3",
@@ -54649,12 +55377,15 @@
             "massif": "J.A. Martin",
             "name": "Orange AD+",
             "nombre_de_voie": 78,
+            "numero": 3,
             "renove": "1er juillet",
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 142,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Regroupant deux anciens circuits, l’un blanc, l’autre orange/noir (AD n°4) ce circuit a été tracé par Antoine Melchior GUMS, il comportait 86 voies numérotées. Il a été repris au printemps 2014 par (...)",
             "info": "n°2",
@@ -55182,12 +55913,15 @@
             "massif": "J.A. Martin",
             "name": "Orange AD+",
             "nombre_de_voie": 86,
+            "numero": 2,
             "renove": "Novembre 2009",
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 144,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "Créé par Michel Coquard FSGT Ivry",
             "info": "n°8",
@@ -55197,12 +55931,15 @@
             "massif": "J.A. Martin",
             "name": "Blanc Enfants E",
             "nombre_de_voie": 0,
+            "numero": 8,
             "renove": 0,
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 148,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "1955",
             "descriptif": "Créé par M Deschenaux créé en 1955, il fut prolongé par Pierre Nédelec et repris et modifié par Jean-Jacques Naëls, tout en conservant son esprit initial.  Repeint en 2014 par Jean-Jacques (...)",
             "info": "n°5",
@@ -55574,12 +56311,15 @@
             "massif": "J.A. Martin",
             "name": "Bleu Ciel D",
             "nombre_de_voie": 60,
+            "numero": 5,
             "renove": 2014,
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 143,
+            "cotation": "D+",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Créé en 1968 par Gilles Rotillon Noël Rotillon, P. Lhéry, Y. Méry, FSGT Ste Geneviève. Il fut amendé par Jean-Jacques Naëls, en l’allégeant de nombreux passages fastidieux et en lui apportant des (...)",
             "info": "n°6",
@@ -55795,12 +56535,15 @@
             "massif": "J.A. Martin",
             "name": "Bleu D+",
             "nombre_de_voie": 34,
+            "numero": 6,
             "renove": 2014,
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 149,
+            "cotation": "TD+",
+            "couleur": "rouge",
             "cree": "1973",
             "descriptif": "Créé en 1973 par Gilles et Noël Rotillon, Jean-Luc Rapp, Robert Claveau, FSGT Ste Geneviève avec l’aide parfois du burin. Repris, revu et complété par Jean-Jacques Naëls et Yann Bruneau en 2004. (...)",
             "info": "n°7",
@@ -56112,6 +56855,7 @@
             "massif": "J.A. Martin",
             "name": "Rouge TD+",
             "nombre_de_voie": 50,
+            "numero": 7,
             "renove": 2011,
             "secteur": "Trois Pignons Sud",
             "status": "Validé SNE-ONF"
@@ -56131,6 +56875,8 @@
         "items": [
           {
             "blo_url": 246,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Beau ! mais effacé, à l’abandon.",
             "info": "n°1",
@@ -56316,6 +57062,7 @@
             "massif": "R. des Demoiselles",
             "name": "Orange AD",
             "nombre_de_voie": 29,
+            "numero": 1,
             "renove": 0,
             "secteur": "Sud Fontainebleau",
             "status": "Validé SNE-ONF"
@@ -56330,6 +57077,8 @@
         "items": [
           {
             "blo_url": 243,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par Stéphane Hamon. D’abord peint en bleu, étant plûtot AD, il a été repeint en Orange en juin 2015 par le club FFME Vertical plus et le Caf de Fontainebleau Il se déroule le long du sentier bleu (...)",
             "info": "n°4",
@@ -56353,12 +57102,15 @@
             "massif": "Restant du Long Rocher",
             "name": "Orange AD",
             "nombre_de_voie": 0,
+            "numero": 4,
             "renove": "10 juin",
             "secteur": "Sud Fontainebleau",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 244,
+            "cotation": "TD",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "Créé par Alain Filippi. Repris par Bernard Forest. Entretenu par Michel Grillére. 34 numéros.. Repeint en 2010 par Michel Grillère.",
             "info": "n°3",
@@ -56580,6 +57332,7 @@
             "massif": "Restant du Long Rocher",
             "name": "Rouge TD",
             "nombre_de_voie": 35,
+            "numero": 3,
             "renove": 2010,
             "secteur": "Sud Fontainebleau",
             "status": "Validé SNE-ONF"
@@ -56594,6 +57347,8 @@
         "items": [
           {
             "blo_url": 245,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par ? Entretenu en 1997 par 4+, Vitry. En 2012 par Georges Tsao.",
             "info": "n°1",
@@ -56839,6 +57594,7 @@
             "massif": "Restant du Long Rocher Nord",
             "name": "Orange AD",
             "nombre_de_voie": 39,
+            "numero": 1,
             "renove": 2012,
             "secteur": "Sud Fontainebleau",
             "status": "Validé SNE-ONF"
@@ -56858,6 +57614,8 @@
         "items": [
           {
             "blo_url": 247,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "Créé par Guy Méry",
             "info": "Validé SNE. n°1",
@@ -56867,6 +57625,7 @@
             "massif": "Maisse Tramerolle",
             "name": "Blanc Enfants E",
             "nombre_de_voie": 0,
+            "numero": 1,
             "renove": 0,
             "secteur": "L’Essonne Sud",
             "status": ""
@@ -56881,6 +57640,8 @@
         "items": [
           {
             "blo_url": 248,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par François Louvel en 1998, avant l’interdiction du massif, convention possible ? 26 numéros et 15 bis. Parfois très hauts ! même si à plus de 2m ce n’est jamais plus que du 2-, ce circuit ne (...)",
             "info": "Propriété Privé d’Arvalis. Escalade Interdite.",
@@ -56890,12 +57651,15 @@
             "massif": "Boigneville",
             "name": "Orange AD+",
             "nombre_de_voie": 0,
+            "numero": null,
             "renove": 0,
             "secteur": "L’Essonne Sud",
             "status": "Dans Propriété Privé Interdit"
           },
           {
             "blo_url": 249,
+            "cotation": "D+",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Créé par Jean-Jacques Naëls avec l’aide de François Louvel à la brosse en 1999, avant l’interdiction du massif, convention possible ? 28 numéros et des bis non fléchés. Haut mais jamais (...)",
             "info": "Propriété Privé d’Arvalis. Escalade Interdite.",
@@ -56905,6 +57669,7 @@
             "massif": "Boigneville",
             "name": "Bleu D+/TD-",
             "nombre_de_voie": 0,
+            "numero": null,
             "renove": 0,
             "secteur": "L’Essonne Sud",
             "status": "Dans Propriété Privé Interdit"
@@ -56924,6 +57689,8 @@
         "items": [
           {
             "blo_url": 250,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "Circuit concentré, intéressant pour les tout petits au début, mais laisse à désirer ensuite. Il y aurait bien mieux à faire sur le massif ! (un circuit idéal, testé 2 étés avec différents groupes est à (...)",
             "info": "Validée SNE. n°6",
@@ -56933,12 +57700,15 @@
             "massif": "Buthiers - Massif de L’I",
             "name": "Blanc Enfants E",
             "nombre_de_voie": 0,
+            "numero": 6,
             "renove": 0,
             "secteur": "Malesherbes",
             "status": ""
           },
           {
             "blo_url": 251,
+            "cotation": "F",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Les premier numéros sont gênés par la présence des barrières des bungalows.",
             "info": "Validée SNE. n°5",
@@ -57088,12 +57858,15 @@
             "massif": "Buthiers - Massif de L’I",
             "name": "Jaune F",
             "nombre_de_voie": 23,
+            "numero": 5,
             "renove": 0,
             "secteur": "Malesherbes",
             "status": ""
           },
           {
             "blo_url": 252,
+            "cotation": "AD-",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°1",
@@ -57369,12 +58142,15 @@
             "massif": "Buthiers - Massif de L’I",
             "name": "Orange AD-",
             "nombre_de_voie": 44,
+            "numero": 1,
             "renove": 0,
             "secteur": "Malesherbes",
             "status": ""
           },
           {
             "blo_url": 253,
+            "cotation": "D+",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°2",
@@ -57644,12 +58420,15 @@
             "massif": "Buthiers - Massif de L’I",
             "name": "Bleu D+",
             "nombre_de_voie": 43,
+            "numero": 2,
             "renove": 0,
             "secteur": "Malesherbes",
             "status": ""
           },
           {
             "blo_url": 254,
+            "cotation": "TD+",
+            "couleur": "rose",
             "cree": "?",
             "descriptif": "Effacé",
             "info": "Validée SNE. n°4",
@@ -57871,12 +58650,15 @@
             "massif": "Buthiers - Massif de L’I",
             "name": "Rose TD+",
             "nombre_de_voie": 35,
+            "numero": 4,
             "renove": 0,
             "secteur": "Malesherbes",
             "status": ""
           },
           {
             "blo_url": 255,
+            "cotation": "ED",
+            "couleur": "noir",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°3",
@@ -58128,6 +58910,7 @@
             "massif": "Buthiers - Massif de L’I",
             "name": "Noir ED",
             "nombre_de_voie": 40,
+            "numero": 3,
             "renove": 0,
             "secteur": "Malesherbes",
             "status": ""
@@ -58142,6 +58925,8 @@
         "items": [
           {
             "blo_url": 256,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°5",
@@ -58151,12 +58936,15 @@
             "massif": "Buthiers Canard",
             "name": "Blanc Enfants E",
             "nombre_de_voie": 0,
+            "numero": 5,
             "renove": 0,
             "secteur": "Malesherbes",
             "status": ""
           },
           {
             "blo_url": 257,
+            "cotation": "PD-",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Effacé",
             "info": "Validée SNE. n°2",
@@ -58342,12 +59130,15 @@
             "massif": "Buthiers Canard",
             "name": "Jaune PD-",
             "nombre_de_voie": 29,
+            "numero": 2,
             "renove": 0,
             "secteur": "Malesherbes",
             "status": ""
           },
           {
             "blo_url": 258,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°3",
@@ -58563,12 +59354,15 @@
             "massif": "Buthiers Canard",
             "name": "Orange AD",
             "nombre_de_voie": 34,
+            "numero": 3,
             "renove": 0,
             "secteur": "Malesherbes",
             "status": ""
           },
           {
             "blo_url": 259,
+            "cotation": "D+",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "",
             "info": "Validée SNE. n°1",
@@ -58814,12 +59608,15 @@
             "massif": "Buthiers Canard",
             "name": "Bleu D+",
             "nombre_de_voie": 39,
+            "numero": 1,
             "renove": 0,
             "secteur": "Malesherbes",
             "status": ""
           },
           {
             "blo_url": 260,
+            "cotation": "ED",
+            "couleur": "noir",
             "cree": "?",
             "descriptif": "Effacé",
             "info": "Validée SNE. n°4",
@@ -58963,6 +59760,7 @@
             "massif": "Buthiers Canard",
             "name": "Noir ED",
             "nombre_de_voie": 22,
+            "numero": 4,
             "renove": 0,
             "secteur": "Malesherbes",
             "status": ""
@@ -58982,6 +59780,8 @@
         "items": [
           {
             "blo_url": 261,
+            "cotation": "AD-",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Repeint en 2012 par Georges Tsao, Bernard Commiot et Léo Drevet.",
             "info": "n°1",
@@ -59353,12 +60153,15 @@
             "massif": "Maunoury",
             "name": "Orange AD-",
             "nombre_de_voie": 60,
+            "numero": 1,
             "renove": 2012,
             "secteur": "Larchant",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 262,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Repeint en 2013 par Georges Tsao et Bernard Commiot.",
             "info": "n°2",
@@ -59814,12 +60617,15 @@
             "massif": "Maunoury",
             "name": "Bleu D",
             "nombre_de_voie": 74,
+            "numero": 2,
             "renove": 2012,
             "secteur": "Larchant",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 263,
+            "cotation": "TD+",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "",
             "info": "n°3",
@@ -60047,6 +60853,7 @@
             "massif": "Maunoury",
             "name": "Rouge TD+",
             "nombre_de_voie": 36,
+            "numero": 3,
             "renove": 0,
             "secteur": "Larchant",
             "status": "Validé SNE-ONF"
@@ -60061,6 +60868,8 @@
         "items": [
           {
             "blo_url": 264,
+            "cotation": "AD-",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Repeint en 2012 par Léo Drevet.",
             "info": "n°7",
@@ -60558,12 +61367,15 @@
             "massif": "Dame Jouanne",
             "name": "Orange AD-",
             "nombre_de_voie": 81,
+            "numero": 7,
             "renove": 2012,
             "secteur": "Larchant",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 265,
+            "cotation": "AD+",
+            "couleur": "mauve",
             "cree": "?",
             "descriptif": "Repeint en 2000 par O. Cazeaux.",
             "info": "n°1",
@@ -61031,12 +61843,15 @@
             "massif": "Dame Jouanne",
             "name": "Mauve AD+",
             "nombre_de_voie": 76,
+            "numero": 1,
             "renove": 2000,
             "secteur": "Larchant",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 266,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "",
             "info": "n°4",
@@ -61378,12 +62193,15 @@
             "massif": "Dame Jouanne",
             "name": "Bleu D",
             "nombre_de_voie": 55,
+            "numero": 4,
             "renove": 0,
             "secteur": "Larchant",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 267,
+            "cotation": "TD-",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "Circuit à abandonner ou à reprendre : beaucoup de voies sont dans les zones de mise en défends, beaucoup sont sales et sableuses, devenues dangereuses ou ne sont plus faisables à cause de (...)",
             "info": "n°3",
@@ -61743,12 +62561,15 @@
             "massif": "Dame Jouanne",
             "name": "Rouge TD-",
             "nombre_de_voie": 58,
+            "numero": 3,
             "renove": 0,
             "secteur": "Larchant",
             "status": "Abandonné SNE-ONF"
           },
           {
             "blo_url": 268,
+            "cotation": "ED+",
+            "couleur": "noir",
             "cree": "?",
             "descriptif": "",
             "info": "n°8",
@@ -61916,12 +62737,15 @@
             "massif": "Dame Jouanne",
             "name": "Noir ED+",
             "nombre_de_voie": 26,
+            "numero": 8,
             "renove": 0,
             "secteur": "Larchant",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 269,
+            "cotation": "ED",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "",
             "info": "n°6",
@@ -62119,6 +62943,7 @@
             "massif": "Dame Jouanne",
             "name": "Blanc ED",
             "nombre_de_voie": 31,
+            "numero": 6,
             "renove": 0,
             "secteur": "Larchant",
             "status": "Validé SNE-ONF"
@@ -62133,6 +62958,8 @@
         "items": [
           {
             "blo_url": 270,
+            "cotation": "PD",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Repeint en 2012 par Léo Drevet.",
             "info": "n°2",
@@ -62564,12 +63391,15 @@
             "massif": "Le Requin",
             "name": "Jaune PD",
             "nombre_de_voie": 70,
+            "numero": 2,
             "renove": 2012,
             "secteur": "Larchant",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 271,
+            "cotation": "TD",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "",
             "info": "n°5",
@@ -62869,6 +63699,7 @@
             "massif": "Le Requin",
             "name": "Rouge TD",
             "nombre_de_voie": 48,
+            "numero": 5,
             "renove": 0,
             "secteur": "Larchant",
             "status": "Validé SNE-ONF"
@@ -62883,6 +63714,8 @@
         "items": [
           {
             "blo_url": 272,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "?",
             "descriptif": "Créé par Michel Coquard",
             "info": "n°4",
@@ -62892,12 +63725,15 @@
             "massif": "L’ Éléphant",
             "name": "Blanc Enfants E",
             "nombre_de_voie": 0,
+            "numero": 4,
             "renove": 0,
             "secteur": "Larchant",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 273,
+            "cotation": "PD-",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "",
             "info": "n°6",
@@ -62907,12 +63743,15 @@
             "massif": "L’ Éléphant",
             "name": "Jaune PD-",
             "nombre_de_voie": 0,
+            "numero": 6,
             "renove": 2013,
             "secteur": "Larchant",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 274,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "",
             "info": "n°1",
@@ -63206,12 +64045,15 @@
             "massif": "L’ Éléphant",
             "name": "Orange AD",
             "nombre_de_voie": 47,
+            "numero": 1,
             "renove": 0,
             "secteur": "Larchant",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 275,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "",
             "info": "n°3",
@@ -63979,12 +64821,15 @@
             "massif": "L’ Éléphant",
             "name": "Bleu D",
             "nombre_de_voie": 126,
+            "numero": 3,
             "renove": 0,
             "secteur": "Larchant",
             "status": "Validé SNE-ONF"
           },
           {
             "blo_url": 276,
+            "cotation": "ED-",
+            "couleur": "noir",
             "cree": "?",
             "descriptif": "",
             "info": "n°5",
@@ -64254,6 +65099,7 @@
             "massif": "L’ Éléphant",
             "name": "Noir ED-",
             "nombre_de_voie": 43,
+            "numero": 5,
             "renove": 0,
             "secteur": "Larchant",
             "status": "Validé SNE-ONF"
@@ -64273,6 +65119,8 @@
         "items": [
           {
             "blo_url": 277,
+            "cotation": "AD-",
+            "couleur": "orange",
             "cree": "1950",
             "descriptif": "Créé par Pierre Bontemps dans les années 50, repris et complété en 2009 par François Louvel. 48 n° et 20 bis.  Les 25 1er n° ne sont ni haut ni expo, conformément aux goûts modernes, la suite AD++ (...)",
             "info": "Validée SNE. n°1",
@@ -64722,12 +65570,15 @@
             "massif": "Mont Sarrasin",
             "name": "Orange AD- ↑+",
             "nombre_de_voie": 70,
+            "numero": 1,
             "renove": 2009,
             "secteur": "Puiselet",
             "status": ""
           },
           {
             "blo_url": 278,
+            "cotation": "TD-",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Créé en 2010 par François Louvel il est ni trop haut ni expos à qcq exceptions faciles près. Il reprend beaucoup de voies de l’ancien noir-bleu de Jacques Vayr. 32 n° et 20 (...)",
             "info": "Validée SNE. n°2",
@@ -64931,12 +65782,15 @@
             "massif": "Mont Sarrasin",
             "name": "Bleu  tD-",
             "nombre_de_voie": 29,
+            "numero": 2,
             "renove": 2010,
             "secteur": "Puiselet",
             "status": ""
           },
           {
             "blo_url": 279,
+            "cotation": "TD+",
+            "couleur": "noir",
             "cree": "?",
             "descriptif": "Créé par Eddy Bouchet , Bruno Karaboghossian et Olivier Letarouilly. « Toutes les voies ont été parcourues sans assurage » ! Corde souvent utile. Circuit légendaire, parfois très impressionnant, mais (...)",
             "info": "Validée SNE. n°4",
@@ -65182,6 +66036,7 @@
             "massif": "Mont Sarrasin",
             "name": "Noir TD+",
             "nombre_de_voie": 36,
+            "numero": 4,
             "renove": 0,
             "secteur": "Puiselet",
             "status": ""
@@ -65201,6 +66056,8 @@
         "items": [
           {
             "blo_url": 280,
+            "cotation": "AD+",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par Pascal Etienne FSGT ASL Ste Geneviève",
             "info": "Validée SNE. n°1",
@@ -65428,6 +66285,7 @@
             "massif": "Le Troglodyte",
             "name": "Orange AD+",
             "nombre_de_voie": 36,
+            "numero": 1,
             "renove": 0,
             "secteur": "Nemours",
             "status": ""
@@ -65442,6 +66300,8 @@
         "items": [
           {
             "blo_url": 281,
+            "cotation": "AD",
+            "couleur": "orange",
             "cree": "?",
             "descriptif": "Créé par Stéphane Hamon",
             "info": "Validée SNE.",
@@ -65639,12 +66499,15 @@
             "massif": "Mont d’Olivet",
             "name": "Orange AD",
             "nombre_de_voie": 31,
+            "numero": null,
             "renove": 0,
             "secteur": "Nemours",
             "status": ""
           },
           {
             "blo_url": 282,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Créé par Stéphane Hamon",
             "info": "Validée SNE.",
@@ -65860,6 +66723,7 @@
             "massif": "Mont d’Olivet",
             "name": "Bleu D",
             "nombre_de_voie": 34,
+            "numero": null,
             "renove": 0,
             "secteur": "Nemours",
             "status": ""
@@ -65874,6 +66738,8 @@
         "items": [
           {
             "blo_url": 283,
+            "cotation": "AD-",
+            "couleur": "jaune",
             "cree": "?",
             "descriptif": "Créé par Bernard Théret. 54 numéros+ 3 variantes. Repeint en 2011 par Bernard Théret.",
             "info": "Validée SNE. n°2",
@@ -66227,12 +67093,15 @@
             "massif": "Petit Bois de Saint-Pierre-lès-Nemours",
             "name": "Jaune AD-",
             "nombre_de_voie": 57,
+            "numero": 2,
             "renove": 2012,
             "secteur": "Nemours",
             "status": ""
           },
           {
             "blo_url": 284,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Créé par Bernard Théret. 70 numéros + 5 variantes. Repeint en 2011 par Bernard Théret.",
             "info": "Validée SNE. n°3",
@@ -66694,12 +67563,15 @@
             "massif": "Petit Bois de Saint-Pierre-lès-Nemours",
             "name": "Bleu D",
             "nombre_de_voie": 75,
+            "numero": 3,
             "renove": 2012,
             "secteur": "Nemours",
             "status": ""
           },
           {
             "blo_url": 285,
+            "cotation": "TD+",
+            "couleur": "rouge",
             "cree": "?",
             "descriptif": "Créé par Bernard Théret. 53 numéros + 1 variante. Repeint en 2011 par Bernard Théret.",
             "info": "Validée SNE. n°4",
@@ -67017,12 +67889,15 @@
             "massif": "Petit Bois de Saint-Pierre-lès-Nemours",
             "name": "Rouge TD+",
             "nombre_de_voie": 51,
+            "numero": 4,
             "renove": 2012,
             "secteur": "Nemours",
             "status": ""
           },
           {
             "blo_url": 286,
+            "cotation": "ED+",
+            "couleur": "noir",
             "cree": "?",
             "descriptif": "Créé par Bernard Théret. 36 numéros + 12 variantes",
             "info": "Validée SNE. n°5",
@@ -67280,6 +68155,7 @@
             "massif": "Petit Bois de Saint-Pierre-lès-Nemours",
             "name": "Noir ED+",
             "nombre_de_voie": 41,
+            "numero": 5,
             "renove": 2013,
             "secteur": "Nemours",
             "status": ""
@@ -67294,6 +68170,8 @@
         "items": [
           {
             "blo_url": 287,
+            "cotation": "EN",
+            "couleur": "blanc",
             "cree": "2011",
             "descriptif": "Créé en 2011 par Léo Drevet",
             "info": "Validée SNE.",
@@ -67311,12 +68189,15 @@
             "massif": "Vallon Cassepot",
             "name": "Blanc Enfants E",
             "nombre_de_voie": 0,
+            "numero": null,
             "renove": 2011,
             "secteur": "Nemours",
             "status": ""
           },
           {
             "blo_url": 288,
+            "cotation": "PD",
+            "couleur": "jaune",
             "cree": "2011",
             "descriptif": "Créé en 2011 par Léo Drevet",
             "info": "Validée SNE.",
@@ -67334,12 +68215,15 @@
             "massif": "Vallon Cassepot",
             "name": "Jaune PD",
             "nombre_de_voie": 0,
+            "numero": null,
             "renove": 2011,
             "secteur": "Nemours",
             "status": ""
           },
           {
             "blo_url": 289,
+            "cotation": "D",
+            "couleur": "bleu",
             "cree": "?",
             "descriptif": "Créé par Bernard Théret, abandonné, parfois très intéressant. À revoir.",
             "info": "",
@@ -67357,6 +68241,7 @@
             "massif": "Vallon Cassepot",
             "name": "Bleu D",
             "nombre_de_voie": 0,
+            "numero": null,
             "renove": 0,
             "secteur": "Nemours",
             "status": ""
