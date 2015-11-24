@@ -128,15 +128,18 @@ class FromJsonMixin(metaclass=FromJsonMixinMetaClass):
 
     ##############################################
 
-    def to_json(self, only_defined=False):
+    def to_json(self, only_defined=False, exclude=()):
+
+        # Fixme: rename __json_interface__ ?
 
         d = {}
         for field in self.__field_names__:
-            value = self.__dict__[field]
-            if hasattr(value, '__json_interface__'):
-                value = value.__json_interface__
-            if not only_defined or value is not None:
-                d[field] = value
+            if field not in exclude:
+                value = self.__dict__[field]
+                if hasattr(value, '__json_interface__'):
+                    value = value.__json_interface__
+                if not only_defined or value is not None:
+                    d[field] = value
         
         return d
 

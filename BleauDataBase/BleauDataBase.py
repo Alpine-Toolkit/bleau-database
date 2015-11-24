@@ -26,13 +26,12 @@ system.
 
 """
 
-# Fixme: français -> english ?
-
 ####################################################################################################
 
 import itertools
 import json
 import locale
+import logging
 import math
 import re
 import urllib.request
@@ -45,11 +44,13 @@ import urllib.request
 try:
     import rtree
 except ImportError:
+    logging.warn('rtree module is not available')
     rtree = None
 
 try:
     import geojson
 except ImportError:
+    logging.warn('geojson module is not available')
     geojson = None
 
 ####################################################################################################
@@ -64,12 +65,15 @@ class PlaceCategory(str):
 
     """This class defines a category of place."""
 
+    # Fixme: define in the json ?
     __categories__ = ('parking', 'gare', "point d'eau")
+    # also: massif, circuit, bloc
 
     ##############################################
 
     def __new__(cls, category):
 
+        # Normalise and check
         category = category.lower()
         if category not in cls.__categories__:
             raise ValueError
@@ -83,6 +87,7 @@ class WayNumber:
     """This class defines a way number."""
 
     __number_re__ = re.compile('([1-9]+)(bis)?')
+    # tierce
 
     ##############################################
 
@@ -251,6 +256,8 @@ class Grade:
 
 class AlpineGrade(str):
 
+    # Fixme: str subclass ?
+
     """This class defines a French alpin grade."""
 
     __grade_majors__ = ('EN', 'F', 'PD', 'AD', 'D', 'TD', 'ED', 'EX') # , 'ABO'
@@ -384,6 +391,8 @@ class Coordinate(FromJsonMixin):
         x, y = self.geo_coordinate.mercator
         return (x, y, x, y)
 
+    ##############################################
+
     @property
     def __json_interface__(self):
         return self.to_json()
@@ -411,6 +420,7 @@ class WithCoordinate(FromJsonMixin):
 
     @property
     def pretty_name(self):
+        # Fixme: purpose ?
         return str(self)
 
     ##############################################
@@ -424,9 +434,9 @@ class WithCoordinate(FromJsonMixin):
     @property
     def __geo_interface__(self):
 
-        properties = self.to_json()
+        properties = self.to_json(exclude=('coordinate',))
+        # Fixme: category
         properties['object'] = self.__class__.__name__
-        del properties['coordinate']
         
         return {'type': 'Feature', 'geometry': self.coordinate, 'properties': properties}
 
@@ -478,6 +488,8 @@ class WithCoordinate(FromJsonMixin):
 
 class PlaceBase(WithCoordinate):
 
+    # Fixme: for Boulder, NamedPlace ?
+
     ##############################################
 
     def __init__(self, bleau_database, **kwargs):
@@ -515,9 +527,8 @@ class Massif(PlaceBase):
     """This class defines a « massif »."""
 
     coordinate = Coordinate
-    name = str # Fixme: name ?
+    name = str
 
-    # propreté fréquentation exposition débutant
     a_pieds = bool # Fixme: fr
     acces = str # Fixme: fr
     alternative_name = str
@@ -526,8 +537,10 @@ class Massif(PlaceBase):
     parcelles = str # Fixme: fr
     parking = str # Fixme: remove ?
     rdv = str # Fixme: fr
-    secteur = str
+    secteur = str # Fixme: fr, entity ?
     velo = str # Fixme: fr, gare
+
+    # propreté fréquentation exposition débutant
 
     ##############################################
 
@@ -814,6 +827,7 @@ class BleauDataBase:
 
     @property
     def secteurs(self):
+        # Fixme: in case of misspelling ?
         # Fixme: unsorted massif iter
         return sorted({massif.secteur for massif in self._massifs.values()})
                       # if massif.secteur is not None
