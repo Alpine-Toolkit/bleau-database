@@ -20,6 +20,8 @@
 
 ####################################################################################################
 
+import logging
+
 try:
     from lxml import etree
 except ImportError:
