@@ -1,4 +1,8 @@
-/**************************************************************************************************/
+/**************************************************************************************************
+ *
+ * Configuration Variables
+ *
+ */
 
 // var place_name = "...";
 // var center = {longitude: ..., latitude: ...}
@@ -114,34 +118,58 @@ var tile_grid = new ol.tilegrid.WMTS({
   matrixIds: matrix_ids
 });
 
-  // http://wxs.ign.fr/j5tcdln4ya4xggpdu4j0f0cn/geoportail/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=ORTHOIMAGERY.ORTHOPHOTOS&STYLE=normal&TILEMATRIXSET=PM&TILEMATRIX=15&TILEROW=11316&TILECOL=16615&FORMAT=image%2Fjpeg
-  // http://wxs.ign.fr/j5tcdln4ya4xggpdu4j0f0cn/geoportail/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD&STYLE=normal&TILEMATRIXSET=PM&TILEMATRIX=15&TILEROW=11318&TILECOL=16614&FORMAT=image%2Fjpeg
-  // http://wxs.ign.fr/j5tcdln4ya4xggpdu4j0f0cn/geoportail/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TRANSPORTNETWORKS.ROADS&STYLE=normal&TILEMATRIXSET=PM&TILEMATRIX=15&TILEROW=11316&TILECOL=16614&FORMAT=image%2Fpng
-  // http://wxs.ign.fr/j5tcdln4ya4xggpdu4j0f0cn/geoportail/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=CADASTRALPARCELS.PARCELS&STYLE=bdparcellaire&TILEMATRIXSET=PM&TILEMATRIX=15&TILEROW=11317&TILECOL=16614&FORMAT=image%2Fpng
-  // http://wxs.ign.fr/j5tcdln4ya4xggpdu4j0f0cn/geoportail/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25TOUR&STYLE=normal&TILEMATRIXSET=PM&TILEMATRIX=15&TILEROW=11316&TILECOL=16611&FORMAT=image%2Fjpeg
-
-var ign_source = new ol.source.WMTS({
-  url: 'http://wxs.ign.fr/' + geoportail_api_key + '/wmts',
-  // layer: 'GEOGRAPHICALGRIDSYSTEMS.MAPS',
-  layer: 'ORTHOIMAGERY.ORTHOPHOTOS',
-  matrixSet: 'PM',
-  format: 'image/jpeg',
-  // format: 'image/png',
-  projection: 'EPSG:3857',
-  tileGrid: tile_grid,
-  style: 'normal',
-  attributions: [new ol.Attribution({
+var ign_attribution = new ol.Attribution({
     html: '<a href="http://www.geoportail.fr/" target="_blank">' +
       '<img src="http://api.ign.fr/geoportail/api/js/latest/' +
       'theme/geoportal/img/logo_gp.gif"></a>'
-  })]
 });
 
-var ign_layer = new ol.layer.Tile({
-  source: ign_source
+function ign_layer_factory(layer_name) {
+  var source = new ol.source.WMTS({
+    url: 'http://wxs.ign.fr/' + geoportail_api_key + '/wmts',
+    layer: layer_name,
+    matrixSet: 'PM',
+    format: 'image/jpeg',
+    // format: 'image/png',
+    projection: 'EPSG:3857',
+    tileGrid: tile_grid,
+    style: 'normal',
+    attributions: [ign_attribution]
+  });
+  
+  var layer = new ol.layer.Tile({
+    source: source,
+    visible: false
+  });
+  
+  return layer;
+}
+
+var ign_layer_names = [
+  'GEOGRAPHICALGRIDSYSTEMS.MAPS',
+  'ORTHOIMAGERY.ORTHOPHOTOS',
+  'GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD',
+  'TRANSPORTNETWORKS.ROADS',
+  'CADASTRALPARCELS.PARCELS'
+];
+
+var ign_layers = [];
+ign_layer_names.forEach(function(layer_name) {
+  var layer = ign_layer_factory(layer_name);
+  if (layer_name == 'GEOGRAPHICALGRIDSYSTEMS.MAPS')
+    layer.setVisible(true);
+  map.addLayer(layer);
+  ign_layers.push(layer);
 });
 
-map.addLayer(ign_layer);
+var map_source_input = $('#map-source');
+map_source_input.on('change', function() {
+  var layer_name = this.value;
+  // var layers = map.getLayers();
+  ign_layers.forEach(function(layer) {
+    layer.setVisible(layer.getSource().getLayer() == layer_name);
+  });
+});
 
 /**************************************************************************************************/
 
@@ -204,7 +232,7 @@ var style_function = function(feature, resolution) {
   var object_type = feature.get('object');
   if (object_type == 'Massif')
   {
-    if (feature.get('massif') == place_name)
+    if (feature.get('name') == place_name)
       return styles['Massif/current'];
     else
       return styles['Massif/default'];
@@ -359,7 +387,7 @@ map.on('pointermove', function(event) {
     features = feature.get('features');
     if (features) {
       feature1 = features[0];
-      feature_name = feature1.get('massif');
+      feature_name = feature1.get('name');
       coordinate = feature1.getGeometry().getCoordinates();
       feature.setStyle([
 	// selected_style,
