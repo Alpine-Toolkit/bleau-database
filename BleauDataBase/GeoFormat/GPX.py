@@ -20,7 +20,11 @@
 
 ####################################################################################################
 
-from lxml import etree
+try:
+    from lxml import etree
+except ImportError:
+    logging.warn('lxml module is not available')
+    etree = None
 
 ####################################################################################################
 
