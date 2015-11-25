@@ -793,6 +793,7 @@ class BleauDataBase:
         self._places = {}
         self._massifs = {}
         self._circuits = {}
+        self._number_of_boulders = None
         
         self._rtree_place = None
         self._rtree_massif = None
@@ -833,12 +834,18 @@ class BleauDataBase:
 
     @property
     def number_of_circuits_with_topos(self):
-        return len([circuit for circuit in self._circuits.values()
+        return len([circuit for circuit in self.circuits
                     if circuit.has_topo()])
 
     @property
     def number_of_massifs(self):
         return len(self._massifs)
+
+    @property
+    def number_of_boulders(self):
+        if self._number_of_boulders is None:
+            self._number_of_boulders = sum([circuit.number_of_boulders for circuit in self.circuits])
+        return self._number_of_boulders
 
     @property
     def places(self):
