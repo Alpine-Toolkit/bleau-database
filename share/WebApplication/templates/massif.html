@@ -64,6 +64,7 @@
 	      <td>{{ circuit.grade }}</td>
 	      <td><a href="/main/circuit/{{ circuit.name }}">N° {{ circuit.number }}</a></td>
 	      <td>{{ circuit.colour }}</td>
+	      <td>#{{ circuit.number_of_boulders }}</td>
 	      <td>
 		{% for topo in circuit.topos %}
 		  <a class="hidden-sm-up" href="{{ topo }}">lien</a>

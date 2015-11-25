@@ -37,8 +37,8 @@
 	    {% for boulder in circuit.boulders %}
 	      <tr>
 		<td>{{ boulder.number }}</td> {# N° #}
-		<td>{{ boulder.name }}</td>
 		<td>{{ boulder.grade }}</td>
+		<td>{{ boulder.name }}</td>
 		<td>{{ boulder.comment }}</td>
 	      </tr>
 	    {% endfor %}
@@ -49,32 +49,32 @@
       <h2>Carte de situation</h2>
       <div class="row">
 	<div class="col-xl-4">
-	  <table class="table table-sm">
-	    <tbody>
-	      <tr>
-		<td>
-		  <a href="http://spatialreference.org/ref/epsg/wgs-84/">
-		    Coordonnée WGS 84
-		  </a></td>
-		<td>
-		  {% with coordinate = place.coordinate %}
+	  {% with coordinate = place.coordinate %}{% if coordinate %}
+	    <table class="table table-sm">
+	      <tbody>
+		<tr>
+		  <td>
+		    <a href="http://spatialreference.org/ref/epsg/wgs-84/">
+		      Coordonnée WGS 84
+		    </a></td>
+		  <td>
 		    {{ coordinate.longitude }}, {{ coordinate.latitude }}°
-		  {% endwith %}
-		</td>
-	      </tr>
-	      <tr>
-		<td>
-		  <a href="http://spatialreference.org/ref/sr-org/epsg3857-wgs84-web-mercator-auxiliary-sphere/">
-		    Coordonnée Mercator
-		  </a></td>
-		<td>
-		  {% with mercator = place.coordinate.mercator %}
-		    {{ mercator[0] | round | int }}, {{ mercator[1] | round | int }} m
-		  {% endwith %}
-		</td>
-	      </tr>
-	    </tbody>
-	  </table>
+		  </td>
+		</tr>
+		<tr>
+		  <td>
+		    <a href="http://spatialreference.org/ref/sr-org/epsg3857-wgs84-web-mercator-auxiliary-sphere/">
+		      Coordonnée Mercator
+		    </a></td>
+		  <td>
+		    {% with mercator = coordinate.mercator %}
+		      {{ mercator[0] | round | int }}, {{ mercator[1] | round | int }} m
+		    {% endwith %}
+		  </td>
+		</tr>
+	      </tbody>
+	    </table>
+	  {% endif %}{% endwith %}
 	</div>
 	<div class="col-xl-4">
 	  <form>
