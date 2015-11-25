@@ -55,6 +55,99 @@
 {% block nav %}{% endblock %}
 
 {% block body_container %}
+  <div  id="help-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+	<div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+	    <span aria-hidden="true">&times;</span><span class="sr-only">Fermer</span></button>
+          <h4 class="modal-title">Aide</h4>
+	</div>
+	<div class="modal-body">
+	  <h2>Fond Cartographique</h2>
+	  <p>
+	    Le fond cartographique est fournit par le service
+	    <a href="http://www.geoportail.gouv.fr">Géoportail</a> de l'IGN.
+	  </p>
+	  <p>
+	    On peut sélectionner un autre type de carte à partir de la liste déroulante parmis les couches suivantes :
+	    <dl>
+	      <dt>Cartes IGN</dt>
+	      <dd>Carte papier scannée série TOP 25, 100, … {# (GEOGRAPHICALGRIDSYSTEMS.MAPS) #}</dd>
+	      <dt>Carte Scan Express</dt>
+	      <dd>Carte offrant une meilleure lisibilité que la précédente
+		{# (GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD) #}</dd>
+	      <dt>Vue aérienne</dt>
+	      <dd>{# (ORTHOIMAGERY.ORTHOPHOTOS) #}</dd>
+	      <dt>Routes</dt>
+	      <dd>Carte mettant l'accent sur le réseau routier {# (TRANSPORTNETWORKS.ROADS) #}</dd>
+	      <dt>Parcelles cadastrales</dt>
+	      <dd>{# (CADASTRALPARCELS.PARCELS) #}</dd>
+	    </dl>
+	  </p>
+	  <p>
+	    Les légendes des cartes sont disponible sur le site du Géoportail.
+	  </p>
+	  <h2>Points d'interêt</h2>
+	  <p>
+	    Les points d'interêt sont clusterisés lorsqu'on zoom la carte à grande échelle. Le
+	    chiffre indique le nombre de points d'interêt clusterisés.
+	  </p>
+	  <p>
+	    Le nom d'un point d'interêt s'affiche, lorsque que l'on positionne le pointeur de la
+	    souris dessus.</p>
+	  <h2>Bontons de Contrôles</h2>
+	  <p>
+	    {#
+	    <dl class="dl-horizontal">
+	      <dt>+</dt><dd>Zoomer</dd>
+	      <dt>-</dt><dd>Dézoomer</dd>
+	      <dt>E</dt><dd>Zoomer sur le voisinage du site</dd>
+	      <dt>↔</dt><dd>Passer en mode plein écran</dd>
+	    </dl>
+	    #}
+	    <ul class="list-unstyled">
+	      <li><button type="button" class="btn btn-secondary btn-sm disabled" style="width: 3em !important">+</button>
+		Zoomer</li>
+	      <li><button type="button" class="btn btn-secondary btn-sm disabled" style="width: 3em !important">-</button>
+		Dézoomer</li>
+	      <li><button type="button" class="btn btn-secondary btn-sm disabled" style="width: 3em !important">E</button>
+		Zoomer sur le voisinage du site</li>
+	      <li><button type="button" class="btn btn-secondary btn-sm disabled" style="width: 3em !important">↔</button>
+		Passer en mode plein écran</li>
+	    </dl>
+	  </p>
+	  <h2>Position sur la carte</h2>
+	  <p>On peut sélectionner le référentiel et la précision à partir des listes déroulantes.</p>
+	  <h2>Barre d'édition</h2>
+	  <p>
+	    {#
+	    <dl class="dl-horizontal">
+	      <dt><span class="fa fa-arrows"</span></dt><dd>Mode standard</dd>
+	      <dt><span class="fa fa-plus"</span></dt><dd>Mode d'ajout de points d'interêt</dd>
+	      <dt><span class="fa fa-pencil"</span></dt><dd>Mode d'édition des points d'interêt</dd>
+	      <dt><span class="fa fa-mouse-pointer"</span></dt><dd></dd>
+	    </dl>
+	    #}
+	    {#
+	    <ul class="fa-ul">
+	      <li><i class="fa-li fa fa-check-square"></i>...</li>
+	    </ul>
+	    #}
+	    <ul class="list-unstyled" >
+	      <li><span class="fa fa-arrows"</span> Mode standard</li>
+	      <li><span class="fa fa-plus"</span> Mode d'ajout de points d'interêt</li>
+	      <li><span class="fa fa-pencil"</span> Mode d'édition des points d'interêt</li>
+	      <li><span class="fa fa-mouse-pointer"</span> </li>
+	    </ul>
+	  </p>
+	  <p>
+	    Une fois que l'on a ajouté des points d'interêt, on peut les télécharger au format
+	    GeoJSON en cliquant sur le bouton «download», le fichier est sauvegardé sous le nom «bleau-geo.json»</p>
+	</div>
+      </div>
+    </div>
+  </div>
   <div  id="feature-modal" class="modal fade" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -112,8 +205,8 @@
   </div>
   <div id="map" class="bigmap">
     <div id="toolbar">
-      <a id="help-button" class="btn btn-sm btn-primary" role="button">
-	<i class="fa fa-info"></i></a>
+      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#help-modal">
+	<i class="fa fa-info"></i></button>
       <div id="map-toolbar" class="btn-group btn-group-sm" data-toggle="buttons">
 	<label id="pan" class="btn btn-primary active">
 	  <input type="radio" name="map-toolbar-radio" autocomplete="off" checked> <i class="fa fa-arrows"></i>
@@ -143,8 +236,8 @@
 	  <label></label>
 	  <select id="map-source" autocomplete=off> {# class="form-control" #}
 	    <option value="GEOGRAPHICALGRIDSYSTEMS.MAPS">Cartes IGN</option>
+	    <option value="GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD">Carte Scan Express</option>
 	    <option value="ORTHOIMAGERY.ORTHOPHOTOS">Vue aérienne</option>
-	    <option value="GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD">Carte</option>
 	    <option value="TRANSPORTNETWORKS.ROADS">Routes</option>
 	    <option value="CADASTRALPARCELS.PARCELS">Parcelles cadastrales</option>
 	  </select>
