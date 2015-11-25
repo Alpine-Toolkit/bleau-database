@@ -124,13 +124,12 @@ var ign_attribution = new ol.Attribution({
       'theme/geoportal/img/logo_gp.gif"></a>'
 });
 
-function ign_layer_factory(layer_name) {
+function ign_layer_factory(layer_settings) {
   var source = new ol.source.WMTS({
     url: 'http://wxs.ign.fr/' + geoportail_api_key + '/wmts',
-    layer: layer_name,
+    layer: layer_settings.layer_name,
     matrixSet: 'PM',
-    format: 'image/jpeg',
-    // format: 'image/png',
+    format: layer_settings.image_format,
     projection: 'EPSG:3857',
     tileGrid: tile_grid,
     style: 'normal',
@@ -145,18 +144,18 @@ function ign_layer_factory(layer_name) {
   return layer;
 }
 
-var ign_layer_names = [
-  'GEOGRAPHICALGRIDSYSTEMS.MAPS',
-  'ORTHOIMAGERY.ORTHOPHOTOS',
-  'GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD',
-  'TRANSPORTNETWORKS.ROADS',
-  'CADASTRALPARCELS.PARCELS'
+var ign_layer_settings = [
+  {layer_name: 'GEOGRAPHICALGRIDSYSTEMS.MAPS', image_format: 'image/jpeg'},
+  {layer_name: 'ORTHOIMAGERY.ORTHOPHOTOS', image_format: 'image/jpeg'},
+  {layer_name: 'GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD', image_format: 'image/jpeg'},
+  {layer_name: 'TRANSPORTNETWORKS.ROADS', image_format: 'image/png'},
+  {layer_name: 'CADASTRALPARCELS.PARCELS', image_format: 'image/png'}
 ];
 
 var ign_layers = [];
-ign_layer_names.forEach(function(layer_name) {
-  var layer = ign_layer_factory(layer_name);
-  if (layer_name == 'GEOGRAPHICALGRIDSYSTEMS.MAPS')
+ign_layer_settings.forEach(function(layer_settings) {
+  var layer = ign_layer_factory(layer_settings);
+  if (layer_settings.layer_name == 'GEOGRAPHICALGRIDSYSTEMS.MAPS')
     layer.setVisible(true);
   map.addLayer(layer);
   ign_layers.push(layer);
