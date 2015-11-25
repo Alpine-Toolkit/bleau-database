@@ -32,6 +32,66 @@ bleau_database = BleauDataBase(json_file=args.json_file, raise_for_unknown=args.
 
 ####################################################################################################
 
+alternative_name = {
+    # "Apremont Varrapeurs": "", # ?
+    # "Franchard Meyer": "", # ?
+    # "Franchard Raymond": "", # ?
+    # "Cuvier Ouest": "", # ?
+    # "Le Calvaire": "", # ?
+    # "Le Requin": "", # ?
+    # "Mont Sarrasin": "", # ?
+    # "Rocher du Duc - Sud-Est": "", # sud nainville ?
+    "Bas Cuvier": "Cuvier Bas",
+    "Buthiers - Massif de L’I": "Buthiers L'I",
+    "Butte aux Dames": "Apremont Dames",
+    "Chamarande Belvédère": "Chamarande",
+    "Corne-Biche, R. de Milly": "Rocher de Milly - Corne-Biche",
+    "Désert d’Apremont": "Apremont Désert",
+    "Envers d’Apremont": "Apremont Envers",
+    "Gorges du Houx Petit Paradis": "Gorges du Houx",
+    "Gros Sablons Nord": "Gros Sablons",
+    "Hautes Plaines": "Franchard Hautes-Plaines",
+    "J.A. Martin": "J.A. Martin - R. Cailleau",
+    "La Feuillardière": "Feuillardière",
+    "La Padôle": "Padôle",
+    "La Ségognole": "Ségognole",
+    "L’ Éléphant": "Éléphant",
+    "Le Pendu d’Huison": "Pendu d'Huison",
+    "Le Sanglier": "Sanglier",
+    "Les Gorges d’Apremont": "Apremont Gorges",
+    "Le Troglodyte": "Troglodytes",
+    "L’Isatis": "Franchard Isatis",
+    "Maisse Tramerolle": "Maisse le Patouillat",
+    "Mondeville": "Roche aux Dames - Mondeville",
+    "Mont Aigu": "Mont-Aigu",
+    "Mont d’Olivet": "Mont Olivet",
+    "Mont Ussy": "Mont-Ussy",
+    "Petit Bois de Saint-Pierre-lès-Nemours": "Petit Bois de St Pierre de Nemours",
+    "Pignon 91.1": "91_1",
+    "Pignon  95.2": "95_2",
+    "R. Canon": "Rocher Canon",
+    "R. de la Cathédrale": "Rocher de la Cathédrale",
+    "R. des Demoiselles": "Demoiselles",
+    "Restant du Long Rocher Nord": "Restant du Long Rocher",
+    "Roche d’Hercule": "Roche Hercule",
+    "Rocher d’Avon": "Rocher d'Avon",
+    "Rocher d’Avon Ouest": "Rocher d'Avon",
+    "Rocher de Châtillon": "Rocher de Chatillon",
+    "Rocher des Potêts": "Rocher des Potets",
+    "Rocher du Duc - côté Beauvais": "Rocher du Duc - Hameau",
+    "Rocher du Duc - côté Loutteville": "Rocher du Duc - Loutteville",
+    "Rocher du Duc - côté Nainville": "Rocher du Duc - Nainville",
+    "Rocher du Télégraphe": "Télégraphe",
+    "Rocher Fin": "Rocher fin",
+    "Sablons": "Franchard Sablons",
+    "Vallée de la Mée -  Potala": "Potala",
+    "Vallon Cassepot": "Vallée Casse-Pot",
+    "Videlles-les-Roches": "Videlles les Roches",
+    "Villeneuve sur Auvers": "Villeneuve-sur-Auvers",
+}
+
+####################################################################################################
+
 def convert_boulder(circuit_blo):
 
     boulders = []
@@ -73,7 +133,10 @@ def merge_circuit(circuit_blo):
     found_circuit = None
     for circuit in bleau_database.circuits:
         # print(circuit.massif, circuit.grade, circuit.colour)
-        if (circuit_blo['massif'] == circuit.massif.name
+        massif = circuit_blo['massif']
+        if massif in alternative_name:
+            massif = alternative_name[massif]
+        if (massif == circuit.massif.name
             and circuit_blo['numero'] == circuit.number
         ):
             couleur_match = circuit_blo['couleur'] == circuit.colour
@@ -87,12 +150,13 @@ def merge_circuit(circuit_blo):
                 pass
                 # print('!!', circuit_blo['cotation'], circuit.grade, circuit_blo['couleur'], circuit.colour)
 
-    if found_circuit is not None:
+    if found_circuit is not None and not found_circuit.boulders:
         boulders = convert_boulder(circuit_blo)
         # print(str(found_circuit), len(boulders))
         found_circuit.boulders = boulders
     else:
-        pass 
+        pass
+        # print('!', circuit_blo['massif'], '|', circuit_blo['name'])
         # print('!',
         #       circuit_blo['massif'],
         #       circuit_blo['numero'], circuit_blo ['cotation'], circuit_blo['couleur'],
