@@ -1,5 +1,5 @@
 {# -*- engine: jinja2 -*- #}
-{% extends "base.html" %}
+{% extends "include/base.html" %}
 
 {% block head %}
   <link rel="stylesheet" href="http://openlayers.org/en/v3.10.1/css/ol.css" type="text/css">
@@ -34,7 +34,7 @@
    {% block geoportail_script %}
    var show_edit_toolbar = false;
    {% endblock %}
-   {% include "geoportail_api_key.js" %}
+   {% include "include/geoportail_api_key.js" %}
   </script>
   <script type="text/javascript" src={{ url_for('static', filename='data/bleau-places-geoson.js') }}></script>
   <script type="text/javascript" src={{ url_for('static', filename='data/bleau-massifs-geoson.js') }}></script>
