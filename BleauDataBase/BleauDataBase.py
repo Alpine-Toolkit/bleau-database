@@ -176,6 +176,27 @@ class Grade:
 
     ##############################################
 
+    @staticmethod
+    def old_grade_iter():
+
+        for major in range(1, 10):
+            for minor in ('-', '', '+'):
+                yield Grade(str(major) + minor)
+
+    ##############################################
+
+    @staticmethod
+    def grade_iter():
+
+        for major in range(1, 10):
+            for minor in ('a', 'b', 'c'):
+                grade = str(major) + minor
+                yield Grade(grade)
+                if major >= 6:
+                    yield Grade(grade + '+')
+
+    ##############################################
+
     def __init__(self, grade):
 
         grade = str(grade).lower()
@@ -183,6 +204,10 @@ class Grade:
         if match is not None:
             number, self._letter, self._sign = match.groups()
             self._number = int(number)
+            if self._sign == '-' and self._letter is not None:
+                raise ValueError('Bad grade "{}" with letter and inf'.format(grade))
+            elif self._sign == '+' and self._letter is not None and self._number < 6:
+                raise ValueError('Bad grade "{}" with sup < 6'.format(grade))
         else:
             raise ValueError('Bad grade "{}"'.format(grade))
 
@@ -211,25 +236,51 @@ class Grade:
         letter = self._letter
         sign = self._sign
         if letter is not None:
-            # split the grade in four
+            # 6a < 6a+ < 6b < 6b+ < 6c < 6c+
             if letter == 'a':
                 value += 1/4
             elif letter == 'b':
-                value += 2/4
+                value += 1/2
             else: # c
                 value += 3/4
-            if sign is not None:
-                if sign == '-':
-                    value -= 1/8
-                else:
-                    value += 1/8
-        elif sign is not None:
+            if sign == "+":
+                value += 1/8
+        else:
+            # Old system: 5 -/inf < 5 < 5 +/sup
             if sign == '-':
-                # Fixme: right ?
-                value += 1/3
+                value += 1/4
+            elif sign is None:
+                value += 1/2
             else:
-                value += 2/3
+                value += 3/4
         return value
+
+    ##############################################
+
+    def is_old_grade(self):
+
+        # return ((self._sign is not None and self._letter is None)
+        #         or (self._sign is None and self._letter is None))
+        # (A.B) + (notA.B) = B
+        return self._letter is None
+
+    ##############################################
+
+    @property
+    def standard_grade(self):
+
+        if self.is_old_grade():
+            sign = self._sign
+            grade = str(self._number)
+            if sign == '-':
+                grade += 'a'
+            elif sign is None:
+                grade += 'b'
+            else:
+                grade += 'c'
+            return self.__class__(grade)
+        else:
+            return self
 
     ##############################################
 
@@ -237,6 +288,7 @@ class Grade:
 
         """For exemple the grade 5c+ is incompatible with 5+."""
 
+        # Fixme: versus is_old_grade ?
         if (self._number == other._number
             and (self._sign is not None or other._sign is not None)):
             has_letter1 = self._letter is not None
@@ -249,10 +301,10 @@ class Grade:
 
     def __lt__(self, other):
 
-        if self.is_incompatible_with(other):
-            raise IncompatibleGradeError
-        else:
-            return float(self) < float(other)
+        # if self.is_incompatible_with(other):
+        #     raise IncompatibleGradeError
+        # else:
+        return float(self) < float(other)
 
     ##############################################
 
@@ -270,9 +322,8 @@ class Grade:
 
 ####################################################################################################
 
-class AlpineGrade(str):
+class AlpineGrade:
 
-    # Fixme: str subclass ?
 
     """This class defines a French alpin grade."""
 
@@ -307,18 +358,52 @@ class AlpineGrade(str):
 
     ##############################################
 
-    def __new__(cls, grade):
+    @staticmethod
+    def grade_iter():
 
-        grade = grade.upper()
-        if grade not in cls.__grades__:
+        for grade in AlpineGrade.__grades__:
+            yield AlpineGrade(grade)
+
+    ##############################################
+
+    def __init__(self, grade):
+
+        grade = str(grade).upper()
+        if grade not in self.__grades__:
             raise ValueError('Bad alpine grade "{}"'.format(grade))
-        
-        return str.__new__(cls, grade)
+
+        self._grade = grade
+        if grade[-1] in ('-', '+'):
+            self._major = grade[:-1]
+            self._minor = grade[1]
+        else:
+            self._major = grade
+            self._minor = None
+
+    ##############################################
+
+    def __str__(self):
+        return self._grade
 
     ##############################################
 
     def __int__(self):
-        return self.__grade_to_number__[self]
+        return self.__grade_to_number__[self._grade]
+
+    ##############################################
+
+    def __float__(self):
+
+        value = self._major
+        minor = self._minor
+        if minor is None:
+            value += 1/2
+        elif minor == '-':
+            value += 1/4
+        else:
+            value += 3/4
+        
+        return value
 
     ##############################################
 
@@ -329,22 +414,13 @@ class AlpineGrade(str):
 
     @property
     def major(self):
-
-        # Fixme: cache ? but take care to recursion
-        if len(self) == 3:
-            return AlpineGrade(self[:2])
-        else:
-            return self
+        return AlpineGrade(self._major)
 
     ##############################################
 
     @property
     def minor(self):
-
-        if len(self) == 3:
-            return self[2]
-        else:
-            return ''
+        return self._minor
 
 ####################################################################################################
 
@@ -681,7 +757,7 @@ class Circuit(PlaceBase):
 
     coordinate = Coordinate
 
-    boulders = BoulderList
+    boulders = BoulderList # Fixme: None instead of iter !
     colour = str
     creation_date = int
     gestion = str # Fixme: fr
