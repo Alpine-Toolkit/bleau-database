@@ -61,12 +61,19 @@ def place(place):
 @main.route('/massif/<massif>')
 def massif(massif):
     massif = model.bleau_database[massif]
-    return render_template('massif.html', massif=massif, place=massif)
+    circuit_statistics = model.circuit_statistics_cache[[circuit for circuit in massif]]
+    return render_template('massif.html',
+                           massif=massif, place=massif,
+                           circuit_statistics=circuit_statistics)
 
 @main.route('/circuit/<circuit>')
 def circuit(circuit):
     circuit = model.bleau_database[circuit]
-    return render_template('circuit.html', massif=circuit.massif, circuit=circuit, place=circuit)
+    circuit_statistics = model.circuit_statistics_cache[[circuit]]
+    return render_template('circuit.html',
+                           massif=circuit.massif, circuit=circuit,
+                           place=circuit,
+                           circuit_statistics=circuit_statistics)
 
 @main.route('/geoportail/<massif>')
 def geoportail(massif):

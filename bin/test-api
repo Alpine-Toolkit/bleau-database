@@ -39,12 +39,39 @@ args = parser.parse_args()
 
 bleau_database = BleauDataBase(json_file=args.json_file)
 
-massif = bleau_database['91_1']
-for place in massif.nearest_point_deau():
-    print(place.nom, massif.distance_to(place))
+# massif = bleau_database['91_1']
+# for place in massif.nearest_point_deau():
+#     print(place.nom, massif.distance_to(place))
 # print(massif.cotations)
 # for circuit in massif:
 #     print(circuit.cotation)
+
+from BleauDataBase.Statistics import CircuitStatistics
+circuit_statistics = CircuitStatistics(bleau_database.circuits)
+
+# for grade_counter in circuit_statistics.circuit_grade_histogram:
+#     print(str(grade_counter), grade_counter.count)
+
+# for grade_counter in circuit_statistics.boulder_grade_histogram:
+#     print(str(grade_counter), grade_counter.count)
+
+from bokeh.plotting import figure
+from bokeh.embed import components
+from bokeh._legacy_charts import Bar, output_file, show
+
+grade_counters = circuit_statistics.boulder_grade_histogram.domain()
+y_data = [grade_counter.count for grade_counter in grade_counters]
+x_data = [str(grade_counter) for grade_counter in grade_counters]
+
+plot = figure()
+bar = Bar(y_data, x_data, title='Grade', stacked=True)
+
+# output_file("stacked_bar.html")
+# show(bar)
+
+script, div = components(bar)
+print(script)
+print(div)
 
 ####################################################################################################
 #

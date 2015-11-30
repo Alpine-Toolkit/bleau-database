@@ -1,5 +1,15 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "geoportail-base.html" %}
+{% block head %}
+  {{ super() }}
+  <link href="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.css" rel="stylesheet" type="text/css">
+{% endblock %}
+{% block script %}
+  {{ super() }}
+  <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.js"></script>
+  {# {{ circuit_statistics.circuit_grade_barchart.script|safe }} #}
+  {{ circuit_statistics.boulder_grade_barchart.script|safe }}
+{% endblock %}
 {% block content %}
   <ul class="breadcrumb">
     <li><a href="/main">Accueil</a></li>
@@ -76,7 +86,10 @@
 	  {% endfor %}
 	</tbody>
       </table>
-      
+
+      {# {{ circuit_statistics.circuit_grade_barchart.div|safe }} #}
+      {{ circuit_statistics.boulder_grade_barchart.div|safe }}
+
       <h2>Massifs à proximité</h2>
       <div class="alert alert-info" role="alert">
 	critère: 2 km à vol d'oiseau, donc prévoir plus long!

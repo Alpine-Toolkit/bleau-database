@@ -20,6 +20,10 @@
 
 ####################################################################################################
 
+from .Statistics import CircuitStatisticsCache
+
+####################################################################################################
+
 class Model:
 
     ##############################################
@@ -36,12 +40,19 @@ class Model:
 
         self._application = application
         self._bleau_database = self._application.config['bleau_database']
+        self._circuit_statistics_cache = CircuitStatisticsCache()
 
     ##############################################
 
     @property
     def bleau_database(self):
         return self._bleau_database
+
+    ##############################################
+
+    @property
+    def circuit_statistics_cache(self):
+        return self._circuit_statistics_cache
 
 ####################################################################################################
 
