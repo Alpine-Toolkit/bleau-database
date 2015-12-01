@@ -106,8 +106,8 @@
 		  <td><a href="/main/massif/{{ massif_.name }}">{{ massif_.name }}</a></td>
 		  <td>
 		    <ul class="list-inline">
-		      {% for cotation in massif_.cotations %}
-			<li>{{ cotation }}</li>
+		      {% for grade in massif_.grades %}
+			<li>{{ grade }}</li>
 		      {% endfor %}
 		    </ul>
 		  </td>
@@ -153,19 +153,6 @@
 	      </tr>
 	    </tbody>
 	  </table>
-	</div>
-	<div class="col-xl-4">
-	  <form>
-	    <label>Projection</label>
-	    <select id="projection">
-	      <option value="EPSG:4326">WGS 84</option>
-	      <option value="EPSG:3857">Mercator</option>
-	    </select>
-	    <label>Precision</label>
-	    <input id="precision" style="width: 3em" type="number" min="0" max="12" value="4"/>
-	  </form>
-	  <p id="mouse-position">Position : &nbsp;</p>
-	  <p id="massif-name">Massif : &nbsp;</p>
 	</div>
       </div>
       <a href="/main/geoportail/{{ massif.name }}">Grande carte</a>
