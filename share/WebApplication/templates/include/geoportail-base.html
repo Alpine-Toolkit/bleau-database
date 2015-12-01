@@ -20,28 +20,28 @@
 {% macro big_map_style() %}
   <style>
    .bigmap {
-       position: fixed;
-       left: 0;
-       top: 0;
+       // position: fixed;
+       // left: 0;
+       // top: 0;
        width: 100%;
        height: 100%;
    }
-   .ol-viewport {
-       position: fixed;
-       top: 0;
-       left: 0;
-       z-index: 1;
-   }
-   .ol-zoom {
-       top: 3em;
-       left: 0.5em;
-   }
-   .ol-zoom-extent {
-       top: 7em;
-       left: 0.5em;
-   }
+   // .ol-viewport {
+   //     position: fixed;
+   //     top: 0;
+   //     left: 0;
+   //     z-index: 1;
+   // }
+   // .ol-zoom {
+   //     top: 3em;
+   //     left: 0.5em;
+   // }
+   // .ol-zoom-extent {
+   //     top: 7em;
+   //     left: 0.5em;
+   // }
    #toolbar {
-       position: fixed;
+       // position: fixed;
        top: 0;
        left: 0;
        z-index: 2;
@@ -56,7 +56,7 @@
        margin-bottom: 0;
    }
    #mouse-position {
-       // width: 20em;
+       width: 9em;
    }
    .custom-mouse-position {
    }
@@ -220,6 +220,63 @@
   </div>
 {% endmacro %}
 
+{% macro toolbar() %}
+  <div id="toolbar">
+    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#help-modal">
+      <i class="fa fa-info"></i></button>
+    <div id="map-toolbar" class="btn-group btn-group-sm" data-toggle="buttons">
+      <label id="pan" class="btn btn-primary active">
+	<input type="radio" name="map-toolbar-radio" autocomplete="off" checked> <i class="fa fa-arrows"></i>
+	{# Pan #}
+      </label>
+      <label id="point" class="btn btn-primary">
+	<input type="radio" name="map-toolbar-radio" autocomplete="off">
+	<i class="fa fa-plus"></i>
+	{# Place #}
+      </label>
+      <label id="modify" class="btn btn-primary">
+	<input type="radio" name="map-toolbar-radio" autocomplete="off">
+	<i class="fa fa-pencil"></i>
+	{# Modifier #}
+      </label>
+      <label id="select" class="btn btn-primary">
+	<input type="radio" name="map-toolbar-radio" autocomplete="off">
+	<i class="fa fa-mouse-pointer"></i>
+	{# Selectioner #}
+      </label>
+    </div>
+    <a id="download-feature-button" class="btn btn-sm btn-primary" role="button">
+      <i class="fa fa-file-text"></i>
+      Download <span id="number-of-features">0</span> places</a>
+    <form class="form-inline">
+      <div class="form-group">
+	<label></label>
+	<select id="map-source" autocomplete=off> {# class="form-control" #}
+	  <option value="GEOGRAPHICALGRIDSYSTEMS.MAPS">Cartes IGN</option>
+	  <option value="GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD">Carte Scan Express</option>
+	  <option value="ORTHOIMAGERY.ORTHOPHOTOS">Vue aérienne</option>
+	  <option value="TRANSPORTNETWORKS.ROADS">Routes</option>
+	  <option value="CADASTRALPARCELS.PARCELS">Parcelles cadastrales</option>
+	</select>
+      </div>
+    </form>
+    <p id="mouse-position">{# Position : #}&nbsp;</p>
+    <form class="form-inline">
+      <div class="form-group">
+	<div class="form-group">
+	  <label>{# Precision #}</label>
+	  <input id="precision" style="width: 3em" type="number" min="0" max="12" value="4" autocomplete=off/>
+	</div>
+	<label>{# Projection #}</label>
+	<select id="projection" autocomplete=off> {# class="form-control" #}
+	  <option value="EPSG:4326">WGS 84</option>
+	  <option value="EPSG:3857">Mercator</option>
+	</select>
+      </div>
+    </form>
+  </div>
+{% endmacro %}
+
 {% macro geoportail_map() %}
   <div id="map" class="map">
     <div id="popup"></div>
@@ -227,61 +284,8 @@
 {% endmacro %}
 
 {% macro geoportail_bigmap() %}
+  {{ toolbar() }}
   <div id="map" class="bigmap">
-    <div id="toolbar">
-      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#help-modal">
-	<i class="fa fa-info"></i></button>
-      <div id="map-toolbar" class="btn-group btn-group-sm" data-toggle="buttons">
-	<label id="pan" class="btn btn-primary active">
-	  <input type="radio" name="map-toolbar-radio" autocomplete="off" checked> <i class="fa fa-arrows"></i>
-	  {# Pan #}
-	</label>
-	<label id="point" class="btn btn-primary">
-	  <input type="radio" name="map-toolbar-radio" autocomplete="off">
-	  <i class="fa fa-plus"></i>
-	  {# Place #}
-	</label>
-	<label id="modify" class="btn btn-primary">
-	  <input type="radio" name="map-toolbar-radio" autocomplete="off">
-	  <i class="fa fa-pencil"></i>
-	  {# Modifier #}
-	</label>
-	<label id="select" class="btn btn-primary">
-	  <input type="radio" name="map-toolbar-radio" autocomplete="off">
-	  <i class="fa fa-mouse-pointer"></i>
-	  {# Selectioner #}
-	</label>
-      </div>
-      <a id="download-feature-button" class="btn btn-sm btn-primary" role="button">
-	<i class="fa fa-file-text"></i>
-	Download <span id="number-of-features">0</span> places</a>
-      <form class="form-inline">
-	<div class="form-group">
-	  <label></label>
-	  <select id="map-source" autocomplete=off> {# class="form-control" #}
-	    <option value="GEOGRAPHICALGRIDSYSTEMS.MAPS">Cartes IGN</option>
-	    <option value="GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD">Carte Scan Express</option>
-	    <option value="ORTHOIMAGERY.ORTHOPHOTOS">Vue aérienne</option>
-	    <option value="TRANSPORTNETWORKS.ROADS">Routes</option>
-	    <option value="CADASTRALPARCELS.PARCELS">Parcelles cadastrales</option>
-	  </select>
-	</div>
-      </form>
-      <p id="mouse-position">{# Position : #}&nbsp;</p>
-      <form class="form-inline">
-	<div class="form-group">
-	  <div class="form-group">
-	    <label>{# Precision #}</label>
-	    <input id="precision" style="width: 3em" type="number" min="0" max="12" value="4" autocomplete=off/>
-	  </div>
-	  <label>{# Projection #}</label>
-	  <select id="projection" autocomplete=off> {# class="form-control" #}
-	    <option value="EPSG:4326">WGS 84</option>
-	    <option value="EPSG:3857">Mercator</option>
-	  </select>
-	</div>
-      </form>
-    </div>
   </div>
 {% endmacro %}
 
