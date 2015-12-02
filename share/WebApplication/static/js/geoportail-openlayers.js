@@ -128,6 +128,7 @@ for (var i = 0; i < 18; i++) {
   matrix_ids[i] = i.toString();
   resolutions[i] = resolution_max / Math.pow(2, i);
 }
+console.log("Resolutions:", resolutions)
 
 var tile_grid = new ol.tilegrid.WMTS({
   origin: [-20037508, 20037508],
@@ -245,18 +246,16 @@ var style_function = function(feature, resolution) {
   // return styles[feature.getGeometry().getType()];
   // console.log(feature, resolution);
   // console.log(feature.getProperties());
+  // console.log("style_function: resolution =", resolution);
   var object_type = feature.get('object');
-  if (object_type == 'Massif')
-  {
+  if (object_type == 'Massif') {
     if (feature.get('name') == place_name)
       return styles['Massif/current'];
     else
       return styles['Massif/default'];
-  }
-  else
-  {
-    return styles[object_type + '/default'];
-  }
+    } else {
+      return styles[object_type + '/default'];
+    }
 };
 
 var feature_options = {'dataProjection': proj_4326,
@@ -298,33 +297,60 @@ var cluster_source = new ol.source.Cluster({
 
 var style_cache = {};
 
+function has_current_place(features, place_name) {
+  for (var i = 0; i < features.length; i++) {
+    feature = features[i];
+    if (feature.get('name') == place_name)
+      return true;
+  }
+  return false;
+}
+
+function make_cluster_style(size, colour) {
+  return [new ol.style.Style({
+    image: new ol.style.Circle({
+      radius: 10,
+      stroke: new ol.style.Stroke({
+        color: '#fff'
+      }),
+      fill: new ol.style.Fill({
+        color: colour
+      })
+    }),
+    text: new ol.style.Text({
+      text: size.toString(),
+      fill: new ol.style.Fill({
+        color: '#fff'
+      })
+    })
+  })];
+}
+
+var cluster_style_function = function(feature, resolution) {
+  // console.log("clusters style_function: resolution =", resolution);
+  var features = feature.get('features');
+  if (resolution > resolutions[14]) {
+    var size = features.length;
+    if (has_current_place(features, place_name)) {
+      return make_cluster_style(size, 'red');
+    } else {
+      var style = style_cache[size];
+      if (!style) {
+	style = make_cluster_style(size, '#3399CC');
+	style_cache[size] = style;
+      }
+      return style;
+    }
+  } else {
+    features = feature.get('features');
+    feature = features[0];
+    return style_function(feature, resolution);
+  }
+};
+
 var clusters = new ol.layer.Vector({
   source: cluster_source,
-  style: function(feature, resolution) {
-    var size = feature.get('features').length;
-    var style = style_cache[size];
-    if (!style) {
-      style = [new ol.style.Style({
-        image: new ol.style.Circle({
-          radius: 10,
-          stroke: new ol.style.Stroke({
-            color: '#fff'
-          }),
-          fill: new ol.style.Fill({
-            color: '#3399CC'
-          })
-        }),
-        text: new ol.style.Text({
-          text: size.toString(),
-          fill: new ol.style.Fill({
-            color: '#fff'
-          })
-        })
-      })];
-      style_cache[size] = style;
-    }
-    return style;
-  }
+  style: cluster_style_function
 });
 map.addLayer(clusters);
 
@@ -404,6 +430,8 @@ map.on('pointermove', function(event) {
     if (features) {
       feature1 = features[0];
       feature_name = feature1.get('name');
+      if (features.length > 1)
+	feature_name += ' ...' // fixme: unicode
       coordinate = feature1.getGeometry().getCoordinates();
       feature.setStyle([
 	// selected_style,
