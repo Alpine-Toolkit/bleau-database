@@ -243,9 +243,6 @@ var styles = {
 };
 
 var style_function = function(feature, resolution) {
-  // return styles[feature.getGeometry().getType()];
-  // console.log(feature, resolution);
-  // console.log(feature.getProperties());
   // console.log("style_function: resolution =", resolution);
   var object_type = feature.get('object');
   if (object_type == 'Massif') {
@@ -253,9 +250,12 @@ var style_function = function(feature, resolution) {
       return styles['Massif/current'];
     else
       return styles['Massif/default'];
-    } else {
+  } else {
+    if (resolution < resolutions[14])
       return styles[object_type + '/default'];
-    }
+    else
+      return null;
+  }
 };
 
 var feature_options = {'dataProjection': proj_4326,
@@ -272,23 +272,23 @@ var massif_geojson_layer = new ol.layer.Vector({
 });
 // map.addLayer(massif_geojson_layer);
 
-// var circuit_geojson_source = new ol.source.Vector({
-//   features: (new ol.format.GeoJSON()).readFeatures(circuit_geojson, feature_options)
-// });
-// var circuit_geojson_layer = new ol.layer.Vector({
-//   source: circuit_geojson_source,
-//   style: style_function
-// });
-// map.addLayer(circuit_geojson_layer);
+var circuit_geojson_source = new ol.source.Vector({
+  features: (new ol.format.GeoJSON()).readFeatures(circuit_geojson, feature_options)
+});
+var circuit_geojson_layer = new ol.layer.Vector({
+  source: circuit_geojson_source,
+  style: style_function
+});
+map.addLayer(circuit_geojson_layer);
 
-// var place_geojson_source = new ol.source.Vector({
-//   features: (new ol.format.GeoJSON()).readFeatures(place_geojson, feature_options)
-// });
-// var place_geojson_layer = new ol.layer.Vector({
-//   source: place_geojson_source,
-//   style: style_function
-// });
-// map.addLayer(place_geojson_layer);
+var place_geojson_source = new ol.source.Vector({
+  features: (new ol.format.GeoJSON()).readFeatures(place_geojson, feature_options)
+});
+var place_geojson_layer = new ol.layer.Vector({
+  source: place_geojson_source,
+  style: style_function
+});
+map.addLayer(place_geojson_layer);
 
 var cluster_source = new ol.source.Cluster({
   distance: 20,
@@ -433,12 +433,21 @@ map.on('pointermove', function(event) {
       if (features.length > 1)
 	feature_name += ' ...' // fixme: unicode
       coordinate = feature1.getGeometry().getCoordinates();
-      feature.setStyle([
-	// selected_style,
-	selected_text_style_function(feature_name, coordinate)
-      ]);
-      selected_features.push(feature);
-    }});
+    } else {
+      var object_type = feature.get('object');
+      if (object_type == 'Circuit') {
+	feature_name = feature.get('massif') + ' n°' + feature.get('number') + ' ' + feature.get('grade');
+      } else
+	feature_name = feature.get('name');
+      coordinate = feature.getGeometry().getCoordinates();
+    }
+    
+    feature.setStyle([
+      // selected_style,
+      selected_text_style_function(feature_name, coordinate)
+    ]);
+    selected_features.push(feature);
+  });
 });
 
 /**************************************************************************************************/
@@ -514,7 +523,7 @@ if (show_edit_toolbar) {
   var save_feature_button = feature_modal.find('#save-feature-button');
   var download_feature_button = $("#download-feature-button");
   var number_of_features_label = $("#number-of-features");
-
+  
   function show_feature_modal(feature) {
     current_feature = feature;
     mercator_coordinate = feature.getGeometry().getCoordinates();
