@@ -1,5 +1,6 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
+
 {% block content %}
   <ul class="breadcrumb">
     <li><a href="/main">Accueil</a></li>
@@ -19,7 +20,7 @@
 	    {{ form.a_pieds.label }}
 	  </label>
 	</div>
-	
+
 	<fieldset class="form-group">
 	  <label for="a_pieds">À pieds</label>
 	  <input checked class="form-control" id="a_pieds" name="a_pieds" type="checkbox" value="y">

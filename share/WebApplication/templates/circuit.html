@@ -1,14 +1,17 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/geoportail-base.html" %}
+
 {% block head %}
   {{ super() }}
   <link href="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.css" rel="stylesheet" type="text/css">
 {% endblock %}
+
 {% block script %}
   {{ super() }}
   <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.js"></script>
   {{ circuit_statistics.boulder_grade_barchart.script|safe }}
 {% endblock %}
+
 {% block content %}
   <ul class="breadcrumb">
     <li><a href="/main">Accueil</a></li>
