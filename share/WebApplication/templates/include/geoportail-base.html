@@ -2,9 +2,12 @@
 {% extends "include/base.html" %}
 
 {% block head %}
-  <link rel="stylesheet" href="http://openlayers.org/en/v3.10.1/css/ol.css" type="text/css">
-  {# <script type="text/css" src={{ url_for('static', filename='css/ol.css') }}></script> #}
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  {% if use_cdn %}
+    <link rel="stylesheet" href="http://openlayers.org/en/v3.10.1/css/ol.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  {% else %}
+    <script type="text/css" src={{ url_for('static', filename='css/ol.css') }}></script>
+  {% endif %}
 
   <style>
    .map {
@@ -13,8 +16,11 @@
    }
   </style>
 
-  {# <script type="text/javascript" src="http://openlayers.org/en/v3.10.1/build/ol.js"></script> #}
-  <script type="text/javascript" src={{ url_for('static', filename='js/ol.js') }}></script>
+  {% if use_cdn %}
+    <script type="text/javascript" src="http://openlayers.org/en/v3.10.1/build/ol.js"></script>
+  {% else %}
+    <script type="text/javascript" src={{ url_for('static', filename='js/ol.js') }}></script>
+  {% endif %}
 {% endblock %}
 
 {% macro big_map_style() %}
@@ -302,9 +308,10 @@
    {% include "include/geoportail_api_key.js" %}
   </script>
 
+  <script type="text/javascript" src={{ url_for('static', filename='js/FileSaver.min.js') }}></script>
+
   <script type="text/javascript" src={{ url_for('static', filename='data/bleau-places-geoson.js') }}></script>
   <script type="text/javascript" src={{ url_for('static', filename='data/bleau-massifs-geoson.js') }}></script>
   <script type="text/javascript" src={{ url_for('static', filename='data/bleau-circuits-geoson.js') }}></script>
   <script type="text/javascript" src={{ url_for('static', filename='js/geoportail-openlayers.js') }}></script>
-  <script type="text/javascript" src={{ url_for('static', filename='js/FileSaver.min.js') }}></script>
 {% endblock %}
