@@ -53,6 +53,8 @@ except ImportError:
     logging.warn('geojson module is not available')
     geojson = None
 
+from ArithmeticInterval import Interval2D
+
 ####################################################################################################
 
 from .FieldObject import InstanceChecker, StringList, FromJsonMixin
@@ -871,6 +873,8 @@ class BleauDataBase:
         self._circuits = {}
         self._number_of_boulders = None
         
+        self._area_interval = None
+        
         self._rtree_place = None
         self._rtree_massif = None
         self._rtree_circuit = None
@@ -1151,6 +1155,31 @@ class BleauDataBase:
         # print(massifs)
 
         return massifs
+
+    ##############################################
+
+    def _compute_area_interval(self):
+
+        interval = None
+        for massif in self.massifs:
+            coordinate = massif.coordinate
+            if coordinate is not None:
+                massif_interval = Interval2D((coordinate.longitude, coordinate.longitude),
+                                             (coordinate.latitude, coordinate.latitude))
+                if interval is None:
+                    interval = massif_interval
+                else:
+                    interval |= massif_interval
+        return interval
+
+    ##############################################
+
+    @property
+    def area_interval(self):
+
+        if self._area_interval is None:
+            self._area_interval = self._compute_area_interval()
+        return self._area_interval
 
 ####################################################################################################
 #
