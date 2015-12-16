@@ -29,17 +29,17 @@ from flask import Flask
 def create_application(config_path, bleau_database):
 
     application = Flask(__name__)
-
+    
     application.config.from_pyfile(config_path)
     # Fixme: right way?
     application.config['bleau_database'] = bleau_database
-
+    
     from .Model import model
     model.init_app(application)
-
+    
     from .Views.Main import main
     application.register_blueprint(main)
-
+    
     application.secret_key = os.urandom(24)
     # WTF_CSRF_SECRET_KEY =
     
