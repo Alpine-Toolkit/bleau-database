@@ -1054,7 +1054,7 @@ class BleauDataBase:
         rtree_ = rtree.index.Index()
         for item in items:
             if item:
-                rtree_.insert(id(item), item.coordinate.bounding_box, obj=item)
+                rtree_.insert(id(item), item.coordinate.bounding_box)
                 self._ids[id(item)] = item
         return rtree_
 
