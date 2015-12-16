@@ -26,7 +26,7 @@
 {% macro big_map_style() %}
   <style>
    .bigmap {
-       // position: fixed;
+       position: fixed;
        // left: 0;
        // top: 0;
        width: 100%;
@@ -297,11 +297,19 @@
 
 {% block script %}
   <script type="text/javascript">
+   {% if place %}
+   var extent = null;
    var place_name = "{{ place.name }}";
    var center = {
        longitude: {{ place.coordinate.longitude }},
        latitude: {{ place.coordinate.latitude }}
    };
+   var extent_margin = [1000, 1000]; // m
+   {% else %}
+   var place_name = null;
+   var extent = [{{ extent.x.inf }}, {{ extent.y.inf }},
+		 {{ extent.x.sup }}, {{ extent.y.sup }}];
+   {% endif %}
    {% block geoportail_script %}
    var show_edit_toolbar = false;
    {% endblock %}

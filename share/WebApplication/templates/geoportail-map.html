@@ -9,9 +9,9 @@
 {% block nav %}{% endblock %}
 
 {% block body_container %}
+  {{ geoportail_bigmap() }}
   {{ help_modal() }}
   {{ feature_modal() }}
-  {{ geoportail_bigmap() }}
 {% endblock %}
 
 {% block geoportail_script %}

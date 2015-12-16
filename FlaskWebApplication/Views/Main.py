@@ -27,7 +27,7 @@ from flask_wtf import Form
 from wtforms import BooleanField, TextField, SelectMultipleField, SubmitField
 # from wtforms import validators
 
-from BleauDataBase.BleauDataBase import AlpineGrade
+from BleauDataBase.BleauDataBase import AlpineGrade, Coordinate
 
 ####################################################################################################
 
@@ -44,6 +44,10 @@ def index():
 @main.route('/a-propos')
 def a_propos():
     return render_template('a-propos.html')
+
+@main.route('/data')
+def data():
+    return render_template('data.html')
 
 @main.route('/massifs')
 def massifs():
@@ -75,8 +79,14 @@ def circuit(circuit):
                            place=circuit,
                            circuit_statistics=circuit_statistics)
 
+@main.route('/geoportail')
+def geoportail():
+    extent = model.bleau_database.mercator_area_interval.enlarge(1000)
+    return render_template('geoportail-map.html', extent=extent,
+                           massif=None, place=None)
+
 @main.route('/geoportail/<massif>')
-def geoportail(massif):
+def geoportail_massif(massif):
     massif = model.bleau_database[massif]
     return render_template('geoportail-map.html', massif=massif, place=massif)
 
@@ -96,7 +106,7 @@ class MassifSearchForm(Form):
                                      choices=[(x, x) for x in ('A', 'B', 'C', 'D', 'E')])
     # cotation = TextField('Cotation')
     grades = SelectMultipleField('Cotations',
-                                 choices=[(x, x) for x in AlpineGrade.__grade_majors__])
+                                 choices=[(x, x) for x in AlpineGrade.__grade_majors__ if x != 'EX'])
 
 @main.route('/search-massifs', methods=['GET', 'POST'])
 def search_massifs():

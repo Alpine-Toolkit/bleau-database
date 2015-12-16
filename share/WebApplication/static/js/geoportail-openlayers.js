@@ -23,6 +23,8 @@
 
 // var place_name = "...";
 // var center = {longitude: ..., latitude: ...}
+// var extent_margin = [1000, 1000]; // m
+// var extent = null;
 
 // var geoportail_api_key = "...";
 
@@ -36,17 +38,28 @@ var proj_3857 = ol.proj.get('EPSG:3857');
 
 /**************************************************************************************************/
 
-var center_in_mercator = ol.proj.transform([center.longitude, center.latitude],
-					   'EPSG:4326', 'EPSG:3857');
+if (extent) {
+  var center_in_mercator = [.5*(extent[0] + extent[2]),
+			    .5*(extent[1] + extent[3])];
+} else {
+  var center_in_mercator = ol.proj.transform([center.longitude, center.latitude],
+					     'EPSG:4326', 'EPSG:3857');
+  
+  extent = [
+    center_in_mercator[0] - extent_margin[0], center_in_mercator[1] - extent_margin[1],
+    center_in_mercator[0] + extent_margin[0], center_in_mercator[1] + extent_margin[1]
+  ]
+}
+
+var view_setup = {
+  zoom: 15,
+  center: center_in_mercator
+}
 
 /**************************************************************************************************/
 
-var extent_margin = 1000; // m
 var zoom_to_extent = new ol.control.ZoomToExtent({
-  extent: [
-    center_in_mercator[0] - extent_margin, center_in_mercator[1] - extent_margin,
-    center_in_mercator[0] + extent_margin, center_in_mercator[1] + extent_margin
-  ]
+  extent: extent
 });
 
 var scale_line_control = new ol.control.ScaleLine();
@@ -112,11 +125,11 @@ var map = new ol.Map({
     mouse_position_control,
     full_screen_control
   ]),
-  view: new ol.View({
-    zoom: 15,
-    center: center_in_mercator
-  })
+  view: new ol.View(view_setup)
 });
+
+if (extent)
+  map.getView().fit(extent, map.getSize());
 
 /**************************************************************************************************/
 
