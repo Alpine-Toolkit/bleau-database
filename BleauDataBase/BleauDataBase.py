@@ -1181,6 +1181,26 @@ class BleauDataBase:
             self._area_interval = self._compute_area_interval()
         return self._area_interval
 
+    ##############################################
+
+    @property
+    def mercator_area_interval(self):
+
+        area_interval = self.area_interval
+        inf = Coordinate(longitude=area_interval.x.inf, latitude=area_interval.y.inf)
+        sup = Coordinate(longitude=area_interval.x.sup, latitude=area_interval.y.sup)
+        mercator_inf = inf.mercator
+        mercator_sup = sup.mercator
+        return Interval2D((mercator_inf[0], mercator_sup[0]), (mercator_inf[1], mercator_sup[1]))
+
+    ##############################################
+
+    @property
+    def area_interval_centre(self):
+
+        longitude, latitude = self.area_interval.centre
+        return Coordinate(longitude=longitude, latitude=latitude)
+
 ####################################################################################################
 #
 # End
