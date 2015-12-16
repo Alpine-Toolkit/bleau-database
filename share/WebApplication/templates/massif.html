@@ -90,8 +90,10 @@
 	</tbody>
       </table>
 
-      {# {{ circuit_statistics.circuit_grade_barchart.div|safe }} #}
-      {{ circuit_statistics.boulder_grade_barchart.div|safe }}
+      <div class="center-block">
+	{# {{ circuit_statistics.circuit_grade_barchart.div|safe }} #}
+	{{ circuit_statistics.boulder_grade_barchart.div|safe }}
+      </div>
 
       <h2>Massifs à proximité</h2>
       <div class="alert alert-info" role="alert">
@@ -110,7 +112,7 @@
 		  <td>
 		    <ul class="list-inline">
 		      {% for grade in massif_.grades %}
-			<li>{{ grade }}</li>
+			<li class="list-inline-item">{{ grade }}</li>
 		      {% endfor %}
 		    </ul>
 		  </td>

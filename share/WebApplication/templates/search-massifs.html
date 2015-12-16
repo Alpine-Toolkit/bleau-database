@@ -12,35 +12,28 @@
       {% from "include/form_helpers.html" import render_field %}
       <form method="post" action="/main/search-massifs"> {# class="form-inline" #}
 	{{ form.csrf_token }}
-	{{ render_field(form.a_pieds) }}
-	{#
-	<div class="checkbox">
-	  <label for="{{ form.a_pieds.name }}">
-	    <input type="checkbox" id="{{ form.a_pieds.id }}" name="{{ form.a_pieds.name }}" {% if form.a_pieds.data['checked'] %}checked=""{% endif %}>
-	    {{ form.a_pieds.label }}
-	  </label>
-	</div>
-
-	<fieldset class="form-group">
-	  <label for="a_pieds">À pieds</label>
-	  <input checked class="form-control" id="a_pieds" name="a_pieds" type="checkbox" value="y">
-	</fieldset>
-	#}
 	<div class="row">
 	  <div class="col-xl-4">
 	    {{ render_field(form.secteurs, size=5) }} {# Fixme size #}
 	  </div>
-	  <div class="col-xl-4">
-	    {{ render_field(form.chaos_type, size=5) }}
-	  </div>
-	  <div class="col-xl-4">
+	  <div class="col-xl-2">
 	    {{ render_field(form.grades, size=7) }}
 	  </div>
+	  <div class="col-xl-2">
+	    {{ render_field(form.chaos_type, size=5) }}
+	  </div>
+	</div>
+	{# {{ render_field(form.a_pieds) }} #}
+	<div class="checkbox">
+	  <label for="{{ form.a_pieds.name }}">
+	    <input type="checkbox" id="{{ form.a_pieds.id }}" name="{{ form.a_pieds.name }}" {% if form.a_pieds.data %}checked=""{% endif %}>
+	    {{ form.a_pieds.label }}
+	  </label>
 	</div>
 	<button type="submit" class="btn btn-primary">Rechercher</button>
       </form>
     </div>
-    <div class="col-xl-12 m-t-md">
+    <div class="col-xl-12 m-t-md" style="margin-top: 1em">
       <h2>Massifs</h2>
       <table class="table table-sm">
 	<tbody>
@@ -52,7 +45,7 @@
 	      <td>
 		<ul class="list-inline">
 		  {% for grade in massif.grades %}
-		    <li>{{ grade }}</li>
+		    <li class="list-inline-item">{{ grade }}</li>
 		  {% endfor %}
 		</ul>
 	      </td>
