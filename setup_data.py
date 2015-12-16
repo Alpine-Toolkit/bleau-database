@@ -61,6 +61,18 @@ setup_dict = dict(
         "Operating System :: OS Independent",
         "Programming Language :: Python :: 3.4",
         ],
+    requires=[
+        'IntervalArithmetic'
+        'fastkml',
+        'geojson',
+        'lxml',
+        'RTree',
+        # Web Application
+        'bokeh',
+        'flask',
+        'flask_wtf',
+        'wtforms',
+    ],
     )
 
 ####################################################################################################
