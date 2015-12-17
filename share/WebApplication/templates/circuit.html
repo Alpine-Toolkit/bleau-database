@@ -9,7 +9,7 @@
 {% block script %}
   {{ super() }}
   <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.js"></script>
-  {{ circuit_statistics.boulder_grade_barchart.script|safe }}
+  {{ circuit_statistics.global_boulder_grade_barchart.script|safe }}
 {% endblock %}
 
 {% block content %}
@@ -44,7 +44,7 @@
 
       <div class="center-block">
 	{{ circuit_statistics.circuit_grade_barchart.div|safe }}
-	{{ circuit_statistics.boulder_grade_barchart.div|safe }}
+	{{ circuit_statistics.global_boulder_grade_barchart.div|safe }}
       </div>
 
       <h2>Blocs</h2>

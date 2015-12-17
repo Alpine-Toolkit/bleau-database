@@ -10,7 +10,7 @@
   {{ super() }}
   <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.js"></script>
   {# {{ circuit_statistics.circuit_grade_barchart.script|safe }} #}
-  {{ circuit_statistics.boulder_grade_barchart.script|safe }}
+  {{ circuit_statistics.global_boulder_grade_barchart.script|safe }}
 {% endblock %}
 
 {% block content %}
@@ -30,7 +30,7 @@
 
       <h2>Accés</h2>
       <dl>
-	<dt>Accés en voiture</dt>
+	<dt><i class="fa fa-car"></i> Accés en voiture</dt>
 	<dd>
 	  {{ massif.acces }}<br>
 	  {% if massif.parking %}
@@ -39,7 +39,7 @@
 	  Pas d'itineraire renseigné
 	  {% endif %}
 	</dd>
-        <dt>Accés à vélo {% if massif.a_pieds %}/ à pieds{% endif %}</dt>
+        <dt><i class="fa fa-bicycle"></i> Accés à vélo {% if massif.a_pieds %}/ à pieds{% endif %}</dt>
 	<dd>{{ massif.velo }}</dd>
       </dl>
 
@@ -92,7 +92,7 @@
 
       <div class="center-block">
 	{# {{ circuit_statistics.circuit_grade_barchart.div|safe }} #}
-	{{ circuit_statistics.boulder_grade_barchart.div|safe }}
+	{{ circuit_statistics.global_boulder_grade_barchart.div|safe }}
       </div>
 
       <h2>Massifs à proximité</h2>
