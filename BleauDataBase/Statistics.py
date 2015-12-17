@@ -119,17 +119,26 @@ class CircuitStatistics:
     def __init__(self, circuits):
 
         circuit_grade_histogram = AlpineGradeHistogram()
-        boulder_grade_histogram = GradeHistogram()
+        global_boulder_grade_histogram = GradeHistogram()
+        boulder_grade_histogram_map = {}
         for circuit in circuits:
             circuit_grade_histogram.increment(circuit.grade)
+            major_grade = str(circuit.grade.major)
+            if major_grade not in boulder_grade_histogram_map:
+                boulder_grade_histogram_map[major_grade] = GradeHistogram()
+            boulder_grade_histogram = boulder_grade_histogram_map[major_grade]
             boulders = circuit.boulders
             if boulders:
                 for boulder in boulders:
                     grade = boulder.grade
                     if grade:
-                        boulder_grade_histogram.increment(grade.standard_grade)
+                        standard_grade = str(grade.standard_grade)
+                        global_boulder_grade_histogram.increment(standard_grade)
+                        boulder_grade_histogram.increment(standard_grade)
+        
         self._circuit_grade_histogram = circuit_grade_histogram
-        self._boulder_grade_histogram = boulder_grade_histogram
+        self._global_boulder_grade_histogram = global_boulder_grade_histogram
+        self._boulder_grade_histogram_map = boulder_grade_histogram_map
 
     ##############################################
 
@@ -140,8 +149,19 @@ class CircuitStatistics:
     ##############################################
 
     @property
-    def boulder_grade_histogram(self):
-        return self._boulder_grade_histogram
+    def global_boulder_grade_histogram(self):
+        return self._global_boulder_grade_histogram
+
+    ##############################################
+
+    @property
+    def circuit_grades(self):
+        return list(self._boulder_grade_histogram_map.keys())
+
+    ##############################################
+
+    def boulder_grade_histogram(self, grade):
+        return self._boulder_grade_histogram_map[grade]
 
 ####################################################################################################
 #

@@ -53,8 +53,11 @@ class CircuitStatisticsData:
         self._circuit_statistics = CircuitStatistics(circuits)
         self._circuit_grade_barchart = self._make_barchart(self._circuit_statistics.circuit_grade_histogram,
                                                            'Cotation des Circuits') # Circuit Grade
-        self._boulder_grade_barchart = self._make_barchart(self._circuit_statistics.boulder_grade_histogram,
-                                                           'Cotations des Blocs') # Boulder Grade
+        self._global_boulder_grade_barchart = self._make_barchart(self._circuit_statistics.global_boulder_grade_histogram,
+                                                                  'Cotations des Blocs') # Boulder Grade
+        self._boulder_grade_barchart_map = {grade:self._make_barchart(self._circuit_statistics.boulder_grade_histogram(grade),
+                                                                      'Cotations des Blocs pour les circuits {}'.format(grade))
+                                            for grade in self._circuit_statistics.circuit_grades}
 
     ##############################################
 
@@ -79,8 +82,15 @@ class CircuitStatisticsData:
         return self._circuit_grade_barchart
 
     @property
-    def boulder_grade_barchart(self):
-        return self._boulder_grade_barchart
+    def global_boulder_grade_barchart(self):
+        return self._global_boulder_grade_barchart
+
+    @property
+    def circuit_grades(self):
+        return list(self._boulder_grade_barchart_map.keys())
+
+    def boulder_grade_barchart(self, grade):
+        return self._boulder_grade_barchart_map[grade]
 
 ####################################################################################################
 

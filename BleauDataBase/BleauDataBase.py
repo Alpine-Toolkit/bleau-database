@@ -226,6 +226,11 @@ class Grade:
 
     ##############################################
 
+    def __repr__(self):
+        return str(self)
+
+    ##############################################
+
     @property
     def __json_interface__(self):
         return str(self)
@@ -385,6 +390,11 @@ class AlpineGrade:
     ##############################################
 
     def __str__(self):
+        return self._grade
+
+    ##############################################
+
+    def __repr__(self):
         return self._grade
 
     ##############################################
@@ -667,6 +677,12 @@ class Massif(PlaceBase):
         # return iter(sorted(self._circuits, key=lambda x: x.grade))
         # return iter(sorted(self._circuits, key=lambda x: int(x.grade)))
         return iter(sorted(self._circuits))
+
+    ##############################################
+
+    @property
+    def circuits(self):
+        return iter(self)
 
     ##############################################
 
