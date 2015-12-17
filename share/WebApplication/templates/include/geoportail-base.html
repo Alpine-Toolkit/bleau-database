@@ -4,7 +4,6 @@
 {% block head %}
   {% if use_cdn %}
     <link rel="stylesheet" href="http://openlayers.org/en/v3.10.1/css/ol.css" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   {% else %}
     <script type="text/css" src={{ url_for('static', filename='css/ol.css') }}></script>
   {% endif %}
@@ -228,6 +227,7 @@
 
 {% macro toolbar() %}
   <div id="toolbar">
+    <a class="btn btn-primary btn-sm" href="/main" role="button"><i class="fa fa-home"></i></a>
     <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#help-modal">
       <i class="fa fa-info"></i></button>
     <div id="map-toolbar" class="btn-group btn-group-sm" data-toggle="buttons">
