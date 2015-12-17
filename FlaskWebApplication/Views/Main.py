@@ -41,13 +41,36 @@ main = Blueprint('main', __name__, url_prefix='/main')
 def index():
     return render_template('main.html', bleau_database=model.bleau_database)
 
+@main.route('/mentions-legales')
+def mentions_legales():
+    return render_template('mentions-legales.html')
+
 @main.route('/a-propos')
 def a_propos():
-    return render_template('a-propos.html')
+    return render_template('a-propos.html', bleau_database=model.bleau_database)
+
+@main.route('/fontainebleau')
+def fontainebleau():
+    return render_template('fontainebleau.html')
+
+@main.route('/environment')
+def environment():
+    return render_template('environment.html')
+
+@main.route('/contribute')
+def contribute():
+    return render_template('contribute.html')
 
 @main.route('/data')
 def data():
     return render_template('data.html')
+
+@main.route('/statistics')
+def statistics():
+    circuits = model.bleau_database.circuits
+    circuit_statistics = model.circuit_statistics_cache[list(circuits)]
+    return render_template('statistics.html',
+                           circuit_statistics=circuit_statistics)
 
 @main.route('/massifs')
 def massifs():

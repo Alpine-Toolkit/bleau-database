@@ -3,6 +3,7 @@
 {% set use_cdn = true %}
 {# "{{ LANGUAGE_CODE }}" #}
 <html lang="fr">
+{% include "include/cookie-consent.html" %}
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +14,7 @@
   <meta name="author" content="Fabrice Salvaire">
 
   {% if use_cdn %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
   {% else %}
     <link rel="stylesheet" href={{ url_for('static', filename='css/bootstrap.min.css') }}>
@@ -52,7 +54,11 @@
     {% block footer %}
     <hr />
     <footer>
-      <p>&copy; <a href="https://github.com/Cosiroc/bleau-database">Bleau Database Web Application 2015</a> / Fabrice Salvaire</p>
+      <p>
+	<i class="fa fa-copyright"></i> <a href="https://github.com/Cosiroc/bleau-database">Bleau Database Web Application 2015</a>
+	{# / Fabrice Salvaire  #}
+	/ <a href="/main/mentions-legales">Mentions légales</a>
+      </p>
     </footer>
     {% endblock %}
     </div>

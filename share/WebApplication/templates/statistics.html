@@ -1,0 +1,39 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "include/base.html" %}
+
+{% set circuit_grades = ('PD', 'AD', 'D', 'TD', 'ED') %}
+
+{% block script %}
+  {{ super() }}
+  <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.js"></script>
+  {{ circuit_statistics.circuit_grade_barchart.script|safe }}
+  {{ circuit_statistics.global_boulder_grade_barchart.script|safe }}
+  {% for grade in circuit_grades %}
+    {{ circuit_statistics.boulder_grade_barchart(grade).script|safe }}
+  {% endfor %}
+{% endblock %}
+
+{% block content %}
+  <ul class="breadcrumb">
+    <li><a href="/main">Accueil</a></li>
+    <li class="active">Statistiques sur les Circuits</li>
+  </ul>
+
+  <div class="row">
+    <div class="col-xl-12">
+      <h2>Statistiques sur tous les circuits</h2>
+      <div class="center-block">
+	{{ circuit_statistics.circuit_grade_barchart.div|safe }}
+      </div>
+      <div class="center-block">
+	{{ circuit_statistics.global_boulder_grade_barchart.div|safe }}
+      </div>
+      <h2>Statistiques sur tous les difficultés des circuits</h2>
+      {% for grade in circuit_grades %}
+	<div class="center-block">
+	  {{ circuit_statistics.boulder_grade_barchart(grade).div|safe }}
+	</div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

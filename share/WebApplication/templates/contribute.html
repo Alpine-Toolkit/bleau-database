@@ -1,0 +1,35 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "include/base.html" %}
+
+{% block content %}
+  <ul class="breadcrumb">
+    <li><a href="/main">Accueil</a></li>
+    <li class="active">Contribuer</li>
+  </ul>
+
+  <div class="row">
+    <div class="col-xl-12">
+      <h2>Rapporter des erreurs ou un dysfonctionnement</h2>
+      <ul>
+	<li>Veuillez vérifier avant que le problème n'a pas déjà été rapporté par quelqu'un d'autre.
+	  Les tickets sont répertoriés à cette <a href="https://github.com/Cosiroc/bleau-database/issues">adresse <i class="fa fa-github"></i></a>.
+	</li>
+	<li>Si il s'agit d'un problème d'affichage, veuillez indiquer la résolution de votre écran et le navigateur utilisé ainsi que sa version.<br>
+	  Notez que ce site requiert un navigateur compatible HTML5, les navigateurs ancestraux ne sont pas supporté. <br>
+	  Si vous le pouvez, installez un navigateur récent
+	  (<a href="https://www.mozilla.org/fr/firefox/new">Firefox</a>, Chrome, Safari, Microsoft Edge). <br>
+	  Si vous naviguez sur un smartphone, assurez vous d'avoir une bonne connexion, un modèle suffisament performant et un navigateur compatible.
+	</li>
+	<li>Pour créer un ticket, vous devez avoir ou créer un compte Github. Cela permet d'identifier les personnes et de communiquer.</li>
+      </ul>
+      <p><a href="https://github.com/Cosiroc/bleau-database/issues/new">
+	<i class="fa fa-bug"></i> Créer un ticket</a></p>
+      </p>
+      <h2>Contribuer</h2>
+      <p>
+	Vous pouvez proposer des « pull requests » sur le
+	<a href="https://github.com/Cosiroc/bleau-database">depôt <i class="fa fa-github"></i></a>.
+      </p>
+    </div>
+  </div>
+{% endblock %}

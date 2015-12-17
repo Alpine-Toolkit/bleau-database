@@ -2,8 +2,57 @@
 {% extends "include/base.html" %}
 
 {% block content %}
+  <ul class="breadcrumb">
+    <li><a href="/main">Accueil</a></li>
+    <li class="active">À propos</li>
+  </ul>
+
   <div class="row">
     <div class="col-xl-12">
+      <h2>Colophon</h2>
+      <p>
+	Ce site présente une compilation de toutes les données disponible
+	sur les sites d'escalade de la région de Fontainebleau.
+      </p>
+      <p>
+	La <a href="/main/data">base de données</a> répertorie {{ bleau_database.number_of_massifs }} massifs
+	et {{ bleau_database.number_of_circuits }} circuits
+	dont {{ bleau_database.number_of_circuits_with_topos }} avec topo,
+	{{ bleau_database.number_of_boulders }} blocs sont référencés.
+      </p>
+      <p>Les principales fonctions du site sont les suivantes&nbsp;:
+	<ul>
+	  <li>Le site est « responsive », il s'adapte au format de l'écran que ce soit un smartphone, une tablette ou un ordinateur.</li>
+	  <li>Liste des massifs et des circuits par secteur</li>
+	  <li>Recherche de circuits par secteur, cotation, type de chaos, accès, etc.</li>
+	  <li>Topo des circuits</li>
+	  <li>Accès des massifs en voiture, à vélo, par le train et à pieds</li>
+	  <li>Recherche des circuits à proximité et des points d'eau</li>
+	  <li>Carte de situation et coordonées GPS des massifs et des circuits</li>
+	  <li>Carte interactive pour créer des points d'intérêts</li>
+	  <li>Histogrammes des cotations pour les massifs et les circuits</li>
+	</ul>
+      </p>
+      <h2>À propos de l'application web</h2>
+      <p>
+	Cette application web a été écrite à la fin 2015 par
+	<a target="_blank" href="http://www.fabrice-salvaire.fr">Fabrice Salvaire <i class="fa fa-home"></i></a>
+	<a target="_blank" href="http://blog.fabrice-salvaire.fr"><i class="fa fa-commenting"></i></a>
+	<a target="_blank" href="https://github.com/FabriceSalvaire"><i class="fa fa-github"></i></a>.<br>
+	Le <a target="_blank" href="https://github.com/Cosiroc/bleau-database">code source</a> est sous licence
+	<a target="_blank" href="http://www.gnu.org/licenses/agpl.html">GNU Affero General Public License V3</a>.
+      </p>
+      <p>
+	Les principales technologies employés sont les suivantes&nbsp;:
+	<ul>
+	  <li><a target="_blank" href="https://www.python.org/">Python 3 Language</a></li>
+	  <li><a target="_blank" href="http://flask.pocoo.org/">Flask Microframework</a></li>
+	  <li><a target="_blank" href="http://getbootstrap.com/">Bootstrap V4 Responsive Stylesheet</a></li>
+	  <li><a target="_blank" href="https://fortawesome.github.io/">Font Awesome Icons</a></li>
+	  <li><a target="_blank" href="http://openlayers.org/">OpenLayers V3 Web Map Tile Service Framework</a></li>
+	  <li><a target="_blank" href="http://api.ign.fr/accueil">IGN API Géoportail</a></li>
+	</ul>
+      </p>
     </div>
   </div>
 {% endblock %}

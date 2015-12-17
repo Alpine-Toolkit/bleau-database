@@ -1,0 +1,69 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "include/base.html" %}
+
+{% block content %}
+  <ul class="breadcrumb">
+    <li><a href="/main">Accueil</a></li>
+    <li class="active">Données</li>
+  </ul>
+
+  <div class="row">
+    <div class="col-xl-12">
+      <h2>Licence d'utilisation des données</h2>
+      <p>
+	La base de données est disponible sous la licence
+	<a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a> dans
+	le même esprit que Wikipedia et
+	<a target="_blank" href="http://www.camptocamp.org/articles/106728/fr/licence-des-contenus">camptocamp.org</a>.
+      </p>
+      <p>Le <a target="_blank" href="https://github.com/Cosiroc/bleau-database">code source</a> du site est sous
+      licence <a target="_blank" href="http://www.gnu.org/licenses/agpl.html">GNU Affero General Public License V3</a>.
+      </p>
+      
+      <h2>Données compatibles avec un Smartphone ou un GPS</h2>
+      <p>Les coordonnées des massifs et des circuits sont disponible au format GPX sous forme d'une liste de points d'intérêt dans ce fichier
+	<i class="fa fa-download"></i>
+	<a href="https://raw.githubusercontent.com/Cosiroc/bleau-database/master/data/bleau.gpx" download>bleau.gpx</a>
+      </p>
+      <p>
+	Ce fichier peut être utilisé conjointement avec un smartphone et l'application <a target="_blank" href="http://osmand.net">OsmAnd</a> qui
+	exploite le fond de carte <a target="_blank" href="http://openstreetmap.fr">OpenStreetMap</a>.<br>
+	
+	Il faut pour cela copier ce fichier sur votre smartphone dans le dossier <em>osmand</em> sous le nom <em>favourites.gpx</em>.
+	<div class="alert alert-danger" role="alert">
+	  <i class="fa fa-bomb"></i>
+	  <strong>Pensez à sauvegarder et fusionner vos points d'intérêt avant d'écraser le fichier !</strong>
+	</div>
+      </p>
+      
+      <h2>Base de Données au format JSON</h2>
+      <p>La base de données de référence est contenu dans ce ficher
+	<i class="fa fa-download"></i>
+	<a href="https://raw.githubusercontent.com/Cosiroc/bleau-database/master/data/bleau.json" download>
+	  bleau.json</a>
+      </p>
+      <p>Le module Python <strong>BleauDataBase</strong> offre une API orienté objet pour exploiter
+      la base de données. Voir la page du <a href="https://github.com/Cosiroc/bleau-database">dépôt Git</a> pour plus de détails.
+      </p>
+
+      <h2>Base de Données au format GeoJSON</h2>
+      <p>
+	Les données sont aussi disponible au format <a target="_blank" href="http://geojson.org">GeoJSON</a>&nbsp;:
+	<ul>
+	  <li>
+	    <i class="fa fa-download"></i>
+	    <a href="https://raw.githubusercontent.com/Cosiroc/bleau-database/master/data/bleau-massifs-geo.json" download>
+	      bleau-massifs-geo.json</a></li>
+	  <li>
+	    <i class="fa fa-download"></i>
+	    <a href="https://raw.githubusercontent.com/Cosiroc/bleau-database/master/data/bleau-circuits-geo.json" download>
+	      bleau-circuits-geo.json</a></li>
+	  <li>
+	    <i class="fa fa-download"></i>
+	    <a href="https://raw.githubusercontent.com/Cosiroc/bleau-database/master/data/bleau-places-geo.json" download>
+	      bleau-places-geo.json</a></li>
+	</ul>
+      </p>
+    </div>
+  </div>
+{% endblock %}
