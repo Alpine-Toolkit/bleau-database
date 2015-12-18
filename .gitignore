@@ -1,4 +1,9 @@
 *~
 __pycache__
-build
-share/WebApplication/templates/geoportail_api_key.js
+README.html
+build/
+setenv.sh
+share/WebApplication/templates/include/geoportail_api_key.js
+test/
+tools/rsync-vps.sh
+trash/
