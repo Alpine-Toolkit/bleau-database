@@ -62,7 +62,7 @@ setup_dict = dict(
         "Programming Language :: Python :: 3.4",
         ],
     requires=[
-        'IntervalArithmetic'
+        'ArithmeticInterval'
         'fastkml',
         'geojson',
         'lxml',
