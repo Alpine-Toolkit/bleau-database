@@ -22,17 +22,17 @@
   <div class="row">
     <div class="col-xl-12">
       <h2>Statistiques sur tous les circuits</h2>
-      <div class="center-block">
+      <p class="text-xl-center">
 	{{ circuit_statistics.circuit_grade_barchart.div|safe }}
-      </div>
-      <div class="center-block">
+      </p>
+      <p class="text-xl-center">
 	{{ circuit_statistics.global_boulder_grade_barchart.div|safe }}
-      </div>
+      </p>
       <h2>Statistiques sur tous les difficultés des circuits</h2>
       {% for grade in circuit_grades %}
-	<div class="center-block">
+	<p class="text-xl-center">
 	  {{ circuit_statistics.boulder_grade_barchart(grade).div|safe }}
-	</div>
+	</p>
       {% endfor %}
     </div>
   </div>
