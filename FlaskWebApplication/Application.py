@@ -22,7 +22,7 @@
 
 import os
 
-from flask import Flask
+from flask import Flask, redirect, url_for
 
 ####################################################################################################
 
@@ -37,8 +37,9 @@ def create_application(config_path, bleau_database):
     from .Model import model
     model.init_app(application)
     
-    from .Views.Main import main
+    from .Views.Main import main, index
     application.register_blueprint(main)
+    application.add_url_rule('/', 'main.index')
     
     application.secret_key = os.urandom(24)
     # WTF_CSRF_SECRET_KEY =
