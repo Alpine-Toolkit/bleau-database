@@ -22,7 +22,7 @@
 
 import os
 
-from flask import Flask, g, request, render_template, abort, redirect, url_for
+from flask import Flask, g, request, render_template, abort
 from flask.ext.babel import Babel
 
 ####################################################################################################
@@ -56,11 +56,6 @@ def get_locale():
 
 ####################################################################################################
 
-def root():
-    return redirect(url_for('main.index', lang_code='fr'))
-
-####################################################################################################
-
 def create_application(config_path, bleau_database):
 
     application = Flask(__name__)
@@ -78,8 +73,9 @@ def create_application(config_path, bleau_database):
     
     from .Views.Main import main
     application.register_blueprint(main)
+    
+    # Map / to /fr
     application.add_url_rule('/', 'main.index')
-    # application.add_url_rule('/', 'root', root)
     
     application.secret_key = os.urandom(24)
     # WTF_CSRF_SECRET_KEY =

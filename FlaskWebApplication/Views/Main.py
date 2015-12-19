@@ -39,12 +39,13 @@ main = Blueprint('main', __name__, url_prefix='/<lang_code>')
 
 @main.url_defaults
 def add_language_code(endpoint, values):
-    print('add_language_code', endpoint, values)
+    # Fixme: purpose ?
+    # print('add_language_code', endpoint, values)
     values.setdefault('lang_code', g.lang_code)
 
 @main.url_value_preprocessor
 def pull_lang_code(endpoint, values):
-    print('pull_lang_code', endpoint, values)
+    # print('pull_lang_code', endpoint, values)
     g.lang_code = values.pop('lang_code', 'fr')
 
 def render_template_i18n(template, **kwgars):
@@ -53,6 +54,8 @@ def render_template_i18n(template, **kwgars):
                            lang_code=g.lang_code,
                            page_path=page_path,
                            **kwgars)
+
+####################################################################################################
 
 @main.route('/')
 def index():
