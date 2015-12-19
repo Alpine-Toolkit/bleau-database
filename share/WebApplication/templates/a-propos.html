@@ -3,7 +3,7 @@
 
 {% block content %}
   <ul class="breadcrumb">
-    <li><a href="/main">Accueil</a></li>
+    <li><a href="/{{ lang_code }}">Accueil</a></li>
     <li class="active">À propos</li>
   </ul>
 
@@ -15,7 +15,7 @@
 	sur les sites d'escalade de la région de Fontainebleau.
       </p>
       <p>
-	La <a href="/main/data">base de données</a> répertorie {{ bleau_database.number_of_massifs }} massifs
+	La <a href="/{{ lang_code }}/data">base de données</a> répertorie {{ bleau_database.number_of_massifs }} massifs
 	et {{ bleau_database.number_of_circuits }} circuits
 	dont {{ bleau_database.number_of_circuits_with_topos }} avec topo,
 	{{ bleau_database.number_of_boulders }} blocs sont référencés.

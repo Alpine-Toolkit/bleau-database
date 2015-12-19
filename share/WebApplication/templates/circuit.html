@@ -14,9 +14,9 @@
 
 {% block content %}
   <ul class="breadcrumb">
-    <li><a href="/main">Accueil</a></li>
+    <li><a href="/{{ lang_code }}/">Accueil</a></li>
     <li>{{ massif.secteur }}</li>
-    <li><a href="/main/massif/{{ massif.name }}">{{ massif.name }}</a></li>
+    <li><a href="/{{ lang_code }}/massif/{{ massif.name }}">{{ massif.name }}</a></li>
     <li class="active">Circuit n° {{ circuit.number }} {{ circuit.grade }} {{ circuit.colour }}</li>
   </ul>
 
@@ -25,7 +25,7 @@
 
       <h1>
 	{# {{ massif.secteur }} ~ #}
-	<a href="/main/massif/{{ massif.name }}">{{ massif.name }}</a>
+	<a href="/{{ lang_code }}/massif/{{ massif.name }}">{{ massif.name }}</a>
 	~ Circuit n° {{ circuit.number }} {{ circuit.grade }} {{ circuit.colour }}
       </h1>
 
@@ -107,7 +107,7 @@
 	  {# <p id="massif-name">Massif : &nbsp;</p> #}
 	</div>
       </div>
-      {# <a href="/main/geoportail/{{ massif.massif }}">Grande carte</a> #}
+      {# <a href="/{{ lang_code }}/geoportail/{{ massif.massif }}">Grande carte</a> #}
       {{ geoportail_map() }}
     </div>
   </div>

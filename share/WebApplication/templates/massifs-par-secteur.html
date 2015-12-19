@@ -3,7 +3,7 @@
 
 {% block content %}
     <ul class="breadcrumb">
-    <li><a href="/main">Accueil</a></li>
+    <li><a href="/{{ lang_code }}">Accueil</a></li>
     <li class="active"> Massifs par Secteurs </li>
   </ul>
 
@@ -13,7 +13,7 @@
 	<h2>{{ secteur }}</h2>
 	<ul>
 	  {% for massif in bleau_database.filter_by(secteurs=secteur) %}
-	    <li><a href="/main/massif/{{ massif.name }}">{{ massif.name }}</a></li>
+	    <li><a href="/{{ lang_code }}/massif/{{ massif.name }}">{{ massif.name }}</a></li>
 	  {% endfor %}
 	</ul>
       {% endfor %}

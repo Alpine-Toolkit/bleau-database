@@ -22,14 +22,17 @@
 
 import os
 
-from flask import Flask, g, request, render_template
+from flask import Flask, g, request, render_template, abort, redirect, url_for
 from flask.ext.babel import Babel
+
+####################################################################################################
+
+from .config import LANGUAGES
 
 ####################################################################################################
 
 # @app.errorhandler(404)
 def page_not_found(error):
-    print('page_not_found')
     return render_template('page-not-found-404.html'), 404
 
 ####################################################################################################
@@ -40,11 +43,21 @@ def get_locale():
     # user = getattr(g, 'user', None)
     # if user is not None:
     #     return user.locale
-    # otherwise try to guess the language from the user accept header the browser transmits.
-    # The best match wins.
-    locale = request.accept_languages.best_match(['fr', 'en'])
-    print('LOCALE', locale)
-    return locale
+    lang_code = getattr(g, 'lang_code', None)
+    if lang_code is not None:
+        if lang_code in LANGUAGES.keys():
+            return lang_code
+        else:
+            return abort(404)
+    else:
+        # otherwise try to guess the language from the user accept header the browser transmits.
+        # The best match wins.
+        return request.accept_languages.best_match(LANGUAGES.keys())
+
+####################################################################################################
+
+def root():
+    return redirect(url_for('main.index', lang_code='fr'))
 
 ####################################################################################################
 
@@ -63,9 +76,10 @@ def create_application(config_path, bleau_database):
     from .Model import model
     model.init_app(application)
     
-    from .Views.Main import main, index
+    from .Views.Main import main
     application.register_blueprint(main)
     application.add_url_rule('/', 'main.index')
+    # application.add_url_rule('/', 'root', root)
     
     application.secret_key = os.urandom(24)
     # WTF_CSRF_SECRET_KEY =

@@ -20,7 +20,7 @@
 
 ####################################################################################################
 
-from flask import current_app, Blueprint, render_template, request
+from flask import Blueprint, render_template, request, g
 
 # from wtforms import Form
 from flask_wtf import Form
@@ -35,88 +35,105 @@ from ..Model import model
 
 ####################################################################################################
 
-main = Blueprint('main', __name__, url_prefix='/main')
+main = Blueprint('main', __name__, url_prefix='/<lang_code>')
+
+@main.url_defaults
+def add_language_code(endpoint, values):
+    print('add_language_code', endpoint, values)
+    values.setdefault('lang_code', g.lang_code)
+
+@main.url_value_preprocessor
+def pull_lang_code(endpoint, values):
+    print('pull_lang_code', endpoint, values)
+    g.lang_code = values.pop('lang_code', 'fr')
+
+def render_template_i18n(template, **kwgars):
+    page_path = request.path[4:] # /fr/
+    return render_template(template,
+                           lang_code=g.lang_code,
+                           page_path=page_path,
+                           **kwgars)
 
 @main.route('/')
 def index():
-    return render_template('main.html', bleau_database=model.bleau_database)
+    return render_template_i18n('main.html', bleau_database=model.bleau_database)
 
 @main.route('/mentions-legales')
 def mentions_legales():
-    return render_template('mentions-legales.html')
+    return render_template_i18n('mentions-legales.html')
 
 @main.route('/a-propos')
 def a_propos():
-    return render_template('a-propos.html', bleau_database=model.bleau_database)
+    return render_template_i18n('a-propos.html', bleau_database=model.bleau_database)
 
 @main.route('/fontainebleau')
 def fontainebleau():
-    return render_template('fontainebleau.html')
+    return render_template_i18n('fontainebleau.html')
 
 @main.route('/environment')
 def environment():
-    return render_template('environment.html')
+    return render_template_i18n('environment.html')
 
 @main.route('/contribute')
 def contribute():
-    return render_template('contribute.html')
+    return render_template_i18n('contribute.html')
 
 @main.route('/data')
 def data():
-    return render_template('data.html')
+    return render_template_i18n('data.html')
 
 @main.route('/statistics')
 def statistics():
     circuits = model.bleau_database.circuits
     circuit_statistics = model.circuit_statistics_cache[list(circuits)]
-    return render_template('statistics.html',
-                           circuit_statistics=circuit_statistics)
+    return render_template_i18n('statistics.html',
+                                circuit_statistics=circuit_statistics)
 
 @main.route('/massifs')
 def massifs():
-    return render_template('massifs.html', massifs=model.bleau_database.massifs)
+    return render_template_i18n('massifs.html', massifs=model.bleau_database.massifs)
 
 @main.route('/massifs-par-secteur')
 def massifs_par_secteur():
-    return render_template('massifs-par-secteur.html', bleau_database=model.bleau_database)
+    return render_template_i18n('massifs-par-secteur.html', bleau_database=model.bleau_database)
 
 @main.route('/place/<place>')
 def place(place):
     place = model.bleau_database[place]
-    return render_template('place.html', place=place)
+    return render_template_i18n('place.html', place=place)
 
 @main.route('/massif/<massif>')
 def massif(massif):
     massif = model.bleau_database[massif]
     circuit_statistics = model.circuit_statistics_cache[[circuit for circuit in massif]]
-    return render_template('massif.html',
-                           massif=massif, place=massif,
-                           circuit_statistics=circuit_statistics)
+    return render_template_i18n('massif.html',
+                                massif=massif, place=massif,
+                                circuit_statistics=circuit_statistics)
 
 @main.route('/circuit/<circuit>')
 def circuit(circuit):
     circuit = model.bleau_database[circuit]
     circuit_statistics = model.circuit_statistics_cache[[circuit]]
-    return render_template('circuit.html',
-                           massif=circuit.massif, circuit=circuit,
-                           place=circuit,
-                           circuit_statistics=circuit_statistics)
+    return render_template_i18n('circuit.html',
+                                massif=circuit.massif, circuit=circuit,
+                                place=circuit,
+                                circuit_statistics=circuit_statistics)
 
 @main.route('/geoportail')
 def geoportail():
     extent = model.bleau_database.mercator_area_interval.enlarge(1000)
-    return render_template('geoportail-map.html', extent=extent,
-                           massif=None, place=None)
+    return render_template_i18n('geoportail-map.html', extent=extent,
+                                massif=None, place=None)
 
 @main.route('/geoportail/<massif>')
 def geoportail_massif(massif):
     massif = model.bleau_database[massif]
-    return render_template('geoportail-map.html', massif=massif, place=massif)
+    return render_template_i18n('geoportail-map.html', massif=massif, place=massif)
 
 @main.route('/google-map/<massif>')
 def google_map(massif):
     massif = model.bleau_database[massif]
-    return render_template('google-map.html', massif=massif, place=massif)
+    return render_template_i18n('google-map.html', massif=massif, place=massif)
 
 ####################################################################################################
 
@@ -153,8 +170,8 @@ def search_massifs():
         if grades:
             kwargs['major_grades'] = grades
         massifs = model.bleau_database.filter_by(**kwargs)
-        return render_template('search-massifs.html', form=form, massifs=massifs)
-    return render_template('search-massifs.html', form=form, massifs=[])
+        return render_template_i18n('search-massifs.html', form=form, massifs=massifs)
+    return render_template_i18n('search-massifs.html', form=form, massifs=[])
 
 ####################################################################################################
 #

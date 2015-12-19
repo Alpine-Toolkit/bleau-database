@@ -3,7 +3,7 @@
 
 {% block content %}
   <ul class="breadcrumb">
-    <li><a href="/main">Accueil</a></li>
+    <li><a href="/{{ lang_code }}">Accueil</a></li>
     <li class="active">{{ place.name }}</li>
   </ul>
 
@@ -56,7 +56,7 @@
 	  {# <p id="massif-name">Massif : &nbsp;</p> #}
 	</div>
       </div>
-      {# <a href="/main/geoportail/{{ massif.massif }}">Grande carte</a> #}
+      {# <a href="/{{ lang_code }}/geoportail/{{ massif.massif }}">Grande carte</a> #}
       {{ geoportail_map() }}
     </div>
   </div>

@@ -15,7 +15,7 @@
 
 {% block content %}
   <ul class="breadcrumb">
-    <li><a href="/main">Accueil</a></li>
+    <li><a href="/{{ lang_code }}">Accueil</a></li>
     <li>{{ massif.secteur }}</li>
     <li class="active">{{ massif.name }}</li>
   </ul>
@@ -34,7 +34,7 @@
 	<dd>
 	  {{ massif.acces }}<br>
 	  {% if massif.parking %}
-	  <a href="/main/google-map/{{ massif.name }}">Itineraire Google Map</a>
+	  <a href="/{{ lang_code }}/google-map/{{ massif.name }}">Itineraire Google Map</a>
 	  {% else %}
 	  Pas d'itineraire renseigné
 	  {% endif %}
@@ -54,7 +54,7 @@
 	    <dd>
 	      {% for place in places %}
 		{% if loop.index > 1  %}<br>{% endif %}
-		<a href="/main/place/{{ place.name }}">
+		<a href="/{{ lang_code }}/place/{{ place.name }}">
 		  {{ place.name }} ({{ massif.distance_to(place) | round | int }} m)
 		</a>
 	      {% endfor %}
@@ -75,7 +75,7 @@
 	  {% for circuit in massif %}
 	    <tr>
 	      <td>{{ circuit.grade }}</td>
-	      <td><a href="/main/circuit/{{ circuit.name }}">N° {{ circuit.number }}</a></td>
+	      <td><a href="/{{ lang_code }}/circuit/{{ circuit.name }}">N° {{ circuit.number }}</a></td>
 	      <td>{{ circuit.colour }}</td>
 	      <td>#{{ circuit.number_of_boulders }}</td>
 	      <td>
@@ -108,7 +108,7 @@
 		<tr>
 		  <td class="text-right">{{ massif.distance_to(massif_) | round | int }} m</td>
 		  <td/>
-		  <td><a href="/main/massif/{{ massif_.name }}">{{ massif_.name }}</a></td>
+		  <td><a href="/{{ lang_code }}/massif/{{ massif_.name }}">{{ massif_.name }}</a></td>
 		  <td>
 		    <ul class="list-inline">
 		      {% for grade in massif_.grades %}
@@ -160,7 +160,7 @@
 	  </table>
 	</div>
       </div>
-      <a href="/main/geoportail/{{ massif.name }}">Grande carte</a>
+      <a href="/{{ lang_code }}/geoportail/{{ massif.name }}">Grande carte</a>
       {{ geoportail_map() }}
     </div>
   </div>

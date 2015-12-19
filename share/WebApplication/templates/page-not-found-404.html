@@ -1,0 +1,16 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "include/base.html" %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-xl-12">
+      <h1><i class="fa fa-exclamation-triangle"></i> Page non trouvé</h1>
+      <p>La page que vous avez demandé n'a pas pu être trouvé. Soit l'adresse est erronée, soit le site est en derengement.</p>
+      <p>Retourner à l'<a href="/{{ lang_code }}">Accueil <i class="fa fa-home"></i></a></p>
+      {# The page you requested could not be found, either contact your webmaster or try again
+      later. Use your browsers <b>Back</b> button to navigate to the page you have previously come
+      from. #}
+      </p>
+    </div>
+  </div>
+{% endblock %}
