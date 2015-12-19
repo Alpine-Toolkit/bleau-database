@@ -3,8 +3,8 @@
 
 {% block content %}
   <ul class="breadcrumb">
-    <li><a href="/{{ lang_code }}">Accueil</a></li>
-    <li class="active"> Rechercher des Massifs </li>
+    <li><a href="/{{ lang_code }}">{{ _("Accueil") }}</a></li>
+    <li class="active">{{ _("Rechercher des Massifs") }}</li>
   </ul>
 
   <div class="row">
@@ -30,11 +30,11 @@
 	    {{ form.a_pieds.label }}
 	  </label>
 	</div>
-	<button type="submit" class="btn btn-primary">Rechercher</button>
+	<button type="submit" class="btn btn-primary">{{ _("Rechercher") }}</button>
       </form>
     </div>
     <div class="col-xl-12 m-t-md" style="margin-top: 1em">
-      <h2>Massifs</h2>
+      <h2>{{ _("Massifs") }}</h2>
       <table class="table table-sm">
 	<tbody>
 	  {% for massif in massifs %}

@@ -1,22 +1,40 @@
-# English translations for PROJECT.
-# Copyright (C) 2015 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+# English translations for Bleau Database.
+# Copyright (C) 2015 Fabrice Salvaire
+# This file is distributed under the same license as the Bleau Database
+# project.
+# Fabrice Salvaire <fabrice.salvaire@orange.fr>, 2015.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-12-19 22:29+0100\n"
-"PO-Revision-Date: 2015-12-19 22:29+0100\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Project-Id-Version: Bleau Database V1.0.0\n"
+"Report-Msgid-Bugs-To: fabrice.salvaire@orange.fr\n"
+"POT-Creation-Date: 2015-12-19 23:12+0100\n"
+"PO-Revision-Date: 2015-12-19 23:21+0100\n"
+"Last-Translator: Fabrice Salvaire <fabrice.salvaire@orange.fr>\n"
 "Language: en\n"
 "Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.1.1\n"
+"X-Generator: Poedit 1.8.5\n"
+
+#: FlaskWebApplication/Views/Main.py:145
+msgid "Ã pieds"
+msgstr "By foot"
+
+#: FlaskWebApplication/Views/Main.py:146
+msgid "Secteurs"
+msgstr "Sector"
+
+#: FlaskWebApplication/Views/Main.py:149
+msgid "Type de chaos"
+msgstr "Chaos's Type"
+
+#: FlaskWebApplication/Views/Main.py:152
+msgid "Cotations"
+msgstr "Grades"
 
 #: share/WebApplication/templates/main.html:14
 msgid "La base de données des sites d'escalade de la région de Fontainebleau"
@@ -25,66 +43,74 @@ msgstr "The bouldering's database of the Fontainebleau area."
 #: share/WebApplication/templates/main.html:16
 #, python-format
 msgid ""
-"\n"
-"\t  %(number_of_massifs)s massifs\n"
+"%(number_of_massifs)s massifs\n"
 "\t  et %(number_of_circuits)s circuits\n"
 "\t  dont %(number_of_circuits_with_topos)s avec topo\n"
-"\t  (%(number_of_boulders)s blocs référencés)\n"
-"\t  "
+"\t  (%(number_of_boulders)s blocs référencés"
 msgstr ""
-"\n"
-"\t  %(number_of_massifs)s massifs\n"
+"%(number_of_massifs)s massifs\n"
 "\t  and %(number_of_circuits)s circuits\n"
 "\t  including %(number_of_circuits_with_topos)s having topo\n"
-"\t  (%(number_of_boulders)s referenced boulders)\n"
-"\t  "
+"\t  (%(number_of_boulders)s referenced boulders)"
 
-#: share/WebApplication/templates/main.html:29
+#: share/WebApplication/templates/main.html:27
 msgid "La 3G passe assez mal en forêt, pensez-y !"
 msgstr "3G reception isn't so good in forest, think about this !"
 
-#: share/WebApplication/templates/main.html:33
-#: share/WebApplication/templates/main.html:59
+#: share/WebApplication/templates/main.html:31
+#: share/WebApplication/templates/main.html:57
 msgid "À propos"
 msgstr "About"
 
-#: share/WebApplication/templates/main.html:41
-#: share/WebApplication/templates/main.html:70
+#: share/WebApplication/templates/main.html:39
+#: share/WebApplication/templates/main.html:68
+#: share/WebApplication/templates/search-massifs.html:7
 msgid "Rechercher des Massifs"
 msgstr "Search Massif"
 
-#: share/WebApplication/templates/main.html:43
-#: share/WebApplication/templates/main.html:72
+#: share/WebApplication/templates/main.html:41
+#: share/WebApplication/templates/main.html:70
 msgid "Tous les Massifs"
 msgstr "All Massifs"
 
-#: share/WebApplication/templates/main.html:45
-#: share/WebApplication/templates/main.html:74
+#: share/WebApplication/templates/main.html:43
+#: share/WebApplication/templates/main.html:72
 msgid "Massifs par Secteur"
 msgstr "Massifs by Sector"
 
-#: share/WebApplication/templates/main.html:49
-#: share/WebApplication/templates/main.html:77
+#: share/WebApplication/templates/main.html:47
+#: share/WebApplication/templates/main.html:75
 msgid "Carte de la region"
 msgstr "Area Map"
 
-#: share/WebApplication/templates/main.html:51
-#: share/WebApplication/templates/main.html:79
+#: share/WebApplication/templates/main.html:49
+#: share/WebApplication/templates/main.html:77
 msgid "Statistiques des Circuits"
 msgstr "Circuit's Statistics"
 
-#: share/WebApplication/templates/main.html:57
-#: share/WebApplication/templates/main.html:84
+#: share/WebApplication/templates/main.html:55
+#: share/WebApplication/templates/main.html:82
 msgid "Respectons l'environement"
 msgstr "Have respect for the environment"
 
-#: share/WebApplication/templates/main.html:61
-#: share/WebApplication/templates/main.html:87
+#: share/WebApplication/templates/main.html:59
+#: share/WebApplication/templates/main.html:85
 msgid "Contribuer"
 msgstr "Contribute"
 
-#: share/WebApplication/templates/main.html:63
-#: share/WebApplication/templates/main.html:89
+#: share/WebApplication/templates/main.html:61
+#: share/WebApplication/templates/main.html:87
 msgid "Données"
 msgstr "Data"
 
+#: share/WebApplication/templates/search-massifs.html:6
+msgid "Accueil"
+msgstr "Home"
+
+#: share/WebApplication/templates/search-massifs.html:33
+msgid "Rechercher"
+msgstr "Search"
+
+#: share/WebApplication/templates/search-massifs.html:37
+msgid "Massifs"
+msgstr "Massifs"

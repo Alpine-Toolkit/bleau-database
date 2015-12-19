@@ -21,6 +21,7 @@
 ####################################################################################################
 
 from flask import Blueprint, render_template, request, g
+from flask.ext.babel import lazy_gettext
 
 # from wtforms import Form
 from flask_wtf import Form
@@ -141,14 +142,14 @@ def google_map(massif):
 ####################################################################################################
 
 class MassifSearchForm(Form):
-    a_pieds = BooleanField('À pieds')
-    secteurs = SelectMultipleField('Secteurs',
+    a_pieds = BooleanField(lazy_gettext('À pieds'))
+    secteurs = SelectMultipleField(lazy_gettext('Secteurs'),
                                    choices=[(secteur, secteur)
                                             for secteur in model.bleau_database.secteurs])
-    chaos_type = SelectMultipleField('Type de chaos',
+    chaos_type = SelectMultipleField(lazy_gettext('Type de chaos'),
                                      choices=[(x, x) for x in ('A', 'B', 'C', 'D', 'E')])
     # cotation = TextField('Cotation')
-    grades = SelectMultipleField('Cotations',
+    grades = SelectMultipleField(lazy_gettext('Cotations'),
                                  choices=[(x, x) for x in AlpineGrade.__grade_majors__ if x != 'EX'])
 
 @main.route('/search-massifs', methods=['GET', 'POST'])

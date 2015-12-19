@@ -18,12 +18,10 @@
 	   number_of_circuits=bleau_database.number_of_circuits,
 	   number_of_circuits_with_topos=bleau_database.number_of_circuits_with_topos,
 	   number_of_boulders=bleau_database.number_of_boulders
-	  %}
-	  {{ number_of_massifs }} massifs
+	  %}{{ number_of_massifs }} massifs
 	  et {{ number_of_circuits }} circuits
 	  dont {{ number_of_circuits_with_topos }} avec topo
-	  ({{ number_of_boulders }} blocs référencés)
-	  {% endtrans %}
+	  ({{ number_of_boulders }} blocs référencés{% endtrans %}
 	</p>
 	<p class="lead">
 	  <i class="fa fa-mobile fa-2x"></i> {{  _("La 3G passe assez mal en forêt, pensez-y !") }}</i>
