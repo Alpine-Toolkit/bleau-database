@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bleau Database V1.0.0\n"
 "Report-Msgid-Bugs-To: fabrice.salvaire@orange.fr\n"
-"POT-Creation-Date: 2015-12-19 23:12+0100\n"
-"PO-Revision-Date: 2015-12-19 23:21+0100\n"
+"POT-Creation-Date: 2015-12-19 23:35+0100\n"
+"PO-Revision-Date: 2015-12-19 23:43+0100\n"
 "Last-Translator: Fabrice Salvaire <fabrice.salvaire@orange.fr>\n"
 "Language: en\n"
 "Language-Team: en <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Generator: Poedit 1.8.5\n"
 
 #: FlaskWebApplication/Views/Main.py:145
-msgid "Ã pieds"
+msgid "À pieds"
 msgstr "By foot"
 
 #: FlaskWebApplication/Views/Main.py:146
@@ -29,6 +29,7 @@ msgid "Secteurs"
 msgstr "Sector"
 
 #: FlaskWebApplication/Views/Main.py:149
+#: share/WebApplication/templates/massif.html:48
 msgid "Type de chaos"
 msgstr "Chaos's Type"
 
@@ -103,9 +104,94 @@ msgstr "Contribute"
 msgid "Données"
 msgstr "Data"
 
+#: share/WebApplication/templates/massif.html:18
 #: share/WebApplication/templates/search-massifs.html:6
 msgid "Accueil"
 msgstr "Home"
+
+#: share/WebApplication/templates/massif.html:31
+msgid "Accés"
+msgstr "Access"
+
+#: share/WebApplication/templates/massif.html:33
+msgid "Accés en voiture"
+msgstr "Car access"
+
+#: share/WebApplication/templates/massif.html:37
+msgid "Itineraire Google Map"
+msgstr "Google Map route"
+
+#: share/WebApplication/templates/massif.html:39
+msgid "Pas d'itineraire renseigné"
+msgstr "Any route available"
+
+#: share/WebApplication/templates/massif.html:42
+msgid "Accés à vélo"
+msgstr "Bicycle access"
+
+#: share/WebApplication/templates/massif.html:42
+msgid "à pieds"
+msgstr "By foot"
+
+#: share/WebApplication/templates/massif.html:46
+msgid "Informations"
+msgstr "Grades"
+
+#: share/WebApplication/templates/massif.html:49
+msgid "Notes"
+msgstr "Notes"
+
+#: share/WebApplication/templates/massif.html:50
+msgid "Rendez-vous Gums"
+msgstr ""
+
+#: share/WebApplication/templates/massif.html:53
+msgid "Point d'eau"
+msgstr "Watering place"
+
+#: share/WebApplication/templates/massif.html:66
+msgid "Circuits"
+msgstr "Circuits"
+
+#: share/WebApplication/templates/massif.html:78
+msgid "N°"
+msgstr ""
+
+#: share/WebApplication/templates/massif.html:83
+msgid "lien"
+msgstr "link"
+
+#: share/WebApplication/templates/massif.html:98
+msgid "Massifs à proximité"
+msgstr "Nearest Massifs"
+
+#: share/WebApplication/templates/massif.html:100
+msgid "critère: 2 km à vol d'oiseau, donc prévoir plus long!"
+msgstr "Criteria: 2 km as the crow flies, thus expect farest!"
+
+#: share/WebApplication/templates/massif.html:124
+msgid "aucun"
+msgstr "any"
+
+#: share/WebApplication/templates/massif.html:128
+msgid "Carte de situation"
+msgstr "Area Map"
+
+#: share/WebApplication/templates/massif.html:136
+msgid "Coordonnée WGS 84"
+msgstr "Coordinate WGS 84"
+
+#: share/WebApplication/templates/massif.html:147
+msgid "Coordonnée Mercator"
+msgstr "Coordinate Mercator"
+
+#: share/WebApplication/templates/massif.html:156
+msgid "Parcelles ONF"
+msgstr "ONF forest plot"
+
+#: share/WebApplication/templates/massif.html:163
+msgid "Grande carte"
+msgstr "Large map"
 
 #: share/WebApplication/templates/search-massifs.html:33
 msgid "Rechercher"

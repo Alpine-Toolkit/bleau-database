@@ -15,7 +15,7 @@
 
 {% block content %}
   <ul class="breadcrumb">
-    <li><a href="/{{ lang_code }}">Accueil</a></li>
+    <li><a href="/{{ lang_code }}">{{ _("Accueil") }}</a></li>
     <li>{{ massif.secteur }}</li>
     <li class="active">{{ massif.name }}</li>
   </ul>
@@ -28,29 +28,29 @@
 	{% if massif.alternative_name %} ~ {{ massif.alternative_name }}{% endif %}
       </h1>
 
-      <h2>Accés</h2>
+      <h2>{{ _("Accés") }}</h2>
       <dl>
-	<dt><i class="fa fa-car"></i> Accés en voiture</dt>
+	<dt><i class="fa fa-car"></i> {{ _("Accés en voiture") }}</dt>
 	<dd>
 	  {{ massif.acces }}<br>
 	  {% if massif.parking %}
-	  <a href="/{{ lang_code }}/google-map/{{ massif.name }}">Itineraire Google Map</a>
+	  <a href="/{{ lang_code }}/google-map/{{ massif.name }}">{{ _("Itineraire Google Map") }}</a>
 	  {% else %}
-	  Pas d'itineraire renseigné
+	  {{ _("Pas d'itineraire renseigné") }}
 	  {% endif %}
 	</dd>
-        <dt><i class="fa fa-bicycle"></i> Accés à vélo {% if massif.a_pieds %}/ à pieds{% endif %}</dt>
+        <dt><i class="fa fa-bicycle"></i> {{ _("Accés à vélo") }} {% if massif.a_pieds %}/ {{ _("à pieds") }}{% endif %}</dt>
 	<dd>{{ massif.velo }}</dd>
       </dl>
 
-      <h2>Informations</h2>
+      <h2>{{ _("Informations") }}</h2>
       <dl>
-	<dt>Type de chaos</dt><dd>{{ massif.chaos_type }}</dd>
-        <dt>Notes</dt><dd>{{ massif.note }}</dd>
-        <dt>Rendez-vous Gums</dt><dd>{{ massif.rdv }}</dd>
+	<dt>{{ _("Type de chaos") }}</dt><dd>{{ massif.chaos_type }}</dd>
+        <dt>{{ _("Notes") }}</dt><dd>{{ massif.note }}</dd>
+        <dt>{{ _("Rendez-vous Gums") }}</dt><dd>{{ massif.rdv }}</dd>
 	{% with places = massif.nearest_point_deau(distance_max=5000) %}
 	  {% if places %}
-	    <dt>Point d'eau</dt>
+	    <dt>{{ _("Point d'eau") }}</dt>
 	    <dd>
 	      {% for place in places %}
 		{% if loop.index > 1  %}<br>{% endif %}
@@ -63,7 +63,7 @@
 	{% endwith %}
       </dl>
 
-      <h2>Circuits</h2>
+      <h2>{{ _("Circuits") }}</h2>
       <table class="table table-sm">
 	{#
 	<col style="width: 5%">
@@ -75,12 +75,12 @@
 	  {% for circuit in massif %}
 	    <tr>
 	      <td>{{ circuit.grade }}</td>
-	      <td><a href="/{{ lang_code }}/circuit/{{ circuit.name }}">N° {{ circuit.number }}</a></td>
+	      <td><a href="/{{ lang_code }}/circuit/{{ circuit.name }}">{{  _("N°") }} {{ circuit.number }}</a></td>
 	      <td>{{ circuit.colour }}</td>
 	      <td>#{{ circuit.number_of_boulders }}</td>
 	      <td>
 		{% for topo in circuit.topos %}
-		  <a class="hidden-sm-up" href="{{ topo }}">lien</a>
+		  <a class="hidden-sm-up" href="{{ topo }}">"{{  _("lien") }}</a>
 		  <a class="hidden-xs-down" href="{{ topo }}">{{ topo|truncate(70) }}</a>
 		  <br>
 		{% endfor %}
@@ -95,9 +95,9 @@
 	{{ circuit_statistics.global_boulder_grade_barchart.div|safe }}
       </p>
 
-      <h2>Massifs à proximité</h2>
+      <h2>{{ _("Massifs à proximité") }}</h2>
       <div class="alert alert-info" role="alert">
-	critère: 2 km à vol d'oiseau, donc prévoir plus long!
+	{{ _("critère: 2 km à vol d'oiseau, donc prévoir plus long!") }}
       </div>
       {% with massif_voisins = massif.nearest(number_of_items=100, distance_max=2000) %}
 	{% if massif_voisins %}
@@ -121,11 +121,11 @@
 	    </tbody>
 	  </table>
 	{% else %}
-	  <p>aucun</p>
+	  <p>{{ _("aucun") }}</p>
 	{% endif %}
       {% endwith %}
-      
-      <h2>Carte de situation</h2>
+
+      <h2>{{ _("Carte de situation") }}</h2>
       <div class="row">
 	<div class="col-xl-4">
 	  <table class="table table-sm">
@@ -133,7 +133,7 @@
 	      <tr>
 		<td>
 		  <a href="http://spatialreference.org/ref/epsg/wgs-84/">
-		    Coordonnée WGS 84
+		    {{ _("Coordonnée WGS 84") }}
 		  </a></td>
 		<td>
 		  {% with coordinate = massif.coordinate %}
@@ -144,7 +144,7 @@
 	      <tr>
 		<td>
 		  <a href="http://spatialreference.org/ref/sr-org/epsg3857-wgs84-web-mercator-auxiliary-sphere/">
-		    Coordonnée Mercator
+		    {{ _("Coordonnée Mercator") }}
 		  </a></td>
 		<td>
 		  {% with mercator = massif.coordinate.mercator %}
@@ -153,14 +153,14 @@
 		</td>
 	      </tr>
 	      <tr>
-		<td>Parcelles ONF</td>
+		<td>{{ _("Parcelles ONF") }}</td>
 		<td>{{ massif.parcelles }}</td>
 	      </tr>
 	    </tbody>
 	  </table>
 	</div>
       </div>
-      <a href="/{{ lang_code }}/geoportail/{{ massif.name }}">Grande carte</a>
+      <a href="/{{ lang_code }}/geoportail/{{ massif.name }}">{{ _("Grande carte") }}</a>
       {{ geoportail_map() }}
     </div>
   </div>
