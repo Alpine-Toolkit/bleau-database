@@ -12,17 +12,25 @@
       <div class="jumbotron hidden-xs-down">
 	<h1 class="display-3">Bleau Database</h1>
 	<p class="lead">{{  _("La base de données des sites d'escalade de la région de Fontainebleau") }}</p>
-	<p class="lead">{{ bleau_database.number_of_massifs }} massifs
-	  et {{ bleau_database.number_of_circuits }} circuits
-	  dont {{ bleau_database.number_of_circuits_with_topos }} avec topo
-	  ({{ bleau_database.number_of_boulders }} blocs référencés)
+	<p class="lead">
+	  {% trans
+	   number_of_massifs=bleau_database.number_of_massifs,
+	   number_of_circuits=bleau_database.number_of_circuits,
+	   number_of_circuits_with_topos=bleau_database.number_of_circuits_with_topos,
+	   number_of_boulders=bleau_database.number_of_boulders
+	  %}
+	  {{ number_of_massifs }} massifs
+	  et {{ number_of_circuits }} circuits
+	  dont {{ number_of_circuits_with_topos }} avec topo
+	  ({{ number_of_boulders }} blocs référencés)
+	  {% endtrans %}
 	</p>
 	<p class="lead">
-	  <i class="fa fa-mobile fa-2x"></i> La 3G passe assez mal en forêt, pensez-y !</i>
+	  <i class="fa fa-mobile fa-2x"></i> {{  _("La 3G passe assez mal en forêt, pensez-y !") }}</i>
 	</p>
 	<hr class="m-y-md">
 	<p class="lead">
-	  <a class="btn btn-primary btn-lg" href="/{{ lang_code }}/a-propos" role="button">À propos</a>
+	  <a class="btn btn-primary btn-lg" href="/{{ lang_code }}/a-propos" role="button">{{  _("À propos") }}</a>
 	</p>
       </div>
       
@@ -30,55 +38,55 @@
       <div class="hidden-sm-up">
 	<p>
 	  <a class="btn btn-primary btn-lg btn-block" href="/{{ lang_code }}/search-massifs" role="button">
-	    <i class="fa fa-search"></i> Rechercher des Massifs</a>
+	    <i class="fa fa-search"></i> {{  _("Rechercher des Massifs") }}</a>
 	  <a class="btn btn-primary btn-lg btn-block" href="/{{ lang_code }}/massifs" role="button">
-	    Tous les Massifs</a>
+	    {{  _("Tous les Massifs") }}</a>
 	  <a class="btn btn-primary btn-lg btn-block" href="/{{ lang_code }}/massifs-par-secteur" role="button">
-	    Massifs par Secteur</a>
+	    {{  _("Massifs par Secteur") }}</a>
 	</p>
 	<p>
 	  <a class="btn btn-primary btn-lg btn-block" href="/{{ lang_code }}/geoportail" role="button">
-	    <i class="fa fa-map"></i> Carte de la region</a>
+	    <i class="fa fa-map"></i> {{  _("Carte de la region") }}</a>
 	  <a class="btn btn-primary btn-lg btn-block" href="/{{ lang_code }}/statistics" role="button">
-	    <i class="fa fa-bar-chart"></i> Statistiques des Circuits</a>
+	    <i class="fa fa-bar-chart"></i> {{  _("Statistiques des Circuits") }}</a>
 	</p>
 	<p>
 	  <a class="btn btn-primary btn-lg btn-block" href="/{{ lang_code }}/fontainebleau" role="button">
-	    <i class="fa fa-info-circle"></i> Fontainebleau</a>
+	    <i class="fa fa-info-circle"></i> Fontainebleau") }}</a>
 	  <a class="btn btn-primary btn-lg btn-block"  href="/{{ lang_code }}/environment" role="button">
-	    <i class="fa fa-tree"></i> Respectons l'environement</a>
+	    <i class="fa fa-tree"></i> {{  _("Respectons l'environement") }}</a>
 	  <a class="btn btn-primary btn-lg btn-block" href="/{{ lang_code }}/a-propos" role="button">
-	    À propos</a>
+	    {{  _("À propos") }}</a>
 	  <a class="btn btn-primary btn-lg btn-block" href="/{{ lang_code }}/contribute" role="button">
-	    <i class="fa fa-bug"></i> Contribuer</a>
+	    <i class="fa fa-bug"></i> {{  _("Contribuer") }}</a>
 	  <a class="btn btn-primary btn-lg btn-block" href="/{{ lang_code }}/data" role="button">
-	    <i class="fa fa-database"></i> Données</a>
+	    <i class="fa fa-database"></i> {{  _("Données") }}</a>
 	</p>
       </div>
       {# Large device #}
       <div class="hidden-xs-down">
 	<p>
 	  <a class="btn btn-primary btn-lg m-b-1" href="/{{ lang_code }}/search-massifs" role="button">
-	    <i class="fa fa-search"></i> Rechercher des Massifs</a>
+	    <i class="fa fa-search"></i> {{  _("Rechercher des Massifs") }}</a>
 	  <a class="btn btn-primary btn-lg m-b-1" href="/{{ lang_code }}/massifs" role="button">
-	    Tous les Massifs</a>
+	    {{  _("Tous les Massifs") }}</a>
 	  <a class="btn btn-primary btn-lg m-b-1" href="/{{ lang_code }}/massifs-par-secteur" role="button">
-	    Massifs par Secteur</a>
+	    {{  _("Massifs par Secteur") }}</a>
 	  <br>
 	  <a class="btn btn-primary btn-lg m-b-1" href="/{{ lang_code }}/geoportail" role="button">
-	    <i class="fa fa-map"></i> Carte de la region</a>
+	    <i class="fa fa-map"></i> {{  _("Carte de la region") }}</a>
 	  <a class="btn btn-primary btn-lg m-b-1" href="/{{ lang_code }}/statistics" role="button">
-	    <i class="fa fa-bar-chart"></i> Statistiques des Circuits</a>
+	    <i class="fa fa-bar-chart"></i> {{  _("Statistiques des Circuits") }}</a>
 	  <br>
 	  <a class="btn btn-primary btn-lg m-b-1" href="/{{ lang_code }}/fontainebleau" role="button">
 	    <i class="fa fa-info-circle"></i> Fontainebleau</a>
 	  <a class="btn btn-primary btn-lg m-b-1"  href="/{{ lang_code }}/environment" role="button">
-	    <i class="fa fa-tree"></i> Respectons l'environement</a>
+	    <i class="fa fa-tree"></i> {{  _("Respectons l'environement") }}</a>
 	  <br>
 	  <a class="btn btn-primary btn-lg m-b-1"  href="/{{ lang_code }}/contribute" role="button">
-	    <i class="fa fa-bug"></i> Contribuer</a>
+	    <i class="fa fa-bug"></i> {{  _("Contribuer") }}</a>
 	  <a class="btn btn-primary btn-lg m-b-1" href="/{{ lang_code }}/data" role="button">
-	    <i class="fa fa-database"></i> Données</a>
+	    <i class="fa fa-database"></i> {{  _("Données") }}</a>
 	</p>
       </div>
     </div>

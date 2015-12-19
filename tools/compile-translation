@@ -1,0 +1,8 @@
+#! /bin/bash
+
+web_application_dir='share/WebApplication'
+translations_dir="${web_application_dir}/translations"
+
+pybabel compile -d ${translations_dir}
+
+# End
