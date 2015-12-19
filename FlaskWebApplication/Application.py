@@ -22,8 +22,15 @@
 
 import os
 
-from flask import Flask, g, request
+from flask import Flask, g, request, render_template
 from flask.ext.babel import Babel
+
+####################################################################################################
+
+# @app.errorhandler(404)
+def page_not_found(error):
+    print('page_not_found')
+    return render_template('page-not-found-404.html'), 404
 
 ####################################################################################################
 
@@ -44,10 +51,12 @@ def get_locale():
 def create_application(config_path, bleau_database):
 
     application = Flask(__name__)
+    application.logger.info("Start Bleau Database Web Application")
     
     application.config.from_pyfile(config_path)
     # Fixme: right way?
     application.config['bleau_database'] = bleau_database
+    application.error_handler_spec[None][404] = page_not_found
     babel = Babel(application)
     babel.localeselector(get_locale)
     
