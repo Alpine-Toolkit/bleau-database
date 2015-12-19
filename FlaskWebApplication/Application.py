@@ -22,7 +22,22 @@
 
 import os
 
-from flask import Flask, redirect, url_for
+from flask import Flask, g, request
+from flask.ext.babel import Babel
+
+####################################################################################################
+
+# @babel.localeselector
+def get_locale():
+    # if a user is logged in, use the locale from the user settings
+    # user = getattr(g, 'user', None)
+    # if user is not None:
+    #     return user.locale
+    # otherwise try to guess the language from the user accept header the browser transmits.
+    # The best match wins.
+    locale = request.accept_languages.best_match(['fr', 'en'])
+    print('LOCALE', locale)
+    return locale
 
 ####################################################################################################
 
@@ -33,6 +48,8 @@ def create_application(config_path, bleau_database):
     application.config.from_pyfile(config_path)
     # Fixme: right way?
     application.config['bleau_database'] = bleau_database
+    babel = Babel(application)
+    babel.localeselector(get_locale)
     
     from .Model import model
     model.init_app(application)
@@ -44,7 +61,7 @@ def create_application(config_path, bleau_database):
     application.secret_key = os.urandom(24)
     # WTF_CSRF_SECRET_KEY =
     
-    return application
+    return application, babel
 
 ####################################################################################################
 #

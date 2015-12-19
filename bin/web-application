@@ -43,7 +43,7 @@ bleau_database = BleauDataBase(json_file=args.json_file)
 # Fixme: if DEBUG = True then reload ...
 # config_path = os.path.join(os.path.dirname(__file__), 'config.py')
 config_path = 'config.py'
-application = create_application(config_path, bleau_database)
+application, babel = create_application(config_path, bleau_database)
 application.run()
 
 ####################################################################################################
