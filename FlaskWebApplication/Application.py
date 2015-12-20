@@ -20,10 +20,12 @@
 
 ####################################################################################################
 
+from functools import wraps
 import os
 
-from flask import Flask, g, request, render_template, abort
+from flask import Flask, g, request, render_template, abort, url_for
 from flask.ext.babel import Babel
+from flask_sitemap import Sitemap, sitemap_page_needed
 
 ####################################################################################################
 
@@ -56,31 +58,66 @@ def get_locale():
 
 ####################################################################################################
 
-def create_application(config_path, bleau_database):
+cache = {} # replace by Flask-Cache instance or similar
 
-    application = Flask(__name__)
-    application.logger.info("Start Bleau Database Web Application")
-    
-    application.config.from_pyfile(config_path)
-    # Fixme: right way?
-    application.config['bleau_database'] = bleau_database
-    application.error_handler_spec[None][404] = page_not_found
-    babel = Babel(application)
-    babel.localeselector(get_locale)
-    
-    from .Model import model
-    model.init_app(application)
-    
-    from .Views.Main import main
-    application.register_blueprint(main)
-    
-    # Map / to /fr
-    application.add_url_rule('/', 'main.index')
-    
-    application.secret_key = os.urandom(24)
-    # WTF_CSRF_SECRET_KEY =
-    
-    return application, babel
+# @sitemap_page_needed.connect
+# def create_page(app, page, urlset):
+#     # Fixme: never called and sitemap is undefined
+#     # print('create_page')
+#     cache[page] = sitemap.render_page(urlset=urlset)
+
+def load_page(fn):
+    @wraps(fn)
+    def loader(*args, **kwargs):
+        page = kwargs.get('page')
+        data = cache.get(page)
+        return data if data else fn(*args, **kwargs)
+    return loader
+
+####################################################################################################
+
+class FlaskWebApplication:
+
+    ##############################################
+
+    def __init__(self, config_path, bleau_database):
+
+        self.application = Flask(__name__)
+        self.application.logger.info("Start Bleau Database Web Application")
+        
+        self.application.config.from_pyfile(config_path)
+        # Fixme: right way?
+        self.application.config['bleau_database'] = bleau_database
+        
+        self.application.error_handler_spec[None][404] = page_not_found
+        
+        self.babel = Babel(self.application)
+        self.babel.localeselector(get_locale)
+        
+        from .Model import model
+        model.init_app(self.application)
+        
+        from .Views.Main import main
+        self.application.register_blueprint(main)
+        
+        # Map / to /fr
+        self.application.add_url_rule('/', 'main.index')
+        
+        self.application.secret_key = os.urandom(24)
+        # WTF_CSRF_SECRET_KEY =
+        
+        # self.application.config['SERVER_NAME'] = 'bleau.fabrice-salvaire.fr' # Fixme:
+        # self.app.config['SITEMAP_GZIP'] = True
+        self.application.config['SITEMAP_INCLUDE_RULES_WITHOUT_PARAMS'] = True
+        self.application.config['SITEMAP_VIEW_DECORATORS'] = [load_page]
+        self.sitemap = Sitemap(app=self.application)
+        from .Views.Main import sitemap as main_sitemap
+        self.sitemap.register_generator(main_sitemap)
+
+    ##############################################
+
+    def run(self):
+        self.application.run()
 
 ####################################################################################################
 #

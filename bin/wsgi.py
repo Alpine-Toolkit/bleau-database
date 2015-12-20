@@ -28,7 +28,7 @@
 import os
 
 from BleauDataBase.BleauDataBase import BleauDataBase
-from FlaskWebApplication.Application import create_application
+from FlaskWebApplication.Application import FlaskWebApplication
 
 ####################################################################################################
 
@@ -38,13 +38,7 @@ bleau_database = BleauDataBase(json_file)
 # Fixme: if DEBUG = True then reload ...
 # config_path = os.path.join(os.path.dirname(__file__), 'config.py')
 config_path = 'config.py'
-application, babel = create_application(config_path, bleau_database)
-
-from flask import redirect, url_for
-
-# @application.route('/')
-# def rootindex():
-#     redirect(url_for('/main'))
+application = FlaskWebApplication(config_path, bleau_database).application
 
 ####################################################################################################
 #

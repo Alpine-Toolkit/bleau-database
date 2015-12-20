@@ -20,7 +20,7 @@
 
 ####################################################################################################
 
-from flask import Blueprint, render_template, request, g
+from flask import Blueprint, render_template, request, g, url_for
 from flask.ext.babel import lazy_gettext
 
 # from wtforms import Form
@@ -32,6 +32,7 @@ from BleauDataBase.BleauDataBase import AlpineGrade, Coordinate
 
 ####################################################################################################
 
+from ..config import LANGUAGES
 from ..Model import model
 
 ####################################################################################################
@@ -42,7 +43,11 @@ main = Blueprint('main', __name__, url_prefix='/<lang_code>')
 def add_language_code(endpoint, values):
     # Fixme: purpose ?
     # print('add_language_code', endpoint, values)
-    values.setdefault('lang_code', g.lang_code)
+    try:
+        values.setdefault('lang_code', g.lang_code)
+    except AttributeError:
+        # Fixme: ???
+        values.setdefault('lang_code', 'fr')
 
 @main.url_value_preprocessor
 def pull_lang_code(endpoint, values):
@@ -55,6 +60,38 @@ def render_template_i18n(template, **kwgars):
                            lang_code=g.lang_code,
                            page_path=page_path,
                            **kwgars)
+
+####################################################################################################
+
+# @sitemap.register_generator
+def sitemap():
+
+    bleau_database=model.bleau_database
+    for lang_code in LANGUAGES.keys():
+        kwarg = dict(lang_code=lang_code, _external=True)
+        for page in (
+                'mentions_legales',
+                'a_propos',
+                'fontainebleau',
+                'environment',
+                'contribute',
+                'data',
+                'statistics',
+                'massifs',
+                'massifs_by_secteur',
+                'geoportail',
+                'search_massifs',
+                ):
+            yield url_for('main.' + page, **kwarg)
+        for place in bleau_database.places:
+            yield url_for('main.place', place=str(place), **kwarg)
+        for massif in bleau_database.massifs:
+            yield url_for('main.massif', massif=str(massif), **kwarg)
+        for circuit in bleau_database.circuits:
+            yield url_for('main.circuit', circuit=str(circuit), **kwarg)
+
+        # '/geoportail/<massif>'
+        # '/google-map/<massif>'
 
 ####################################################################################################
 
@@ -97,8 +134,9 @@ def statistics():
 def massifs():
     return render_template_i18n('massifs.html', massifs=model.bleau_database.massifs)
 
-@main.route('/massifs-par-secteur')
-def massifs_par_secteur():
+# Fixme: Fr
+@main.route('/massifs-by-secteur')
+def massifs_by_secteur():
     return render_template_i18n('massifs-par-secteur.html', bleau_database=model.bleau_database)
 
 @main.route('/place/<place>')
