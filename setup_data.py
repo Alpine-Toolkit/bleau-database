@@ -69,9 +69,12 @@ setup_dict = dict(
         'RTree',
         # Web Application
         'bokeh',
-        'flask',
-        'flask_wtf',
-        'wtforms',
+        'Flask',
+        'Flask-Babel',
+        'Flask-Cache',
+        'Flask-Sitemap',
+        'Flask-WTF',
+        'WTForms',
     ],
     )
 

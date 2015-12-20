@@ -28,12 +28,17 @@ from flask_wtf import Form
 from wtforms import BooleanField, TextField, SelectMultipleField, SubmitField
 # from wtforms import validators
 
-from BleauDataBase.BleauDataBase import AlpineGrade, Coordinate
-
 ####################################################################################################
+
+from BleauDataBase.BleauDataBase import AlpineGrade, Coordinate
 
 from ..config import LANGUAGES
 from ..Model import model
+
+from ..Application import FlaskWebApplicationSingleton
+application_singleton = FlaskWebApplicationSingleton()
+cache = application_singleton.cache
+sitemap = application_singleton.sitemap
 
 ####################################################################################################
 
@@ -63,7 +68,7 @@ def render_template_i18n(template, **kwgars):
 
 ####################################################################################################
 
-# @sitemap.register_generator
+@sitemap.register_generator
 def sitemap():
 
     bleau_database=model.bleau_database
@@ -95,34 +100,42 @@ def sitemap():
 
 ####################################################################################################
 
+@cache.cached()
 @main.route('/')
 def index():
     return render_template_i18n('main.html', bleau_database=model.bleau_database)
 
+@cache.cached()
 @main.route('/mentions-legales')
 def mentions_legales():
     return render_template_i18n('mentions-legales.html')
 
+@cache.cached()
 @main.route('/a-propos')
 def a_propos():
     return render_template_i18n('a-propos.html', bleau_database=model.bleau_database)
 
+@cache.cached()
 @main.route('/fontainebleau')
 def fontainebleau():
     return render_template_i18n('fontainebleau.html')
 
+@cache.cached()
 @main.route('/environment')
 def environment():
     return render_template_i18n('environment.html')
 
+@cache.cached()
 @main.route('/contribute')
 def contribute():
     return render_template_i18n('contribute.html')
 
+@cache.cached()
 @main.route('/data')
 def data():
     return render_template_i18n('data.html')
 
+@cache.cached()
 @main.route('/statistics')
 def statistics():
     circuits = model.bleau_database.circuits
@@ -130,20 +143,24 @@ def statistics():
     return render_template_i18n('statistics.html',
                                 circuit_statistics=circuit_statistics)
 
+@cache.cached()
 @main.route('/massifs')
 def massifs():
     return render_template_i18n('massifs.html', massifs=model.bleau_database.massifs)
 
 # Fixme: Fr
+@cache.cached()
 @main.route('/massifs-by-secteur')
 def massifs_by_secteur():
     return render_template_i18n('massifs-par-secteur.html', bleau_database=model.bleau_database)
 
+@cache.cached()
 @main.route('/place/<place>')
 def place(place):
     place = model.bleau_database[place]
     return render_template_i18n('place.html', place=place)
 
+@cache.cached()
 @main.route('/massif/<massif>')
 def massif(massif):
     massif = model.bleau_database[massif]
@@ -152,6 +169,7 @@ def massif(massif):
                                 massif=massif, place=massif,
                                 circuit_statistics=circuit_statistics)
 
+@cache.cached()
 @main.route('/circuit/<circuit>')
 def circuit(circuit):
     circuit = model.bleau_database[circuit]
@@ -161,17 +179,20 @@ def circuit(circuit):
                                 place=circuit,
                                 circuit_statistics=circuit_statistics)
 
+@cache.cached()
 @main.route('/geoportail')
 def geoportail():
     extent = model.bleau_database.mercator_area_interval.enlarge(1000)
     return render_template_i18n('geoportail-map.html', extent=extent,
                                 massif=None, place=None)
 
+@cache.cached()
 @main.route('/geoportail/<massif>')
 def geoportail_massif(massif):
     massif = model.bleau_database[massif]
     return render_template_i18n('geoportail-map.html', massif=massif, place=massif)
 
+@cache.cached()
 @main.route('/google-map/<massif>')
 def google_map(massif):
     massif = model.bleau_database[massif]
@@ -190,6 +211,7 @@ class MassifSearchForm(Form):
     grades = SelectMultipleField(lazy_gettext('Cotations'),
                                  choices=[(x, x) for x in AlpineGrade.__grade_majors__ if x != 'EX'])
 
+@cache.cached()
 @main.route('/search-massifs', methods=['GET', 'POST'])
 def search_massifs():
     form = MassifSearchForm(request.form)

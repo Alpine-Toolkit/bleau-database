@@ -24,12 +24,14 @@ from functools import wraps
 import os
 
 from flask import Flask, g, request, render_template, abort, url_for
+from flask.ext.cache import Cache
 from flask.ext.babel import Babel
 from flask_sitemap import Sitemap, sitemap_page_needed
 
 ####################################################################################################
 
 from .config import LANGUAGES
+from .Singleton import SingletonMetaClass
 
 ####################################################################################################
 
@@ -58,8 +60,6 @@ def get_locale():
 
 ####################################################################################################
 
-cache = {} # replace by Flask-Cache instance or similar
-
 # @sitemap_page_needed.connect
 # def create_page(app, page, urlset):
 #     # Fixme: never called and sitemap is undefined
@@ -70,9 +70,23 @@ def load_page(fn):
     @wraps(fn)
     def loader(*args, **kwargs):
         page = kwargs.get('page')
+        cache = FlaskWebApplicationSingleton().cache
         data = cache.get(page)
         return data if data else fn(*args, **kwargs)
     return loader
+
+####################################################################################################
+
+class FlaskWebApplicationSingleton(metaclass=SingletonMetaClass):
+
+    """Singleton used to pass global"""
+
+    # Fixme: better design ???
+
+    application = None
+    cache = None
+    babel = None
+    sitemap = None
 
 ####################################################################################################
 
@@ -89,30 +103,36 @@ class FlaskWebApplication:
         # Fixme: right way?
         self.application.config['bleau_database'] = bleau_database
         
+        self.application.secret_key = os.urandom(24)
+        # WTF_CSRF_SECRET_KEY =
+        
         self.application.error_handler_spec[None][404] = page_not_found
+        
+        self.cache = Cache(self.application, config={'CACHE_TYPE': 'simple'})
         
         self.babel = Babel(self.application)
         self.babel.localeselector(get_locale)
-        
-        from .Model import model
-        model.init_app(self.application)
-        
-        from .Views.Main import main
-        self.application.register_blueprint(main)
-        
-        # Map / to /fr
-        self.application.add_url_rule('/', 'main.index')
-        
-        self.application.secret_key = os.urandom(24)
-        # WTF_CSRF_SECRET_KEY =
         
         # self.application.config['SERVER_NAME'] = 'bleau.fabrice-salvaire.fr' # Fixme:
         # self.app.config['SITEMAP_GZIP'] = True
         self.application.config['SITEMAP_INCLUDE_RULES_WITHOUT_PARAMS'] = True
         self.application.config['SITEMAP_VIEW_DECORATORS'] = [load_page]
         self.sitemap = Sitemap(app=self.application)
-        from .Views.Main import sitemap as main_sitemap
-        self.sitemap.register_generator(main_sitemap)
+        
+        from .Model import model
+        model.init_app(self.application)
+        
+        application_singleton = FlaskWebApplicationSingleton()
+        application_singleton.application = self.application
+        application_singleton.cache = self.cache
+        application_singleton.babel = self.babel
+        application_singleton.sitemap = self.sitemap
+        
+        from .Views.Main import main
+        self.application.register_blueprint(main)
+        
+        # Map / to /fr
+        self.application.add_url_rule('/', 'main.index')
 
     ##############################################
 
