@@ -297,7 +297,7 @@
 
 {% block script %}
   <script type="text/javascript">
-   {% if place is defined %}
+   {% if place is not none %}
    var extent = null;
    var place_name = "{{ place.name }}";
    var center = {
