@@ -94,7 +94,7 @@ class FlaskWebApplication:
 
     ##############################################
 
-    def __init__(self, config_path, bleau_database):
+    def __init__(self, config_path, bleau_database, server_name=None):
 
         self.application = Flask(__name__)
         self.application.logger.info("Start Bleau Database Web Application")
@@ -112,8 +112,9 @@ class FlaskWebApplication:
         
         self.babel = Babel(self.application)
         self.babel.localeselector(get_locale)
-        
-        # self.application.config['SERVER_NAME'] = 'bleau.fabrice-salvaire.fr' # Fixme:
+
+        if server_name is not None:
+            self.application.config['SERVER_NAME'] = server_name
         # self.app.config['SITEMAP_GZIP'] = True
         self.application.config['SITEMAP_INCLUDE_RULES_WITHOUT_PARAMS'] = True
         self.application.config['SITEMAP_VIEW_DECORATORS'] = [load_page]

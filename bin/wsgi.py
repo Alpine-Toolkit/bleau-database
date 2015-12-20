@@ -38,7 +38,8 @@ bleau_database = BleauDataBase(json_file)
 # Fixme: if DEBUG = True then reload ...
 # config_path = os.path.join(os.path.dirname(__file__), 'config.py')
 config_path = 'config.py'
-application = FlaskWebApplication(config_path, bleau_database).application
+server_name = 'bleau.fabrice-salvaire.fr' # Fixme:
+application = FlaskWebApplication(config_path, bleau_database, server_name).application
 
 ####################################################################################################
 #
