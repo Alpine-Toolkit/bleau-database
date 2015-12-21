@@ -1,20 +1,15 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
-{% block content %}
-    <ul class="breadcrumb">
-    <li><a href="/{{ lang_code }}">Accueil</a></li>
-    <li class="active"> Massifs </li>
-  </ul>
+{% block breadcrumb_li %}
+  <li class="active"> Massifs </li>
+{% endblock %}
 
-  <div class="row">
-    <div class="col-xl-12">
-      <h2>Massifs</h2>
-      <ul>
-	{% for massif in massifs %}
-	  <li><a href="/{{ lang_code }}/massif/{{ massif.name }}">{{ massif.name }}</a></li>
-	{% endfor %}
-      </ul>
-    </div>
-  </div>
+{% block content %}
+  <h2>Massifs</h2>
+  <ul>
+    {% for massif in massifs %}
+      <li><a href="/{{ lang_code }}/massif/{{ massif.name }}">{{ massif.name }}</a></li>
+    {% endfor %}
+  </ul>
 {% endblock %}

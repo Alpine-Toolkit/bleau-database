@@ -13,27 +13,22 @@
   {% endfor %}
 {% endblock %}
 
-{% block content %}
-  <ul class="breadcrumb">
-    <li><a href="/{{ lang_code }}">Accueil</a></li>
-    <li class="active">Statistiques sur les Circuits</li>
-  </ul>
+{% block breadcrumb_li %}
+  <li class="active">Statistiques sur les Circuits</li>
+{% endblock %}
 
-  <div class="row">
-    <div class="col-xl-12">
-      <h2>Statistiques sur tous les circuits</h2>
-      <p class="text-xl-center">
-	{{ circuit_statistics.circuit_grade_barchart.div|safe }}
-      </p>
-      <p class="text-xl-center">
-	{{ circuit_statistics.global_boulder_grade_barchart.div|safe }}
-      </p>
-      <h2>Statistiques sur tous les difficultés des circuits</h2>
-      {% for grade in circuit_grades %}
-	<p class="text-xl-center">
-	  {{ circuit_statistics.boulder_grade_barchart(grade).div|safe }}
-	</p>
-      {% endfor %}
-    </div>
-  </div>
+{% block content %}
+  <h2>Statistiques sur tous les circuits</h2>
+  <figure>
+    {{ circuit_statistics.circuit_grade_barchart.div|safe }}
+  </figure>
+  <figure>
+    {{ circuit_statistics.global_boulder_grade_barchart.div|safe }}
+  </figure>
+  <h2>Statistiques sur tous les difficultés des circuits</h2>
+  {% for grade in circuit_grades %}
+    <figure>
+      {{ circuit_statistics.boulder_grade_barchart(grade).div|safe }}
+    </figure>
+  {% endfor %}
 {% endblock %}

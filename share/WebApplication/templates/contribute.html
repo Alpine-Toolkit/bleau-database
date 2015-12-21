@@ -1,60 +1,54 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
-{% block content %}
-  <ul class="breadcrumb">
-    <li><a href="/{{ lang_code }}">Accueil</a></li>
-    <li class="active">Contribuer</li>
-  </ul>
+{% block breadcrumb_li %}
+  <li class="active">Contribuer</li>
+{% endblock %}
 
-  <div class="row">
-    <div class="col-xl-12">
-      <h2>Rapporter des erreurs ou un dysfonctionnement</h2>
-      <ul>
-	<li>Veuillez vérifier avant que le problème n'a pas déjà été rapporté par quelqu'un d'autre.
-	  Les tickets sont répertoriés à cette
-	  <a target="_blank" href="https://github.com/Cosiroc/bleau-database/issues">adresse <i class="fa fa-github"></i></a>.
-	</li>
-	<li>Si il s'agit d'un problème d'affichage, veuillez indiquer la résolution de votre écran et le navigateur utilisé ainsi que sa version.<br>
-	  Notez que ce site requiert un navigateur compatible HTML5, les navigateurs ancestraux ne sont pas supporté. <br>
-	  Si vous le pouvez, installez un navigateur récent
-	  (<a target="_blank" href="https://www.mozilla.org/fr/firefox/new">Firefox</a>, Chrome, Safari, Microsoft Edge). <br>
-	  Si vous naviguez sur un smartphone, assurez vous d'avoir une bonne connexion, un modèle suffisament performant et un navigateur compatible.
-	</li>
-	<li>Pour créer un ticket, vous devez avoir ou créer un compte Github. Cela permet d'identifier les personnes et de communiquer.</li>
-      </ul>
-      <p><a target="_blank" href="https://github.com/Cosiroc/bleau-database/issues/new">
-	<i class="fa fa-bug"></i> Créer un ticket</a></p>
-      </p>
-      <h2>Contribuer</h2>
-      <p>
-	Vous pouvez proposer des « pull requests » sur le
-	<a target="_blank" href="https://github.com/Cosiroc/bleau-database">dépôt <i class="fa fa-github"></i></a>.
-	Soit en utilisant directement <a target="_blank" href="https://git-scm.com/">Git</a>, si vous maîtriser cet outil informatique
-	(pour en savoir plus, voir ce <a href="https://git-scm.com/book/fr/v1/Git-distribu%C3%A9-Contribution-%C3%A0-un-projet">lien</a>).
-      </p>
-      <p>
-	En revanche, l'interface de Github permet d'éditer en ligne le code source (à condition d'avoir un compte).  Par exemple,
-	pour proposer une correction sur le site, vous pouvez suivre ce processus&nbsp;:
-	<ol>
-	  <li>
-	    Naviguez dans le code source à partir de la <a target="_blank" href="https://github.com/Cosiroc/bleau-database">page d'accueil</a>,
-	    cliquez sur « share/WebApplication » puis sur « template », ensuite cliquez sur le fichier
-	    qui correspond à la page qui vous intéresse.  Le contenu du fichier doit à présent s'afficher.
-	    Par exemple pour cette
-	    <a target="_blank" href="https://github.com/Cosiroc/bleau-database/blob/master/share/WebApplication/templates/contribute.html">page</a>.
-	  </li>
-	  <li>Ensuite pour éditer le fichier, cliquez sur l'icône représentant un crayon à droite du bouton « History ».</li>
-	  {# https://github.com/Cosiroc/bleau-database/edit/master/share/WebApplication/templates/contribute.html #}
-	  <li>
-	    Une fois que vous avez terminé les modifications, renseignez en dessous de « Commit
-	    changes » dans les champs une courte et éventuellement une longue description de vos
-	    modifications. Puis cochez « Create a new branch for this commit and start a pull
-	    request. » et cliquez « Commit changes ». Une notification est envoyée.
-	    Votre requête doit apparaître sur cette <a href="https://github.com/Cosiroc/bleau-database/pulls">page</a>.
-	  </li>
-	</ol>
-      </p>
-    </div>
-  </div>
+{% block content %}
+  <h2>Rapporter des erreurs ou un dysfonctionnement</h2>
+  <ul>
+    <li>Veuillez vérifier avant que le problème n'a pas déjà été rapporté par quelqu'un d'autre.
+      Les tickets sont répertoriés à cette
+      <a target="_blank" href="https://github.com/Cosiroc/bleau-database/issues">adresse <i class="fa fa-github"></i></a>.
+    </li>
+    <li>Si il s'agit d'un problème d'affichage, veuillez indiquer la résolution de votre écran et le navigateur utilisé ainsi que sa version.<br>
+      Notez que ce site requiert un navigateur compatible HTML5, les navigateurs ancestraux ne sont pas supporté. <br>
+      Si vous le pouvez, installez un navigateur récent
+      (<a target="_blank" href="https://www.mozilla.org/fr/firefox/new">Firefox</a>, Chrome, Safari, Microsoft Edge). <br>
+      Si vous naviguez sur un smartphone, assurez vous d'avoir une bonne connexion, un modèle suffisament performant et un navigateur compatible.
+    </li>
+    <li>Pour créer un ticket, vous devez avoir ou créer un compte Github. Cela permet d'identifier les personnes et de communiquer.</li>
+  </ul>
+  <p><a target="_blank" href="https://github.com/Cosiroc/bleau-database/issues/new">
+    <i class="fa fa-bug"></i> Créer un ticket</a></p>
+  <h2>Contribuer</h2>
+  <p>
+    Vous pouvez proposer des « pull requests » sur le
+    <a target="_blank" href="https://github.com/Cosiroc/bleau-database">dépôt <i class="fa fa-github"></i></a>.
+    Soit en utilisant directement <a target="_blank" href="https://git-scm.com/">Git</a>, si vous maîtriser cet outil informatique
+    (pour en savoir plus, voir ce <a href="https://git-scm.com/book/fr/v1/Git-distribu%C3%A9-Contribution-%C3%A0-un-projet">lien</a>).
+  </p>
+  <p>
+    En revanche, l'interface de Github permet d'éditer en ligne le code source (à condition d'avoir un compte).  Par exemple,
+    pour proposer une correction sur le site, vous pouvez suivre ce processus&nbsp;:
+  </p>
+  <ol>
+    <li>
+      Naviguez dans le code source à partir de la <a target="_blank" href="https://github.com/Cosiroc/bleau-database">page d'accueil</a>,
+      cliquez sur « share/WebApplication » puis sur « template », ensuite cliquez sur le fichier
+      qui correspond à la page qui vous intéresse.  Le contenu du fichier doit à présent s'afficher.
+      Par exemple pour cette
+      <a target="_blank" href="https://github.com/Cosiroc/bleau-database/blob/master/share/WebApplication/templates/contribute.html">page</a>.
+    </li>
+    <li>Ensuite pour éditer le fichier, cliquez sur l'icône représentant un crayon à droite du bouton « History ».</li>
+    {# https://github.com/Cosiroc/bleau-database/edit/master/share/WebApplication/templates/contribute.html #}
+    <li>
+      Une fois que vous avez terminé les modifications, renseignez en dessous de « Commit
+      changes » dans les champs une courte et éventuellement une longue description de vos
+      modifications. Puis cochez « Create a new branch for this commit and start a pull
+      request. » et cliquez « Commit changes ». Une notification est envoyée.
+      Votre requête doit apparaître sur cette <a href="https://github.com/Cosiroc/bleau-database/pulls">page</a>.
+    </li>
+  </ol>
 {% endblock %}

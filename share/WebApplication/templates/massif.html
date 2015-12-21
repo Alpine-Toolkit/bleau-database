@@ -13,157 +13,150 @@
   {{ circuit_statistics.global_boulder_grade_barchart.script|safe }}
 {% endblock %}
 
+{% block breadcrumb_li %}
+  <li>{{ massif.secteur }}</li>
+  <li class="active">{{ massif.name }}</li>
+{% endblock %}
+
 {% block content %}
-  <ul class="breadcrumb">
-    <li><a href="/{{ lang_code }}">{{ _("Accueil") }}</a></li>
-    <li>{{ massif.secteur }}</li>
-    <li class="active">{{ massif.name }}</li>
-  </ul>
+  <h1>
+    {{ massif.secteur }} ~ {{ massif.name }}
+    {% if massif.alternative_name %} ~ {{ massif.alternative_name }}{% endif %}
+  </h1>
 
-  <div class="row">
-    <div class="col-xl-12">
+  <h2>{{ _("Accés") }}</h2>
+  <dl>
+    <dt><i class="fa fa-car"></i> {{ _("Accés en voiture") }}</dt>
+    <dd>
+      {{ massif.acces }}<br>
+      {% if massif.parking %}
+	<a href="/{{ lang_code }}/google-map/{{ massif.name }}">{{ _("Itineraire Google Map") }}</a>
+      {% else %}
+	{{ _("Pas d'itineraire renseigné") }}
+      {% endif %}
+    </dd>
+    <dt><i class="fa fa-bicycle"></i> {{ _("Accés à vélo") }} {% if massif.a_pieds %}/ {{ _("à pieds") }}{% endif %}</dt>
+    <dd>{{ massif.velo }}</dd>
+  </dl>
 
-      <h1>
-	{{ massif.secteur }} ~ {{ massif.name }}
-	{% if massif.alternative_name %} ~ {{ massif.alternative_name }}{% endif %}
-      </h1>
-
-      <h2>{{ _("Accés") }}</h2>
-      <dl>
-	<dt><i class="fa fa-car"></i> {{ _("Accés en voiture") }}</dt>
+  <h2>{{ _("Informations") }}</h2>
+  <dl>
+    <dt>{{ _("Type de chaos") }}</dt><dd>{{ massif.chaos_type }}</dd>
+    <dt>{{ _("Notes") }}</dt><dd>{{ massif.note }}</dd>
+    <dt>{{ _("Rendez-vous Gums") }}</dt><dd>{{ massif.rdv }}</dd>
+    {% with places = massif.nearest_point_deau(distance_max=5000) %}
+      {% if places %}
+	<dt>{{ _("Point d'eau") }}</dt>
 	<dd>
-	  {{ massif.acces }}<br>
-	  {% if massif.parking %}
-	  <a href="/{{ lang_code }}/google-map/{{ massif.name }}">{{ _("Itineraire Google Map") }}</a>
-	  {% else %}
-	  {{ _("Pas d'itineraire renseigné") }}
-	  {% endif %}
+	  {% for place in places %}
+	    {% if loop.index > 1  %}<br>{% endif %}
+	    <a href="/{{ lang_code }}/place/{{ place.name }}">
+	      {{ place.name }} ({{ massif.distance_to(place) | round | int }} m)
+	    </a>
+	  {% endfor %}
 	</dd>
-        <dt><i class="fa fa-bicycle"></i> {{ _("Accés à vélo") }} {% if massif.a_pieds %}/ {{ _("à pieds") }}{% endif %}</dt>
-	<dd>{{ massif.velo }}</dd>
-      </dl>
+      {% endif %}
+    {% endwith %}
+  </dl>
 
-      <h2>{{ _("Informations") }}</h2>
-      <dl>
-	<dt>{{ _("Type de chaos") }}</dt><dd>{{ massif.chaos_type }}</dd>
-        <dt>{{ _("Notes") }}</dt><dd>{{ massif.note }}</dd>
-        <dt>{{ _("Rendez-vous Gums") }}</dt><dd>{{ massif.rdv }}</dd>
-	{% with places = massif.nearest_point_deau(distance_max=5000) %}
-	  {% if places %}
-	    <dt>{{ _("Point d'eau") }}</dt>
-	    <dd>
-	      {% for place in places %}
-		{% if loop.index > 1  %}<br>{% endif %}
-		<a href="/{{ lang_code }}/place/{{ place.name }}">
-		  {{ place.name }} ({{ massif.distance_to(place) | round | int }} m)
-		</a>
-	      {% endfor %}
-	    </dd>
-	  {% endif %}
-	{% endwith %}
-      </dl>
+  <h2>{{ _("Circuits") }}</h2>
+  <table class="table table-sm">
+    {#
+    <col style="width: 5%">
+    <col style="width: 5%">
+    <col style="width: 10%">
+    <col style="width: 80%">
+    #}
+    <tbody>
+      {% for circuit in massif %}
+	<tr>
+	  <td>{{ circuit.grade }}</td>
+	  <td><a href="/{{ lang_code }}/circuit/{{ circuit.name }}">{{  _("N°") }} {{ circuit.number }}</a></td>
+	  <td>{{ circuit.colour }}</td>
+	  <td>#{{ circuit.number_of_boulders }}</td>
+	  <td>
+	    {% for topo in circuit.topos %}
+	      <a class="hidden-sm-up" href="{{ topo }}">"{{  _("lien") }}</a>
+	      <a class="hidden-xs-down" href="{{ topo }}">{{ topo|truncate(70) }}</a>
+	      <br>
+	    {% endfor %}
+	  </td>
+	</tr>
+      {% endfor %}
+    </tbody>
+  </table>
 
-      <h2>{{ _("Circuits") }}</h2>
+  <figure>
+    {# {{ circuit_statistics.circuit_grade_barchart.div|safe }} #}
+    {{ circuit_statistics.global_boulder_grade_barchart.div|safe }}
+  </figure>
+
+  <h2>{{ _("Massifs à proximité") }}</h2>
+  <div class="alert alert-info" role="alert">
+    {{ _("critère: 2 km à vol d'oiseau, donc prévoir plus long!") }}
+  </div>
+  {% with massif_voisins = massif.nearest(number_of_items=100, distance_max=2000) %}
+    {% if massif_voisins %}
       <table class="table table-sm">
-	{#
-	<col style="width: 5%">
-	<col style="width: 5%">
-	<col style="width: 10%">
-	<col style="width: 80%">
-	#}
+	{# <col style="width:10%"> #}
 	<tbody>
-	  {% for circuit in massif %}
+	  {% for massif_ in massif_voisins %}
 	    <tr>
-	      <td>{{ circuit.grade }}</td>
-	      <td><a href="/{{ lang_code }}/circuit/{{ circuit.name }}">{{  _("N°") }} {{ circuit.number }}</a></td>
-	      <td>{{ circuit.colour }}</td>
-	      <td>#{{ circuit.number_of_boulders }}</td>
+	      <td class="text-right">{{ massif.distance_to(massif_) | round | int }} m</td>
+	      <td><a href="/{{ lang_code }}/massif/{{ massif_.name }}">{{ massif_.name }}</a></td>
 	      <td>
-		{% for topo in circuit.topos %}
-		  <a class="hidden-sm-up" href="{{ topo }}">"{{  _("lien") }}</a>
-		  <a class="hidden-xs-down" href="{{ topo }}">{{ topo|truncate(70) }}</a>
-		  <br>
-		{% endfor %}
+		<ul class="list-inline">
+		  {% for grade in massif_.grades %}
+		    <li class="list-inline-item">{{ grade }}</li>
+		  {% endfor %}
+		</ul>
 	      </td>
 	    </tr>
 	  {% endfor %}
 	</tbody>
       </table>
+    {% else %}
+      <p>{{ _("aucun") }}</p>
+    {% endif %}
+  {% endwith %}
 
-      <p class="text-xl-center">
-	{# {{ circuit_statistics.circuit_grade_barchart.div|safe }} #}
-	{{ circuit_statistics.global_boulder_grade_barchart.div|safe }}
-      </p>
-
-      <h2>{{ _("Massifs à proximité") }}</h2>
-      <div class="alert alert-info" role="alert">
-	{{ _("critère: 2 km à vol d'oiseau, donc prévoir plus long!") }}
-      </div>
-      {% with massif_voisins = massif.nearest(number_of_items=100, distance_max=2000) %}
-	{% if massif_voisins %}
-	  <table class="table table-sm">
-	    {# <col style="width:10%"> #}
-	    <tbody>
-	      {% for massif_ in massif_voisins %}
-		<tr>
-		  <td class="text-right">{{ massif.distance_to(massif_) | round | int }} m</td>
-		  <td/>
-		  <td><a href="/{{ lang_code }}/massif/{{ massif_.name }}">{{ massif_.name }}</a></td>
-		  <td>
-		    <ul class="list-inline">
-		      {% for grade in massif_.grades %}
-			<li class="list-inline-item">{{ grade }}</li>
-		      {% endfor %}
-		    </ul>
-		  </td>
-		</tr>
-	      {% endfor %}
-	    </tbody>
-	  </table>
-	{% else %}
-	  <p>{{ _("aucun") }}</p>
-	{% endif %}
-      {% endwith %}
-
-      <h2>{{ _("Carte de situation") }}</h2>
-      <div class="row">
-	<div class="col-xl-4">
-	  <tbody>
-	    <table class="table table-sm">
-	      {% with coordinate = massif.coordinate %}
-		<tr>
-		  <td>
-		    <a href="http://spatialreference.org/ref/epsg/wgs-84/">
-		      {{ _("Coordonnée WGS 84") }}
-		    </a></td>
-		  <td>
-		    {{ coordinate.longitude }}, {{ coordinate.latitude }}°
-		  </td>
-		</tr>
-		<tr>
-		  <td>
-		    <a href="http://spatialreference.org/ref/sr-org/epsg3857-wgs84-web-mercator-auxiliary-sphere/">
-		      {{ _("Coordonnée Mercator") }}
-		    </a></td>
-		  <td>
-		    {% if coordinate %}
-		      {% with mercator = coordinate.mercator %}
-			{{ mercator[0] | round | int }}, {{ mercator[1] | round | int }} m
-		      {% endwith %}
-		    {% endif %}
-		  </td>
-		</tr>
-	      {% endwith %}
-	      <tr>
-		<td>{{ _("Parcelles ONF") }}</td>
-		<td>{{ massif.parcelles }}</td>
-	      </tr>
-	    </table>
-	  </tbody>
-	</div>
-      </div>
-      <a href="/{{ lang_code }}/geoportail/{{ massif.name }}">{{ _("Grande carte") }}</a>
-      {{ geoportail_map() }}
+  <h2>{{ _("Carte de situation") }}</h2>
+  <div class="row">
+    <div class="col-xl-4">
+      <table class="table table-sm">
+	<tbody>
+	  {% with coordinate = massif.coordinate %}
+	    <tr>
+	      <td>
+		<a href="http://spatialreference.org/ref/epsg/wgs-84/">
+		  {{ _("Coordonnée WGS 84") }}
+		</a></td>
+	      <td>
+		{{ coordinate.longitude }}, {{ coordinate.latitude }}°
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>
+		<a href="http://spatialreference.org/ref/sr-org/epsg3857-wgs84-web-mercator-auxiliary-sphere/">
+		  {{ _("Coordonnée Mercator") }}
+		</a></td>
+	      <td>
+		{% if coordinate %}
+		  {% with mercator = coordinate.mercator %}
+		    {{ mercator[0] | round | int }}, {{ mercator[1] | round | int }} m
+		  {% endwith %}
+		{% endif %}
+	      </td>
+	    </tr>
+	  {% endwith %}
+	  <tr>
+	    <td>{{ _("Parcelles ONF") }}</td>
+	    <td>{{ massif.parcelles }}</td>
+	  </tr>
+      </tbody>
+      </table>
     </div>
   </div>
+  <a href="/{{ lang_code }}/geoportail/{{ massif.name }}">{{ _("Grande carte") }}</a>
+  {{ geoportail_map() }}
 {% endblock %}

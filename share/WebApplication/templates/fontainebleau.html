@@ -1,132 +1,127 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
+{% block breadcrumb_li %}
+  <li class="active">Fontainebleau</li>
+{% endblock %}
+
 {% block content %}
-  <ul class="breadcrumb">
-    <li><a href="/{{ lang_code }}">Accueil</a></li>
-    <li class="active">Fontainebleau</li>
+  <h2>Introduction</h2>
+  <p>
+    La forêt de Fontainebleau est un site naturel célèbre dans le monde entier situé à une
+    soixantaine de kilomètres au sud de Paris, la capitale Française.  Son histoire géologique
+    particulière a formé une multitude de blocs de grès dispersés dans toutes la région, ce qui
+    en fait de nos jours la mecque de l'escalade de bloc.
+  </p>
+
+  <h2>L'escalade à Fontainebleau</h2>
+  <p>
+    ...
+  </p>
+
+  <h2>Le systéme de cotation des circuits de Fontainebleau</h2>
+  <p>Les circuits de Fontainebleau sont côtés suivant une cotation de type alpine&nbsp;:</p>
+  {#
+  <dl class="dl-horizontal">
+  <dt class="col-sm-1">EN</dt><dd class="col-sm-11">pour les circuits enfants mettant à profit les petits blocs</dd>
+  <dt class="col-sm-1">F </dt><dd class="col-sm-11">pour facile, niveau intermédiaire, rare</dd>
+  <dt class="col-sm-1">PD</dt><dd class="col-sm-11">pour peu difficile</dd>
+  <dt class="col-sm-1">AD</dt><dd class="col-sm-11">pour assez difficile, cotation moyenne des blocs dans le 3</dd>
+  <dt class="col-sm-1">D </dt><dd class="col-sm-11">pour difficile, cotation moyenne dans le 4</dd>
+  <dt class="col-sm-1">TD</dt><dd class="col-sm-11">pour très difficile, cotation moyenne dans le 5</dd>
+  <dt class="col-sm-1">ED</dt><dd class="col-sm-11">pour extrêmement difficile, cotation moyenne dans le 6</dd>
+  </dl>
+  #}
+  <ul>
+    <li><span style="float: left; width: 2em">EN</span> pour les circuits enfants mettant à profit les petits blocs</li>
+    <li><span style="float: left; width: 2em">F </span> pour facile, niveau intermédiaire, rare</li>
+    <li><span style="float: left; width: 2em">PD</span> pour peu difficile</li>
+    <li><span style="float: left; width: 2em">AD</span> pour assez difficile, cotation moyenne des blocs dans le 3</li>
+    <li><span style="float: left; width: 2em">D </span> pour difficile, cotation moyenne dans le 4</li>
+    <li><span style="float: left; width: 2em">TD</span> pour très difficile, cotation moyenne dans le 5</li>
+    <li><span style="float: left; width: 2em">ED</span> pour extrêmement difficile, cotation moyenne dans le 6</li>
   </ul>
+  <p>
+    Il faut soustraire au moins une unité par rapport à une cotation falaise, une cotation 5b requiert un entrainement spécifique.
+  </p>
 
-  <div class="row">
-    <div class="col-xl-12">
-      <h2>Introduction</h2>
-      <p>
-	La forêt de Fontainebleau est un site naturel célèbre dans le monde entier situé à une
-	soixantaine de kilomètres au sud de Paris, la capitale Française.  Son histoire géologique
-	particulière a formé une multitude de blocs de grès dispersés dans toutes la région, ce qui
-	en fait de nos jours la mecque de l'escalade de bloc.
-      </p>
-      
-      <h2>L'escalade à Fontainebleau</h2>
-      <p>
-	...
-      </p>
+  <h2>La géologie du site</h2>
+  <p>
+    Au Stampien, il y a 35 million d'années, le bassin sédimentaire Parisien était recouvert par
+    une mer qui allait jusqu'à Étampes.  Cette mer a laissé en se retirant des dunes de sables
+    de plusieurs dizaines de mètres de hauteur qui se sont par la suite sédimentés en surface en
+    grès sous l'action du temps et de la prèsence d'une eau riche en silice, le ciment qui a
+    agrégé les grains de sable entre eux.  Cette sédimentation a formé des bancs de grés de
+    plusieurs mètres de hauteur, appelé platière, qui ce sont par la suite fragmentés en blocs
+    plus au moins gros.  Ces blocs ont ensuite glissé le long des pentes des dunes de sable et
+    ont formé les chaos rocheux que nous voyons aujourd'hui.  On peut voir à certains endroits
+    des remparts de grés et des chaos rocheux en contre bas (Mondeville, Cuvier rempart).
+  </p>
+  <p>
+    Les sables de Fontainebleau sont réputés pour leurs finesses et blancheurs.  Les blocs de
+    grés sont recouvert d'une carapace assez solide, mais à l'intérieur la roche est plutôt
+    friable et d'un blanc trés pur.
+  </p>
 
-      <h2>Le systéme de cotation des circuits de Fontainebleau</h2>
-      <p>
-	Les circuits de Fontainebleau sont côtés suivant une cotation de type alpine&nbsp;:
-	{#
-	<dl class="dl-horizontal">
-	  <dt class="col-sm-1">EN</dt><dd class="col-sm-11">pour les circuits enfants mettant à profit les petits blocs</dd>
-	  <dt class="col-sm-1">F </dt><dd class="col-sm-11">pour facile, niveau intermédiaire, rare</dd>
-	  <dt class="col-sm-1">PD</dt><dd class="col-sm-11">pour peu difficile</dd>
-	  <dt class="col-sm-1">AD</dt><dd class="col-sm-11">pour assez difficile, cotation moyenne des blocs dans le 3</dd>
-	  <dt class="col-sm-1">D </dt><dd class="col-sm-11">pour difficile, cotation moyenne dans le 4</dd>
-	  <dt class="col-sm-1">TD</dt><dd class="col-sm-11">pour très difficile, cotation moyenne dans le 5</dd>
-	  <dt class="col-sm-1">ED</dt><dd class="col-sm-11">pour extrêmement difficile, cotation moyenne dans le 6</dd>
-	</dl>
-	#}
-	<ul>
-	  <li><span style="float: left; width: 2em">EN</span> pour les circuits enfants mettant à profit les petits blocs</li>
-	  <li><span style="float: left; width: 2em">F </span> pour facile, niveau intermédiaire, rare</li>
-	  <li><span style="float: left; width: 2em">PD</span> pour peu difficile</li>
-	  <li><span style="float: left; width: 2em">AD</span> pour assez difficile, cotation moyenne des blocs dans le 3</li>
-	  <li><span style="float: left; width: 2em">D </span> pour difficile, cotation moyenne dans le 4</li>
-	  <li><span style="float: left; width: 2em">TD</span> pour très difficile, cotation moyenne dans le 5</li>
-	  <li><span style="float: left; width: 2em">ED</span> pour extrêmement difficile, cotation moyenne dans le 6</li>
-	</ul>
-	Il faut soustraire au moins une unité par rapport à une cotation falaise, une cotation 5b requiert un entrainement spécifique.
-      </p>
-
-      <h2>La géologie du site</h2>
-      <p>
-	Au Stampien, il y a 35 million d'années, le bassin sédimentaire Parisien était recouvert par
-	une mer qui allait jusqu'à Étampes.  Cette mer a laissé en se retirant des dunes de sables
-	de plusieurs dizaines de mètres de hauteur qui se sont par la suite sédimentés en surface en
-	grès sous l'action du temps et de la prèsence d'une eau riche en silice, le ciment qui a
-	agrégé les grains de sable entre eux.  Cette sédimentation a formé des bancs de grés de
-	plusieurs mètres de hauteur, appelé platière, qui ce sont par la suite fragmentés en blocs
-	plus au moins gros.  Ces blocs ont ensuite glissé le long des pentes des dunes de sable et
-	ont formé les chaos rocheux que nous voyons aujourd'hui.  On peut voir à certains endroits
-	des remparts de grés et des chaos rocheux en contre bas (Mondeville, Cuvier rempart).
-      </p>
-      <p>
-	Les sables de Fontainebleau sont réputés pour leurs finesses et blancheurs.  Les blocs de
-	grés sont recouvert d'une carapace assez solide, mais à l'intérieur la roche est plutôt
-	friable et d'un blanc trés pur.
-      </p>
-
-      <h2>Configuration « géo-morphologique » des massifs d’escalade</h2>
-      <p>Source CoSIRoc octobre 2014</p>
-      <p>
-	Un même massif d’escalade peut réunir plusieurs des catégories identifiées ci-dessous par les
-	premières lettres de l’alphabet. L’ordre suit la chronologie de l’érosion des sols et n’est pas
-	celui de l’importance du risque érosif.
-
-	<dl>
-	  <dt>A</dt>
-	  <dd>
-	    Le « Rempart », et les flancs des diaclases secondaires qui le coupent, qui repose sur
-	    la surface horizontale en haut d’une butte sableuse. Le risque érosif est souvent
-	    quasi-nul car bloqué par les blocs provenant de la cassure de ce banc et situés
-	    immédiatement en dessous vers l’aval. Quelques risques de rupture en cas de gros
-	    surplomb. Peu de possibilité de parcours « d’enchaînement » et souvent peu de variété de
-	    type de passages (e.g.&nbsp;: Télégraphe).</dd>
-	  <dt>B</dt>
-	  <dd>
-	    Les diaclases primaires importantes découpent des blocs, souvent parallélépipédiques, de
-	    la hauteur du banc de grès. A la suite de l’érosion du sable sous-jacent, elles
-	    proviennent de l’ouverture des fissures préexistantes dans le banc de grès.  La surface
-	    sur laquelle repose les blocs est faiblement inclinée. Les possibilités de circuit y
-	    sont assez faibles mais un peu plus nombreuses que dans le cas A et les escalades plus
-	    variées (e.g.&nbsp;: Point de vue de la Maison poteau).</dd>
-	  <dt>C</dt>
-	  <dd>
-	    Les chaos de blocs dans la pente (15 à 30°) qui continue à évoluer (chaos vif). Les
-	    blocs provenant de l’ancien banc de grès ont perdu de l’altitude en restant quasi à la
-	    verticale de leur ancienne position. L’érosion différentielle de leur pied a entraîné
-	    leur inclinaison et parfois leur basculement, et/ou celui des résidus de la couche
-	    supérieure les coiffant, sur les blocs voisins. En général très nombreuses possibilités
-	    d’enchaînements variés. C’est la catégorie dans laquelle le risque érosif est sensible.
-	    (e.g.&nbsp;: partout).</dd>
-	  <dt>D</dt>
-	  <dd>
-	    La pente soutenant les blocs en place s’adoucie nettement (quelques degrés) car elle
-	    s’approche d’une couche plus résistante ou du bas du talweg d’un vallon. Le chaos
-	    n’évolue presque plus (chaos achevé) et ne présente que peu de risque érosif. Même
-	    caractéristiques grimpantes que la catégorie n°3; (e.g.&nbsp;:91,1 sud ouest).</dd>
-	  <dt>E</dt>
-	  <dd>
-	    La couche résistante inférieure est pratiquement atteinte. Le chaos « mort » n’évolue
-	    plus. Le seul risque érosif est le piétinement (une vingtaine de cm au maximum).
-	    Possibilité de circuits variés (e.g.&nbsp;: Canche aux Merciers ou, au Pignon Poteau, couche
-	    G4 sur banc G3).
-	  </dd>
-	</dl>
-	
-	Pour affiner la remarque, on peut remarquer que cette catégorie (la moins érodable) peut ne
-	pas être adaptée aux circuits de faible difficulté si les blocs sont hauts. Ils ont, en
-	première approximation, repris leur position relative dans le banc de grès originel (cat A),
-	écartés mais peu déplacés lors de leur descente, et leur faces latérales sont à nouveau
-	verticales, ce qui est peu propice à la présence de nombreuses voies faciles (l’Isatis, le
-	Bas Cuvier).  Seule la très faible hauteur des blocs de la Feuillardière à permis la
-	création du circuit enfant.  La catégorie 4 avec au moins une ou deux faces non verticales
-	(corollaire les autres peuvent être en surplomb) est beaucoup plus favorable aux circuits
-	peu difficiles.
-      </p>
-      <p class="text-xl-center">
-	<img src={{ url_for('static', filename='image/geomorphologie-chaotique.jpg') }} width="600"/>
-      </p>
-    </div>
-  </div>
+  <h2>Configuration « géo-morphologique » des massifs d’escalade</h2>
+  <p>Source CoSIRoc octobre 2014</p>
+  <p>
+    Un même massif d’escalade peut réunir plusieurs des catégories identifiées ci-dessous par les
+    premières lettres de l’alphabet. L’ordre suit la chronologie de l’érosion des sols et n’est pas
+    celui de l’importance du risque érosif.
+  </p>
+  <dl>
+    <dt>A</dt>
+    <dd>
+      Le « Rempart », et les flancs des diaclases secondaires qui le coupent, qui repose sur
+      la surface horizontale en haut d’une butte sableuse. Le risque érosif est souvent
+      quasi-nul car bloqué par les blocs provenant de la cassure de ce banc et situés
+      immédiatement en dessous vers l’aval. Quelques risques de rupture en cas de gros
+      surplomb. Peu de possibilité de parcours « d’enchaînement » et souvent peu de variété de
+      type de passages (e.g.&nbsp;: Télégraphe).</dd>
+    <dt>B</dt>
+    <dd>
+      Les diaclases primaires importantes découpent des blocs, souvent parallélépipédiques, de
+      la hauteur du banc de grès. A la suite de l’érosion du sable sous-jacent, elles
+      proviennent de l’ouverture des fissures préexistantes dans le banc de grès.  La surface
+      sur laquelle repose les blocs est faiblement inclinée. Les possibilités de circuit y
+      sont assez faibles mais un peu plus nombreuses que dans le cas A et les escalades plus
+      variées (e.g.&nbsp;: Point de vue de la Maison poteau).</dd>
+    <dt>C</dt>
+    <dd>
+      Les chaos de blocs dans la pente (15 à 30°) qui continue à évoluer (chaos vif). Les
+      blocs provenant de l’ancien banc de grès ont perdu de l’altitude en restant quasi à la
+      verticale de leur ancienne position. L’érosion différentielle de leur pied a entraîné
+      leur inclinaison et parfois leur basculement, et/ou celui des résidus de la couche
+      supérieure les coiffant, sur les blocs voisins. En général très nombreuses possibilités
+      d’enchaînements variés. C’est la catégorie dans laquelle le risque érosif est sensible.
+      (e.g.&nbsp;: partout).</dd>
+    <dt>D</dt>
+    <dd>
+      La pente soutenant les blocs en place s’adoucie nettement (quelques degrés) car elle
+      s’approche d’une couche plus résistante ou du bas du talweg d’un vallon. Le chaos
+      n’évolue presque plus (chaos achevé) et ne présente que peu de risque érosif. Même
+      caractéristiques grimpantes que la catégorie n°3; (e.g.&nbsp;:91,1 sud ouest).</dd>
+    <dt>E</dt>
+    <dd>
+      La couche résistante inférieure est pratiquement atteinte. Le chaos « mort » n’évolue
+      plus. Le seul risque érosif est le piétinement (une vingtaine de cm au maximum).
+      Possibilité de circuits variés (e.g.&nbsp;: Canche aux Merciers ou, au Pignon Poteau, couche
+      G4 sur banc G3).
+    </dd>
+  </dl>
+  <p>
+    Pour affiner la remarque, on peut remarquer que cette catégorie (la moins érodable) peut ne
+    pas être adaptée aux circuits de faible difficulté si les blocs sont hauts. Ils ont, en
+    première approximation, repris leur position relative dans le banc de grès originel (cat A),
+    écartés mais peu déplacés lors de leur descente, et leur faces latérales sont à nouveau
+    verticales, ce qui est peu propice à la présence de nombreuses voies faciles (l’Isatis, le
+    Bas Cuvier).  Seule la très faible hauteur des blocs de la Feuillardière à permis la
+    création du circuit enfant.  La catégorie 4 avec au moins une ou deux faces non verticales
+    (corollaire les autres peuvent être en surplomb) est beaucoup plus favorable aux circuits
+    peu difficiles.
+  </p>
+  <p class="text-xl-center">
+    <img src={{ url_for('static', filename='image/geomorphologie-chaotique.jpg') }} width="600"/>
+  </p>
 {% endblock %}

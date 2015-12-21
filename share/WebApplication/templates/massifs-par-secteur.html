@@ -1,22 +1,17 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
-{% block content %}
-    <ul class="breadcrumb">
-    <li><a href="/{{ lang_code }}">Accueil</a></li>
-    <li class="active"> Massifs par Secteurs </li>
-  </ul>
+{% block breadcrumb_li %}
+  <li class="active"> Massifs par Secteurs </li>
+{% endblock %}
 
-  <div class="row">
-    <div class="col-xl-12">
-      {% for secteur in bleau_database.secteurs %}
-	<h2>{{ secteur }}</h2>
-	<ul>
-	  {% for massif in bleau_database.filter_by(secteurs=secteur) %}
-	    <li><a href="/{{ lang_code }}/massif/{{ massif.name }}">{{ massif.name }}</a></li>
-	  {% endfor %}
-	</ul>
+{% block content %}
+  {% for secteur in bleau_database.secteurs %}
+    <h2>{{ secteur }}</h2>
+    <ul>
+      {% for massif in bleau_database.filter_by(secteurs=secteur) %}
+	<li><a href="/{{ lang_code }}/massif/{{ massif.name }}">{{ massif.name }}</a></li>
       {% endfor %}
-    </div>
-  </div>
+    </ul>
+  {% endfor %}
 {% endblock %}

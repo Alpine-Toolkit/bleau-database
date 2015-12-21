@@ -1,32 +1,25 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
-{% block content %}
-  <ul class="breadcrumb">
-    <li><a href="/{{ lang_code }}">Accueil</a></li>
-    <li class="active">Respectons l'environnement</li>
-  </ul>
+{% block breadcrumb_li %}
+  <li class="active">Respectons l'environnement</li>
+{% endblock %}
 
-  <div class="row">
-    <div class="col-xl-12">
-      <h2>Guide des bonnes pratiques en forêt</h2>
-      <ul>
-	<li>Le sable est abrasif !<br>
-	  <strong>Utiliser un paillasson</strong> ou un crash pad pour retirer le sable sous les chaussons afin de ne pas patiner le grès.</li>
-	<li><strong>Utiliser la magnésie avec parcimonie</strong>, car elle laisse des traces blances sur le rocher.</li>
-	<li><strong>Ne pas tailler de prises</strong></li>
-	<li>Limiter l'érosion des sols</li>
-	<li>Laisser les lieux propres</li>
-	<li>Respecter la faune, la flore et les usagers</li>
-	<li>Chaque année plusieurs hectares de la forêt brûle !</li>
-      </ul>
-      <h2>Liens</h2>
-      <p>
-	<ul>
-	  <li><a href="http://www.onf.fr/enforet/fontainebleau/@@index.html">Page de l'ONF sur la forêt de Fontainebleau</a></li>
-	  <li><a href="http://www.mountainwilderness.fr/">Mountain Wilderness - Association nationale de protection de la montagne</a></li>
-	</ul>
-      </p>
-    </div>
-  </div>
+{% block content %}
+  <h2>Guide des bonnes pratiques en forêt</h2>
+  <ul>
+    <li>Le sable est abrasif !<br>
+      <strong>Utiliser un paillasson</strong> ou un crash pad pour retirer le sable sous les chaussons afin de ne pas patiner le grès.</li>
+    <li><strong>Utiliser la magnésie avec parcimonie</strong>, car elle laisse des traces blances sur le rocher.</li>
+    <li><strong>Ne pas tailler de prises</strong></li>
+    <li>Limiter l'érosion des sols</li>
+    <li>Laisser les lieux propres</li>
+    <li>Respecter la faune, la flore et les usagers</li>
+    <li>Chaque année plusieurs hectares de la forêt brûle !</li>
+  </ul>
+  <h2>Liens</h2>
+  <ul>
+    <li><a href="http://www.onf.fr/enforet/fontainebleau/@@index.html">Page de l'ONF sur la forêt de Fontainebleau</a></li>
+    <li><a href="http://www.mountainwilderness.fr/">Mountain Wilderness - Association nationale de protection de la montagne</a></li>
+  </ul>
 {% endblock %}

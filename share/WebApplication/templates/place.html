@@ -1,63 +1,57 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/geoportail-base.html" %}
 
+{% block breadcrumb_li %}
+  <li class="active">{{ place.name }}</li>
+{% endblock %}
+
 {% block content %}
-  <ul class="breadcrumb">
-    <li><a href="/{{ lang_code }}">Accueil</a></li>
-    <li class="active">{{ place.name }}</li>
-  </ul>
+  <h1>{{ place.name }}</h1>
 
+  <h2>Carte de situation</h2>
   <div class="row">
-    <div class="col-xl-12">
-
-      <h1>{{ place.name }}</h1>
-      
-      <h2>Carte de situation</h2>
-      <div class="row">
-	<div class="col-xl-4">
-	  <table class="table table-sm">
-	    <tbody>
-	      <tr>
-		<td>
-		  <a href="http://spatialreference.org/ref/epsg/wgs-84/">
-		    Coordonnée WGS 84
-		  </a></td>
-		<td>
-		  {% with coordinate = place.coordinate %}
-		    {{ coordinate.longitude }}, {{ coordinate.latitude }}°
-		  {% endwith %}
-		</td>
-	      </tr>
-	      <tr>
-		<td>
-		  <a href="http://spatialreference.org/ref/sr-org/epsg3857-wgs84-web-mercator-auxiliary-sphere/">
-		    Coordonnée Mercator
-		  </a></td>
-		<td>
-		  {% with mercator = place.coordinate.mercator %}
-		    {{ mercator[0] | round | int }}, {{ mercator[1] | round | int }} m
-		  {% endwith %}
-		</td>
-	      </tr>
-	    </tbody>
-	  </table>
-	</div>
-	<div class="col-xl-4">
-	  <form>
-	    <label>Projection</label>
-	    <select id="projection">
-	      <option value="EPSG:4326">WGS 84</option>
-	      <option value="EPSG:3857">Mercator</option>
-	    </select>
-	    <label>Precision</label>
-	    <input id="precision" style="width: 3em" type="number" min="0" max="12" value="4"/>
-	  </form>
-	  <p id="mouse-position">Position : &nbsp;</p>
-	  {# <p id="massif-name">Massif : &nbsp;</p> #}
-	</div>
-      </div>
-      {# <a href="/{{ lang_code }}/geoportail/{{ massif.massif }}">Grande carte</a> #}
-      {{ geoportail_map() }}
+    <div class="col-xl-4">
+      <table class="table table-sm">
+	<tbody>
+	  <tr>
+	    <td>
+	      <a href="http://spatialreference.org/ref/epsg/wgs-84/">
+		Coordonnée WGS 84
+	      </a></td>
+	    <td>
+	      {% with coordinate = place.coordinate %}
+		{{ coordinate.longitude }}, {{ coordinate.latitude }}°
+	      {% endwith %}
+	    </td>
+	  </tr>
+	  <tr>
+	    <td>
+	      <a href="http://spatialreference.org/ref/sr-org/epsg3857-wgs84-web-mercator-auxiliary-sphere/">
+		Coordonnée Mercator
+	      </a></td>
+	    <td>
+	      {% with mercator = place.coordinate.mercator %}
+		{{ mercator[0] | round | int }}, {{ mercator[1] | round | int }} m
+	      {% endwith %}
+	    </td>
+	  </tr>
+	</tbody>
+      </table>
+    </div>
+    <div class="col-xl-4">
+      <form>
+	<label>Projection</label>
+	<select id="projection">
+	  <option value="EPSG:4326">WGS 84</option>
+	  <option value="EPSG:3857">Mercator</option>
+	</select>
+	<label>Precision</label>
+	<input id="precision" style="width: 3em" type="number" min="0" max="12" value="4"/>
+      </form>
+      <p id="mouse-position">Position : &nbsp;</p>
+      {# <p id="massif-name">Massif : &nbsp;</p> #}
     </div>
   </div>
+  {# <a href="/{{ lang_code }}/geoportail/{{ massif.massif }}">Grande carte</a> #}
+  {{ geoportail_map() }}
 {% endblock %}

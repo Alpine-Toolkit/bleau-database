@@ -1,94 +1,129 @@
 {# -*- engine: jinja2 -*- #}
 <!DOCTYPE html>
 {% set use_cdn = true %}
-{# "{{ LANGUAGE_CODE }}" #}
 <html lang="{{ lang_code }}">
-{% include "include/cookie-consent.html" %}
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>Bleau Database - {% block title %}{% endblock %}</title>
-  <meta name="description" content="Base de données des sites d'escalade de la région de Fontainebleau">
-  <meta name="author" content="Fabrice Salvaire">
+    <title>Bleau Database - {% block title %}{% endblock %}</title>
+    <meta name="description" content="{{ _("Base de données des sites d'escalade de la région de Fontainebleau") }}">
+    <meta name="author" content="Fabrice Salvaire">
 
-  <link rel="shortcut icon" href="{{ url_for('static', filename='image/favicon.png') }}">
-  {% if use_cdn %}
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-  {% else %}
-    <link rel="stylesheet" href={{ url_for('static', filename='css/bootstrap.min.css') }}>
-  {% endif %}
-  <link rel="stylesheet" href={{ url_for('static', filename='css/bleau-database.css') }}>
+    {# Cookie Consent #}
+    {% include "include/cookie-consent.html" %}
 
-  {% block head %}{% endblock %}
-</head>
+    {# Stylesheets #}
+    <link rel="shortcut icon" href="{{ url_for('static', filename='image/favicon.png') }}">
+    {% if use_cdn %}
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
+	    integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    {% else %}
+      <link rel="stylesheet" href={{ url_for('static', filename='css/bootstrap.min.css') }}>
+    {% endif %}
+    <link rel="stylesheet" href={{ url_for('static', filename='css/bleau-database.css') }}>
 
-{% block nav %}
-  <nav class="navbar navbar-dark bg-inverse navbar-fixed-top">
-    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#CollapsingNavbar1">
-      &#9776;
-    </button>
-    <div class="collapse navbar-toggleable-xs" id="CollapsingNavbar1">
-      <div class="container">
-	<a class="navbar-brand" href="/{{ lang_code }}">Bleau DB</a>
-	<ul class="nav navbar-nav">
-	  <li class="nav-item active">
-	    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-	  </li>
-	  <li class="nav-item">
-	    <a class="nav-link" href="/{{ lang_code }}/search-massifs">Rechercher</a>
-	  </li>
-	  <li class="nav-item pull-xs-right"">
-	    {% if lang_code == 'fr' %}
-	      <a class="nav-link" href="/en/{{ page_path }}">English</a>
-	    {% else %}
-	      <a class="nav-link" href="/fr/{{ page_path }}">Français</a>
-	    {% endif %}
-	  </li>
-	</ul>
-      </div>
-  </nav>
-{% endblock %}
+    {% block head %}{% endblock %}
+  </head>
 
-{% block body %}
-<body>
-  {% block body_container %}
-  <div class="body">
-    <div class="container">
-    {% block content %}{% endblock %}
+  {# Body (Fixme: overridden for google map ???) #}
+  {% block body %}
+    <body itemscope itemtype="http://schema.org/WebPage">
+      {# Top navbar #}
+      {% block navbar %}
+	{# role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement" #}
+	<nav class="navbar navbar-dark bg-inverse navbar-fixed-top">
+	  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#CollapsingNavbar1">
+	    &#9776;
+	  </button>
+	  <div class="collapse navbar-toggleable-xs" id="CollapsingNavbar1">
+	    <div class="container">
+	      <a class="navbar-brand" href="/{{ lang_code }}" itemprop="url">Bleau DB</a>
+	      <ul class="nav navbar-nav">
+		<li class="nav-item active">
+		  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="/{{ lang_code }}/search-massifs">Rechercher</a>
+		</li>
+		<li class="nav-item pull-xs-right">
+		  {% if lang_code == 'fr' %}
+		    <a class="nav-link" href="/en/{{ page_path }}" itemprop="url">English</a>
+		  {% else %}
+		    <a class="nav-link" href="/fr/{{ page_path }}" itemprop="url">Français</a>
+		  {% endif %}
+		</li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+      {% endblock %}
 
-    {% block footer %}
-    <hr />
-    <footer>
-      <p>
-	<i class="fa fa-copyright"></i> <a href="https://github.com/Cosiroc/bleau-database">Bleau Database Web Application 2015</a>
-	{# / Fabrice Salvaire  #}
-	/ <a href="/{{ lang_code }}/mentions-legales">Mentions légales</a>
-      </p>
-    </footer>
-    {% endblock %}
-    </div>
-  </div>
+      {# Standard page layout #}
+      {% block body_container %}
+	<div class="body">
+	  <div class="container">
+	    {# Breadcrumb #}
+	    {% block breadcrumb %}
+	      <ul class="breadcrumb" role="navigation" itemscope itemtype="http://schema.org/BreadcrumbList">
+		<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		  <a href="/{{ lang_code }}" itemprop="item">
+		    <span itemprop="name">Accueil</span></a>
+		  <meta itemprop="position" content="1" /></li>
+		{% block breadcrumb_li %}
+		{% endblock %}
+	      </ul>
+	    {% endblock %}
+
+	    {# Page content #}
+	    <main role="main" itemscope itemprop="mainContentOfPage">
+	      <div class="row">
+		<div class="col-xl-12">
+		  {% block content %}{% endblock %}
+		</div>
+	      </div>
+	    </main>
+
+	    {# Footer #}
+	    {% block footer %}
+	      <hr />
+	      <footer role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+		<p itemprop="copyrightHolder" itemscope itemtype="http://schema.org/Person">
+		  <i class="fa fa-copyright"></i>
+		  <a href="https://github.com/Cosiroc/bleau-database">
+		    <span itemprop="name">Bleau Database Web Application</span>
+		    <span itemprop="copyrightYear">2015</span></a>
+		  {# / Fabrice Salvaire  #}
+		  / <a href="/{{ lang_code }}/mentions-legales">Mentions légales</a>
+		</p>
+	      </footer>
+	    {% endblock %}
+	  </div>
+	</div>
+      {% endblock %}
+
+      {# Lazy Scripts #}
+      {% if use_cdn %}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      {% else %}
+	<script type="text/javascript" src={{ url_for('static', filename='js/jquery.min.js') }}></script>
+      {% endif %}
+      <script type="text/javascript" src={{ url_for('static', filename='js/tether.min.js') }}></script>
+      {% if use_cdn %}
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"
+		integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+      {% else %}
+	<script type="text/javascript" src={{ url_for('static', filename='js/bootstrap.min.js') }}></script>
+      {% endif %}
+
+      {# Piwik tracker #}
+      <script type="text/javascript" src={{ url_for('static', filename='js/piwik.js') }}></script>
+      <noscript><p><img src="//stats.fabrice-salvaire.fr/piwik.php?idsite=4" style="border:0;" alt="" /></p></noscript>
+
+      {# Custom script #}
+      {% block script %}{% endblock %}
+    </body>
   {% endblock %}
-
-  {% if use_cdn %}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  {% else %}
-    <script type="text/javascript" src={{ url_for('static', filename='js/jquery.min.js') }}></script>
-  {% endif %}
-  <script type="text/javascript" src={{ url_for('static', filename='js/tether.min.js') }}></script>
-  {% if use_cdn %}
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-  {% else %}
-    <script type="text/javascript" src={{ url_for('static', filename='js/bootstrap.min.js') }}></script>
-  {% endif %}
-
-  <script type="text/javascript" src={{ url_for('static', filename='js/piwik.js') }}></script>
-  <noscript><p><img src="//stats.fabrice-salvaire.fr/piwik.php?idsite=4" style="border:0;" alt="" /></p></noscript>
-
-  {% block script %}{% endblock %}
-</body>
-{% endblock %}
 </html>

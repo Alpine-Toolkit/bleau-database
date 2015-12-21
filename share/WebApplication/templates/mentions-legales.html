@@ -1,52 +1,50 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
-{% block content %}
-  <ul class="breadcrumb">
-    <li><a href="/{{ lang_code }}">Accueil</a></li>
-    <li class="active">Mentions légales</li>
-  </ul>
+{% block breadcrumb_li %}
+  <li class="active">Mentions légales</li>
+{% endblock %}
 
-  <div class="row">
-    <div class="col-xl-12">
-      <h2>Droit d'auteur / Propriété intellectuelle</h2>
-      <p>
-	L'ensemble de ce site relève des législations françaises et internationales sur le droit d'auteur et la propriété intellectuelle.
-      </p>
-      
-      <h3>Application Web</h3>
-      <p>
-	Cette application web a été écrite par
-	<a target="_blank" href="http://www.fabrice-salvaire.fr">Fabrice Salvaire <i class="fa fa-home"></i></a>.<br>
-	Le <a target="_blank" href="https://github.com/Cosiroc/bleau-database">code source</a> est sous licence
-	<a target="_blank" href="http://www.gnu.org/licenses/agpl.html">GNU Affero General Public License V3</a>.
-      </p>
-      
-      <h3>Licence d'utilisation des données</h3>
-      <p>
-	La <a href="/{{ lang_code }}/data">base de données</a> est disponible sous la licence
-	<a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>.
-      </p>
-      
-      <h2>Données personnelles / Vie privée</h2>
-      <p>Vous pouvez visiter ce site sur Internet sans avoir à décliner votre identité et à fournir
-	des informations personnelles vous concernant.<br>
-	{# outil de web analytics #}
-	<strong>Hormis l'utilisation d'un <a href="https://fr.piwik.org/">traceur</a> pour mesurer l'audience du site.</strong>
-      </p>
-      <p>Pour plus d'information sur la législation, consuler le site de la
-	<a href="http://www.cnil.fr/vos-obligations/sites-web-cookies-et-autres-traceurs/que-dit-la-loi/">CNIL</a>.
-      </p>
-      
-      <h2>Responsable de publication</h2>
-      <p>
-	<a href="http://www.fabrice-salvaire.fr/personal/index.html">Fabrice Salvaire <i class="fa fa-envelope"></i></a>
-      </p>
-      
-      <h2>Hébergement du site Internet</h2>
-      <p>
-	Le site internet est hébergé par la société <a href="https://www.ovh.com/fr/support/documents_legaux/">OVH SAS</a>.
-      </p>
-    </div>
-  </div>
+{% block content %}
+  <h2>Droit d'auteur / Propriété intellectuelle</h2>
+  <p>
+    L'ensemble de ce site relève des législations françaises et internationales sur le droit d'auteur et la propriété intellectuelle.
+  </p>
+
+  <h3>Application Web</h3>
+  <p>
+    Cette application web a été écrite par
+    <a target="_blank" href="http://www.fabrice-salvaire.fr" itemprop="author" itemscope itemtype="http://schema.org/People">
+      <span itemprop="name">Fabrice Salvaire</span> <i class="fa fa-home"></i></a>.
+    <br>
+    Le <a target="_blank" href="https://github.com/Cosiroc/bleau-database">code source</a> est sous licence
+    <a target="_blank" href="http://www.gnu.org/licenses/agpl.html">GNU Affero General Public License V3</a>.
+  </p>
+
+  <h3>Licence d'utilisation des données</h3>
+  <p>
+    La <a href="/{{ lang_code }}/data">base de données</a> est disponible sous la licence
+    <a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>.
+  </p>
+
+  <h2>Données personnelles / Vie privée</h2>
+  <p>Vous pouvez visiter ce site sur Internet sans avoir à décliner votre identité et à fournir
+    des informations personnelles vous concernant.<br>
+    {# outil de web analytics #}
+    <strong>Hormis l'utilisation d'un <a href="https://fr.piwik.org/">traceur</a> pour mesurer l'audience du site.</strong>
+  </p>
+  <p>Pour plus d'information sur la législation, consuler le site de la
+    <a href="http://www.cnil.fr/vos-obligations/sites-web-cookies-et-autres-traceurs/que-dit-la-loi/">CNIL</a>.
+  </p>
+
+  <h2>Responsable de publication</h2>
+  <p itemprop="author" itemscope itemtype="http://schema.org/People">
+    <a href="http://www.fabrice-salvaire.fr/personal/index.html">
+      <span itemprop="name">Fabrice Salvaire</span> <i class="fa fa-envelope"></i></a>
+  </p>
+
+  <h2>Hébergement du site Internet</h2>
+  <p>
+    Le site internet est hébergé par la société <a href="https://www.ovh.com/fr/support/documents_legaux/">OVH SAS</a>.
+  </p>
 {% endblock %}
