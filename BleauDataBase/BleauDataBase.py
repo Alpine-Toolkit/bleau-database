@@ -1109,14 +1109,18 @@ class BleauDataBase:
 
     def _nearest(self, rtree_, item, number_of_items=1, distance_max=None):
 
-        number_of_items += 1
-        # Fixme: segfault ???
-        # return [x.object for x in rtree.nearest(item.coordinate.bounding_box, number_of_items, objects=True)]
-        items = [self._ids[x] for x in rtree_.nearest(item.coordinate.bounding_box, number_of_items)]
-        items = [x for x in items if x is not item]
-        if distance_max is not None:
-            items = [x for x in items if item.distance_to(x) <= distance_max]
-        return items
+        coordinate = item.coordinate
+        if coordinate is not None:
+            number_of_items += 1
+            # Fixme: segfault ???
+            # return [x.object for x in rtree.nearest(coordinate.bounding_box, number_of_items, objects=True)]
+            items = [self._ids[x] for x in rtree_.nearest(coordinate.bounding_box, number_of_items)]
+            items = [x for x in items if x is not item]
+            if distance_max is not None:
+                items = [x for x in items if item.distance_to(x) <= distance_max]
+            return items
+        else:
+            return ()
 
     ##############################################
 

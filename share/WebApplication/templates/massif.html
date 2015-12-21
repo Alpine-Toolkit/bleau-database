@@ -128,36 +128,38 @@
       <h2>{{ _("Carte de situation") }}</h2>
       <div class="row">
 	<div class="col-xl-4">
-	  <table class="table table-sm">
-	    <tbody>
-	      <tr>
-		<td>
-		  <a href="http://spatialreference.org/ref/epsg/wgs-84/">
-		    {{ _("Coordonnée WGS 84") }}
-		  </a></td>
-		<td>
-		  {% with coordinate = massif.coordinate %}
+	  <tbody>
+	    <table class="table table-sm">
+	      {% with coordinate = massif.coordinate %}
+		<tr>
+		  <td>
+		    <a href="http://spatialreference.org/ref/epsg/wgs-84/">
+		      {{ _("Coordonnée WGS 84") }}
+		    </a></td>
+		  <td>
 		    {{ coordinate.longitude }}, {{ coordinate.latitude }}°
-		  {% endwith %}
-		</td>
-	      </tr>
-	      <tr>
-		<td>
-		  <a href="http://spatialreference.org/ref/sr-org/epsg3857-wgs84-web-mercator-auxiliary-sphere/">
-		    {{ _("Coordonnée Mercator") }}
-		  </a></td>
-		<td>
-		  {% with mercator = massif.coordinate.mercator %}
-		    {{ mercator[0] | round | int }}, {{ mercator[1] | round | int }} m
-		  {% endwith %}
-		</td>
-	      </tr>
+		  </td>
+		</tr>
+		<tr>
+		  <td>
+		    <a href="http://spatialreference.org/ref/sr-org/epsg3857-wgs84-web-mercator-auxiliary-sphere/">
+		      {{ _("Coordonnée Mercator") }}
+		    </a></td>
+		  <td>
+		    {% if coordinate %}
+		      {% with mercator = coordinate.mercator %}
+			{{ mercator[0] | round | int }}, {{ mercator[1] | round | int }} m
+		      {% endwith %}
+		    {% endif %}
+		  </td>
+		</tr>
+	      {% endwith %}
 	      <tr>
 		<td>{{ _("Parcelles ONF") }}</td>
 		<td>{{ massif.parcelles }}</td>
 	      </tr>
-	    </tbody>
-	  </table>
+	    </table>
+	  </tbody>
 	</div>
       </div>
       <a href="/{{ lang_code }}/geoportail/{{ massif.name }}">{{ _("Grande carte") }}</a>
