@@ -211,7 +211,7 @@ class MassifSearchForm(Form):
     grades = SelectMultipleField(lazy_gettext('Cotations'),
                                  choices=[(x, x) for x in AlpineGrade.__grade_majors__ if x != 'EX'])
 
-@cache.cached()
+# @cache.cached()
 @main.route('/search-massifs', methods=['GET', 'POST'])
 def search_massifs():
     form = MassifSearchForm(request.form)

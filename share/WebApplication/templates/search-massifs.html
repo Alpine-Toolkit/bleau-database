@@ -6,53 +6,51 @@
 {% endblock %}
 
 {% block content %}
-  <div class="row">
-    <div class="col-xl-12">
-      {% from "include/form_helpers.html" import render_field %}
-      <form method="post" action="{{ lang_code }}/search-massifs"> {# class="form-inline" #}
-	{{ form.csrf_token }}
-	<div class="row">
-	  <div class="col-xl-4">
-	    {{ render_field(form.secteurs, size=5) }} {# Fixme size #}
-	  </div>
-	  <div class="col-xl-2">
-	    {{ render_field(form.grades, size=7) }}
-	  </div>
-	  <div class="col-xl-2">
-	    {{ render_field(form.chaos_type, size=5) }}
-	  </div>
+  <div>
+    {% from "include/form_helpers.html" import render_field %}
+    <form method="post" action="/{{ lang_code }}/search-massifs"> {# class="form-inline" #}
+      {{ form.csrf_token }}
+      <div class="row">
+	<div class="col-xl-4">
+	  {{ render_field(form.secteurs, size=5) }} {# Fixme size #}
 	</div>
-	{# {{ render_field(form.a_pieds) }} #}
-	<div class="checkbox">
-	  <label for="{{ form.a_pieds.name }}">
-	    <input type="checkbox" id="{{ form.a_pieds.id }}" name="{{ form.a_pieds.name }}" {% if form.a_pieds.data %}checked=""{% endif %}>
-	    {{ form.a_pieds.label }}
-	  </label>
+	<div class="col-xl-2">
+	  {{ render_field(form.grades, size=7) }}
 	</div>
-	<button type="submit" class="btn btn-primary">{{ _("Rechercher") }}</button>
-      </form>
-    </div>
+	<div class="col-xl-2">
+	  {{ render_field(form.chaos_type, size=5) }}
+	</div>
+      </div>
+      {# {{ render_field(form.a_pieds) }} #}
+      <div class="checkbox">
+	<label for="{{ form.a_pieds.name }}">
+	  <input type="checkbox" id="{{ form.a_pieds.id }}" name="{{ form.a_pieds.name }}" {% if form.a_pieds.data %}checked=""{% endif %}>
+	  {{ form.a_pieds.label }}
+	</label>
+      </div>
+      <button type="submit" class="btn btn-primary">{{ _("Rechercher") }}</button>
+    </form>
+  </div>
 
-    <div class="col-xl-12 m-t-md" style="margin-top: 1em">
-      <h2>{{ _("Massifs") }}</h2>
-      <table class="table table-sm">
-	<tbody>
-	  {% for massif in massifs %}
-	    <tr>
-	      <td><a href="/{{ lang_code }}/massif/{{ massif.name }}">{{ massif.name }}</a></td>
-	      <td>{{ massif.secteur }}</td>
-	      <td>{{ massif.chaos_type }}</td>
-	      <td>
-		<ul class="list-inline">
-		  {% for grade in massif.grades %}
-		    <li class="list-inline-item">{{ grade }}</li>
-		  {% endfor %}
-		</ul>
-	      </td>
-	    </tr>
-	  {% endfor %}
-	</tbody>
-      </table>
-    </div>
+  <div style="margin-top: 1em">
+    <h2>{{ _("Massifs") }}</h2>
+    <table class="table table-sm">
+      <tbody>
+	{% for massif in massifs %}
+	  <tr>
+	    <td><a href="/{{ lang_code }}/massif/{{ massif.name }}">{{ massif.name }}</a></td>
+	    <td>{{ massif.secteur }}</td>
+	    <td>{{ massif.chaos_type }}</td>
+	    <td>
+	      <ul class="list-inline">
+		{% for grade in massif.grades %}
+		  <li class="list-inline-item">{{ grade }}</li>
+		{% endfor %}
+	      </ul>
+	    </td>
+	  </tr>
+	{% endfor %}
+      </tbody>
+    </table>
   </div>
 {% endblock %}
