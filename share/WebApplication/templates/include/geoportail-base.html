@@ -323,3 +323,47 @@
   <script type="text/javascript" src={{ url_for('static', filename='data/bleau-circuits-geoson.js') }}></script>
   <script type="text/javascript" src={{ url_for('static', filename='js/geoportail-openlayers.js') }}></script>
 {% endblock %}
+
+{% macro place_map() %}
+  <h2>{{ _("Carte de situation") }}</h2>
+  <div class="row">
+    <div class="col-xl-4">
+      <table class="table table-sm">
+	<tbody>
+	  {% with coordinate = place.coordinate %}
+	    <tr>
+	      <td>
+		<a href="http://spatialreference.org/ref/epsg/wgs-84/">
+		  {{ _("Coordonnée WGS 84") }}
+		</a></td>
+	      <td>
+		{{ coordinate.longitude }}, {{ coordinate.latitude }}°
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>
+		<a href="http://spatialreference.org/ref/sr-org/epsg3857-wgs84-web-mercator-auxiliary-sphere/">
+		  {{ _("Coordonnée Mercator") }}
+		</a></td>
+	      <td>
+		{% if coordinate %}
+		  {% with mercator = coordinate.mercator %}
+		    {{ mercator[0] | round | int }}, {{ mercator[1] | round | int }} m
+		  {% endwith %}
+		{% endif %}
+	      </td>
+	    </tr>
+	  {% endwith %}
+	  {% if place.parcelles %}
+	    <tr>
+	      <td>{{ _("Parcelles ONF") }}</td>
+	      <td>{{ massif.parcelles }}</td>
+	    </tr>
+	  {% endif %}
+	</tbody>
+      </table>
+    </div>
+  </div>
+  <a href="/{{ lang_code }}/geoportail/{{ place.name }}">{{ _("Grande carte") }}</a>
+  {{ geoportail_map() }}
+{% endmacro %}

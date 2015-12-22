@@ -8,7 +8,8 @@
   <header role="banner" itemscope itemtype="http://schema.org/WPHeader">
     {# Small device #}
     <div class="jumbotron hidden-sm-up">
-      <h1 class="display-1" itemprop="name"><i class="fa fa-mobile"></i> Bleau Database</h1>
+      {# class="display-1" #}
+      <h1 itemprop="name"><i class="fa fa-mobile"></i> Bleau Database</h1>
     </div>
     {# Large device #}
     <div class="jumbotron hidden-xs-down">
@@ -23,7 +24,7 @@
 	%}{{ number_of_massifs }} massifs
 	et {{ number_of_circuits }} circuits
 	dont {{ number_of_circuits_with_topos }} avec topo
-	({{ number_of_boulders }} blocs référencés{% endtrans %}
+	({{ number_of_boulders }} blocs référencés){% endtrans %}
       </p>
       <p class="lead">
 	<i class="fa fa-mobile fa-2x"></i> {{  _("La 3G passe assez mal en forêt, pensez-y !") }}</i>
@@ -53,7 +54,7 @@
     </p>
     <p>
       <a class="btn btn-primary btn-lg btn-block" href="/{{ lang_code }}/fontainebleau" role="button">
-	<i class="fa fa-info-circle"></i> Fontainebleau") }}</a>
+	<i class="fa fa-info-circle"></i> Fontainebleau</a>
       <a class="btn btn-primary btn-lg btn-block"  href="/{{ lang_code }}/environment" role="button">
 	<i class="fa fa-tree"></i> {{  _("Respectons l'environement") }}</a>
       <a class="btn btn-primary btn-lg btn-block" href="/{{ lang_code }}/a-propos" role="button">
