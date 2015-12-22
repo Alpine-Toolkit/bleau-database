@@ -76,7 +76,7 @@
 	  <td>#{{ circuit.number_of_boulders }}</td>
 	  <td>
 	    {% for topo in circuit.topos %}
-	      <a class="hidden-sm-up" href="{{ topo }}">"{{  _("lien") }}</a>
+	      <a class="hidden-sm-up" href="{{ topo }}">{{  _("lien") }}</a>
 	      <a class="hidden-xs-down" href="{{ topo }}">{{ topo|truncate(70) }}</a>
 	      <br>
 	    {% endfor %}
