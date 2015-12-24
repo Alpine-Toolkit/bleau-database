@@ -84,6 +84,22 @@ var place_geojson =
     {
       "geometry": {
         "coordinates": [
+          2.3714509606361385,
+          48.53208239897123
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "gare",
+        "name": "Gare de Ballancourt",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
           2.691926777363112,
           48.475434334601154
         ],
@@ -100,6 +116,310 @@ var place_geojson =
     {
       "geometry": {
         "coordinates": [
+          2.6923155784606934,
+          48.332895288082
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "gare",
+        "name": "Gare de Bourron-Marlotte",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.37641841173172,
+          48.435011160690635
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "gare",
+        "name": "Gare de Boutigny",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.3869206011295314,
+          48.37027217476768
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "gare",
+        "name": "Gare de Buno-Gironville",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.351487278938293,
+          48.48479137844291
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "gare",
+        "name": "Gare de la Ferté-Alais",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.393163442611695,
+          48.392969401666505
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "gare",
+        "name": "Gare de Maisse",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.4015051126480094,
+          48.29354054794942
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "gare",
+        "name": "Gare de Malesherbes",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.4333509802818294,
+          48.57094939708031
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "gare",
+        "name": "Gare de Mennecy",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.7394151687622066,
+          48.33670749200496
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "gare",
+        "name": "Gare de Montigny-sur-Loing",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.685926556587219,
+          48.26784067061996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "gare",
+        "name": "Gare de Nemours",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.4802064895629887,
+          48.503398169656265
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "parking",
+        "name": "Parking de Beauvais-Nainville",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.4684691429138184,
+          48.50277260325123
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "parking",
+        "name": "Parking de Beauvais-Télégraphe",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.55780816078186,
+          48.390828552585475
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "parking",
+        "name": "Parking de Bois Rond",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.5345158576965328,
+          48.35938581606894
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "parking",
+        "name": "Parking de J.A. Martin",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.5544929504394527,
+          48.390016359982894
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "parking",
+        "name": "Parking de la Canche aux Merciers",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.515933513641357,
+          48.38825656487265
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "parking",
+        "name": "Parking de la Croix Saint-Jérôme",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.6775902509689327,
+          48.40519651840117
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "parking",
+        "name": "Parking de la Faisanderie",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.54705786705017,
+          48.40147135224717
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "parking",
+        "name": "Parking de la Feuillardière",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.5643205642700195,
+          48.399719076499935
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "parking",
+        "name": "Parking de la Plaine de Chanfroy",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.526801824569702,
+          48.36375739011305
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "parking",
+        "name": "Parking de la valée de la Mée",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
           2.5085146427173517,
           48.372976919619774
         ],
@@ -108,6 +428,70 @@ var place_geojson =
       "properties": {
         "category": "parking",
         "name": "Parking de Noisy-sur-École",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.598534822463989,
+          48.41134280217673
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "parking",
+        "name": "Parking du Carrefour de la Plaine de Macherin",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.636997699737549,
+          48.44574257101641
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "parking",
+        "name": "Parking du Carrefour de l'Épine",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.6235973834991446,
+          48.441088004560356
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "parking",
+        "name": "Parking du Carrefour du Bas Bréau",
+        "note": null,
+        "object": "Place"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.68964409828186,
+          48.44128017400217
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "category": "parking",
+        "name": "Parking du Rocher St-Germain",
         "note": null,
         "object": "Place"
       },

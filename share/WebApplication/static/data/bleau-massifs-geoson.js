@@ -69,7 +69,7 @@ var massif_geojson =
         "parking": "Carrefour du Bas Bréau",
         "rdv": "Prendre vers le S la route Marie-Thérèse. Au premier virage à gauche, continuer tout droit par le chemin de terre. Environ cent mètres plus loin, prendre à droite la route des Gorges d'Apremont (GR) vers l' WNW sur 100 m puis à gauche une sente direction SW qui croise une centaine de mètres plus loin les circuits Rouge et Orange. Le rendez-vous est au niveau dès n° 6 Rouge et 13 Orange.",
         "secteur": "Forêt Domaniale",
-        "velo": "8 km depuis Bois-le-Roi (train Gare de Lyon, direction Laroche Migennes, 35’)"
+        "velo": "8 km depuis Bois-le-Roi (train Gare de Lyon, direction Laroche Migennes, 35')"
       },
       "type": "Feature"
     },
@@ -91,9 +91,9 @@ var massif_geojson =
         "object": "Massif",
         "parcelles": "714",
         "parking": "Carrefour du Bas Bréau",
-        "rdv": "Prendre vers le S le sentier parallèle à la route Marie-Thérèse à droite de la route (balises vert-blanc et traits jaunes). Environ 400 m plus loin, quand le sentier tourne légèrement à gauche vers le SSE (avant d’arriver à la route des Gorges d’Apremont et aux premiers rochers d’Apremont-Bizons), traverser à vue vers la droite (W) et rejoindre ~ 100 m plus loin un très grand bloc (N°1 bleu, N°6 noir, et départ Orange juste derrière). Le rendez-vous est ~50 m plus loin vers l’W (ne pas monter) près du bloc portant les N°11, 12, 13, 14 Bleu et N°9 Orange.",
+        "rdv": "Prendre vers le S le sentier parallèle à la route Marie-Thérèse à droite de la route (balises vert-blanc et traits jaunes). Environ 400 m plus loin, quand le sentier tourne légèrement à gauche vers le SSE (avant d'arriver à la route des Gorges d'Apremont et aux premiers rochers d'Apremont-Bizons), traverser à vue vers la droite (W) et rejoindre ~ 100 m plus loin un très grand bloc (N°1 bleu, N°6 noir, et départ Orange juste derrière). Le rendez-vous est ~50 m plus loin vers l'W (ne pas monter) près du bloc portant les N°11, 12, 13, 14 Bleu et N°9 Orange.",
         "secteur": "Forêt Domaniale",
-        "velo": "8 km depuis Bois-le-Roi (train Gare de Lyon, direction Laroche Migennes, 35’)"
+        "velo": "8 km depuis Bois-le-Roi (train Gare de Lyon, direction Laroche Migennes, 35')"
       },
       "type": "Feature"
     },
@@ -117,7 +117,7 @@ var massif_geojson =
         "parking": "Carrefour du Bas Bréau",
         "rdv": "Du Bas-Bréau, suivre (E) la route de Barbizon à Fontainebleau jusqu'au carrefour de Clair-Bois (On peut aussi rejoindre le carrefour de Clair-Bois en partant du carrefour de l'Epine (N7)). Prendre à droite (SSE) la route de Clair-Bois sur un peu plus de 200m jusquà un beau bloc arrondi à gauche de la route marqué discrètement d'un « D » jaune et d'une flèche. Prendre à gauche (direction Est) une sente qui passe au départ du circuit Jaune, puis à gauche du 1 Jaune puis à droite du 1b Jaune. Continuer dans la même direction jusqu'aux 8 et 9 Jaune (Un peu plus de 100m depuis le bloc au bord de la Route de Clair Bois).",
         "secteur": "Forêt Domaniale",
-        "velo": "8 km depuis Bois-le-Roi (train Gare de Lyon, direction Laroche Migennes, 35’)"
+        "velo": "8 km depuis Bois-le-Roi (train Gare de Lyon, direction Laroche Migennes, 35')"
       },
       "type": "Feature"
     },
@@ -141,7 +141,7 @@ var massif_geojson =
         "parking": "Carrefour du Bas Bréau",
         "rdv": "Prendre (E) la route de Barbizon à Fontainebleau sur 250 m.  Puis prendre à droite (S) la route du Dormoir sur environ 50 m jusqu'aux départs des circuits jaune et rouge.  Monter sur le crête jusqu'à un replat près des blocs No 6 rouge et No 14 jaune.",
         "secteur": "Forêt Domaniale",
-        "velo": "8 km depuis Bois-le-Roi (train Gare de Lyon, direction Laroche Migennes, 35’)"
+        "velo": "8 km depuis Bois-le-Roi (train Gare de Lyon, direction Laroche Migennes, 35')"
       },
       "type": "Feature"
     },
@@ -165,7 +165,7 @@ var massif_geojson =
         "parking": "Carrefour du Bas Bréau",
         "rdv": "Prendre à droite (S) la route Marie-Thérèse (alternativement, un sentier longe la route à gauche). Environ 200m plus loin prendre un chemin en biais à gauche, qui s'éloigne de la route de quelques dizaines de mètres et la suit à distance. On traverse un groupe de beaux chênes, marqués de ronds bleus et on continue jusqu'à une vaste clairière sablonneuse (ancien parking). La traverser, et au delà de la barrière ONF prendre la Route des Gorges d'Apremont sur 300 m jusqu'au croisement de la Route de la Solitude.",
         "secteur": "Forêt Domaniale",
-        "velo": "8 km depuis Bois-le-Roi (train Gare de Lyon, direction Laroche Migennes, 35’)"
+        "velo": "8 km depuis Bois-le-Roi (train Gare de Lyon, direction Laroche Migennes, 35')"
       },
       "type": "Feature"
     },
@@ -189,7 +189,7 @@ var massif_geojson =
         "parking": "Parking de Bois Rond",
         "rdv": "Du parking suivre une sente NE pour rejoindre le chemin du Bois Rond. Le suivre à droite (E). Après 250 m monter à droite au sommet du pignon, près de l'arrivée d'un circuit bleu (n° 33). Au passage, départ des circuits Orange et Bleu.",
         "secteur": "Trois Pignons",
-        "velo": "15 km depuis Fontainebleau (train Gare de Lyon, direction Montargis ou Laroche Migennes, 35’)"
+        "velo": "15 km depuis Fontainebleau (train Gare de Lyon, direction Montargis ou Laroche Migennes, 35')"
       },
       "type": "Feature"
     },
@@ -309,7 +309,7 @@ var massif_geojson =
         "parking": "Parking de la Canche aux Merciers",
         "rdv": "Du parking, suivre le chemin de la Charme vers l'Ouest sur 250 m. Traverser vers le N, une grande étendue sableuse, puis prendre une sente qui traverse le massif vers le NE. Rendez-vous près d'un auvent à hauteur du n° 16 Jaune.",
         "secteur": "Trois Pignons",
-        "velo": "15 km depuis Fontainebleau (train Gare de Lyon, direction Montargis ou Laroche Migennes, 35’)"
+        "velo": "15 km depuis Fontainebleau (train Gare de Lyon, direction Montargis ou Laroche Migennes, 35')"
       },
       "type": "Feature"
     },
@@ -323,7 +323,7 @@ var massif_geojson =
       },
       "properties": {
         "a_pieds": true,
-        "acces": "Prendre l’A10 jusqu’à la sortie 5 (Montlhéry/Etampes/Orléans), puis la RN20 jusqu'à la sortie Etrechy, puis tout de suite à gauche vers Chamarande que l'on traverse en direction de Lardy. Passer sous le premier pont à gauche sous la voie ferrée en face de l'entrée du château de Chamarande. Parking.",
+        "acces": "Prendre l'A10 jusqu'à la sortie 5 (Montlhéry/Etampes/Orléans), puis la RN20 jusqu'à la sortie Etrechy, puis tout de suite à gauche vers Chamarande que l'on traverse en direction de Lardy. Passer sous le premier pont à gauche sous la voie ferrée en face de l'entrée du château de Chamarande. Parking.",
         "alternative_name": null,
         "chaos_type": null,
         "name": "Chamarande",
@@ -549,7 +549,7 @@ var massif_geojson =
         "parking": "Éléphant",
         "rdv": "Gagner par l'W, en longeant la base du massif rocheux, la roche à jambages de l'Éléphant, puis après 100m, monter à droite sur la platière. Rendez-vous au bord S d'icelle, non loin de l'arrivée du circuit jaune.",
         "secteur": "Sud",
-        "velo": "9 km depuis Bourron-Marlotte (train Gare de Lyon, direction Montargis, 55’)"
+        "velo": "9 km depuis Bourron-Marlotte (train Gare de Lyon, direction Montargis, 55')"
       },
       "type": "Feature"
     },
@@ -693,7 +693,7 @@ var massif_geojson =
         "parking": "Franchard Hautes-Plaines",
         "rdv": "Du parking continuer la route du Loup, puis à gauche la Route des Gorges de Franchard sur environ 150m. Remonter un sente à droite jusqu'à un gros bloc surplombant.",
         "secteur": "Forêt Domaniale",
-        "velo": "12 km depuis Fontainebleau (train Gare de Lyon, direction Montargis ou Laroche Migennes, 35’)"
+        "velo": "12 km depuis Fontainebleau (train Gare de Lyon, direction Montargis ou Laroche Migennes, 35')"
       },
       "type": "Feature"
     },
@@ -1005,7 +1005,7 @@ var massif_geojson =
         "parking": "Mont-Aigu",
         "rdv": "Par la route du Levreau rejoindre le carrefour de l'Emerillon (900 m). Monter à droite (NW) vers le sommet du pignon S du Mont Aigu. Rendez-vous à la grotte du serment, ou 150m plus loin en suivant le sentier bleue (NW).",
         "secteur": "Forêt Domaniale",
-        "velo": "5 km depuis Fontainebleau (train Gare de Lyon, direction Montargis ou Laroche Migennes, 35’)"
+        "velo": "5 km depuis Fontainebleau (train Gare de Lyon, direction Montargis ou Laroche Migennes, 35')"
       },
       "type": "Feature"
     },
@@ -1051,7 +1051,7 @@ var massif_geojson =
         "object": "Massif",
         "parcelles": "264W",
         "parking": null,
-        "rdv": "Suivre le sentier bleu en direction NW, puis N, sur environ 500m, jusqu’à la grotte des Montussiennes. Rdv devant l’entrée de la grotte, près du n°7 Orange.",
+        "rdv": "Suivre le sentier bleu en direction NW, puis N, sur environ 500m, jusqu'à la grotte des Montussiennes. Rdv devant l'entrée de la grotte, près du n°7 Orange.",
         "secteur": "Forêt Domaniale",
         "velo": "3 km depuis Fontainebleau (train Gare de Lyon, direction Montargis ou Laroche Migennes, 35')"
       },
@@ -1077,7 +1077,7 @@ var massif_geojson =
         "parking": "La Padôle",
         "rdv": "Du parking, longer la lisière de forêt par un bon chemin direction WNW. Après 300m (pas moins) emprunter une sente peu visible à droite (indiquée sur IGN 2316 ET). On débouche rapidement dans un vallon. Le remonter jusqu'à une dalle. De là, suivre la sente au mieux à gauche pour rejoindre la platière.",
         "secteur": "Essonne",
-        "velo": "8 km depuis La Ferté-Alais (RER D, direction Malesherbes, 55’)"
+        "velo": "8 km depuis La Ferté-Alais (RER D, direction Malesherbes, 55')"
       },
       "type": "Feature"
     },
@@ -1269,7 +1269,7 @@ var massif_geojson =
         "parking": null,
         "rdv": "Suivre la route du Languedoc vers le NE.  Après 150 m, on coupe le sentier bleu n°11. De là, continuer 200 m dans la même direction, le sentier monte sur la platière.  Rendez-vous en bord de platière, vers la droite en vue de la grotte Béatrix.",
         "secteur": "Forêt Domaniale",
-        "velo": "4 km/3km depuis la gare de Montigny (train Gare de Lyon, direction Montargis, 55’)"
+        "velo": "4 km/3km depuis la gare de Montigny (train Gare de Lyon, direction Montargis, 55')"
       },
       "type": "Feature"
     },
@@ -1341,7 +1341,7 @@ var massif_geojson =
         "parking": null,
         "rdv": "Prendre la rue de Ballancourt, et continuer par le sentier (GR). Après le camping, lorsque le chemin amorce une descente, prendre à gauche le long d'une clôture, jusqu'aux rochers. RdV environ 150 mètres après les départs des circuits Jaune et Orange (à gauche du chemin), au sommet du premier cap avancé.",
         "secteur": "Essonne",
-        "velo": "6 km depuis La Ferté-Alais (RER D, direction Malesherbes, 55’)"
+        "velo": "6 km depuis La Ferté-Alais (RER D, direction Malesherbes, 55')"
       },
       "type": "Feature"
     },
@@ -1437,7 +1437,7 @@ var massif_geojson =
         "parking": "Rocher Canon",
         "rdv": "Du parking, suivre les caillebotis en bois, les quitter au niveau du sentier balisé en jaune avec des poteaux. Le suivre NW, il vous amène au départ du circuit Jaune. Les blocs 18, 19, 20 du circuit Bleu sont à proximité sur la gauche. Le RDV est situé juste derrière, dans une vaste clairière.",
         "secteur": "Forêt Domaniale",
-        "velo": "2 km depuis Bois-le-Roi (train Gare de Lyon, direction Laroche Migennes, 35’)"
+        "velo": "2 km depuis Bois-le-Roi (train Gare de Lyon, direction Laroche Migennes, 35')"
       },
       "type": "Feature"
     },
@@ -1475,7 +1475,7 @@ var massif_geojson =
       },
       "properties": {
         "a_pieds": false,
-        "acces": "A6 sortie Milly. Du rond-point avant Milly, prendre la D 837 puis la D 105 vers Boutigny sur Essonne sur 3,8 km environ. Parking sur la gauche avant la descente sur le hameau du Pressoir, dans un virage à côté d’une cabane de cantonnier (100 m au delà emplacement plus vaste sur la droite).",
+        "acces": "A6 sortie Milly. Du rond-point avant Milly, prendre la D 837 puis la D 105 vers Boutigny sur Essonne sur 3,8 km environ. Parking sur la gauche avant la descente sur le hameau du Pressoir, dans un virage à côté d'une cabane de cantonnier (100 m au delà emplacement plus vaste sur la droite).",
         "alternative_name": null,
         "chaos_type": null,
         "name": "Rocher de Chatillon",
@@ -1557,7 +1557,7 @@ var massif_geojson =
         "parking": null,
         "rdv": "Poursuivre le chemin jusqu'à l'extrémité de la plaine (1,4 km), en limite de Forêt Domaniale de Fontainebleau (borne de grès à un carrefour). Une sente en biais à gauche (NE) conduit au départ des circuits Orange et Bleu. Suivre la sente en laissant à gauche le bleu n°7, puis le n° 9 (petit chêne). RdV à 50m, dans la même direction, après avoir franchi un léger talweg, près du n° 15 Bleu.",
         "secteur": "Forêt Domaniale",
-        "velo": "15 km depuis Fontainebleau (train Gare de Lyon, direction Montargis ou Laroche Migennes, 35’)"
+        "velo": "15 km depuis Fontainebleau (train Gare de Lyon, direction Montargis ou Laroche Migennes, 35')"
       },
       "type": "Feature"
     },
