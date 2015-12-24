@@ -49,6 +49,7 @@ except ImportError:
 
 try:
     import geojson
+    from geojson import Feature
 except ImportError:
     logging.warn('geojson module is not available')
     geojson = None
@@ -331,7 +332,6 @@ class Grade:
 
 class AlpineGrade:
 
-
     """This class defines a French alpin grade."""
 
     __grade_majors__ = ('EN', 'F', 'PD', 'AD', 'D', 'TD', 'ED', 'EX') # , 'ABO'
@@ -396,6 +396,12 @@ class AlpineGrade:
 
     def __repr__(self):
         return self._grade
+
+    ##############################################
+
+    @property
+    def __json_interface__(self):
+        return str(self)
 
     ##############################################
 
@@ -800,6 +806,16 @@ class Circuit(PlaceBase):
 
     ##############################################
 
+    def to_feature(self):
+
+        properties = self.to_json(exclude=('coordinate', 'boulders'))
+        # Fixme: category
+        properties['object'] = self.__class__.__name__
+        
+        return Feature(geometry=self.coordinate, properties=properties)
+
+    ##############################################
+
     @property
     def pretty_name(self):
         # Fixme
@@ -1023,7 +1039,7 @@ class BleauDataBase:
 
     ##############################################
 
-    def to_geojson(self, json_path=None, places=True, massifs=True, circuits=True):
+    def to_geojson(self, json_path=None, places=True, massifs=True, circuits=True, boulders=False):
 
         features = []
         if places:
@@ -1031,9 +1047,13 @@ class BleauDataBase:
         if massifs:
             features.extend([massif for massif in self.massifs if massif])
         if circuits:
-            # Fixme: boulders
-            features.extend([circuit for circuit in self.circuits if circuit])
+            if boulders:
+                exported_circuits = [circuit for circuit in self.circuits if circuit]
+            else:
+                exported_circuits = [circuit.to_feature() for circuit in self.circuits if circuit]
+            features.extend(exported_circuits)
         feature_collections = geojson.FeatureCollection(features)
+        
         if not geojson.is_valid(feature_collections):
             raise ValueError('Non valid GeoJSON')
         # Fixme: crs geojson.named API

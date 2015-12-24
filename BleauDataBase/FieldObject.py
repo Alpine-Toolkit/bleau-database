@@ -50,7 +50,7 @@ class InstanceChecker:
         if isinstance(obj, self._cls):
             return obj
         else:
-            raise ValueError
+            raise ValueError("Object {} must be of type {}".format(str(type(obj)), self._cls))
 
 ####################################################################################################
 
