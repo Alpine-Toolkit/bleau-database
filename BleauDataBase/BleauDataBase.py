@@ -634,18 +634,16 @@ class Place(PlaceBase):
 
 class Massif(PlaceBase):
 
-    """This class defines a « massif »."""
+    """This class defines a massif."""
 
     coordinate = Coordinate
     name = str
 
-    a_pieds = bool # Fixme: fr
     acces = str # Fixme: fr
     alternative_name = str
     chaos_type = ChaosType
     note = str
     parcelles = str # Fixme: fr
-    parking = str # Fixme: remove ?
     rdv = str # Fixme: fr
     secteur = str # Fixme: fr, entity ?
     velo = str # Fixme: fr, gare
@@ -755,7 +753,7 @@ class BoulderList(list):
 
 class Boulder(WithCoordinate):
 
-    """This class defines a « boulder »."""
+    """This class defines a boulder."""
 
     coordinate = Coordinate
     name = str
@@ -777,7 +775,7 @@ class Boulder(WithCoordinate):
 
 class Circuit(PlaceBase):
 
-    """This class defines a « circuit »."""
+    """This class defines a circuit."""
 
     coordinate = Coordinate
 
