@@ -66329,10 +66329,190 @@
     {
       "category": "gare",
       "coordinate": {
+        "latitude": 48.53208239897123,
+        "longitude": 2.3714509606361385
+      },
+      "name": "Gare de Ballancourt",
+      "note": null
+    },
+    {
+      "category": "gare",
+      "coordinate": {
         "latitude": 48.475434334601154,
         "longitude": 2.691926777363112
       },
       "name": "Gare de Bois-le-Roi",
+      "note": null
+    },
+    {
+      "category": "gare",
+      "coordinate": {
+        "latitude": 48.332895288082,
+        "longitude": 2.6923155784606934
+      },
+      "name": "Gare de Bourron-Marlotte",
+      "note": null
+    },
+    {
+      "category": "gare",
+      "coordinate": {
+        "latitude": 48.435011160690635,
+        "longitude": 2.37641841173172
+      },
+      "name": "Gare de Boutigny",
+      "note": null
+    },
+    {
+      "category": "gare",
+      "coordinate": {
+        "latitude": 48.37027217476768,
+        "longitude": 2.3869206011295314
+      },
+      "name": "Gare de Buno-Gironville",
+      "note": null
+    },
+    {
+      "category": "gare",
+      "coordinate": {
+        "latitude": 48.48479137844291,
+        "longitude": 2.351487278938293
+      },
+      "name": "Gare de la Ferté-Alais",
+      "note": null
+    },
+    {
+      "category": "gare",
+      "coordinate": {
+        "latitude": 48.392969401666505,
+        "longitude": 2.393163442611695
+      },
+      "name": "Gare de Maisse",
+      "note": null
+    },
+    {
+      "category": "gare",
+      "coordinate": {
+        "latitude": 48.29354054794942,
+        "longitude": 2.4015051126480094
+      },
+      "name": "Gare de Malesherbes",
+      "note": null
+    },
+    {
+      "category": "gare",
+      "coordinate": {
+        "latitude": 48.57094939708031,
+        "longitude": 2.4333509802818294
+      },
+      "name": "Gare de Mennecy",
+      "note": null
+    },
+    {
+      "category": "gare",
+      "coordinate": {
+        "latitude": 48.33670749200496,
+        "longitude": 2.7394151687622066
+      },
+      "name": "Gare de Montigny-sur-Loing",
+      "note": null
+    },
+    {
+      "category": "gare",
+      "coordinate": {
+        "latitude": 48.26784067061996,
+        "longitude": 2.685926556587219
+      },
+      "name": "Gare de Nemours",
+      "note": null
+    },
+    {
+      "category": "parking",
+      "coordinate": {
+        "latitude": 48.503398169656265,
+        "longitude": 2.4802064895629887
+      },
+      "name": "Parking de Beauvais-Nainville",
+      "note": null
+    },
+    {
+      "category": "parking",
+      "coordinate": {
+        "latitude": 48.50277260325123,
+        "longitude": 2.4684691429138184
+      },
+      "name": "Parking de Beauvais-Télégraphe",
+      "note": null
+    },
+    {
+      "category": "parking",
+      "coordinate": {
+        "latitude": 48.390828552585475,
+        "longitude": 2.55780816078186
+      },
+      "name": "Parking de Bois Rond",
+      "note": null
+    },
+    {
+      "category": "parking",
+      "coordinate": {
+        "latitude": 48.35938581606894,
+        "longitude": 2.5345158576965328
+      },
+      "name": "Parking de J.A. Martin",
+      "note": null
+    },
+    {
+      "category": "parking",
+      "coordinate": {
+        "latitude": 48.390016359982894,
+        "longitude": 2.5544929504394527
+      },
+      "name": "Parking de la Canche aux Merciers",
+      "note": null
+    },
+    {
+      "category": "parking",
+      "coordinate": {
+        "latitude": 48.38825656487265,
+        "longitude": 2.515933513641357
+      },
+      "name": "Parking de la Croix Saint-Jérôme",
+      "note": null
+    },
+    {
+      "category": "parking",
+      "coordinate": {
+        "latitude": 48.40519651840117,
+        "longitude": 2.6775902509689327
+      },
+      "name": "Parking de la Faisanderie",
+      "note": null
+    },
+    {
+      "category": "parking",
+      "coordinate": {
+        "latitude": 48.40147135224717,
+        "longitude": 2.54705786705017
+      },
+      "name": "Parking de la Feuillardière",
+      "note": null
+    },
+    {
+      "category": "parking",
+      "coordinate": {
+        "latitude": 48.399719076499935,
+        "longitude": 2.5643205642700195
+      },
+      "name": "Parking de la Plaine de Chanfroy",
+      "note": null
+    },
+    {
+      "category": "parking",
+      "coordinate": {
+        "latitude": 48.36375739011305,
+        "longitude": 2.526801824569702
+      },
+      "name": "Parking de la valée de la Mée",
       "note": null
     },
     {
@@ -66342,6 +66522,42 @@
         "longitude": 2.5085146427173517
       },
       "name": "Parking de Noisy-sur-École",
+      "note": null
+    },
+    {
+      "category": "parking",
+      "coordinate": {
+        "latitude": 48.41134280217673,
+        "longitude": 2.598534822463989
+      },
+      "name": "Parking du Carrefour de la Plaine de Macherin",
+      "note": null
+    },
+    {
+      "category": "parking",
+      "coordinate": {
+        "latitude": 48.44574257101641,
+        "longitude": 2.636997699737549
+      },
+      "name": "Parking du Carrefour de l'Épine",
+      "note": null
+    },
+    {
+      "category": "parking",
+      "coordinate": {
+        "latitude": 48.441088004560356,
+        "longitude": 2.6235973834991446
+      },
+      "name": "Parking du Carrefour du Bas Bréau",
+      "note": null
+    },
+    {
+      "category": "parking",
+      "coordinate": {
+        "latitude": 48.44128017400217,
+        "longitude": 2.68964409828186
+      },
+      "name": "Parking du Rocher St-Germain",
       "note": null
     }
   ]
