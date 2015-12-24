@@ -201,7 +201,7 @@ def google_map(massif):
 ####################################################################################################
 
 class MassifSearchForm(Form):
-    a_pieds = BooleanField(lazy_gettext('À pieds'))
+    on_foot = BooleanField(lazy_gettext('À pieds'))
     secteurs = SelectMultipleField(lazy_gettext('Secteurs'),
                                    choices=[(secteur, secteur)
                                             for secteur in model.bleau_database.secteurs])
@@ -216,7 +216,7 @@ class MassifSearchForm(Form):
 def search_massifs():
     form = MassifSearchForm(request.form)
     if request.method == 'POST' and form.validate():
-        a_pieds = form.a_pieds.data
+        on_foot = form.on_foot.data
         secteurs = form.secteurs.data
         chaos_type = form.chaos_type.data
         grades = form.grades.data
@@ -225,8 +225,8 @@ def search_massifs():
         # flash('Thanks for registering')
         # return redirect(url_for('login'))
         kwargs = {}
-        if a_pieds:
-            kwargs['a_pieds'] = a_pieds
+        if on_foot:
+            kwargs['on_foot'] = on_foot
         if secteurs:
             kwargs['secteurs'] = secteurs
         if chaos_type:

@@ -21,11 +21,11 @@
 	  {{ render_field(form.chaos_type, size=5) }}
 	</div>
       </div>
-      {# {{ render_field(form.a_pieds) }} #}
+      {# {{ render_field(form.on_foot) }} #}
       <div class="checkbox">
-	<label for="{{ form.a_pieds.name }}">
-	  <input type="checkbox" id="{{ form.a_pieds.id }}" name="{{ form.a_pieds.name }}" {% if form.a_pieds.data %}checked=""{% endif %}>
-	  {{ form.a_pieds.label }}
+	<label for="{{ form.on_foot.name }}">
+	  <input type="checkbox" id="{{ form.on_foot.id }}" name="{{ form.on_foot.name }}" {% if form.on_foot.data %}checked=""{% endif %}>
+	  {{ form.on_foot.label }}
 	</label>
       </div>
       <button type="submit" class="btn btn-primary">{{ _("Rechercher") }}</button>

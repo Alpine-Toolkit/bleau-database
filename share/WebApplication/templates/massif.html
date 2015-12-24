@@ -28,15 +28,43 @@
   <dl>
     <dt><i class="fa fa-car"></i> {{ _("Accés en voiture") }}</dt>
     <dd>
-      {{ massif.acces }}<br>
+      <p>{{ massif.acces }}</p>
+      {% with places = massif.nearest_parking() %}
+	{% if places %}
+	  {{ _("Parking les plus proches&nbsp;:") }}
+	  <ul>
+	    {% for place in places %}
+	      <li><a href="/{{ lang_code }}/place/{{ place.name }}">
+		{{ place.name }} ({{ massif.distance_to(place) | round | int }} m)
+	      </a></li>
+	    {% endfor %}
+	  </ul>
+	{% endif %}
+      {% endwith %}
+      {#
       {% if massif.parking %}
 	<a href="/{{ lang_code }}/google-map/{{ massif.name }}">{{ _("Itineraire Google Map") }}</a>
       {% else %}
 	{{ _("Pas d'itineraire renseigné") }}
       {% endif %}
+      #}
     </dd>
-    <dt><i class="fa fa-bicycle"></i> {{ _("Accés à vélo") }} {% if massif.a_pieds %}/ {{ _("à pieds") }}{% endif %}</dt>
-    <dd>{{ massif.velo }}</dd>
+    <dt><i class="fa fa-bicycle"></i> {{ _("Accés à vélo") }} {% if massif.on_foot() %}/ {{ _("à pieds") }}{% endif %}</dt>
+    <dd>
+      <p>{{ massif.velo }}</p>
+      {% with places = massif.nearest_gare() %}
+	{% if places %}
+	  {{ _("Gares les plus proches&nbsp;:") }}
+	  <ul>
+	    {% for place in places %}
+	      <li><a href="/{{ lang_code }}/place/{{ place.name }}">
+		{{ place.name }} ({{ massif.distance_to(place) | round | int }} m)
+	      </a></li>
+	    {% endfor %}
+	  </ul>
+	{% endif %}
+      {% endwith %}
+    </dd>
   </dl>
 
   <h2>{{ _("Informations") }}</h2>
@@ -44,16 +72,17 @@
     <dt>{{ _("Type de chaos") }}</dt><dd>{{ massif.chaos_type }}</dd>
     <dt>{{ _("Notes") }}</dt><dd>{{ massif.note }}</dd>
     <dt>{{ _("Rendez-vous Gums") }}</dt><dd>{{ massif.rdv }}</dd>
-    {% with places = massif.nearest_point_deau(distance_max=5000) %}
+    {% with places = massif.nearest_point_deau() %}
       {% if places %}
 	<dt>{{ _("Point d'eau") }}</dt>
 	<dd>
-	  {% for place in places %}
-	    {% if loop.index > 1  %}<br>{% endif %}
-	    <a href="/{{ lang_code }}/place/{{ place.name }}">
-	      {{ place.name }} ({{ massif.distance_to(place) | round | int }} m)
-	    </a>
-	  {% endfor %}
+	  <ul>
+	    {% for place in places %}
+	      <li><a href="/{{ lang_code }}/place/{{ place.name }}">
+		{{ place.name }} ({{ massif.distance_to(place) | round | int }} m)
+	      </a></li>
+	    {% endfor %}
+	  </ul>
 	</dd>
       {% endif %}
     {% endwith %}

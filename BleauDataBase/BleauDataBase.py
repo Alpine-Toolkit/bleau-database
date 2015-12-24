@@ -68,6 +68,7 @@ class PlaceCategory(str):
 
     """This class defines a category of place."""
 
+    # Fixme: Fr
     # Fixme: define in the json ?
     __categories__ = ('parking', 'gare', "point d'eau")
     # also: massif, circuit, bloc
@@ -640,7 +641,7 @@ class Massif(PlaceBase):
     name = str
 
     acces = str # Fixme: fr
-    alternative_name = str
+    alternative_name = str # Fixme
     chaos_type = ChaosType
     note = str
     parcelles = str # Fixme: fr
@@ -730,12 +731,37 @@ class Massif(PlaceBase):
 
     ##############################################
 
-    def nearest_point_deau(self, number_of_items=2, distance_max=2000):
+    def nearest_point_deau(self, number_of_items=2, distance_max=5000):
 
         return self.bleau_database.nearest_place(self,
                                                  place_category="point d'eau",
                                                  number_of_items=number_of_items,
                                                  distance_max=distance_max)
+
+    ##############################################
+
+    def nearest_gare(self, number_of_items=2, distance_max=50000):
+
+        return  self.bleau_database.nearest_place(self,
+                                                  place_category="gare",
+                                                  number_of_items=number_of_items,
+                                                  distance_max=distance_max)
+
+
+    ##############################################
+
+    def on_foot(self, distance_max=4000):
+
+        return bool(self.nearest_gare(distance_max=distance_max))
+
+    ##############################################
+
+    def nearest_parking(self, number_of_items=2, distance_max=4000):
+
+        return  self.bleau_database.nearest_place(self,
+                                                  place_category="parking",
+                                                  number_of_items=number_of_items,
+                                                  distance_max=distance_max)
 
 ####################################################################################################
 
@@ -1164,17 +1190,17 @@ class BleauDataBase:
     ##############################################
 
     def filter_by(self,
-                  a_pieds=None,
+                  on_foot=None,
                   secteurs=None,
                   chaos_type=None,
                   grades=None,
                   major_grades=None,
     ):
 
-        # print(a_pieds, secteurs, chaos_type, grades, major_grades)
+        # print(on_foot, secteurs, chaos_type, grades, major_grades)
         massifs = self.massifs
-        if a_pieds is not None:
-            massifs = [massif for massif in massifs if massif.a_pieds]
+        if on_foot is not None:
+            massifs = [massif for massif in massifs if massif.on_foot()]
         if secteurs is not None:
             # massif.secteur and
             massifs = [massif for massif in massifs if massif.secteur in secteurs]
