@@ -1,0 +1,90 @@
+#! /usr/bin/env python3
+
+####################################################################################################
+#
+# Bleau Database - A database of the bouldering area of Fontainebleau
+# Copyright (C) 2015 Fabrice Salvaire
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+####################################################################################################
+
+####################################################################################################
+
+import argparse
+import json
+
+import geojson
+
+####################################################################################################
+
+from BleauDataBase.BleauDataBase import Place
+
+####################################################################################################
+
+parser = argparse.ArgumentParser(description='GeoJSON to Places')
+
+parser.add_argument('geojson_file', metavar='geojson_file',
+                    help='GeoJSON file')
+
+args = parser.parse_args()
+
+
+
+####################################################################################################
+
+with open(args.geojson_file, 'r', encoding='utf-8-sig') as f:
+    # places = geojson.loads(f.read())
+    places_geojson = json.loads(f.read())
+
+# {
+#   "features": [
+#     {
+#       "geometry": {
+#         "coordinates": [
+#           2.3869206011295314,
+#           48.37027217476768
+#         ],
+#         "type": "Point"
+#       },
+#       "type": "Feature",
+#       "properties": {
+#         "note": "",
+#         "name": "Gare de Buno-Gironville",
+#         "category": "gare"
+#       }
+#     },
+#     {
+
+kwargs = dict(indent=2, ensure_ascii=False, sort_keys=True)
+
+places = []
+for place_geojson in places_geojson['features']:
+    longitude, latitude = place_geojson['geometry']['coordinates']
+    properties = place_geojson['properties']
+    name = properties['name']
+    category = properties['category']
+    place = Place(coordinate={'longitude':longitude, 'latitude':latitude},
+                  name=name, category=category,
+                  bleau_database=None)
+    places.append(place)
+
+data = [place.to_json(only_defined=False) for place in places]
+print(json.dumps(data, **kwargs))
+
+####################################################################################################
+#
+# End
+#
+####################################################################################################
