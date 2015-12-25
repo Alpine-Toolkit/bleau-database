@@ -3,7 +3,12 @@ __pycache__
 README.html
 build/
 setenv.sh
+share/WebApplication/static/bower_components
+share/WebApplication/static/packages/
 share/WebApplication/templates/include/geoportail_api_key.js
-test/
+share/WebApplication/translations/en/LC_MESSAGES/messages.mo
+share/WebApplication/translations/messages.pot
 tools/rsync-vps.sh
+#
+test/
 trash/

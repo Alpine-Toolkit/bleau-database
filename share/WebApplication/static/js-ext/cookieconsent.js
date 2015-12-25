@@ -1,0 +1,1 @@
+../packages/cookieconsent2/cookieconsent.js

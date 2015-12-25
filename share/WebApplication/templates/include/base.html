@@ -21,7 +21,8 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
 	    integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     {% else %}
-      <link rel="stylesheet" href={{ url_for('static', filename='css/bootstrap.min.css') }}>
+      <link rel="stylesheet" href={{ url_for('static', filename='css-ext/font-awesome.min.css') }}>
+      <link rel="stylesheet" href={{ url_for('static', filename='css-ext/bootstrap.min.css') }}>
     {% endif %}
     <link rel="stylesheet" href={{ url_for('static', filename='css/bleau-database.css') }}>
 
@@ -108,14 +109,14 @@
       {% if use_cdn %}
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
       {% else %}
-	<script type="text/javascript" src={{ url_for('static', filename='js/jquery.min.js') }}></script>
+	<script type="text/javascript" src={{ url_for('static', filename='js-ext/jquery.min.js') }}></script>
       {% endif %}
-      <script type="text/javascript" src={{ url_for('static', filename='js/tether.min.js') }}></script>
+      <script type="text/javascript" src={{ url_for('static', filename='js-ext/tether.min.js') }}></script>
       {% if use_cdn %}
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"
 		integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
       {% else %}
-	<script type="text/javascript" src={{ url_for('static', filename='js/bootstrap.min.js') }}></script>
+	<script type="text/javascript" src={{ url_for('static', filename='js-ext/bootstrap.min.js') }}></script>
       {% endif %}
 
       {# Piwik tracker #}

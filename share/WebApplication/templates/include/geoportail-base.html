@@ -5,7 +5,7 @@
   {% if use_cdn %}
     <link rel="stylesheet" href="http://openlayers.org/en/v3.10.1/css/ol.css" type="text/css">
   {% else %}
-    <script type="text/css" src={{ url_for('static', filename='css/ol.css') }}></script>
+    <script type="text/css" src={{ url_for('static', filename='css-ext/ol.css') }}></script>
   {% endif %}
 
   <style>
@@ -18,7 +18,7 @@
   {% if use_cdn %}
     <script type="text/javascript" src="http://openlayers.org/en/v3.10.1/build/ol.js"></script>
   {% else %}
-    <script type="text/javascript" src={{ url_for('static', filename='js/ol.js') }}></script>
+    <script type="text/javascript" src={{ url_for('static', filename='js-ext/ol.js') }}></script>
   {% endif %}
 {% endblock %}
 
@@ -316,7 +316,7 @@
    {% include "include/geoportail_api_key.js" %}
   </script>
 
-  <script type="text/javascript" src={{ url_for('static', filename='js/FileSaver.min.js') }}></script>
+  <script type="text/javascript" src={{ url_for('static', filename='js-ext/FileSaver.min.js') }}></script>
 
   <script type="text/javascript" src={{ url_for('static', filename='data/bleau-places-geoson.js') }}></script>
   <script type="text/javascript" src={{ url_for('static', filename='data/bleau-massifs-geoson.js') }}></script>

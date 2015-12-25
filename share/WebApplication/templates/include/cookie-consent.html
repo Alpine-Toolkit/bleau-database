@@ -13,4 +13,8 @@ http://www.primebox.co.uk/projects/jquery-cookiebar/
      "theme": "dark-top"
  };
 </script>
+{% if use_cdn %}
 <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+{% else %}
+<script type="text/javascript" src={{ url_for('static', filename='js-ext/cookieconsent.min.js') }}></script>
+{% endif %}
