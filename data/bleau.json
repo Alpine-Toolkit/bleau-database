@@ -2188,14 +2188,14 @@
           "number": "17bis"
         },
         {
-          "comment": "mur. actuellement en zone de défens pour cause d'érosion.",
+          "comment": "mur. actuellement en zone de défense pour cause d'érosion.",
           "coordinate": null,
           "grade": "4-",
           "name": "",
           "number": 18
         },
         {
-          "comment": "traversée. actuellement en zone de défens pour cause d'érosion.",
+          "comment": "traversée. actuellement en zone de défense pour cause d'érosion.",
           "coordinate": null,
           "grade": "5",
           "name": "",
@@ -2691,7 +2691,7 @@
           "number": 28
         },
         {
-          "comment": "dalle. à droite du 45 , sans les inversées.",
+          "comment": "dalle. à droite du 45, sans les inversées.",
           "coordinate": null,
           "grade": "7a+",
           "name": "Le Test de Turing",
@@ -2705,7 +2705,7 @@
           "number": 29
         },
         {
-          "comment": "fissure, réglettes. juste à droite de l'angle du 30 , sur la face du 29 et de Miss KGB.",
+          "comment": "fissure, réglettes. juste à droite de l'angle du 30, sur la face du 29 et de Miss KGB.",
           "coordinate": null,
           "grade": "7a+",
           "name": "Mister Proper",
@@ -10453,7 +10453,7 @@
           "number": "33bis"
         },
         {
-          "comment": "traversée. traverser à droite par le bas, passer un gros trou (que l'on prend en crochet pied gauche) et sortir avant l'angle. NB : un prolongement en 7a/7a+, appelé Rempart (Galla Lactique) , est possible en sortant 1m50 plus loin sur l'angle rond. voir aussi : Rempart (Galla Lactique) 7a (7a+), Voyage Gallactique 7b+",
+          "comment": "traversée. traverser à droite par le bas, passer un gros trou (que l'on prend en crochet pied gauche) et sortir avant l'angle. NB : un prolongement en 7a/7a+, appelé Rempart (Galla Lactique), est possible en sortant 1m50 plus loin sur l'angle rond. voir aussi : Rempart (Galla Lactique) 7a (7a+), Voyage Gallactique 7b+",
           "coordinate": null,
           "grade": "6b+",
           "name": "Transat",
@@ -11370,7 +11370,7 @@
           "number": 6
         },
         {
-          "comment": "dalle. en face Nord, 1m50 à droite du 7, La Dalle Richard , sans utiliser les fissures de ce dernier ni celles du 10, La Fissure droite de la Dalle Richard.",
+          "comment": "dalle. en face Nord, 1m50 à droite du 7, La Dalle Richard, sans utiliser les fissures de ce dernier ni celles du 10, La Fissure droite de la Dalle Richard.",
           "coordinate": null,
           "grade": "5",
           "name": "La Dalle Richard",
@@ -11734,7 +11734,7 @@
           "number": 31
         },
         {
-          "comment": "Le Général Direct , sur le bloc du Général.",
+          "comment": "Le Général Direct, sur le bloc du Général.",
           "coordinate": null,
           "grade": "3+",
           "name": "",
@@ -11811,7 +11811,7 @@
           "number": 42
         },
         {
-          "comment": "dalle, mur. 1m50 à gauche de l'arête du 42 , sur le bloc du Le Grand Dernier Pas.",
+          "comment": "dalle, mur. 1m50 à gauche de l'arête du 42, sur le bloc du Le Grand Dernier Pas.",
           "coordinate": null,
           "grade": "3",
           "name": "",
@@ -19993,7 +19993,7 @@
           "number": 25
         },
         {
-          "comment": "dalle. sous le bloc de 34, Les Trous de gauche de la Caroline , à l'Est du massif.",
+          "comment": "dalle. sous le bloc de 34, Les Trous de gauche de la Caroline, à l'Est du massif.",
           "coordinate": null,
           "grade": "6c",
           "name": "Anse Lazio",
@@ -20638,21 +20638,21 @@
     {
       "boulders": [
         {
-          "comment": "traversée. n°A du circuit noir, sur le bloc situé juste après le 76, La Traversée du Tourniquet (arrivée du circuit), 30m environ à gauche et en dessous de 4, Balladium , en face de l'envers du 8. Partir à gauche d'une faille caractéristique dans le sol, traverser sur des plats, passer l'angle, continuer sur le rebord puis sur de gros bacs et sortir tout au bout.",
+          "comment": "traversée. n°A du circuit noir, sur le bloc situé juste après le 76, La Traversée du Tourniquet (arrivée du circuit), 30m environ à gauche et en dessous de 4, Balladium, en face de l'envers du 8. Partir à gauche d'une faille caractéristique dans le sol, traverser sur des plats, passer l'angle, continuer sur le rebord puis sur de gros bacs et sortir tout au bout.",
           "coordinate": null,
           "grade": "6c",
           "name": "Le Chewin Gun",
           "number": 1
         },
         {
-          "comment": "mur, haut. n°B du circuit noir, derrière le 8, L'Envers , sur le \"Mur des Lamentations\" (engagé).",
+          "comment": "mur, haut. n°B du circuit noir, derrière le 8, L'Envers, sur le \"Mur des Lamentations\" (engagé).",
           "coordinate": null,
           "grade": "6b+",
           "name": "Moselle",
           "number": 2
         },
         {
-          "comment": "mur, haut. n°C du circuit noir, derrière le 8, L'Envers , juste à gauche de 2, Moselle , sur le \"Mur des Lamentations\".",
+          "comment": "mur, haut. n°C du circuit noir, derrière le 8, L'Envers, juste à gauche de 2, Moselle, sur le \"Mur des Lamentations\".",
           "coordinate": null,
           "grade": "6b+",
           "name": "Vertibloc",
@@ -20666,7 +20666,7 @@
           "number": 4
         },
         {
-          "comment": "dalle, mur. n°E du circuit noir, juste à gauche du 20, La Sans Bloc Coincé , en face du 4, La Mine aux Demis.",
+          "comment": "dalle, mur. n°E du circuit noir, juste à gauche du 20, La Sans Bloc Coincé, en face du 4, La Mine aux Demis.",
           "coordinate": null,
           "grade": "6b+",
           "name": "L'Épine Noir",
@@ -20687,7 +20687,7 @@
           "number": 7
         },
         {
-          "comment": "mur, expo, trous. n°H du circuit noir, à droite du 25, Trous Durite , sur le bloc de 68, La Dalle du Feu. Partir de manière directe dans une fissure évasée, aller chercher un gratton dans la face et atteindre les bacs de sortie par un mouvement engagé.",
+          "comment": "mur, expo, trous. n°H du circuit noir, à droite du 25, Trous Durite, sur le bloc de 68, La Dalle du Feu. Partir de manière directe dans une fissure évasée, aller chercher un gratton dans la face et atteindre les bacs de sortie par un mouvement engagé.",
           "coordinate": null,
           "grade": "6c",
           "name": "L'Heure H",
@@ -20736,7 +20736,7 @@
           "number": 14
         },
         {
-          "comment": "traversée. n°O du circuit noir, sur le bloc du \"Pendu\". Partir sur des plats dans l'arrondi au bout à droite du bloc, près du départ de 14, L'Étoile , traverser à gauche et sortir avec la prise en forme de rond à gauche du 1, L'Oppo du Pendu.",
+          "comment": "traversée. n°O du circuit noir, sur le bloc du \"Pendu\". Partir sur des plats dans l'arrondi au bout à droite du bloc, près du départ de 14, L'Étoile, traverser à gauche et sortir avec la prise en forme de rond à gauche du 1, L'Oppo du Pendu.",
           "coordinate": null,
           "grade": "7b+",
           "name": "Nuages",
@@ -20778,14 +20778,14 @@
           "number": 20
         },
         {
-          "comment": "fissure, départ assis, traversée. n°U du circuit noir, sur l'envers du bloc du 35, La Forêt Vierge , en dessous et 10m avant le gros bloc de 34, Les Trous de gauche de la Caroline. Partir assis sur la gauche, traverser à droite avec de grosses prises et sortir par la fissure.",
+          "comment": "fissure, départ assis, traversée. n°U du circuit noir, sur l'envers du bloc du 35, La Forêt Vierge, en dessous et 10m avant le gros bloc de 34, Les Trous de gauche de la Caroline. Partir assis sur la gauche, traverser à droite avec de grosses prises et sortir par la fissure.",
           "coordinate": null,
           "grade": "7a",
           "name": "Choux Bloc",
           "number": 21
         },
         {
-          "comment": "traversée. n°V du circuit noir, à droite du 26, Anse Lazio , en contrebas du bloc de 34, Les Trous de gauche de la Caroline. Partir tout à droite, traverser à gauche, passer l'angle par le bas et sortir dans la seconde face par une fissure. NB : la voie doit actuellement être rebrossée (décembre 2007). voir aussi : L'Année des Méduses 8a+",
+          "comment": "traversée. n°V du circuit noir, à droite du 26, Anse Lazio, en contrebas du bloc de 34, Les Trous de gauche de la Caroline. Partir tout à droite, traverser à gauche, passer l'angle par le bas et sortir dans la seconde face par une fissure. NB : la voie doit actuellement être rebrossée (décembre 2007). voir aussi : L'Année des Méduses 8a+",
           "coordinate": null,
           "grade": "7b+",
           "name": "Bonne Année, Bonne Santé",
@@ -20806,7 +20806,7 @@
           "number": 24
         },
         {
-          "comment": "toit, traversée. n°Y du circuit noir, sur le bloc d'arrivée du circuit blanc, complètement à l'Est du massif, une vingtaine de mètres à gauche des escaliers, un peu en dessous du sommet de la pente. Partir assis au fond à droite, remonter dans le dévers pour rejoindre le départ du 31, La Crampe à Rachid , traverser à gauche comme dans ce dernier, passer dans le creux du bloc, poursuivre sur des plats et sortir en réta tout au bout (2m après l'échappatoire évidente du 31, La Crampe à Rachid ), en suivant une dernière flèche noire peu visible à 50cm du sol. NB : la vidéo ne montre pas les derniers mouvements de la version d'origine. voir aussi : 31, La Crampe à Rachid 6b",
+          "comment": "toit, traversée. n°Y du circuit noir, sur le bloc d'arrivée du circuit blanc, complètement à l'Est du massif, une vingtaine de mètres à gauche des escaliers, un peu en dessous du sommet de la pente. Partir assis au fond à droite, remonter dans le dévers pour rejoindre le départ du 31, La Crampe à Rachid, traverser à gauche comme dans ce dernier, passer dans le creux du bloc, poursuivre sur des plats et sortir en réta tout au bout (2m après l'échappatoire évidente du 31, La Crampe à Rachid ), en suivant une dernière flèche noire peu visible à 50cm du sol. NB : la vidéo ne montre pas les derniers mouvements de la version d'origine. voir aussi : 31, La Crampe à Rachid 6b",
           "coordinate": null,
           "grade": "7a+",
           "name": "Stretchin",
@@ -21346,7 +21346,7 @@
           "number": "7ter"
         },
         {
-          "comment": "dalle. dalle sur la droite du bloc de Tout Couleur , dans le couloir.",
+          "comment": "dalle. dalle sur la droite du bloc de Tout Couleur, dans le couloir.",
           "coordinate": null,
           "grade": "4",
           "name": "L'Oubliée",
@@ -21444,7 +21444,7 @@
           "number": 21
         },
         {
-          "comment": "dalle. juste à gauche du 8, Le Phlagmite , sans utiliser l'arbre !",
+          "comment": "dalle. juste à gauche du 8, Le Phlagmite, sans utiliser l'arbre !",
           "coordinate": null,
           "grade": "5-",
           "name": "La Photocopieuse",
@@ -21472,7 +21472,7 @@
           "number": 24
         },
         {
-          "comment": "mur, traversée. sur le bloc du 24 , le long du GR, au niveau de débris d'arbres.",
+          "comment": "mur, traversée. sur le bloc du 24, le long du GR, au niveau de débris d'arbres.",
           "coordinate": null,
           "grade": "4+",
           "name": "",
@@ -25161,7 +25161,7 @@
           "number": 27
         },
         {
-          "comment": "mur, jeté. mur déversant avant 26, Trois Hommes et un Coup Fin , en venant de la Route des Buttes de Fontainebleau.",
+          "comment": "mur, jeté. mur déversant avant 26, Trois Hommes et un Coup Fin, en venant de la Route des Buttes de Fontainebleau.",
           "coordinate": null,
           "grade": "7b",
           "name": "Barbatruc",
@@ -25189,7 +25189,7 @@
           "number": 31
         },
         {
-          "comment": "surplomb. à gauche de 33, La Teigne , au dessus de 34, Duel.",
+          "comment": "surplomb. à gauche de 33, La Teigne, au dessus de 34, Duel.",
           "coordinate": null,
           "grade": "7a",
           "name": "La Châtaigne",
@@ -28151,7 +28151,7 @@
           "number": 47
         },
         {
-          "comment": "dalle. sur la face de droite du bloc de 47, La Bissoufflante droite , 1m environ à droite de l'arête. NB : la voie a été recotée du fait d'un gratton cassé.",
+          "comment": "dalle. sur la face de droite du bloc de 47, La Bissoufflante droite, 1m environ à droite de l'arête. NB : la voie a été recotée du fait d'un gratton cassé.",
           "coordinate": null,
           "grade": "6c+",
           "name": "Le Mur à Antoine (Les Ultimes Grattons )",
@@ -28241,7 +28241,7 @@
           "number": "6bis"
         },
         {
-          "comment": "mur. partir comme dans le 48 , mais sortir dans la face de droite.",
+          "comment": "mur. partir comme dans le 48, mais sortir dans la face de droite.",
           "coordinate": null,
           "grade": "3",
           "name": "",
@@ -31461,7 +31461,7 @@
           "number": 4
         },
         {
-          "comment": "mur. grand mur dans un couloir, sur le bloc de 4, La Piscine , juste à gauche de cette dernière.",
+          "comment": "mur. grand mur dans un couloir, sur le bloc de 4, La Piscine, juste à gauche de cette dernière.",
           "coordinate": null,
           "grade": "6a",
           "name": "L'Expolivet",
@@ -40717,7 +40717,7 @@
           "number": 4
         },
         {
-          "comment": "mur, arête, plats. à gauche de L'Île Sentinelle , en partant avec une règle verticale main droite et en utilisant l'arête de gauche. NB : la flèche a été repeinte un peu trop à droite. voir aussi : L'Île Sentinelle 6c+ (7a)",
+          "comment": "mur, arête, plats. à gauche de L'Île Sentinelle, en partant avec une règle verticale main droite et en utilisant l'arête de gauche. NB : la flèche a été repeinte un peu trop à droite. voir aussi : L'Île Sentinelle 6c+ (7a)",
           "coordinate": null,
           "grade": "6c",
           "name": "Le Croazou",
@@ -42799,14 +42799,14 @@
           "number": 1
         },
         {
-          "comment": "traversée, bidoigts. partir à droite de 4, Big Jim , traverser sur des bidoigts, passer l'angle, continuer sur de grosses prises et sortir au bout de la seconde face, à gauche de la fissure.",
+          "comment": "traversée, bidoigts. partir à droite de 4, Big Jim, traverser sur des bidoigts, passer l'angle, continuer sur de grosses prises et sortir au bout de la seconde face, à gauche de la fissure.",
           "coordinate": null,
           "grade": "7a",
           "name": "La Ballade de Jim",
           "number": 2
         },
         {
-          "comment": "mur, haut. à gauche du 5, Face Nord , sur le bloc de 4, Big Jim.",
+          "comment": "mur, haut. à gauche du 5, Face Nord, sur le bloc de 4, Big Jim.",
           "coordinate": null,
           "grade": "7a+",
           "name": "T Comme Tarzan",
@@ -43002,7 +43002,7 @@
           "number": 28
         },
         {
-          "comment": "traversée, réglettes. partir au niveau d'28, Élongation , traverser par le bas et sortir à gauche des 27, Les Vacances à Bombay.",
+          "comment": "traversée, réglettes. partir au niveau d'28, Élongation, traverser par le bas et sortir à gauche des 27, Les Vacances à Bombay.",
           "coordinate": null,
           "grade": "6c",
           "name": "Machine à Jambon",
@@ -43023,7 +43023,7 @@
           "number": 31
         },
         {
-          "comment": "mur, réglettes. à gauche de 32ter, Arc Angel , dans un couloir.",
+          "comment": "mur, réglettes. à gauche de 32ter, Arc Angel, dans un couloir.",
           "coordinate": null,
           "grade": "7c",
           "name": "Le Mur du Son",
@@ -43065,7 +43065,7 @@
           "number": 34
         },
         {
-          "comment": "traversée, réglettes. au sommet du massif, sur un bloc séchant lentement. Partir dans le couloir à gauche comme dans le 35, Travaux Forcés , mais continuer en traversant par le bas sur des réglettes et sortir sur l'angle de droite, dans le 46, L'angle du Droit.",
+          "comment": "traversée, réglettes. au sommet du massif, sur un bloc séchant lentement. Partir dans le couloir à gauche comme dans le 35, Travaux Forcés, mais continuer en traversant par le bas sur des réglettes et sortir sur l'angle de droite, dans le 46, L'angle du Droit.",
           "coordinate": null,
           "grade": "7b",
           "name": "Travaux Forcés",
@@ -46522,7 +46522,7 @@
           "number": 6
         },
         {
-          "comment": "mur, réglettes. à gauche du 6, Le Porte à Faux , sans l'arête.",
+          "comment": "mur, réglettes. à gauche du 6, Le Porte à Faux, sans l'arête.",
           "coordinate": null,
           "grade": "7a",
           "name": "Achille Talon",
@@ -46585,7 +46585,7 @@
           "number": 14
         },
         {
-          "comment": "mur. entre le 6, Le Pied de Nez et le 7, Coup du Point , sans les prises à droite de l'angle. NB : la méthode d'ouverture (morpho) n'utilise même que les prises du mur.",
+          "comment": "mur. entre le 6, Le Pied de Nez et le 7, Coup du Point, sans les prises à droite de l'angle. NB : la méthode d'ouverture (morpho) n'utilise même que les prises du mur.",
           "coordinate": null,
           "grade": "7a",
           "name": "La Lime à Ongles",
@@ -46599,7 +46599,7 @@
           "number": 15
         },
         {
-          "comment": "dalle, réglettes. dalle directe située à droite du 11, Ligne Sécante , sans la bonne prise de pied à droite. 7a avec le plat en haut à gauche (7b en l'éliminant). NB : la voie est devenue beaucoup plus facile depuis que le sol s'est ensablé (30cm en quelques décennies !) surtout si l'on part d'un crash-pad...",
+          "comment": "dalle, réglettes. dalle directe située à droite du 11, Ligne Sécante, sans la bonne prise de pied à droite. 7a avec le plat en haut à gauche (7b en l'éliminant). NB : la voie est devenue beaucoup plus facile depuis que le sol s'est ensablé (30cm en quelques décennies !) surtout si l'on part d'un crash-pad...",
           "coordinate": null,
           "grade": "7b",
           "name": "Lucifer",
@@ -46641,7 +46641,7 @@
           "number": 18
         },
         {
-          "comment": "surplomb, proue, traversée. sur l'arrière du bloc situé en face du 18, Nouvelle Tendance. Partir dans le 22, La Chaussée des Géants , traverser à gauche et sortir dans la proue déversante. NB : il est possible de réaliser une éliminante en 7a, en n'utilisant que les prises la lèvre supérieure et en sortant dans le toit sans les prises de la face de gauche. voir aussi : Chapeau Chinois (version haute) 7a",
+          "comment": "surplomb, proue, traversée. sur l'arrière du bloc situé en face du 18, Nouvelle Tendance. Partir dans le 22, La Chaussée des Géants, traverser à gauche et sortir dans la proue déversante. NB : il est possible de réaliser une éliminante en 7a, en n'utilisant que les prises la lèvre supérieure et en sortant dans le toit sans les prises de la face de gauche. voir aussi : Chapeau Chinois (version haute) 7a",
           "coordinate": null,
           "grade": "6b",
           "name": "Chapeau Chinois",
@@ -46676,7 +46676,7 @@
           "number": "20bis"
         },
         {
-          "comment": "dalle. à droite du 20, Passage à l'Acte , sans les bonnes réglettes de droite.",
+          "comment": "dalle. à droite du 20, Passage à l'Acte, sans les bonnes réglettes de droite.",
           "coordinate": null,
           "grade": "6c+",
           "name": "Amanite Dalloïde",
@@ -46795,7 +46795,7 @@
           "number": 34
         },
         {
-          "comment": "surplomb, traversée, plats. partir de l'angle situé à droite du 36, L'Affaire du Trou , traverser à gauche et sortir dans l'arête déversante. NB : cette voie, dont le nom (tout aussi authentique que les piqûres subies par l'ouvreur) est \"Le Toit des Frelons\", démarre bien par une traversée. La vidéo en ligne ne montre donc que la fin de la voie. voir aussi : L'Aller-retour du Toit des Frelons 7b",
+          "comment": "surplomb, traversée, plats. partir de l'angle situé à droite du 36, L'Affaire du Trou, traverser à gauche et sortir dans l'arête déversante. NB : cette voie, dont le nom (tout aussi authentique que les piqûres subies par l'ouvreur) est \"Le Toit des Frelons\", démarre bien par une traversée. La vidéo en ligne ne montre donc que la fin de la voie. voir aussi : L'Aller-retour du Toit des Frelons 7b",
           "coordinate": null,
           "grade": "7a",
           "name": "Le Toit des Frelons / La Traversée du T.G.V.",
@@ -48406,7 +48406,7 @@
           "number": 6
         },
         {
-          "comment": "mur, traversée. partir à droite du 37, Échec et Mat , traverser à mi-hauteur, passer l'angle rond et sortir dans la face de gauche.",
+          "comment": "mur, traversée. partir à droite du 37, Échec et Mat, traverser à mi-hauteur, passer l'angle rond et sortir dans la face de gauche.",
           "coordinate": null,
           "grade": "6c",
           "name": "Canonnerie",
@@ -48868,7 +48868,7 @@
     {
       "boulders": [
         {
-          "comment": "dévers. voie de gauche sur la face de L'Arc à Diane , en face Nord, au niveau de la ligne de crête.",
+          "comment": "dévers. voie de gauche sur la face de L'Arc à Diane, en face Nord, au niveau de la ligne de crête.",
           "coordinate": null,
           "grade": "5-",
           "name": "Le Surplomb Jaune",
@@ -48931,7 +48931,7 @@
           "number": 8
         },
         {
-          "comment": "cheminée. sur le bloc de La Tranquillité , le long du sentier bleu, après le groupe du Le Danseur.",
+          "comment": "cheminée. sur le bloc de La Tranquillité, le long du sentier bleu, après le groupe du Le Danseur.",
           "coordinate": null,
           "grade": "4-",
           "name": "La Cheminée",
@@ -49887,7 +49887,7 @@
           "number": 36
         },
         {
-          "comment": "dalle, départ assis, traversée. partir assis sous le 29, La Baignoire , traverser à droite, passer le bombé et sortir dans une haute dalle.",
+          "comment": "dalle, départ assis, traversée. partir assis sous le 29, La Baignoire, traverser à droite, passer le bombé et sortir dans une haute dalle.",
           "coordinate": null,
           "grade": "6a",
           "name": "Le Bac à Douche",
@@ -50439,7 +50439,7 @@
           "number": "19bis"
         },
         {
-          "comment": "toit, traversée. partir dans le 18, Le Dessous de Table , traverser à droite et sortir dans le 19, L'Invité sur Prises. voir aussi : 18, Le Dessous de Table 6b, 19bis, Le Tiroir à Couvert 6b, L'Orgie 7a+",
+          "comment": "toit, traversée. partir dans le 18, Le Dessous de Table, traverser à droite et sortir dans le 19, L'Invité sur Prises. voir aussi : 18, Le Dessous de Table 6b, 19bis, Le Tiroir à Couvert 6b, L'Orgie 7a+",
           "coordinate": null,
           "grade": "6c",
           "name": "Mets la Rallonge !",
@@ -50502,7 +50502,7 @@
           "number": "23bis"
         },
         {
-          "comment": "toit, expo. partir comme dans le 23, L'Haut Mission , remonter en diagonale vers la gauche, passer le toit et sortir dans un ancien numéro bleu (engagé).",
+          "comment": "toit, expo. partir comme dans le 23, L'Haut Mission, remonter en diagonale vers la gauche, passer le toit et sortir dans un ancien numéro bleu (engagé).",
           "coordinate": null,
           "grade": "6b",
           "name": "L'Appui de Vérité",
@@ -50607,14 +50607,14 @@
           "number": "33bis"
         },
         {
-          "comment": "arête, traversée, plats. partir assis comme dans le 32, L'Envoi de Disparition , traverser à droite et sortir par l'angle rond du 33bis, Tuile de Coude. voir aussi : 33bis, Tuile de Coude 7a+",
+          "comment": "arête, traversée, plats. partir assis comme dans le 32, L'Envoi de Disparition, traverser à droite et sortir par l'angle rond du 33bis, Tuile de Coude. voir aussi : 33bis, Tuile de Coude 7a+",
           "coordinate": null,
           "grade": "7b+",
           "name": "Le Poison-Chat",
           "number": "33ter"
         },
         {
-          "comment": "dévers, réta, traversée. partir assis comme dans le 32, L'Envoi de Disparition , traverser à droite et sortir en réta dans le surplomb du 33, Le Coude Mou. voir aussi : 33, Le Coude Mou 6a",
+          "comment": "dévers, réta, traversée. partir assis comme dans le 32, L'Envoi de Disparition, traverser à droite et sortir en réta dans le surplomb du 33, Le Coude Mou. voir aussi : 33, Le Coude Mou 6a",
           "coordinate": null,
           "grade": "7a",
           "name": "Le Coude Pompe",
@@ -55870,7 +55870,7 @@
           "number": "3quater"
         },
         {
-          "comment": "surplomb, plats. petit surplomb à droite du Le Gynécologue , derrière le départ du noir.",
+          "comment": "surplomb, plats. petit surplomb à droite du Le Gynécologue, derrière le départ du noir.",
           "coordinate": null,
           "grade": "6b",
           "name": "Tract'aux Plats",
@@ -55884,7 +55884,7 @@
           "number": "4quater"
         },
         {
-          "comment": "traversée. près du 44, Lucie la Résistante , à droite du chemin d'accès, en contrebas du secteur principal.",
+          "comment": "traversée. près du 44, Lucie la Résistante, à droite du chemin d'accès, en contrebas du secteur principal.",
           "coordinate": null,
           "grade": "7a",
           "name": "L'Éloge de la Différence",
@@ -55933,7 +55933,7 @@
           "number": 8
         },
         {
-          "comment": "dévers, expo, jeté. vieille voie engagée en départ sauté à partir d'une petite réglette vers une plus grosse, sur l'envers du bloc du 3, Un Bien Beau Superlatif , au sommet du pignon de droite.",
+          "comment": "dévers, expo, jeté. vieille voie engagée en départ sauté à partir d'une petite réglette vers une plus grosse, sur l'envers du bloc du 3, Un Bien Beau Superlatif, au sommet du pignon de droite.",
           "coordinate": null,
           "grade": "7a",
           "name": "Mini-Vague",
@@ -55989,7 +55989,7 @@
           "number": 11
         },
         {
-          "comment": "surplomb, départ assis. en face du 17, Le Pendule des Avaux , sur le bloc à gauche de 11, L'Onyx et du 28, Le Biodégradable. Partir assis sous le surplomb, prendre les prises sur la droite, revenir à gauche et sortir au dessus en réta sur des plats. NB : la méthode d'ouverture consiste à sortir en traversant à gauche (un peu morpho). voir aussi : Le Plomb des Frelons direct 7a+ (7b)",
+          "comment": "surplomb, départ assis. en face du 17, Le Pendule des Avaux, sur le bloc à gauche de 11, L'Onyx et du 28, Le Biodégradable. Partir assis sous le surplomb, prendre les prises sur la droite, revenir à gauche et sortir au dessus en réta sur des plats. NB : la méthode d'ouverture consiste à sortir en traversant à gauche (un peu morpho). voir aussi : Le Plomb des Frelons direct 7a+ (7b)",
           "coordinate": null,
           "grade": "7a",
           "name": "Le Plomb des Frelons",
@@ -56031,7 +56031,7 @@
           "number": 15
         },
         {
-          "comment": "traversée. sur le bloc en face du 25, Le Rogaton , avec un croisé caractéristique.",
+          "comment": "traversée. sur le bloc en face du 25, Le Rogaton, avec un croisé caractéristique.",
           "coordinate": null,
           "grade": "7a",
           "name": "La Magie Noire du Derviche",
@@ -56101,21 +56101,21 @@
           "number": 23
         },
         {
-          "comment": "surplomb, départ assis. sur l'envers du bloc du 77, La Popeye , en départ assis en bas à gauche. voir aussi : 24bis, La Directe de l'Épée de Sable 7c",
+          "comment": "surplomb, départ assis. sur l'envers du bloc du 77, La Popeye, en départ assis en bas à gauche. voir aussi : 24bis, La Directe de l'Épée de Sable 7c",
           "coordinate": null,
           "grade": "7b",
           "name": "L'Épée de Sable",
           "number": 24
         },
         {
-          "comment": "surplomb, départ assis. version directe de 24, L'Épée de Sable , sur l'envers du bloc du 77, La Popeye. NB : il existe une variante très éliminante en 8a. voir aussi : 24, L'Épée de Sable 7b (7b+)",
+          "comment": "surplomb, départ assis. version directe de 24, L'Épée de Sable, sur l'envers du bloc du 77, La Popeye. NB : il existe une variante très éliminante en 8a. voir aussi : 24, L'Épée de Sable 7b (7b+)",
           "coordinate": null,
           "grade": "7c",
           "name": "La Directe de l'Épée de Sable",
           "number": "24bis"
         },
         {
-          "comment": "mur, traversée. près du 39, Le Complexifié , légèrement en contrebas de 27, La Mouche.",
+          "comment": "mur, traversée. près du 39, Le Complexifié, légèrement en contrebas de 27, La Mouche.",
           "coordinate": null,
           "grade": "7a",
           "name": "Black-Out",
@@ -56136,14 +56136,14 @@
           "number": 26
         },
         {
-          "comment": "mur, expo, réglettes. à droite du 10, L'Oubli , dans un couloir. voir aussi : Sorbet Mouche 7a+, La Mouche directe 7b",
+          "comment": "mur, expo, réglettes. à droite du 10, L'Oubli, dans un couloir. voir aussi : Sorbet Mouche 7a+, La Mouche directe 7b",
           "coordinate": null,
           "grade": "7a",
           "name": "La Mouche",
           "number": 27
         },
         {
-          "comment": "départ assis, traversée, plats. sur le bloc du 13, Le Poussif Nocif. Partir assis tout à gauche comme dans Mort Sur , mais sortir directement au niveau de la proue sur des aplats. voir aussi : 28bis, Le Nègre en Chemise 7a+",
+          "comment": "départ assis, traversée, plats. sur le bloc du 13, Le Poussif Nocif. Partir assis tout à gauche comme dans Mort Sur, mais sortir directement au niveau de la proue sur des aplats. voir aussi : 28bis, Le Nègre en Chemise 7a+",
           "coordinate": null,
           "grade": "6c",
           "name": "Le Nègre en Chemise raccourci",
@@ -56171,7 +56171,7 @@
           "number": 30
         },
         {
-          "comment": "proue. proue à compression évidente sur le bloc de 30, Coup de Blues , à droite du chemin d'accès, en contrebas du secteur principal. voir aussi : L'Étrave à Sucre assis 8a",
+          "comment": "proue. proue à compression évidente sur le bloc de 30, Coup de Blues, à droite du chemin d'accès, en contrebas du secteur principal. voir aussi : L'Étrave à Sucre assis 8a",
           "coordinate": null,
           "grade": "7b+",
           "name": "L'Étrave à Sucre",
@@ -64727,7 +64727,7 @@
           "number": 25
         },
         {
-          "comment": "dalle. sous le bloc de 34, Les Trous de gauche de la Caroline , à l'Est du massif.",
+          "comment": "dalle. sous le bloc de 34, Les Trous de gauche de la Caroline, à l'Est du massif.",
           "coordinate": null,
           "grade": "6c",
           "name": "Anse Lazio",
@@ -65889,7 +65889,7 @@
       "parcelles": null,
       "rdv": "De l'extrémité Ouest du parking, un chemin monte dans le bois. Le suivre jusqu'à la crête (vaste col). A mi-pente départ des circuits Blanc Enfants et Saumon (F+). Obliquer légèrement à gauche (S) sur environ 100m jusqu'à un énorme pin tourmenté qui se voit de loin. Marques du sentier bleu. Rejoindre une clairière juste derrière l'arbre (n° 22 Noir sur blanc).",
       "secteur": "Essonne",
-      "velo": "10 km depuis Mennecy (RER D , direction Malesherbes, 45')"
+      "velo": "10 km depuis Mennecy (RER D, direction Malesherbes, 45')"
     },
     {
       "acces": "A6 sortie Auvernaux, prendre la D 948 vers Milly . 4 km après Auvernaux, tourner à droite vers Beauvais. Dans Beauvais, prendre à droite vers Champcueil. Faire 400 m. Parking au bord de la route en face de la chaumière (pagode)",
