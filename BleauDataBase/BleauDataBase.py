@@ -726,8 +726,23 @@ class Massif(PlaceBase):
     @property
     def major_grades(self):
 
+        # Fixme: uniq
         grades = {circuit.grade.major for circuit in self._circuits}
         return tuple(sorted(grades))
+
+    ##############################################
+
+    @property
+    def grades_str_set(self):
+
+        return {str(circuit.grade) for circuit in self._circuits}
+
+    ##############################################
+
+    @property
+    def major_grades_str_set(self):
+
+        return {str(circuit.grade.major) for circuit in self._circuits}
 
     ##############################################
 
@@ -1212,10 +1227,10 @@ class BleauDataBase:
         if grades is not None or major_grades is not None:
             if grades is not None:
                 grades = set(grades)
-                massifs = [massif for massif in massifs if set(massif.uniq_grades) >= grades]
+                massifs = [massif for massif in massifs if massif.grades_str_set >= grades]
             else:
                 grades = set(major_grades)
-                massifs = [massif for massif in massifs if set(massif.major_grades) >= grades]
+                massifs = [massif for massif in massifs if massif.major_grades_str_set >= grades]
         # print(massifs)
 
         return massifs
