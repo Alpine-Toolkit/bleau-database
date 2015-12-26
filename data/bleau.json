@@ -1161,7 +1161,7 @@
         "latitude": 48.37605,
         "longitude": 2.516615
       },
-      "creation_date": null,
+      "creation_ date": null,
       "gestion": "ONF77",
       "grade": "AD-",
       "massif": "91_1",
@@ -2349,7 +2349,7 @@
           "number": 36
         },
         {
-          "comment": "réglettes. Attention : une écaille fragile menace de casser (février 2011).",
+          "comment": "réglettes. Attention : une écaille fragile menace de casser (février 2011).",
           "coordinate": null,
           "grade": "5-",
           "name": "",
@@ -2460,7 +2460,7 @@
           "number": 1
         },
         {
-          "comment": "mur, réglettes. voir aussi : La Poincenot sans les prises taillées",
+          "comment": "mur, réglettes. voir aussi : La Poincenot sans les prises taillées",
           "coordinate": null,
           "grade": "6b",
           "name": "La Poincenot",
@@ -2488,14 +2488,14 @@
           "number": "3ter"
         },
         {
-          "comment": "dalle. sol creusé : départ à droite",
+          "comment": "dalle. sol creusé : départ à droite",
           "coordinate": null,
           "grade": "6a",
           "name": "",
           "number": 4
         },
         {
-          "comment": "dalle. sol creusé : départ sur une pierre",
+          "comment": "dalle. sol creusé : départ sur une pierre",
           "coordinate": null,
           "grade": "6b",
           "name": "",
@@ -2516,14 +2516,14 @@
           "number": 7
         },
         {
-          "comment": "dalle. sans l'arête de gauche ni la grande prise horizontale (5b avec l'arête de gauche et en restant dans la face de droite ). voir aussi : Jeu d'Arête 3+",
+          "comment": "dalle. sans l'arête de gauche ni la grande prise horizontale (5b avec l'arête de gauche et en restant dans la face de droite ). voir aussi : Jeu d'Arête 3+",
           "coordinate": null,
           "grade": "6b",
           "name": "Jeu de Dalle",
           "number": 8
         },
         {
-          "comment": "traversée. partir assis à droite du bec et sortir à gauche. NB : la cotation a baissé depuis qu'une prise a été stupidement \"améliorée\". voir aussi : P'tit Toit raccourci assis 6b variantes obsolètes (prises cassées, etc...) : Le P'tit Toit / Le Tourniquet 7a (7a+)",
+          "comment": "traversée. partir assis à droite du bec et sortir à gauche. NB : la cotation a baissé depuis qu'une prise a été stupidement \"améliorée\". voir aussi : P'tit Toit raccourci assis 6b variantes obsolètes (prises cassées, etc...) : Le P'tit Toit / Le Tourniquet 7a (7a+)",
           "coordinate": null,
           "grade": "6b+",
           "name": "Le P'tit Toit / Le Tourniquet",
@@ -2558,7 +2558,7 @@
           "number": 11
         },
         {
-          "comment": "mur, réglettes. voir aussi : Manchuria Express 7c",
+          "comment": "mur, réglettes. voir aussi : Manchuria Express 7c",
           "coordinate": null,
           "grade": "6b+",
           "name": "Manchuria",
@@ -4100,7 +4100,7 @@
           "number": 12
         },
         {
-          "comment": "dalle, mur. sur la facette lisse à droite du 12. 5b/5c en départ assis. voir aussi : Carcasse Radicale 5+ (6a)",
+          "comment": "dalle, mur. sur la facette lisse à droite du 12. 5b/5c en départ assis. voir aussi : Carcasse Radicale 5+ (6a)",
           "coordinate": null,
           "grade": "5-",
           "name": "",
@@ -4163,7 +4163,7 @@
           "number": 19
         },
         {
-          "comment": "dalle. NB : bien repérer les possibilités de descente avant d'essayer ce bloc.",
+          "comment": "dalle. NB : bien repérer les possibilités de descente avant d'essayer ce bloc.",
           "coordinate": null,
           "grade": "3",
           "name": "",
@@ -7296,7 +7296,7 @@
           "number": "15bis"
         },
         {
-          "comment": "tunnel traversant le bloc de part en part !",
+          "comment": "tunnel traversant le bloc de part en part !",
           "coordinate": null,
           "grade": "1",
           "name": "Le Magasin de Boutons",
@@ -7324,7 +7324,7 @@
           "number": 19
         },
         {
-          "comment": "dévers. Attention : l'avant-dernière prise inversée de sortie est fissurée (juin 2011).",
+          "comment": "dévers. Attention : l'avant-dernière prise inversée de sortie est fissurée (juin 2011).",
           "coordinate": null,
           "grade": "4",
           "name": "Le Paquet",
@@ -7534,7 +7534,7 @@
           "number": 10
         },
         {
-          "comment": "mur. les bidoigts ont été stupidement élargis par taillage en 2004-2005... variantes obsolètes (prises cassées, etc...) : Les Yeux 6a",
+          "comment": "mur. les bidoigts ont été stupidement élargis par taillage en 2004-2005... variantes obsolètes (prises cassées, etc...) : Les Yeux 6a",
           "coordinate": null,
           "grade": "5+",
           "name": "Les Yeux",
@@ -7695,7 +7695,7 @@
           "number": 30
         },
         {
-          "comment": "dalle, expo. la cotation a été abaissée à 4c depuis qu'une prise a été stupidement taillée... voir aussi : L'Arête de la Que Faire 6a",
+          "comment": "dalle, expo. la cotation a été abaissée à 4c depuis qu'une prise a été stupidement taillée... voir aussi : L'Arête de la Que Faire 6a",
           "coordinate": null,
           "grade": "4+",
           "name": "La Que Faire",
@@ -7716,7 +7716,7 @@
           "number": 33
         },
         {
-          "comment": "dalle. des prises ont été stupidement taillées par un inconscient... (décembre 2004). variantes obsolètes (prises cassées, etc...) : La Science Friction 5+",
+          "comment": "dalle. des prises ont été stupidement taillées par un inconscient... (décembre 2004). variantes obsolètes (prises cassées, etc...) : La Science Friction 5+",
           "coordinate": null,
           "grade": "6a",
           "name": "La Science Friction",
@@ -7765,7 +7765,7 @@
           "number": 40
         },
         {
-          "comment": "réta, traversée. les grattons de sortie ont été stupidement taillés par un inconscient en 2004-2005... variantes obsolètes (prises cassées, etc...) : L'Arrache Bourse 6a",
+          "comment": "réta, traversée. les grattons de sortie ont été stupidement taillés par un inconscient en 2004-2005... variantes obsolètes (prises cassées, etc...) : L'Arrache Bourse 6a",
           "coordinate": null,
           "grade": "5+",
           "name": "L'Arrache-Bourse",
@@ -10376,7 +10376,7 @@
           "number": 26
         },
         {
-          "comment": "traversée. 26 rouge rallongé voir aussi : Bande Passante 7a+",
+          "comment": "traversée. 26 rouge rallongé voir aussi : Bande Passante 7a+",
           "coordinate": null,
           "grade": "6a",
           "name": "Jeu de Mains, Jeu de Vilain",
@@ -10453,14 +10453,14 @@
           "number": "33bis"
         },
         {
-          "comment": "traversée. traverser à droite par le bas, passer un gros trou (que l'on prend en crochet pied gauche) et sortir avant l'angle. NB : un prolongement en 7a/7a+, appelé Rempart (Galla Lactique) , est possible en sortant 1m50 plus loin sur l'angle rond. voir aussi : Rempart (Galla Lactique) 7a (7a+), Voyage Gallactique 7b+",
+          "comment": "traversée. traverser à droite par le bas, passer un gros trou (que l'on prend en crochet pied gauche) et sortir avant l'angle. NB : un prolongement en 7a/7a+, appelé Rempart (Galla Lactique) , est possible en sortant 1m50 plus loin sur l'angle rond. voir aussi : Rempart (Galla Lactique) 7a (7a+), Voyage Gallactique 7b+",
           "coordinate": null,
           "grade": "6b+",
           "name": "Transat",
           "number": 34
         },
         {
-          "comment": "mur, surplomb. mur direct en départ bas dans le surplomb. Mise à jour (mai 2009) : l'écaille de départ menaçant de se détacher, il est recommandé de ne pas essayer cette voie tant que la prise n'aura pas été consolidée. voir aussi : Constellation des Amoureux assis 7a+ (7a)",
+          "comment": "mur, surplomb. mur direct en départ bas dans le surplomb. Mise à jour (mai 2009) : l'écaille de départ menaçant de se détacher, il est recommandé de ne pas essayer cette voie tant que la prise n'aura pas été consolidée. voir aussi : Constellation des Amoureux assis 7a+ (7a)",
           "coordinate": null,
           "grade": "6c+",
           "name": "Constellation des Amoureux",
@@ -11377,7 +11377,7 @@
           "number": 7
         },
         {
-          "comment": "dalle, expo. entre 7, La Dalle Richard (n°7 noir) et 9, Lopo Table (n°9 noir), sur le bloc à gauche du 22. NB : actuellement lichéneux (mai 2009).",
+          "comment": "dalle, expo. entre 7, La Dalle Richard (n°7 noir) et 9, Lopo Table (n°9 noir), sur le bloc à gauche du 22. NB : actuellement lichéneux (mai 2009).",
           "coordinate": null,
           "grade": "6a",
           "name": "La Risqueuse",
@@ -11454,7 +11454,7 @@
           "number": 18
         },
         {
-          "comment": "surplomb, fissure, départ assis. juste au dessus de l'auberge Canard. voir aussi : La Boucle de Musclor 7a+",
+          "comment": "surplomb, fissure, départ assis. juste au dessus de l'auberge Canard. voir aussi : La Boucle de Musclor 7a+",
           "coordinate": null,
           "grade": "7a",
           "name": "Musclor",
@@ -11990,7 +11990,7 @@
           "number": 21
         },
         {
-          "comment": "haut, traversée. voie haute : montée, redescente et traversée.",
+          "comment": "haut, traversée. voie haute : montée, redescente et traversée.",
           "coordinate": null,
           "grade": "4",
           "name": "L'Enjambée",
@@ -12102,7 +12102,7 @@
           "number": 36
         },
         {
-          "comment": "dalle, arête. haute dalle-arête marbrée ; respecter le nid d'oiseau qui peut s'y trouver !",
+          "comment": "dalle, arête. haute dalle-arête marbrée ; respecter le nid d'oiseau qui peut s'y trouver !",
           "coordinate": null,
           "grade": "4-",
           "name": "Le Minaret",
@@ -14013,7 +14013,7 @@
           "number": 22
         },
         {
-          "comment": "traversée. sur le même bloc que le n°24 rouge. voir aussi : Pleine Lune 6b",
+          "comment": "traversée. sur le même bloc que le n°24 rouge. voir aussi : Pleine Lune 6b",
           "coordinate": null,
           "grade": "5",
           "name": "Lune Rousse",
@@ -14473,7 +14473,7 @@
           "number": 10
         },
         {
-          "comment": "mur. mur légèrement déversant dans le couloir en face du Portique ; sans les prises de droite.",
+          "comment": "mur. mur légèrement déversant dans le couloir en face du Portique ; sans les prises de droite.",
           "coordinate": null,
           "grade": "5-",
           "name": "La Dure à Cuire",
@@ -14613,7 +14613,7 @@
           "number": 30
         },
         {
-          "comment": "mur. attention aux ronces en sortie !",
+          "comment": "mur. attention aux ronces en sortie !",
           "coordinate": null,
           "grade": "5+",
           "name": "Vieille Souche",
@@ -14648,7 +14648,7 @@
           "number": 35
         },
         {
-          "comment": "mur. mur marbré au départ légèrement déversant. voir aussi : La Cervelle assis 7a",
+          "comment": "mur. mur marbré au départ légèrement déversant. voir aussi : La Cervelle assis 7a",
           "coordinate": null,
           "grade": "5-",
           "name": "La Cervelle",
@@ -14902,7 +14902,7 @@
           "number": 1
         },
         {
-          "comment": "dalle, arête. arête évidente un peu morpho. voir aussi : L'Arête de Zmutt assis 6b (6a)",
+          "comment": "dalle, arête. arête évidente un peu morpho. voir aussi : L'Arête de Zmutt assis 6b (6a)",
           "coordinate": null,
           "grade": "6a",
           "name": "L'Arête de Zmutt",
@@ -14923,14 +14923,14 @@
           "number": 4
         },
         {
-          "comment": "dévers, réglettes. en traversée ascendante vers la droite (6b+ morpho sans utiliser la marche). voir aussi : Jinotega direct 6b+",
+          "comment": "dévers, réglettes. en traversée ascendante vers la droite (6b+ morpho sans utiliser la marche). voir aussi : Jinotega direct 6b+",
           "coordinate": null,
           "grade": "6b",
           "name": "Jinotega",
           "number": 5
         },
         {
-          "comment": "mur. sur le bloc du Rempart ; morpho.",
+          "comment": "mur. sur le bloc du Rempart ; morpho.",
           "coordinate": null,
           "grade": "6c",
           "name": "Contact Mortel",
@@ -14951,7 +14951,7 @@
           "number": 8
         },
         {
-          "comment": "surplomb. 7a en départ assis du fond. voir aussi : Autopsie du Fond 7a",
+          "comment": "surplomb. 7a en départ assis du fond. voir aussi : Autopsie du Fond 7a",
           "coordinate": null,
           "grade": "6b",
           "name": "Autopsie d'un Bœuf",
@@ -14972,14 +14972,14 @@
           "number": 11
         },
         {
-          "comment": "dévers, expo, traversée. dévers expo en légère traversée ascendante sur la gauche (7a+ en départ assis). NB : la voie a été longtemps confondue avec un ancien bis blanc en 6c.",
+          "comment": "dévers, expo, traversée. dévers expo en légère traversée ascendante sur la gauche (7a+ en départ assis). NB : la voie a été longtemps confondue avec un ancien bis blanc en 6c.",
           "coordinate": null,
           "grade": "7a",
           "name": "Terre des Bêtes",
           "number": 12
         },
         {
-          "comment": "surplomb. dans le surplomb sous le bloc de l'Auvent Denise ; sortie dans le n°23 rouge.",
+          "comment": "surplomb. dans le surplomb sous le bloc de l'Auvent Denise ; sortie dans le n°23 rouge.",
           "coordinate": null,
           "grade": "6c",
           "name": "Combat de Rue",
@@ -15401,7 +15401,7 @@
           "comment": "",
           "coordinate": null,
           "grade": "2",
-          "name": "Merci pour la GV !",
+          "name": "Merci pour la GV !",
           "number": 43
         },
         {
@@ -15608,7 +15608,7 @@
           "comment": "",
           "coordinate": null,
           "grade": "4-",
-          "name": "L'alpinisme ou La Varappe ?",
+          "name": "L'alpinisme ou La Varappe ?",
           "number": "8bis"
         },
         {
@@ -15626,7 +15626,7 @@
           "number": 10
         },
         {
-          "comment": "ex 43 (ou la borgne ?)",
+          "comment": "ex 43 (ou la borgne ?)",
           "coordinate": null,
           "grade": "4",
           "name": "La Borne",
@@ -15650,7 +15650,7 @@
           "comment": "ex 42",
           "coordinate": null,
           "grade": "5-",
-          "name": "Sois Poli, Le vitrail ou la Dalle Polisson ?",
+          "name": "Sois Poli, Le vitrail ou la Dalle Polisson ?",
           "number": "13bis"
         },
         {
@@ -16211,7 +16211,7 @@
           "number": 23
         },
         {
-          "comment": "inversée. prises fragiles !",
+          "comment": "inversée. prises fragiles !",
           "coordinate": null,
           "grade": "6a",
           "name": "Belle au Fond de Teint",
@@ -16620,7 +16620,7 @@
           "number": 22
         },
         {
-          "comment": "surplomb, traversée. dans le secteur Trivellini, 50m à gauche du sentier bleu en direction du Rempart. voir aussi : Le Bivouac direct 7a+",
+          "comment": "surplomb, traversée. dans le secteur Trivellini, 50m à gauche du sentier bleu en direction du Rempart. voir aussi : Le Bivouac direct 7a+",
           "coordinate": null,
           "grade": "7a",
           "name": "Le Bivouac",
@@ -16655,7 +16655,7 @@
           "number": 26
         },
         {
-          "comment": "mur. le long du sentier bleu, juste avant le bloc du 30, Le Carré d'As. NB : la voie est actuellement un peu lichéneuse (septembre 2010).",
+          "comment": "mur. le long du sentier bleu, juste avant le bloc du 30, Le Carré d'As. NB : la voie est actuellement un peu lichéneuse (septembre 2010).",
           "coordinate": null,
           "grade": "5+",
           "name": "La Directe du R",
@@ -16669,14 +16669,14 @@
           "number": 28
         },
         {
-          "comment": "dévers, réglettes. voie en diagonale ascendante vers la droite sur le bloc accolé au 30, Le Carré d'As. NB : une prise de pied a cassé récemment (juin 2011). voir aussi : Duroxmanie direct 7a+ (7a), Duroxmanie assis 7b (7b+)",
+          "comment": "dévers, réglettes. voie en diagonale ascendante vers la droite sur le bloc accolé au 30, Le Carré d'As. NB : une prise de pied a cassé récemment (juin 2011). voir aussi : Duroxmanie direct 7a+ (7a), Duroxmanie assis 7b (7b+)",
           "coordinate": null,
           "grade": "6c",
           "name": "Duroxmanie",
           "number": 29
         },
         {
-          "comment": "mur, haut, réta. voir aussi : La Diagonale des As 7a+, Coup de Poker 7a+",
+          "comment": "mur, haut, réta. voir aussi : La Diagonale des As 7a+, Coup de Poker 7a+",
           "coordinate": null,
           "grade": "6c",
           "name": "Le Carré d'As",
@@ -17249,14 +17249,14 @@
           "number": 20
         },
         {
-          "comment": "mur, plats. une prise a été stupidement taillée en 2006... variantes obsolètes (prises cassées, etc...) : La Nescafé 6a",
+          "comment": "mur, plats. une prise a été stupidement taillée en 2006... variantes obsolètes (prises cassées, etc...) : La Nescafé 6a",
           "coordinate": null,
           "grade": "6a",
           "name": "La Nescafé",
           "number": 21
         },
         {
-          "comment": "mur, plats. le premier 6a de la forêt !",
+          "comment": "mur, plats. le premier 6a de la forêt !",
           "coordinate": null,
           "grade": "6a",
           "name": "La Marie-Rose",
@@ -17347,7 +17347,7 @@
           "number": 34
         },
         {
-          "comment": "mur. une prise a été stupidement améliorée au départ de cette voie, de manière bien inutile d'ailleurs. D'autre part, la bonne verticale de sortie a partiellement cassé (juin 2011). variantes obsolètes (prises cassées, etc...) : Les Esgourdes 5+",
+          "comment": "mur. une prise a été stupidement améliorée au départ de cette voie, de manière bien inutile d'ailleurs. D'autre part, la bonne verticale de sortie a partiellement cassé (juin 2011). variantes obsolètes (prises cassées, etc...) : Les Esgourdes 5+",
           "coordinate": null,
           "grade": "5",
           "name": "Les Esgourdes",
@@ -19149,7 +19149,7 @@
           "number": 25
         },
         {
-          "comment": "traversée. traverser à droite et sortir dans le 33, L'Écaille. NB : on peut aussi sortir par le 41, Les Oreilles de Cocu ou le 32 (même cotation) et la traversée retour cote 6a.",
+          "comment": "traversée. traverser à droite et sortir dans le 33, L'Écaille. NB : on peut aussi sortir par le 41, Les Oreilles de Cocu ou le 32 (même cotation) et la traversée retour cote 6a.",
           "coordinate": null,
           "grade": "5",
           "name": "La Trabas",
@@ -19229,7 +19229,7 @@
           "comment": "",
           "coordinate": null,
           "grade": "4+",
-          "name": "La Bof !",
+          "name": "La Bof !",
           "number": 37
         },
         {
@@ -19832,7 +19832,7 @@
           "number": 2
         },
         {
-          "comment": "toit, expo, traversée. tout au sommet du massif, sous la platière, au niveau d'un panneau \"Danger, rochers instables\". Partir sous le surplomb, remonter vers la droite en suivant une fissure et sortir directement dans le toit. voir aussi : Le Toit du Koala direct 7a",
+          "comment": "toit, expo, traversée. tout au sommet du massif, sous la platière, au niveau d'un panneau \"Danger, rochers instables\". Partir sous le surplomb, remonter vers la droite en suivant une fissure et sortir directement dans le toit. voir aussi : Le Toit du Koala direct 7a",
           "coordinate": null,
           "grade": "6b",
           "name": "Le Toit du Koala",
@@ -19846,7 +19846,7 @@
           "number": 4
         },
         {
-          "comment": "dalle, surplomb, expo. dalle haute et expo avec un départ surplombant sur le bloc du Baba. voir aussi : La Dalle Verte assis 7a (6c+)",
+          "comment": "dalle, surplomb, expo. dalle haute et expo avec un départ surplombant sur le bloc du Baba. voir aussi : La Dalle Verte assis 7a (6c+)",
           "coordinate": null,
           "grade": "5",
           "name": "La Dalle Verte",
@@ -19937,7 +19937,7 @@
           "number": 17
         },
         {
-          "comment": "dalle, mur, traversée. sur le bloc de La Calanquaise. voir aussi : Froxy Lady 7b+",
+          "comment": "dalle, mur, traversée. sur le bloc de La Calanquaise. voir aussi : Froxy Lady 7b+",
           "coordinate": null,
           "grade": "6a",
           "name": "Le Pontet Bas",
@@ -20028,7 +20028,7 @@
           "number": 30
         },
         {
-          "comment": "expo, traversée. complètement à l'Est du massif, une vingtaine de mètres à gauche des escaliers, un peu en dessous du sommet de la pente. Partir debout sur la droite, traverser sur des grosses prises, passer dans le creux et sortir juste après. voir aussi : 25, Stretchin 7a+ (7b)",
+          "comment": "expo, traversée. complètement à l'Est du massif, une vingtaine de mètres à gauche des escaliers, un peu en dessous du sommet de la pente. Partir debout sur la droite, traverser sur des grosses prises, passer dans le creux et sortir juste après. voir aussi : 25, Stretchin 7a+ (7b)",
           "coordinate": null,
           "grade": "6b",
           "name": "La Crampe à Rachid",
@@ -20659,7 +20659,7 @@
           "number": 3
         },
         {
-          "comment": "mur, traversée, bidoigts. n°D du circuit noir, derrière le 8, L'Envers (circuit TD n°5), sur le bloc de 2, Moselle (\"Mur des Lamentations\"), 20m à l'Est de 68, La Dalle du Feu. Partir d'un petit bloc à droite, descendre légèrement, traverser à gauche sur des bidoigts (points noirs discrets pour les pieds) et sortir dans Balladium direct (flèche rouge et blanche d'un circuit TD+/ED- inachevé), à gauche de 3, Vertibloc (engagé). voir aussi : Balladium direct 6a",
+          "comment": "mur, traversée, bidoigts. n°D du circuit noir, derrière le 8, L'Envers (circuit TD n°5), sur le bloc de 2, Moselle (\"Mur des Lamentations\"), 20m à l'Est de 68, La Dalle du Feu. Partir d'un petit bloc à droite, descendre légèrement, traverser à gauche sur des bidoigts (points noirs discrets pour les pieds) et sortir dans Balladium direct (flèche rouge et blanche d'un circuit TD+/ED- inachevé), à gauche de 3, Vertibloc (engagé). voir aussi : Balladium direct 6a",
           "coordinate": null,
           "grade": "7a",
           "name": "Balladium",
@@ -20673,14 +20673,14 @@
           "number": 5
         },
         {
-          "comment": "traversée. n°F du circuit noir. Partir assis juste en face du 2, Bloc Âgée (circuit TD n°5) avec les mains dans une inversée, traverser à gauche, passer l'angle, poursuivre sur l'autre face et sortir dans Le Cachalot direct (n°9 rouge et blanc d'un circuit TD+/ED- inachevé). voir aussi : Le Cachalot direct 6a",
+          "comment": "traversée. n°F du circuit noir. Partir assis juste en face du 2, Bloc Âgée (circuit TD n°5) avec les mains dans une inversée, traverser à gauche, passer l'angle, poursuivre sur l'autre face et sortir dans Le Cachalot direct (n°9 rouge et blanc d'un circuit TD+/ED- inachevé). voir aussi : Le Cachalot direct 6a",
           "coordinate": null,
           "grade": "7a",
           "name": "Cachalot",
           "number": 6
         },
         {
-          "comment": "traversée. n°G du circuit noir, sur le bloc de 68, La Dalle du Feu et des 1, Les Trois Trous (n°1 rouge du circuit TD n°5). Mise à jour (juin 2007) : la voie d'origine n'est plus réalisable depuis l'effondrement de la partie droite de 68, La Dalle du Feu (n°68 mauve), mais il est toujours possible d'en faire une version raccourcie en sortant par le 1, Les Trois Trous. voir aussi : Totem 8a",
+          "comment": "traversée. n°G du circuit noir, sur le bloc de 68, La Dalle du Feu et des 1, Les Trois Trous (n°1 rouge du circuit TD n°5). Mise à jour (juin 2007) : la voie d'origine n'est plus réalisable depuis l'effondrement de la partie droite de 68, La Dalle du Feu (n°68 mauve), mais il est toujours possible d'en faire une version raccourcie en sortant par le 1, Les Trois Trous. voir aussi : Totem 8a",
           "coordinate": null,
           "grade": "7b+",
           "name": "Scolopendre",
@@ -20694,14 +20694,14 @@
           "number": 8
         },
         {
-          "comment": "traversée. n°I du circuit noir, sur le bloc situé à gauche du 39, Le Caniveau (circuit TD n°5), près du 1, Le Pied Là. Partir à droite de l'arbre, traverser à droite, passer l'angle arrondi et poursuivre dans une seconde face déversante qui se termine en couloir bouché. voir aussi : Encore une Journée de Foutue 7c+",
+          "comment": "traversée. n°I du circuit noir, sur le bloc situé à gauche du 39, Le Caniveau (circuit TD n°5), près du 1, Le Pied Là. Partir à droite de l'arbre, traverser à droite, passer l'angle arrondi et poursuivre dans une seconde face déversante qui se termine en couloir bouché. voir aussi : Encore une Journée de Foutue 7c+",
           "coordinate": null,
           "grade": "7a+",
           "name": "Sacrée Soirée",
           "number": 9
         },
         {
-          "comment": "traversée. n°J du circuit noir, sous le rebord de la platière. Partir dans 41, Pour Quelques Betteraves ! (n°41 rouge du circuit TD n°5) mais continuer à traverser à gauche sur un second bloc après la fissure. NB : cette traversée est située juste à gauche d'une zone de défens incluant le 42, Eh ! Encore.",
+          "comment": "traversée. n°J du circuit noir, sous le rebord de la platière. Partir dans 41, Pour Quelques Betteraves ! (n°41 rouge du circuit TD n°5) mais continuer à traverser à gauche sur un second bloc après la fissure. NB : cette traversée est située juste à gauche d'une zone de défens incluant le 42, Eh ! Encore.",
           "coordinate": null,
           "grade": "7b",
           "name": "Le Kilo de Betteraves",
@@ -20743,7 +20743,7 @@
           "number": 15
         },
         {
-          "comment": "toit, départ assis. n°P du circuit noir. Partir assis au fond de la grotte et sortir dans le 33, L'Abri à Bras (circuit TD- n°3). voir aussi : 33, L'Abri à Bras 5-, L'Abri à Bras assis 6a",
+          "comment": "toit, départ assis. n°P du circuit noir. Partir assis au fond de la grotte et sortir dans le 33, L'Abri à Bras (circuit TD- n°3). voir aussi : 33, L'Abri à Bras 5-, L'Abri à Bras assis 6a",
           "coordinate": null,
           "grade": "7b+",
           "name": "Le Plafond",
@@ -20757,7 +20757,7 @@
           "number": 17
         },
         {
-          "comment": "mur, plats. n°R du circuit noir, entre le 30, La Dher (circuit TD- n°3) et le 37, Réta Mini. Partir MG sur une verticale fuyante et une sorte de trou inversé MD, et sortir sur une mini rampe plate. NB : la voie a été récemment rebrossée (février 2012).",
+          "comment": "mur, plats. n°R du circuit noir, entre le 30, La Dher (circuit TD- n°3) et le 37, Réta Mini. Partir MG sur une verticale fuyante et une sorte de trou inversé MD, et sortir sur une mini rampe plate. NB : la voie a été récemment rebrossée (février 2012).",
           "coordinate": null,
           "grade": "7a",
           "name": "Rondeurs Indigestes",
@@ -20785,7 +20785,7 @@
           "number": 21
         },
         {
-          "comment": "traversée. n°V du circuit noir, à droite du 26, Anse Lazio , en contrebas du bloc de 34, Les Trous de gauche de la Caroline. Partir tout à droite, traverser à gauche, passer l'angle par le bas et sortir dans la seconde face par une fissure. NB : la voie doit actuellement être rebrossée (décembre 2007). voir aussi : L'Année des Méduses 8a+",
+          "comment": "traversée. n°V du circuit noir, à droite du 26, Anse Lazio , en contrebas du bloc de 34, Les Trous de gauche de la Caroline. Partir tout à droite, traverser à gauche, passer l'angle par le bas et sortir dans la seconde face par une fissure. NB : la voie doit actuellement être rebrossée (décembre 2007). voir aussi : L'Année des Méduses 8a+",
           "coordinate": null,
           "grade": "7b+",
           "name": "Bonne Année, Bonne Santé",
@@ -20806,14 +20806,14 @@
           "number": 24
         },
         {
-          "comment": "toit, traversée. n°Y du circuit noir, sur le bloc d'arrivée du circuit blanc, complètement à l'Est du massif, une vingtaine de mètres à gauche des escaliers, un peu en dessous du sommet de la pente. Partir assis au fond à droite, remonter dans le dévers pour rejoindre le départ du 31, La Crampe à Rachid , traverser à gauche comme dans ce dernier, passer dans le creux du bloc, poursuivre sur des plats et sortir en réta tout au bout (2m après l'échappatoire évidente du 31, La Crampe à Rachid ), en suivant une dernière flèche noire peu visible à 50cm du sol. NB : la vidéo ne montre pas les derniers mouvements de la version d'origine. voir aussi : 31, La Crampe à Rachid 6b",
+          "comment": "toit, traversée. n°Y du circuit noir, sur le bloc d'arrivée du circuit blanc, complètement à l'Est du massif, une vingtaine de mètres à gauche des escaliers, un peu en dessous du sommet de la pente. Partir assis au fond à droite, remonter dans le dévers pour rejoindre le départ du 31, La Crampe à Rachid , traverser à gauche comme dans ce dernier, passer dans le creux du bloc, poursuivre sur des plats et sortir en réta tout au bout (2m après l'échappatoire évidente du 31, La Crampe à Rachid ), en suivant une dernière flèche noire peu visible à 50cm du sol. NB : la vidéo ne montre pas les derniers mouvements de la version d'origine. voir aussi : 31, La Crampe à Rachid 6b",
           "coordinate": null,
           "grade": "7a+",
           "name": "Stretchin",
           "number": 25
         },
         {
-          "comment": "surplomb, départ assis, traversée. n°Z du circuit noir, sur le plateau, quelques mètres sur la gauche après avoir remonté les escaliers au dessus d'Hibernatus. Partir assis dans le surplomb avec des bidoigts, dynamiser sur le sommet du bloc, traverser à droite et sortir en réta au niveau d'un gros trou qui traverse l'épaisseur du bloc (flèche noire). voir aussi : Dévertige direct 7a, Dévertige gauche 7a+",
+          "comment": "surplomb, départ assis, traversée. n°Z du circuit noir, sur le plateau, quelques mètres sur la gauche après avoir remonté les escaliers au dessus d'Hibernatus. Partir assis dans le surplomb avec des bidoigts, dynamiser sur le sommet du bloc, traverser à droite et sortir en réta au niveau d'un gros trou qui traverse l'épaisseur du bloc (flèche noire). voir aussi : Dévertige direct 7a, Dévertige gauche 7a+",
           "coordinate": null,
           "grade": "7b",
           "name": "Dévertige",
@@ -21304,7 +21304,7 @@
           "number": 3
         },
         {
-          "comment": "traversée. dans le secteur Dampierre. Voie en continuité en traversée au milieu du surplomb de la Butte Ronde (6a avec la sortie tout à droite de celui-ci). voir aussi : La Traversée de la Maincourte assis 6c",
+          "comment": "traversée. dans le secteur Dampierre. Voie en continuité en traversée au milieu du surplomb de la Butte Ronde (6a avec la sortie tout à droite de celui-ci). voir aussi : La Traversée de la Maincourte assis 6c",
           "coordinate": null,
           "grade": "6a",
           "name": "La Traversée de la Maincourte",
@@ -21318,7 +21318,7 @@
           "number": 5
         },
         {
-          "comment": "surplomb, expo. dans le secteur Dampierre (surplomb de la Butte Ronde). voir aussi : La Barbare assis 7a+ (7b)",
+          "comment": "surplomb, expo. dans le secteur Dampierre (surplomb de la Butte Ronde). voir aussi : La Barbare assis 7a+ (7b)",
           "coordinate": null,
           "grade": "6c+",
           "name": "La Barbare",
@@ -21332,7 +21332,7 @@
           "number": 7
         },
         {
-          "comment": "mur, traversée. dans le secteur Dampierre. Traverser à droite et sortir dans 7, La Tronçonneuse (n°7 rouge). voir aussi : Flynt 7a+",
+          "comment": "mur, traversée. dans le secteur Dampierre. Traverser à droite et sortir dans 7, La Tronçonneuse (n°7 rouge). voir aussi : Flynt 7a+",
           "coordinate": null,
           "grade": "5+",
           "name": "La Traversée de la Tronçonneuse",
@@ -21360,7 +21360,7 @@
           "number": 9
         },
         {
-          "comment": "mur, réglettes. sur le bloc de Tout Couleur  ; sortie directe.",
+          "comment": "mur, réglettes. sur le bloc de Tout Couleur  ; sortie directe.",
           "coordinate": null,
           "grade": "5-",
           "name": "L'Enclume",
@@ -21423,7 +21423,7 @@
           "number": 18
         },
         {
-          "comment": "dévers, réglettes. mur déversant en départ debout situé sous la platière. voir aussi : Le Toit aux Grattons du fond 7c, Le Toit aux Grattons du fond rallongé 7c+",
+          "comment": "dévers, réglettes. mur déversant en départ debout situé sous la platière. voir aussi : Le Toit aux Grattons du fond 7c, Le Toit aux Grattons du fond rallongé 7c+",
           "coordinate": null,
           "grade": "7a",
           "name": "Le Toit aux Grattons de Maincourt",
@@ -21444,7 +21444,7 @@
           "number": 21
         },
         {
-          "comment": "dalle. juste à gauche du 8, Le Phlagmite , sans utiliser l'arbre !",
+          "comment": "dalle. juste à gauche du 8, Le Phlagmite , sans utiliser l'arbre !",
           "coordinate": null,
           "grade": "5-",
           "name": "La Photocopieuse",
@@ -22956,7 +22956,7 @@
           "comment": "dévers. mur déversant.",
           "coordinate": null,
           "grade": "4-",
-          "name": "Embraye Sec !",
+          "name": "Embraye Sec !",
           "number": 12
         },
         {
@@ -23191,7 +23191,7 @@
           "number": 35
         },
         {
-          "comment": "dalle, haut. attention : désescalade par le même chemin ! (sinon rappel ou saut sur le bloc central toujours possibles...)",
+          "comment": "dalle, haut. attention : désescalade par le même chemin ! (sinon rappel ou saut sur le bloc central toujours possibles...)",
           "coordinate": null,
           "grade": "3+",
           "name": "La Grande Dalle",
@@ -23759,7 +23759,7 @@
           "number": 15
         },
         {
-          "comment": "dévers, bidoigts. NB : passage coté 5a à l'origine avant que le sol se creuse.",
+          "comment": "dévers, bidoigts. NB : passage coté 5a à l'origine avant que le sol se creuse.",
           "coordinate": null,
           "grade": "6b",
           "name": "La Barre Fixe",
@@ -24081,7 +24081,7 @@
           "number": 44
         },
         {
-          "comment": "juste à gauche du 26, Le Bouton (n°26 noir). voir aussi : 44 4",
+          "comment": "juste à gauche du 26, Le Bouton (n°26 noir). voir aussi : 44 4",
           "coordinate": null,
           "grade": "5",
           "name": "",
@@ -24312,14 +24312,14 @@
           "number": 66
         },
         {
-          "comment": "expo, réglettes. en face du n°16 orange. voir aussi : 67bis 5",
+          "comment": "expo, réglettes. en face du n°16 orange. voir aussi : 67bis 5",
           "coordinate": null,
           "grade": "4",
           "name": "Le Gratton Expo",
           "number": 67
         },
         {
-          "comment": "en départ du sol. voir aussi : 67, Le Gratton Expo 4",
+          "comment": "en départ du sol. voir aussi : 67, Le Gratton Expo 4",
           "coordinate": null,
           "grade": "5",
           "name": "",
@@ -24382,7 +24382,7 @@
           "number": 75
         },
         {
-          "comment": "surplomb. au niveau du n°20 orange. voir aussi : 76bis 5-",
+          "comment": "surplomb. au niveau du n°20 orange. voir aussi : 76bis 5-",
           "coordinate": null,
           "grade": "4+",
           "name": "Le Surplomb en Z",
@@ -24424,14 +24424,14 @@
           "number": 80
         },
         {
-          "comment": "traversée. partir 1m à droite du n°25 orange. voir aussi : 81bis, Le Voile Rouge 5+",
+          "comment": "traversée. partir 1m à droite du n°25 orange. voir aussi : 81bis, Le Voile Rouge 5+",
           "coordinate": null,
           "grade": "4",
           "name": "",
           "number": 81
         },
         {
-          "comment": "traversée. prolongement du n°81 bleu ; sortie 3m à droite. voir aussi : 81 4",
+          "comment": "traversée. prolongement du n°81 bleu ; sortie 3m à droite. voir aussi : 81 4",
           "coordinate": null,
           "grade": "5+",
           "name": "Le Voile Rouge",
@@ -24587,7 +24587,7 @@
           "number": 9
         },
         {
-          "comment": "dévers, jeté. voie initialement 6b, mais recotée depuis qu'une pierre au sol a été enlevée. voir aussi : Le Lancer assis 7b (7b+)",
+          "comment": "dévers, jeté. voie initialement 6b, mais recotée depuis qu'une pierre au sol a été enlevée. voir aussi : Le Lancer assis 7b (7b+)",
           "coordinate": null,
           "grade": "6c+",
           "name": "Le Lancer",
@@ -24699,14 +24699,14 @@
           "number": 25
         },
         {
-          "comment": "mur, arête, plats. angle situé juste à droite du 44. NB : la voie a été recotée depuis que le \"bouton\" caractéristique qui lui donnait son nom a cassé.",
+          "comment": "mur, arête, plats. angle situé juste à droite du 44. NB : la voie a été recotée depuis que le \"bouton\" caractéristique qui lui donnait son nom a cassé.",
           "coordinate": null,
           "grade": "7a",
           "name": "Le Bouton",
           "number": 26
         },
         {
-          "comment": "dalle, réglettes. NB : comme variante, il est possible de finir dans le surplomb du bloc en face.",
+          "comment": "dalle, réglettes. NB : comme variante, il est possible de finir dans le surplomb du bloc en face.",
           "coordinate": null,
           "grade": "5+",
           "name": "La Singulière",
@@ -24972,7 +24972,7 @@
           "number": 2
         },
         {
-          "comment": "pilier, réta, plats. pilier direct avec une sortie engagée en réta sur des plats. NB : une variante en 6c un peu morpho est devenue classique depuis qu'une prise MD dans la face de droite a été brossée. voir aussi : Excalibur droite 6b+ (6c), La Traversée d'Excalibur 7a+",
+          "comment": "pilier, réta, plats. pilier direct avec une sortie engagée en réta sur des plats. NB : une variante en 6c un peu morpho est devenue classique depuis qu'une prise MD dans la face de droite a été brossée. voir aussi : Excalibur droite 6b+ (6c), La Traversée d'Excalibur 7a+",
           "coordinate": null,
           "grade": "7a",
           "name": "Excalibur",
@@ -24986,14 +24986,14 @@
           "number": 4
         },
         {
-          "comment": "surplomb, trous. partir assis tout en bas à gauche, remonter le dévers en traversée ascendante et sortir sur la droite sans poser les pieds sur le bloc accolé à droite. voir aussi : L'Homme à la Dent Creuse 7b, Plus Fort que le Crabe 7b+",
+          "comment": "surplomb, trous. partir assis tout en bas à gauche, remonter le dévers en traversée ascendante et sortir sur la droite sans poser les pieds sur le bloc accolé à droite. voir aussi : L'Homme à la Dent Creuse 7b, Plus Fort que le Crabe 7b+",
           "coordinate": null,
           "grade": "7a+",
           "name": "Beatle Juice",
           "number": 5
         },
         {
-          "comment": "dévers, plats. voie directe sur le bloc accolé à droite de 5, Beatle Juice. NB : un vieux numéro 7 noir est également inscrit au milieu de la voie.",
+          "comment": "dévers, plats. voie directe sur le bloc accolé à droite de 5, Beatle Juice. NB : un vieux numéro 7 noir est également inscrit au milieu de la voie.",
           "coordinate": null,
           "grade": "6a",
           "name": "Santa Barbara",
@@ -25035,7 +25035,7 @@
           "number": 11
         },
         {
-          "comment": "traversée. au dessus et légèrement à gauche du bloc des numéros 7 à 11 noir. NB : actuellement lichéneux (printemps 2005).",
+          "comment": "traversée. au dessus et légèrement à gauche du bloc des numéros 7 à 11 noir. NB : actuellement lichéneux (printemps 2005).",
           "coordinate": null,
           "grade": "7a",
           "name": "La Fête de Famille",
@@ -25098,7 +25098,7 @@
           "number": 19
         },
         {
-          "comment": "traversée. juste au dessus et à gauche de la Route du Renardeau. Version avec les prises du haut. Partir à gauche de la coulée verte et sortir juste après l'angle par de bons de trous sur la gauche (18 mouvements). voir aussi : Poetic Champion Traverse (par le bas) 7b+",
+          "comment": "traversée. juste au dessus et à gauche de la Route du Renardeau. Version avec les prises du haut. Partir à gauche de la coulée verte et sortir juste après l'angle par de bons de trous sur la gauche (18 mouvements). voir aussi : Poetic Champion Traverse (par le bas) 7b+",
           "coordinate": null,
           "grade": "7a",
           "name": "Poetic Champion Traverse",
@@ -25112,14 +25112,14 @@
           "number": 20
         },
         {
-          "comment": "mur, arête. au dessus de la Route du Renardeau, juste avant qu'elle ne rejoigne la Route des Gorges de Franchard. Arête de droite sur le bloc juste derrière Paris-Chamonix. voir aussi : Jambon Fumé 7a",
+          "comment": "mur, arête. au dessus de la Route du Renardeau, juste avant qu'elle ne rejoigne la Route des Gorges de Franchard. Arête de droite sur le bloc juste derrière Paris-Chamonix. voir aussi : Jambon Fumé 7a",
           "coordinate": null,
           "grade": "6b",
           "name": "Jambon Volant",
           "number": 21
         },
         {
-          "comment": "dalle, haut, avec corde. de l'autre côté de la Route des Gorges de Franchard, en face de la Route du Renardeau. NB : actuellement lichéneux (janvier 2008) ; corde recommandée.",
+          "comment": "dalle, haut, avec corde. de l'autre côté de la Route des Gorges de Franchard, en face de la Route du Renardeau. NB : actuellement lichéneux (janvier 2008) ; corde recommandée.",
           "coordinate": null,
           "grade": "7a",
           "name": "Mosquito Coast",
@@ -25196,14 +25196,14 @@
           "number": 32
         },
         {
-          "comment": "mur. au dessus de 34, Duel. NB : la voie était cotée 7a avant que l'inversée ne commence à casser, et il est possible qu'elle ne soit plus réalisable dans son état actuel (juin 2009).",
+          "comment": "mur. au dessus de 34, Duel. NB : la voie était cotée 7a avant que l'inversée ne commence à casser, et il est possible qu'elle ne soit plus réalisable dans son état actuel (juin 2009).",
           "coordinate": null,
           "grade": "7b",
           "name": "La Teigne",
           "number": 33
         },
         {
-          "comment": "dalle, réglettes. au dessus de la Route Amédée, en direction de Franchard Meyer. NB : prise de pied cassée aux 2/3 (novembre 2004). voir aussi : Duel direct 8a+",
+          "comment": "dalle, réglettes. au dessus de la Route Amédée, en direction de Franchard Meyer. NB : prise de pied cassée aux 2/3 (novembre 2004). voir aussi : Duel direct 8a+",
           "coordinate": null,
           "grade": "8a",
           "name": "Duel",
@@ -25671,7 +25671,7 @@
           "number": 4
         },
         {
-          "comment": "mur, arête. un peu morpho. voir aussi : Super Flux 7b+",
+          "comment": "mur, arête. un peu morpho. voir aussi : Super Flux 7b+",
           "coordinate": null,
           "grade": "5+",
           "name": "",
@@ -25734,7 +25734,7 @@
           "number": 11
         },
         {
-          "comment": "mur, jeté. prise cassée : départ devenu un peu plus difficile.",
+          "comment": "mur, jeté. prise cassée : départ devenu un peu plus difficile.",
           "coordinate": null,
           "grade": "4+",
           "name": "",
@@ -28137,7 +28137,7 @@
           "number": 45
         },
         {
-          "comment": "mur, arête, réglettes. avec l'arête en sortie. voir aussi : La Face Ouest du Dru directe 6c",
+          "comment": "mur, arête, réglettes. avec l'arête en sortie. voir aussi : La Face Ouest du Dru directe 6c",
           "coordinate": null,
           "grade": "6a",
           "name": "La Face Ouest du Dru",
@@ -28151,7 +28151,7 @@
           "number": 47
         },
         {
-          "comment": "dalle. sur la face de droite du bloc de 47, La Bissoufflante droite , 1m environ à droite de l'arête. NB : la voie a été recotée du fait d'un gratton cassé.",
+          "comment": "dalle. sur la face de droite du bloc de 47, La Bissoufflante droite , 1m environ à droite de l'arête. NB : la voie a été recotée du fait d'un gratton cassé.",
           "coordinate": null,
           "grade": "6c+",
           "name": "Le Mur à Antoine (Les Ultimes Grattons )",
@@ -28426,21 +28426,21 @@
           "comment": "",
           "coordinate": null,
           "grade": "3+",
-          "name": "En Veux-tu ?",
+          "name": "En Veux-tu ?",
           "number": 29
         },
         {
           "comment": "",
           "coordinate": null,
           "grade": "2",
-          "name": "En Voici !",
+          "name": "En Voici !",
           "number": "29bis"
         },
         {
           "comment": "",
           "coordinate": null,
           "grade": "3+",
-          "name": "En Voilà !",
+          "name": "En Voilà !",
           "number": "29ter"
         },
         {
@@ -28454,7 +28454,7 @@
           "comment": "",
           "coordinate": null,
           "grade": "3+",
-          "name": "Toujours Plus !",
+          "name": "Toujours Plus !",
           "number": "30bis"
         },
         {
@@ -28489,7 +28489,7 @@
           "comment": "",
           "coordinate": null,
           "grade": "3",
-          "name": "Ras le Bol !",
+          "name": "Ras le Bol !",
           "number": "33bis"
         },
         {
@@ -28514,7 +28514,7 @@
           "number": 36
         },
         {
-          "comment": "qui cote 3c, comporte une écaille qui menace de se décoller : cette version est donc déconseillée.",
+          "comment": "qui cote 3c, comporte une écaille qui menace de se décoller : cette version est donc déconseillée.",
           "coordinate": null,
           "grade": "2+",
           "name": "La Résurrection",
@@ -28566,7 +28566,7 @@
           "comment": "",
           "coordinate": null,
           "grade": "3+",
-          "name": "N'en Jeté Plus !",
+          "name": "N'en Jeté Plus !",
           "number": "43bis"
         },
         {
@@ -29397,7 +29397,7 @@
           "number": "2bis"
         },
         {
-          "comment": "surplomb. voir aussi : L'Ami Sanglier du fond 6c+ (7a)",
+          "comment": "surplomb. voir aussi : L'Ami Sanglier du fond 6c+ (7a)",
           "coordinate": null,
           "grade": "6a",
           "name": "L'Ami Sanglier",
@@ -29509,7 +29509,7 @@
           "number": 16
         },
         {
-          "comment": "dévers, inversée. voir aussi : en double jeté 6c",
+          "comment": "dévers, inversée. voir aussi : en double jeté 6c",
           "coordinate": null,
           "grade": "6a",
           "name": "Dallain",
@@ -29635,7 +29635,7 @@
           "number": 30
         },
         {
-          "comment": "mur. voir aussi : La Grève des Nains assis",
+          "comment": "mur. voir aussi : La Grève des Nains assis",
           "coordinate": null,
           "grade": "6a",
           "name": "La Grève des Nains",
@@ -30744,7 +30744,7 @@
           "number": 42
         },
         {
-          "comment": "dalle. sans l'arête ; 30m à l'Est du n°43",
+          "comment": "dalle. sans l'arête ; 30m à l'Est du n°43",
           "coordinate": null,
           "grade": "3",
           "name": "",
@@ -31622,7 +31622,7 @@
           "number": 25
         },
         {
-          "comment": "fissure, expo. 2m à droite du 25, Le Hachoir. voir aussi : Chair d'Ampoule 7a",
+          "comment": "fissure, expo. 2m à droite du 25, Le Hachoir. voir aussi : Chair d'Ampoule 7a",
           "coordinate": null,
           "grade": "6a",
           "name": "",
@@ -31699,7 +31699,7 @@
           "number": 35
         },
         {
-          "comment": "fissure, haut. une grande classique du genre !",
+          "comment": "fissure, haut. une grande classique du genre !",
           "coordinate": null,
           "grade": "6c",
           "name": "La Fissure de la Liberté",
@@ -31764,7 +31764,7 @@
           "comment": "arête, expo, réta.",
           "coordinate": null,
           "grade": "4+",
-          "name": "Marron Chaud !",
+          "name": "Marron Chaud !",
           "number": 4
         },
         {
@@ -34511,7 +34511,7 @@
           "number": 21
         },
         {
-          "comment": "traversée. traversée aux prises un peu sableuses. voir aussi : Dérive rallongée 6a+ (6b)",
+          "comment": "traversée. traversée aux prises un peu sableuses. voir aussi : Dérive rallongée 6a+ (6b)",
           "coordinate": null,
           "grade": "6b",
           "name": "Dérive",
@@ -34546,7 +34546,7 @@
           "number": 26
         },
         {
-          "comment": "fissure, traversée, inversée. traversée ascendante avec départ en dièdre. voir aussi : La Directe du Dièdre 6c (7a)",
+          "comment": "fissure, traversée, inversée. traversée ascendante avec départ en dièdre. voir aussi : La Directe du Dièdre 6c (7a)",
           "coordinate": null,
           "grade": "5+",
           "name": "Effet Dièdre",
@@ -34651,7 +34651,7 @@
           "number": 41
         },
         {
-          "comment": "mur. mur déversant avec une dalle plate au pied. NB : un arbre pendait autrefois de la fissure de sortie, d'où l'ancien nom de la voie. voir aussi : La Directe de la Voie de l'Arbre 7a",
+          "comment": "mur. mur déversant avec une dalle plate au pied. NB : un arbre pendait autrefois de la fissure de sortie, d'où l'ancien nom de la voie. voir aussi : La Directe de la Voie de l'Arbre 7a",
           "coordinate": null,
           "grade": "6b",
           "name": "La Voie de l'Arbre / Le Pornographe",
@@ -35510,7 +35510,7 @@
           "number": 1
         },
         {
-          "comment": "mur, réglettes. voir aussi : Rude Journée 7a",
+          "comment": "mur, réglettes. voir aussi : Rude Journée 7a",
           "coordinate": null,
           "grade": "4",
           "name": "",
@@ -35531,7 +35531,7 @@
           "number": 3
         },
         {
-          "comment": "mur. voir aussi : Cheval de 3 6a",
+          "comment": "mur. voir aussi : Cheval de 3 6a",
           "coordinate": null,
           "grade": "4",
           "name": "Marée Haute",
@@ -35780,7 +35780,7 @@
           "number": 11
         },
         {
-          "comment": "dalle. dalle directe à droite de l'arête de sortie du 20, Le Grand Bleu. NB : la version originale de cette dalle sortait sur la droite (7b+).",
+          "comment": "dalle. dalle directe à droite de l'arête de sortie du 20, Le Grand Bleu. NB : la version originale de cette dalle sortait sur la droite (7b+).",
           "coordinate": null,
           "grade": "7a+",
           "name": "La Dalle Rouillée",
@@ -36095,7 +36095,7 @@
           "comment": "saut.",
           "coordinate": null,
           "grade": "1+",
-          "name": "Hop !",
+          "name": "Hop !",
           "number": 21
         },
         {
@@ -36836,7 +36836,7 @@
           "comment": "",
           "coordinate": null,
           "grade": "3+",
-          "name": "Le Petit !",
+          "name": "Le Petit !",
           "number": 24
         },
         {
@@ -37224,7 +37224,7 @@
           "number": 4
         },
         {
-          "comment": "proue. départ debout de Soupçon. voir aussi : Soupçon 7a",
+          "comment": "proue. départ debout de Soupçon. voir aussi : Soupçon 7a",
           "coordinate": null,
           "grade": "5+",
           "name": "Soupçon debout",
@@ -37315,7 +37315,7 @@
           "number": 17
         },
         {
-          "comment": "dalle. dalle directe : 5c.",
+          "comment": "dalle. dalle directe : 5c.",
           "coordinate": null,
           "grade": "6b",
           "name": "L'Ellipse",
@@ -40717,7 +40717,7 @@
           "number": 4
         },
         {
-          "comment": "mur, arête, plats. à gauche de L'Île Sentinelle , en partant avec une règle verticale main droite et en utilisant l'arête de gauche. NB : la flèche a été repeinte un peu trop à droite. voir aussi : L'Île Sentinelle 6c+ (7a)",
+          "comment": "mur, arête, plats. à gauche de L'Île Sentinelle , en partant avec une règle verticale main droite et en utilisant l'arête de gauche. NB : la flèche a été repeinte un peu trop à droite. voir aussi : L'Île Sentinelle 6c+ (7a)",
           "coordinate": null,
           "grade": "6c",
           "name": "Le Croazou",
@@ -40843,14 +40843,14 @@
           "number": 22
         },
         {
-          "comment": "mur, fissure. à gauche du n°14 bleu. NB : du fait d'une renumérotation récente, cette voie est confondue dans certains topos avec 22, Pictionary (n°22 blanc situé sur la face de gauche du même bloc). Pour la même raison, il faut également lire \"n°23 blanc\" sur la photo de situation ci-dessous. voir aussi : Condition d'Oubli 7a",
+          "comment": "mur, fissure. à gauche du n°14 bleu. NB : du fait d'une renumérotation récente, cette voie est confondue dans certains topos avec 22, Pictionary (n°22 blanc situé sur la face de gauche du même bloc). Pour la même raison, il faut également lire \"n°23 blanc\" sur la photo de situation ci-dessous. voir aussi : Condition d'Oubli 7a",
           "coordinate": null,
           "grade": "6b",
           "name": "Contre l'Oubli",
           "number": 23
         },
         {
-          "comment": "au dessus de La Dame de Berlin. voir aussi : Voyage à Cythère assis 7a+ (7b)",
+          "comment": "au dessus de La Dame de Berlin. voir aussi : Voyage à Cythère assis 7a+ (7b)",
           "coordinate": null,
           "grade": "6b",
           "name": "Voyage à Cythère",
@@ -42820,14 +42820,14 @@
           "number": 3
         },
         {
-          "comment": "haut, monodoigts, trous. près de la route, sur le grand bloc sur la droite du secteur. NB : ring en place pour faire une moulinette.",
+          "comment": "haut, monodoigts, trous. près de la route, sur le grand bloc sur la droite du secteur. NB : ring en place pour faire une moulinette.",
           "coordinate": null,
           "grade": "6c",
           "name": "Big Jim",
           "number": 4
         },
         {
-          "comment": "traversée, trous. sur le bloc en face de 7, La Baleine. Partir à droite, traverser sur des gros trous et sortir dans le 5, Penchant Fatal. NB : on pourra éviter le bidoigt qui a été taillé au niveau du gros plat...",
+          "comment": "traversée, trous. sur le bloc en face de 7, La Baleine. Partir à droite, traverser sur des gros trous et sortir dans le 5, Penchant Fatal. NB : on pourra éviter le bidoigt qui a été taillé au niveau du gros plat...",
           "coordinate": null,
           "grade": "6c",
           "name": "Le Dolmen",
@@ -42876,7 +42876,7 @@
           "number": 11
         },
         {
-          "comment": "dévers, arête. arête déversante caractéristique sur la gauche du secteur (6c en départ assis). voir aussi : Envolage 6c",
+          "comment": "dévers, arête. arête déversante caractéristique sur la gauche du secteur (6c en départ assis). voir aussi : Envolage 6c",
           "coordinate": null,
           "grade": "6a+",
           "name": "Les Petits Vérins",
@@ -42939,14 +42939,14 @@
           "number": 20
         },
         {
-          "comment": "traversée, plats. traversée sur des aplats, près du sommet du massif. NB : actuellement moussu (juin 2006).",
+          "comment": "traversée, plats. traversée sur des aplats, près du sommet du massif. NB : actuellement moussu (juin 2006).",
           "coordinate": null,
           "grade": "7a",
           "name": "Le Rebord Retors",
           "number": 21
         },
         {
-          "comment": "mur, arête, traversée. traversée située vers le sommet du massif, à droite du 21, Le Rebord Retors et sortant juste après un angle. NB : la traversée a été rebrossée en mai 2006.",
+          "comment": "mur, arête, traversée. traversée située vers le sommet du massif, à droite du 21, Le Rebord Retors et sortant juste après un angle. NB : la traversée a été rebrossée en mai 2006.",
           "coordinate": null,
           "grade": "7a",
           "name": "La Prise Clé",
@@ -43044,7 +43044,7 @@
           "number": "32bis"
         },
         {
-          "comment": "mur. mur en traversée ascendante juste à gauche du 32bis, Les Beaux Quartiers  ; sortie commune avec 31bis, Le Mur du Son.",
+          "comment": "mur. mur en traversée ascendante juste à gauche du 32bis, Les Beaux Quartiers  ; sortie commune avec 31bis, Le Mur du Son.",
           "coordinate": null,
           "grade": "7a",
           "name": "Arc Angel",
@@ -43072,7 +43072,7 @@
           "number": 35
         },
         {
-          "comment": "réta, plats. réta sur une rampe oblique lisse tout au sommet du secteur. voir aussi : Le Chat Noir 6c (7a)",
+          "comment": "réta, plats. réta sur une rampe oblique lisse tout au sommet du secteur. voir aussi : Le Chat Noir 6c (7a)",
           "coordinate": null,
           "grade": "6b+",
           "name": "Le Chat de Gouttière",
@@ -44623,7 +44623,7 @@
           "number": 3
         },
         {
-          "comment": "arête. arête par la gauche. voir aussi : Du Coq à l'Âne 7b+ (7c)",
+          "comment": "arête. arête par la gauche. voir aussi : Du Coq à l'Âne 7b+ (7c)",
           "coordinate": null,
           "grade": "5+",
           "name": "",
@@ -45697,7 +45697,7 @@
           "number": 5
         },
         {
-          "comment": "toit, traversée. traverser à gauche sous le toit et sortir à gauche de la proue au niveau de la flèche rouge voir aussi : Destroy Men (sortie directe) 7a",
+          "comment": "toit, traversée. traverser à gauche sous le toit et sortir à gauche de la proue au niveau de la flèche rouge voir aussi : Destroy Men (sortie directe) 7a",
           "coordinate": null,
           "grade": "6c",
           "name": "Destroy Men",
@@ -45774,7 +45774,7 @@
           "number": 15
         },
         {
-          "comment": "jeté, trous. départ assis direct (départ debout en 5c avec l'ancien fléchage). voir aussi : Aux Doigts et à l'Œil assis 7a",
+          "comment": "jeté, trous. départ assis direct (départ debout en 5c avec l'ancien fléchage). voir aussi : Aux Doigts et à l'Œil assis 7a",
           "coordinate": null,
           "grade": "6b+",
           "name": "Aux Doigts et à l'Œil",
@@ -46508,7 +46508,7 @@
           "number": 5
         },
         {
-          "comment": "mur, expo. partir dans la fosse située à droite de l'arête de Élucubration / Le Quark et sortir tout droit. NB : cette voie, cotée à l'origine 7b est devenue beaucoup plus facile depuis que le sol s'est ensablé (une trentaine de centimètres en quelques décennies !) voir aussi : Gravillon (Graviton gauche) 6b+",
+          "comment": "mur, expo. partir dans la fosse située à droite de l'arête de Élucubration / Le Quark et sortir tout droit. NB : cette voie, cotée à l'origine 7b est devenue beaucoup plus facile depuis que le sol s'est ensablé (une trentaine de centimètres en quelques décennies !) voir aussi : Gravillon (Graviton gauche) 6b+",
           "coordinate": null,
           "grade": "7a",
           "name": "Graviton",
@@ -46550,7 +46550,7 @@
           "number": 9
         },
         {
-          "comment": "mur, monodoigts. NB : le départ assis cote 7a. voir aussi : Danger Majeur assis 7a",
+          "comment": "mur, monodoigts. NB : le départ assis cote 7a. voir aussi : Danger Majeur assis 7a",
           "coordinate": null,
           "grade": "6a",
           "name": "Danger Majeur",
@@ -46585,7 +46585,7 @@
           "number": 14
         },
         {
-          "comment": "mur. entre le 6, Le Pied de Nez et le 7, Coup du Point , sans les prises à droite de l'angle. NB : la méthode d'ouverture (morpho) n'utilise même que les prises du mur.",
+          "comment": "mur. entre le 6, Le Pied de Nez et le 7, Coup du Point , sans les prises à droite de l'angle. NB : la méthode d'ouverture (morpho) n'utilise même que les prises du mur.",
           "coordinate": null,
           "grade": "7a",
           "name": "La Lime à Ongles",
@@ -46599,7 +46599,7 @@
           "number": 15
         },
         {
-          "comment": "dalle, réglettes. dalle directe située à droite du 11, Ligne Sécante , sans la bonne prise de pied à droite. 7a avec le plat en haut à gauche (7b en l'éliminant). NB : la voie est devenue beaucoup plus facile depuis que le sol s'est ensablé (30cm en quelques décennies !) surtout si l'on part d'un crash-pad...",
+          "comment": "dalle, réglettes. dalle directe située à droite du 11, Ligne Sécante , sans la bonne prise de pied à droite. 7a avec le plat en haut à gauche (7b en l'éliminant). NB : la voie est devenue beaucoup plus facile depuis que le sol s'est ensablé (30cm en quelques décennies !) surtout si l'on part d'un crash-pad...",
           "coordinate": null,
           "grade": "7b",
           "name": "Lucifer",
@@ -46627,7 +46627,7 @@
           "number": "17bis"
         },
         {
-          "comment": "surplomb, proue. angle déversant à droite du 17, Vol au Vent. NB : cette voie, parfois appelée incorrectement \"L'Enlevée\", a été brossée et ouverte par Jo Montchaussé et des amis. voir aussi : Le Niveau Baisse 7b+",
+          "comment": "surplomb, proue. angle déversant à droite du 17, Vol au Vent. NB : cette voie, parfois appelée incorrectement \"L'Enlevée\", a été brossée et ouverte par Jo Montchaussé et des amis. voir aussi : Le Niveau Baisse 7b+",
           "coordinate": null,
           "grade": "7a",
           "name": "Le Flippeur",
@@ -46641,14 +46641,14 @@
           "number": 18
         },
         {
-          "comment": "surplomb, proue, traversée. sur l'arrière du bloc situé en face du 18, Nouvelle Tendance. Partir dans le 22, La Chaussée des Géants , traverser à gauche et sortir dans la proue déversante. NB : il est possible de réaliser une éliminante en 7a, en n'utilisant que les prises la lèvre supérieure et en sortant dans le toit sans les prises de la face de gauche. voir aussi : Chapeau Chinois (version haute) 7a",
+          "comment": "surplomb, proue, traversée. sur l'arrière du bloc situé en face du 18, Nouvelle Tendance. Partir dans le 22, La Chaussée des Géants , traverser à gauche et sortir dans la proue déversante. NB : il est possible de réaliser une éliminante en 7a, en n'utilisant que les prises la lèvre supérieure et en sortant dans le toit sans les prises de la face de gauche. voir aussi : Chapeau Chinois (version haute) 7a",
           "coordinate": null,
           "grade": "6b",
           "name": "Chapeau Chinois",
           "number": "18bis"
         },
         {
-          "comment": "mur, réglettes, inversée. version sans convention du bis rouge et blanc à droite du 24, Coup de Pompe. NB : la voie d'origine était en fait une éliminante directe en 7a n'utilisant que l'inversée, mais la version sans convention est devenue classique. voir aussi : L'Inversée Satanique directe 7a (6c)",
+          "comment": "mur, réglettes, inversée. version sans convention du bis rouge et blanc à droite du 24, Coup de Pompe. NB : la voie d'origine était en fait une éliminante directe en 7a n'utilisant que l'inversée, mais la version sans convention est devenue classique. voir aussi : L'Inversée Satanique directe 7a (6c)",
           "coordinate": null,
           "grade": "6b",
           "name": "L'Inversée Satanique",
@@ -46711,7 +46711,7 @@
           "number": 24
         },
         {
-          "comment": "dalle, réglettes. à gauche du 24, Les Grattons Belliqueux. Sortie normale par la droite en 7a+, et directe au sommet en 7b. voir aussi : L'Épluche-Patates 7b",
+          "comment": "dalle, réglettes. à gauche du 24, Les Grattons Belliqueux. Sortie normale par la droite en 7a+, et directe au sommet en 7b. voir aussi : L'Épluche-Patates 7b",
           "coordinate": null,
           "grade": "7a+",
           "name": "À l'Impossible, Nul n'est Tenu",
@@ -46774,7 +46774,7 @@
           "number": 32
         },
         {
-          "comment": "traversée. tour complet du bloc par le bas (dans le sens contraire des aiguilles d'une montre) en départ par le 31, Servir Frais. NB : la traversée se fait aussi dans l'autre sens (cotation identique) et un aller-retour en 7b est également possible.",
+          "comment": "traversée. tour complet du bloc par le bas (dans le sens contraire des aiguilles d'une montre) en départ par le 31, Servir Frais. NB : la traversée se fait aussi dans l'autre sens (cotation identique) et un aller-retour en 7b est également possible.",
           "coordinate": null,
           "grade": "7a",
           "name": "Rumsteak en Folie",
@@ -46795,7 +46795,7 @@
           "number": 34
         },
         {
-          "comment": "surplomb, traversée, plats. partir de l'angle situé à droite du 36, L'Affaire du Trou , traverser à gauche et sortir dans l'arête déversante. NB : cette voie, dont le nom (tout aussi authentique que les piqûres subies par l'ouvreur) est \"Le Toit des Frelons\", démarre bien par une traversée. La vidéo en ligne ne montre donc que la fin de la voie. voir aussi : L'Aller-retour du Toit des Frelons 7b",
+          "comment": "surplomb, traversée, plats. partir de l'angle situé à droite du 36, L'Affaire du Trou , traverser à gauche et sortir dans l'arête déversante. NB : cette voie, dont le nom (tout aussi authentique que les piqûres subies par l'ouvreur) est \"Le Toit des Frelons\", démarre bien par une traversée. La vidéo en ligne ne montre donc que la fin de la voie. voir aussi : L'Aller-retour du Toit des Frelons 7b",
           "coordinate": null,
           "grade": "7a",
           "name": "Le Toit des Frelons / La Traversée du T.G.V.",
@@ -47195,7 +47195,7 @@
           "number": 39
         },
         {
-          "comment": "traversée. prolongement du 39. voir aussi : 39 3+ (4-)",
+          "comment": "traversée. prolongement du 39. voir aussi : 39 3+ (4-)",
           "coordinate": null,
           "grade": "4+",
           "name": "La Traversée au Téton",
@@ -48364,14 +48364,14 @@
           "number": 1
         },
         {
-          "comment": "surplomb, plats. au bas de la pente, au dessus du sentier bleu. NB : première réalisation connue par Eric Létot en 1991 (qui avait suggéré le nom \"La Rallonge\" pour cette voie). voir aussi : Magifix assis 7a",
+          "comment": "surplomb, plats. au bas de la pente, au dessus du sentier bleu. NB : première réalisation connue par Eric Létot en 1991 (qui avait suggéré le nom \"La Rallonge\" pour cette voie). voir aussi : Magifix assis 7a",
           "coordinate": null,
           "grade": "6c+",
           "name": "Magifix",
           "number": 2
         },
         {
-          "comment": "traversée. partir tout à droite du bloc, traverser par le bas après un premier angle rond, poursuivre dans la face et sortir dans le 22, Le Chou-Fleur après le second angle. NB : 6c+ avec les prises du haut au niveau du premier angle. voir aussi : Lune de Fiel (gauche-droite) 7a+, Lune de Fiel en retour-aller 7b",
+          "comment": "traversée. partir tout à droite du bloc, traverser par le bas après un premier angle rond, poursuivre dans la face et sortir dans le 22, Le Chou-Fleur après le second angle. NB : 6c+ avec les prises du haut au niveau du premier angle. voir aussi : Lune de Fiel (gauche-droite) 7a+, Lune de Fiel en retour-aller 7b",
           "coordinate": null,
           "grade": "7a",
           "name": "Lune de Fiel",
@@ -48385,14 +48385,14 @@
           "number": 4
         },
         {
-          "comment": "dévers, réta. à gauche du 38, L'Araignée. NB : le départ de la droite en traversée s'appelle 5bis, Cocaline (7b+). voir aussi : 5bis, Cocaline 7b+",
+          "comment": "dévers, réta. à gauche du 38, L'Araignée. NB : le départ de la droite en traversée s'appelle 5bis, Cocaline (7b+). voir aussi : 5bis, Cocaline 7b+",
           "coordinate": null,
           "grade": "7a",
           "name": "Les Câlins de Kim",
           "number": 5
         },
         {
-          "comment": "traversée. partir 2m à droite de l'angle de gauche au niveau d'une rampe, passer l'angle, traverser à gauche dans le dévers et sortir par l'arête des 5, Les Câlins de Kim (n°5 blanc). NB : une sortie sur la gauche dans la dalle du 39, La Dame de Pique est également possible (version en 7c par Benoît Faure. voir aussi : 5, Les Câlins de Kim 7a",
+          "comment": "traversée. partir 2m à droite de l'angle de gauche au niveau d'une rampe, passer l'angle, traverser à gauche dans le dévers et sortir par l'arête des 5, Les Câlins de Kim (n°5 blanc). NB : une sortie sur la gauche dans la dalle du 39, La Dame de Pique est également possible (version en 7c par Benoît Faure. voir aussi : 5, Les Câlins de Kim 7a",
           "coordinate": null,
           "grade": "7b+",
           "name": "Cocaline",
@@ -48413,7 +48413,7 @@
           "number": 7
         },
         {
-          "comment": "jeté, plats. sur le bloc de Crescendo (bloc à gauche du 38, L'Araignée ). NB : première réalisation connue par Eric Létot au début des années 90 (qui avait suggéré le nom \"Plats Nets en Vue\" pour cette voie). voir aussi : Pot de Terre assis 7a+",
+          "comment": "jeté, plats. sur le bloc de Crescendo (bloc à gauche du 38, L'Araignée ). NB : première réalisation connue par Eric Létot au début des années 90 (qui avait suggéré le nom \"Plats Nets en Vue\" pour cette voie). voir aussi : Pot de Terre assis 7a+",
           "coordinate": null,
           "grade": "6c+",
           "name": "Pot de Terre",
@@ -48427,7 +48427,7 @@
           "number": 9
         },
         {
-          "comment": "surplomb, départ assis, traversée. en départ assis tout au fond à gauche (7a sans la traversée). voir aussi : Rocking-Chair 7a, Vagabond des Limbes 7b, Lévitation prolongée 7b+, Vagabond des Limbes rallongé 7c, Légende 8a, When Legend Dies 8b+, Le Voyage Éternel 8c",
+          "comment": "surplomb, départ assis, traversée. en départ assis tout au fond à gauche (7a sans la traversée). voir aussi : Rocking-Chair 7a, Vagabond des Limbes 7b, Lévitation prolongée 7b+, Vagabond des Limbes rallongé 7c, Légende 8a, When Legend Dies 8b+, Le Voyage Éternel 8c",
           "coordinate": null,
           "grade": "7a+",
           "name": "Lévitation",
@@ -48476,7 +48476,7 @@
           "number": 16
         },
         {
-          "comment": "dalle, mur. dalle raide directe sur le bloc du n°40 bleu ciel. NB : la voie nommée à l'origine \"Marquis de Sade\" utilisait un bidoigt taillé qui a été depuis rebouché. Deux méthodes sont désormais possibles pour \"Délivrance\", dont un pied-main direct en 7a+/7b.",
+          "comment": "dalle, mur. dalle raide directe sur le bloc du n°40 bleu ciel. NB : la voie nommée à l'origine \"Marquis de Sade\" utilisait un bidoigt taillé qui a été depuis rebouché. Deux méthodes sont désormais possibles pour \"Délivrance\", dont un pied-main direct en 7a+/7b.",
           "coordinate": null,
           "grade": "7a+",
           "name": "Délivrance / Marquis de Sade",
@@ -48497,21 +48497,21 @@
           "number": 19
         },
         {
-          "comment": "surplomb, jeté. en jeté sur la gauche depuis l'inversée. voir aussi : 20bis, 36.15 Power 7c (7c+)",
+          "comment": "surplomb, jeté. en jeté sur la gauche depuis l'inversée. voir aussi : 20bis, 36.15 Power 7c (7c+)",
           "coordinate": null,
           "grade": "7a",
           "name": "36.15 gauche",
           "number": 20
         },
         {
-          "comment": "surplomb. 7c+ avec le plat, et sans utiliser l'inversée. NB : le bloc a été brossé par Olivier Penel, qui n'est probablement pas le premier réalisateur. voir aussi : 20, 36.15 gauche 7a (7a+)",
+          "comment": "surplomb. 7c+ avec le plat, et sans utiliser l'inversée. NB : le bloc a été brossé par Olivier Penel, qui n'est probablement pas le premier réalisateur. voir aussi : 20, 36.15 gauche 7a (7a+)",
           "coordinate": null,
           "grade": "7c",
           "name": "36.15 Power",
           "number": "20bis"
         },
         {
-          "comment": "surplomb, plats. voie de droite sur l'envers du bloc du 1, Le Cap GAP. voir aussi : Fantasia ches les Ploucs assis 7c",
+          "comment": "surplomb, plats. voie de droite sur l'envers du bloc du 1, Le Cap GAP. voir aussi : Fantasia ches les Ploucs assis 7c",
           "coordinate": null,
           "grade": "7a+",
           "name": "Fantasia chez les Ploucs",
@@ -48525,14 +48525,14 @@
           "number": 22
         },
         {
-          "comment": "surplomb, arête. le long de la crête, sur l'envers du bloc à gauche et au-delà du bivouac (début du circuit rouge). 7b+ en départ assis par Grégoire Clouzeau. voir aussi : La Théorie du Chaos assis 7b+",
+          "comment": "surplomb, arête. le long de la crête, sur l'envers du bloc à gauche et au-delà du bivouac (début du circuit rouge). 7b+ en départ assis par Grégoire Clouzeau. voir aussi : La Théorie du Chaos assis 7b+",
           "coordinate": null,
           "grade": "7b",
           "name": "La Théorie du Chaos",
           "number": 23
         },
         {
-          "comment": "plats. voir aussi : Chasseur de Prises assis",
+          "comment": "plats. voir aussi : Chasseur de Prises assis",
           "coordinate": null,
           "grade": "7a",
           "name": "Chasseur de Prises",
@@ -49070,7 +49070,7 @@
           "number": 12
         },
         {
-          "comment": "dévers, trous. partir en bas avec un trou MD et sortir dans le dévers au dessus ; morpho.",
+          "comment": "dévers, trous. partir en bas avec un trou MD et sortir dans le dévers au dessus ; morpho.",
           "coordinate": null,
           "grade": "4+",
           "name": "Le Repose-Pieds",
@@ -49119,7 +49119,7 @@
           "number": 19
         },
         {
-          "comment": "surplomb. traversée en diagonale à droite. voir aussi : L'Instable à Rallonge 6a",
+          "comment": "surplomb. traversée en diagonale à droite. voir aussi : L'Instable à Rallonge 6a",
           "coordinate": null,
           "grade": "4-",
           "name": "L'Instable",
@@ -49133,7 +49133,7 @@
           "number": "20bis"
         },
         {
-          "comment": "dièdre, traversée. traverser à gauche et sortir au dièdre après l'angle. voir aussi : La Boule 4+",
+          "comment": "dièdre, traversée. traverser à gauche et sortir au dièdre après l'angle. voir aussi : La Boule 4+",
           "coordinate": null,
           "grade": "5-",
           "name": "La Traversée de la Dentelle",
@@ -49175,7 +49175,7 @@
           "number": "25bis"
         },
         {
-          "comment": "arête. angle MD. voir aussi : L'Angle 4",
+          "comment": "arête. angle MD. voir aussi : L'Angle 4",
           "coordinate": null,
           "grade": "4+",
           "name": "L'Angle Usagé",
@@ -49561,25 +49561,25 @@
           "comment": "dévers, traversée. partir à gauche de l'arbre, traverser à droite et sortir dans le dévers tout à droite.",
           "coordinate": null,
           "grade": "5",
-          "name": "... Et Tire Toi !",
+          "name": "... Et Tire Toi !",
           "number": 3
         },
         {
-          "comment": "pilier, départ assis. petit pilier en départ assis. voir aussi : Le Canard Boîteux 5",
+          "comment": "pilier, départ assis. petit pilier en départ assis. voir aussi : Le Canard Boîteux 5",
           "coordinate": null,
           "grade": "4+",
           "name": "La Poule Mouillée",
           "number": "3bis"
         },
         {
-          "comment": "mur. partir avec PG sur l'écaille fragile, remonter le mur à l'aide d'une inversée de pouce et sortir avec le bac à gauche. voir aussi : Loto Stop assis 5+",
+          "comment": "mur. partir avec PG sur l'écaille fragile, remonter le mur à l'aide d'une inversée de pouce et sortir avec le bac à gauche. voir aussi : Loto Stop assis 5+",
           "coordinate": null,
           "grade": "5-",
           "name": "Loto Stop",
           "number": 4
         },
         {
-          "comment": "fissure, expo, réta. remonter la fissure et sortir en réta sur des plats. voir aussi : L'Œuf au Plat assis 5",
+          "comment": "fissure, expo, réta. remonter la fissure et sortir en réta sur des plats. voir aussi : L'Œuf au Plat assis 5",
           "coordinate": null,
           "grade": "5-",
           "name": "L'Œuf au Plat",
@@ -49600,10 +49600,10 @@
           "number": "6bis"
         },
         {
-          "comment": "pilier, traversée. partir de la dalle bleue, traverser à gauche et sortir par le pilier. voir aussi :... et à Sac 5+",
+          "comment": "pilier, traversée. partir de la dalle bleue, traverser à gauche et sortir par le pilier. voir aussi :... et à Sac 5+",
           "coordinate": null,
           "grade": "5",
-          "name": "À Sec !",
+          "name": "À Sec !",
           "number": 7
         },
         {
@@ -49614,21 +49614,21 @@
           "number": 8
         },
         {
-          "comment": "bombé. ventre en diagonale vers la droite. voir aussi : 9bis, Les Chers Pas 6b",
+          "comment": "bombé. ventre en diagonale vers la droite. voir aussi : 9bis, Les Chers Pas 6b",
           "coordinate": null,
           "grade": "5-",
           "name": "Le Nez Pas Laid",
           "number": 9
         },
         {
-          "comment": "bombé, traversée. partir complètement à droite, traverser à gauche sous le ventre et sortir comme dans le 9, Le Nez Pas Laid. voir aussi : 9, Le Nez Pas Laid 5-",
+          "comment": "bombé, traversée. partir complètement à droite, traverser à gauche sous le ventre et sortir comme dans le 9, Le Nez Pas Laid. voir aussi : 9, Le Nez Pas Laid 5-",
           "coordinate": null,
           "grade": "6b",
           "name": "Les Chers Pas",
           "number": "9bis"
         },
         {
-          "comment": "traversée, plats. traversée sur trois faces. voir aussi : Trois Petits Tours 5+",
+          "comment": "traversée, plats. traversée sur trois faces. voir aussi : Trois Petits Tours 5+",
           "coordinate": null,
           "grade": "6a",
           "name": "Le Retour des 3 Tours",
@@ -49642,21 +49642,21 @@
           "number": 11
         },
         {
-          "comment": "mur, fissure. mur avec la fissure MG (fin du 13bis, Le Fongicide ). voir aussi : 13, Le Pervers Fongiforme 6b+, 13bis, Le Fongicide 7a",
+          "comment": "mur, fissure. mur avec la fissure MG (fin du 13bis, Le Fongicide ). voir aussi : 13, Le Pervers Fongiforme 6b+, 13bis, Le Fongicide 7a",
           "coordinate": null,
           "grade": "5-",
           "name": "L'Ami Cause",
           "number": "11bis"
         },
         {
-          "comment": "dévers, proue. remonter la proue déversante et sortir à droite. voir aussi : Le Pied Beau assis 6a",
+          "comment": "dévers, proue. remonter la proue déversante et sortir à droite. voir aussi : Le Pied Beau assis 6a",
           "coordinate": null,
           "grade": "5+",
           "name": "Le Pied Beau",
           "number": 12
         },
         {
-          "comment": "bombé, plats. remonter le bombé et sortir à droite. voir aussi : Le Pied Tendre assis 6b",
+          "comment": "bombé, plats. remonter le bombé et sortir à droite. voir aussi : Le Pied Tendre assis 6b",
           "coordinate": null,
           "grade": "6a",
           "name": "Le Pied Tendre",
@@ -49684,7 +49684,7 @@
           "number": "15bis"
         },
         {
-          "comment": "surplomb. remonter le surplomb en légère diagonale vers la gauche et sortir sur le fil. voir aussi : Présent Table assis 5+",
+          "comment": "surplomb. remonter le surplomb en légère diagonale vers la gauche et sortir sur le fil. voir aussi : Présent Table assis 5+",
           "coordinate": null,
           "grade": "5",
           "name": "Présent Table",
@@ -49698,14 +49698,14 @@
           "number": "16bis"
         },
         {
-          "comment": "dévers, pilier, départ assis. partir assis et remonter le pilier déversant de droite (en évitant de prendre l'écaille fragile). voir aussi : 16quat, Couscous Clan du fond 6b",
+          "comment": "dévers, pilier, départ assis. partir assis et remonter le pilier déversant de droite (en évitant de prendre l'écaille fragile). voir aussi : 16quat, Couscous Clan du fond 6b",
           "coordinate": null,
           "grade": "6a+",
           "name": "Couscous Clan",
           "number": "16ter"
         },
         {
-          "comment": "dévers, pilier, départ assis. partir assis au fond du tunnel et remonter le pilier déversant de droite (en évitant de prendre l'écaille fragile). voir aussi : 16ter, Couscous Clan 6a+",
+          "comment": "dévers, pilier, départ assis. partir assis au fond du tunnel et remonter le pilier déversant de droite (en évitant de prendre l'écaille fragile). voir aussi : 16ter, Couscous Clan 6a+",
           "coordinate": null,
           "grade": "6b",
           "name": "Couscous Clan du fond",
@@ -49747,7 +49747,7 @@
           "number": 20
         },
         {
-          "comment": "surplomb, toit, départ assis. partir assis sous le toit avec les pieds au fond, remonter le surplomb et sortir au dessus (ou à gauche). voir aussi : Foot Aise 5-",
+          "comment": "surplomb, toit, départ assis. partir assis sous le toit avec les pieds au fond, remonter le surplomb et sortir au dessus (ou à gauche). voir aussi : Foot Aise 5-",
           "coordinate": null,
           "grade": "5",
           "name": "L'Apparente Aise",
@@ -49761,21 +49761,21 @@
           "number": "21bis"
         },
         {
-          "comment": "surplomb, fissure. remonter le surplomb et sortir avec la fissure MG. voir aussi : Les Nords Mités assis 6a",
+          "comment": "surplomb, fissure. remonter le surplomb et sortir avec la fissure MG. voir aussi : Les Nords Mités assis 6a",
           "coordinate": null,
           "grade": "5+",
           "name": "Les Nords Mités",
           "number": 22
         },
         {
-          "comment": "surplomb, trous. remonter le surplomb et sortir avec le gros trou. voir aussi : Le Trou Nord Ment assis 5+",
+          "comment": "surplomb, trous. remonter le surplomb et sortir avec le gros trou. voir aussi : Le Trou Nord Ment assis 5+",
           "coordinate": null,
           "grade": "5",
           "name": "Le Trou Nord Ment",
           "number": 23
         },
         {
-          "comment": "surplomb, pilier. remonter le surplomb-pilier sans la marche à droite. voir aussi : La Voie Nord Mâle assis 5",
+          "comment": "surplomb, pilier. remonter le surplomb-pilier sans la marche à droite. voir aussi : La Voie Nord Mâle assis 5",
           "coordinate": null,
           "grade": "5-",
           "name": "La Voie Nord Mâle",
@@ -49810,7 +49810,7 @@
           "number": 28
         },
         {
-          "comment": "dalle, mur. remonter le mur-dalle et suivre l'arête vers la gauche ou sortir directement. voir aussi : Les Potes Iront assis 6a+",
+          "comment": "dalle, mur. remonter le mur-dalle et suivre l'arête vers la gauche ou sortir directement. voir aussi : Les Potes Iront assis 6a+",
           "coordinate": null,
           "grade": "5",
           "name": "Les Potes Iront",
@@ -49831,14 +49831,14 @@
           "number": 30
         },
         {
-          "comment": "arête. arête de gauche, en départ direct. voir aussi : La Grenouille 4, 31bis, L'Aigre Nouille 6a",
+          "comment": "arête. arête de gauche, en départ direct. voir aussi : La Grenouille 4, 31bis, L'Aigre Nouille 6a",
           "coordinate": null,
           "grade": "5+",
           "name": "L'Anoure Hisse",
           "number": 31
         },
         {
-          "comment": "arête, traversée. traversée d-g partir à droite, traverser vers la gauche et sortir sur l'arête. voir aussi : La Grenouille 4, 31, L'Anoure Hisse 5+",
+          "comment": "arête, traversée. traversée d-g partir à droite, traverser vers la gauche et sortir sur l'arête. voir aussi : La Grenouille 4, 31, L'Anoure Hisse 5+",
           "coordinate": null,
           "grade": "6a",
           "name": "L'Aigre Nouille",
@@ -49897,7 +49897,7 @@
           "comment": "mur, monodoigts, plats. remonter le mur avec un monodoigt et des plats.",
           "coordinate": null,
           "grade": "5+",
-          "name": "Doigt-je ?",
+          "name": "Doigt-je ?",
           "number": 38
         },
         {
@@ -49943,14 +49943,14 @@
           "number": 44
         },
         {
-          "comment": "mur, arête. mur en diagonale à gauche, en sortie avec l'arête MG. voir aussi : 45bis, Chaud Corridor 6a (6a+)",
+          "comment": "mur, arête. mur en diagonale à gauche, en sortie avec l'arête MG. voir aussi : 45bis, Chaud Corridor 6a (6a+)",
           "coordinate": null,
           "grade": "5",
-          "name": "Est-ce Très Chaud ?",
+          "name": "Est-ce Très Chaud ?",
           "number": 45
         },
         {
-          "comment": "mur. mur en diagonale à gauche, en sortie directe. voir aussi : 45, Est-ce Très Chaud ? 5",
+          "comment": "mur. mur en diagonale à gauche, en sortie directe. voir aussi : 45, Est-ce Très Chaud ? 5",
           "coordinate": null,
           "grade": "6a+",
           "name": "Chaud Corridor",
@@ -50005,7 +50005,7 @@
           "comment": "arête. arête sans le bloc de droite.",
           "coordinate": null,
           "grade": "3",
-          "name": "T'Arrête Pas, Grimpe !",
+          "name": "T'Arrête Pas, Grimpe !",
           "number": 4
         },
         {
@@ -50201,14 +50201,14 @@
           "comment": "mur, expo, réta.",
           "coordinate": null,
           "grade": "3+",
-          "name": "Engagez Vous !",
+          "name": "Engagez Vous !",
           "number": 25
         },
         {
           "comment": "bombé.",
           "coordinate": null,
           "grade": "4",
-          "name": "Tire Ailleurs !",
+          "name": "Tire Ailleurs !",
           "number": 26
         },
         {
@@ -50313,7 +50313,7 @@
           "number": 5
         },
         {
-          "comment": "mur, expo, inversée. mur engagé direct sur une inversée. voir aussi : Cap Hilarité assis 6c+",
+          "comment": "mur, expo, inversée. mur engagé direct sur une inversée. voir aussi : Cap Hilarité assis 6c+",
           "coordinate": null,
           "grade": "6c",
           "name": "Cap Hilarité",
@@ -50341,21 +50341,21 @@
           "number": 9
         },
         {
-          "comment": "pilier, plats. remonter le pilier vers la gauche à l'aide de plats. voir aussi : Archimède Encule Sysiphe assis 6c",
+          "comment": "pilier, plats. remonter le pilier vers la gauche à l'aide de plats. voir aussi : Archimède Encule Sysiphe assis 6c",
           "coordinate": null,
           "grade": "6b",
           "name": "Archimède Encule Sysiphe",
           "number": 10
         },
         {
-          "comment": "bombé. partir à droite et remonter le ventre en diagonale vers la gauche. voir aussi : 11bis, L'Anar In 6c+",
+          "comment": "bombé. partir à droite et remonter le ventre en diagonale vers la gauche. voir aussi : 11bis, L'Anar In 6c+",
           "coordinate": null,
           "grade": "5+",
           "name": "La Griffe au Nez",
           "number": 11
         },
         {
-          "comment": "bombé, traversée. partir tout à gauche, traverser par le bas et sortir en remontant le ventre en diagonale vers la gauche. voir aussi : 11, La Griffe au Nez 5+",
+          "comment": "bombé, traversée. partir tout à gauche, traverser par le bas et sortir en remontant le ventre en diagonale vers la gauche. voir aussi : 11, La Griffe au Nez 5+",
           "coordinate": null,
           "grade": "6c+",
           "name": "L'Anar In",
@@ -50369,35 +50369,35 @@
           "number": 12
         },
         {
-          "comment": "fissure, départ assis, traversée. partir assis de l'angle, traverser à gauche et sortir avec la fissure du 11bis, L'Ami Cause. voir aussi : 11bis, L'Ami Cause 5-, 13bis, Le Fongicide 7a",
+          "comment": "fissure, départ assis, traversée. partir assis de l'angle, traverser à gauche et sortir avec la fissure du 11bis, L'Ami Cause. voir aussi : 11bis, L'Ami Cause 5-, 13bis, Le Fongicide 7a",
           "coordinate": null,
           "grade": "6b+",
           "name": "Le Pervers Fongiforme",
           "number": 13
         },
         {
-          "comment": "départ assis, traversée. partir assis de l'angle, traverser à gauche et sortir après la fissure du 11bis, L'Ami Cause. voir aussi : 11bis, L'Ami Cause 5-, 13, Le Pervers Fongiforme 6b+",
+          "comment": "départ assis, traversée. partir assis de l'angle, traverser à gauche et sortir après la fissure du 11bis, L'Ami Cause. voir aussi : 11bis, L'Ami Cause 5-, 13, Le Pervers Fongiforme 6b+",
           "coordinate": null,
           "grade": "7a",
           "name": "Le Fongicide",
           "number": "13bis"
         },
         {
-          "comment": "départ assis, traversée, plats. partir assis de l'angle gauche, traverser à droite et sortir sur des plats dans le 13, Le Pied Tendre. voir aussi : 14bis, Waterproof 7a, Le Pied Marin 7a+",
+          "comment": "départ assis, traversée, plats. partir assis de l'angle gauche, traverser à droite et sortir sur des plats dans le 13, Le Pied Tendre. voir aussi : 14bis, Waterproof 7a, Le Pied Marin 7a+",
           "coordinate": null,
           "grade": "6c+",
-          "name": "What a Foot ?",
+          "name": "What a Foot ?",
           "number": 14
         },
         {
-          "comment": "pilier, traversée. partir complètement à droite, traverser à gauche et sortir sur le pilier. voir aussi : 14, What a Foot ? 6c+, Le Pied Marin 7a+",
+          "comment": "pilier, traversée. partir complètement à droite, traverser à gauche et sortir sur le pilier. voir aussi : 14, What a Foot ? 6c+, Le Pied Marin 7a+",
           "coordinate": null,
           "grade": "7a",
           "name": "Waterproof",
           "number": "14bis"
         },
         {
-          "comment": "proue, inversée. partir avec une réglette inversée MG et remonter directement la proue. voir aussi : Le Cale-Pied assis 7a+, Watt-Heure World 7b+",
+          "comment": "proue, inversée. partir avec une réglette inversée MG et remonter directement la proue. voir aussi : Le Cale-Pied assis 7a+, Watt-Heure World 7b+",
           "coordinate": null,
           "grade": "6b+",
           "name": "Le Cale-Pied",
@@ -50418,7 +50418,7 @@
           "number": 17
         },
         {
-          "comment": "toit, traversée, trous. partir à gauche, traverser à droite en passant sous le bloc et sortir tout au bout à l'aide de trous. voir aussi : 19bis, Le Tiroir à Couvert 6b, 19ter, Mets la Rallonge ! 6c, L'Orgie 7a+",
+          "comment": "toit, traversée, trous. partir à gauche, traverser à droite en passant sous le bloc et sortir tout au bout à l'aide de trous. voir aussi : 19bis, Le Tiroir à Couvert 6b, 19ter, Mets la Rallonge ! 6c, L'Orgie 7a+",
           "coordinate": null,
           "grade": "6b",
           "name": "Le Dessous de Table",
@@ -50432,70 +50432,70 @@
           "number": 19
         },
         {
-          "comment": "surplomb, départ assis. partir assis du sol, passer directement le surplomb et sortir au même niveau que le 19, L'Invité sur Prises. voir aussi : 18, Le Dessous de Table 6b, 19ter, Mets la Rallonge ! 6c, L'Orgie 7a+",
+          "comment": "surplomb, départ assis. partir assis du sol, passer directement le surplomb et sortir au même niveau que le 19, L'Invité sur Prises. voir aussi : 18, Le Dessous de Table 6b, 19ter, Mets la Rallonge ! 6c, L'Orgie 7a+",
           "coordinate": null,
           "grade": "6b",
           "name": "Le Tiroir à Couvert",
           "number": "19bis"
         },
         {
-          "comment": "toit, traversée. partir dans le 18, Le Dessous de Table , traverser à droite et sortir dans le 19, L'Invité sur Prises. voir aussi : 18, Le Dessous de Table 6b, 19bis, Le Tiroir à Couvert 6b, L'Orgie 7a+",
+          "comment": "toit, traversée. partir dans le 18, Le Dessous de Table , traverser à droite et sortir dans le 19, L'Invité sur Prises. voir aussi : 18, Le Dessous de Table 6b, 19bis, Le Tiroir à Couvert 6b, L'Orgie 7a+",
           "coordinate": null,
           "grade": "6c",
-          "name": "Mets la Rallonge !",
+          "name": "Mets la Rallonge !",
           "number": "19ter"
         },
         {
-          "comment": "traversée. partir assis à gauche, traverser à droite et sortir sur le pilier. voir aussi : 20bis, Le Monte-Charge rallongé 6b+",
+          "comment": "traversée. partir assis à gauche, traverser à droite et sortir sur le pilier. voir aussi : 20bis, Le Monte-Charge rallongé 6b+",
           "coordinate": null,
           "grade": "6b",
           "name": "Le Monte-Charge",
           "number": 20
         },
         {
-          "comment": "traversée, plats. partir assis à gauche, traverser à droite, passer le pilier et sortir sur des plats sans les bacs de droite. voir aussi : 20, Le Monte-Charge 6b",
+          "comment": "traversée, plats. partir assis à gauche, traverser à droite, passer le pilier et sortir sur des plats sans les bacs de droite. voir aussi : 20, Le Monte-Charge 6b",
           "coordinate": null,
           "grade": "6b+",
           "name": "Le Monte-Charge rallongé",
           "number": "20bis"
         },
         {
-          "comment": "pilier, départ assis. partir assis tout en bas, assis sur la dalle, remonter le pilier avec une réglette MD et sortir sur la gauche. voir aussi : 21bis, Le Garrot Marron 6c",
+          "comment": "pilier, départ assis. partir assis tout en bas, assis sur la dalle, remonter le pilier avec une réglette MD et sortir sur la gauche. voir aussi : 21bis, Le Garrot Marron 6c",
           "coordinate": null,
           "grade": "6a",
           "name": "Gare aux Mâts Ronds",
           "number": 21
         },
         {
-          "comment": "pilier, départ assis, traversée. partir assis à droite avec un gros trou, traverser à gauche et sortir dans le 21, Gare aux Mâts Ronds. voir aussi : 21, Gare aux Mâts Ronds 6a",
+          "comment": "pilier, départ assis, traversée. partir assis à droite avec un gros trou, traverser à gauche et sortir dans le 21, Gare aux Mâts Ronds. voir aussi : 21, Gare aux Mâts Ronds 6a",
           "coordinate": null,
           "grade": "6c",
           "name": "Le Garrot Marron",
           "number": "21bis"
         },
         {
-          "comment": "départ assis, traversée. partir assis à gauche, traverser à droite et sortir dans la face avec une réglette MD. voir aussi : 22bis, Mon Petit Doigt Supplie 6c+",
+          "comment": "départ assis, traversée. partir assis à gauche, traverser à droite et sortir dans la face avec une réglette MD. voir aussi : 22bis, Mon Petit Doigt Supplie 6c+",
           "coordinate": null,
           "grade": "6c",
           "name": "Les Chats Teignes",
           "number": 22
         },
         {
-          "comment": "départ assis, traversée. partir assis à gauche et traverser à droite comme dans le 22, Les Chats Teignes mais poursuivre par le bas et sortir dans le 19, Mon Petit Doigt m'a Dit. voir aussi : 22, Les Chats Teignes 6c",
+          "comment": "départ assis, traversée. partir assis à gauche et traverser à droite comme dans le 22, Les Chats Teignes mais poursuivre par le bas et sortir dans le 19, Mon Petit Doigt m'a Dit. voir aussi : 22, Les Chats Teignes 6c",
           "coordinate": null,
           "grade": "6c+",
           "name": "Mon Petit Doigt Supplie",
           "number": "22bis"
         },
         {
-          "comment": "pilier. remonter le grand pilier et sortir en évitant le surplomb final par la face de droite. voir aussi : 23bis, Vert à Citer 6c+",
+          "comment": "pilier. remonter le grand pilier et sortir en évitant le surplomb final par la face de droite. voir aussi : 23bis, Vert à Citer 6c+",
           "coordinate": null,
           "grade": "6a",
           "name": "L'Haut Mission",
           "number": 23
         },
         {
-          "comment": "surplomb, pilier, expo. remonter le grand pilier et sortir directement dans le surplomb en restant dans la face de gauche (engagé). voir aussi : 23, L'Haut Mission 6a",
+          "comment": "surplomb, pilier, expo. remonter le grand pilier et sortir directement dans le surplomb en restant dans la face de gauche (engagé). voir aussi : 23, L'Haut Mission 6a",
           "coordinate": null,
           "grade": "6c+",
           "name": "Vert à Citer",
@@ -50516,35 +50516,35 @@
           "number": 25
         },
         {
-          "comment": "arête, plats. partir debout, suivre l'arête ronde, traverser à droite sous la pointe et sortir après l'angle. voir aussi : Le Rouleau d'Été assis 6c+, 26ter, L'Enroulé dans la Farine 7a, 26bis, Le Rouleau Compresse Sort 7a+, Par l'Essoreuse l'Ire est Née 7b (7b+)",
+          "comment": "arête, plats. partir debout, suivre l'arête ronde, traverser à droite sous la pointe et sortir après l'angle. voir aussi : Le Rouleau d'Été assis 6c+, 26ter, L'Enroulé dans la Farine 7a, 26bis, Le Rouleau Compresse Sort 7a+, Par l'Essoreuse l'Ire est Née 7b (7b+)",
           "coordinate": null,
           "grade": "6c",
           "name": "Le Rouleau d'Été",
           "number": 26
         },
         {
-          "comment": "arête, départ assis, traversée. traversée g-d. partir assis à gauche avec l'arête MG, traverser à droite et sortir dans le 26, Le Rouleau d'Été. voir aussi : 26, Le Rouleau d'Été 6c, Le Rouleau d'Été assis 6c+, 26ter, L'Enroulé dans la Farine 7a, Par l'Essoreuse l'Ire est Née 7b (7b+)",
+          "comment": "arête, départ assis, traversée. traversée g-d. partir assis à gauche avec l'arête MG, traverser à droite et sortir dans le 26, Le Rouleau d'Été. voir aussi : 26, Le Rouleau d'Été 6c, Le Rouleau d'Été assis 6c+, 26ter, L'Enroulé dans la Farine 7a, Par l'Essoreuse l'Ire est Née 7b (7b+)",
           "coordinate": null,
           "grade": "7a+",
           "name": "Le Rouleau Compresse Sort",
           "number": "26bis"
         },
         {
-          "comment": "arête, traversée, plats. partir assis dans la fosse, traverser à gauche et sortir dans le 26, Le Rouleau d'Été. voir aussi : 26, Le Rouleau d'Été 6c, Le Rouleau d'Été assis 6c+, 26bis, Le Rouleau Compresse Sort 7a+, Par l'Essoreuse l'Ire est Née 7b (7b+)",
+          "comment": "arête, traversée, plats. partir assis dans la fosse, traverser à gauche et sortir dans le 26, Le Rouleau d'Été. voir aussi : 26, Le Rouleau d'Été 6c, Le Rouleau d'Été assis 6c+, 26bis, Le Rouleau Compresse Sort 7a+, Par l'Essoreuse l'Ire est Née 7b (7b+)",
           "coordinate": null,
           "grade": "7a",
           "name": "L'Enroulé dans la Farine",
           "number": "26ter"
         },
         {
-          "comment": "dévers, départ assis. partir assis dans la fosse, remonter directement le dévers et sortir à gauche sur la lèvre. voir aussi : 27bis, Le Bas m'Attire 7a",
+          "comment": "dévers, départ assis. partir assis dans la fosse, remonter directement le dévers et sortir à gauche sur la lèvre. voir aussi : 27bis, Le Bas m'Attire 7a",
           "coordinate": null,
           "grade": "6b",
           "name": "Vague à Bond",
           "number": 27
         },
         {
-          "comment": "dévers, départ assis, traversée. partir assis à gauche avec l'arête MG, traverser à droite par le bas et sortir dans le 27, Vague à Bond. voir aussi : 27, Vague à Bond 6b",
+          "comment": "dévers, départ assis, traversée. partir assis à gauche avec l'arête MG, traverser à droite par le bas et sortir dans le 27, Vague à Bond. voir aussi : 27, Vague à Bond 6b",
           "coordinate": null,
           "grade": "7a",
           "name": "Le Bas m'Attire",
@@ -50572,7 +50572,7 @@
           "number": 29
         },
         {
-          "comment": "proue. partir debout sans le petit bloc au sol, remonter la proue en diagonale à gauche et sortir au dessus d'un bloc (engagé et malcommode à parer). voir aussi : Les Croisés Font du Style assis 7a",
+          "comment": "proue. partir debout sans le petit bloc au sol, remonter la proue en diagonale à gauche et sortir au dessus d'un bloc (engagé et malcommode à parer). voir aussi : Les Croisés Font du Style assis 7a",
           "coordinate": null,
           "grade": "6c",
           "name": "Les Croisés Font du Style",
@@ -50593,77 +50593,77 @@
           "number": 32
         },
         {
-          "comment": "dévers, réta, réglettes. partir dans le dévers et sortir en réta à l'aide d'une réglette. voir aussi : 33quat, Le Coude Pompe 7a",
+          "comment": "dévers, réta, réglettes. partir dans le dévers et sortir en réta à l'aide d'une réglette. voir aussi : 33quat, Le Coude Pompe 7a",
           "coordinate": null,
           "grade": "6a",
           "name": "Le Coude Mou",
           "number": 33
         },
         {
-          "comment": "arête, plats. arête ronde juste à droite du 33, Le Coude Mou. voir aussi : 33ter, Le Poison-Chat 7b+",
+          "comment": "arête, plats. arête ronde juste à droite du 33, Le Coude Mou. voir aussi : 33ter, Le Poison-Chat 7b+",
           "coordinate": null,
           "grade": "7a+",
           "name": "Tuile de Coude",
           "number": "33bis"
         },
         {
-          "comment": "arête, traversée, plats. partir assis comme dans le 32, L'Envoi de Disparition , traverser à droite et sortir par l'angle rond du 33bis, Tuile de Coude. voir aussi : 33bis, Tuile de Coude 7a+",
+          "comment": "arête, traversée, plats. partir assis comme dans le 32, L'Envoi de Disparition , traverser à droite et sortir par l'angle rond du 33bis, Tuile de Coude. voir aussi : 33bis, Tuile de Coude 7a+",
           "coordinate": null,
           "grade": "7b+",
           "name": "Le Poison-Chat",
           "number": "33ter"
         },
         {
-          "comment": "dévers, réta, traversée. partir assis comme dans le 32, L'Envoi de Disparition , traverser à droite et sortir en réta dans le surplomb du 33, Le Coude Mou. voir aussi : 33, Le Coude Mou 6a",
+          "comment": "dévers, réta, traversée. partir assis comme dans le 32, L'Envoi de Disparition , traverser à droite et sortir en réta dans le surplomb du 33, Le Coude Mou. voir aussi : 33, Le Coude Mou 6a",
           "coordinate": null,
           "grade": "7a",
           "name": "Le Coude Pompe",
           "number": "33quater"
         },
         {
-          "comment": "mur. mur direct, sans les trous du 30, La Plaisanterie. voir aussi : Le Maître au Corps Beau assis droite 6c, Le Maître au Corps Beau assis gauche 6c",
+          "comment": "mur. mur direct, sans les trous du 30, La Plaisanterie. voir aussi : Le Maître au Corps Beau assis droite 6c, Le Maître au Corps Beau assis gauche 6c",
           "coordinate": null,
           "grade": "6a",
           "name": "Le Maître au Corps Beau",
           "number": 34
         },
         {
-          "comment": "mur. voie centrale dans le mur. Partir à droite au niveau du bloc, faire un pas de traversée à gauche et sortir dans le mur. voir aussi : 35bis, La Gueule Ouverte 7a, Par les Rondeurs à Lécher assis 7a+",
+          "comment": "mur. voie centrale dans le mur. Partir à droite au niveau du bloc, faire un pas de traversée à gauche et sortir dans le mur. voir aussi : 35bis, La Gueule Ouverte 7a, Par les Rondeurs à Lécher assis 7a+",
           "coordinate": null,
           "grade": "6c+",
           "name": "Par les Rondeurs à Lécher",
           "number": 35
         },
         {
-          "comment": "mur, départ assis, réglettes. partir assis du petit bloc plat de gauche et sortir par le 34, Le Large Bec. voir aussi : 35, Par les Rondeurs à Lécher 6c+, Par les Rondeurs à Lécher assis 7a+",
+          "comment": "mur, départ assis, réglettes. partir assis du petit bloc plat de gauche et sortir par le 34, Le Large Bec. voir aussi : 35, Par les Rondeurs à Lécher 6c+, Par les Rondeurs à Lécher assis 7a+",
           "coordinate": null,
           "grade": "7a",
           "name": "La Gueule Ouverte",
           "number": "35bis"
         },
         {
-          "comment": "départ assis, traversée, réglettes. partir assis à gauche, traverser à droite sur des grattons et rejoindre la fissure du 35quat, Le Plomb Sûr au Ton Gras. voir aussi : 35quat, Le Plomb Sûr au Ton Gras 7b",
+          "comment": "départ assis, traversée, réglettes. partir assis à gauche, traverser à droite sur des grattons et rejoindre la fissure du 35quat, Le Plomb Sûr au Ton Gras. voir aussi : 35quat, Le Plomb Sûr au Ton Gras 7b",
           "coordinate": null,
           "grade": "7b",
           "name": "Grat'Attitude",
           "number": "35ter"
         },
         {
-          "comment": "surplomb, fissure. surplomb direct en départ du sol. voir aussi : 35ter, Grat'Attitude 7b",
+          "comment": "surplomb, fissure. surplomb direct en départ du sol. voir aussi : 35ter, Grat'Attitude 7b",
           "coordinate": null,
           "grade": "7b",
           "name": "Le Plomb Sûr au Ton Gras",
           "number": "35quater"
         },
         {
-          "comment": "arête. arête de droite, en départ direct. voir aussi : 36bis, Pin Béni 6c",
+          "comment": "arête. arête de droite, en départ direct. voir aussi : 36bis, Pin Béni 6c",
           "coordinate": null,
           "grade": "6b+",
           "name": "L'Arrêt Net",
           "number": 36
         },
         {
-          "comment": "arête, départ assis, traversée. traversée g-d. partir assis à gauche, traverser à droite et sortir par l'arête du 36, L'Arrêt Net. voir aussi : 36, L'Arrêt Net 6b+",
+          "comment": "arête, départ assis, traversée. traversée g-d. partir assis à gauche, traverser à droite et sortir par l'arête du 36, L'Arrêt Net. voir aussi : 36, L'Arrêt Net 6b+",
           "coordinate": null,
           "grade": "6c",
           "name": "Pin Béni",
@@ -50687,7 +50687,7 @@
           "comment": "dévers, réta, départ assis. partir assis sous le surplomb comme dans le 38, L'Extrême Jonction mais après le réta, passer le dévers par la gauche et sortir au dessus.",
           "coordinate": null,
           "grade": "7a+",
-          "name": "Pour Qui Sonne l'Écaille ?",
+          "name": "Pour Qui Sonne l'Écaille ?",
           "number": "38bis"
         },
         {
@@ -50712,7 +50712,7 @@
           "number": 40
         },
         {
-          "comment": "mur, expo. mur expo situé sous la platière, en diagonale à droite puis direct. NB : une échappatoire à droite avec l'arête est possible.",
+          "comment": "mur, expo. mur expo situé sous la platière, en diagonale à droite puis direct. NB : une échappatoire à droite avec l'arête est possible.",
           "coordinate": null,
           "grade": "6c",
           "name": "L'Homme Haut Râle...",
@@ -51920,7 +51920,7 @@
           "number": 25
         },
         {
-          "comment": "jeté. voir aussi : Newton 6c+",
+          "comment": "jeté. voir aussi : Newton 6c+",
           "coordinate": null,
           "grade": "5+",
           "name": "",
@@ -53707,7 +53707,7 @@
           "comment": "",
           "coordinate": null,
           "grade": "2+",
-          "name": "À l'Abordable !",
+          "name": "À l'Abordable !",
           "number": 1
         },
         {
@@ -53791,7 +53791,7 @@
           "comment": "",
           "coordinate": null,
           "grade": "5+",
-          "name": "Y Va Miô Can l'Taeu Ére Sè é Fré !",
+          "name": "Y Va Miô Can l'Taeu Ére Sè é Fré !",
           "number": "9bis"
         },
         {
@@ -55266,7 +55266,7 @@
           "number": 43
         },
         {
-          "comment": "attention : descente difficile (3c) et engagée !",
+          "comment": "attention : descente difficile (3c) et engagée !",
           "coordinate": null,
           "grade": "3",
           "name": "Lucie la Résistante",
@@ -55444,7 +55444,7 @@
           "number": 12
         },
         {
-          "comment": "surplomb, arête. sur le \"bloc aux gravures\". NB : respectez les gravures rupestres !",
+          "comment": "surplomb, arête. sur le \"bloc aux gravures\". NB : respectez les gravures rupestres !",
           "coordinate": null,
           "grade": "5+",
           "name": "L'Art Pariétal",
@@ -55835,7 +55835,7 @@
           "number": 1
         },
         {
-          "comment": "expo, traversée. partir tout à gauche, redescendre sous le surplomb et sortir à droite du 36, Mauvais Sang (flèche blanche ; expo). voir aussi : Noir Désir 7a+",
+          "comment": "expo, traversée. partir tout à gauche, redescendre sous le surplomb et sortir à droite du 36, Mauvais Sang (flèche blanche ; expo). voir aussi : Noir Désir 7a+",
           "coordinate": null,
           "grade": "7a",
           "name": "Danse Macabre",
@@ -55856,7 +55856,7 @@
           "number": "2quater"
         },
         {
-          "comment": "traversée. sur un bloc derrière le départ du noir, tagué d'un \"A\". Partir au niveau de la flèche noir avec la grosse fissure et en sortant dans le mur. 6c en partant en bas à gauche avec un plat MG et une réglette MD dans le dévers et en sortant dans la petite dalle après l'angle. NB : cette voie a été appelée \"A Plus\" à l'origine.",
+          "comment": "traversée. sur un bloc derrière le départ du noir, tagué d'un \"A\". Partir au niveau de la flèche noir avec la grosse fissure et en sortant dans le mur. 6c en partant en bas à gauche avec un plat MG et une réglette MD dans le dévers et en sortant dans la petite dalle après l'angle. NB : cette voie a été appelée \"A Plus\" à l'origine.",
           "coordinate": null,
           "grade": "6b+",
           "name": "La Mignonne",
@@ -55877,7 +55877,7 @@
           "number": 4
         },
         {
-          "comment": "traversée. sur la gauche du secteur principal, dans la pente au dessus du parking. NB : l'aller-retour est connu sous le nom de \"Return Ticket\" (7c+).",
+          "comment": "traversée. sur la gauche du secteur principal, dans la pente au dessus du parking. NB : l'aller-retour est connu sous le nom de \"Return Ticket\" (7c+).",
           "coordinate": null,
           "grade": "7c",
           "name": "Le Dahlia Noir",
@@ -55926,7 +55926,7 @@
           "number": "7quater"
         },
         {
-          "comment": "traversée. à droite du 3, Un Bien Beau Superlatif (flèche blanche). NB : pour l'anniversaire de l'ouvreur !",
+          "comment": "traversée. à droite du 3, Un Bien Beau Superlatif (flèche blanche). NB : pour l'anniversaire de l'ouvreur !",
           "coordinate": null,
           "grade": "6b+",
           "name": "Les 50 Balais",
@@ -55968,7 +55968,7 @@
           "number": "9ter"
         },
         {
-          "comment": "mur, traversée. longue traversée ; le mouvement de \"crawl\" n'est pas obligatoire.",
+          "comment": "mur, traversée. longue traversée ; le mouvement de \"crawl\" n'est pas obligatoire.",
           "coordinate": null,
           "grade": "6c",
           "name": "Le Crawl en Mer Noire",
@@ -55989,14 +55989,14 @@
           "number": 11
         },
         {
-          "comment": "surplomb, départ assis. en face du 17, Le Pendule des Avaux , sur le bloc à gauche de 11, L'Onyx et du 28, Le Biodégradable. Partir assis sous le surplomb, prendre les prises sur la droite, revenir à gauche et sortir au dessus en réta sur des plats. NB : la méthode d'ouverture consiste à sortir en traversant à gauche (un peu morpho). voir aussi : Le Plomb des Frelons direct 7a+ (7b)",
+          "comment": "surplomb, départ assis. en face du 17, Le Pendule des Avaux , sur le bloc à gauche de 11, L'Onyx et du 28, Le Biodégradable. Partir assis sous le surplomb, prendre les prises sur la droite, revenir à gauche et sortir au dessus en réta sur des plats. NB : la méthode d'ouverture consiste à sortir en traversant à gauche (un peu morpho). voir aussi : Le Plomb des Frelons direct 7a+ (7b)",
           "coordinate": null,
           "grade": "7a",
           "name": "Le Plomb des Frelons",
           "number": 12
         },
         {
-          "comment": "surplomb, expo, réta. remonter le petit surplomb situé 1m à droite du départ du 27, Le Folklo (20m en dessous du Le Toit aux Écritures ) et sortir en réta sur des plats (flèche blanche). NB : \"Lao Dal\" est le nom d'un baume utilisé en traumatologie...",
+          "comment": "surplomb, expo, réta. remonter le petit surplomb situé 1m à droite du départ du 27, Le Folklo (20m en dessous du Le Toit aux Écritures ) et sortir en réta sur des plats (flèche blanche). NB : \"Lao Dal\" est le nom d'un baume utilisé en traumatologie...",
           "coordinate": null,
           "grade": "7a",
           "name": "Lao Dal",
@@ -56010,7 +56010,7 @@
           "number": 13
         },
         {
-          "comment": "mur, plats. sur le \"bloc aux gravures\", à droite de 13, L'Art Pariétal (n°13 rouge). voir aussi : L'Anthracite assis 7a+",
+          "comment": "mur, plats. sur le \"bloc aux gravures\", à droite de 13, L'Art Pariétal (n°13 rouge). voir aussi : L'Anthracite assis 7a+",
           "coordinate": null,
           "grade": "7a",
           "name": "L'Anthracite",
@@ -56052,7 +56052,7 @@
           "number": "17bis"
         },
         {
-          "comment": "traversée. traverser à droite et sortir sans l'arbuste ! NB : ancien n°23 rouge, récemment renuméroté en noir.",
+          "comment": "traversée. traverser à droite et sortir sans l'arbuste ! NB : ancien n°23 rouge, récemment renuméroté en noir.",
           "coordinate": null,
           "grade": "6b",
           "name": "La Traversée du Bonsaï",
@@ -56087,7 +56087,7 @@
           "number": 22
         },
         {
-          "comment": "jeté. jeté direct 2m à droite du 19, Les Chaires Mobiles. voir aussi : Le Tricheur 7a (7a+)",
+          "comment": "jeté. jeté direct 2m à droite du 19, Les Chaires Mobiles. voir aussi : Le Tricheur 7a (7a+)",
           "coordinate": null,
           "grade": "7b+",
           "name": "Les Révoltés du Stonewall",
@@ -56101,14 +56101,14 @@
           "number": 23
         },
         {
-          "comment": "surplomb, départ assis. sur l'envers du bloc du 77, La Popeye , en départ assis en bas à gauche. voir aussi : 24bis, La Directe de l'Épée de Sable 7c",
+          "comment": "surplomb, départ assis. sur l'envers du bloc du 77, La Popeye , en départ assis en bas à gauche. voir aussi : 24bis, La Directe de l'Épée de Sable 7c",
           "coordinate": null,
           "grade": "7b",
           "name": "L'Épée de Sable",
           "number": 24
         },
         {
-          "comment": "surplomb, départ assis. version directe de 24, L'Épée de Sable , sur l'envers du bloc du 77, La Popeye. NB : il existe une variante très éliminante en 8a. voir aussi : 24, L'Épée de Sable 7b (7b+)",
+          "comment": "surplomb, départ assis. version directe de 24, L'Épée de Sable , sur l'envers du bloc du 77, La Popeye. NB : il existe une variante très éliminante en 8a. voir aussi : 24, L'Épée de Sable 7b (7b+)",
           "coordinate": null,
           "grade": "7c",
           "name": "La Directe de l'Épée de Sable",
@@ -56136,21 +56136,21 @@
           "number": 26
         },
         {
-          "comment": "mur, expo, réglettes. à droite du 10, L'Oubli , dans un couloir. voir aussi : Sorbet Mouche 7a+, La Mouche directe 7b",
+          "comment": "mur, expo, réglettes. à droite du 10, L'Oubli , dans un couloir. voir aussi : Sorbet Mouche 7a+, La Mouche directe 7b",
           "coordinate": null,
           "grade": "7a",
           "name": "La Mouche",
           "number": 27
         },
         {
-          "comment": "départ assis, traversée, plats. sur le bloc du 13, Le Poussif Nocif. Partir assis tout à gauche comme dans Mort Sur , mais sortir directement au niveau de la proue sur des aplats. voir aussi : 28bis, Le Nègre en Chemise 7a+",
+          "comment": "départ assis, traversée, plats. sur le bloc du 13, Le Poussif Nocif. Partir assis tout à gauche comme dans Mort Sur , mais sortir directement au niveau de la proue sur des aplats. voir aussi : 28bis, Le Nègre en Chemise 7a+",
           "coordinate": null,
           "grade": "6c",
           "name": "Le Nègre en Chemise raccourci",
           "number": 28
         },
         {
-          "comment": "départ assis, traversée, plats. partir assis tout à gauche, croiser le 13, Le Poussif Nocif et finir dans le mur lisse à droite. NB : une variante plus courte (autour de 6c/6c+) sortant directement par la proue est possible. voir aussi : 28, Le Nègre en Chemise raccourci 6c (6c+)",
+          "comment": "départ assis, traversée, plats. partir assis tout à gauche, croiser le 13, Le Poussif Nocif et finir dans le mur lisse à droite. NB : une variante plus courte (autour de 6c/6c+) sortant directement par la proue est possible. voir aussi : 28, Le Nègre en Chemise raccourci 6c (6c+)",
           "coordinate": null,
           "grade": "7a+",
           "name": "Le Nègre en Chemise",
@@ -56171,14 +56171,14 @@
           "number": 30
         },
         {
-          "comment": "proue. proue à compression évidente sur le bloc de 30, Coup de Blues , à droite du chemin d'accès, en contrebas du secteur principal. voir aussi : L'Étrave à Sucre assis 8a",
+          "comment": "proue. proue à compression évidente sur le bloc de 30, Coup de Blues , à droite du chemin d'accès, en contrebas du secteur principal. voir aussi : L'Étrave à Sucre assis 8a",
           "coordinate": null,
           "grade": "7b+",
           "name": "L'Étrave à Sucre",
           "number": "30bis"
         },
         {
-          "comment": "traversée. sur la gauche du secteur principal, dans la pente au dessus du parking. Partir de l'angle tout à droite, traverser par le bas et sortir dans un bombé. voir aussi : L'Œuvre au Noir en aller-retour 7b+ (7b)",
+          "comment": "traversée. sur la gauche du secteur principal, dans la pente au dessus du parking. Partir de l'angle tout à droite, traverser par le bas et sortir dans un bombé. voir aussi : L'Œuvre au Noir en aller-retour 7b+ (7b)",
           "coordinate": null,
           "grade": "7a",
           "name": "L'Œuvre au Noir",
@@ -56380,7 +56380,7 @@
           "number": 9
         },
         {
-          "comment": "mur. sur la face Sud du bloc du 9. NB : une méthode plus facile mais morpho en Dülfer est possible sur ce bloc.",
+          "comment": "mur. sur la face Sud du bloc du 9. NB : une méthode plus facile mais morpho en Dülfer est possible sur ce bloc.",
           "coordinate": null,
           "grade": "6b+",
           "name": "Coup Double",
@@ -56443,7 +56443,7 @@
           "number": 16
         },
         {
-          "comment": "traversée, plats. NB : la traversée peut être rallongée de 5m en allant jusqu'au petit sapin (6a+/6b environ).",
+          "comment": "traversée, plats. NB : la traversée peut être rallongée de 5m en allant jusqu'au petit sapin (6a+/6b environ).",
           "coordinate": null,
           "grade": "5",
           "name": "",
@@ -56632,7 +56632,7 @@
           "number": 36
         },
         {
-          "comment": "fissure. NB : une variante sur la gauche est possible, en jeté du sol (6a environ).",
+          "comment": "fissure. NB : une variante sur la gauche est possible, en jeté du sol (6a environ).",
           "coordinate": null,
           "grade": "4",
           "name": "",
@@ -56660,7 +56660,7 @@
           "number": 40
         },
         {
-          "comment": "mur, fissure, inversée. NB : une variante en 5a/5b sur la gauche est également possible.",
+          "comment": "mur, fissure, inversée. NB : une variante en 5a/5b sur la gauche est également possible.",
           "coordinate": null,
           "grade": "5-",
           "name": "",
@@ -57371,7 +57371,7 @@
     {
       "boulders": [
         {
-          "comment": "pilier, expo. prise cassée ?",
+          "comment": "pilier, expo. prise cassée ?",
           "coordinate": null,
           "grade": "5",
           "name": "L'Angle Ingrat",
@@ -58162,7 +58162,7 @@
           "number": 11
         },
         {
-          "comment": "dévers, jeté, réta. cotation très sèche !",
+          "comment": "dévers, jeté, réta. cotation très sèche !",
           "coordinate": null,
           "grade": "5+",
           "name": "Compagne",
@@ -58225,7 +58225,7 @@
           "number": 20
         },
         {
-          "comment": "surplomb. morpho. voir aussi : La Duègne (départ assis) 7b",
+          "comment": "surplomb. morpho. voir aussi : La Duègne (départ assis) 7b",
           "coordinate": null,
           "grade": "6a",
           "name": "La Duègne",
@@ -59218,7 +59218,7 @@
           "comment": "",
           "coordinate": null,
           "grade": "5-",
-          "name": "Pas de Panique !",
+          "name": "Pas de Panique !",
           "number": 11
         },
         {
@@ -59428,7 +59428,7 @@
           "comment": "",
           "coordinate": null,
           "grade": "6a+",
-          "name": "Poussez Pas !",
+          "name": "Poussez Pas !",
           "number": "35bis"
         },
         {
@@ -61178,7 +61178,7 @@
           "comment": "",
           "coordinate": null,
           "grade": "6a",
-          "name": "Laie Go !",
+          "name": "Laie Go !",
           "number": 8
         },
         {
@@ -61538,7 +61538,7 @@
           "number": 16
         },
         {
-          "comment": "pilier, traversée. traverser à gauche et sortir sur le pilier. NB : la traversée inverse s'appelle 17bis, L'Écart Type (7b).",
+          "comment": "pilier, traversée. traverser à gauche et sortir sur le pilier. NB : la traversée inverse s'appelle 17bis, L'Écart Type (7b).",
           "coordinate": null,
           "grade": "7a",
           "name": "Retour de Cochon",
@@ -61608,7 +61608,7 @@
           "number": 24
         },
         {
-          "comment": "fissure. fissure-tunnel entre deux blocs avec des coincements. NB : compte tenu de la pénombre qui y règne, il est recommandé de faire ce bloc en fin de journée, lorsque le soleil est rasant.",
+          "comment": "fissure. fissure-tunnel entre deux blocs avec des coincements. NB : compte tenu de la pénombre qui y règne, il est recommandé de faire ce bloc en fin de journée, lorsque le soleil est rasant.",
           "coordinate": null,
           "grade": "7a",
           "name": "Trip Intestinal",
@@ -62417,7 +62417,7 @@
           "number": 2
         },
         {
-          "comment": "mur. mur avec un gros trou ; sans l'angle de droite.",
+          "comment": "mur. mur avec un gros trou ; sans l'angle de droite.",
           "coordinate": null,
           "grade": "6a",
           "name": "Croix du Sud",
@@ -62431,14 +62431,14 @@
           "number": 4
         },
         {
-          "comment": "mur. à droite de l'angle du 4, Calvaire. voir aussi : 5bis, La Traversée de l'Excentrique 6c",
+          "comment": "mur. à droite de l'angle du 4, Calvaire. voir aussi : 5bis, La Traversée de l'Excentrique 6c",
           "coordinate": null,
           "grade": "5+",
           "name": "L'Excentrique",
           "number": 5
         },
         {
-          "comment": "traversée. traverser de droite à gauche sans les prises du haut et sortir dans le 5, L'Excentrique. voir aussi : 5, L'Excentrique 5+",
+          "comment": "traversée. traverser de droite à gauche sans les prises du haut et sortir dans le 5, L'Excentrique. voir aussi : 5, L'Excentrique 5+",
           "coordinate": null,
           "grade": "6c",
           "name": "La Traversée de l'Excentrique",
@@ -62543,7 +62543,7 @@
           "number": 17
         },
         {
-          "comment": "mur, expo. mur engagé. voir aussi : Babylone directe 6c",
+          "comment": "mur, expo. mur engagé. voir aussi : Babylone directe 6c",
           "coordinate": null,
           "grade": "6a",
           "name": "Babylone",
@@ -62571,7 +62571,7 @@
           "number": 21
         },
         {
-          "comment": "mur. sur la partie taggée du bloc. voir aussi : L'Avoine direct 6c (7a)",
+          "comment": "mur. sur la partie taggée du bloc. voir aussi : L'Avoine direct 6c (7a)",
           "coordinate": null,
           "grade": "5+",
           "name": "L'Avoine",
@@ -62847,7 +62847,7 @@
           "number": "16bis"
         },
         {
-          "comment": "mur, réta. voie sur écailles fragiles : prudence !",
+          "comment": "mur, réta. voie sur écailles fragiles : prudence !",
           "coordinate": null,
           "grade": "4",
           "name": "Arête Sud",
@@ -63550,7 +63550,7 @@
           "comment": "",
           "coordinate": null,
           "grade": "5+",
-          "name": "La Vire, tu Oses ?",
+          "name": "La Vire, tu Oses ?",
           "number": 17
         },
         {
@@ -63841,7 +63841,7 @@
           "number": 52
         },
         {
-          "comment": "toit, expo. voie de droite dans un toit caractéristique situé au sommet de la pente, à droite du chemin venant de la Chaudronnerie. voir aussi : 44, L'Abri Colle 7a",
+          "comment": "toit, expo. voie de droite dans un toit caractéristique situé au sommet de la pente, à droite du chemin venant de la Chaudronnerie. voir aussi : 44, L'Abri Colle 7a",
           "coordinate": null,
           "grade": "6b",
           "name": "L'Abri Colle droite",
@@ -63872,7 +63872,7 @@
           "comment": "",
           "coordinate": null,
           "grade": "6a",
-          "name": "Bis Où ?",
+          "name": "Bis Où ?",
           "number": "56bis"
         },
         {
@@ -63950,7 +63950,7 @@
           "number": 3
         },
         {
-          "comment": "réta, traversée, plats. au Sud-Est du massif, dans la partie boisée. NB : la voie a été rebrossée en juillet 2008.",
+          "comment": "réta, traversée, plats. au Sud-Est du massif, dans la partie boisée. NB : la voie a été rebrossée en juillet 2008.",
           "coordinate": null,
           "grade": "7a",
           "name": "L'Étrave Versée",
@@ -63978,7 +63978,7 @@
           "number": 7
         },
         {
-          "comment": "pilier. au fond du thalweg, au centre du massif. NB : la voie a été rebrossée en juillet 2008.",
+          "comment": "pilier. au fond du thalweg, au centre du massif. NB : la voie a été rebrossée en juillet 2008.",
           "coordinate": null,
           "grade": "7b",
           "name": "Émergence",
@@ -64076,14 +64076,14 @@
           "number": 20
         },
         {
-          "comment": "proue, réta. voie de gauche sur une proue déversante. voir aussi : 22, La Diagonale du Houx 7a+ (6c)",
+          "comment": "proue, réta. voie de gauche sur une proue déversante. voir aussi : 22, La Diagonale du Houx 7a+ (6c)",
           "coordinate": null,
           "grade": "6c+",
           "name": "L'An Volé",
           "number": 21
         },
         {
-          "comment": "dévers, proue, plats. remonter la proue déversante en restant sur la droite. voir aussi : 21, L'An Volé 7a (6b+)",
+          "comment": "dévers, proue, plats. remonter la proue déversante en restant sur la droite. voir aussi : 21, L'An Volé 7a (6b+)",
           "coordinate": null,
           "grade": "7a",
           "name": "La Diagonale du Houx",
@@ -64111,21 +64111,21 @@
           "number": 25
         },
         {
-          "comment": "surplomb, départ assis. surplomb direct en départ assis situé vers le sommet du massif. NB : la voie a été rebrossée en juillet 2008. voir aussi : Avide d'Aile 7b (7b+), Olniak 7b+",
+          "comment": "surplomb, départ assis. surplomb direct en départ assis situé vers le sommet du massif. NB : la voie a été rebrossée en juillet 2008. voir aussi : Avide d'Aile 7b (7b+), Olniak 7b+",
           "coordinate": null,
           "grade": "7c",
           "name": "Olniak assis",
           "number": 26
         },
         {
-          "comment": "traversée. partir assis, traverser à droite et sortir dans le 28, Le Vide Invalidant. voir aussi : 26ter, Pro-Long-Jet 7a+",
+          "comment": "traversée. partir assis, traverser à droite et sortir dans le 28, Le Vide Invalidant. voir aussi : 26ter, Pro-Long-Jet 7a+",
           "coordinate": null,
           "grade": "7a",
           "name": "L'Arbre Ité",
           "number": "26bis"
         },
         {
-          "comment": "traversée. partir assis, traverser à droite, passer l'angle et sortir dans le 25, Envie d'Elle. voir aussi : 26bis, L'Arbre Ité 7a",
+          "comment": "traversée. partir assis, traverser à droite, passer l'angle et sortir dans le 25, Envie d'Elle. voir aussi : 26bis, L'Arbre Ité 7a",
           "coordinate": null,
           "grade": "7a+",
           "name": "Pro-Long-Jet",
@@ -64146,7 +64146,7 @@
           "number": 28
         },
         {
-          "comment": "bombé, réta. bombé en départ bas. NB : la voie est actuellement à rebrosser (avril 2010).",
+          "comment": "bombé, réta. bombé en départ bas. NB : la voie est actuellement à rebrosser (avril 2010).",
           "coordinate": null,
           "grade": "7a",
           "name": "La Bosse Niaque",
@@ -64163,7 +64163,7 @@
           "comment": "mur.",
           "coordinate": null,
           "grade": "6b+",
-          "name": "Pare Tout !",
+          "name": "Pare Tout !",
           "number": 31
         },
         {
@@ -64244,14 +64244,14 @@
           "number": 42
         },
         {
-          "comment": "mur. mur à doigts situé au Nord-Ouest du massif, en contrebas du chemin en terre venant de \"La Chaudronnerie\". NB : la voie a été rebrossée en juillet 2008.",
+          "comment": "mur. mur à doigts situé au Nord-Ouest du massif, en contrebas du chemin en terre venant de \"La Chaudronnerie\". NB : la voie a été rebrossée en juillet 2008.",
           "coordinate": null,
           "grade": "7b+",
           "name": "Aphone",
           "number": 43
         },
         {
-          "comment": "toit, expo. voie de gauche dans un toit caractéristique situé au sommet de la pente, à droite du chemin venant de la Chaudronnerie. voir aussi : 53, L'Abri Colle droite 6b",
+          "comment": "toit, expo. voie de gauche dans un toit caractéristique situé au sommet de la pente, à droite du chemin venant de la Chaudronnerie. voir aussi : 53, L'Abri Colle droite 6b",
           "coordinate": null,
           "grade": "7a",
           "name": "L'Abri Colle",
@@ -64419,14 +64419,14 @@
           "comment": "dévers, réta.",
           "coordinate": null,
           "grade": "4-",
-          "name": "Le « 28 »",
+          "name": "Le « 28 »",
           "number": 7
         },
         {
           "comment": "traversée.",
           "coordinate": null,
           "grade": "3+",
-          "name": "Sans les Pieds !",
+          "name": "Sans les Pieds !",
           "number": 8
         },
         {
@@ -64524,7 +64524,7 @@
           "comment": "dalle. grande dalle engagée.",
           "coordinate": null,
           "grade": "4-",
-          "name": "Voie de droite de « La Dalle Y »",
+          "name": "Voie de droite de « La Dalle Y »",
           "number": 22
         }
       ],
@@ -64573,7 +64573,7 @@
           "number": 2
         },
         {
-          "comment": "toit, expo, traversée. tout au sommet du massif, sous la platière, au niveau d'un panneau \"Danger, rochers instables\". Partir sous le surplomb, remonter vers la droite en suivant une fissure et sortir directement dans le toit. voir aussi : Le Toit du Koala direct  7a",
+          "comment": "toit, expo, traversée. tout au sommet du massif, sous la platière, au niveau d'un panneau \"Danger, rochers instables\". Partir sous le surplomb, remonter vers la droite en suivant une fissure et sortir directement dans le toit. voir aussi : Le Toit du Koala direct  7a",
           "coordinate": null,
           "grade": "6b",
           "name": "Le Toit du Koala",
@@ -64594,7 +64594,7 @@
           "number": 4
         },
         {
-          "comment": "dalle, surplomb, expo. dalle haute et expo avec un départ surplombant sur le bloc du Baba. voir aussi : La Dalle Verte assis  7a (6c+)",
+          "comment": "dalle, surplomb, expo. dalle haute et expo avec un départ surplombant sur le bloc du Baba. voir aussi : La Dalle Verte assis  7a (6c+)",
           "coordinate": null,
           "grade": "5",
           "name": "La Dalle Verte",
@@ -64678,7 +64678,7 @@
           "number": 17
         },
         {
-          "comment": "dalle, mur, traversée. sur le bloc de La Calanquaise. voir aussi : Froxy Lady  7b+",
+          "comment": "dalle, mur, traversée. sur le bloc de La Calanquaise. voir aussi : Froxy Lady  7b+",
           "coordinate": null,
           "grade": "6a",
           "name": "Le Pontet Bas",
@@ -64755,7 +64755,7 @@
           "number": 29
         },
         {
-          "comment": "expo, traversée. complètement à l'Est du massif, une vingtaine de mètres à gauche des escaliers, un peu en dessous du sommet de la pente. Partir debout sur la droite, traverser sur des grosses prises, passer dans le creux et sortir juste après. voir aussi : 25, Stretchin  7a+ (7b)",
+          "comment": "expo, traversée. complètement à l'Est du massif, une vingtaine de mètres à gauche des escaliers, un peu en dessous du sommet de la pente. Partir debout sur la droite, traverser sur des grosses prises, passer dans le creux et sortir juste après. voir aussi : 25, Stretchin 7a+ (7b)",
           "coordinate": null,
           "grade": "6b",
           "name": "La Crampe à Rachid",
