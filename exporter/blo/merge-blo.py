@@ -2,7 +2,6 @@
 
 import argparse
 import json
-import re
 
 from BleauDataBase.BleauDataBase import BleauDataBase, Boulder
 
@@ -140,7 +139,7 @@ def merge_circuit(circuit_blo):
             and circuit_blo['numero'] == circuit.number
         ):
             couleur_match = circuit_blo['couleur'] == circuit.colour
-            cotation_match = circuit_blo['cotation'] == circuit.grade
+            # cotation_match = circuit_blo['cotation'] == circuit.grade
             if couleur_match:
                 found_circuit = circuit
             else:
@@ -150,17 +149,41 @@ def merge_circuit(circuit_blo):
                 pass
                 # print('!!', circuit_blo['cotation'], circuit.grade, circuit_blo['couleur'], circuit.colour)
 
-    if found_circuit is not None and not found_circuit.boulders:
-        boulders = convert_boulder(circuit_blo)
-        # print(str(found_circuit), len(boulders))
-        found_circuit.boulders = boulders
-    else:
-        pass
+    # Add boulders
+    # if found_circuit is not None and not found_circuit.boulders:
+    #     boulders = convert_boulder(circuit_blo)
+    #     # print(str(found_circuit), len(boulders))
+    #     found_circuit.boulders = boulders
+    # else:
+    #     pass
         # print('!', circuit_blo['massif'], '|', circuit_blo['name'])
         # print('!',
         #       circuit_blo['massif'],
         #       circuit_blo['numero'], circuit_blo ['cotation'], circuit_blo['couleur'],
         #       number_of_boulders)
+
+    # keys = 'numero', 'renove', 'items', 'cotation', 'descriptif', 'lon', 'cree', 'secteur', 'maj',
+    #        'status', 'couleur', 'blo_url', 'name', 'nombre_de_voie', 'info', 'lat', 'massif'
+
+    # keys = set()
+    # if found_circuit is not None:
+    #     keys |= set(circuit_blo.keys())
+    # print(keys)
+
+    if found_circuit:
+        print()
+        print(found_circuit.name)
+        try:
+            renove = int(circuit_blo['renove'])
+        except:
+            renove = 0
+        try:
+            cree = int(circuit_blo['cree'])
+        except:
+            cree = 0
+        print(cree, renove)
+        print(circuit_blo['descriptif'])
+        print(circuit_blo['info'])
 
 ####################################################################################################
 
@@ -176,8 +199,8 @@ for secteur in secteurs:
                 if number_of_boulders > 1:
                     merge_circuit(circuit_blo)
 
-if args.rewrite is not None:
-    bleau_database.to_json(args.rewrite)
+# if args.rewrite is not None:
+#     bleau_database.to_json(args.rewrite)
 
 ####################################################################################################
 #
