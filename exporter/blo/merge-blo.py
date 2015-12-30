@@ -181,9 +181,16 @@ def merge_circuit(circuit_blo):
             cree = int(circuit_blo['cree'])
         except:
             cree = 0
+        descriptif = circuit_blo['descriptif']
         print(cree, renove)
         print(circuit_blo['descriptif'])
         print(circuit_blo['info'])
+        if cree > 0:
+            found_circuit.creation_date = cree
+        if renove > 0:
+            found_circuit.renovation_date = renove
+        if descriptif:
+            found_circuit.note = descriptif
 
 ####################################################################################################
 
@@ -199,8 +206,8 @@ for secteur in secteurs:
                 if number_of_boulders > 1:
                     merge_circuit(circuit_blo)
 
-# if args.rewrite is not None:
-#     bleau_database.to_json(args.rewrite)
+if args.rewrite is not None:
+    bleau_database.to_json(args.rewrite)
 
 ####################################################################################################
 #
