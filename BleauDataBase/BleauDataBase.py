@@ -826,9 +826,11 @@ class Circuit(PlaceBase):
     gestion = str # Fixme: fr
     grade = AlpineGrade
     massif = InstanceChecker(Massif)
+    note = str
     number = int
     opener = str
     refection_date = int
+    refection_note = str
     status = str
     topos = StringList
 
