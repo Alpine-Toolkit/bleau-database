@@ -1,0 +1,65 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "include/base.html" %}
+
+{% block breadcrumb_li %}
+  <li><a href="/{{ lang_code }}/information">Information</a></li>
+  <li class="active">Données à compléter</li>
+{% endblock %}
+
+{% block content %}
+  <h2>Massifs sans circuits</h2>
+  <ul>
+    {% for massif in massifs -%}
+      {%- if not massif.number_of_circuits -%}
+	<li><a href="/{{ lang_code }}/massif/{{ massif.name }}">{{ massif.name }}</a></li>
+      {% endif %}
+    {%- endfor %}
+  </ul>
+  <h2>Massifs sans coordonnées</h2>
+  <ul>
+    {% for massif in massifs -%}
+      {%- if not massif.coordinate -%}
+	<li><a href="/{{ lang_code }}/massif/{{ massif.name }}">{{ massif.name }}</a></li>
+      {% endif %}
+    {%- endfor %}
+  </ul>
+  <h2>Massifs sans type de chaos</h2>
+  <ul>
+    {% for massif in massifs -%}
+      {%- if not massif.chaos_type -%}
+	<li><a href="/{{ lang_code }}/massif/{{ massif.name }}">{{ massif.name }}</a></li>
+      {% endif %}
+    {%- endfor %}
+  </ul>
+  <h2>Circuits sans blocs</h2>
+  <ul>
+    {% for massif in massifs -%}
+      {% for circuit in massif.circuits -%}
+	{%- if not circuit.number_of_boulders -%}
+	  <li><a href="/{{ lang_code }}/circuit/{{ circuit.name }}">{{ massif.name }} {{  _("N°") }} {{ circuit.number }}</a></li>
+	{% endif %}
+      {%- endfor %}
+    {%- endfor %}
+  </ul>
+  <h2>Circuits sans coordonnées</h2>
+  <ul>
+    {% for massif in massifs -%}
+      {% for circuit in massif.circuits -%}
+	{%- if not circuit.coordinate -%}
+	  <li><a href="/{{ lang_code }}/circuit/{{ circuit.name }}">{{ massif.name }} {{  _("N°") }} {{ circuit.number }}</a></li>
+	{% endif %}
+      {%- endfor %}
+    {%- endfor %}
+  </ul>
+  <h2>Circuits sans ouvreur</h2>
+  <ul>
+    {% for massif in massifs -%}
+      {% for circuit in massif.circuits -%}
+	{%- if not circuit.opener -%}
+	  <li><a href="/{{ lang_code }}/circuit/{{ circuit.name }}">{{ massif.name }} {{  _("N°") }} {{ circuit.number }}</a></li>
+	{% endif %}
+      {%- endfor %}
+    {%- endfor %}
+  </ul>
+{% endblock %}
+

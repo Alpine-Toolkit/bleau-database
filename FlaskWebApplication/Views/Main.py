@@ -136,12 +136,48 @@ def data():
     return render_template_i18n('data.html')
 
 @cache.cached()
-@main.route('/statistics')
+@main.route('/information')
+def information():
+    return render_template_i18n('information/information.html')
+
+@cache.cached()
+@main.route('/information/statistics')
 def statistics():
     circuits = model.bleau_database.circuits
     circuit_statistics = model.circuit_statistics_cache[list(circuits)]
-    return render_template_i18n('statistics.html',
+    return render_template_i18n('information/statistics.html',
                                 circuit_statistics=circuit_statistics)
+
+@cache.cached()
+@main.route('/information/places')
+def places():
+    return render_template_i18n('information/places.html',
+                                places=list(model.bleau_database.places))
+
+@cache.cached()
+@main.route('/information/affiliations')
+def affiliations():
+    return render_template_i18n('information/affiliations.html',
+                                affiliations=model.bleau_database.affiliations)
+
+@cache.cached()
+@main.route('/information/persons')
+def persons():
+    return render_template_i18n('information/persons.html',
+                                persons=model.bleau_database.persons)
+
+@cache.cached()
+@main.route('/information/person/<person>')
+def person(person):
+    person = model.bleau_database.persons[person]
+    return render_template_i18n('information/person.html',
+                                person=person)
+
+@cache.cached()
+@main.route('/information/missing')
+def missing_information():
+    return render_template_i18n('information/missing.html',
+                                massifs=list(model.bleau_database.massifs)) # Fixme: iter run once
 
 @cache.cached()
 @main.route('/massifs')

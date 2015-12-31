@@ -1,0 +1,27 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "include/base.html" %}
+
+{% block breadcrumb_li %}
+  <li class="active">Informations sur les Circuits</li>
+{% endblock %}
+
+{% block content %}
+  <h2>Informations sur les circuits</h2>
+  <ul>
+    <li><a href="/{{ lang_code }}/information/statistics">
+      <i class="fa fa-bar-chart"></i> {{  _("Statistiques des Circuits") }}</a>
+    </li>
+    <li><a href="/{{ lang_code }}/information/places">
+      <i class="fa fa-map-marker"></i> {{  _("Places") }}</a>
+    </li>
+    <li><a href="/{{ lang_code }}/information/affiliations">
+      <i class="fa fa-users"></i> {{  _("Affiliations") }}</a>
+    </li>
+    <li><a href="/{{ lang_code }}/information/persons">
+      <i class="fa fa-user"></i> {{  _("Personnes") }}</a>
+    </li>
+    <li><a href="/{{ lang_code }}/information/missing">
+      <i class="fa fa-search"></i> {{  _("Données à compléter") }}</a>
+    </li>
+  </ul>
+{% endblock %}

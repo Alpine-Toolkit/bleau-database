@@ -14,11 +14,16 @@
 {% endblock %}
 
 {% block breadcrumb_li %}
+  <li><a href="/{{ lang_code }}/information">Information</a></li>
   <li class="active">Statistiques sur les Circuits</li>
 {% endblock %}
 
 {% block content %}
   <h2>Statistiques sur tous les circuits</h2>
+  <p>
+    Les graphiques suivants montrent les distributions des cotations pour l'ensemble des circuits et
+    des blocs des massifs de Fontainebleau.
+  </p>
   <figure>
     {{ circuit_statistics.circuit_grade_barchart.div|safe }}
   </figure>
@@ -26,6 +31,11 @@
     {{ circuit_statistics.global_boulder_grade_barchart.div|safe }}
   </figure>
   <h2>Statistiques sur tous les difficultés des circuits</h2>
+  <p>
+    Les graphiques suivants montrent les distributions des cotations des blocs en fonction de la
+    difficulté du circuit, notée en cotation alpine. On voit que dans l'ensemble les distributions
+    suivent une forme normale centrée sur la cotation en Cb (où C ∈ [2, 6]) correspondant au niveau de difficulté.
+  </p>
   {% for grade in circuit_grades %}
     <figure>
       {{ circuit_statistics.boulder_grade_barchart(grade).div|safe }}

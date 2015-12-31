@@ -34,8 +34,11 @@
     <dt>Type de chaos</dt><dd>{{ massif.chaos_type }}</dd>
     <dt>Gestion</dt><dd>{{ circuit.gestion }}</dd>
     <dt>Status</dt><dd>{{ circuit.status }}</dd>
+    <dt>Ouvreurs</dt><dd>{{ circuit.opener|safe }}</dd>
     <dt>Année de création</dt><dd>{{ circuit.creation_date }}</dd>
     <dt>Année de réfection</dt><dd>{{ circuit.refection_date }}</dd>
+    <dt>Note de réfection</dt><dd>{{ circuit.refection_note|safe }}</dd>
+    <dt>Note</dt><dd>{{ circuit.note|safe }}</dd>
   </dl>
 
   <figure>

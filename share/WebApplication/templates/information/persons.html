@@ -1,0 +1,20 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "include/base.html" %}
+
+{% block breadcrumb_li %}
+  <li><a href="/{{ lang_code }}/information">Information</a></li>
+  <li class="active">Personnes</li>
+{% endblock %}
+
+{% block content %}
+    <h2>Personnes</h2>
+    {% for group in persons|groupby('letter') %}
+      <h3>{{ group.grouper }}</h3>
+      <ul>
+	{% for person in group.list %}
+	  <li><a href="/{{ lang_code }}/information/person/{{ person }}">{{ person.last_first_name }}</li>
+	{% endfor %}
+      </ul>
+    {% endfor %}
+{% endblock %}
+

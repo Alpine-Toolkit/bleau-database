@@ -1,0 +1,21 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "include/base.html" %}
+
+{% block breadcrumb_li %}
+  <li><a href="/{{ lang_code }}/information">Information</a></li>
+  <li class="active">Places</li>
+{% endblock %}
+
+{% block content %}
+  {% for category in ("parking", "gare", "point d'eau") %}
+    <h2>{{ category|capitalize }}</h2> {# ...s, en #}
+    <ul>
+      {% for place in places -%}
+	{%- if place.category == category -%}
+	  <li><a href="/{{ lang_code }}/place/{{ place.name }}">{{ place.name }}</a></li>
+	{% endif %}
+      {%- endfor %}
+    </ul>
+  {% endfor %}
+{% endblock %}
+

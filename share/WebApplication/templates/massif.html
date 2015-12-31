@@ -31,7 +31,7 @@
       <p>{{ massif.acces }}</p>
       {% with places = massif.nearest_parking() %}
 	{% if places %}
-	  {{ _("Parking les plus proches&nbsp;:") }}
+	  {{ _("Parkings les plus proches&nbsp;:") }}
 	  <ul>
 	    {% for place in places %}
 	      <li><a href="/{{ lang_code }}/place/{{ place.name }}">
@@ -54,7 +54,7 @@
       <p>{{ massif.velo }}</p>
       {% with places = massif.nearest_gare() %}
 	{% if places %}
-	  {{ _("Gares les plus proches&nbsp;:") }}
+	  <i class="fa fa-train"></i> {{ _("Gares les plus proches&nbsp;:") }}
 	  <ul>
 	    {% for place in places %}
 	      <li><a href="/{{ lang_code }}/place/{{ place.name }}">

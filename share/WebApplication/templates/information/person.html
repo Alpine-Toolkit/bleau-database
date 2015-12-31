@@ -1,0 +1,19 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "include/base.html" %}
+
+{% block breadcrumb_li %}
+  <li><a href="/{{ lang_code }}/information">Information</a></li>
+  <li><a href="/{{ lang_code }}/information/persons">Personnes</a></li>
+  <li class="active">{{ person }}</li>
+{% endblock %}
+
+{% block content %}
+  <h1>{{ person }}</h1>
+  <h2>Circuits Ouvert</h2>
+  <ul>
+    {% for circuit in person.opened_circuits %}
+      <li><a href="/{{ lang_code }}/circuit/{{ circuit.name }}">{{ circuit.massif.name }} {{  _("N°") }} {{ circuit.number }} {{ circuit.grade }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}
+
