@@ -41,6 +41,8 @@ import urllib.request
 # Non standard modules
 #
 
+from lxml import etree
+
 try:
     import rtree
 except ImportError:
@@ -472,6 +474,247 @@ class ChaosType(str):
 
 ####################################################################################################
 
+class CollationDict:
+
+    # Fixme: API ?
+
+    ##############################################
+
+    def __init__(self):
+
+        self._items = {}
+
+    ##############################################
+
+    def __contains__(self, item):
+        return str(item) in self._items
+
+    ##############################################
+
+    def __getitem__(self, key):
+        return self._items[key]
+
+    ##############################################
+
+    def __iter__(self):
+        return iter(sorted(self._items.values(), key=lambda item: item.strxfrm()))
+
+    ##############################################
+
+    def add(self, item):
+
+        name = str(item)
+        if name not in self._items:
+            self._items[name] = item
+        else:
+            raise NameError("Duplicated {}".format(name))
+
+####################################################################################################
+
+class Affiliations(CollationDict):
+    pass
+
+class Persons(CollationDict):
+    pass
+
+####################################################################################################
+
+class Affiliation: # Fixme: (str) ?
+
+    ##############################################
+
+    def __init__(self, name):
+
+        self._name = name
+
+    ##############################################
+
+    def __str__(self):
+        return self._name
+
+    ##############################################
+
+    def strxfrm(self):
+
+        # Fixme: API ?
+
+        return locale.strxfrm(str(self))
+
+####################################################################################################
+
+class Person:
+
+    ##############################################
+
+    def __init__(self, first_name, last_name, affiliation=None):
+
+        self._first_name = first_name
+        self._last_name = last_name
+        self._affiliation = affiliation
+        
+        self._opened_circuits = [] # set()
+        self._circuit_refections = set() # Fixme: date
+
+    ##############################################
+
+    @property
+    def first_name(self):
+        return self._first_name
+
+    @property
+    def last_name(self):
+        return self._last_name
+
+    @property
+    def letter(self):
+        return self._last_name[0]
+
+    @property
+    def first_last_name(self):
+        return self._first_name + ' ' + self._last_name
+
+    @property
+    def last_first_name(self):
+        return self._last_name + ' ' + self._first_name
+
+    @property
+    def affiliation(self):
+        return self._affiliation
+
+    @property
+    def opened_circuits(self):
+        return iter(self._opened_circuits)
+
+    @property
+    def circuit_refections(self):
+        return iter(self.circuit_refections)
+
+    ##############################################
+
+    def __str__(self):
+        return self.first_last_name
+
+    ##############################################
+
+    def add_opened_circuit(self, circuit):
+        # self._opened_circuits.add(circuit)
+        self._opened_circuits.append(circuit)
+
+    ##############################################
+
+    def add_circuit_refection(self, circuit):
+        # Fixme: date
+        self._circuit_refections.add(circuit)
+
+    ##############################################
+
+    def strxfrm(self):
+
+        return locale.strxfrm(self.last_first_name)
+
+    ##############################################
+
+    def __lt__(self, other):
+
+        """ Compare name using French collation """
+
+        # return locale.strcoll(str(self), str(other))
+        return self.strxfrm() < other.strxfrm()
+
+####################################################################################################
+
+class Openers:
+
+    ##############################################
+
+    def __init__(self, bleau_database, opener_string):
+
+        self._opener_string = opener_string
+        
+        self._openers = []
+        self._affiliation = None
+        if opener_string is not None:
+            self._parse(bleau_database)
+
+    ##############################################
+
+    def _parse(self, bleau_database):
+
+        openers = []
+        affiliation = None
+        source = '<p>' + self._opener_string + '</p>'
+        root = etree.fromstring(source)
+        text = root.text
+        if text is not None:
+            for opener in [x.strip() for x in text.split(',')]:
+                if opener: # Fixme:
+                    i = opener.rfind(' ')
+                    first_name = opener[:i]
+                    last_name = opener[i+1:].strip()
+                    openers.append((first_name, last_name))
+        number_of_elements = len(root)
+        if number_of_elements == 1:
+            element = root[0]
+            if element.tag == 'span':
+                affiliation = element.text
+            else:
+                raise ValueError("Unauthorised tag {}".format(element.tag))
+        elif number_of_elements > 1:
+            raise ValueError("More than one affiliation")
+        
+        if affiliation is not None:
+            affiliations = bleau_database.affiliations
+            affiliation = Affiliation(affiliation)
+            if affiliation in affiliations:
+                affiliation = affiliations[str(affiliation)]
+            else:
+                affiliations.add(affiliation)
+            self._affiliation = affiliation
+        
+        persons = bleau_database.persons
+        for first_name, last_name in openers:
+            # Fixme: affiliation ?
+            person = Person(first_name, last_name)
+            if person in persons:
+                person = persons[str(person)]
+            else:
+                persons.add(person)
+            self._openers.append(person)
+
+    ##############################################
+
+    @property
+    def __json_interface__(self):
+        return self._opener_string
+
+    ##############################################
+
+    @property
+    def affiliation(self):
+        return self._affiliation
+
+    ##############################################
+
+    def __bool__(self):
+        return bool(self._openers)
+
+    ##############################################
+
+    def __len__(self):
+        return len(self._openers)
+
+    ##############################################
+
+    def __iter__(self):
+        return iter(self._openers)
+
+    ##############################################
+
+    def __str__(self):
+        return self._opener_string
+
+####################################################################################################
+
 class Coordinate(FromJsonMixin):
 
     # Fixme: coordinate versus location ?
@@ -675,6 +918,10 @@ class Massif(PlaceBase):
     def __len__(self):
         return len(self._circuits)
 
+    @property
+    def number_of_circuits(self):
+        return self.__len__()
+
     ##############################################
 
     def __iter__(self):
@@ -828,22 +1075,25 @@ class Circuit(PlaceBase):
     massif = InstanceChecker(Massif)
     note = str
     number = int
-    opener = str
+    opener = InstanceChecker(Openers) # Fixme: openers ?
     refection_date = int
     refection_note = str
     status = str
     topos = StringList
 
     # patiné
-    # refection historique
 
     ##############################################
 
     def __init__(self, bleau_database, **kwargs):
 
+        kwargs['opener'] = Openers(bleau_database, kwargs.get('opener', None))
         super().__init__(bleau_database, **kwargs)
         
         self.massif.add_circuit(self)
+        
+        for person in self.opener:
+            person.add_opened_circuit(self)
 
     ##############################################
 
@@ -877,6 +1127,11 @@ class Circuit(PlaceBase):
             return len(self.boulders)
         else:
             return 0 # None
+
+    ##############################################
+
+    def __repr__(self):
+        return self.name
 
     ##############################################
 
@@ -945,6 +1200,8 @@ class BleauDataBase:
         self._massifs = {}
         self._circuits = {}
         self._number_of_boulders = None
+        self._persons = Persons()
+        self._affiliations = Affiliations()
         
         self._area_interval = None
         
@@ -987,6 +1244,7 @@ class BleauDataBase:
 
     @property
     def number_of_circuits_with_topos(self):
+        # Fixme: cache ?
         return len([circuit for circuit in self.circuits
                     if circuit.has_topo()])
 
@@ -1019,6 +1277,14 @@ class BleauDataBase:
         # Fixme: unsorted massif iter
         return sorted({massif.secteur for massif in self._massifs.values()})
                       # if massif.secteur is not None
+
+    @property
+    def persons(self):
+        return self._persons
+
+    @property
+    def affiliations(self):
+        return self._affiliations
 
     ##############################################
 
