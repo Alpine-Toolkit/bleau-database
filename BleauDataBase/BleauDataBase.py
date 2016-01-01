@@ -553,7 +553,7 @@ class Person:
         self._affiliation = affiliation
         
         self._opened_circuits = [] # set()
-        self._circuit_refections = set() # Fixme: date
+        self._circuit_refections = [] # set() # Fixme: date
 
     ##############################################
 
@@ -587,7 +587,15 @@ class Person:
 
     @property
     def circuit_refections(self):
-        return iter(self.circuit_refections)
+        return iter(self._circuit_refections)
+
+    @property
+    def opener(self):
+        return bool(self._opened_circuits)
+
+    @property
+    def maintainer(self):
+        return bool(self._circuit_refections)
 
     ##############################################
 
@@ -599,12 +607,15 @@ class Person:
     def add_opened_circuit(self, circuit):
         # self._opened_circuits.add(circuit)
         self._opened_circuits.append(circuit)
+        # self._opened_circuits.sort(key=lambda circuit: str(circuit))
 
     ##############################################
 
     def add_circuit_refection(self, circuit):
         # Fixme: date
-        self._circuit_refections.add(circuit)
+        # self._circuit_refections.add(circuit)
+        self._circuit_refections.append(circuit)
+        # self._circuit_refections.sort(key=lambda circuit: str(circuit))
 
     ##############################################
 
@@ -680,6 +691,7 @@ class Openers:
             else:
                 persons.add(person)
             self._openers.append(person)
+        self._openers.sort(key=lambda person: person.last_first_name)
 
     ##############################################
 
@@ -712,6 +724,72 @@ class Openers:
 
     def __str__(self):
         return self._opener_string
+
+####################################################################################################
+
+class RefectionNote:
+
+    ##############################################
+
+    def __init__(self, bleau_database, note):
+
+        self._note = note
+        
+        self._persons = []
+        if note is not None:
+            self._parse(bleau_database)
+
+    ##############################################
+
+    def _parse(self, bleau_database):
+
+        source = '<p>' + self._note + '</p>'
+        root = etree.fromstring(source)
+        persons = []
+        for element in root:
+            if element.tag == 'span' and element.get('itemprop') == 'person':
+                name = element.text
+                if name: # Fixme:
+                    i = name.rfind(' ')
+                    first_name = name[:i]
+                    last_name = name[i+1:].strip()
+                    persons.append((first_name, last_name))
+        
+        all_persons = bleau_database.persons
+        for first_name, last_name in persons:
+            # Fixme: affiliation ?
+            person = Person(first_name, last_name)
+            if person in all_persons:
+                person = all_persons[str(person)]
+            else:
+                all_persons.add(person)
+            self._persons.append(person)
+
+    ##############################################
+
+    @property
+    def __json_interface__(self):
+        return self._note
+
+    ##############################################
+
+    def __bool__(self):
+        return bool(self._persons)
+
+    ##############################################
+
+    def __len__(self):
+        return len(self._persons)
+
+    ##############################################
+
+    def __iter__(self):
+        return iter(self._persons)
+
+    ##############################################
+
+    def __str__(self):
+        return self._note
 
 ####################################################################################################
 
@@ -1069,7 +1147,7 @@ class Circuit(PlaceBase):
 
     boulders = BoulderList # Fixme: None instead of iter !
     colour = str
-    creation_date = int
+    creation_date = int # Fixme: opening ?
     gestion = str # Fixme: fr
     grade = AlpineGrade
     massif = InstanceChecker(Massif)
@@ -1077,7 +1155,7 @@ class Circuit(PlaceBase):
     number = int
     opener = InstanceChecker(Openers) # Fixme: openers ?
     refection_date = int
-    refection_note = str
+    refection_note = InstanceChecker(RefectionNote)
     status = str
     topos = StringList
 
@@ -1088,12 +1166,15 @@ class Circuit(PlaceBase):
     def __init__(self, bleau_database, **kwargs):
 
         kwargs['opener'] = Openers(bleau_database, kwargs.get('opener', None))
+        kwargs['refection_note'] = RefectionNote(bleau_database, kwargs.get('refection_note', None))
         super().__init__(bleau_database, **kwargs)
         
         self.massif.add_circuit(self)
         
         for person in self.opener:
             person.add_opened_circuit(self)
+        for person in self.refection_note:
+            person.add_circuit_refection(self)
 
     ##############################################
 
