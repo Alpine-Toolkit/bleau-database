@@ -7,15 +7,10 @@
 {% endblock %}
 
 {% block content %}
+  <p>Cette page liste toutes les « places » de la base de données.</p>
+  {% from "include/information-macros.html" import place_list %}
   {% for category in ("parking", "gare", "point d'eau") %}
     <h2>{{ category|capitalize }}</h2> {# ...s, en #}
-    <ul>
-      {% for place in places -%}
-	{%- if place.category == category -%}
-	  <li><a href="/{{ lang_code }}/place/{{ place.name }}">{{ place.name }}</a></li>
-	{% endif %}
-      {%- endfor %}
-    </ul>
+    {{ place_list(places, category) }}
   {% endfor %}
 {% endblock %}
-

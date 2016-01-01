@@ -8,22 +8,31 @@
 
 {% block content %}
     <h2>Affiliations</h2>
+    <p>Cette page liste les affiliations des personnes référencées dans la base de données.
+      Certaines sections FSGT peuvent ne plus existé aujourd'hui.
+    </p>
     <ul>
       {% for affiliation in affiliations %}
 	<li>{{ affiliation }}</li>
       {% endfor %}
     </ul>
+    <h2>Fédérations Françaises d'Escalade et de Montagne</h2>
     <ul>
-      <li><a href="http://www.fsgt.org/activites/escal_mont">FSGT Montagne et Escalade</a></li>
-      <li><a href="http://www.ffcam.fr">Fédération française des clubs alpins et de montagne (FFCAM)</a></li>
-      <li><a href="http://www.ffme-crif.com/index.php?option=com_content&view=article&id=37&Itemid=58">Fédération Française de la Montagne et de l'Escalade (FFME) CD 77</a></li> {# http://www.ffme.fr #}
+      <li><a href="http://www.fsgt.org/activites/escal_mont">FSGT Section Montagne et Escalade</a></li>
+      <li><a href="http://www.ffcam.fr">Fédération Française des Clubs Alpins et de Montagne (FFCAM)</a></li>
+      <li><a href="http://www.ffme.fr">Fédération Française de la Montagne et de l'Escalade (FFME)</a> / <a href="http://www.ffme-crif.com/index.php?option=com_content&view=article&id=37&Itemid=58">Comité Départemental 77</a></li>
     </ul>
+    <h2>Associations d'Escalade et de Montagne</h2>
+    <h3>FSGT</h3>
     <ul>
-      <li><a href="http://www.gumsparis.asso.fr/">Groupe Universitaire de Montagne et de Ski - section Paris</a> Créé en 1948, CAF</li>
-      <li><a href="http://asl91escalade.fr">Association Sports et Loisirs montagne et escalade de Ste Geneviève des Bois</a> Créé en 1964, FSGT</li>
       <li><a href="https://escaladebagnolet.wordpress.com">FSGT Bagnolet</a> </li>
-      <li><a href="http://rscm-montagne.blogspot.fr">Section Montagne du Red Star Club Montreuillois (RSCM)</a> FSGT</li>
-      <li><a href="http://escalade.usivry.org">Union Sportive d’Ivry Escalade</a> Créée en 1955, FSGT</li>
+      <li><a href="http://escalade.usivry.org">Union Sportive d’Ivry Escalade</a> Créé en 1955</li>
+      <li><a href="http://rscm-montagne.blogspot.fr">Section Montagne du Red Star Club Montreuillois (RSCM)</a></li>
+      <li><a href="http://asl91escalade.fr">Association Sports et Loisirs montagne et escalade de Ste Geneviève des Bois</a> Créé en 1964</li>
+    </ul>
+    <h3>FFCAM</h3>
+    <ul>
+      <li><a href="http://www.gumsparis.asso.fr/">Groupe Universitaire de Montagne et de Ski - section Paris</a> Créé en 1948</li>
     </ul>
 {% endblock %}
 

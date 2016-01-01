@@ -3,16 +3,41 @@
 
 {% block breadcrumb_li %}
   <li><a href="/{{ lang_code }}/information">Information</a></li>
-  <li><a href="/{{ lang_code }}/information/persons">Personnes</a></li>
+  <li>Personne</li>
   <li class="active">{{ person }}</li>
 {% endblock %}
 
 {% block content %}
   <h1>{{ person }}</h1>
-  <h2>Circuits Ouvert</h2>
+  <h2>Circuits Ouverts</h2>
   <ul>
+    {% from "include/information-macros.html" import circuit_openers %}
     {% for circuit in person.opened_circuits %}
-      <li><a href="/{{ lang_code }}/circuit/{{ circuit.name }}">{{ circuit.massif.name }} {{  _("N°") }} {{ circuit.number }} {{ circuit.grade }}</a></li>
+      <li class="m-b-1">
+	<a href="/{{ lang_code }}/circuit/{{ circuit.name }}">
+	  {{ circuit.massif.name }} {{  _("N°") }} {{ circuit.number }} {{ circuit.grade }}</a>
+	<br>
+	{% if circuit.creation_date %}
+	  {{ circuit.creation_date }}
+	{% endif %}
+	{{ circuit_openers(lang_code, circuit) }}
+	{% if circuit.opener.affiliation %}
+	  {{ circuit.opener.affiliation }}
+	{% endif %}
+      </li>
+      {% else %}
+      aucun
+    {% endfor %}
+  </ul>
+  <h2>Réfections de Circuits <i class="fa fa-paint-brush"></i></h2>
+  <ul>
+    {% for circuit in person.circuit_refections %}
+      <li class="m-b-1">
+	<a href="/{{ lang_code }}/circuit/{{ circuit.name }}">
+	  {{ circuit.massif.name }} {{  _("N°") }} {{ circuit.number }} {{ circuit.grade }}</a>
+      </li>
+      {% else %}
+      aucun
     {% endfor %}
   </ul>
 {% endblock %}

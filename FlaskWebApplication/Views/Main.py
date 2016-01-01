@@ -161,11 +161,16 @@ def affiliations():
                                 affiliations=model.bleau_database.affiliations)
 
 @cache.cached()
-@main.route('/information/persons')
-def persons():
-    return render_template_i18n('information/persons.html',
+@main.route('/information/openers')
+def openers():
+    return render_template_i18n('information/openers.html',
                                 persons=model.bleau_database.persons)
 
+@cache.cached()
+@main.route('/information/maintainers')
+def maintainers():
+    return render_template_i18n('information/maintainers.html',
+                                persons=model.bleau_database.persons)
 @cache.cached()
 @main.route('/information/person/<person>')
 def person(person):

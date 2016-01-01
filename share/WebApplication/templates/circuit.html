@@ -34,10 +34,20 @@
     <dt>Type de chaos</dt><dd>{{ massif.chaos_type }}</dd>
     <dt>Gestion</dt><dd>{{ circuit.gestion }}</dd>
     <dt>Status</dt><dd>{{ circuit.status }}</dd>
-    <dt>Ouvreurs</dt><dd>{{ circuit.opener|safe }}</dd>
+    {% from "include/information-macros.html" import circuit_openers %}
+    <dt>Ouvreurs</dt>
+    <dd>
+      {{ circuit_openers(lang_code, circuit) }}
+      {% if circuit.opener.affiliation %}
+	{{ circuit.opener.affiliation }}
+      {% endif %}
+    </dd>
     <dt>Année de création</dt><dd>{{ circuit.creation_date }}</dd>
     <dt>Année de réfection</dt><dd>{{ circuit.refection_date }}</dd>
-    <dt>Note de réfection</dt><dd>{{ circuit.refection_note|safe }}</dd>
+    <dt>Note de réfection <i class="fa fa-paint-brush"></i></dt>
+    {% if circuit.refection_note %}
+      <dd>{{ circuit.refection_note|safe }}</dd>
+    {% endif %}
     <dt>Note</dt><dd>{{ circuit.note|safe }}</dd>
   </dl>
 

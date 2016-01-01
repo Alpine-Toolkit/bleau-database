@@ -1,0 +1,13 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "include/base.html" %}
+
+{% block breadcrumb_li %}
+  <li><a href="/{{ lang_code }}/information">Information</a></li>
+  <li class="active">Ouvreurs</li>
+{% endblock %}
+
+{% block content %}
+  <h2>Ouvreurs</h2>
+  {% from "include/information-macros.html" import opener_list %}
+  {{ opener_list(lang_code, persons) }}
+{% endblock %}

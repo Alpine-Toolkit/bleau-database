@@ -7,21 +7,21 @@
 
 {% block content %}
   <h2>Informations sur les circuits</h2>
+  <p>
+    Ces pages présentent une compilation d'informations utiles pour la maintenance de la base de données ou les curieux.
+  </p>
   <ul>
     <li><a href="/{{ lang_code }}/information/statistics">
-      <i class="fa fa-bar-chart"></i> {{  _("Statistiques des Circuits") }}</a>
-    </li>
+      <i class="fa fa-bar-chart fa-fw"></i> {{  _("Statistiques sur les Circuits") }}</a></li>
     <li><a href="/{{ lang_code }}/information/places">
-      <i class="fa fa-map-marker"></i> {{  _("Places") }}</a>
-    </li>
+      <i class="fa fa-map-marker fa-fw"></i> {{  _("Places") }}</a></li>
     <li><a href="/{{ lang_code }}/information/affiliations">
-      <i class="fa fa-users"></i> {{  _("Affiliations") }}</a>
-    </li>
-    <li><a href="/{{ lang_code }}/information/persons">
-      <i class="fa fa-user"></i> {{  _("Personnes") }}</a>
-    </li>
+      <i class="fa fa-users fa-fw"></i> {{  _("Affiliations") }}</a></li>
+    <li><a href="/{{ lang_code }}/information/openers">
+      <i class="fa fa-user fa-fw"></i> {{  _("Ouvreurs") }}</a></li>
+    <li><a href="/{{ lang_code }}/information/maintainers">
+      <i class="fa fa-user fa-fw"></i> {{  _("Personnes impliquées dans la réfection des circuits") }}</a></li>
     <li><a href="/{{ lang_code }}/information/missing">
-      <i class="fa fa-search"></i> {{  _("Données à compléter") }}</a>
-    </li>
+      <i class="fa fa-search fa-fw"></i> {{  _("Données à compléter") }}</a></li>
   </ul>
 {% endblock %}

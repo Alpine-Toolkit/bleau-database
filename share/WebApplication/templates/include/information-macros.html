@@ -1,0 +1,49 @@
+{# -*- engine: jinja2 -*- #}
+
+{% macro place_list(lang_code, places, category) %}
+  <ul>
+    {% for place in places -%}
+      {%- if place.category == category -%}
+	<li><a href="/{{ lang_code }}/place/{{ place.name }}">{{ place.name }}</a></li>
+      {% endif %}
+    {%- endfor %}
+  </ul>
+{% endmacro %}
+
+{% macro person_list(lang_code, persons, opener=True, maintainer=True) %}
+  {% for group in persons|groupby('letter') %}
+    <h3>{{ group.grouper }}</h3>
+    <ul>
+      {% for person in group.list -%}
+	{%- if (opener and person.opener) or (maintainer and person.maintainer) -%}
+	  <li><a href="/{{ lang_code }}/information/person/{{ person }}">{{ person.last_first_name }}</a></li>
+	{% endif %}
+      {%- endfor %}
+    </ul>
+  {% endfor %}
+{% endmacro %}
+
+{% macro opener_list(lang_code, persons) %}
+  {{ person_list(lang_code, persons, opener=True, maintainer=False) }}
+{% endmacro %}
+
+{% macro maintainer_list(lang_code, persons) %}
+  {{ person_list(lang_code, persons, opener=False, maintainer=True) }}
+{% endmacro %}
+
+{% macro circuit_openers_as_list(lang_code, circuit) %}
+  <ul class="list-inline">
+    {% for person in circuit.opener %}
+      <li class="list-inline-item"><a href="/{{ lang_code }}/information/person/{{ person }}">
+	{{ person }}</a>{% if not loop.last %},{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endmacro %}
+
+{% macro circuit_openers(lang_code, circuit) %}
+  {% for person in circuit.opener %}
+    <a href="/{{ lang_code }}/information/person/{{ person }}">
+      {{ person }}</a>{% if not loop.last %},{% endif %}
+  {% endfor %}
+{% endmacro %}
