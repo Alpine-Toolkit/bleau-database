@@ -66,7 +66,7 @@ class CircuitStatisticsData:
         grade_counters = histogram.domain()
         y_data = [grade_counter.count for grade_counter in grade_counters]
         x_data = [str(grade_counter) for grade_counter in grade_counters]
-        bar = Bar(y_data, x_data, title=title, stacked=True, tools='', width=300, height=200, responsive=True)
+        bar = Bar(y_data, x_data, title=title, stacked=True, tools='', width=300, height=150, responsive=True)
         bar.toolbar_location = None
         
         return BokehPlot(bar)
