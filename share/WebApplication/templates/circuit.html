@@ -58,7 +58,7 @@
     <dt>Topos</dt>
     <dd>
       {% for topo in circuit.topos %}
-	<a href="{{ topo }}"><i class="fa fa-download"></i> {{ topo }}</a> {# |truncate(50) #}
+	<a href="{{ topo }}"><i class="fa fa-download"></i> {{ topo|truncate(50) }}</a>
 	<br>
       {% endfor %}
     </dd>

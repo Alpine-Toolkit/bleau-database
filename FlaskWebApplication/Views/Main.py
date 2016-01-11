@@ -75,16 +75,16 @@ def sitemap():
     for lang_code in LANGUAGES.keys():
         kwarg = dict(lang_code=lang_code, _external=True)
         for page in (
-                'mentions_legales',
                 'a_propos',
-                'fontainebleau',
-                'environment',
                 'contribute',
                 'data',
-                'statistics',
+                'environment',
+                'fontainebleau',
+                'geoportail',
+                'information', # ...
                 'massifs',
                 'massifs_by_secteur',
-                'geoportail',
+                'mentions_legales',
                 'search_massifs',
                 ):
             yield url_for('main.' + page, **kwarg)
@@ -94,6 +94,7 @@ def sitemap():
             yield url_for('main.massif', massif=str(massif), **kwarg)
         for circuit in bleau_database.circuits:
             yield url_for('main.circuit', circuit=str(circuit), **kwarg)
+        # persons ...
 
         # '/geoportail/<massif>'
         # '/google-map/<massif>'
