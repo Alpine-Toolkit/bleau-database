@@ -24,7 +24,7 @@ import hashlib
 
 # from bokeh.plotting import figure
 from bokeh.embed import components
-from bokeh._legacy_charts import Bar
+from bokeh.charts import Bar
 
 ####################################################################################################
 
@@ -64,12 +64,25 @@ class CircuitStatisticsData:
     def _make_barchart(self, histogram, title):
 
         grade_counters = histogram.domain()
-        y_data = [grade_counter.count for grade_counter in grade_counters]
-        x_data = [str(grade_counter) for grade_counter in grade_counters]
-        bar = Bar(y_data, x_data, title=title, stacked=True, tools='', width=300, height=150, responsive=True)
-        bar.toolbar_location = None
-        
-        return BokehPlot(bar)
+        if grade_counters:
+            data = {
+                'labels': [str(grade_counter) for grade_counter in grade_counters],
+                'counts': [grade_counter.count for grade_counter in grade_counters],
+            }
+            bar = Bar(data,
+                      values='counts', label='labels', unsorted_label=True,
+                      title=title,
+                      xlabel='',
+                      ylabel='',
+                      plot_width=300,
+                      plot_height=150,
+                      responsive=True,
+                      tools='',
+                      toolbar_location=None,
+            )
+            return BokehPlot(bar)
+        else:
+            return None
 
     ##############################################
 

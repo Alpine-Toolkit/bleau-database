@@ -3,9 +3,16 @@
 
 {% set circuit_grades = ('PD', 'AD', 'D', 'TD', 'ED') %}
 
+{% block head %}
+  {{ super() }}
+  {% from "include/bokeh-macros.html" import bokeh_css %}
+  {{ bokeh_css() }}
+{% endblock %}
+
 {% block script %}
   {{ super() }}
-  <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.js"></script>
+  {% from "include/bokeh-macros.html" import bokeh_js %}
+  {{ bokeh_js() }}
   {{ circuit_statistics.circuit_grade_barchart.script|safe }}
   {{ circuit_statistics.global_boulder_grade_barchart.script|safe }}
   {% for grade in circuit_grades %}
