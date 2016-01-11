@@ -37,7 +37,7 @@
 	  <ul>
 	    {% for place in places %}
 	      <li><a href="/{{ lang_code }}/place/{{ place.name }}">
-		{{ place.name }} ({{ massif.distance_to(place) | round | int }} m)
+		{{ place.name }} ({{ massif.distance_to(place) | round | int }}&nbsp;m)
 	      </a></li>
 	    {% endfor %}
 	  </ul>
@@ -60,7 +60,7 @@
 	  <ul>
 	    {% for place in places %}
 	      <li><a href="/{{ lang_code }}/place/{{ place.name }}">
-		{{ place.name }} ({{ massif.distance_to(place) | round | int }} m)
+		{{ place.name }} ({{ massif.distance_to(place) | round | int }}&nbsp;m)
 	      </a></li>
 	    {% endfor %}
 	  </ul>
@@ -71,8 +71,8 @@
 
   <h2>{{ _("Informations") }}</h2>
   <dl>
-    <dt>{{ _("Type de chaos") }}</dt><dd>{{ massif.chaos_type }}</dd>
-    <dt>{{ _("Notes") }}</dt><dd>{{ massif.note }}</dd>
+    <dt>{{ _("Type de chaos") }}</dt><dd>{% if massif.chaos_type %}{{ massif.chaos_type }}{% endif %}</dd>
+    <dt>{{ _("Notes") }}</dt><dd>{% if massif.notes %}{{ massif.note }}{% endif %}</dd>
     <dt>{{ _("Rendez-vous Gums") }}</dt><dd>{{ massif.rdv }}</dd>
     {% with places = massif.nearest_point_deau() %}
       {% if places %}
@@ -107,7 +107,7 @@
 	  <td>#{{ circuit.number_of_boulders }}</td>
 	  <td>
 	    {% for topo in circuit.topos %}
-	      <a class="hidden-sm-up" href="{{ topo }}">{{  _("lien") }}</a>
+	      <a class="hidden-sm-up" href="{{ topo }}"><i class="fa fa-download"></i></a>
 	      <a class="hidden-xs-down" href="{{ topo }}">{{ topo|truncate(70) }}</a>
 	      <br>
 	    {% endfor %}
@@ -133,7 +133,7 @@
 	<tbody>
 	  {% for massif_ in massif_voisins %}
 	    <tr>
-	      <td class="text-right">{{ massif.distance_to(massif_) | round | int }} m</td>
+	      <td class="text-right">{{ massif.distance_to(massif_) | round | int }}&nbsp;m</td>
 	      <td><a href="/{{ lang_code }}/massif/{{ massif_.name }}">{{ massif_.name }}</a></td>
 	      <td>
 		<ul class="list-inline">

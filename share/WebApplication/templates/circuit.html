@@ -33,9 +33,12 @@
     <dt>Cotation</dt><dd>{{ circuit.grade }}</dd>
     <dt>Couleur</dt><dd>{{ circuit.colour }}</dd>
     #}
-    <dt>Type de chaos</dt><dd>{{ massif.chaos_type }}</dd>
-    <dt>Gestion</dt><dd>{{ circuit.gestion }}</dd>
-    <dt>Status</dt><dd>{{ circuit.status }}</dd>
+    <dt>Type de chaos</dt>
+    <dd>{% if circuit.chaos_type %}{{ massif.chaos_type }}{% endif %}</dd>
+    <dt>Gestion</dt>
+    <dd>{% if circuit.gestion %}{{ circuit.gestion }}{% endif %}</dd>
+    <dt>Status</dt>
+    <dd>{% if circuit.status %}{{ circuit.status }}{% endif %}</dd>
     {% from "include/information-macros.html" import circuit_openers %}
     <dt>Ouvreurs</dt>
     <dd>
@@ -44,13 +47,21 @@
 	{{ circuit.opener.affiliation }}
       {% endif %}
     </dd>
-    <dt>Année de création</dt><dd>{{ circuit.creation_date }}</dd>
-    <dt>Année de réfection</dt><dd>{{ circuit.refection_date }}</dd>
-    <dt>Note de réfection <i class="fa fa-paint-brush"></i></dt>
-    {% if circuit.refection_note %}
-      <dd>{{ circuit.refection_note|safe }}</dd>
-    {% endif %}
-    <dt>Note</dt><dd>{{ circuit.note|safe }}</dd>
+    <dt>Année de création</dt>
+    <dd>{% if circuit.creation_date %}{{ circuit.creation_date }}{% endif %}</dd>
+    <dt>Année de réfection</dt>
+    <dd>{% if circuit.refection_date %}{{ circuit.refection_date }}{% endif %}</dd>
+    <dt>Note de réfection</dt> {# <i class="fa fa-paint-brush"></i> #}
+    <dd>{% if circuit.refection_note %}{{ circuit.refection_note|safe }}{% endif %}</dd>
+    <dt>Note</dt>
+    <dd>{% if circuit.note %}{{ circuit.note|safe }}{% endif %}</dd>
+    <dt>Topos</dt>
+    <dd>
+      {% for topo in circuit.topos %}
+	<a href="{{ topo }}"><i class="fa fa-download"></i> {{ topo }}</a> {# |truncate(50) #}
+	<br>
+      {% endfor %}
+    </dd>
   </dl>
 
   <figure>

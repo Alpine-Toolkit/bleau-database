@@ -31,7 +31,6 @@
   <dt class="col-sm-1">TD</dt><dd class="col-sm-11">pour très difficile, cotation moyenne dans le 5</dd>
   <dt class="col-sm-1">ED</dt><dd class="col-sm-11">pour extrêmement difficile, cotation moyenne dans le 6</dd>
   </dl>
-  #}
   <ul>
     <li><span style="float: left; width: 2em">EN</span> pour les circuits enfants mettant à profit les petits blocs</li>
     <li><span style="float: left; width: 2em">F </span> pour facile, niveau intermédiaire, rare</li>
@@ -41,6 +40,18 @@
     <li><span style="float: left; width: 2em">TD</span> pour très difficile, cotation moyenne dans le 5</li>
     <li><span style="float: left; width: 2em">ED</span> pour extrêmement difficile, cotation moyenne dans le 6</li>
   </ul>
+  #}
+  <table class="table table-sm">
+    <tbody>
+	<tr><td>EN</td><td>pour les circuits enfants mettant à profit les petits blocs</td></tr>
+	<tr><td>F </td><td>pour facile, niveau intermédiaire, rare</td></tr>
+	<tr><td>PD</td><td>pour peu difficile</td></tr>
+	<tr><td>AD</td><td>pour assez difficile, cotation moyenne des blocs dans le 3</td></tr>
+	<tr><td>D </td><td>pour difficile, cotation moyenne dans le 4</td></tr>
+	<tr><td>TD</td><td>pour très difficile, cotation moyenne dans le 5</td></tr>
+	<tr><td>ED</td><td>pour extrêmement difficile, cotation moyenne dans le 6</td></tr>
+    </tbody>
+  </table>
   <p>
     Il faut soustraire au moins une unité par rapport à une cotation falaise, une cotation 5b requiert un entrainement spécifique.
   </p>
@@ -122,6 +133,6 @@
     peu difficiles.
   </p>
   <p class="text-xl-center">
-    <img src={{ url_for('static', filename='image/geomorphologie-chaotique.jpg') }} width="600"/>
+    <img src={{ url_for('static', filename='image/geomorphologie-chaotique.jpg') }} width="100%"/>
   </p>
 {% endblock %}

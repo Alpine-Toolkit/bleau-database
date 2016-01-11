@@ -9,13 +9,19 @@
     {# Small device #}
     <div class="jumbotron hidden-sm-up" style="padding: 1rem 1rem">
       {# class="display-1" #}
-      <h1 itemprop="name"><i class="fa fa-mobile"></i> Bleau Database</h1>
+      <h1 itemprop="name">
+	<img src="{{ url_for('static', filename='image/favicon.png') }}">
+	Bleau DB
+	<i class="fa fa-mobile"></i>
+      </h1>
     </div>
     {# Large device #}
     <div class="jumbotron hidden-xs-down" style="padding: 1rem 1rem">
       <h1 class="display-3" itemprop="name">
-	<image src="{{ url_for('static', filename='image/favicon.png') }}"> Bleau Database</h1>
-      <p class="lead" itemprop="description">{{  _("La base de données des sites d'escalade de la région de Fontainebleau") }}</p>
+	<img src="{{ url_for('static', filename='image/favicon.png') }}">
+	Bleau Database
+      </h1>
+      <p class="lead" itemprop="description">{{  _("La base de données des sites d'escalade de blocs de la région de Fontainebleau") }}</p>
       <p class="lead">
 	{% trans
 	 number_of_massifs=bleau_database.number_of_massifs,

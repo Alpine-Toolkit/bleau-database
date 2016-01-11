@@ -11,6 +11,6 @@
   {% from "include/information-macros.html" import place_list %}
   {% for category in ("parking", "gare", "point d'eau") %}
     <h2>{{ category|capitalize }}</h2> {# ...s, en #}
-    {{ place_list(places, category) }}
+    {{ place_list(lang_code, places, category) }}
   {% endfor %}
 {% endblock %}

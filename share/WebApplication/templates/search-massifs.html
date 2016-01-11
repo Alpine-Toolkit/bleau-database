@@ -40,7 +40,7 @@
 	  <tr>
 	    <td><a href="/{{ lang_code }}/massif/{{ massif.name }}">{{ massif.name }}</a></td>
 	    <td>{{ massif.secteur }}</td>
-	    <td>{{ massif.chaos_type }}</td>
+	    <td>{% if massif.chaos_type %}{{ massif.chaos_type }}{% endif %}</td>
 	    <td>
 	      <ul class="list-inline">
 		{% for grade in massif.grades %}
