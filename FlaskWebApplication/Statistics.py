@@ -75,7 +75,7 @@ class CircuitStatisticsData:
                       xlabel='',
                       ylabel='',
                       plot_width=300,
-                      plot_height=150,
+                      plot_height=200,
                       responsive=True,
                       tools='',
                       toolbar_location=None,
