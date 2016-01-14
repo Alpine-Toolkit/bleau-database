@@ -1,0 +1,45 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "include/base.html" %}
+
+{% block breadcrumb_li %}
+  <li class="active">Mentions légales</li>
+{% endblock %}
+
+{% block content %}
+  <h2>Droit d'auteur / Propriété intellectuelle</h2>
+  <p>
+    L'ensemble de ce site relève des législations françaises et internationales sur le droit d'auteur et la propriété intellectuelle.
+  </p>
+
+  <h3>Application Web</h3>
+  <p>
+    Cette application web a été écrite par
+    <a target="_blank" href="http://www.fabrice-salvaire.fr" itemprop="author" itemscope itemtype="http://schema.org/People">
+      <span itemprop="name">Fabrice Salvaire</span> <i class="fa fa-home"></i></a>.
+    <br>
+    Le <a target="_blank" href="https://github.com/Cosiroc/bleau-database">code source</a> est sous licence
+    <a target="_blank" href="http://www.gnu.org/licenses/agpl.html">GNU Affero General Public License V3</a>.
+  </p>
+
+  <h3>Licence d'utilisation des données</h3>
+  <p>
+    La base de données est disponible sous la licence
+    <a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>.
+  </p>
+
+  <h2>Données personnelles / Vie privée</h2>
+  <p>
+    ...
+  </p>
+
+  <h2>Responsable de publication</h2>
+  <p itemprop="author" itemscope itemtype="http://schema.org/People">
+    <a href="http://www.fabrice-salvaire.fr/personal/index.html">
+      <span itemprop="name">Fabrice Salvaire</span> <i class="fa fa-envelope"></i></a>
+  </p>
+
+  <h2>Hébergement du site Internet</h2>
+  <p>
+    Le site internet est hébergé par la société <a href="https://www.ovh.com/fr/support/documents_legaux/">OVH SAS</a>.
+  </p>
+{% endblock %}

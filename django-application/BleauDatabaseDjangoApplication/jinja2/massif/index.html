@@ -1,0 +1,53 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "include/base.html" %}
+
+{% block breadcrumb_li %}
+  <li class="active"> Massifs </li>
+{% endblock %}
+
+{% block content %}
+  <h2>Massifs</h2>
+
+  {#
+  <div class="row">
+    <form class="form-horizontal" role="form" action="{% url 'massifs.index' %}">
+      {% csrf_token %}
+      <div class="form-group">
+	<label for="id_name" class="col-md-2 control-label">Name</label>
+	<div class="col-md-4">
+	  <input type="search" class="form-control" id="id_name"
+		 name="name" placeholder="Name" value="{{ form.name.value }}">
+	</div>
+      </div>
+      <div class="col-md-offset-2 col-md-4">
+	<button type="submit" class="btn btn-primary">Rechercher</button>
+      </div>
+    </form>
+  </div>
+  #}
+
+  <div class="row">
+    <div class="col-xl-12">
+      {% if massifs %}
+	<table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Nom</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for massif in massifs %}
+              <tr>
+		<td><a href="">{{ massif.name }}</a></td> {# {% url 'massifs.details' massif.pk %} #}
+              </tr>
+            {% endfor %}
+          </tbody>
+	</table>
+      {% else %}
+	<p>Auncun massifs</p>
+      {% endif %}
+      {# {% include 'GroupedPurchaseOrder/pagination.html' %}  #}
+    </div>
+  </div>
+
+{% endblock %}

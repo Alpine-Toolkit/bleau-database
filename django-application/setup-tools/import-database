@@ -1,0 +1,146 @@
+#! /usr/bin/env python3
+
+####################################################################################################
+#
+# Bleau Database - A database of the bouldering area of Fontainebleau
+# Copyright (C) 2015 Fabrice Salvaire
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+####################################################################################################
+
+####################################################################################################
+
+import argparse
+import os
+
+import django
+from django.contrib.gis.geos import Point
+
+####################################################################################################
+
+from BleauDataBase.BleauDataBase import BleauDataBase
+
+####################################################################################################
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "BleauDatabaseDjangoSite.settings")
+django.setup()
+
+from BleauDatabaseDjangoApplication.models import (Place, Massif, Circuit, Person, Opener,
+                                                   Refection, RefectionPerson)
+
+####################################################################################################
+
+parser = argparse.ArgumentParser(description='Importer')
+
+parser.add_argument('json_file', metavar='json_file',
+                    help='JSON file')
+
+args = parser.parse_args()
+
+####################################################################################################
+
+def to_postgis_coordinate(obj):
+    coordinate = obj.coordinate
+    if coordinate is not None:
+        # coordinate="SRID=4326;POINT ({0.longitude} {0.latitude})".format(coordinate),
+        return Point(coordinate.longitude, coordinate.latitude, srid=4326)
+    else:
+        return None
+
+####################################################################################################
+
+bleau_database = BleauDataBase(json_file=args.json_file)
+
+# Place.objects.all().delete()
+# category_to_int = {category:i for i, category in enumerate(('parking', 'gare', "point d'eau"))}
+# for place in bleau_database.places:
+#     print(place)
+#     orm_place = Place(name=place.name,
+#                       category=category_to_int[place.category],
+#                       coordinate=to_postgis_coordinate(place),
+#                       note=place.note,
+#     )
+#     orm_place.save()
+
+# Massif.objects.all().delete()
+# for massif in bleau_database.massifs:
+#     print(massif)
+#     orm_massif = Massif(
+#         acces=massif.acces,
+#         alternative_name=massif.alternative_name,
+#         chaos_type=massif.chaos_type,
+#         coordinate=to_postgis_coordinate(massif),
+#         name=massif.name,
+#         note=massif.note,
+#         parcelles=massif.parcelles,
+#         rdv=massif.rdv,
+#         secteur=massif.secteur,
+#         velo=massif.velo,
+#     )
+#     orm_massif.save()
+
+Circuit.objects.all().delete()
+circuits = {}
+for circuit in bleau_database.circuits:
+    print(circuit)
+    # Fixme:
+    if circuit.opener._opener_string is not None:
+        opener = str(circuit.opener)
+    else:
+        opener = None
+    if circuit.refection_note._note is not None:
+        refection_note = str(circuit.refection_note)
+    else:
+        refection_note = None
+    orm_circuit = Circuit(
+        # boulders=(), # circuit.boulders,
+        colour=circuit.colour,
+        coordinate=to_postgis_coordinate(circuit),
+        creation_date=circuit.creation_date,
+        gestion=circuit.gestion,
+        grade=circuit.grade,
+        massif=Massif.objects.filter(name=circuit.massif)[0],
+        note=circuit.note,
+        number=circuit.number,
+        opener_string=opener,
+        refection_date=circuit.refection_date,
+        refection_note=refection_note,
+        status=circuit.status,
+        # topos=(), # circuit.topos,
+    )
+    orm_circuit.save()
+    circuits[circuit] = orm_circuit
+
+Person.objects.all().delete()
+for person in bleau_database.persons:
+    print(person)
+    orm_person = Person(
+        first_name=person.first_name,
+        last_name=person.last_name
+    )
+    orm_person.save()
+    for circuit in person.opened_circuits:
+        print(circuit)
+        orm_opener = Opener(
+            circuit=circuits[circuit],
+            person=orm_person,
+        )
+        orm_opener.save()
+
+####################################################################################################
+#
+# End
+#
+####################################################################################################
