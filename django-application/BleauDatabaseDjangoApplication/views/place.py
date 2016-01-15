@@ -34,14 +34,14 @@ from django.views.generic.edit import FormMixin
 
 ####################################################################################################
 
-from ..models import Massif
+from ..models import Place
 
 ####################################################################################################
 
-class MassifForm(ModelForm):
+class PlaceForm(ModelForm):
 
     class Meta:
-        model = Massif
+        model = Place
         fields = '__all__'
         # exclude = ('creation_date',)
 
@@ -49,7 +49,7 @@ class MassifForm(ModelForm):
 
     def __init__(self, *args, **kwargs):
 
-        super(MassifForm, self).__init__(*args, **kwargs)
+        super(PlaceForm, self).__init__(*args, **kwargs)
 
         self.fields['name'].widget.attrs['autofocus'] = 'autofocus'
 
@@ -58,7 +58,7 @@ class MassifForm(ModelForm):
 
 ####################################################################################################
 
-class MassifSearchForm(Form):
+class PlaceSearchForm(Form):
 
     name = CharField(label=_('Nom'), required=False, initial='')
 
@@ -69,18 +69,18 @@ class MassifSearchForm(Form):
 
 ####################################################################################################
 
-class MassifListView(FormMixin, ListView):
+class PlaceListView(FormMixin, ListView):
 
-    template_name = 'massif/index.html'
+    template_name = 'place/index.html'
 
     # ListView
-    model = Massif
-    queryset = Massif.objects.all().order_by('name')
-    context_object_name = 'massifs' # else object_list
+    model = Place
+    queryset = Place.objects.all().order_by('name')
+    context_object_name = 'places' # else object_list
     paginate_by = None
 
     # FormMixin
-    form_class = MassifSearchForm
+    form_class = PlaceSearchForm
 
     ##############################################
 
@@ -115,15 +115,15 @@ class MassifListView(FormMixin, ListView):
 ####################################################################################################
 
 # @login_required
-def details(request, massif_id):
+def details(request, place_id):
 
-    massif = get_object_or_404(Massif, pk=massif_id)
+    place = get_object_or_404(Place, pk=place_id)
 
     # deprecated ?
-    # return render_to_response('massif/details.html',
-    #                           {'massif': massif},
+    # return render_to_response('place/details.html',
+    #                           {'place': place},
     #                           context_instance=RequestContext(request))
-    return render(request, 'massif/details.html', {'massif': massif})
+    return render(request, 'place/details.html', {'place': place})
 
 ####################################################################################################
 
@@ -131,48 +131,48 @@ def details(request, massif_id):
 def create(request):
 
     if request.method == 'POST':
-        form = MassifForm(request.POST)
+        form = PlaceForm(request.POST)
         if form.is_valid():
-            massif = form.save(commit=False)
-            massif.save()
-            messages.success(request, "Massif créé avec succès.")
-            return HttpResponseRedirect(reverse('massifs.details', args=[massif.pk]))
+            place = form.save(commit=False)
+            place.save()
+            messages.success(request, "Place créé avec succès.")
+            return HttpResponseRedirect(reverse('places.details', args=[place.pk]))
         else:
             messages.error(request, "Des informations sont manquantes ou incorrectes")
     else:
-        form = MassifForm()
+        form = PlaceForm()
 
-    return render(request, 'massif/create.html', {'form': form})
+    return render(request, 'place/create.html', {'form': form})
 
 ####################################################################################################
 
 # @login_required
-def update(request, massif_id):
+def update(request, place_id):
 
-    massif = get_object_or_404(Massif, pk=massif_id)
+    place = get_object_or_404(Place, pk=place_id)
 
     if request.method == 'POST':
-        form = MassifForm(request.POST, instance=massif)
+        form = PlaceForm(request.POST, instance=place)
         if form.is_valid():
-            massif = form.save()
-            return HttpResponseRedirect(reverse('massifs.details', args=[massif.pk]))
+            place = form.save()
+            return HttpResponseRedirect(reverse('places.details', args=[place.pk]))
     else:
-        form = MassifForm(instance=massif)
+        form = PlaceForm(instance=place)
 
-    return render(request, 'massif/create.html', {'form': form, 'update': True, 'massif': massif})
+    return render(request, 'place/create.html', {'form': form, 'update': True, 'place': place})
 
 ####################################################################################################
 
 # @login_required
-def delete(request, massif_id):
+def delete(request, place_id):
 
     # Fixme: confirmation
-    massif = get_object_or_404(Massif, pk=massif_id)
+    place = get_object_or_404(Place, pk=place_id)
     # Fixme: message not shown
-    messages.success(request, "Massif «{0.name}» supprimé".format(massif))
-    massif.delete()
+    messages.success(request, "Place «{0.name}» supprimé".format(place))
+    place.delete()
 
-    return HttpResponseRedirect(reverse('massifs.index'))
+    return HttpResponseRedirect(reverse('places.index'))
 
 ####################################################################################################
 #

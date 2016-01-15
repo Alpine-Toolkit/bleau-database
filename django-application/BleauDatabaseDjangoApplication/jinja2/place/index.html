@@ -2,15 +2,15 @@
 {% extends "include/base.html" %}
 
 {% block breadcrumb_li %}
-  <li class="active"> Massifs </li>
+  <li class="active"> Places </li>
 {% endblock %}
 
 {% block content %}
-  <h2>Massifs</h2>
+  <h2>Places</h2>
 
   <div class="row">
     <div class="col-xl-12">
-      <form class="form-inline" action="{{ url('massifs.index') }}">
+      <form class="form-inline" action="{{ url('places.index') }}">
 	{% csrf_token %}
 	<div class="form-group">
 	  <label for="id_name">Nom</label>
@@ -20,7 +20,7 @@
 	<button type="submit" class="btn btn-primary"><i class="fa fa-search"></i> Rechercher</button>
       </form>
       <br>
-      {% if massifs %}
+      {% if places %}
 	<table class="table table-striped">
           <thead>
             <tr>
@@ -28,15 +28,19 @@
             </tr>
           </thead>
           <tbody>
-            {% for massif in massifs %}
+            {% for place in places %}
               <tr>
-		<td><a href="{{ url('massifs.details', massif.pk) }}">{{ massif.name }}</a></td>
+		<td>{{ place.name }}</td>
+		<td>
+		  <a class="btn btn-primary" href="{{ url('places.update', place.pk) }}" role="button"><i class="fa fa-pencil-square-o"></i></a>
+		  <a class="btn btn-danger" href="{{ url('places.delete', place.pk) }}" role="button"><i class="fa fa-trash"></i></a>
+		</td>
               </tr>
             {% endfor %}
           </tbody>
 	</table>
       {% else %}
-	<p>Auncun massifs</p>
+	<p>Auncune places</p>
       {% endif %}
     </div>
   </div>

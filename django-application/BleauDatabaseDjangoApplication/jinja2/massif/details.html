@@ -1,0 +1,35 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "include/base.html" %}
+
+{% block title %} - {{ massif.name }}{% endblock %}
+
+{% block breadcrumb_li %}
+  <li><a href="{{ url('massifs.index') }}">Massifs</a> </li>
+  <li class="active">{{ massif.name }}</li>
+{% endblock %}
+
+{% block content %}
+  <h2>{{ massif.name }}</h2>
+
+  <div class="btn-group" role="group">
+    <a class="btn btn-primary" href="{{ url('massifs.update', massif.pk) }}" role="button"><i class="fa fa-pencil-square-o"></i></a>
+    <a class="btn btn-danger" href="{{ url('massifs.delete', massif.pk) }}" role="button"><i class="fa fa-trash"></i></a>
+  </div>
+
+  <h2>{{ _("Circuits") }}</h2>
+  <table class="table table-sm">
+    <tbody>
+      {% for circuit in massif.circuits() %}
+	<tr>
+	  <td>N°{{ circuit.number }}</td>
+	  <td>{{ circuit.grade }}</td>
+	  <td>{{ circuit.colour }}</td>
+	  <td>
+	    <a class="btn btn-primary" href="{{ url('circuits.update', circuit.pk) }}" role="button"><i class="fa fa-pencil-square-o"></i></a>
+	    <a class="btn btn-danger" href="{{ url('circuits.delete', circuit.pk) }}" role="button"><i class="fa fa-trash"></i></a>
+	  </td>
+	</tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

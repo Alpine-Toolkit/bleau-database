@@ -1,0 +1,15 @@
+{# -*- engine: jinja2 -*- #}
+{% if messages %}
+  <div class="row">
+    <div class="col-xl-12">
+      {% for message in messages %}
+	<div class="alert alert-warning alert-dismissible fade in" role="alert">
+	  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+	    <span aria-hidden="true">&times;</span>
+	  </button>
+	  {# <strong>{{ message.tags|default:'error'|capfirst }}:</strong> #} {{ message }}
+	</div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

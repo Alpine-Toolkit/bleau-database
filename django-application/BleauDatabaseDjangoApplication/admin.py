@@ -31,9 +31,16 @@ class YourModelAdmin(VersionAdmin):
 
 ####################################################################################################
 
-from .models import (Place, Massif, Circuit,
+from .models import (Profile,
+                     Place, Massif, Circuit,
                      Person, Opener,
                      Refection, RefectionPerson)
+
+####################################################################################################
+
+@admin.register(Profile)
+class ProfileAdmin(admin.ModelAdmin):
+    list_display = ('user',)
 
 @admin.register(Place)
 class PlaceAdmin(YourModelAdmin, admin.OSMGeoAdmin): # admin.ModelAdmin

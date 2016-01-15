@@ -21,12 +21,19 @@
 ####################################################################################################
 
 from django.conf.urls import url, include
+from django.core.urlresolvers import reverse_lazy
 from django.views.generic import TemplateView
+
 from rest_framework import routers
 
 ####################################################################################################
 
-# from .views.main import MainView
+from .views.account import (AuthenticationForm,
+                            PasswordChangeForm,
+                            PasswordResetForm,
+                            SetPasswordForm)
+
+from .views.main import MainView
 from .views.rest import PlaceViewSet, MassifViewSet, CircuitViewSet
 
 ####################################################################################################
@@ -35,13 +42,121 @@ from .views.rest import PlaceViewSet, MassifViewSet, CircuitViewSet
 #
 
 urlpatterns = [
-   # url(r'^$', MainView.as_view(), name='index'),
-    url(r'^$',
-        TemplateView.as_view(template_name='main.html'),
-        name='index'),
+    url(r'^$', MainView.as_view(), name='index'),
+    # url(r'^$',
+    #     TemplateView.as_view(template_name='main.html'),
+    #     name='index'),
     url(r'^mentions-legales$',
         TemplateView.as_view(template_name='mentions-legales.html'),
         name='mentions-legales'),
+]
+
+####################################################################################################
+#
+# Authentication
+#
+
+import django.contrib.auth.views as auth_views
+
+urlpatterns += [
+   url(r'^accounts/login/$',
+       auth_views.login,
+       {'template_name': 'account/login.html',
+        'authentication_form': AuthenticationForm},
+       name='accounts.login'),
+
+    url(r'^accounts/logout/$',
+        auth_views.logout,
+        {'template_name': 'account/logged_out.html'},
+        name='accounts.logout'),
+
+    url(r'^accounts/password/change/$',
+        auth_views.password_change,
+        {'template_name': 'account/password_change.html',
+         'password_change_form': PasswordChangeForm,
+         'post_change_redirect': reverse_lazy('accounts.password_change_done')},
+        name='accounts.password_change'),
+
+    url(r'^accounts/password/reset/$',
+        auth_views.password_reset,
+        {'template_name': 'account/password_reset.html',
+         'email_template_name': 'account/password_reset_email.txt',
+         'password_reset_form': PasswordResetForm,
+         'post_reset_redirect': reverse_lazy('accounts.password_reset_done')},
+        name='accounts.password_reset'),
+
+    url(r'^accounts/password/reset/confirm/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>.+)/$',
+        auth_views.password_reset_confirm,
+        {'template_name': 'account/password_reset_confirm.html',
+         'set_password_form': SetPasswordForm},
+        name='accounts.password_reset_confirm'),
+
+    url(r'^accounts/password/reset/complete/$',
+        auth_views.password_reset_complete,
+        {'template_name': 'account/password_reset_complete.html'},
+        name='password_reset_complete'),
+]
+
+####################################################################################################
+#
+# Profile
+#
+
+from .views import account as account_views
+
+urlpatterns += [
+    url(r'^accounts/register/$',
+        account_views.register,
+        name='accounts.register'),
+
+    url(r'^accounts/register/(?P<user_id>\d+)/confirm/(?P<user_hash>\w+)/$',
+        account_views.register_confirm,
+        name='accounts.register.confirm'),
+
+    url(r'^accounts/profile/$',
+        account_views.profile,
+        name='accounts.profile'),
+
+    url(r'^accounts/profile/update/$',
+        account_views.update,
+        name='accounts.profile.update'),
+
+    url(r'^accounts/password/change/done/$',
+        account_views.password_change_done,
+        name='accounts.password_change_done'),
+
+    url(r'^accounts/password/reset/done/$',
+        account_views.password_reset_done,
+        name='accounts.password_reset_done'),
+
+    url(r'^accounts/delete/$',
+        account_views.delete,
+        name='accounts.delete'),
+]
+
+####################################################################################################
+#
+# Place
+#
+
+from .views import place as place_views
+
+urlpatterns += [
+    url(r'^places/$',
+        place_views.PlaceListView.as_view(),
+        name='places.index'),
+
+    url(r'^places/create/$',
+        place_views.create,
+        name='places.create'),
+
+    url(r'^places/(?P<place_id>\d+)/update/$',
+        place_views.update,
+        name='places.update'),
+
+    url(r'^places/(?P<place_id>\d+)/delete/$',
+        place_views.delete,
+        name='places.delete'),
 ]
 
 ####################################################################################################
@@ -56,22 +171,43 @@ urlpatterns += [
         massif_views.MassifListView.as_view(),
         name='massifs.index'),
 
-    # url(r'^massifs/create/$',
-    #     massif_views.create,
-    #     name='massifs.create'),
+    url(r'^massifs/create/$',
+        massif_views.create,
+        name='massifs.create'),
 
-    # url(r'^massifs/(?P<massif_id>\d+)/$',
-    #     # 'details',
-    #     login_required(MassifCatalogListView.as_view()),
-    #     name='massifs.details'),
+    url(r'^massifs/(?P<massif_id>\d+)/$',
+        massif_views.details,
+        # login_required(MassifCatalogListView.as_view()),
+        name='massifs.details'),
 
-    # url(r'^massifs/(?P<massif_id>\d+)/update/$',
-    #     massif_views.update,
-    #     name='massifs.update'),
+    url(r'^massifs/(?P<massif_id>\d+)/update/$',
+        massif_views.update,
+        name='massifs.update'),
 
-    # url(r'^massifs/(?P<massif_id>\d+)/delete/$',
-    #     massif_views.delete,
-    #     name='massifs.delete'),
+    url(r'^massifs/(?P<massif_id>\d+)/delete/$',
+        massif_views.delete,
+        name='massifs.delete'),
+]
+
+####################################################################################################
+#
+# Circuit
+#
+
+from .views import circuit as circuit_views
+
+urlpatterns += [
+    url(r'^circuits/create/$',
+        circuit_views.create,
+        name='circuits.create'),
+
+    url(r'^circuits/(?P<circuit_id>\d+)/update/$',
+        circuit_views.update,
+        name='circuits.update'),
+
+    url(r'^circuits/(?P<circuit_id>\d+)/delete/$',
+        circuit_views.delete,
+        name='circuits.delete'),
 ]
 
 ####################################################################################################

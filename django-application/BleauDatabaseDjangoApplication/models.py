@@ -20,6 +20,8 @@
 
 ####################################################################################################
 
+from django.contrib.auth.models import User
+
 # from django.db import models
 from django.contrib.gis.db import models
 from django.contrib.gis.db.models import (Model,
@@ -28,6 +30,20 @@ from django.contrib.gis.db.models import (Model,
                                           CharField, TextField,
                                           PointField)
 from django.contrib.postgres.fields import JSONField
+
+####################################################################################################
+
+class Profile(models.Model):
+
+    user = models.OneToOneField(User)
+    # hash_id is used to confirm the profile
+    # hash_id = models.CharField(unique=True, max_length=30, default=random_hash)
+    # language = models.CharField(max_length=4, blank=True, null=True, choices=LANGUAGES)
+
+    ##############################################
+
+    def __str__(self):
+        return "{0.user}".format(self)
 
 ####################################################################################################
 
@@ -92,6 +108,12 @@ class Massif(Model):
 
         return self.name
 
+    ##############################################
+
+    def circuits(self):
+
+        return self.circuit_set.order_by('number')
+
 ####################################################################################################
 
 class Circuit(Model):
@@ -117,6 +139,11 @@ class Circuit(Model):
 
     def __str__(self):
         return '{0.massif}-{0.number}'.format(self)
+
+    ##############################################
+
+    def name(self):
+        return 'N°{0.number}'.format(self)
 
     ##############################################
 

@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content %}
-  <header role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <header role="banner">
     {# Small device #}
     {#
     <div class="jumbotron hidden-sm-up" style="padding: 1rem 1rem">
@@ -13,7 +13,7 @@
     #}
     {# Large device #}
     <div class="jumbotron hidden-xs-down" style="padding: 1rem 1rem">
-      <h1 class="display-3" itemprop="name">
+      <h1 class="display-3">
 	<img src="{{ static('image/favicon.png') }}">
 	Bleau Database Administration
       </h1>
@@ -24,7 +24,9 @@
   <div class="hidden-xs-down">
     <p>
       <a class="btn btn-primary btn-lg m-b-1" href="/massifs" role="button">
-	Tous les Massifs</a>
+	Massifs</a>
+      <a class="btn btn-primary btn-lg m-b-1" href="/places" role="button">
+	Places</a>
     </p>
   </div>
 {% endblock %}
