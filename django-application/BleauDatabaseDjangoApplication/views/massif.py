@@ -114,7 +114,7 @@ class MassifListView(FormMixin, ListView):
 
 ####################################################################################################
 
-# @login_required
+@login_required
 def details(request, massif_id):
 
     massif = get_object_or_404(Massif, pk=massif_id)
@@ -127,7 +127,7 @@ def details(request, massif_id):
 
 ####################################################################################################
 
-# @login_required
+@login_required
 def create(request):
 
     if request.method == 'POST':
@@ -146,7 +146,7 @@ def create(request):
 
 ####################################################################################################
 
-# @login_required
+@login_required
 def update(request, massif_id):
 
     massif = get_object_or_404(Massif, pk=massif_id)
@@ -163,12 +163,11 @@ def update(request, massif_id):
 
 ####################################################################################################
 
-# @login_required
+@login_required
 def delete(request, massif_id):
 
     # Fixme: confirmation
     massif = get_object_or_404(Massif, pk=massif_id)
-    # Fixme: message not shown
     messages.success(request, "Massif «{0.name}» supprimé".format(massif))
     massif.delete()
 

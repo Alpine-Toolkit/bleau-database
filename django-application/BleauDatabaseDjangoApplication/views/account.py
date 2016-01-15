@@ -214,39 +214,39 @@ class ProfileUpdateForm(ModelForm):
 
 ####################################################################################################
 
-def register(request):
+# def register(request):
 
-    if request.method == 'POST':
-        user_form = UserCreationForm(request.POST)
-        if user_form.is_valid():
-            new_user = user_form.save()
-            send_localized_mail(new_user, _('Subscription to ...'),
-                                'account/register_email.html',
-                                {'URL': request.build_absolute_uri(reverse('accounts.register.confirm',
-                                                                           args=[new_user.pk,
-                                                                                 new_user.profile.hash_id])),
-                                 'fullname': new_user.get_full_name()})
-            return render(request, 'account/register_end.html')
-        else:
-            messages.error(request, _("Some information are missing or mistyped"))
-    else:
-        user_form = UserCreationForm()
+#     if request.method == 'POST':
+#         user_form = UserCreationForm(request.POST)
+#         if user_form.is_valid():
+#             new_user = user_form.save()
+#             send_localized_mail(new_user, _('Subscription to ...'),
+#                                 'account/register_email.html',
+#                                 {'URL': request.build_absolute_uri(reverse('accounts.register.confirm',
+#                                                                            args=[new_user.pk,
+#                                                                                  new_user.profile.hash_id])),
+#                                  'fullname': new_user.get_full_name()})
+#             return render(request, 'account/register_end.html')
+#         else:
+#             messages.error(request, _("Some information are missing or mistyped"))
+#     else:
+#         user_form = UserCreationForm()
 
-    return render(request, 'account/register.html', {'user_form': user_form})
+#     return render(request, 'account/register.html', {'user_form': user_form})
 
 ####################################################################################################
 
-def register_confirm(request, user_id, user_hash):
+# def register_confirm(request, user_id, user_hash):
 
-    """Check that the User and the Hash are correct before activating the User
+#     """Check that the User and the Hash are correct before activating the User
 
-    """
+#     """
 
-    user = get_object_or_404(User, pk=user_id, profile__hash_id=user_hash)
-    user.is_active = True
-    user.save()
+#     user = get_object_or_404(User, pk=user_id, profile__hash_id=user_hash)
+#     user.is_active = True
+#     user.save()
 
-    return render(request, 'account/confirm.html', {'user': user})
+#     return render(request, 'account/confirm.html', {'user': user})
 
 ####################################################################################################
 

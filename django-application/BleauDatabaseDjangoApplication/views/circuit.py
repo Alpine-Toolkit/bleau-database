@@ -58,7 +58,7 @@ class CircuitForm(ModelForm):
 
 ####################################################################################################
 
-# @login_required
+@login_required
 def create(request):
 
     if request.method == 'POST':
@@ -77,7 +77,7 @@ def create(request):
 
 ####################################################################################################
 
-# @login_required
+@login_required
 def update(request, circuit_id):
 
     circuit = get_object_or_404(Circuit, pk=circuit_id)
@@ -94,7 +94,7 @@ def update(request, circuit_id):
 
 ####################################################################################################
 
-# @login_required
+@login_required
 def delete(request, circuit_id):
 
     # Fixme: confirmation

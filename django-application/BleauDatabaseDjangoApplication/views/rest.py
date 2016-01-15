@@ -24,8 +24,31 @@ from rest_framework import viewsets
 
 ####################################################################################################
 
-from ..serializers import PlaceSerializer, MassifSerializer, CircuitSerializer
-from ..models import Place, Massif, Circuit
+from ..serializers import (PersonSerializer, OpenerSerializer,
+                           PlaceSerializer, MassifSerializer, CircuitSerializer)
+from ..models import Person, Opener, Place, Massif, Circuit
+
+####################################################################################################
+
+class PersonViewSet(viewsets.ModelViewSet):
+
+    """
+    API endpoint that allows persons to be viewed or edited.
+    """
+
+    queryset = Person.objects.all()
+    serializer_class = PersonSerializer
+
+####################################################################################################
+
+class OpenerViewSet(viewsets.ModelViewSet):
+
+    """
+    API endpoint that allows openers to be viewed or edited.
+    """
+
+    queryset = Opener.objects.all()
+    serializer_class = OpenerSerializer
 
 ####################################################################################################
 

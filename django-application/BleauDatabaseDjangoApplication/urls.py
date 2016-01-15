@@ -21,6 +21,7 @@
 ####################################################################################################
 
 from django.conf.urls import url, include
+from django.contrib.auth.decorators import login_required
 from django.core.urlresolvers import reverse_lazy
 from django.views.generic import TemplateView
 
@@ -34,7 +35,6 @@ from .views.account import (AuthenticationForm,
                             SetPasswordForm)
 
 from .views.main import MainView
-from .views.rest import PlaceViewSet, MassifViewSet, CircuitViewSet
 
 ####################################################################################################
 #
@@ -63,7 +63,7 @@ urlpatterns += [
        auth_views.login,
        {'template_name': 'account/login.html',
         'authentication_form': AuthenticationForm},
-       name='accounts.login'),
+       name='accounts.login'), # Fixme: redirect to home page
 
     url(r'^accounts/logout/$',
         auth_views.logout,
@@ -105,13 +105,13 @@ urlpatterns += [
 from .views import account as account_views
 
 urlpatterns += [
-    url(r'^accounts/register/$',
-        account_views.register,
-        name='accounts.register'),
+    # url(r'^accounts/register/$',
+    #     account_views.register,
+    #     name='accounts.register'),
 
-    url(r'^accounts/register/(?P<user_id>\d+)/confirm/(?P<user_hash>\w+)/$',
-        account_views.register_confirm,
-        name='accounts.register.confirm'),
+    # url(r'^accounts/register/(?P<user_id>\d+)/confirm/(?P<user_hash>\w+)/$',
+    #     account_views.register_confirm,
+    #     name='accounts.register.confirm'),
 
     url(r'^accounts/profile/$',
         account_views.profile,
@@ -136,6 +136,31 @@ urlpatterns += [
 
 ####################################################################################################
 #
+# Person
+#
+
+from .views import person as person_views
+
+urlpatterns += [
+    url(r'^persons/$',
+        login_required(person_views.PersonListView.as_view()),
+        name='persons.index'),
+
+    url(r'^persons/create/$',
+        person_views.create,
+        name='persons.create'),
+
+    url(r'^persons/(?P<person_id>\d+)/update/$',
+        person_views.update,
+        name='persons.update'),
+
+    url(r'^persons/(?P<person_id>\d+)/delete/$',
+        person_views.delete,
+        name='persons.delete'),
+]
+
+####################################################################################################
+#
 # Place
 #
 
@@ -143,7 +168,7 @@ from .views import place as place_views
 
 urlpatterns += [
     url(r'^places/$',
-        place_views.PlaceListView.as_view(),
+        login_required(place_views.PlaceListView.as_view()),
         name='places.index'),
 
     url(r'^places/create/$',
@@ -168,7 +193,7 @@ from .views import massif as massif_views
 
 urlpatterns += [
     url(r'^massifs/$',
-        massif_views.MassifListView.as_view(),
+        login_required(massif_views.MassifListView.as_view()),
         name='massifs.index'),
 
     url(r'^massifs/create/$',
@@ -177,7 +202,6 @@ urlpatterns += [
 
     url(r'^massifs/(?P<massif_id>\d+)/$',
         massif_views.details,
-        # login_required(MassifCatalogListView.as_view()),
         name='massifs.details'),
 
     url(r'^massifs/(?P<massif_id>\d+)/update/$',
@@ -215,10 +239,14 @@ urlpatterns += [
 # REST
 #
 
+from .views.rest import PersonViewSet, OpenerViewSet, PlaceViewSet, MassifViewSet, CircuitViewSet
+
 router = routers.DefaultRouter()
 router.register(r'place', PlaceViewSet)
 router.register(r'massif', MassifViewSet)
 router.register(r'circuit', CircuitViewSet)
+router.register(r'person', PersonViewSet)
+router.register(r'opener', OpenerViewSet)
 
 urlpatterns += [
     url(r'^api/', include(router.urls)),

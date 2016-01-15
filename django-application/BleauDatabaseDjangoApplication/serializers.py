@@ -24,7 +24,21 @@ from rest_framework import serializers
 
 ####################################################################################################
 
-from .models import Place, Massif, Circuit
+from .models import Person, Opener, Place, Massif, Circuit
+
+####################################################################################################
+
+class PersonSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Person
+        # fields = ('url', 'name')
+
+####################################################################################################
+
+class OpenerSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Opener
+        # fields = ('url', 'name')
 
 ####################################################################################################
 

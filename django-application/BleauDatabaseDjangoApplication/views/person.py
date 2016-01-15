@@ -34,14 +34,14 @@ from django.views.generic.edit import FormMixin
 
 ####################################################################################################
 
-from ..models import Place
+from ..models import Person
 
 ####################################################################################################
 
-class PlaceForm(ModelForm):
+class PersonForm(ModelForm):
 
     class Meta:
-        model = Place
+        model = Person
         fields = '__all__'
         # exclude = ('creation_date',)
 
@@ -49,38 +49,38 @@ class PlaceForm(ModelForm):
 
     def __init__(self, *args, **kwargs):
 
-        super(PlaceForm, self).__init__(*args, **kwargs)
+        super(PersonForm, self).__init__(*args, **kwargs)
 
-        self.fields['name'].widget.attrs['autofocus'] = 'autofocus'
+        # self.fields['last_name'].widget.attrs['autofocus'] = 'autofocus'
 
         for field in self.fields.values():
             field.widget.attrs['class'] = 'form-control'
 
 ####################################################################################################
 
-class PlaceSearchForm(Form):
+class PersonSearchForm(Form):
 
     name = CharField(label=_('Nom'), required=False, initial='')
 
     ##############################################
 
     def filter_by(self):
-        return {'name__icontains': self.cleaned_data['name']}
+        return {'last_name__icontains': self.cleaned_data['name']}
 
 ####################################################################################################
 
-class PlaceListView(FormMixin, ListView):
+class PersonListView(FormMixin, ListView):
 
-    template_name = 'place/index.html'
+    template_name = 'person/index.html'
 
     # ListView
-    model = Place
-    queryset = Place.objects.all().order_by('name')
-    context_object_name = 'places' # else object_list
+    model = Person
+    queryset = Person.objects.all().order_by('last_name')
+    context_object_name = 'persons' # else object_list
     paginate_by = None
 
     # FormMixin
-    form_class = PlaceSearchForm
+    form_class = PersonSearchForm
 
     ##############################################
 
@@ -115,15 +115,15 @@ class PlaceListView(FormMixin, ListView):
 ####################################################################################################
 
 @login_required
-def details(request, place_id):
+def details(request, person_id):
 
-    place = get_object_or_404(Place, pk=place_id)
+    person = get_object_or_404(Person, pk=person_id)
 
     # deprecated ?
-    # return render_to_response('place/details.html',
-    #                           {'place': place},
+    # return render_to_response('person/details.html',
+    #                           {'person': person},
     #                           context_instance=RequestContext(request))
-    return render(request, 'place/details.html', {'place': place})
+    return render(request, 'person/details.html', {'person': person})
 
 ####################################################################################################
 
@@ -131,47 +131,47 @@ def details(request, place_id):
 def create(request):
 
     if request.method == 'POST':
-        form = PlaceForm(request.POST)
+        form = PersonForm(request.POST)
         if form.is_valid():
-            place = form.save(commit=False)
-            place.save()
-            messages.success(request, "Place créé avec succès.")
-            return HttpResponseRedirect(reverse('places.details', args=[place.pk]))
+            person = form.save(commit=False)
+            person.save()
+            messages.success(request, "Person créé avec succès.")
+            return HttpResponseRedirect(reverse('persons.details', args=[person.pk]))
         else:
             messages.error(request, "Des informations sont manquantes ou incorrectes")
     else:
-        form = PlaceForm()
+        form = PersonForm()
 
-    return render(request, 'place/create.html', {'form': form})
+    return render(request, 'person/create.html', {'form': form})
 
 ####################################################################################################
 
 @login_required
-def update(request, place_id):
+def update(request, person_id):
 
-    place = get_object_or_404(Place, pk=place_id)
+    person = get_object_or_404(Person, pk=person_id)
 
     if request.method == 'POST':
-        form = PlaceForm(request.POST, instance=place)
+        form = PersonForm(request.POST, instance=person)
         if form.is_valid():
-            place = form.save()
-            return HttpResponseRedirect(reverse('places.details', args=[place.pk]))
+            person = form.save()
+            return HttpResponseRedirect(reverse('persons.details', args=[person.pk]))
     else:
-        form = PlaceForm(instance=place)
+        form = PersonForm(instance=person)
 
-    return render(request, 'place/create.html', {'form': form, 'update': True, 'place': place})
+    return render(request, 'person/create.html', {'form': form, 'update': True, 'person': person})
 
 ####################################################################################################
 
 @login_required
-def delete(request, place_id):
+def delete(request, person_id):
 
     # Fixme: confirmation
-    place = get_object_or_404(Place, pk=place_id)
-    messages.success(request, "Place «{0.name}» supprimé".format(place))
-    place.delete()
+    person = get_object_or_404(Person, pk=person_id)
+    messages.success(request, "Person «{0.name}» supprimé".format(person))
+    person.delete()
 
-    return HttpResponseRedirect(reverse('places.index'))
+    return HttpResponseRedirect(reverse('persons.index'))
 
 ####################################################################################################
 #

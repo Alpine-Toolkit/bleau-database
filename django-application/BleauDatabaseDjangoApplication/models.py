@@ -83,6 +83,12 @@ class Person(Model):
 
     def __str__(self):
 
+        return self.name()
+
+    ##############################################
+
+    def name(self):
+
         return ' '.join((self.first_name, self.last_name))
 
 ####################################################################################################

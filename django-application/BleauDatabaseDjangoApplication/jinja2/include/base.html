@@ -44,13 +44,13 @@
 			<i class="fa fa-cog"></i> Profile</a>
 		      <div class="dropdown-divider"></div>
 		      <a class="dropdown-item"  href="{{ url('accounts.logout') }}">
-			<i class="fa fa-power-off"></i> Log out</a>
+			<i class="fa fa-sign-out"></i> Log out</a>
 		    </div>
 		</li>
-		<li class="nav-item"><a href="/site-admin" %}"><i class="fa fa-wrench"></i></a></li>
+		<li class="nav-item"><a href="/site-admin"><i class="fa fa-wrench"></i></a></li>
               {% else %}
 		<li class="nav-item {% block nav_login %}{% endblock %}">
-		  <a class="nav-link" href="{{ url('accounts.login') }}"><i class="fa fa-user"></i> Login</a></li>
+		  <a class="nav-link" href="{{ url('accounts.login') }}"><i class="fa fa-sign-in"></i> Connexion</a></li>
               {% endif %}
 	    </ul>
 	  </div>
