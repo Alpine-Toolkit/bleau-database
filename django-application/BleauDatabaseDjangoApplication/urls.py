@@ -80,7 +80,7 @@ urlpatterns += [
     url(r'^accounts/password/reset/$',
         auth_views.password_reset,
         {'template_name': 'account/password_reset.html',
-         'email_template_name': 'account/password_reset_email.txt',
+         'email_template_name': 'account/password_reset_email.html',
          'password_reset_form': PasswordResetForm,
          'post_reset_redirect': reverse_lazy('accounts.password_reset_done')},
         name='accounts.password_reset'),
@@ -105,14 +105,6 @@ urlpatterns += [
 from .views import account as account_views
 
 urlpatterns += [
-    # url(r'^accounts/register/$',
-    #     account_views.register,
-    #     name='accounts.register'),
-
-    # url(r'^accounts/register/(?P<user_id>\d+)/confirm/(?P<user_hash>\w+)/$',
-    #     account_views.register_confirm,
-    #     name='accounts.register.confirm'),
-
     url(r'^accounts/profile/$',
         account_views.profile,
         name='accounts.profile'),

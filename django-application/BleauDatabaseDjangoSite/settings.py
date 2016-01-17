@@ -221,6 +221,16 @@ USE_TZ = True
 
 ####################################################################################################
 #
+# LOGIN URLs
+#
+
+# LOGIN_REDIRECT_URL = 'accounts.profile'
+LOGIN_REDIRECT_URL = 'index'
+LOGIN_URL = 'accounts.login'
+LOGOUT_URL = 'accounts.logout'
+
+####################################################################################################
+#
 # Django Suit configuration
 #
 
@@ -262,6 +272,14 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAdminUser',),
     'PAGE_SIZE': 10
 }
+
+####################################################################################################
+#
+# Email
+#
+
+# Log to console
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ####################################################################################################
 #

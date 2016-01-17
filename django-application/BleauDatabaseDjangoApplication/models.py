@@ -33,12 +33,14 @@ from django.contrib.postgres.fields import JSONField
 
 ####################################################################################################
 
+from .settings import LANGUAGES
+
+####################################################################################################
+
 class Profile(models.Model):
 
     user = models.OneToOneField(User)
-    # hash_id is used to confirm the profile
-    # hash_id = models.CharField(unique=True, max_length=30, default=random_hash)
-    # language = models.CharField(max_length=4, blank=True, null=True, choices=LANGUAGES)
+    language = models.CharField(max_length=4, blank=True, null=True, choices=LANGUAGES)
 
     ##############################################
 
