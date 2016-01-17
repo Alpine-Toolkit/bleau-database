@@ -224,7 +224,7 @@ def profile(request):
     if not request.user.profile.language:
         messages.error(request, _("You should update your language."))
         return HttpResponseRedirect(reverse('accounts.profile.update'))
-
+    
     return render(request, 'account/profile.html')
 
 ####################################################################################################
@@ -233,7 +233,7 @@ def profile(request):
 def update(request):
 
     profile = get_object_or_404(Profile, user__pk=request.user.pk)
-
+    
     if request.method == 'POST':
         user_form = UserUpdateForm(request.POST, instance=request.user)
         profile_form = ProfileUpdateForm(request.POST, instance=profile)
@@ -249,7 +249,7 @@ def update(request):
     else:
         user_form = UserUpdateForm(instance=request.user)
         profile_form = ProfileUpdateForm(instance=profile)
-
+        
         return render(request, 'account/update.html',
                       {'user_form': user_form, 'profile_form': profile_form})
 

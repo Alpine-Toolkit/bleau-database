@@ -31,12 +31,12 @@ translations_dir="${web_application_dir}/locale"
 if [ $do_update ]; then
   pybabel extract -F ${translations_dir}/babel.cfg -k lazy_gettext -o ${translations_dir}/messages.pot .
   
-  if [ $do_update ]; then
-     pybabel init -i ${translations_dir}/messages.pot -d ${translations_dir} -l fr
-     pybabel init -i ${translations_dir}/messages.pot -d ${translations_dir} -l en
+  if [ $do_init ]; then
+     pybabel init -D django -i ${translations_dir}/messages.pot -d ${translations_dir} -l fr
+     pybabel init -D django -i ${translations_dir}/messages.pot -d ${translations_dir} -l en
   fi
   
-  pybabel update -i ${translations_dir}/messages.pot -d ${translations_dir}
+  pybabel update -D django -i ${translations_dir}/messages.pot -d ${translations_dir}
   
   # ${path}/manage.py makemessages -l fr
   # ${path}/manage.py makemessages -l en
@@ -44,7 +44,7 @@ if [ $do_update ]; then
 fi
 
 if [ $do_compile ]; then
-  pybabel compile -d ${translations_dir}
+  pybabel compile -D django -d ${translations_dir}
 fi
 
 # poedit

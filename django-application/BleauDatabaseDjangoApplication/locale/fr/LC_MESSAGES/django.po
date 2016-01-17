@@ -6,27 +6,68 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-01-17 19:17+0100\n"
-"PO-Revision-Date: 2016-01-17 19:19+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-17 18:35+0000\n"
+"PO-Revision-Date: 2016-01-17 19:37+0100\n"
 "Last-Translator: \n"
-"Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Generated-By: Babel 2.2.0\n"
 "X-Generator: Poedit 1.8.5\n"
 
-#: BleauDatabaseDjangoApplication/settings.py:28
+#: BleauDatabaseDjangoApplication/jinja2/account/password_change.html:4
+#: BleauDatabaseDjangoApplication/jinja2/account/password_change.html:10
+#: BleauDatabaseDjangoApplication/jinja2/account/password_change.html:14
 #, fuzzy
-msgid "English"
-msgstr "Anglais"
+#| msgid "New password"
+msgid "Change password"
+msgstr "Nouveau mot de passe"
 
-#: BleauDatabaseDjangoApplication/settings.py:29
-msgid "Français"
-msgstr "Français"
+#: BleauDatabaseDjangoApplication/jinja2/account/password_change.html:18
+#: BleauDatabaseDjangoApplication/views/account.py:82
+msgid "Old password"
+msgstr "Ancien mot de passe"
+
+#: BleauDatabaseDjangoApplication/jinja2/account/password_change.html:27
+#: BleauDatabaseDjangoApplication/jinja2/account/password_change.html:36
+#: BleauDatabaseDjangoApplication/views/account.py:77
+#: BleauDatabaseDjangoApplication/views/account.py:79
+#: BleauDatabaseDjangoApplication/views/account.py:122
+#: BleauDatabaseDjangoApplication/views/account.py:124
+msgid "New password"
+msgstr "Nouveau mot de passe"
+
+#: BleauDatabaseDjangoApplication/jinja2/account/password_change.html:46
+msgid "Change"
+msgstr ""
+
+#: BleauDatabaseDjangoApplication/jinja2/account/password_reset.html:4
+#: BleauDatabaseDjangoApplication/jinja2/account/password_reset.html:10
+#: BleauDatabaseDjangoApplication/jinja2/account/password_reset.html:14
+#, fuzzy
+#| msgid "Password"
+msgid "Password reset"
+msgstr "Mot de passe"
+
+#: BleauDatabaseDjangoApplication/jinja2/account/password_reset.html:15
+msgid ""
+"Forgotten your password? Enter your email address below, and we'll email "
+"instructions for setting a new one."
+msgstr ""
+
+#: BleauDatabaseDjangoApplication/jinja2/account/password_reset.html:19
+msgid "Email address:"
+msgstr ""
+
+#: BleauDatabaseDjangoApplication/jinja2/account/password_reset.html:29
+#, fuzzy
+#| msgid "New password"
+msgid "Reset my password"
+msgstr "Nouveau mot de passe"
 
 #: BleauDatabaseDjangoApplication/jinja2/account/password_reset_complete.html:4
 #: BleauDatabaseDjangoApplication/jinja2/account/password_reset_complete.html:10
@@ -41,6 +82,53 @@ msgstr ""
 #: BleauDatabaseDjangoApplication/jinja2/account/password_reset_complete.html:16
 msgid "Log in"
 msgstr "Connexion"
+
+#: BleauDatabaseDjangoApplication/jinja2/account/password_reset_confirm.html:4
+#: BleauDatabaseDjangoApplication/jinja2/account/password_reset_confirm.html:10
+msgid "Password reset confirmation"
+msgstr ""
+
+#: BleauDatabaseDjangoApplication/jinja2/account/password_reset_confirm.html:15
+#, fuzzy
+#| msgid "New password"
+msgid "Enter new password"
+msgstr "Nouveau mot de passe"
+
+#: BleauDatabaseDjangoApplication/jinja2/account/password_reset_confirm.html:16
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+
+#: BleauDatabaseDjangoApplication/jinja2/account/password_reset_confirm.html:20
+#, fuzzy
+#| msgid "New password"
+msgid "New password:"
+msgstr "Nouveau mot de passe"
+
+#: BleauDatabaseDjangoApplication/jinja2/account/password_reset_confirm.html:29
+#, fuzzy
+#| msgid "New password"
+msgid "Confirm password:"
+msgstr "Nouveau mot de passe"
+
+#: BleauDatabaseDjangoApplication/jinja2/account/password_reset_confirm.html:39
+#, fuzzy
+#| msgid "New password"
+msgid "Change my password"
+msgstr "Nouveau mot de passe"
+
+#: BleauDatabaseDjangoApplication/jinja2/account/password_reset_confirm.html:44
+#, fuzzy
+#| msgid "Password changed successfully"
+msgid "Password reset unsuccessful"
+msgstr "Mot de passe changé avec succès"
+
+#: BleauDatabaseDjangoApplication/jinja2/account/password_reset_confirm.html:45
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a new password reset."
+msgstr ""
 
 #: BleauDatabaseDjangoApplication/jinja2/account/password_reset_done.html:4
 #: BleauDatabaseDjangoApplication/jinja2/account/password_reset_done.html:10
@@ -84,6 +172,7 @@ msgid "Name"
 msgstr "Nom"
 
 #: BleauDatabaseDjangoApplication/jinja2/account/profile.html:22
+#: BleauDatabaseDjangoApplication/views/account.py:241
 msgid "Email"
 msgstr "Courriel"
 
@@ -95,6 +184,7 @@ msgid "Password"
 msgstr "Mot de passe"
 
 #: BleauDatabaseDjangoApplication/jinja2/account/profile.html:31
+#: BleauDatabaseDjangoApplication/jinja2/account/update.html:44
 msgid "Language"
 msgstr "Langage"
 
@@ -111,40 +201,72 @@ msgstr "Supprimer mon compte"
 
 #: BleauDatabaseDjangoApplication/jinja2/account/profile.html:46
 msgid ""
-"If you want to remove your account, just click on the folowing button. "
-"Be careful as it will permanently remove all your outings and personal "
-"data."
+"If you want to remove your account, just click on the folowing button. Be "
+"careful as it will permanently remove all your outings and personal data."
 msgstr ""
 
 #: BleauDatabaseDjangoApplication/jinja2/account/profile.html:59
 msgid ""
-"Are you sure you want to delete your account? It will permanently delete "
-"all your outings along with your personal data."
+"Are you sure you want to delete your account? It will permanently delete all "
+"your outings along with your personal data."
 msgstr ""
 
 #: BleauDatabaseDjangoApplication/jinja2/account/profile.html:62
 msgid "Cancel"
 msgstr "Annuler"
 
+#: BleauDatabaseDjangoApplication/jinja2/account/update.html:4
+msgid "Update profile"
+msgstr "Mise à jour du profile"
+
+#: BleauDatabaseDjangoApplication/jinja2/account/update.html:10
+#: BleauDatabaseDjangoApplication/jinja2/account/update.html:60
+#, fuzzy
+#| msgid "update"
+msgid "Update"
+msgstr "mettre à jour"
+
+#: BleauDatabaseDjangoApplication/jinja2/account/update.html:14
+#, fuzzy
+#| msgid "Deleting my account"
+msgid "Update my account"
+msgstr "Supprimer mon compte"
+
+#: BleauDatabaseDjangoApplication/jinja2/account/update.html:19
+#, fuzzy
+#| msgid "Personnal information updated"
+msgid "Personnal information"
+msgstr "Information personnelle mise à jour"
+
+#: BleauDatabaseDjangoApplication/jinja2/account/update.html:21
+msgid "First name"
+msgstr "Prénom"
+
+#: BleauDatabaseDjangoApplication/jinja2/account/update.html:31
+msgid "Last name"
+msgstr "Nom"
+
+#: BleauDatabaseDjangoApplication/jinja2/account/update.html:42
+msgid "Localization"
+msgstr "Localisation"
+
 #: BleauDatabaseDjangoApplication/jinja2/massif/details.html:19
 msgid "Circuits"
 msgstr "circuits"
+
+#: BleauDatabaseDjangoApplication/settings.py:28
+#, fuzzy
+msgid "English"
+msgstr "Anglais"
+
+#: BleauDatabaseDjangoApplication/settings.py:29
+msgid "Français"
+msgstr "Français"
 
 #: BleauDatabaseDjangoApplication/views/account.py:60
 #: BleauDatabaseDjangoApplication/views/account.py:160
 msgid "Username"
 msgstr "Utilisateur"
-
-#: BleauDatabaseDjangoApplication/views/account.py:77
-#: BleauDatabaseDjangoApplication/views/account.py:79
-#: BleauDatabaseDjangoApplication/views/account.py:122
-#: BleauDatabaseDjangoApplication/views/account.py:124
-msgid "New password"
-msgstr "Nouveau mot de passe"
-
-#: BleauDatabaseDjangoApplication/views/account.py:82
-msgid "Old password"
-msgstr "Ancien mot de passe"
 
 #: BleauDatabaseDjangoApplication/views/account.py:102
 msgid "email"
@@ -154,11 +276,11 @@ msgstr "courriel"
 msgid "You should update your language."
 msgstr ""
 
-#: BleauDatabaseDjangoApplication/views/account.py:247
+#: BleauDatabaseDjangoApplication/views/account.py:253
 msgid "Personnal information updated"
 msgstr "Information personnelle mise à jour"
 
-#: BleauDatabaseDjangoApplication/views/account.py:261
+#: BleauDatabaseDjangoApplication/views/account.py:267
 msgid "Password changed successfully"
 msgstr "Mot de passe changé avec succès"
 

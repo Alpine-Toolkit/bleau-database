@@ -1,13 +1,13 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
-{% block title %} - Profile Update{% endblock %}
+{% block title %} - {{ _("Update profile") }}{% endblock %}
 
 {% block nav_account %}active{% endblock %}
 
 {% block breadcrumb_li %}
   <li><a href="{{ url('accounts.profile') }}">Profile</a></li>
-  <li class="active">Update</li>
+  <li class="active">{{  _("Update") }}</li>
 {% endblock %}
 
 {% block content %}
