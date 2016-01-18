@@ -23,11 +23,9 @@
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.urlresolvers import reverse
-from django.db.models import Q
 from django.forms import ModelForm, Form, CharField
-from django.http import Http404, HttpResponseRedirect
-from django.shortcuts import get_object_or_404, render_to_response, render
-from django.template import RequestContext
+from django.http import HttpResponseRedirect
+from django.shortcuts import get_object_or_404, render
 from django.utils.translation import ugettext as _
 from django.views.generic import ListView
 from django.views.generic.edit import FormMixin
@@ -42,7 +40,19 @@ class MassifForm(ModelForm):
 
     class Meta:
         model = Massif
-        fields = '__all__'
+        fields = (
+            'name',
+            'alternative_name',
+            'secteur',
+            'chaos_type',
+            'note',
+            # 'coordinate',
+            'parcelles',
+            'acces',
+            'velo',
+            'rdv',
+        )
+
         # exclude = ('creation_date',)
 
     ##############################################
@@ -102,7 +112,7 @@ class MassifListView(FormMixin, ListView):
     def get(self, request, *args, **kwargs):
 
         # cf. django/views/generic/list.py BaseListView
-        
+
         self.object_list = self.get_queryset()
         
         form = self.get_form()
@@ -118,11 +128,6 @@ class MassifListView(FormMixin, ListView):
 def details(request, massif_id):
 
     massif = get_object_or_404(Massif, pk=massif_id)
-
-    # deprecated ?
-    # return render_to_response('massif/details.html',
-    #                           {'massif': massif},
-    #                           context_instance=RequestContext(request))
     return render(request, 'massif/details.html', {'massif': massif})
 
 ####################################################################################################
@@ -150,7 +155,7 @@ def create(request):
 def update(request, massif_id):
 
     massif = get_object_or_404(Massif, pk=massif_id)
-
+    
     if request.method == 'POST':
         form = MassifForm(request.POST, instance=massif)
         if form.is_valid():
@@ -158,7 +163,7 @@ def update(request, massif_id):
             return HttpResponseRedirect(reverse('massifs.details', args=[massif.pk]))
     else:
         form = MassifForm(instance=massif)
-
+    
     return render(request, 'massif/create.html', {'form': form, 'update': True, 'massif': massif})
 
 ####################################################################################################
@@ -170,7 +175,7 @@ def delete(request, massif_id):
     massif = get_object_or_404(Massif, pk=massif_id)
     messages.success(request, "Massif «{0.name}» supprimé".format(massif))
     massif.delete()
-
+    
     return HttpResponseRedirect(reverse('massifs.index'))
 
 ####################################################################################################

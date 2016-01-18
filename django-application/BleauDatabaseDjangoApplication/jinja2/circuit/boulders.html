@@ -1,0 +1,62 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "include/base.html" %}
+
+{% block title %} - {{ circuit.massif.name }} ~ {{ circuit.name() }}{% endblock %}
+
+{% block breadcrumb_li %}
+  <li><a href="{{ url('massifs.index') }}">Massifs</a></li>
+  <li><a href="{{ url('massifs.details', circuit.massif.pk) }}">{{ circuit.massif.name }}</a></li>
+  <li><a href="{{ url('circuits.details', circuit.pk) }}">{{ circuit.name() }}</a></li>
+  <li class="active">{{ _("Boulders") }}</li>
+{% endblock %}
+
+{% block content %}
+  <h1> {{ circuit.massif.name }} ~ {{ circuit.name() }}</h1>
+
+  <div id="table" class="table-editable">
+    <table class="table">
+      <tr>
+        <th>Number</th>
+        <th>Grade</th>
+        <th>Name</th>
+        <th>Comment</th>
+	<th></th>
+	<th></th>
+      </tr>
+      {% if circuit.boulders %}
+	{% for boulder in circuit.boulders %}
+	  <tr>
+	    <td contenteditable="true">{{ boulder.number }}</td>
+	    <td contenteditable="true">{{ boulder.grade }}</td>
+	    <td contenteditable="true">{{ boulder.name }}</td>
+	    <td contenteditable="true">{{ boulder.comment }}</td>
+            <td><button type="button" class="table-remove btn btn-danger"><i class="fa fa-trash"></i></button></td>
+            <td>
+	      <button type="button" class="table-up btn"><i class="fa fa-arrow-up"></i></button>
+	      <button type="button" class="table-down btn"><i class="fa fa-arrow-down"></i></button>
+	    </td>
+	  </tr>
+	{% endfor %}
+      {% endif %}
+      <!-- This is our clonable table line -->
+      <tr class="invisible">
+	<td contenteditable="true"></td>
+	<td contenteditable="true"></td>
+	<td contenteditable="true"></td>
+	<td contenteditable="true"></td>
+        <td><button type="button" class="table-remove btn btn-danger"><i class="fa fa-trash"></i></button></td>
+        <td>
+	  <button type="button" class="table-up btn"><i class="fa fa-arrow-up"></i></button>
+	  <button type="button" class="table-down btn"><i class="fa fa-arrow-down"></i></button>
+	</td>
+      </tr>
+    </table>
+    <p><button type="button" class="table-add btn btn-primary"><i class="fa fa-plus"></i></button></p>
+  </div>
+  <button id="export-btn" type="button" class="btn btn-primary">Export Data</button>
+  <p id="export"></p>
+{% endblock %}
+
+{% block script %}
+  <script type="text/javascript" src={{ static('js/editable-table.js') }}></script>
+{% endblock %}

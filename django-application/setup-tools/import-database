@@ -63,33 +63,33 @@ def to_postgis_coordinate(obj):
 
 bleau_database = BleauDataBase(json_file=args.json_file)
 
-# Place.objects.all().delete()
-# category_to_int = {category:i for i, category in enumerate(('parking', 'gare', "point d'eau"))}
-# for place in bleau_database.places:
-#     print(place)
-#     orm_place = Place(name=place.name,
-#                       category=category_to_int[place.category],
-#                       coordinate=to_postgis_coordinate(place),
-#                       note=place.note,
-#     )
-#     orm_place.save()
+Place.objects.all().delete()
+category_to_int = {category:i for i, category in enumerate(('parking', 'gare', "point d'eau"))}
+for place in bleau_database.places:
+    print(place)
+    orm_place = Place(name=place.name,
+                      category=category_to_int[place.category],
+                      coordinate=to_postgis_coordinate(place),
+                      note=place.note,
+    )
+    orm_place.save()
 
-# Massif.objects.all().delete()
-# for massif in bleau_database.massifs:
-#     print(massif)
-#     orm_massif = Massif(
-#         acces=massif.acces,
-#         alternative_name=massif.alternative_name,
-#         chaos_type=massif.chaos_type,
-#         coordinate=to_postgis_coordinate(massif),
-#         name=massif.name,
-#         note=massif.note,
-#         parcelles=massif.parcelles,
-#         rdv=massif.rdv,
-#         secteur=massif.secteur,
-#         velo=massif.velo,
-#     )
-#     orm_massif.save()
+Massif.objects.all().delete()
+for massif in bleau_database.massifs:
+    print(massif)
+    orm_massif = Massif(
+        acces=massif.acces,
+        alternative_name=massif.alternative_name,
+        chaos_type=massif.chaos_type,
+        coordinate=to_postgis_coordinate(massif),
+        name=massif.name,
+        note=massif.note,
+        parcelles=massif.parcelles,
+        rdv=massif.rdv,
+        secteur=massif.secteur,
+        velo=massif.velo,
+    )
+    orm_massif.save()
 
 Circuit.objects.all().delete()
 circuits = {}
@@ -104,8 +104,12 @@ for circuit in bleau_database.circuits:
         refection_note = str(circuit.refection_note)
     else:
         refection_note = None
+    if circuit.boulders:
+        boulders = circuit.boulders.to_json()
+    else:
+        boulders = []
     orm_circuit = Circuit(
-        # boulders=(), # circuit.boulders,
+        boulders=boulders,
         colour=circuit.colour,
         coordinate=to_postgis_coordinate(circuit),
         creation_date=circuit.creation_date,
@@ -118,7 +122,7 @@ for circuit in bleau_database.circuits:
         refection_date=circuit.refection_date,
         refection_note=refection_note,
         status=circuit.status,
-        # topos=(), # circuit.topos,
+        topos=circuit.topos,
     )
     orm_circuit.save()
     circuits[circuit] = orm_circuit
@@ -138,6 +142,8 @@ for person in bleau_database.persons:
             person=orm_person,
         )
         orm_opener.save()
+
+# Refections ...
 
 ####################################################################################################
 #

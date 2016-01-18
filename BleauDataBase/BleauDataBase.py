@@ -1115,6 +1115,12 @@ class BoulderList(list):
 
         super().__init__([Boulder(**kwargs) for kwargs in args])
 
+    ##############################################
+
+    def to_json(self):
+
+        return [boulder.to_json() for boulder in self]
+
 ####################################################################################################
 
 class Boulder(WithCoordinate):

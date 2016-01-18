@@ -42,8 +42,21 @@ class CircuitForm(ModelForm):
 
     class Meta:
         model = Circuit
-        fields = '__all__'
-        # exclude = ('creation_date',)
+        fields = (
+            'number',
+            'colour',
+            'grade',
+            'coordinate',
+            'gestion',
+            'status',
+            'creation_date',
+            'refection_date',
+            'refection_note',
+            'note',
+            'topos',
+            # 'massif',
+            # 'opener_string',
+        )
 
     ##############################################
 
@@ -78,6 +91,14 @@ def create(request):
 ####################################################################################################
 
 @login_required
+def details(request, circuit_id):
+
+    circuit = get_object_or_404(Circuit, pk=circuit_id)
+    return render(request, 'circuit/details.html', {'circuit': circuit})
+
+####################################################################################################
+
+@login_required
 def update(request, circuit_id):
 
     circuit = get_object_or_404(Circuit, pk=circuit_id)
@@ -91,6 +112,23 @@ def update(request, circuit_id):
         form = CircuitForm(instance=circuit)
 
     return render(request, 'circuit/create.html', {'form': form, 'update': True, 'circuit': circuit})
+
+####################################################################################################
+
+@login_required
+def boulders(request, circuit_id):
+
+    circuit = get_object_or_404(Circuit, pk=circuit_id)
+
+    # if request.method == 'POST':
+    #     form = CircuitForm(request.POST, instance=circuit)
+    #     if form.is_valid():
+    #         circuit = form.save()
+    #         return HttpResponseRedirect(reverse('circuits.details', args=[circuit.pk]))
+    # else:
+    # form = CircuitForm(instance=circuit)
+
+    return render(request, 'circuit/boulders.html', {'circuit': circuit})
 
 ####################################################################################################
 

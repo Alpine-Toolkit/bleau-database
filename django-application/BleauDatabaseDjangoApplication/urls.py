@@ -217,6 +217,10 @@ urlpatterns += [
         circuit_views.create,
         name='circuits.create'),
 
+    url(r'^circuits/(?P<circuit_id>\d+)/$',
+        circuit_views.details,
+        name='circuits.details'),
+
     url(r'^circuits/(?P<circuit_id>\d+)/update/$',
         circuit_views.update,
         name='circuits.update'),
@@ -224,6 +228,10 @@ urlpatterns += [
     url(r'^circuits/(?P<circuit_id>\d+)/delete/$',
         circuit_views.delete,
         name='circuits.delete'),
+
+    url(r'^circuits/(?P<circuit_id>\d+)/boulders/$',
+        circuit_views.boulders,
+        name='circuits.boulders'),
 ]
 
 ####################################################################################################

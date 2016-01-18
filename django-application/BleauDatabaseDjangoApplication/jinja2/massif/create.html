@@ -4,9 +4,9 @@
 {% block title %} - {{ massif.name }}{% endblock %}
 
 {% block breadcrumb_li %}
-  <li><a href="{{ url('massifs.index') }}">Massifs</a> </li>
-  <li class="active">{{ massif.name }}</li>
-  {# {% update|yesno:_("Update,Create") "" %}  #}
+  <li><a href="{{ url('massifs.index') }}">Massifs</a></li>
+  <li><a href="{{ url('massifs.details', massif.pk) }}">{{ massif.name }}</a></li>
+  <li class="active">{{ _('Update') if update else _('Create') }}</li>
 {% endblock %}
 
 {% block content %}

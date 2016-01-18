@@ -9,27 +9,69 @@
 {% endblock %}
 
 {% block content %}
-  <h2>{{ massif.name }}</h2>
+  <h1> {{ massif.secteur }} ~ {{ massif.name }} </h1>
 
-  <div class="btn-group" role="group">
+  {% if massif.alternative_name %}
+    <p>{{ massif.alternative_name }}</p>
+  {% endif %}
+
+  <div class="btn-group m-b-1" role="group">
     <a class="btn btn-primary" href="{{ url('massifs.update', massif.pk) }}" role="button"><i class="fa fa-pencil-square-o"></i></a>
     <a class="btn btn-danger" href="{{ url('massifs.delete', massif.pk) }}" role="button"><i class="fa fa-trash"></i></a>
   </div>
 
-  <h2>{{ _("Circuits") }}</h2>
+  <h2>{{ _("Accés") }}</h2>
+  <dl>
+    <dt><i class="fa fa-car"></i> {{ _("Accés en voiture") }}</dt>
+    <dd>
+      <p>{{ massif.acces }}</p>
+    </dd>
+    <dt><i class="fa fa-bicycle"></i> {{ _("Accés à vélo") }} {# {% if massif.on_foot() %}/ {{ _("à pieds") }}{% endif %} #}</dt>
+    <dd>
+      <p>{{ massif.velo }}</p>
+    </dd>
+  </dl>
+
+  <h2>{{ _("Informations") }}</h2>
+  <dl>
+    <dt>{{ _("Type de chaos") }}</dt><dd>{% if massif.chaos_type %}{{ massif.chaos_type }}{% endif %}</dd>
+    <dt>{{ _("Notes") }}</dt><dd>{% if massif.notes %}{{ massif.note }}{% endif %}</dd>
+    <dt>{{ _("Rendez-vous Gums") }}</dt><dd>{{ massif.rdv }}</dd>
+  </dl>
+
+  <h2>{{ _("Carte de situation") }}</h2>
   <table class="table table-sm">
     <tbody>
-      {% for circuit in massif.circuits() %}
+      <tr>
+	<td>
+	  <a href="http://spatialreference.org/ref/epsg/wgs-84/">
+	    {{ _("Coordonnée WGS 84") }}
+	  </a></td>
+	<td>{{ massif.coordinate }}</td>
+      </tr>
+      {% if massif.parcelles %}
 	<tr>
-	  <td>N°{{ circuit.number }}</td>
-	  <td>{{ circuit.grade }}</td>
-	  <td>{{ circuit.colour }}</td>
-	  <td>
-	    <a class="btn btn-primary" href="{{ url('circuits.update', circuit.pk) }}" role="button"><i class="fa fa-pencil-square-o"></i></a>
-	    <a class="btn btn-danger" href="{{ url('circuits.delete', circuit.pk) }}" role="button"><i class="fa fa-trash"></i></a>
-	  </td>
+	  <td>{{ _("Parcelles ONF") }}</td>
+	  <td>{{ massif.parcelles }}</td>
 	</tr>
-      {% endfor %}
+      {% endif %}
     </tbody>
   </table>
+
+  <h2>{{ _("Circuits") }}</h2>
+  <div class="row">
+    <div class="col-xl-6">
+      <table class="table table-sm">
+	<tbody>
+	  {% for circuit in massif.circuits() %}
+	    <tr>
+	      <td><a href="{{ url('circuits.details', circuit.pk) }}">N°{{ circuit.number }}</a></td>
+	      <td>{{ circuit.grade }}</td>
+	      <td>{{ circuit.colour }}</td>
+	    </tr>
+	  {% endfor %}
+	</tbody>
+      </table>
+    </div>
+  </div>
 {% endblock %}
