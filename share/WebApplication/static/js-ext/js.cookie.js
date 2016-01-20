@@ -1,0 +1,1 @@
+../bower_components/js-cookie/src/js.cookie.js

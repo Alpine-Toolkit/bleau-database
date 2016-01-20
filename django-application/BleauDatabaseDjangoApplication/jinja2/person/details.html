@@ -9,38 +9,16 @@
 {% endblock %}
 
 {% block content %}
-  <h1>
-    {{ massif.secteur }} ~ {{ massif.name }}
-    <div class="btn-group m-b-1" role="group">
-      <a role="button" class="btn btn-primary" href="{{ url('massifs.update', massif.pk) }}">
-	<i class="fa fa-pencil-square-o"></i></a>
-      <a role="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteMassifModal">
-	<i class="fa fa-trash"></i></a>
-    </div>
-  </h1>
-
-  <div class="modal fade" id="deleteMassifModal" tabindex="-1" role="dialog" aria-labelledby="deleteMassifModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-	  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span></button>
-          <h3 class="modal-title" id="deleteMassifModalLabel">{{ _("Delete massif") }}</h3>
-        </div>
-        <div class="modal-body">
-          <p>{{ _("Are you sure you want to delete this massif?") }}</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">{{ _("Cancel") }}</button>
-          <a role="button" class="btn btn-danger" href="{{ url('massifs.delete', massif.pk) }}">{{ _("Delete massif") }}</a>
-        </div>
-      </div>
-    </div>
-  </div>
+  <h1> {{ massif.secteur }} ~ {{ massif.name }} </h1>
 
   {% if massif.alternative_name %}
     <p>{{ massif.alternative_name }}</p>
   {% endif %}
+
+  <div class="btn-group m-b-1" role="group">
+    <a class="btn btn-primary" href="{{ url('massifs.update', massif.pk) }}" role="button"><i class="fa fa-pencil-square-o"></i></a>
+    <a class="btn btn-danger" href="{{ url('massifs.delete', massif.pk) }}" role="button"><i class="fa fa-trash"></i></a>
+  </div>
 
   <h2>{{ _("Accés") }}</h2>
   <dl>

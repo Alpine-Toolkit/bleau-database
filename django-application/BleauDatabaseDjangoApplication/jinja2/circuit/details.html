@@ -10,7 +10,8 @@
 {% endblock %}
 
 {% block content %}
-  <h1> {{ circuit.massif.name }} ~ {{ circuit.name() }}
+  <h1>
+    {{ circuit.massif.name }} ~ {{ circuit.name() }}
     <div class="btn-group m-b-1" role="group">
       <a role="button" class="btn btn-primary" href="{{ url('circuits.update', circuit.pk) }}">
 	<i class="fa fa-pencil-square-o"></i></a>

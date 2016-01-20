@@ -64,11 +64,10 @@ def to_postgis_coordinate(obj):
 bleau_database = BleauDataBase(json_file=args.json_file)
 
 Place.objects.all().delete()
-category_to_int = {category:i for i, category in enumerate(('parking', 'gare', "point d'eau"))}
 for place in bleau_database.places:
     print(place)
     orm_place = Place(name=place.name,
-                      category=category_to_int[place.category],
+                      category=place.category,
                       coordinate=to_postgis_coordinate(place),
                       note=place.note,
     )

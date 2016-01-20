@@ -21,20 +21,14 @@
       </form>
       <br>
       {% if massifs %}
-	<table class="table table-striped">
-          <thead>
-            <tr>
-              <th>Nom</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for massif in massifs %}
-              <tr>
-		<td><a href="{{ url('massifs.details', massif.pk) }}">{{ massif.name }}</a></td>
-              </tr>
-            {% endfor %}
-          </tbody>
-	</table>
+	{% for group in massifs|groupby('first_letter') %}
+	  <h2>{{ group.grouper|upper }}</h2>
+	  <ul class="list-unstyled">
+	    {% for massif in group.list %}
+	      <li><a href="{{ url('massifs.details', massif.pk) }}">{{ massif.name }}</a></li>
+	    {% endfor %}
+	  </ul>
+	{% endfor %}
       {% else %}
 	<p>Auncun massifs</p>
       {% endif %}

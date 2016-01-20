@@ -20,6 +20,8 @@
 
 ####################################################################################################
 
+import unicodedata
+
 from django.contrib.auth.models import User
 
 # from django.db import models
@@ -34,6 +36,12 @@ from django.contrib.postgres.fields import JSONField
 ####################################################################################################
 
 from .settings import LANGUAGES
+
+####################################################################################################
+
+def strip_accent(s):
+    return ''.join((c for c in unicodedata.normalize('NFD', s)
+                    if unicodedata.category(c) != 'Mn'))
 
 ####################################################################################################
 
@@ -57,13 +65,13 @@ class Place(Model):
     #     app_label = 'BleauDatabaseDjangoApplication'
 
     CATEGORIES_CHOICES = (
-        (0, 'parking'),
-        (1, 'gare'),
-        (2, "point d'eau"),
+        ('parking', 'parking'),
+        ('gare', 'gare'),
+        ("point d'eau", "point d'eau"),
     )
 
     # creation_date = models.DateTimeField(auto_now_add=True)
-    category = IntegerField(choices=CATEGORIES_CHOICES)
+    category = CharField(choices=CATEGORIES_CHOICES, max_length=30)
     coordinate = PointField()
     name = CharField(max_length=100)
     note = TextField(null=True, blank=True) # aka commentaire
@@ -115,6 +123,13 @@ class Massif(Model):
     def __str__(self):
 
         return self.name
+
+    ##############################################
+
+    @property
+    def first_letter(self):
+
+        return strip_accent(self.name[0].lower())
 
     ##############################################
 

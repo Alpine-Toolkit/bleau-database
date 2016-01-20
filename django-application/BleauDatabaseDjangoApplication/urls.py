@@ -138,6 +138,10 @@ urlpatterns += [
         login_required(person_views.PersonListView.as_view()),
         name='persons.index'),
 
+    url(r'^persons/(?P<person_id>\d+)/$',
+        person_views.details,
+        name='persons.details'),
+
     url(r'^persons/create/$',
         person_views.create,
         name='persons.create'),
@@ -162,6 +166,10 @@ urlpatterns += [
     url(r'^places/$',
         login_required(place_views.PlaceListView.as_view()),
         name='places.index'),
+
+    url(r'^places/(?P<place_id>\d+)/$',
+        place_views.details,
+        name='places.details'),
 
     url(r'^places/create/$',
         place_views.create,
