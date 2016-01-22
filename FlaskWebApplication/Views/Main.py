@@ -20,7 +20,7 @@
 
 ####################################################################################################
 
-from flask import Blueprint, render_template, request, g, url_for
+from flask import Blueprint, render_template, request, g, url_for, send_from_directory
 from flask.ext.babel import lazy_gettext
 
 # from wtforms import Form
@@ -37,6 +37,7 @@ from ..Model import model
 
 from ..Application import FlaskWebApplicationSingleton
 application_singleton = FlaskWebApplicationSingleton()
+application = application_singleton.application
 cache = application_singleton.cache
 sitemap = application_singleton.sitemap
 
@@ -100,6 +101,10 @@ def sitemap():
         # '/google-map/<massif>'
 
 ####################################################################################################
+
+@application.route('/robots.txt')
+def static_from_root():
+    return send_from_directory(application.static_folder, request.path[1:])
 
 @cache.cached()
 @main.route('/')
