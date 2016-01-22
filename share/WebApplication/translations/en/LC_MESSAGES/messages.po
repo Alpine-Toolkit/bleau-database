@@ -8,29 +8,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bleau Database V1.0.0\n"
 "Report-Msgid-Bugs-To: fabrice.salvaire@orange.fr\n"
-"POT-Creation-Date: 2016-01-11 21:53+0100\n"
-"PO-Revision-Date: 2016-01-11 21:58+0100\n"
+"POT-Creation-Date: 2016-01-22 19:05+0100\n"
+"PO-Revision-Date: 2016-01-22 19:01+0100\n"
 "Last-Translator: Fabrice Salvaire <fabrice.salvaire@orange.fr>\n"
 "Language: en\n"
 "Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.2.0\n"
-"X-Generator: Poedit 1.8.5\n"
 
 #: FlaskWebApplication/Views/Main.py:246
-#, fuzzy
 msgid "À pieds"
 msgstr "By foot"
 
 #: FlaskWebApplication/Views/Main.py:247
 msgid "Secteurs"
-msgstr "Sector"
+msgstr "Sectors"
 
 #: FlaskWebApplication/Views/Main.py:250
-#: share/WebApplication/templates/massif.html:74
+#: share/WebApplication/templates/massif.html:76
 msgid "Type de chaos"
 msgstr "Chaos's Type"
 
@@ -38,15 +36,50 @@ msgstr "Chaos's Type"
 msgid "Cotations"
 msgstr "Grades"
 
+#: share/WebApplication/templates/a-propos.html:4
+#: share/WebApplication/templates/a-propos.html:7
+#: share/WebApplication/templates/main.html:41
+#: share/WebApplication/templates/main.html:66
+msgid "À propos"
+msgstr "About"
+
+#: share/WebApplication/templates/contribute.html:4
+#: share/WebApplication/templates/contribute.html:7
+#: share/WebApplication/templates/main.html:70
+#: share/WebApplication/templates/main.html:95
+msgid "Contribuer"
+msgstr "Contribute"
+
+#: share/WebApplication/templates/data.html:4
+#: share/WebApplication/templates/data.html:7
+#: share/WebApplication/templates/main.html:72
+#: share/WebApplication/templates/main.html:97
+msgid "Données"
+msgstr "Data"
+
+#: share/WebApplication/templates/environment.html:4
+#: share/WebApplication/templates/environment.html:7
+msgid "Respectons l'environnement"
+msgstr "Have respect for the environment"
+
+#: share/WebApplication/templates/fontainebleau.html:4
+#: share/WebApplication/templates/fontainebleau.html:7
+msgid "Fontainebleau"
+msgstr "Fontainebleau"
+
+#: share/WebApplication/templates/geoportail-map.html:4
+#: share/WebApplication/templates/google-map.html:4
+msgid "Carte"
+msgstr "Map"
+
 #: share/WebApplication/templates/main.html:24
-#, fuzzy
 msgid ""
 "La base de données des sites d'escalade de blocs de la région de "
 "Fontainebleau"
 msgstr "The bouldering's database of the Fontainebleau area."
 
 #: share/WebApplication/templates/main.html:26
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "%(number_of_massifs)s massifs\n"
 "\tet %(number_of_circuits)s circuits\n"
@@ -62,14 +95,10 @@ msgstr ""
 msgid "La 3G passe assez mal en forêt, pensez-y !"
 msgstr "3G reception isn't so good in forest, think about this !"
 
-#: share/WebApplication/templates/main.html:41
-#: share/WebApplication/templates/main.html:66
-msgid "À propos"
-msgstr "About"
-
 #: share/WebApplication/templates/main.html:50
 #: share/WebApplication/templates/main.html:79
-#: share/WebApplication/templates/search-massifs.html:5
+#: share/WebApplication/templates/search-massifs.html:4
+#: share/WebApplication/templates/search-massifs.html:7
 msgid "Rechercher des Massifs"
 msgstr "Search Massif"
 
@@ -95,91 +124,96 @@ msgstr "Have respect for the environment"
 
 #: share/WebApplication/templates/main.html:68
 #: share/WebApplication/templates/main.html:93
+#: share/WebApplication/templates/information/information.html:4
+#: share/WebApplication/templates/information/information.html:7
+#: share/WebApplication/templates/information/information.html:11
 msgid "Informations sur les Circuits"
 msgstr "Circuits Information"
 
-#: share/WebApplication/templates/main.html:70
-#: share/WebApplication/templates/main.html:95
-msgid "Contribuer"
-msgstr "Contribute"
-
-#: share/WebApplication/templates/main.html:72
-#: share/WebApplication/templates/main.html:97
-msgid "Données"
-msgstr "Data"
-
-#: share/WebApplication/templates/massif.html:29
+#: share/WebApplication/templates/massif.html:31
 msgid "Accés"
 msgstr "Access"
 
-#: share/WebApplication/templates/massif.html:31
+#: share/WebApplication/templates/massif.html:33
 msgid "Accés en voiture"
 msgstr "Car access"
 
-#: share/WebApplication/templates/massif.html:36
+#: share/WebApplication/templates/massif.html:38
 msgid "Parkings les plus proches&nbsp;:"
 msgstr "Nearest Parkings:"
 
-#: share/WebApplication/templates/massif.html:54
+#: share/WebApplication/templates/massif.html:56
 msgid "Accés à vélo"
 msgstr "Bicycle access"
 
-#: share/WebApplication/templates/massif.html:54
+#: share/WebApplication/templates/massif.html:56
 msgid "à pieds"
-msgstr "By foot"
+msgstr "by foot"
 
-#: share/WebApplication/templates/massif.html:59
+#: share/WebApplication/templates/massif.html:61
 msgid "Gares les plus proches&nbsp;:"
 msgstr "Closest train station:"
 
-#: share/WebApplication/templates/massif.html:72
+#: share/WebApplication/templates/massif.html:74
 msgid "Informations"
 msgstr "Grades"
 
-#: share/WebApplication/templates/massif.html:75
+#: share/WebApplication/templates/massif.html:77
 msgid "Notes"
 msgstr "Notes"
 
-#: share/WebApplication/templates/massif.html:76
+#: share/WebApplication/templates/massif.html:78
 msgid "Rendez-vous Gums"
-msgstr ""
+msgstr "GUMS's Rendez-vous"
 
-#: share/WebApplication/templates/massif.html:79
+#: share/WebApplication/templates/massif.html:81
 msgid "Point d'eau"
 msgstr "Watering place"
 
-#: share/WebApplication/templates/massif.html:93
+#: share/WebApplication/templates/massif.html:95
 msgid "Circuits"
 msgstr "Circuits"
 
-#: share/WebApplication/templates/massif.html:105
-#: share/WebApplication/templates/information/missing.html:39
-#: share/WebApplication/templates/information/missing.html:49
-#: share/WebApplication/templates/information/missing.html:59
-#: share/WebApplication/templates/information/person.html:18
-#: share/WebApplication/templates/information/person.html:37
+#: share/WebApplication/templates/massif.html:107
+#: share/WebApplication/templates/information/missing.html:41
+#: share/WebApplication/templates/information/missing.html:51
+#: share/WebApplication/templates/information/missing.html:61
+#: share/WebApplication/templates/information/person.html:20
+#: share/WebApplication/templates/information/person.html:39
 msgid "N°"
 msgstr "N°"
 
-#: share/WebApplication/templates/massif.html:125
+#: share/WebApplication/templates/massif.html:127
 msgid "Massifs à proximité"
 msgstr "Nearest Massifs"
 
-#: share/WebApplication/templates/massif.html:127
+#: share/WebApplication/templates/massif.html:129
 msgid "critère: 2 km à vol d'oiseau, donc prévoir plus long!"
 msgstr "Criteria: 2 km as the crow flies, thus expect farest!"
 
-#: share/WebApplication/templates/massif.html:150
+#: share/WebApplication/templates/massif.html:152
 msgid "aucun"
 msgstr "any"
 
-#: share/WebApplication/templates/search-massifs.html:31
-msgid "Rechercher"
-msgstr "Search"
+#: share/WebApplication/templates/massifs-par-secteur.html:4
+#: share/WebApplication/templates/massifs-par-secteur.html:7
+msgid "Massifs par Secteurs"
+msgstr "Massifs by Sectors"
 
-#: share/WebApplication/templates/search-massifs.html:36
+#: share/WebApplication/templates/massifs.html:4
+#: share/WebApplication/templates/massifs.html:7
+#: share/WebApplication/templates/search-massifs.html:38
 msgid "Massifs"
 msgstr "Massifs"
+
+#: share/WebApplication/templates/mentions-legales.html:4
+#: share/WebApplication/templates/mentions-legales.html:7
+msgid "Mentions légales"
+msgstr "Legal Mentions"
+
+#: share/WebApplication/templates/search-massifs.html:33
+msgid "Rechercher"
+msgstr "Search"
 
 #: share/WebApplication/templates/include/base.html:11
 msgid ""
@@ -207,32 +241,43 @@ msgstr "ONF forest plot"
 msgid "Grande carte"
 msgstr "Large map"
 
-#: share/WebApplication/templates/information/information.html:15
-msgid "Statistiques sur les Circuits"
-msgstr "Circuit's Statistics"
-
-#: share/WebApplication/templates/information/information.html:17
-msgid "Places"
-msgstr "Places"
-
-#: share/WebApplication/templates/information/information.html:19
+#: share/WebApplication/templates/information/affiliations.html:4
+#: share/WebApplication/templates/information/affiliations.html:8
+#: share/WebApplication/templates/information/information.html:21
 msgid "Affiliations"
 msgstr "Affiliations"
 
-#: share/WebApplication/templates/information/information.html:21
+#: share/WebApplication/templates/information/information.html:17
+#: share/WebApplication/templates/information/statistics.html:4
+#: share/WebApplication/templates/information/statistics.html:27
+msgid "Statistiques sur les Circuits"
+msgstr "Circuit's Statistics"
+
+#: share/WebApplication/templates/information/information.html:19
+#: share/WebApplication/templates/information/places.html:4
+#: share/WebApplication/templates/information/places.html:8
+msgid "Places"
+msgstr "Places"
+
+#: share/WebApplication/templates/information/information.html:23
+#: share/WebApplication/templates/information/openers.html:4
+#: share/WebApplication/templates/information/openers.html:8
+#: share/WebApplication/templates/information/openers.html:12
 msgid "Ouvreurs"
 msgstr "Openers"
 
-#: share/WebApplication/templates/information/information.html:23
+#: share/WebApplication/templates/information/information.html:25
+#: share/WebApplication/templates/information/maintainers.html:4
+#: share/WebApplication/templates/information/maintainers.html:8
+#: share/WebApplication/templates/information/maintainers.html:12
 msgid "Personnes impliquées dans la réfection des circuits"
 msgstr "Persons implied in circuit refection"
 
-#: share/WebApplication/templates/information/information.html:25
+#: share/WebApplication/templates/information/information.html:27
+#: share/WebApplication/templates/information/missing.html:4
+#: share/WebApplication/templates/information/missing.html:8
 msgid "Données à compléter"
 msgstr "Data to complete"
-
-#~ msgid "À pieds"
-#~ msgstr "By foot"
 
 #~ msgid "Accueil"
 #~ msgstr "Home"
@@ -245,3 +290,4 @@ msgstr "Data to complete"
 
 #~ msgid "lien"
 #~ msgstr "link"
+

@@ -21,7 +21,9 @@
 	<img src="{{ url_for('static', filename='image/favicon.png') }}">
 	Bleau Database
       </h1>
-      <p class="lead" itemprop="description">{{  _("La base de données des sites d'escalade de blocs de la région de Fontainebleau") }}</p>
+      <p class="lead" itemprop="description">
+	{{  _("La base de données des sites d'escalade de blocs de la région de Fontainebleau") }}
+      </p>
       <p class="lead">
 	{% trans
 	 number_of_massifs=bleau_database.number_of_massifs,
