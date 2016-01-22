@@ -52,7 +52,8 @@ def get_locale():
         if lang_code in LANGUAGES.keys():
             return lang_code
         else:
-            return abort(404)
+            # return abort(404)
+            return 'fr'
     else:
         # otherwise try to guess the language from the user accept header the browser transmits.
         # The best match wins.
@@ -106,13 +107,13 @@ class FlaskWebApplication:
         self.application.secret_key = os.urandom(24)
         # WTF_CSRF_SECRET_KEY =
         
-        self.application.error_handler_spec[None][404] = page_not_found
-        
         self.cache = Cache(self.application, config={'CACHE_TYPE': 'simple'})
         
         self.babel = Babel(self.application)
         self.babel.localeselector(get_locale)
-
+        
+        self.application.error_handler_spec[None][404] = page_not_found
+        
         if server_name is not None:
             self.application.config['SERVER_NAME'] = server_name
         # self.app.config['SITEMAP_GZIP'] = True
@@ -133,6 +134,7 @@ class FlaskWebApplication:
         self.application.register_blueprint(main)
         
         # Map / to /fr
+        # Fixme: /foo redirect to main instead of 404
         self.application.add_url_rule('/', 'main.index')
 
     ##############################################
