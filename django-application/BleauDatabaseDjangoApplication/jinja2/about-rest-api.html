@@ -31,7 +31,7 @@
 user='...'
 password='...'
 
-host="http://bleau-admin.fabrice-salvaire.fr"
+host="bleau-admin.fabrice-salvaire.fr"
 endpoint="/api/circuit/2452/"
 url="http://${host}${endpoint}"
     </pre>
@@ -47,7 +47,7 @@ json="@post.json"
     </pre>
     <p>On peut à présent utiliser le programme <strong>curl</strong> pour tester les cinq types d'opérations.</p>
     <p>Get</p>
-    <pre>curl --header 'Accept: application/json; indent=4' -user ${user}:${password} ${url}</pre>
+    <pre>curl --header 'Accept: application/json; indent=4' ${url}</pre>
     <p>Create</p>
     <pre>curl --request POST --header 'Content-type: application/json' --data "${json}" -user ${user}:${password} ${url}</pre>
     <p>Update</p>
