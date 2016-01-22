@@ -20,7 +20,7 @@
 
 ####################################################################################################
 
-from rest_framework import viewsets
+from rest_framework import viewsets, permissions
 
 ####################################################################################################
 
@@ -36,6 +36,7 @@ class PersonViewSet(viewsets.ModelViewSet):
     API endpoint that allows persons to be viewed or edited.
     """
 
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     queryset = Person.objects.all()
     serializer_class = PersonSerializer
 
@@ -47,6 +48,7 @@ class OpenerViewSet(viewsets.ModelViewSet):
     API endpoint that allows openers to be viewed or edited.
     """
 
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     queryset = Opener.objects.all()
     serializer_class = OpenerSerializer
 
@@ -58,6 +60,7 @@ class PlaceViewSet(viewsets.ModelViewSet):
     API endpoint that allows places to be viewed or edited.
     """
 
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     queryset = Place.objects.all()
     serializer_class = PlaceSerializer
 
@@ -69,6 +72,7 @@ class MassifViewSet(viewsets.ModelViewSet):
     API endpoint that allows massifs to be viewed or edited.
     """
 
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     queryset = Massif.objects.all()
     serializer_class = MassifSerializer
 
@@ -80,6 +84,7 @@ class CircuitViewSet(viewsets.ModelViewSet):
     API endpoint that allows circuits to be viewed or edited.
     """
 
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     queryset = Circuit.objects.all()
     serializer_class = CircuitSerializer
 

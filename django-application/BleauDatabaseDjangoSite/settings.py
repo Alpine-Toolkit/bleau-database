@@ -270,8 +270,10 @@ SUIT_CONFIG = {
 #
 
 REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAdminUser',),
-    'PAGE_SIZE': 10
+    # http://www.django-rest-framework.org/api-guide/permissions/
+    # IsAdminUser
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAuthenticatedOrReadOnly',),
+    'PAGE_SIZE': 100,
 }
 
 ####################################################################################################
