@@ -25,6 +25,7 @@ import hashlib
 # from bokeh.plotting import figure
 from bokeh.embed import components
 from bokeh.charts import Bar
+from bokeh.charts.attributes import CatAttr
 
 ####################################################################################################
 
@@ -69,8 +70,10 @@ class CircuitStatisticsData:
                 'labels': [str(grade_counter) for grade_counter in grade_counters],
                 'counts': [grade_counter.count for grade_counter in grade_counters],
             }
+            # Workaround to don't sort labels
+            label = CatAttr(df=data, columns='labels', sort=False)
             bar = Bar(data,
-                      values='counts', label='labels', unsorted_label=True,
+                      values='counts', label=label,
                       title=title,
                       xlabel='',
                       ylabel='',
