@@ -1,0 +1,59 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "include/base.html" %}
+
+{% block title %} - À propos de l'API REST{% endblock %}
+
+{% block breadcrumb_li %}
+  <li class="active">À propos de l'API REST</li>
+{% endblock %}
+
+{% block content %}
+    <p>
+    <a class="btn btn-primary btn-lg m-b-1" href="/api" role="button">
+      REST API</a>
+    <a class="btn btn-primary btn-lg m-b-1" href="/api-docs" role="button">
+      REST API Doc</a>
+    </p>
+
+    <h2>Mode d'emploi</h2>
+    <p>
+      L'application d'administration permet de tester l'API REST à partir d'une <a href="/api">interface web</a> et
+      on peut consulter la documentation générée automatiquement par le framework à partir de cette <a href="/api-docs">page</a>.
+      L'API est fournit par le framework <a target="_blank" href="http://www.django-rest-framework.org">Django REST framework</a>.
+    </p>
+    <p>
+      L'API permet de récupérer, créer, effacer et mettre à jour entièrement ou partielement chaque objet.
+    </p>
+
+    <h3>Exemple d'utilisation de l'API REST à partir d'un terminal (Linux, OS X)</h3>
+    <p>On commence par définir quelques variables qui vont nous servir par la suite&nbsp:</p>
+    <pre>
+user='...'
+password='...'
+
+host="http://bleau-admin.fabrice-salvaire.fr"
+endpoint="/api/circuit/2452/"
+url="http://${host}${endpoint}"
+    </pre>
+    <p>On définit ensuite les données au format JSON à partir d'un fichier que l'on va appelé <var>post.json</var>&nbsp:</p>
+    <pre>
+json="@post.json"
+    </pre>
+    <p>Ce fichier pourrait contenir par exemple&nbsp:</p>
+    <pre>
+{
+  "boulders": "[ { \"comment\": \"\", \"grade\": \"6+\", \"number\": 10, \"coordinate\": null, \"name\": \"l'étrave\" } ]"
+}
+    </pre>
+    <p>On peut à présent utiliser le programme <strong>curl</strong> pour tester les cinq types d'opérations.</p>
+    <p>Get</p>
+    <pre>curl --header 'Accept: application/json; indent=4' -user ${user}:${password} ${url}</pre>
+    <p>Create</p>
+    <pre>curl --request POST --header 'Content-type: application/json' --data "${json}" -user ${user}:${password} ${url}</pre>
+    <p>Update</p>
+    <pre>curl --request PUT --header 'Content-type:application/json' --data "${json}" -user ${user}:${password} ${url}</pre>
+    <p>Partial Update</p>
+    <pre>curl --request PATCH --header 'Content-type: application/json' --data "${json}" -user ${user}:${password} ${url}</pre>
+    <p>Delete</p>
+    <pre>curl --request DELETE -user ${user}:${password} ${url}</pre>
+{% endblock %}

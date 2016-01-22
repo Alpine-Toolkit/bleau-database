@@ -42,10 +42,17 @@ from .views.main import MainView
 #
 
 urlpatterns = [
-    url(r'^$', MainView.as_view(), name='index'),
-    # url(r'^$',
-    #     TemplateView.as_view(template_name='main.html'),
-    #     name='index'),
+    # url(r'^$', MainView.as_view(), name='index'),
+
+    url(r'^$',
+        TemplateView.as_view(template_name='main.html'),
+        name='index'),
+    url(r'^about$',
+        TemplateView.as_view(template_name='about.html'),
+        name='about'),
+    url(r'^about-rest-api$',
+        TemplateView.as_view(template_name='about-rest-api.html'),
+        name='about-rest-api'),
     url(r'^mentions-legales$',
         TemplateView.as_view(template_name='mentions-legales.html'),
         name='mentions-legales'),

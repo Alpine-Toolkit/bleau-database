@@ -1,0 +1,34 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "include/base.html" %}
+
+{% block title %} - À propos{% endblock %}
+
+{% block breadcrumb_li %}
+  <li class="active">À propos</li>
+{% endblock %}
+
+{% block content %}
+  <h2>Contribuer à la base de données</h2>
+  <p>
+    L'accès à cette application n'est pas publique et requiert l'activation d'un compte sur demande et justifié.
+  </p>
+
+  <h2>Les base de données</h2>
+  <p>
+    Il y a deux types de base de données, la base de données stockée dans le moteur de base de
+    données PostgreSQL/PostGis accessible à partir de cette application et la base de données
+    exportée à intervalle régulier, au format JSON par exemple.
+  </p>
+
+  <h2>Interfaces d'administration</h2>
+  <p>
+  Cette application possèdent plusieurs interfaces d'administration&nbsp;:
+  </p>
+  <ul>
+    <li>une interface web optimisée pour l'édition de la base de données,</li>
+    <li>l'interface d'administration de Django qui donne un accès de plus bas niveau,</li>
+    <li><a href="{{ url('about-rest-api') }}">l'API REST</a> qui permet d'interconnecter la base
+      de données (PostgreSQL) avec une autre application,</li>
+    <li>et en dernier recourt les pull requests au niveau du dépôt.</li>
+  </ul>
+{% endblock %}
