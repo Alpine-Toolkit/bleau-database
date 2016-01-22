@@ -9,17 +9,17 @@
 
 {% block content %}
     <p>
-    <a class="btn btn-primary btn-lg m-b-1" href="/api" role="button">
-      REST API</a>
     <a class="btn btn-primary btn-lg m-b-1" href="/api-docs" role="button">
       REST API Doc</a>
     </p>
+    <a class="btn btn-primary btn-lg m-b-1" href="/api" role="button">
+      REST API</a>
 
     <h2>Mode d'emploi</h2>
     <p>
-      L'application d'administration permet de tester l'API REST à partir d'une <a href="/api">interface web</a> et
-      on peut consulter la documentation générée automatiquement par le framework à partir de cette <a href="/api-docs">page</a>.
-      L'API est fournit par le framework <a target="_blank" href="http://www.django-rest-framework.org">Django REST framework</a>.
+      L'application d'administration permet de tester l'API REST à partir d'une <a href="/api-docs">interface web</a> où
+      l'on peut consulter la documentation générée automatiquement par le framework. L'API est fournit par le framework
+      <a target="_blank" href="http://www.django-rest-framework.org">Django REST framework</a>.
     </p>
     <p>
       L'API permet de récupérer, créer, effacer et mettre à jour entièrement ou partielement chaque objet.
@@ -32,7 +32,7 @@ user='...'
 password='...'
 
 host="bleau-admin.fabrice-salvaire.fr"
-endpoint="/api/circuit/2452/"
+endpoint="/api/circuit/1/"
 url="http://${host}${endpoint}"
     </pre>
     <p>On définit ensuite les données au format JSON à partir d'un fichier que l'on va appelé <var>post.json</var>&nbsp:</p>
