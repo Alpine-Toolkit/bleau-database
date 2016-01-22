@@ -1,12 +1,14 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
+{% block title %} - {{ _("Informations sur les Circuits") }}{% endblock %}
+
 {% block breadcrumb_li %}
-  <li class="active">Informations sur les Circuits</li>
+  <li class="active">{{ _("Informations sur les Circuits") }}</li>
 {% endblock %}
 
 {% block content %}
-  <h2>Informations sur les circuits</h2>
+  <h2>{{ _("Informations sur les Circuits") }}</h2>
   <p>
     Ces pages présentent une compilation d'informations utiles pour la maintenance de la base de données ou les curieux.
   </p>

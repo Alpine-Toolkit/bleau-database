@@ -1,6 +1,8 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/geoportail-base.html" %}
 
+{% block title %} - {{ _('Carte') }}{% endblock %}
+
 {% block head %}
   {{ super() }}
   {{ big_map_style() }}

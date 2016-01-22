@@ -1,8 +1,10 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
+{% block title %} - {{ _('Contribuer') }}{% endblock %}
+
 {% block breadcrumb_li %}
-  <li class="active">Contribuer</li>
+  <li class="active">{{ _('Contribuer') }}</li>
 {% endblock %}
 
 {% block content %}

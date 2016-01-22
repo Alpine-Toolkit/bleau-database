@@ -1,6 +1,8 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/geoportail-base.html" %}
 
+{% block title %} - {{ massif.secteur }} ~ {{ massif.name }}{% endblock %}
+
 {% block head %}
   {{ super() }}
   {% from "include/bokeh-macros.html" import bokeh_css %}

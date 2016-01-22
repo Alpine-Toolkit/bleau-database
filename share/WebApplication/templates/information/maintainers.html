@@ -1,13 +1,15 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
+{% block title %} - {{ _("Personnes impliquées dans la réfection des circuits") }}{% endblock %}
+
 {% block breadcrumb_li %}
   <li><a href="/{{ lang_code }}/information">Information</a></li>
-  <li class="active">Personnes impliquées dans la réfection des circuits</li>
+  <li class="active">{{ _("Personnes impliquées dans la réfection des circuits") }}</li>
 {% endblock %}
 
 {% block content %}
-  <h2>Personnes impliquées dans la réfection des circuits</h2>
+  <h2>{{ _("Personnes impliquées dans la réfection des circuits") }}</h2>
   {% from "include/information-macros.html" import maintainer_list %}
   {{ maintainer_list(lang_code, persons) }}
 {% endblock %}

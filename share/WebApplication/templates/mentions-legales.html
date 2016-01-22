@@ -1,8 +1,10 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
+{% block title %} - {{ _('Mentions légales') }}{% endblock %}
+
 {% block breadcrumb_li %}
-  <li class="active">Mentions légales</li>
+  <li class="active">{{ _('Mentions légales') }}</li>
 {% endblock %}
 
 {% block content %}

@@ -1,6 +1,8 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
+{% block title %} - {{ _("Statistiques sur les Circuits") }}{% endblock %}
+
 {% set circuit_grades = ('PD', 'AD', 'D', 'TD', 'ED') %}
 
 {% block head %}
@@ -22,7 +24,7 @@
 
 {% block breadcrumb_li %}
   <li><a href="/{{ lang_code }}/information">Information</a></li>
-  <li class="active">Statistiques sur les Circuits</li>
+  <li class="active">{{ _("Statistiques sur les Circuits") }}</li>
 {% endblock %}
 
 {% block content %}

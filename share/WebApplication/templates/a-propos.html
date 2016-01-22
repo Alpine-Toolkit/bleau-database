@@ -1,8 +1,10 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
+{% block title %} - {{ _('À propos') }}{% endblock %}
+
 {% block breadcrumb_li %}
-  <li class="active">À propos</li>
+  <li class="active">{{ _('À propos') }}</li>
 {% endblock %}
 
 {% block content %}

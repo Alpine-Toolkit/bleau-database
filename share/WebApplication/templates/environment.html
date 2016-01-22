@@ -1,8 +1,10 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
+{% block title %} - {{ _("Respectons l'environnement") }}{% endblock %}
+
 {% block breadcrumb_li %}
-  <li class="active">Respectons l'environnement</li>
+  <li class="active">{{ _("Respectons l'environnement") }}</li>
 {% endblock %}
 
 {% block content %}

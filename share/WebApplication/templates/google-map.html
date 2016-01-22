@@ -1,6 +1,8 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/google-map-base.html" %}
 
+{% block title %} - {{ _('Carte') }}{% endblock %}
+
 {% block body %}
 {{ google_bigmap() }}
 {% endblock %}

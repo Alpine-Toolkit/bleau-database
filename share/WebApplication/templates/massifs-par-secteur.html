@@ -1,8 +1,10 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
+{% block title %} - {{ _('Massifs par Secteurs') }}{% endblock %}
+
 {% block breadcrumb_li %}
-  <li class="active"> Massifs par Secteurs </li>
+  <li class="active">{{ _('Massifs par Secteurs') }}</li>
 {% endblock %}
 
 {% block content %}

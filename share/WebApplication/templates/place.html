@@ -1,6 +1,8 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/geoportail-base.html" %}
 
+{% block title %} - {{ place.name }}{% endblock %}
+
 {% block breadcrumb_li %}
   <li class="active">{{ place.name }}</li>
 {% endblock %}

@@ -1,9 +1,11 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
+{% block title %} - {{ _("Places") }}{% endblock %}
+
 {% block breadcrumb_li %}
   <li><a href="/{{ lang_code }}/information">Information</a></li>
-  <li class="active">Places</li>
+  <li class="active">{{ _("Places") }}</li>
 {% endblock %}
 
 {% block content %}

@@ -1,6 +1,8 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/geoportail-base.html" %}
 
+{% block title %} - {{ massif.name }} ~ Circuit n° {{ circuit.number }} {{ circuit.grade }} {{ circuit.colour }}{% endblock %}
+
 {% block head %}
   {{ super() }}
   {% from "include/bokeh-macros.html" import bokeh_css %}
@@ -58,7 +60,7 @@
     <dt>Topos</dt>
     <dd>
       {% for topo in circuit.topos %}
-	<i class="fa fa-download">
+	<i class="fa fa-download"></i>
 	<a class="hidden-sm-up" href="{{ topo }}">{{ topo|truncate(25) }}</i></a>
 	<a class="hidden-xs-down" href="{{ topo }}">{{ topo }}</a>
 	<br>

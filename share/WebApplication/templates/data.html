@@ -1,8 +1,10 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
+{% block title %} - {{ _('Données') }}{% endblock %}
+
 {% block breadcrumb_li %}
-  <li class="active">Données</li>
+  <li class="active">{{ _('Données') }}</li>
 {% endblock %}
 
 {% block content %}

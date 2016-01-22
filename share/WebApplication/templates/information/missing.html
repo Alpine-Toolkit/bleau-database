@@ -1,9 +1,11 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
+{% block title %} - {{ _("Données à compléter") }}{% endblock %}
+
 {% block breadcrumb_li %}
   <li><a href="/{{ lang_code }}/information">Information</a></li>
-  <li class="active">Données à compléter</li>
+  <li class="active">{{ _("Données à compléter") }}</li>
 {% endblock %}
 
 {% block content %}
