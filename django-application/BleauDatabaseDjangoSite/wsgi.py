@@ -35,7 +35,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "bleaudb.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "BleauDatabaseDjangoSite.settings")
 
 application = get_wsgi_application()
 
