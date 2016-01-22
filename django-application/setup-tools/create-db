@@ -3,22 +3,23 @@
 ####################################################################################################
 
 path=$(dirname $(realpath $0))
-sql_path="$path/sal"
+sql_path="$path/sql"
 
+# psql=/usr/pgsql-9.4/bin/psql
 psql -U postgres < ${sql_path}/create-db.sql
 
 rm -rf BleauDatabaseDjangoApplication/migrations
 
-manage.py makemigrations
-manage.py migrate
+./manage.py makemigrations
+./manage.py migrate
 
-manage.py makemigrations BleauDatabaseDjangoApplication
-manage.py migrate BleauDatabaseDjangoApplication
+./manage.py makemigrations BleauDatabaseDjangoApplication
+./manage.py migrate BleauDatabaseDjangoApplication
 
-manage.py createsuperuser --noinput --username fabrice --email fabrice.salvaire@orange.fr
+./manage.py createsuperuser --noinput --username fabrice --email fabrice.salvaire@orange.fr
 psql -U postgres < ${sql_path}/init-password.sql
 
-manage.py createinitialrevisions
+./manage.py createinitialrevisions
 
 # pg_dump -U postgres -d bleaudb > ${sql_path}/bleaudb.sql
 

@@ -13,7 +13,8 @@ CREATE DATABASE bleaudb
        TABLESPACE = pg_default
        LC_COLLATE = 'fr_FR.UTF-8'
        LC_CTYPE = 'fr_FR.UTF-8'
-       CONNECTION LIMIT = -1;
+       CONNECTION LIMIT = -1
+       TEMPLATE template0;
 GRANT ALL ON DATABASE bleaudb TO bleaudb;
 REVOKE ALL ON DATABASE bleaudb FROM public;
 
