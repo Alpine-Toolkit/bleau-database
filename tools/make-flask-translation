@@ -1,0 +1,51 @@
+#! /bin/bash
+
+####################################################################################################
+
+while getopts ":iuc" opt; do
+  case $opt in
+    i)
+      do_init=1
+      ;;
+    u)
+      do_update=1
+      ;;
+    c)
+      do_compile=1
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG" >&2
+      ;;
+  esac
+done
+
+####################################################################################################
+
+path=$(dirname $(realpath $0))
+path=$(realpath ${path}/..)
+web_application_dir="${path}/share/WebApplication"
+translations_dir="${web_application_dir}/translations"
+
+####################################################################################################
+
+if [ $do_update ]; then
+  pybabel extract -F ${translations_dir}/babel.cfg -k lazy_gettext -o ${translations_dir}/messages.pot .
+  
+  if [ $do_init ]; then
+    pybabel init -i ${translations_dir}/messages.pot -d ${translations_dir} -l en
+  fi
+  
+  pybabel update -i ${translations_dir}/messages.pot -d ${translations_dir}
+fi
+
+if [ $do_compile ]; then
+  pybabel compile -d ${translations_dir}
+fi
+
+# poedit
+
+####################################################################################################
+#
+# End
+#
+####################################################################################################
