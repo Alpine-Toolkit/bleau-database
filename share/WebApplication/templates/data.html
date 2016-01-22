@@ -15,12 +15,15 @@
     le même esprit que Wikipedia et
     <a target="_blank" href="http://www.camptocamp.org/articles/106728/fr/licence-des-contenus">camptocamp.org</a>.
   </p>
-  <p>Le <a target="_blank" href="https://github.com/Cosiroc/bleau-database">code source</a> du site est sous
+  <p>
+    Le <a target="_blank" href="https://github.com/Cosiroc/bleau-database">code source</a> du site est sous
     licence <a target="_blank" href="http://www.gnu.org/licenses/agpl.html">GNU Affero General Public License V3</a>.
   </p>
 
   <h2>Données compatibles avec un Smartphone ou un GPS</h2>
-  <p>Les coordonnées des massifs et des circuits sont disponible au format GPX sous forme d'une liste de points d'intérêt dans ce fichier
+  <p>
+    Les coordonnées des massifs et des circuits sont disponible au format GPX sous forme d'une liste
+    de points d'intérêt dans ce fichier
     <i class="fa fa-download"></i>
     <a href="https://raw.githubusercontent.com/Cosiroc/bleau-database/master/data/bleau.gpx" download>bleau.gpx</a>
   </p>
@@ -35,32 +38,48 @@
     </div>
   </p>
 
-  <h2>Base de Données au format JSON</h2>
-  <p>La base de données de référence est contenu dans ce ficher
+  <h2>Les Base de Données</h2>
+  <p>
+    Il y a deux types de base de données, la base de données stockée dans le moteur de base de
+    données PostgreSQL/PostGis accessible à partir de <a target="_blank" href="http://bleau-admin.fabrice-salvaire.fr">l'application d'administration</a> et
+    la base de données exportée à intervalle régulier, au format JSON par exemple.
+  </p>
+
+  <h3>Base de Données au format JSON</h3>
+  <p>
+    La base de données de référence est contenu dans ce ficher
     <i class="fa fa-download"></i>
     <a href="https://raw.githubusercontent.com/Cosiroc/bleau-database/master/data/bleau.json" download>
       bleau.json</a>
   </p>
-  <p>Le module Python <strong>BleauDataBase</strong> offre une API orienté objet pour exploiter
+  <p>
+    Le module Python <strong>BleauDataBase</strong> offre une API orienté objet pour exploiter
     la base de données. Voir la page du <a href="https://github.com/Cosiroc/bleau-database">dépôt Git</a> pour plus de détails.
   </p>
 
-  <h2>Base de Données au format GeoJSON</h2>
+  <h3>Base de Données au format GeoJSON</h3>
   <p>
     Les données sont aussi disponible au format <a target="_blank" href="http://geojson.org">GeoJSON</a>&nbsp;:
-    <ul>
-      <li>
-	<i class="fa fa-download"></i>
-	<a href="https://raw.githubusercontent.com/Cosiroc/bleau-database/master/data/bleau-massifs-geo.json" download>
-	  bleau-massifs-geo.json</a></li>
-      <li>
-	<i class="fa fa-download"></i>
-	<a href="https://raw.githubusercontent.com/Cosiroc/bleau-database/master/data/bleau-circuits-geo.json" download>
-	  bleau-circuits-geo.json</a></li>
-      <li>
-	<i class="fa fa-download"></i>
-	<a href="https://raw.githubusercontent.com/Cosiroc/bleau-database/master/data/bleau-places-geo.json" download>
-	  bleau-places-geo.json</a></li>
-    </ul>
+  </p>
+  <ul>
+    <li>
+      <i class="fa fa-download"></i>
+      <a href="https://raw.githubusercontent.com/Cosiroc/bleau-database/master/data/bleau-massifs-geo.json" download>
+	bleau-massifs-geo.json</a></li>
+    <li>
+      <i class="fa fa-download"></i>
+      <a href="https://raw.githubusercontent.com/Cosiroc/bleau-database/master/data/bleau-circuits-geo.json" download>
+	bleau-circuits-geo.json</a></li>
+    <li>
+      <i class="fa fa-download"></i>
+      <a href="https://raw.githubusercontent.com/Cosiroc/bleau-database/master/data/bleau-places-geo.json" download>
+	bleau-places-geo.json</a></li>
+  </ul>
+
+  <h3>API REST</h3>
+  <p>
+    <a target="_blank" href="http://bleau-admin.fabrice-salvaire.fr">L'application d'administration</a> de la base de données
+    possède une <a target="_blank" href="https://bleau-admin.fabrice-salvaire.fr/about-rest-api">API REST</a> qui
+    permet d'interconnecter la base de données (PostgreSQL) avec une autre application.
   </p>
 {% endblock %}
