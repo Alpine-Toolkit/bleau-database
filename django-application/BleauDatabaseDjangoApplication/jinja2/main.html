@@ -24,24 +24,24 @@
     {# Large device #}
     <div class="hidden-xs-down">
       <p>
-	<a class="btn btn-primary btn-lg m-b-1" href="{{ url('massifs.index') }}" role="button">
+	<a class="btn btn-primary btn-lg m-b-1" href="{{ url('massif.index') }}" role="button">
 	  Massifs</a>
-	<a class="btn btn-primary btn-lg m-b-1" href="{{ url('places.index') }}" role="button">
+	<a class="btn btn-primary btn-lg m-b-1" href="{{ url('place.index') }}" role="button">
 	  Places</a>
-	<a class="btn btn-primary btn-lg m-b-1" href="{{ url('persons.index') }}" role="button">
+	<a class="btn btn-primary btn-lg m-b-1" href="{{ url('person.index') }}" role="button">
 	  Personnes</a>
       </p>
     </div>
   {% else %}
-    <a class="btn btn-primary btn-lg m-b-1" href="{{ url('accounts.login') }}" role="button">
+    <a class="btn btn-primary btn-lg m-b-1" href="{{ url('account.login') }}" role="button">
       <i class="fa fa-sign-in"></i> Connexion</a></li>
   {% endif %}
     <p>
     <a class="btn btn-primary btn-lg m-b-1" href="{{ url('about') }}" role="button">
       À propos</a>
-    <a class="btn btn-primary btn-lg m-b-1" href="/api" role="button">
-      REST API</a>
     <a class="btn btn-primary btn-lg m-b-1" href="/api-docs" role="button">
       REST API Doc</a>
+    <a class="btn btn-primary btn-lg m-b-1" href="/api" role="button">
+      REST API</a>
     </p>
 {% endblock %}

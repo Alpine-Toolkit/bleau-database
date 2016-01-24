@@ -66,39 +66,39 @@ urlpatterns = [
 import django.contrib.auth.views as auth_views
 
 urlpatterns += [
-   url(r'^accounts/login/$',
+   url(r'^account/login/$',
        auth_views.login,
        {'template_name': 'account/login.html',
         'authentication_form': AuthenticationForm},
-       name='accounts.login'), # Fixme: redirect to home page
+       name='account.login'), # Fixme: redirect to home page
 
-    url(r'^accounts/logout/$',
+    url(r'^account/logout/$',
         auth_views.logout,
         {'template_name': 'account/logged_out.html'},
-        name='accounts.logout'),
+        name='account.logout'),
 
-    url(r'^accounts/password/change/$',
+    url(r'^account/password/change/$',
         auth_views.password_change,
         {'template_name': 'account/password_change.html',
          'password_change_form': PasswordChangeForm,
-         'post_change_redirect': reverse_lazy('accounts.password_change_done')},
-        name='accounts.password_change'),
+         'post_change_redirect': reverse_lazy('account.password_change_done')},
+        name='account.password_change'),
 
-    url(r'^accounts/password/reset/$',
+    url(r'^account/password/reset/$',
         auth_views.password_reset,
         {'template_name': 'account/password_reset.html',
          'email_template_name': 'account/password_reset_email.html',
          'password_reset_form': PasswordResetForm,
-         'post_reset_redirect': reverse_lazy('accounts.password_reset_done')},
-        name='accounts.password_reset'),
+         'post_reset_redirect': reverse_lazy('account.password_reset_done')},
+        name='account.password_reset'),
 
-    url(r'^accounts/password/reset/confirm/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>.+)/$',
+    url(r'^account/password/reset/confirm/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>.+)/$',
         auth_views.password_reset_confirm,
         {'template_name': 'account/password_reset_confirm.html',
          'set_password_form': SetPasswordForm},
-        name='accounts.password_reset_confirm'),
+        name='account.password_reset_confirm'),
 
-    url(r'^accounts/password/reset/complete/$',
+    url(r'^account/password/reset/complete/$',
         auth_views.password_reset_complete,
         {'template_name': 'account/password_reset_complete.html'},
         name='password_reset_complete'),
@@ -112,25 +112,25 @@ urlpatterns += [
 from .views import account as account_views
 
 urlpatterns += [
-    url(r'^accounts/profile/$',
+    url(r'^account/profile/$',
         account_views.profile,
-        name='accounts.profile'),
+        name='account.profile'),
 
-    url(r'^accounts/profile/update/$',
+    url(r'^account/profile/update/$',
         account_views.update,
-        name='accounts.profile.update'),
+        name='account.profile.update'),
 
-    url(r'^accounts/password/change/done/$',
+    url(r'^account/password/change/done/$',
         account_views.password_change_done,
-        name='accounts.password_change_done'),
+        name='account.password_change_done'),
 
-    url(r'^accounts/password/reset/done/$',
+    url(r'^account/password/reset/done/$',
         account_views.password_reset_done,
-        name='accounts.password_reset_done'),
+        name='account.password_reset_done'),
 
-    url(r'^accounts/delete/$',
+    url(r'^account/delete/$',
         account_views.delete,
-        name='accounts.delete'),
+        name='account.delete'),
 ]
 
 ####################################################################################################
@@ -141,25 +141,25 @@ urlpatterns += [
 from .views import person as person_views
 
 urlpatterns += [
-    url(r'^persons/$',
+    url(r'^person/$',
         login_required(person_views.PersonListView.as_view()),
-        name='persons.index'),
+        name='person.index'),
 
-    url(r'^persons/(?P<person_id>\d+)/$',
+    url(r'^person/(?P<person_id>\d+)/$',
         person_views.details,
-        name='persons.details'),
+        name='person.details'),
 
-    url(r'^persons/create/$',
+    url(r'^person/create/$',
         person_views.create,
-        name='persons.create'),
+        name='person.create'),
 
-    url(r'^persons/(?P<person_id>\d+)/update/$',
+    url(r'^person/(?P<person_id>\d+)/update/$',
         person_views.update,
-        name='persons.update'),
+        name='person.update'),
 
-    url(r'^persons/(?P<person_id>\d+)/delete/$',
+    url(r'^person/(?P<person_id>\d+)/delete/$',
         person_views.delete,
-        name='persons.delete'),
+        name='person.delete'),
 ]
 
 ####################################################################################################
@@ -170,25 +170,25 @@ urlpatterns += [
 from .views import place as place_views
 
 urlpatterns += [
-    url(r'^places/$',
+    url(r'^place/$',
         login_required(place_views.PlaceListView.as_view()),
-        name='places.index'),
+        name='place.index'),
 
-    url(r'^places/(?P<place_id>\d+)/$',
+    url(r'^place/(?P<place_id>\d+)/$',
         place_views.details,
-        name='places.details'),
+        name='place.details'),
 
-    url(r'^places/create/$',
+    url(r'^place/create/$',
         place_views.create,
-        name='places.create'),
+        name='place.create'),
 
-    url(r'^places/(?P<place_id>\d+)/update/$',
+    url(r'^place/(?P<place_id>\d+)/update/$',
         place_views.update,
-        name='places.update'),
+        name='place.update'),
 
-    url(r'^places/(?P<place_id>\d+)/delete/$',
+    url(r'^place/(?P<place_id>\d+)/delete/$',
         place_views.delete,
-        name='places.delete'),
+        name='place.delete'),
 ]
 
 ####################################################################################################
@@ -199,25 +199,25 @@ urlpatterns += [
 from .views import massif as massif_views
 
 urlpatterns += [
-    url(r'^massifs/$',
+    url(r'^massif/$',
         login_required(massif_views.MassifListView.as_view()),
-        name='massifs.index'),
+        name='massif.index'),
 
-    url(r'^massifs/create/$',
+    url(r'^massif/create/$',
         massif_views.create,
-        name='massifs.create'),
+        name='massif.create'),
 
-    url(r'^massifs/(?P<massif_id>\d+)/$',
+    url(r'^massif/(?P<massif_id>\d+)/$',
         massif_views.details,
-        name='massifs.details'),
+        name='massif.details'),
 
-    url(r'^massifs/(?P<massif_id>\d+)/update/$',
+    url(r'^massif/(?P<massif_id>\d+)/update/$',
         massif_views.update,
-        name='massifs.update'),
+        name='massif.update'),
 
-    url(r'^massifs/(?P<massif_id>\d+)/delete/$',
+    url(r'^massif/(?P<massif_id>\d+)/delete/$',
         massif_views.delete,
-        name='massifs.delete'),
+        name='massif.delete'),
 ]
 
 ####################################################################################################
@@ -228,25 +228,25 @@ urlpatterns += [
 from .views import circuit as circuit_views
 
 urlpatterns += [
-    url(r'^circuits/create/$',
+    url(r'^circuit/create/$',
         circuit_views.create,
-        name='circuits.create'),
+        name='circuit.create'),
 
-    url(r'^circuits/(?P<circuit_id>\d+)/$',
+    url(r'^circuit/(?P<circuit_id>\d+)/$',
         circuit_views.details,
-        name='circuits.details'),
+        name='circuit.details'),
 
-    url(r'^circuits/(?P<circuit_id>\d+)/update/$',
+    url(r'^circuit/(?P<circuit_id>\d+)/update/$',
         circuit_views.update,
-        name='circuits.update'),
+        name='circuit.update'),
 
-    url(r'^circuits/(?P<circuit_id>\d+)/delete/$',
+    url(r'^circuit/(?P<circuit_id>\d+)/delete/$',
         circuit_views.delete,
-        name='circuits.delete'),
+        name='circuit.delete'),
 
-    url(r'^circuits/(?P<circuit_id>\d+)/boulders/$',
+    url(r'^circuit/(?P<circuit_id>\d+)/boulder/$',
         circuit_views.boulders,
-        name='circuits.boulders'),
+        name='circuit.boulders'),
 ]
 
 ####################################################################################################

@@ -1,19 +1,19 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
-{% block title %} - {{ circuit.massif.name }} ~ {{ circuit.name() }}{% endblock %}
+{% block title %} - {{ circuit.massif.name }} ~ {{ circuit.name }}{% endblock %}
 
 {% block breadcrumb_li %}
-  <li><a href="{{ url('massifs.index') }}">Massifs</a></li>
-  <li><a href="{{ url('massifs.details', circuit.massif.pk) }}">{{ circuit.massif.name }}</a></li>
-  <li class="active">{{ circuit.name() }}</li>
+  <li><a href="{{ url('massif.index') }}">Massifs</a></li>
+  <li><a href="{{ url('massif.details', circuit.massif.pk) }}">{{ circuit.massif.name }}</a></li>
+  <li class="active">{{ circuit.name }}</li>
 {% endblock %}
 
 {% block content %}
   <h1>
-    {{ circuit.massif.name }} ~ {{ circuit.name() }}
+    {{ circuit.massif.name }} ~ {{ circuit.name }}
     <div class="btn-group m-b-1" role="group">
-      <a role="button" class="btn btn-primary" href="{{ url('circuits.update', circuit.pk) }}">
+      <a role="button" class="btn btn-primary" href="{{ url('circuit.update', circuit.pk) }}">
 	<i class="fa fa-pencil-square-o"></i></a>
       <a role="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteCircuitModal">
 	<i class="fa fa-trash"></i></a>
@@ -33,7 +33,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">{{ _("Cancel") }}</button>
-          <a role="button" class="btn btn-danger" href="{{ url('circuits.delete', circuit.pk) }}">{{ _("Delete circuit") }}</a>
+          <a role="button" class="btn btn-danger" href="{{ url('circuit.delete', circuit.pk) }}">{{ _("Delete circuit") }}</a>
         </div>
       </div>
     </div>
@@ -49,16 +49,13 @@
     <dd>{% if circuit.gestion %}{{ circuit.gestion }}{% endif %}</dd>
     <dt>Status</dt>
     <dd>{% if circuit.status %}{{ circuit.status }}{% endif %}</dd>
-    {#
-    {% from "include/information-macros.html" import circuit_openers %}
     <dt>Ouvreurs</dt>
     <dd>
-      {{ circuit_openers(lang_code, circuit) }}
-      {% if circuit.opener.affiliation %}
-	{{ circuit.opener.affiliation }}
-      {% endif %}
+      {% for person in circuit.openers %}
+	<a href="{{ url('person.details', person.pk) }}">
+	  {{ person.name }}</a>{% if not loop.last %},{% endif %}
+      {% endfor %}
     </dd>
-    #}
     <dt>Année de création</dt>
     <dd>{% if circuit.creation_date %}{{ circuit.creation_date }}{% endif %}</dd>
     <dt>Année de réfection</dt>
@@ -78,7 +75,7 @@
 
   <h2>
     Blocs
-    <a role="button" class="btn btn-primary" href="{{ url('circuits.boulders', circuit.pk) }}">
+    <a role="button" class="btn btn-primary" href="{{ url('circuit.boulders', circuit.pk) }}">
       <i class="fa fa-pencil-square-o"></i></a>
   </h2>
   <table class="table table-sm">

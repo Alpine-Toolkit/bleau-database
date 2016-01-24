@@ -6,13 +6,13 @@
 {% block nav_account %}active{% endblock %}
 
 {% block breadcrumb_li %}
-  <li><a href="{{ url('accounts.profile') }}">Profile</a></li>
+  <li><a href="{{ url('account.profile') }}">Profile</a></li>
   <li class="active">{{  _("Update") }}</li>
 {% endblock %}
 
 {% block content %}
   <h1>{{ _("Update my account") }}</h1>
-  <form class="form-horizontal" role="form" method="post" action="{{ url('accounts.profile.update') }}">
+  <form class="form-horizontal" role="form" method="post" action="{{ url('account.profile.update') }}">
     {% csrf_token %}
 
     <div class="col-xl-6">

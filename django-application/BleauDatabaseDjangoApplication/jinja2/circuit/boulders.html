@@ -4,9 +4,9 @@
 {% block title %} - {{ circuit.massif.name }} ~ {{ circuit.name() }}{% endblock %}
 
 {% block breadcrumb_li %}
-  <li><a href="{{ url('massifs.index') }}">Massifs</a></li>
-  <li><a href="{{ url('massifs.details', circuit.massif.pk) }}">{{ circuit.massif.name }}</a></li>
-  <li><a href="{{ url('circuits.details', circuit.pk) }}">{{ circuit.name() }}</a></li>
+  <li><a href="{{ url('massif.index') }}">Massifs</a></li>
+  <li><a href="{{ url('massif.details', circuit.massif.pk) }}">{{ circuit.massif.name }}</a></li>
+  <li><a href="{{ url('circuit.details', circuit.pk) }}">{{ circuit.name() }}</a></li>
   <li class="active">{{ _("Boulders") }}</li>
 {% endblock %}
 

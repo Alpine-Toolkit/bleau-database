@@ -4,7 +4,7 @@
 {% block title %} - {{ place.name }}{% endblock %}
 
 {% block breadcrumb_li %}
-  <li><a href="{{ url('places.index') }}">Places</a> </li>
+  <li><a href="{{ url('place.index') }}">Places</a> </li>
   <li class="active">{{ place.name }}</li>
 {% endblock %}
 
@@ -12,7 +12,7 @@
   <h1>
     {{ place.name }}
     <div class="btn-group m-b-1" role="group">
-      <a role="button" class="btn btn-primary" href="{{ url('places.update', place.pk) }}">
+      <a role="button" class="btn btn-primary" href="{{ url('place.update', place.pk) }}">
 	<i class="fa fa-pencil-square-o"></i></a>
       <a role="button" class="btn btn-danger" data-toggle="modal" data-target="#deletePlaceModal">
 	<i class="fa fa-trash"></i></a>
@@ -32,7 +32,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">{{ _("Cancel") }}</button>
-          <a role="button" class="btn btn-danger" href="{{ url('places.delete', place.pk) }}">{{ _("Delete place") }}</a>
+          <a role="button" class="btn btn-danger" href="{{ url('place.delete', place.pk) }}">{{ _("Delete place") }}</a>
         </div>
       </div>
     </div>

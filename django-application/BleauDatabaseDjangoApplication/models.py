@@ -47,6 +47,9 @@ def strip_accent(s):
 
 class Profile(models.Model):
 
+    class Meta:
+        app_label = 'BleauDatabaseDjangoApplication'
+
     user = models.OneToOneField(User)
     language = models.CharField(max_length=4, blank=True, null=True, choices=LANGUAGES)
 
@@ -61,8 +64,8 @@ class Place(Model):
 
     """This class defines a place."""
 
-    # class Meta:
-    #     app_label = 'BleauDatabaseDjangoApplication'
+    class Meta:
+        app_label = 'BleauDatabaseDjangoApplication'
 
     CATEGORIES_CHOICES = (
         ('parking', 'parking'),
@@ -86,6 +89,9 @@ class Place(Model):
 
 class Person(Model):
 
+    class Meta:
+        app_label = 'BleauDatabaseDjangoApplication'
+
     first_name = CharField(max_length=100)
     last_name = CharField(max_length=100)
 
@@ -97,15 +103,40 @@ class Person(Model):
 
     ##############################################
 
+    @property
     def name(self):
 
         return ' '.join((self.first_name, self.last_name))
+
+    ##############################################
+
+    @property
+    def last_first_name(self):
+
+        return ' '.join((self.last_name, self.first_name))
+
+    ##############################################
+
+    @property
+    def first_letter(self):
+
+        return strip_accent(self.last_name[0].lower())
+
+    ##############################################
+
+    @property
+    def opened_circuits(self):
+
+        return [opener.circuit for opener in self.opener_set.all()]
 
 ####################################################################################################
 
 class Massif(Model):
 
     """This class defines a massif."""
+
+    class Meta:
+        app_label = 'BleauDatabaseDjangoApplication'
 
     acces = TextField(null=True, blank=True) # Fixme: fr
     alternative_name = CharField(max_length=100, null=True, blank=True) # Fixme
@@ -133,6 +164,7 @@ class Massif(Model):
 
     ##############################################
 
+    @property
     def circuits(self):
 
         return self.circuit_set.order_by('number')
@@ -142,6 +174,9 @@ class Massif(Model):
 class Circuit(Model):
 
     """This class defines a circuit."""
+
+    class Meta:
+        app_label = 'BleauDatabaseDjangoApplication'
 
     boulders = JSONField(null=True, blank=True)
     colour = CharField(max_length=50, null=True, blank=True)
@@ -165,18 +200,23 @@ class Circuit(Model):
 
     ##############################################
 
+    @property
     def name(self):
         return 'N°{0.number}'.format(self)
 
     ##############################################
 
+    @property
     def openers(self):
 
-        return self.opener_set.all()
+        return [opener.person for opener in self.opener_set.all()]
 
 ####################################################################################################
 
 class Opener(Model):
+
+    class Meta:
+        app_label = 'BleauDatabaseDjangoApplication'
 
     circuit = models.ForeignKey(Circuit)
     person = models.ForeignKey(Person)
@@ -190,6 +230,9 @@ class Opener(Model):
 
 class Refection(Model):
 
+    class Meta:
+        app_label = 'BleauDatabaseDjangoApplication'
+
     circuit = models.ForeignKey(Circuit)
     date = IntegerField(null=True, blank=True)
     note = TextField(null=True, blank=True)
@@ -197,6 +240,9 @@ class Refection(Model):
 ####################################################################################################
 
 class RefectionPerson(Model):
+
+    class Meta:
+        app_label = 'BleauDatabaseDjangoApplication'
 
     refection = models.ForeignKey(Refection)
     person = models.ForeignKey(Person)

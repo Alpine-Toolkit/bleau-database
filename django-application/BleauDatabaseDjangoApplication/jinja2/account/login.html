@@ -8,7 +8,7 @@
 
 {% block content %}
   <h2>Connexion</h2>
-  <p><a class="btn btn-danger" href="{{ url('accounts.password_reset') }}" role="button">Mot de passe oublié</a></p>
+  <p><a class="btn btn-danger" href="{{ url('account.password_reset') }}" role="button">Mot de passe oublié</a></p>
   {% if form.errors %}
     <div class="alert alert-danger alert-dismissible fade in" role="alert">
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -17,7 +17,7 @@
       <strong>Mauvais username ou mot de passe</strong>
     </div>
   {% endif %}
-  <form action="{{ url('accounts.login') }}" method="post">
+  <form action="{{ url('account.login') }}" method="post">
     {% csrf_token %}
     {% for field in form.visible_fields() %}
       <div class="form-group row{% if field.errors %} has-error{% endif %}">

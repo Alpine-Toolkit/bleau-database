@@ -1,18 +1,18 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
-{% block title %} - {{ person.name() }}{% endblock %}
+{% block title %} - {{ person.name }}{% endblock %}
 
 {% block breadcrumb_li %}
-  <li><a href="{{ url('persons.index') }}">Persons</a> </li>
-  <li class="active">{{ person.name() }}</li>
+  <li><a href="{{ url('person.index') }}">Persons</a> </li>
+  <li class="active">{{ person.name }}</li>
   {# {% update|yesno:_("Update,Create") "" %}  #}
 {% endblock %}
 
 {% block content %}
   <h2>
     {% if update %}
-      Mettre à jour «{{ person.name() }}»
+      Mettre à jour «{{ person.name }}»
     {% else %}
       Nouveau person
     {% endif %}

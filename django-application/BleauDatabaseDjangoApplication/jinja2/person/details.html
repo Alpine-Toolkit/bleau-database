@@ -1,77 +1,74 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
-{% block title %} - {{ massif.name }}{% endblock %}
+{% block title %} - {{ person.name }}{% endblock %}
 
 {% block breadcrumb_li %}
-  <li><a href="{{ url('massifs.index') }}">Massifs</a> </li>
-  <li class="active">{{ massif.name }}</li>
+  <li><a href="{{ url('person.index') }}">Personnes</a> </li>
+  <li class="active">{{ person.name }}</li>
 {% endblock %}
 
 {% block content %}
-  <h1> {{ massif.secteur }} ~ {{ massif.name }} </h1>
+  <h1> {{ person.name }}
+    <div class="btn-group m-b-1" role="group">
+      <a role="button" class="btn btn-primary" href="{{ url('person.update', person.pk) }}">
+	<i class="fa fa-pencil-square-o"></i></a>
+      <a role="button" class="btn btn-danger" data-toggle="modal" data-target="#deletePersonModal">
+	<i class="fa fa-trash"></i></a>
+    </div>
+  </h1>
 
-  {% if massif.alternative_name %}
-    <p>{{ massif.alternative_name }}</p>
-  {% endif %}
-
-  <div class="btn-group m-b-1" role="group">
-    <a class="btn btn-primary" href="{{ url('massifs.update', massif.pk) }}" role="button"><i class="fa fa-pencil-square-o"></i></a>
-    <a class="btn btn-danger" href="{{ url('massifs.delete', massif.pk) }}" role="button"><i class="fa fa-trash"></i></a>
-  </div>
-
-  <h2>{{ _("Accés") }}</h2>
-  <dl>
-    <dt><i class="fa fa-car"></i> {{ _("Accés en voiture") }}</dt>
-    <dd>
-      <p>{{ massif.acces }}</p>
-    </dd>
-    <dt><i class="fa fa-bicycle"></i> {{ _("Accés à vélo") }} {# {% if massif.on_foot() %}/ {{ _("à pieds") }}{% endif %} #}</dt>
-    <dd>
-      <p>{{ massif.velo }}</p>
-    </dd>
-  </dl>
-
-  <h2>{{ _("Informations") }}</h2>
-  <dl>
-    <dt>{{ _("Type de chaos") }}</dt><dd>{% if massif.chaos_type %}{{ massif.chaos_type }}{% endif %}</dd>
-    <dt>{{ _("Notes") }}</dt><dd>{% if massif.notes %}{{ massif.note }}{% endif %}</dd>
-    <dt>{{ _("Rendez-vous Gums") }}</dt><dd>{{ massif.rdv }}</dd>
-  </dl>
-
-  <h2>{{ _("Carte de situation") }}</h2>
-  <table class="table table-sm">
-    <tbody>
-      <tr>
-	<td>
-	  <a href="http://spatialreference.org/ref/epsg/wgs-84/">
-	    {{ _("Coordonnée WGS 84") }}
-	  </a></td>
-	<td>{{ massif.coordinate }}</td>
-      </tr>
-      {% if massif.parcelles %}
-	<tr>
-	  <td>{{ _("Parcelles ONF") }}</td>
-	  <td>{{ massif.parcelles }}</td>
-	</tr>
-      {% endif %}
-    </tbody>
-  </table>
-
-  <h2>{{ _("Circuits") }}</h2>
-  <div class="row">
-    <div class="col-xl-6">
-      <table class="table table-sm">
-	<tbody>
-	  {% for circuit in massif.circuits() %}
-	    <tr>
-	      <td><a href="{{ url('circuits.details', circuit.pk) }}">N°{{ circuit.number }}</a></td>
-	      <td>{{ circuit.grade }}</td>
-	      <td>{{ circuit.colour }}</td>
-	    </tr>
-	  {% endfor %}
-	</tbody>
-      </table>
+  <div class="modal fade" id="deletePersonModal" tabindex="-1" role="dialog" aria-labelledby="deletePersonModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+	  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title" id="deletePersonModalLabel">{{ _("Delete person") }}</h3>
+        </div>
+        <div class="modal-body">
+          <p>{{ _("Are you sure you want to delete this person?") }}</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">{{ _("Cancel") }}</button>
+          <a role="button" class="btn btn-danger" href="{{ url('person.delete', person.pk) }}">{{ _("Delete person") }}</a>
+        </div>
+      </div>
     </div>
   </div>
+
+  <h2>Circuits Ouverts</h2>
+  <ul>
+    {% from "include/information-macros.html" import circuit_openers %}
+    {% for circuit in person.opened_circuits %}
+      <li class="m-b-1">
+	<a href="{{ url("circuit.details", circuit.pk) }}">
+	  {{ circuit.massif.name }} {{  _("N°") }} {{ circuit.number }} {{ circuit.grade }}</a>
+	<br>
+	{% if circuit.creation_date %}
+	  {{ circuit.creation_date }}
+	{% endif %}
+	{{ circuit_openers(circuit) }}
+	{#
+	{% if circuit.openers.affiliation %}
+	  {{ circuit.openers.affiliation }}
+	{% endif %}
+	#}
+      </li>
+      {% else %}
+      aucun
+    {% endfor %}
+  </ul>
+  <h2>Réfections de Circuits <i class="fa fa-paint-brush"></i></h2>
+  <ul>
+    {% for circuit in person.circuit_refections %}
+      <li class="m-b-1">
+	<a href="{{  url("circuit.details", circuit.pk) }}">
+	  {{ circuit.massif.name }} {{  _("N°") }} {{ circuit.number }} {{ circuit.grade }}</a>
+      </li>
+      {% else %}
+      aucun
+    {% endfor %}
+  </ul>
+
 {% endblock %}

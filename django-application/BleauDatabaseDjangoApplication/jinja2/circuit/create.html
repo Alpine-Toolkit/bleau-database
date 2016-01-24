@@ -4,7 +4,7 @@
 {% block title %} - {{ circuit.name }}{% endblock %}
 
 {% block breadcrumb_li %}
-  <li><a href="{{ url('massifs.details', circuit.massif.pk) }}">{{ circuit.massif.name }}</a></li>
+  <li><a href="{{ url('massif.details', circuit.massif.pk) }}">{{ circuit.massif.name }}</a></li>
   <li class="active">{{ circuit.name() }}</li>
   {# {% update|yesno:_("Update,Create") "" %}  #}
 {% endblock %}
