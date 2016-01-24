@@ -237,31 +237,25 @@ LOGOUT_URL = 'accounts.logout'
 
 SUIT_CONFIG = {
     # header
-    'ADMIN_NAME': 'Test',
-    # 'HEADER_DATE_FORMAT': 'l, j. F Y',
-    # 'HEADER_TIME_FORMAT': 'H:i',
+    'ADMIN_NAME': 'Bleau DB',
+    'HEADER_DATE_FORMAT': 'l, j F Y',
+    'HEADER_TIME_FORMAT': 'H:i',
 
     # forms
-    'SHOW_REQUIRED_ASTERISK': True,  # Default True
-    # 'CONFIRM_UNSAVED_CHANGES': True, # Default True
+    'SHOW_REQUIRED_ASTERISK': True,
+    'CONFIRM_UNSAVED_CHANGES': True,
 
-    # menu
-    # 'SEARCH_URL': '/admin/auth/user/',
-    # 'MENU_ICONS': {
-    #    'sites': 'icon-leaf',
-    #    'auth': 'icon-lock',
-    # },
-    # 'MENU_OPEN_FIRST_CHILD': True, # Default True
-    # 'MENU_EXCLUDE': ('auth.group',),
     # 'MENU': (
     #     'sites',
-    #     {'app': 'auth', 'icon':'icon-lock', 'models': ('user', 'group')},
-    #     {'label': 'Settings', 'icon':'icon-cog', 'models': ('auth.user', 'auth.group')},
-    #     {'label': 'Support', 'icon':'icon-question-sign', 'url': '/support/'},
+
+    #     {'app': 'auth', 'models': ('user', 'group')},
+    #     {'label': 'Bleau DB',
+    #      'app': 'BleauDatabaseDjangoApplication',
+    #      'models': ('circuit',),
+    #     },
     # ),
 
-    # misc
-    # 'LIST_PER_PAGE': 15
+    'LIST_PER_PAGE': 15
 }
 
 ####################################################################################################
@@ -274,6 +268,39 @@ REST_FRAMEWORK = {
     # IsAdminUser
     'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAuthenticatedOrReadOnly',),
     'PAGE_SIZE': 100,
+}
+
+SWAGGER_SETTINGS = {
+    'exclude_namespaces': [],
+    'api_key': '',
+    'api_version': '1.0',
+    # 'api_path': '/',
+    # 'base_path': '',
+    'doc_expansion': 'none',
+    'enabled_methods': [
+        'get',
+        'post',
+        'put',
+        'patch',
+        'delete'
+    ],
+    'info': {
+        'title': 'Bleau Database REST API',
+        'description': '''
+        This page provides an automatically generated documentation for the <a href="/about-rest-api">Bleau Database REST API</a>.
+        You can learn the data schemas and try it out.
+        Data are licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0.</a>
+        ''',
+        # 'contact': 'fabrice.salvaire@orange.fr',
+        # 'license': 'CC BY-NC-SA 3.0',
+        # 'licenseUrl': 'http://creativecommons.org/licenses/by-nc-sa/3.0/',
+        # 'termsOfServiceUrl': '/mentions-legales',
+    },
+    'is_authenticated': False,
+    'is_superuser': False,
+    'permission_denied_handler': None,
+    'resource_access_handler': None,
+    # 'token_type': Token,
 }
 
 ####################################################################################################
