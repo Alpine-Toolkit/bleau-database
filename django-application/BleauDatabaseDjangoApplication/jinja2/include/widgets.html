@@ -53,7 +53,7 @@
   </div>
 {%- endmacro %}
 
-{% macro update_form(form) -%}
+{% macro update_form(form, csrf_token) -%}
   <form action="." method="post">
     {% csrf_token %}
     {% for field in form.visible_fields() %}

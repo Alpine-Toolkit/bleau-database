@@ -141,7 +141,7 @@ def create(request):
             massif = form.save(commit=False)
             massif.save()
             messages.success(request, "Massif créé avec succès.")
-            return HttpResponseRedirect(reverse('massifs.details', args=[massif.pk]))
+            return HttpResponseRedirect(reverse('massif.details', args=[massif.pk]))
         else:
             messages.error(request, "Des informations sont manquantes ou incorrectes")
     else:
@@ -160,7 +160,7 @@ def update(request, massif_id):
         form = MassifForm(request.POST, instance=massif)
         if form.is_valid():
             massif = form.save()
-            return HttpResponseRedirect(reverse('massifs.details', args=[massif.pk]))
+            return HttpResponseRedirect(reverse('massif.details', args=[massif.pk]))
     else:
         form = MassifForm(instance=massif)
 
@@ -175,7 +175,7 @@ def delete(request, massif_id):
     messages.success(request, "Massif «{0.name}» supprimé".format(massif))
     massif.delete()
 
-    return HttpResponseRedirect(reverse('massifs.index'))
+    return HttpResponseRedirect(reverse('massif.index'))
 
 ####################################################################################################
 #

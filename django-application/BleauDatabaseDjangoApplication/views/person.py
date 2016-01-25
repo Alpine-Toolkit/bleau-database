@@ -23,11 +23,9 @@
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.urlresolvers import reverse
-from django.db.models import Q
 from django.forms import ModelForm, Form, CharField
-from django.http import Http404, HttpResponseRedirect
-from django.shortcuts import get_object_or_404, render_to_response, render
-from django.template import RequestContext
+from django.http import HttpResponseRedirect
+from django.shortcuts import get_object_or_404, render
 from django.utils.translation import ugettext as _
 from django.views.generic import ListView
 from django.views.generic.edit import FormMixin
@@ -132,7 +130,7 @@ def create(request):
             person = form.save(commit=False)
             person.save()
             messages.success(request, "Person créé avec succès.")
-            return HttpResponseRedirect(reverse('persons.details', args=[person.pk]))
+            return HttpResponseRedirect(reverse('person.details', args=[person.pk]))
         else:
             messages.error(request, "Des informations sont manquantes ou incorrectes")
     else:
@@ -151,7 +149,7 @@ def update(request, person_id):
         form = PersonForm(request.POST, instance=person)
         if form.is_valid():
             person = form.save()
-            return HttpResponseRedirect(reverse('persons.details', args=[person.pk]))
+            return HttpResponseRedirect(reverse('person.details', args=[person.pk]))
     else:
         form = PersonForm(instance=person)
 
@@ -166,7 +164,7 @@ def delete(request, person_id):
     messages.success(request, "Person «{0.name}» supprimé".format(person))
     person.delete()
 
-    return HttpResponseRedirect(reverse('persons.index'))
+    return HttpResponseRedirect(reverse('person.index'))
 
 ####################################################################################################
 #

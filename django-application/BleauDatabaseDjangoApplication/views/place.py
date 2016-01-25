@@ -135,7 +135,7 @@ def create(request):
             place = form.save(commit=False)
             place.save()
             messages.success(request, "Place créé avec succès.")
-            return HttpResponseRedirect(reverse('places.details', args=[place.pk]))
+            return HttpResponseRedirect(reverse('place.details', args=[place.pk]))
         else:
             messages.error(request, "Des informations sont manquantes ou incorrectes")
     else:
@@ -154,7 +154,7 @@ def update(request, place_id):
         form = PlaceForm(request.POST, instance=place)
         if form.is_valid():
             place = form.save()
-            return HttpResponseRedirect(reverse('places.details', args=[place.pk]))
+            return HttpResponseRedirect(reverse('place.details', args=[place.pk]))
     else:
         form = PlaceForm(instance=place)
 
@@ -169,7 +169,7 @@ def delete(request, place_id):
     messages.success(request, "Place «{0.name}» supprimé".format(place))
     place.delete()
 
-    return HttpResponseRedirect(reverse('places.index'))
+    return HttpResponseRedirect(reverse('place.index'))
 
 ####################################################################################################
 #

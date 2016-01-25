@@ -79,7 +79,7 @@ def create(request):
             circuit = form.save(commit=False)
             circuit.save()
             messages.success(request, "Circuit créé avec succès.")
-            return HttpResponseRedirect(reverse('circuits.details', args=[circuit.pk]))
+            return HttpResponseRedirect(reverse('circuit.details', args=[circuit.pk]))
         else:
             messages.error(request, "Des informations sont manquantes ou incorrectes")
     else:
@@ -106,7 +106,7 @@ def update(request, circuit_id):
         form = CircuitForm(request.POST, instance=circuit)
         if form.is_valid():
             circuit = form.save()
-            return HttpResponseRedirect(reverse('circuits.details', args=[circuit.pk]))
+            return HttpResponseRedirect(reverse('circuit.details', args=[circuit.pk]))
     else:
         form = CircuitForm(instance=circuit)
 
@@ -118,14 +118,6 @@ def update(request, circuit_id):
 def boulders(request, circuit_id):
 
     circuit = get_object_or_404(Circuit, pk=circuit_id)
-
-    # if request.method == 'POST':
-    #     form = CircuitForm(request.POST, instance=circuit)
-    #     if form.is_valid():
-    #         circuit = form.save()
-    #         return HttpResponseRedirect(reverse('circuits.details', args=[circuit.pk]))
-    # else:
-    # form = CircuitForm(instance=circuit)
 
     return render(request, 'circuit/boulders.html', {'circuit': circuit})
 
@@ -150,7 +142,7 @@ def delete(request, circuit_id):
     messages.success(request, "Circuit «{0.name}» supprimé".format(circuit))
     circuit.delete()
 
-    return HttpResponseRedirect(reverse('circuits.index'))
+    return HttpResponseRedirect(reverse('circuit.index'))
 
 ####################################################################################################
 #
