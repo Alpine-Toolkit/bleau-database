@@ -1,0 +1,59 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "include/base.html" %}
+
+{% set circuit = refection.circuit %}
+{% set massif = circuit.massif %}
+
+{% block title %} - Réfection {{ circuit.name }} {{ refection.date }}{% endblock %}
+
+{% block breadcrumb_li %}
+  <li><a href="{{ url('massif.index') }}">Massifs</a></li>
+  <li><a href="{{ url('massif.details', massif.pk) }}">{{ massif.name }}</a></li>
+  <li><a href="{{ url('massif.details', circuit.pk) }}">{{ circuit.name }}</a></li>
+  <li class="active">Réfection {{ refection.date }}</li>
+{% endblock %}
+
+{% block content %}
+  <h1>Réfection {{ circuit.name }} {{ refection.date }}
+    <div class="btn-group m-b-1" role="group">
+      <a role="button" class="btn btn-primary" href="{{ url('refection.update', refection.pk) }}">
+	<i class="fa fa-pencil-square-o"></i></a>
+      <a role="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteRefectionModal">
+	<i class="fa fa-trash"></i></a>
+    </div>
+  </h1>
+
+  <div class="modal fade" id="deleteRefectionModal" tabindex="-1" role="dialog" aria-labelledby="deleteRefectionModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+	  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title" id="deleteRefectionModalLabel">{{ _("Delete refection") }}</h3>
+        </div>
+        <div class="modal-body">
+          <p>{{ _("Are you sure you want to delete this refection?") }}</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">{{ _("Cancel") }}</button>
+          <a role="button" class="btn btn-danger" href="{{ url('refection.delete', refection.pk) }}">{{ _("Delete refection") }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <dl>
+    <dt>Date</dt><dd>{{ refection.date }}</dd>
+    <dt>Note</dt><dd>{{ refection.note }}</dd>
+    <dt>Personnes
+      <a role="button" class="btn btn-sm btn-primary" href="{{ url('refection.persons', circuit.pk) }}">
+	<i class="fa fa-pencil-square-o"></i></a>
+    </dt>
+    <dd>
+      {% for person in refection.persons.all() %}
+	<a href="{{ url('person.details', person.pk) }}">
+	  {{ person.name }}</a>{% if not loop.last %},{% endif %}
+      {% endfor %}
+    </dd>
+  </dl>
+{% endblock %}

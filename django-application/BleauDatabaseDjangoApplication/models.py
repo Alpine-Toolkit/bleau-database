@@ -30,7 +30,8 @@ from django.contrib.gis.db.models import (Model,
                                           ForeignKey,
                                           IntegerField,
                                           CharField, TextField,
-                                          PointField)
+                                          PointField,
+                                          ManyToManyField)
 from django.contrib.postgres.fields import JSONField
 
 ####################################################################################################
@@ -99,7 +100,7 @@ class Person(Model):
 
     def __str__(self):
 
-        return self.name()
+        return self.name
 
     ##############################################
 
@@ -127,7 +128,14 @@ class Person(Model):
     @property
     def opened_circuits(self):
 
-        return [opener.circuit for opener in self.opener_set.all()]
+        return self.circuits.all()
+
+    ##############################################
+
+    @property
+    def refections(self):
+
+        return self.refection_set.order_by('date')
 
 ####################################################################################################
 
@@ -187,7 +195,7 @@ class Circuit(Model):
     massif = ForeignKey(Massif, on_delete=models.CASCADE)
     note = TextField(null=True, blank=True)
     number = IntegerField()
-    opener_string = TextField(null=True, blank=True) # Fixme: openers ? # JSONField(null=True, blank=True)
+    openers = ManyToManyField(Person)
     refection_date = IntegerField(null=True, blank=True)
     refection_note = TextField(null=True, blank=True)
     status = CharField(max_length=50, null=True, blank=True)
@@ -204,28 +212,6 @@ class Circuit(Model):
     def name(self):
         return 'N°{0.number}'.format(self)
 
-    ##############################################
-
-    @property
-    def openers(self):
-
-        return [opener.person for opener in self.opener_set.all()]
-
-####################################################################################################
-
-class Opener(Model):
-
-    class Meta:
-        app_label = 'BleauDatabaseDjangoApplication'
-
-    circuit = models.ForeignKey(Circuit)
-    person = models.ForeignKey(Person)
-
-    ##############################################
-
-    def __str__(self):
-        return '{0.circuit}-{0.person}'.format(self)
-
 ####################################################################################################
 
 class Refection(Model):
@@ -236,16 +222,12 @@ class Refection(Model):
     circuit = models.ForeignKey(Circuit)
     date = IntegerField(null=True, blank=True)
     note = TextField(null=True, blank=True)
+    persons = ManyToManyField(Person)
 
-####################################################################################################
+    ##############################################
 
-class RefectionPerson(Model):
-
-    class Meta:
-        app_label = 'BleauDatabaseDjangoApplication'
-
-    refection = models.ForeignKey(Refection)
-    person = models.ForeignKey(Person)
+    def __str__(self):
+        return '{0.circuit} - {0.date}'.format(self)
 
 ####################################################################################################
 #

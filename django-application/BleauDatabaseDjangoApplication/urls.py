@@ -26,6 +26,7 @@ from django.core.urlresolvers import reverse_lazy
 from django.views.generic import TemplateView
 
 from rest_framework import routers
+from rest_framework.urlpatterns import format_suffix_patterns
 
 ####################################################################################################
 
@@ -244,9 +245,42 @@ urlpatterns += [
         circuit_views.delete,
         name='circuit.delete'),
 
-    url(r'^circuit/(?P<circuit_id>\d+)/boulder/$',
+    url(r'^circuit/(?P<circuit_id>\d+)/boulder/$', # s?
         circuit_views.boulders,
         name='circuit.boulders'),
+
+    url(r'^circuit/(?P<circuit_id>\d+)/opener/$',
+        circuit_views.openers,
+        name='circuit.openers'),
+]
+
+####################################################################################################
+#
+# Refection
+#
+
+from .views import refection as refection_views
+
+urlpatterns += [
+    url(r'^refection/create/$',
+        refection_views.create,
+        name='refection.create'),
+
+    url(r'^refection/(?P<refection_id>\d+)/$',
+        refection_views.details,
+        name='refection.details'),
+
+    url(r'^refection/(?P<refection_id>\d+)/update/$',
+        refection_views.update,
+        name='refection.update'),
+
+    url(r'^refection/(?P<refection_id>\d+)/delete/$',
+        refection_views.delete,
+        name='refection.delete'),
+
+    url(r'^refection/(?P<refection_id>\d+)/persons/$',
+        refection_views.persons,
+        name='refection.persons'),
 ]
 
 ####################################################################################################
@@ -254,14 +288,16 @@ urlpatterns += [
 # REST
 #
 
-from .views.rest import PersonViewSet, OpenerViewSet, PlaceViewSet, MassifViewSet, CircuitViewSet
+from .views.rest import (PersonViewSet, PlaceViewSet,
+                         MassifViewSet,
+                         CircuitViewSet, RefectionViewSet)
 
 router = routers.DefaultRouter()
-router.register(r'place', PlaceViewSet)
-router.register(r'massif', MassifViewSet)
 router.register(r'circuit', CircuitViewSet)
+router.register(r'massif', MassifViewSet)
 router.register(r'person', PersonViewSet)
-router.register(r'opener', OpenerViewSet)
+router.register(r'place', PlaceViewSet)
+router.register(r'refection', RefectionViewSet)
 
 urlpatterns += [
     url(r'^api/', include(router.urls)),

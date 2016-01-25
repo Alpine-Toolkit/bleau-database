@@ -37,8 +37,7 @@ from BleauDataBase.BleauDataBase import BleauDataBase
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "BleauDatabaseDjangoSite.settings")
 django.setup()
 
-from BleauDatabaseDjangoApplication.models import (Place, Massif, Circuit, Person, Opener,
-                                                   Refection, RefectionPerson)
+from BleauDatabaseDjangoApplication.models import (Place, Massif, Circuit, Person)
 
 ####################################################################################################
 
@@ -117,7 +116,6 @@ for circuit in bleau_database.circuits:
         massif=Massif.objects.filter(name=circuit.massif)[0],
         note=circuit.note,
         number=circuit.number,
-        opener_string=opener,
         refection_date=circuit.refection_date,
         refection_note=refection_note,
         status=circuit.status,
@@ -136,11 +134,7 @@ for person in bleau_database.persons:
     orm_person.save()
     for circuit in person.opened_circuits:
         print(circuit)
-        orm_opener = Opener(
-            circuit=circuits[circuit],
-            person=orm_person,
-        )
-        orm_opener.save()
+        circuits[circuit].openers.add(orm_person)
 
 # Refections ...
 

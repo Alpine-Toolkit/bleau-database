@@ -32,9 +32,9 @@ class YourModelAdmin(VersionAdmin):
 ####################################################################################################
 
 from .models import (Profile,
-                     Place, Massif, Circuit,
-                     Person, Opener,
-                     Refection, RefectionPerson)
+                     Person, Place,
+                     Massif,
+                     Refection, Circuit)
 
 ####################################################################################################
 
@@ -58,16 +58,8 @@ class CircuitAdmin(YourModelAdmin, admin.OSMGeoAdmin):
 class PersonAdmin(YourModelAdmin, admin.ModelAdmin):
     pass
 
-@admin.register(Opener)
-class OpenerAdmin(YourModelAdmin, admin.ModelAdmin):
-    pass
-
 @admin.register(Refection)
 class RefectionAdmin(YourModelAdmin, admin.ModelAdmin):
-    pass
-
-@admin.register(RefectionPerson)
-class RefectionPersonAdmin(YourModelAdmin, admin.ModelAdmin):
     pass
 
 # admin.site.register(Place, VersionAdmin)

@@ -1,20 +1,25 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
-{% block title %} - {{ circuit.name }}{% endblock %}
+{% set circuit = refection.circuit %}
+{% set massif = circuit.massif %}
+
+{% block title %} - Réféction {% endblock %}
 
 {% block breadcrumb_li %}
-  <li><a href="{{ url('massif.details', circuit.massif.pk) }}">{{ circuit.massif.name }}</a></li>
-  <li class="active">{{ circuit.name }}</li>
+  <li><a href="{{ url('massif.index') }}">Massifs</a></li>
+  <li><a href="{{ url('massif.details', massif.pk) }}">{{ massif.name }}</a></li>
+  <li><a href="{{ url('massif.details', circuit.pk) }}">{{ circuit.name }}</a></li>
+  <li class="active">Réféction {{ refection.date }}</li>
   {# {% update|yesno:_("Update,Create") "" %}  #}
 {% endblock %}
 
 {% block content %}
   <h2>
     {% if update %}
-      Mettre à jour «{{ circuit.name }}»
+      Mettre à jour «{{ refection.date }}»
     {% else %}
-      Nouveau circuit
+      Nouveau refection
     {% endif %}
   </h2>
 

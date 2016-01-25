@@ -24,17 +24,14 @@ from rest_framework import viewsets, permissions
 
 ####################################################################################################
 
-from ..serializers import (PersonSerializer, OpenerSerializer,
-                           PlaceSerializer, MassifSerializer, CircuitSerializer)
-from ..models import Person, Opener, Place, Massif, Circuit
+from ..serializers import (PersonSerializer, PlaceSerializer,
+                           MassifSerializer,
+                           CircuitSerializer, RefectionSerializer)
+from ..models import Person, Place, Massif, Circuit, Refection
 
 ####################################################################################################
 
 class PersonViewSet(viewsets.ModelViewSet):
-
-    """
-    API endpoint that allows persons to be viewed or edited.
-    """
 
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     queryset = Person.objects.all()
@@ -42,23 +39,7 @@ class PersonViewSet(viewsets.ModelViewSet):
 
 ####################################################################################################
 
-class OpenerViewSet(viewsets.ModelViewSet):
-
-    """
-    API endpoint that allows openers to be viewed or edited.
-    """
-
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
-    queryset = Opener.objects.all()
-    serializer_class = OpenerSerializer
-
-####################################################################################################
-
 class PlaceViewSet(viewsets.ModelViewSet):
-
-    """
-    API endpoint that allows places to be viewed or edited.
-    """
 
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     queryset = Place.objects.all()
@@ -68,10 +49,6 @@ class PlaceViewSet(viewsets.ModelViewSet):
 
 class MassifViewSet(viewsets.ModelViewSet):
 
-    """
-    API endpoint that allows massifs to be viewed or edited.
-    """
-
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     queryset = Massif.objects.all()
     serializer_class = MassifSerializer
@@ -80,13 +57,17 @@ class MassifViewSet(viewsets.ModelViewSet):
 
 class CircuitViewSet(viewsets.ModelViewSet):
 
-    """
-    API endpoint that allows circuits to be viewed or edited.
-    """
-
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     queryset = Circuit.objects.all()
     serializer_class = CircuitSerializer
+
+####################################################################################################
+
+class RefectionViewSet(viewsets.ModelViewSet):
+
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
+    queryset = Refection.objects.all()
+    serializer_class = RefectionSerializer
 
 ####################################################################################################
 #

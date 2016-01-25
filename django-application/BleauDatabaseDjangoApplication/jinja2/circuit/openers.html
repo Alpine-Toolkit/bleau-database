@@ -1,0 +1,83 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "include/base.html" %}
+
+{% block title %} - {{ circuit.massif.name }} ~ {{ circuit.name }}{% endblock %}
+
+{% block breadcrumb_li %}
+  <li><a href="{{ url('massif.index') }}">Massifs</a></li>
+  <li><a href="{{ url('massif.details', circuit.massif.pk) }}">{{ circuit.massif.name }}</a></li>
+  <li><a href="{{ url('circuit.details', circuit.pk) }}">{{ circuit.name }}</a></li>
+  <li class="active">{{ _("Openers") }}</li>
+{% endblock %}
+
+{% block content %}
+  <h1> {{ circuit.massif.name }} ~ {{ circuit.name }} </h1>
+  <div class="row m-b-1">
+    <div class="col-xl-6">
+      <form class="form-inline">
+	<input type="text" class="typeahead form-control" placeholder="Name">
+	<button type="button" id="add-person" class="btn btn-primary"><i class="fa fa-plus"></i></button>
+      </form>
+    </div>
+    <div class="col-xl-6">
+      <span class="pull-right"><button id="save-button" type="button" class="btn btn-primary"><i class="fa fa-upload"></i> {{ _("Save") }}</button></span>
+    </div>
+  </div>
+  <div id="rest-patch-modal" class="modal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+	<div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 id="rest-patch-modal-title" class="modal-title"></h4>
+	</div>
+	<div class="modal-body">
+	  <p id="rest-patch-modal-body"></p>
+	</div>
+	<div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+	</div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xl-6">
+      <table id="editable-table" class="table">
+	<thead>
+	  <tr>
+	    <th>Name</th>
+	    <th></th>
+	  </tr>
+	</thead>
+	<tbody>
+	  {% if circuit.openers.all() %}
+	    {% for person in circuit.openers.all() %}
+	      <tr>
+		<td>{{ person.name }}</td>
+		<td><button type="button" class="editable-table-remove btn btn-danger"><i class="fa fa-trash"></i></button></td>
+	      </tr>
+	    {% endfor %}
+	  {% endif %}
+	  <!-- This is our clonable table line -->
+	  <tr class="invisible">
+	    <td></td>
+	    <td><button type="button" class="editable-table-remove btn btn-danger"><i class="fa fa-trash"></i></button></td>
+	  </tr>
+	</tbody>
+      </table>
+    </div>
+  </div>
+{% endblock %}
+
+{% block script %}
+  <script  type="text/javascript" src={{ static('js-ext/js.cookie.js') }}></script>
+  <script type="text/javascript" src={{ static('js-ext/bootstrap3-typeahead.min.js') }}></script>
+  <script type="text/javascript" src={{ static('js/editable-table.js') }}></script>
+  <script>
+   var person_data = {{ person_data|safe }};
+   var endpoint = '/api/circuit/{{ circuit.pk }}/';
+   var pk_key = "openers";
+  </script>
+  <script type="text/javascript" src={{ static('js/persons.js') }}></script>
+{% endblock %}

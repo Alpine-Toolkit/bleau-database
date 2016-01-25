@@ -24,42 +24,42 @@ from rest_framework import serializers
 
 ####################################################################################################
 
-from .models import Person, Opener, Place, Massif, Circuit
+from .models import Person, Place, Massif, Circuit, Refection
 
 ####################################################################################################
 
 class PersonSerializer(serializers.HyperlinkedModelSerializer):
+
     class Meta:
         model = Person
-        # fields = ('url', 'name')
-
-####################################################################################################
-
-class OpenerSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = Opener
-        # fields = ('url', 'name')
 
 ####################################################################################################
 
 class PlaceSerializer(serializers.HyperlinkedModelSerializer):
+
     class Meta:
         model = Place
-        # fields = ('url', 'name')
 
 ####################################################################################################
 
 class MassifSerializer(serializers.HyperlinkedModelSerializer):
+
     class Meta:
         model = Massif
-        # fields = ('url', 'name')
 
 ####################################################################################################
 
 class CircuitSerializer(serializers.HyperlinkedModelSerializer):
+
     class Meta:
         model = Circuit
-        # fields = ('url', 'name')
+
+####################################################################################################
+
+class RefectionSerializer(serializers.HyperlinkedModelSerializer):
+
+    class Meta:
+        model = Refection
 
 ####################################################################################################
 #

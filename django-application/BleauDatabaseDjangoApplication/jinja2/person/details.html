@@ -59,13 +59,16 @@
       aucun
     {% endfor %}
   </ul>
+
   <h2>Réfections de Circuits <i class="fa fa-paint-brush"></i></h2>
   <ul>
-    {% for circuit in person.circuit_refections %}
-      <li class="m-b-1">
-	<a href="{{  url("circuit.details", circuit.pk) }}">
-	  {{ circuit.massif.name }} {{  _("N°") }} {{ circuit.number }} {{ circuit.grade }}</a>
-      </li>
+    {% for refection in person.refections %}
+      {% with circuit = refection.circuit %}
+	<li class="m-b-1">
+	  <a href="{{  url("refection.details", circuit.pk) }}">
+	    {{ refection.date }} {{ circuit.massif.name }} {{  _("N°") }} {{ circuit.number }} {{ circuit.grade }}</a>
+	</li>
+      {% endwith %}
       {% else %}
       aucun
     {% endfor %}

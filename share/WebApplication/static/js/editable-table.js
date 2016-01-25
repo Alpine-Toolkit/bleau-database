@@ -1,3 +1,5 @@
+// Fixme: prefix jquery selector with $
+
 // Table must have id editable-table
 var table = $('#editable-table');
 
@@ -6,7 +8,13 @@ $('.editable-table-add').click(function () {
   var clone = hidden_line.clone(true);
   clone.removeClass('invisible');
   $(this).parents('tr').after(clone);
-  // table.append(clone);
+});
+
+$('.editable-table-add-bottom').click(function () {
+  var hidden_line = table.find('tr.invisible');
+  var clone = hidden_line.clone(true);
+  hidden_line.removeClass('invisible');
+  table.append(clone);
 });
 
 $('.editable-table-remove').click(function () {

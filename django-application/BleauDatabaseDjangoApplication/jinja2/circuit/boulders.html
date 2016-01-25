@@ -1,12 +1,12 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
-{% block title %} - {{ circuit.massif.name }} ~ {{ circuit.name() }}{% endblock %}
+{% block title %} - {{ circuit.massif.name }} ~ {{ circuit.name }}{% endblock %}
 
 {% block breadcrumb_li %}
   <li><a href="{{ url('massif.index') }}">Massifs</a></li>
   <li><a href="{{ url('massif.details', circuit.massif.pk) }}">{{ circuit.massif.name }}</a></li>
-  <li><a href="{{ url('circuit.details', circuit.pk) }}">{{ circuit.name() }}</a></li>
+  <li><a href="{{ url('circuit.details', circuit.pk) }}">{{ circuit.name }}</a></li>
   <li class="active">{{ _("Boulders") }}</li>
 {% endblock %}
 
@@ -15,7 +15,7 @@
 {% endmacro %}
 
 {% block content %}
-  <h1> {{ circuit.massif.name }} ~ {{ circuit.name() }} </h1>
+  <h1> {{ circuit.massif.name }} ~ {{ circuit.name }} </h1>
   {{ save_button() }}
   <div id="rest-patch-modal" class="modal">
     <div class="modal-dialog" role="document">

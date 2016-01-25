@@ -22,6 +22,8 @@
 
 import json
 
+####################################################################################################
+
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.urlresolvers import reverse
@@ -32,34 +34,24 @@ from django.shortcuts import get_object_or_404, render
 
 ####################################################################################################
 
-from ..models import Circuit, Person
+from ..models import Refection, Person
 
 ####################################################################################################
 
-class CircuitForm(ModelForm):
+class RefectionForm(ModelForm):
 
     class Meta:
-        model = Circuit
+        model = Refection
         fields = (
-            'number',
-            'colour',
-            'grade',
-            'coordinate',
-            'gestion',
-            'status',
-            'creation_date',
-            'refection_date',
-            'refection_note',
-            'note',
-            'topos',
-            # 'massif',
-        )
+            'date',
+            'note'
+            )
 
     ##############################################
 
     def __init__(self, *args, **kwargs):
 
-        super(CircuitForm, self).__init__(*args, **kwargs)
+        super(RefectionForm, self).__init__(*args, **kwargs)
 
         # self.fields['name'].widget.attrs['autofocus'] = 'autofocus'
 
@@ -72,83 +64,66 @@ class CircuitForm(ModelForm):
 def create(request):
 
     if request.method == 'POST':
-        form = CircuitForm(request.POST)
+        form = RefectionForm(request.POST)
         if form.is_valid():
-            circuit = form.save(commit=False)
-            circuit.save()
-            messages.success(request, "Circuit créé avec succès.")
-            return HttpResponseRedirect(reverse('circuits.details', args=[circuit.pk]))
+            refection = form.save(commit=False)
+            refection.save()
+            messages.success(request, "Refection créé avec succès.")
+            return HttpResponseRedirect(reverse('refection.details', args=[refection.pk]))
         else:
             messages.error(request, "Des informations sont manquantes ou incorrectes")
     else:
-        form = CircuitForm()
+        form = RefectionForm()
 
-    return render(request, 'circuit/create.html', {'form': form})
-
-####################################################################################################
-
-@login_required
-def details(request, circuit_id):
-
-    circuit = get_object_or_404(Circuit, pk=circuit_id)
-    return render(request, 'circuit/details.html', {'circuit': circuit})
+    return render(request, 'refection/create.html', {'form': form})
 
 ####################################################################################################
 
 @login_required
-def update(request, circuit_id):
+def details(request, refection_id):
 
-    circuit = get_object_or_404(Circuit, pk=circuit_id)
+    refection = get_object_or_404(Refection, pk=refection_id)
+    return render(request, 'refection/details.html', {'refection': refection})
+
+####################################################################################################
+
+@login_required
+def update(request, refection_id):
+
+    refection = get_object_or_404(Refection, pk=refection_id)
 
     if request.method == 'POST':
-        form = CircuitForm(request.POST, instance=circuit)
+        form = RefectionForm(request.POST, instance=refection)
         if form.is_valid():
-            circuit = form.save()
-            return HttpResponseRedirect(reverse('circuits.details', args=[circuit.pk]))
+            refection = form.save()
+            return HttpResponseRedirect(reverse('refection.details', args=[refection.pk]))
     else:
-        form = CircuitForm(instance=circuit)
+        form = RefectionForm(instance=refection)
 
-    return render(request, 'circuit/create.html', {'form': form, 'update': True, 'circuit': circuit})
-
-####################################################################################################
-
-@login_required
-def boulders(request, circuit_id):
-
-    circuit = get_object_or_404(Circuit, pk=circuit_id)
-
-    # if request.method == 'POST':
-    #     form = CircuitForm(request.POST, instance=circuit)
-    #     if form.is_valid():
-    #         circuit = form.save()
-    #         return HttpResponseRedirect(reverse('circuits.details', args=[circuit.pk]))
-    # else:
-    # form = CircuitForm(instance=circuit)
-
-    return render(request, 'circuit/boulders.html', {'circuit': circuit})
+    return render(request, 'refection/create.html', {'form': form, 'update': True, 'refection': refection})
 
 ####################################################################################################
 
 @login_required
-def openers(request, circuit_id):
+def persons(request, refection_id):
 
-    circuit = get_object_or_404(Circuit, pk=circuit_id)
+    refection = get_object_or_404(Refection, pk=refection_id)
 
     person_data = [{'pk':person.pk, 'name':person.name} for person in Person.objects.all()] # last_first_
     person_data_json = json.dumps(person_data)
 
-    return render(request, 'circuit/openers.html', {'circuit': circuit, 'person_data': person_data_json})
+    return render(request, 'refection/persons.html', {'refection': refection, 'person_data': person_data_json})
 
 ####################################################################################################
 
 @login_required
-def delete(request, circuit_id):
+def delete(request, refection_id):
 
-    circuit = get_object_or_404(Circuit, pk=circuit_id)
-    messages.success(request, "Circuit «{0.name}» supprimé".format(circuit))
-    circuit.delete()
+    refection = get_object_or_404(Refection, pk=refection_id)
+    messages.success(request, "Refection «{0.name}» supprimé".format(refection))
+    refection.delete()
 
-    return HttpResponseRedirect(reverse('circuits.index'))
+    return HttpResponseRedirect(reverse('refection.index'))
 
 ####################################################################################################
 #
