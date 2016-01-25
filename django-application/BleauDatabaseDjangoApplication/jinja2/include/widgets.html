@@ -1,0 +1,37 @@
+{# -*- engine: jinja2 -*- #}
+
+{# {% from "include/widgets.html" import delete_modal %} #}
+
+{% macro update_delete_button_group(href, modal_id="deleteModal") -%}
+    <div class="btn-group m-b-1" role="group">
+      <a role="button" class="btn btn-primary" href="{{ href }}">
+	<i class="fa fa-pencil-square-o"></i></a>
+      <a role="button" class="btn btn-danger" data-toggle="modal" data-target="#{{ modal_id }}">
+	<i class="fa fa-trash"></i></a>
+    </div>
+{%- endmacro %}
+
+{% macro delete_modal(title, body, href, id="deleteModal") -%}
+  <div class="modal fade" id={{ id }} tabindex="-1" role="dialog" aria-labelledby="deleteMassifModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+	  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title" id="deleteMassifModalLabel">{{ title }}</h3>
+        </div>
+
+        <div class="modal-body">
+          <p>{{ body }}</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">{{ _("Cancel") }}</button>
+          <a role="button" class="btn btn-danger" href="{{ href }}">{{ _("Delete") }}</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+{%- endmacro %}

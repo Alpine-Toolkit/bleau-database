@@ -1,5 +1,6 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
+{% from "include/widgets.html" import update_delete_button_group, delete_modal %}
 
 {% block title %} - {{ circuit.massif.name }} ~ {{ circuit.name }}{% endblock %}
 
@@ -12,32 +13,13 @@
 {% block content %}
   <h1>
     {{ circuit.massif.name }} ~ {{ circuit.name }}
-    <div class="btn-group m-b-1" role="group">
-      <a role="button" class="btn btn-primary" href="{{ url('circuit.update', circuit.pk) }}">
-	<i class="fa fa-pencil-square-o"></i></a>
-      <a role="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteCircuitModal">
-	<i class="fa fa-trash"></i></a>
-    </div>
+    {{ update_delete_button_group(href=url('circuit.update', circuit.pk)) }}
   </h1>
 
-  <div class="modal fade" id="deleteCircuitModal" tabindex="-1" role="dialog" aria-labelledby="deleteCircuitModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-	  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span></button>
-          <h3 class="modal-title" id="deleteCircuitModalLabel">{{ _("Delete circuit") }}</h3>
-        </div>
-        <div class="modal-body">
-          <p>{{ _("Are you sure you want to delete this circuit?") }}</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">{{ _("Cancel") }}</button>
-          <a role="button" class="btn btn-danger" href="{{ url('circuit.delete', circuit.pk) }}">{{ _("Delete circuit") }}</a>
-        </div>
-      </div>
-    </div>
-  </div>
+  {{ delete_modal(title=_("Delete circuit"),
+		  body= _("Are you sure you want to delete this circuit?"),
+		  href=url('circuit.delete', circuit.pk),
+     ) }}
 
   <h2>Informations</h2>
   <dl>

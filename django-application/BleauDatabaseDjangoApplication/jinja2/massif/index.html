@@ -18,6 +18,7 @@
     <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i> Rechercher</button>
   </form>
   <br>
+
   {% if massifs %}
     {% for group in massifs|groupby('first_letter') %}
       <h2>{{ group.grouper|upper }}</h2>
