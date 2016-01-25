@@ -42,7 +42,7 @@
 {% endmacro %}
 
 {% macro circuit_openers(circuit) %}
-  {% for person in circuit.openers %}
+  {% for person in circuit.openers.all() %}
     <a href="{{ url("person.details", person.pk) }}">
       {{ person.name }}</a>{% if not loop.last %},{% endif %}
   {% endfor %}

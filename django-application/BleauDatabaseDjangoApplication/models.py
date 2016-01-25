@@ -123,7 +123,7 @@ class Person(Model):
     @property
     def opened_circuits(self):
 
-        return self.circuits.all()
+        return self.circuit_set.all()
 
     ##############################################
 
