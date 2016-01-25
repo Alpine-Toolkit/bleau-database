@@ -31,10 +31,14 @@ class YourModelAdmin(VersionAdmin):
 
 ####################################################################################################
 
-from .models import (Profile,
-                     Person, Place,
-                     Massif,
-                     Refection, Circuit)
+from .models import (
+    Circuit,
+    Massif,
+    Person,
+    Place,
+    Profile,
+    Refection,
+)
 
 ####################################################################################################
 
@@ -42,17 +46,21 @@ from .models import (Profile,
 class ProfileAdmin(admin.ModelAdmin):
     list_display = ('user',)
 
-@admin.register(Place)
-class PlaceAdmin(YourModelAdmin, admin.OSMGeoAdmin): # admin.ModelAdmin
+####################################################################################################
+
+@admin.register(Circuit)
+class CircuitAdmin(YourModelAdmin, admin.OSMGeoAdmin):
     pass
 
 @admin.register(Massif)
 class MassifAdmin(YourModelAdmin, admin.OSMGeoAdmin):
     pass
 
-@admin.register(Circuit)
-class CircuitAdmin(YourModelAdmin, admin.OSMGeoAdmin):
+@admin.register(Place)
+class PlaceAdmin(YourModelAdmin, admin.OSMGeoAdmin):
     pass
+
+####################################################################################################
 
 @admin.register(Person)
 class PersonAdmin(YourModelAdmin, admin.ModelAdmin):
@@ -61,8 +69,6 @@ class PersonAdmin(YourModelAdmin, admin.ModelAdmin):
 @admin.register(Refection)
 class RefectionAdmin(YourModelAdmin, admin.ModelAdmin):
     pass
-
-# admin.site.register(Place, VersionAdmin)
 
 ####################################################################################################
 #

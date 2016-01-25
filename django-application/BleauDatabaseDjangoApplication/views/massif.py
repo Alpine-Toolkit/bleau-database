@@ -114,11 +114,11 @@ class MassifListView(FormMixin, ListView):
         # cf. django/views/generic/list.py BaseListView
 
         self.object_list = self.get_queryset()
-        
+
         form = self.get_form()
         if form.is_valid():
             self.object_list = self.object_list.filter(**form.filter_by())
-        
+
         context = self.get_context_data(form=form)
         return self.render_to_response(context)
 
@@ -155,7 +155,7 @@ def create(request):
 def update(request, massif_id):
 
     massif = get_object_or_404(Massif, pk=massif_id)
-    
+
     if request.method == 'POST':
         form = MassifForm(request.POST, instance=massif)
         if form.is_valid():
@@ -163,7 +163,7 @@ def update(request, massif_id):
             return HttpResponseRedirect(reverse('massifs.details', args=[massif.pk]))
     else:
         form = MassifForm(instance=massif)
-    
+
     return render(request, 'massif/create.html', {'form': form, 'update': True, 'massif': massif})
 
 ####################################################################################################
@@ -171,11 +171,10 @@ def update(request, massif_id):
 @login_required
 def delete(request, massif_id):
 
-    # Fixme: confirmation
     massif = get_object_or_404(Massif, pk=massif_id)
     messages.success(request, "Massif «{0.name}» supprimé".format(massif))
     massif.delete()
-    
+
     return HttpResponseRedirect(reverse('massifs.index'))
 
 ####################################################################################################

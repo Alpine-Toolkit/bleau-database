@@ -102,13 +102,13 @@ class PlaceListView(FormMixin, ListView):
     def get(self, request, *args, **kwargs):
 
         # cf. django/views/generic/list.py BaseListView
-        
+
         self.object_list = self.get_queryset()
-        
+
         form = self.get_form()
         if form.is_valid():
             self.object_list = self.object_list.filter(**form.filter_by())
-        
+
         context = self.get_context_data(form=form)
         return self.render_to_response(context)
 
@@ -118,11 +118,6 @@ class PlaceListView(FormMixin, ListView):
 def details(request, place_id):
 
     place = get_object_or_404(Place, pk=place_id)
-
-    # deprecated ?
-    # return render_to_response('place/details.html',
-    #                           {'place': place},
-    #                           context_instance=RequestContext(request))
     return render(request, 'place/details.html', {'place': place})
 
 ####################################################################################################
@@ -166,7 +161,6 @@ def update(request, place_id):
 @login_required
 def delete(request, place_id):
 
-    # Fixme: confirmation
     place = get_object_or_404(Place, pk=place_id)
     messages.success(request, "Place «{0.name}» supprimé".format(place))
     place.delete()

@@ -102,13 +102,13 @@ class PersonListView(FormMixin, ListView):
     def get(self, request, *args, **kwargs):
 
         # cf. django/views/generic/list.py BaseListView
-        
+
         self.object_list = self.get_queryset()
-        
+
         form = self.get_form()
         if form.is_valid():
             self.object_list = self.object_list.filter(**form.filter_by())
-        
+
         context = self.get_context_data(form=form)
         return self.render_to_response(context)
 
@@ -119,10 +119,6 @@ def details(request, person_id):
 
     person = get_object_or_404(Person, pk=person_id)
 
-    # deprecated ?
-    # return render_to_response('person/details.html',
-    #                           {'person': person},
-    #                           context_instance=RequestContext(request))
     return render(request, 'person/details.html', {'person': person})
 
 ####################################################################################################
@@ -166,7 +162,6 @@ def update(request, person_id):
 @login_required
 def delete(request, person_id):
 
-    # Fixme: confirmation
     person = get_object_or_404(Person, pk=person_id)
     messages.success(request, "Person «{0.name}» supprimé".format(person))
     person.delete()

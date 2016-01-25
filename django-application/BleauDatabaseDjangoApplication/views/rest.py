@@ -24,10 +24,36 @@ from rest_framework import viewsets, permissions
 
 ####################################################################################################
 
-from ..serializers import (PersonSerializer, PlaceSerializer,
-                           MassifSerializer,
-                           CircuitSerializer, RefectionSerializer)
-from ..models import Person, Place, Massif, Circuit, Refection
+from ..serializers import (
+    CircuitSerializer,
+    MassifSerializer,
+    PersonSerializer,
+    PlaceSerializer,
+    RefectionSerializer,
+)
+
+from ..models import (
+    Circuit,
+    Massif,
+    Person,
+    Place,
+    Refection,
+
+####################################################################################################
+
+class CircuitViewSet(viewsets.ModelViewSet):
+
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
+    queryset = Circuit.objects.all()
+    serializer_class = CircuitSerializer
+
+####################################################################################################
+
+class MassifViewSet(viewsets.ModelViewSet):
+
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
+    queryset = Massif.objects.all()
+    serializer_class = MassifSerializer
 
 ####################################################################################################
 
@@ -44,22 +70,6 @@ class PlaceViewSet(viewsets.ModelViewSet):
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     queryset = Place.objects.all()
     serializer_class = PlaceSerializer
-
-####################################################################################################
-
-class MassifViewSet(viewsets.ModelViewSet):
-
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
-    queryset = Massif.objects.all()
-    serializer_class = MassifSerializer
-
-####################################################################################################
-
-class CircuitViewSet(viewsets.ModelViewSet):
-
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
-    queryset = Circuit.objects.all()
-    serializer_class = CircuitSerializer
 
 ####################################################################################################
 

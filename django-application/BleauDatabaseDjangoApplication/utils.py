@@ -1,7 +1,7 @@
 ####################################################################################################
 #
 # Bleau Database - A database of the bouldering area of Fontainebleau
-# Copyright (C) Salvaire Fabrice 2016
+# Copyright (C) 2016 Fabrice Salvaire
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -20,20 +20,14 @@
 
 ####################################################################################################
 
-from django.contrib.staticfiles.storage import staticfiles_storage
-from django.core.urlresolvers import reverse
-
-from jinja2 import Environment
+import unicodedata
 
 ####################################################################################################
 
-def environment(**options):
-    env = Environment(**options)
-    env.globals.update({
-        'static': staticfiles_storage.url,
-        'url': reverse,
-    })
-    return env
+def strip_accent(s):
+    """Strip the accents in a string"""
+    return ''.join((c for c in unicodedata.normalize('NFD', s)
+                    if unicodedata.category(c) != 'Mn'))
 
 ####################################################################################################
 #

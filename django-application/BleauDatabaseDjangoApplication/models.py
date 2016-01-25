@@ -20,11 +20,10 @@
 
 ####################################################################################################
 
-import unicodedata
-
 from django.contrib.auth.models import User
+from django.contrib.postgres.fields import JSONField
+from django.utils.translation import ugettext_lazy as _
 
-# from django.db import models
 from django.contrib.gis.db import models
 from django.contrib.gis.db.models import (Model,
                                           ForeignKey,
@@ -32,21 +31,17 @@ from django.contrib.gis.db.models import (Model,
                                           CharField, TextField,
                                           PointField,
                                           ManyToManyField)
-from django.contrib.postgres.fields import JSONField
 
 ####################################################################################################
 
 from .settings import LANGUAGES
-
-####################################################################################################
-
-def strip_accent(s):
-    return ''.join((c for c in unicodedata.normalize('NFD', s)
-                    if unicodedata.category(c) != 'Mn'))
+from .utils import strip_accent
 
 ####################################################################################################
 
 class Profile(models.Model):
+
+    """This class defines a user profile."""
 
     class Meta:
         app_label = 'BleauDatabaseDjangoApplication'
@@ -69,9 +64,9 @@ class Place(Model):
         app_label = 'BleauDatabaseDjangoApplication'
 
     CATEGORIES_CHOICES = (
-        ('parking', 'parking'),
-        ('gare', 'gare'),
-        ("point d'eau", "point d'eau"),
+        ('parking', _('parking')),
+        ('gare', _('gare')),
+        ("point d'eau", _("point d'eau")),
     )
 
     # creation_date = models.DateTimeField(auto_now_add=True)
@@ -210,7 +205,14 @@ class Circuit(Model):
 
     @property
     def name(self):
-        return 'N°{0.number}'.format(self)
+        return 'N° {0.number}'.format(self)
+
+    ##############################################
+
+    @property
+    def full_name(self):
+        pattern = '{0.massif} ' + _('N° ') + '{0.number} {0.grade} {0.colour}'
+        return pattern.format(self)
 
 ####################################################################################################
 

@@ -26,21 +26,13 @@ from django.core.urlresolvers import reverse_lazy
 from django.views.generic import TemplateView
 
 from rest_framework import routers
-from rest_framework.urlpatterns import format_suffix_patterns
-
-####################################################################################################
-
-from .views.account import (AuthenticationForm,
-                            PasswordChangeForm,
-                            PasswordResetForm,
-                            SetPasswordForm)
-
-from .views.main import MainView
 
 ####################################################################################################
 #
 # Main page
 #
+
+# from .views.main import MainView
 
 urlpatterns = [
     # url(r'^$', MainView.as_view(), name='index'),
@@ -48,12 +40,15 @@ urlpatterns = [
     url(r'^$',
         TemplateView.as_view(template_name='main.html'),
         name='index'),
+
     url(r'^about$',
         TemplateView.as_view(template_name='about.html'),
         name='about'),
+
     url(r'^about-rest-api$',
         TemplateView.as_view(template_name='about-rest-api.html'),
         name='about-rest-api'),
+
     url(r'^mentions-legales$',
         TemplateView.as_view(template_name='mentions-legales.html'),
         name='mentions-legales'),
@@ -66,12 +61,21 @@ urlpatterns = [
 
 import django.contrib.auth.views as auth_views
 
+from .views.account import (
+    AuthenticationForm,
+    PasswordChangeForm,
+    PasswordResetForm,
+    SetPasswordForm,
+)
+
+from .views import account as account_views
+
 urlpatterns += [
    url(r'^account/login/$',
        auth_views.login,
        {'template_name': 'account/login.html',
         'authentication_form': AuthenticationForm},
-       name='account.login'), # Fixme: redirect to home page
+       name='account.login'),
 
     url(r'^account/logout/$',
         auth_views.logout,
@@ -84,6 +88,10 @@ urlpatterns += [
          'password_change_form': PasswordChangeForm,
          'post_change_redirect': reverse_lazy('account.password_change_done')},
         name='account.password_change'),
+
+    url(r'^account/password/change/done/$',
+        account_views.password_change_done,
+        name='account.password_change_done'),
 
     url(r'^account/password/reset/$',
         auth_views.password_reset,
@@ -103,16 +111,11 @@ urlpatterns += [
         auth_views.password_reset_complete,
         {'template_name': 'account/password_reset_complete.html'},
         name='password_reset_complete'),
-]
 
-####################################################################################################
-#
-# Profile
-#
+    url(r'^account/password/reset/done/$',
+        account_views.password_reset_done,
+        name='account.password_reset_done'),
 
-from .views import account as account_views
-
-urlpatterns += [
     url(r'^account/profile/$',
         account_views.profile,
         name='account.profile'),
@@ -120,14 +123,6 @@ urlpatterns += [
     url(r'^account/profile/update/$',
         account_views.update,
         name='account.profile.update'),
-
-    url(r'^account/password/change/done/$',
-        account_views.password_change_done,
-        name='account.password_change_done'),
-
-    url(r'^account/password/reset/done/$',
-        account_views.password_reset_done,
-        name='account.password_reset_done'),
 
     url(r'^account/delete/$',
         account_views.delete,
@@ -241,10 +236,6 @@ urlpatterns += [
         circuit_views.update,
         name='circuit.update'),
 
-    url(r'^circuit/(?P<circuit_id>\d+)/delete/$',
-        circuit_views.delete,
-        name='circuit.delete'),
-
     url(r'^circuit/(?P<circuit_id>\d+)/boulder/$', # s?
         circuit_views.boulders,
         name='circuit.boulders'),
@@ -252,6 +243,10 @@ urlpatterns += [
     url(r'^circuit/(?P<circuit_id>\d+)/opener/$',
         circuit_views.openers,
         name='circuit.openers'),
+
+    url(r'^circuit/(?P<circuit_id>\d+)/delete/$',
+        circuit_views.delete,
+        name='circuit.delete'),
 ]
 
 ####################################################################################################
@@ -274,13 +269,13 @@ urlpatterns += [
         refection_views.update,
         name='refection.update'),
 
-    url(r'^refection/(?P<refection_id>\d+)/delete/$',
-        refection_views.delete,
-        name='refection.delete'),
-
     url(r'^refection/(?P<refection_id>\d+)/persons/$',
         refection_views.persons,
         name='refection.persons'),
+
+    url(r'^refection/(?P<refection_id>\d+)/delete/$',
+        refection_views.delete,
+        name='refection.delete'),
 ]
 
 ####################################################################################################

@@ -24,7 +24,27 @@ from rest_framework import serializers
 
 ####################################################################################################
 
-from .models import Person, Place, Massif, Circuit, Refection
+from .models import (
+    Circuit,
+    Massif,
+    Person,
+    Place,
+    Refection,
+)
+
+####################################################################################################
+
+class CircuitSerializer(serializers.HyperlinkedModelSerializer):
+
+    class Meta:
+        model = Circuit
+
+####################################################################################################
+
+class MassifSerializer(serializers.HyperlinkedModelSerializer):
+
+    class Meta:
+        model = Massif
 
 ####################################################################################################
 
@@ -39,20 +59,6 @@ class PlaceSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Place
-
-####################################################################################################
-
-class MassifSerializer(serializers.HyperlinkedModelSerializer):
-
-    class Meta:
-        model = Massif
-
-####################################################################################################
-
-class CircuitSerializer(serializers.HyperlinkedModelSerializer):
-
-    class Meta:
-        model = Circuit
 
 ####################################################################################################
 
