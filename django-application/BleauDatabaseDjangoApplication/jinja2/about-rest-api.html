@@ -9,10 +9,10 @@
 
 {% block content %}
     <p>
-    <a class="btn btn-primary btn-lg m-b-1" href="/api-docs" role="button">
-      REST API Doc</a>
-    <a class="btn btn-primary btn-lg m-b-1" href="/api" role="button">
-      REST API</a>
+      <a class="btn btn-primary btn-lg m-b-1" href="/api-docs" role="button">
+	REST API Doc</a>
+      <a class="btn btn-primary btn-lg m-b-1" href="/api" role="button">
+	REST API</a>
     </p>
 
     <h2>Mode d'emploi</h2>
@@ -46,14 +46,19 @@ json="@post.json"
 }
     </pre>
     <p>On peut à présent utiliser le programme <strong>curl</strong> pour tester les cinq types d'opérations.</p>
+
     <p>Get</p>
     <pre>curl --header 'Accept: application/json; indent=4' ${url}</pre>
+
     <p>Create</p>
     <pre>curl --request POST --header 'Content-type: application/json' --data "${json}" -user ${user}:${password} ${url}</pre>
+
     <p>Update</p>
     <pre>curl --request PUT --header 'Content-type:application/json' --data "${json}" -user ${user}:${password} ${url}</pre>
+
     <p>Partial Update</p>
     <pre>curl --request PATCH --header 'Content-type: application/json' --data "${json}" -user ${user}:${password} ${url}</pre>
+
     <p>Delete</p>
     <pre>curl --request DELETE -user ${user}:${password} ${url}</pre>
 {% endblock %}
