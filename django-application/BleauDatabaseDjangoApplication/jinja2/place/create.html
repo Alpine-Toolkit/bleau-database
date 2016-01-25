@@ -2,9 +2,9 @@
 {% extends "include/base.html" %}
 {% from "include/widgets.html" import update_form %}
 
-{#
-{% block script %}
-<script type="text/javascript" src="http://openlayers.org/api/2.13/OpenLayers.js"></script>
+{# TypeError: OpenLayers.Layer.OSM.Mapnik is not a constructor
+{% block head %}
+  <script type="text/javascript" src="http://openlayers.org/api/2.13/OpenLayers.js"></script>
 {% endblock %}
 #}
 
