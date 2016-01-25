@@ -1,23 +1,17 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
+{% from "include/widgets.html" import search_by_name %}
 
 {% block breadcrumb_li %}
-  <li class="active"> Persons </li>
+  <li class="active">{{ _('Persons') }}</li>
 {% endblock %}
 
 {% block content %}
-  <h2>Persons</h2>
+  <h2>{{ _('Persons') }}</h2>
 
-  <form class="form-inline" action="{{ url('person.index') }}">
-    {% csrf_token %}
-    <div class="form-group">
-      <label for="id_name">Nom</label>
-      <input type="search" class="form-control" id="id_name"
-	     name="name" personholder="Name" value="{{ form.name.value() }}">
-    </div>
-    <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i> Rechercher</button>
-  </form>
+  {{ search_by_name(form) }}
   <br>
+
   {% if persons %}
     {% for group in persons|groupby('first_letter') %}
       <h2>{{ group.grouper|upper }}</h2>
@@ -28,6 +22,6 @@
       </ul>
     {% endfor %}
   {% else %}
-    <p>Aucune personne</p>
+    <p>{{ _('Any person' }}</p>
   {% endif %}
 {% endblock %}

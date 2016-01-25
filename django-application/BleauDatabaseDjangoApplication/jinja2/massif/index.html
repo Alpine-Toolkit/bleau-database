@@ -1,22 +1,15 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
+{% from "include/widgets.html" import search_by_name %}
 
 {% block breadcrumb_li %}
-  <li class="active"> Massifs </li>
+  <li class="active">{{ _('Massifs') }}</li>
 {% endblock %}
 
 {% block content %}
-  <h2>Massifs</h2>
+  <h2>{{ _('Massifs') }}</h2>
 
-  <form class="form-inline" action="{{ url('massif.index') }}">
-    {% csrf_token %}
-    <div class="form-group">
-      <label for="id_name">Nom</label>
-      <input type="search" class="form-control" id="id_name"
-	     name="name" placeholder="Name" value="{{ form.name.value() }}">
-    </div>
-    <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i> Rechercher</button>
-  </form>
+  {{ search_by_name(form) }}
   <br>
 
   {% if massifs %}
@@ -29,6 +22,6 @@
       </ul>
     {% endfor %}
   {% else %}
-    <p>Auncun massif</p>
+    <p>{{ _('Any massif') }}</p>
   {% endif %}
 {% endblock %}

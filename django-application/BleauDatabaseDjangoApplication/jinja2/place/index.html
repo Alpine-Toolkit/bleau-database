@@ -1,23 +1,17 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
+{% from "include/widgets.html" import search_by_name %}
 
 {% block breadcrumb_li %}
-  <li class="active"> Places </li>
+  <li class="active">{{ _('Places') }}</li>
 {% endblock %}
 
 {% block content %}
-  <h2>Places</h2>
+  <h2>{{ _('Places') }}</h2>
 
-  <form class="form-inline" action="{{ url('place.index') }}">
-    {% csrf_token %}
-    <div class="form-group">
-      <label for="id_name">Nom</label>
-      <input type="search" class="form-control" id="id_name"
-	     name="name" placeholder="Name" value="{{ form.name.value() }}">
-    </div>
-    <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i> Rechercher</button>
-  </form>
+  {{ search_by_name(form) }}
   <br>
+
   {% if places %}
     {% for category in ("gare", "parking", "point d'eau") %}
       <h2>{{ category|capitalize }}</h2> {# ...s, en #}
@@ -30,6 +24,6 @@
       </ul>
     {%- endfor %}
   {% else %}
-    <p>Auncune place</p>
+    <p>{{ _('Any place') }}</p>
   {% endif %}
 {% endblock %}

@@ -2,6 +2,18 @@
 
 {# {% from "include/widgets.html" import delete_modal %} #}
 
+{% macro search_by_name(form) -%}
+  <form class="form-inline" action=".">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="id_name">{{ _('Name') }}</label>
+      <input type="search" class="form-control" id="id_name"
+	     name="name" placeholder="Name" value="{{ form.name.value() }}">
+    </div>
+    <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i> {{ _('Search') }}</button>
+  </form>
+{%- endmacro %}
+
 {% macro update_delete_button_group(href, modal_id="deleteModal") -%}
     <div class="btn-group m-b-1" role="group">
       <a role="button" class="btn btn-primary" href="{{ href }}">
