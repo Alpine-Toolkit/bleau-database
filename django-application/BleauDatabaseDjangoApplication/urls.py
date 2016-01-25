@@ -257,7 +257,7 @@ urlpatterns += [
 from .views import refection as refection_views
 
 urlpatterns += [
-    url(r'^refection/create/$',
+    url(r'^refection/create/$', # Fixme: (?P<circuit_id>\d+)
         refection_views.create,
         name='refection.create'),
 

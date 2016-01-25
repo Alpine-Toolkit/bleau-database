@@ -1,6 +1,6 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
-{% from "include/widgets.html" import update_delete_button_group, delete_modal %}
+{% from "include/widgets.html" import update_delete_button_group, delete_modal, new_button_group %}
 
 {% block title %} - {{ massif.name }}{% endblock %}
 
@@ -62,14 +62,16 @@
     </tbody>
   </table>
 
-  <h2>{{ _("Circuits") }}</h2>
+  <h2>{{ _("Circuits") }}
+    {{ new_button_group(title=_('New circuit'), href=url('circuit.create')) }}
+  </h2>
   <div class="row">
     <div class="col-xl-6">
       <table class="table table-sm">
 	<tbody>
 	  {% for circuit in massif.circuits %}
 	    <tr>
-	      <td><a href="{{ url('circuit.details', circuit.pk) }}">N°{{ circuit.number }}</a></td>
+	      <td><a href="{{ url('circuit.details', circuit.pk) }}">{{ circuit.name }}</a></td>
 	      <td>{{ circuit.grade }}</td>
 	      <td>{{ circuit.colour }}</td>
 	    </tr>

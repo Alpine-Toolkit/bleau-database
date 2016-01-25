@@ -1,42 +1,33 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
+{% from "include/widgets.html" import update_form %}
 
-{% block title %} - {{ person.name }}{% endblock %}
+{% block title %} -
+  {% if update %}
+    {{ _('Update') }} {{ person.name }}
+  {% else %}
+    {{ _('New person') }}
+  {% endif %}
+{% endblock %}
 
 {% block breadcrumb_li %}
-  <li><a href="{{ url('person.index') }}">Persons</a> </li>
-  <li class="active">{{ person.name }}</li>
-  {# {% update|yesno:_("Update,Create") "" %}  #}
+  <li><a href="{{ url('person.index') }}">{{ _('Persons') }}</a></li>
+  {% if update %}
+    <li><a href="{{ url('person.details', person.pk) }}">{{ person.name }}</a></li>
+    <li class="active">{{ _('Update') }}</li>
+  {% else %}
+    <li class="active">{{ _('New person') }}</li>
+  {% endif %}
 {% endblock %}
 
 {% block content %}
   <h2>
     {% if update %}
-      Mettre à jour «{{ person.name }}»
+      {{ _('Update') }} «{{ person.name }}»
     {% else %}
-      Nouveau person
+      {{ _('New person') }}
     {% endif %}
   </h2>
 
-  <div class="row">
-    <div class="col-xl-12">
-      <form action="." method="post">
-	{% csrf_token %}
-	{% for field in form.visible_fields() %}
-          <div class="form-group row{% if field.errors %} has-error{% endif %}">
-	    <label class="col-xl-4 form-control-label" for="{{ field.id_for_label }}">{{ field.label }}</label>
-	    <div class="col-xl-8">
-	      {{ field }}
-	      {% for error in field.errors %}<span class="help-block">{{ error }}</span>{% endfor %}
-	    </div>
-          </div>
-	{% endfor %}
-	<div class="form-group row">
-	  <div class="col-xl-8 col-xl-offset-4">
-            <button type="submit" class="btn btn-primary">Mettre à jour</button> {# {{ update|yesno:_("Update,Create") }} #}
-	  </div>
-	</div>
-      </form>
-    </div>
-  </div>
+  {{ update_form(form) }}
 {% endblock %}

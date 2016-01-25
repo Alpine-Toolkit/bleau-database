@@ -1,13 +1,15 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
-{% from "include/widgets.html" import search_by_name %}
+{% from "include/widgets.html" import new_button_group, search_by_name %}
 
 {% block breadcrumb_li %}
   <li class="active">{{ _('Persons') }}</li>
 {% endblock %}
 
 {% block content %}
-  <h2>{{ _('Persons') }}</h2>
+  <h2>{{ _('Persons') }}
+    {{ new_button_group(title=_('New person'), href=url('person.create')) }}
+  </h2>
 
   {{ search_by_name(form) }}
   <br>
@@ -22,6 +24,6 @@
       </ul>
     {% endfor %}
   {% else %}
-    <p>{{ _('Any person' }}</p>
+    <p>{{ _('Any person') }}</p>
   {% endif %}
 {% endblock %}

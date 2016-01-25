@@ -1,42 +1,33 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
+{% from "include/widgets.html" import update_form %}
 
-{% block title %} - {{ massif.name }}{% endblock %}
+{% block title %} -
+  {% if update %}
+    {{ _('Update') }} {{ massif.name }}
+  {% else %}
+    {{ _('New massif') }}
+  {% endif %}
+{% endblock %}
 
 {% block breadcrumb_li %}
-  <li><a href="{{ url('massif.index') }}">Massifs</a></li>
-  <li><a href="{{ url('massif.details', massif.pk) }}">{{ massif.name }}</a></li>
-  <li class="active">{{ _('Update') if update else _('Create') }}</li>
+  <li><a href="{{ url('massif.index') }}">{{ _('Massifs') }}</a></li>
+  {% if update %}
+    <li><a href="{{ url('massif.details', massif.pk) }}">{{ massif.name }}</a></li>
+    <li class="active">{{ _('Update') }}</li>
+  {% else %}
+    <li class="active">{{ _('New massif') }}</li>
+  {% endif %}
 {% endblock %}
 
 {% block content %}
   <h2>
     {% if update %}
-      Mettre à jour «{{ massif.name }}»
+      {{ _('Update') }} «{{ massif.name }}»
     {% else %}
-      Nouveau massif
+      {{ _('New massif') }}
     {% endif %}
   </h2>
 
-  <div class="row">
-    <div class="col-xl-12">
-      <form action="." method="post">
-	{% csrf_token %}
-	{% for field in form.visible_fields() %}
-          <div class="form-group row{% if field.errors %} has-error{% endif %}">
-	    <label class="col-xl-4 form-control-label" for="{{ field.id_for_label }}">{{ field.label }}</label>
-	    <div class="col-xl-8">
-	      {{ field }}
-	      {% for error in field.errors %}<span class="help-block">{{ error }}</span>{% endfor %}
-	    </div>
-          </div>
-	{% endfor %}
-	<div class="form-group row">
-	  <div class="col-xl-8 col-xl-offset-4">
-            <button type="submit" class="btn btn-primary">Mettre à jour</button> {# {{ update|yesno:_("Update,Create") }} #}
-	  </div>
-	</div>
-      </form>
-    </div>
-  </div>
+  {{ update_form(form) }}
 {% endblock %}
