@@ -10,20 +10,20 @@ psql -U postgres < ${sql_path}/create-db.sql
 
 rm -rf BleauDatabaseDjangoApplication/migrations
 
-./manage.py makemigrations
-./manage.py migrate
+${path}/../manage.py makemigrations
+${path}/../manage.py migrate
 
-./manage.py makemigrations BleauDatabaseDjangoApplication
-./manage.py migrate BleauDatabaseDjangoApplication
+${path}/../manage.py makemigrations BleauDatabaseDjangoApplication
+${path}/../manage.py migrate BleauDatabaseDjangoApplication
 
-./manage.py createsuperuser --noinput --username fabrice --email fabrice.salvaire@orange.fr
+${path}/../manage.py createsuperuser --noinput --username fabrice --email fabrice.salvaire@orange.fr
 psql -U postgres < ${sql_path}/init-password.sql
 
-./manage.py createinitialrevisions
+${path}/../manage.py createinitialrevisions
 
-# pg_dump -U postgres -d bleaudb > ${sql_path}/bleaudb.sql
+pg_dump -U postgres -d bleaudb > ${sql_path}/bleaudb.sql
 
-# import-database ../data/bleau.json
+${path}/import-database ../data/bleau.json
 
 ####################################################################################################
 #
