@@ -141,10 +141,11 @@ def openers(request, circuit_id):
 def delete(request, circuit_id):
 
     circuit = get_object_or_404(Circuit, pk=circuit_id)
+    massif = circuit.massif
     messages.success(request, _("Circuit «{0.name}» supprimé").format(circuit))
     circuit.delete()
 
-    return HttpResponseRedirect(reverse('circuit.index'))
+    return HttpResponseRedirect(reverse('massif.details', args=[massif.pk]))
 
 ####################################################################################################
 #
