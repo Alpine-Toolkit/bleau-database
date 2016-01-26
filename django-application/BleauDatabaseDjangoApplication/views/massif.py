@@ -43,7 +43,7 @@ class MassifForm(ModelForm):
         fields = (
             'name',
             'alternative_name',
-            'secteur',
+            'sector',
             'chaos_type',
             'note',
             # 'coordinate',

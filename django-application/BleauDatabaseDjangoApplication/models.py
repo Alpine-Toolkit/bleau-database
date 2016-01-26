@@ -148,7 +148,7 @@ class Massif(Model):
     note = TextField(verbose_name=_('note'), null=True, blank=True)
     parcelles = CharField(verbose_name=_('parcelles'), max_length=50, null=True, blank=True) # Fixme: fr
     rdv = TextField(verbose_name=_('Rdv GUMS'), null=True, blank=True) # Fixme: fr
-    secteur = CharField(verbose_name=_('secteur'), max_length=100) # Fixme: fr, entity ?
+    sector = CharField(verbose_name=_('sector'), max_length=100) # Fixme: entity ?
     velo = TextField(verbose_name=_('velo'), null=True, blank=True) # Fixme: fr, gare
 
     ##############################################

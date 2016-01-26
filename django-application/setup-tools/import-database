@@ -84,7 +84,7 @@ for massif in bleau_database.massifs:
         note=massif.note,
         parcelles=massif.parcelles,
         rdv=massif.rdv,
-        secteur=massif.secteur,
+        sector=massif.secteur,
         velo=massif.velo,
     )
     orm_massif.save()
