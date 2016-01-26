@@ -75,10 +75,12 @@
     <dd>{% if circuit.note %}{{ circuit.note|safe }}{% endif %}</dd>
     <dt>Topos</dt>
     <dd>
-      {% for topo in circuit.topos %}
-	<i class="fa fa-download"></i> <a href="{{ topo }}">{{ topo }}</a>
-	<br>
-      {% endfor %}
+      {% if circuit.topos %}
+	{% for topo in circuit.topos %}
+	  <i class="fa fa-download"></i> <a href="{{ topo }}">{{ topo }}</a>
+	  <br>
+	{% endfor %}
+      {% endif %}
     </dd>
   </dl>
 
