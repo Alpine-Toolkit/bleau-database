@@ -7,7 +7,7 @@
 
 {% block title %} -
   {% if update %}
-    {{ _('Update') }} {{ refection.name }}
+    {{ _('Update') }} {{ _('Refection') }} {{ circuit.full_name }} {{ refection.date }}
   {% else %}
     {{ _('New refection') }}
   {% endif %}
@@ -16,9 +16,10 @@
 {% block breadcrumb_li %}
   <li><a href="{{ url('massif.index') }}">Massifs</a></li>
   <li><a href="{{ url('massif.details', massif.pk) }}">{{ massif.name }}</a></li>
-  <li><a href="{{ url('massif.details', circuit.pk) }}">{{ circuit.name }}</a></li>
+  <li><a href="{{ url('circuit.details', circuit.pk) }}">{{ circuit.name }}</a></li>
   {% if update %}
-    <li class="active">{{ _('Update refection') }} {{ refection.date }}</li>
+    <li><a href="{{ url('refection.details', refection.pk) }}">{{ _('Refection') }} {{ refection.date }}</a></li>
+    <li class="active">{{ _('Update') }}</li>
   {% else %}
     <li class="active">{{ _('New refection') }}</li>
   {% endif %}
@@ -27,7 +28,7 @@
 {% block content %}
   <h2>
     {% if update %}
-      {{ _('Update') }} «{{ refection.date }}»
+      {{ _('Update') }} {{ _('Refection') }} {{ circuit.full_name }} {{ refection.date }}
     {% else %}
       {{ _('New refection') }}
     {% endif %}

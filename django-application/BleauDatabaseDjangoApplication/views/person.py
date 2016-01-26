@@ -58,7 +58,7 @@ class PersonForm(ModelForm):
 
 class PersonSearchForm(Form):
 
-    name = CharField(label=_('Nom'), required=False, initial='')
+    name = CharField(label=_('Name'), required=False, initial='')
 
     ##############################################
 
@@ -129,10 +129,10 @@ def create(request):
         if form.is_valid():
             person = form.save(commit=False)
             person.save()
-            messages.success(request, "Person créé avec succès.")
+            messages.success(request, _("Person créé avec succès."))
             return HttpResponseRedirect(reverse('person.details', args=[person.pk]))
         else:
-            messages.error(request, "Des informations sont manquantes ou incorrectes")
+            messages.error(request, _("Des informations sont manquantes ou incorrectes"))
     else:
         form = PersonForm()
 
@@ -161,7 +161,7 @@ def update(request, person_id):
 def delete(request, person_id):
 
     person = get_object_or_404(Person, pk=person_id)
-    messages.success(request, "Person «{0.name}» supprimé".format(person))
+    messages.success(request, _("Person «{0.name}» supprimé").format(person))
     person.delete()
 
     return HttpResponseRedirect(reverse('person.index'))

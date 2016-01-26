@@ -4,21 +4,22 @@
 {% set circuit = refection.circuit %}
 {% set massif = circuit.massif %}
 
-{% block title %} - {{ circuit.massif.name }} ~ {{ circuit.name }}{% endblock %}
+{% block title %} - {{ _('Update') }} {{ _('Refection') }} {{ circuit.full_name }} {{ refection.date }}{% endblock %}
 
 {% block breadcrumb_li %}
   <li><a href="{{ url('massif.index') }}">Massifs</a></li>
   <li><a href="{{ url('massif.details', massif.pk) }}">{{ massif.name }}</a></li>
-  <li><a href="{{ url('massif.details', circuit.pk) }}">{{ circuit.name }}</a></li>
-  <li class="active">Réféction {{ refection.date }}</li>
+  <li><a href="{{ url('circuit.details', circuit.pk) }}">{{ circuit.name }}</a></li>
+  <li><a href="{{ url('refection.update', refection.pk) }}">{{ _('Refection') }} {{ refection.date }}</a></li>
+  <li class="active">{{ _('Update') }}</li>
 {% endblock %}
 
 {% block content %}
-  <h1>Réfection {{ circuit.name }} {{ refection.date }}</h1>
+  <h1>{{ _('Update') }} {{ _('Refection') }} {{ circuit.full_name }} {{ refection.date }}</h1>
   <div class="row m-b-1">
     <div class="col-xl-6">
       <form class="form-inline">
-	<input type="text" class="typeahead form-control" placeholder="Name">
+	<input type="text" class="typeahead form-control" placeholder="{{ _('Name') }}">
 	<button type="button" id="add-person" class="btn btn-primary"><i class="fa fa-plus"></i></button>
       </form>
     </div>
@@ -39,7 +40,7 @@
 	  <p id="rest-patch-modal-body"></p>
 	</div>
 	<div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">{{ _('Close') }}</button>
 	</div>
       </div>
     </div>
@@ -49,7 +50,7 @@
       <table id="editable-table" class="table">
 	<thead>
 	  <tr>
-	    <th>Name</th>
+	    <th>{{ _('Name') }}</th>
 	    <th></th>
 	  </tr>
 	</thead>

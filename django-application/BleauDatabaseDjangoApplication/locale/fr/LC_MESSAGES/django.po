@@ -7,73 +7,169 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-17 18:35+0000\n"
-"PO-Revision-Date: 2016-01-17 19:37+0100\n"
+"POT-Creation-Date: 2016-01-26 18:08+0100\n"
+"PO-Revision-Date: 2016-01-26 18:10+0100\n"
 "Last-Translator: \n"
-"Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: fr <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.2.0\n"
 "X-Generator: Poedit 1.8.5\n"
 
-#: BleauDatabaseDjangoApplication/jinja2/account/password_change.html:4
-#: BleauDatabaseDjangoApplication/jinja2/account/password_change.html:10
-#: BleauDatabaseDjangoApplication/jinja2/account/password_change.html:14
-#, fuzzy
-#| msgid "New password"
-msgid "Change password"
-msgstr "Nouveau mot de passe"
+#: BleauDatabaseDjangoApplication/models.py:47
+msgid "language"
+msgstr "langage"
 
-#: BleauDatabaseDjangoApplication/jinja2/account/password_change.html:18
-#: BleauDatabaseDjangoApplication/views/account.py:82
-msgid "Old password"
-msgstr "Ancien mot de passe"
+#: BleauDatabaseDjangoApplication/models.py:61
+msgid "parking"
+msgstr "parking"
 
-#: BleauDatabaseDjangoApplication/jinja2/account/password_change.html:27
-#: BleauDatabaseDjangoApplication/jinja2/account/password_change.html:36
-#: BleauDatabaseDjangoApplication/views/account.py:77
-#: BleauDatabaseDjangoApplication/views/account.py:79
-#: BleauDatabaseDjangoApplication/views/account.py:122
-#: BleauDatabaseDjangoApplication/views/account.py:124
-msgid "New password"
-msgstr "Nouveau mot de passe"
+#: BleauDatabaseDjangoApplication/models.py:62
+msgid "gare"
+msgstr "gare"
 
-#: BleauDatabaseDjangoApplication/jinja2/account/password_change.html:46
-msgid "Change"
+#: BleauDatabaseDjangoApplication/models.py:63
+msgid "point d'eau"
+msgstr "point d'eau"
+
+#: BleauDatabaseDjangoApplication/models.py:67
+msgid "category"
+msgstr "categorie"
+
+#: BleauDatabaseDjangoApplication/models.py:68
+#: BleauDatabaseDjangoApplication/models.py:135
+#: BleauDatabaseDjangoApplication/models.py:171
+msgid "coordinate"
+msgstr "coordonnée"
+
+#: BleauDatabaseDjangoApplication/models.py:69
+#: BleauDatabaseDjangoApplication/models.py:136
+msgid "name"
+msgstr "nom"
+
+#: BleauDatabaseDjangoApplication/models.py:70
+#: BleauDatabaseDjangoApplication/models.py:137
+#: BleauDatabaseDjangoApplication/models.py:176
+#: BleauDatabaseDjangoApplication/models.py:208
+msgid "note"
+msgstr "note"
+
+#: BleauDatabaseDjangoApplication/models.py:82
+msgid "first name"
+msgstr "prénom"
+
+#: BleauDatabaseDjangoApplication/models.py:83
+msgid "last name"
+msgstr "nom"
+
+#: BleauDatabaseDjangoApplication/models.py:132
+msgid "acces"
+msgstr "acces"
+
+#: BleauDatabaseDjangoApplication/models.py:133
+msgid "alternative name"
+msgstr "nom alternatif"
+
+#: BleauDatabaseDjangoApplication/models.py:134
+msgid "chaos type"
+msgstr "type de chaos"
+
+#: BleauDatabaseDjangoApplication/models.py:138
+msgid "parcelles"
 msgstr ""
 
-#: BleauDatabaseDjangoApplication/jinja2/account/password_reset.html:4
-#: BleauDatabaseDjangoApplication/jinja2/account/password_reset.html:10
-#: BleauDatabaseDjangoApplication/jinja2/account/password_reset.html:14
-#, fuzzy
-#| msgid "Password"
-msgid "Password reset"
-msgstr "Mot de passe"
-
-#: BleauDatabaseDjangoApplication/jinja2/account/password_reset.html:15
-msgid ""
-"Forgotten your password? Enter your email address below, and we'll email "
-"instructions for setting a new one."
+#: BleauDatabaseDjangoApplication/models.py:139
+msgid "Rdv GUMS"
 msgstr ""
 
-#: BleauDatabaseDjangoApplication/jinja2/account/password_reset.html:19
-msgid "Email address:"
+#: BleauDatabaseDjangoApplication/models.py:140
+msgid "secteur"
 msgstr ""
 
-#: BleauDatabaseDjangoApplication/jinja2/account/password_reset.html:29
-#, fuzzy
-#| msgid "New password"
-msgid "Reset my password"
-msgstr "Nouveau mot de passe"
+#: BleauDatabaseDjangoApplication/models.py:141
+msgid "velo"
+msgstr ""
+
+#: BleauDatabaseDjangoApplication/models.py:169
+msgid "boulders"
+msgstr "blocs"
+
+#: BleauDatabaseDjangoApplication/models.py:170
+msgid "colour"
+msgstr "couleur"
+
+#: BleauDatabaseDjangoApplication/models.py:172
+msgid "creation_date"
+msgstr "date d'ouverture"
+
+#: BleauDatabaseDjangoApplication/models.py:173
+msgid "gestion"
+msgstr ""
+
+#: BleauDatabaseDjangoApplication/models.py:174
+msgid "grade"
+msgstr "cotation"
+
+#: BleauDatabaseDjangoApplication/models.py:175
+msgid "massif"
+msgstr "massifs"
+
+#: BleauDatabaseDjangoApplication/models.py:177
+msgid "number"
+msgstr "numéro"
+
+#: BleauDatabaseDjangoApplication/models.py:178
+msgid "openers"
+msgstr "ouvreurs"
+
+#: BleauDatabaseDjangoApplication/models.py:179
+msgid "refection date"
+msgstr "Date de réfection"
+
+#: BleauDatabaseDjangoApplication/models.py:180
+msgid "refection note"
+msgstr "note de réfection"
+
+#: BleauDatabaseDjangoApplication/models.py:181
+msgid "status"
+msgstr "status"
+
+#: BleauDatabaseDjangoApplication/models.py:182
+msgid "topos"
+msgstr "topos"
+
+#: BleauDatabaseDjangoApplication/models.py:199
+msgid "N° "
+msgstr "N° "
+
+#: BleauDatabaseDjangoApplication/models.py:206
+msgid "circuit"
+msgstr "circuit"
+
+#: BleauDatabaseDjangoApplication/models.py:207
+msgid "date"
+msgstr "date"
+
+#: BleauDatabaseDjangoApplication/models.py:209
+msgid "persons"
+msgstr "personnes"
+
+#: BleauDatabaseDjangoApplication/settings.py:28
+msgid "English"
+msgstr "Anglais"
+
+#: BleauDatabaseDjangoApplication/settings.py:29
+msgid "Français"
+msgstr "Français"
 
 #: BleauDatabaseDjangoApplication/jinja2/account/password_reset_complete.html:4
 #: BleauDatabaseDjangoApplication/jinja2/account/password_reset_complete.html:10
 #: BleauDatabaseDjangoApplication/jinja2/account/password_reset_complete.html:14
 msgid "Password reset complete"
-msgstr ""
+msgstr "Mot de passe remis à zéro"
 
 #: BleauDatabaseDjangoApplication/jinja2/account/password_reset_complete.html:15
 msgid "Your password has been set.  You may go ahead and log in now."
@@ -83,58 +179,11 @@ msgstr ""
 msgid "Log in"
 msgstr "Connexion"
 
-#: BleauDatabaseDjangoApplication/jinja2/account/password_reset_confirm.html:4
-#: BleauDatabaseDjangoApplication/jinja2/account/password_reset_confirm.html:10
-msgid "Password reset confirmation"
-msgstr ""
-
-#: BleauDatabaseDjangoApplication/jinja2/account/password_reset_confirm.html:15
-#, fuzzy
-#| msgid "New password"
-msgid "Enter new password"
-msgstr "Nouveau mot de passe"
-
-#: BleauDatabaseDjangoApplication/jinja2/account/password_reset_confirm.html:16
-msgid ""
-"Please enter your new password twice so we can verify you typed it in "
-"correctly."
-msgstr ""
-
-#: BleauDatabaseDjangoApplication/jinja2/account/password_reset_confirm.html:20
-#, fuzzy
-#| msgid "New password"
-msgid "New password:"
-msgstr "Nouveau mot de passe"
-
-#: BleauDatabaseDjangoApplication/jinja2/account/password_reset_confirm.html:29
-#, fuzzy
-#| msgid "New password"
-msgid "Confirm password:"
-msgstr "Nouveau mot de passe"
-
-#: BleauDatabaseDjangoApplication/jinja2/account/password_reset_confirm.html:39
-#, fuzzy
-#| msgid "New password"
-msgid "Change my password"
-msgstr "Nouveau mot de passe"
-
-#: BleauDatabaseDjangoApplication/jinja2/account/password_reset_confirm.html:44
-#, fuzzy
-#| msgid "Password changed successfully"
-msgid "Password reset unsuccessful"
-msgstr "Mot de passe changé avec succès"
-
-#: BleauDatabaseDjangoApplication/jinja2/account/password_reset_confirm.html:45
-msgid ""
-"The password reset link was invalid, possibly because it has already been "
-"used.  Please request a new password reset."
-msgstr ""
-
 #: BleauDatabaseDjangoApplication/jinja2/account/password_reset_done.html:4
 #: BleauDatabaseDjangoApplication/jinja2/account/password_reset_done.html:10
 #: BleauDatabaseDjangoApplication/jinja2/account/password_reset_done.html:14
 msgid "Password reset successful"
-msgstr ""
+msgstr "Mot de passe changé avec succès"
 
 #: BleauDatabaseDjangoApplication/jinja2/account/password_reset_done.html:15
 msgid ""
@@ -168,23 +217,28 @@ msgid "update"
 msgstr "mettre à jour"
 
 #: BleauDatabaseDjangoApplication/jinja2/account/profile.html:20
+#: BleauDatabaseDjangoApplication/jinja2/circuit/boulders.html:43
+#: BleauDatabaseDjangoApplication/jinja2/circuit/openers.html:18
+#: BleauDatabaseDjangoApplication/jinja2/refection/persons.html:22
+#: BleauDatabaseDjangoApplication/jinja2/refection/persons.html:53
+#: BleauDatabaseDjangoApplication/views/massif.py:73
+#: BleauDatabaseDjangoApplication/views/person.py:61
+#: BleauDatabaseDjangoApplication/views/place.py:67
 msgid "Name"
 msgstr "Nom"
 
 #: BleauDatabaseDjangoApplication/jinja2/account/profile.html:22
-#: BleauDatabaseDjangoApplication/views/account.py:241
 msgid "Email"
 msgstr "Courriel"
 
 #: BleauDatabaseDjangoApplication/jinja2/account/profile.html:24
-#: BleauDatabaseDjangoApplication/views/account.py:57
+#: BleauDatabaseDjangoApplication/views/account.py:55
+#: BleauDatabaseDjangoApplication/views/account.py:153
 #: BleauDatabaseDjangoApplication/views/account.py:155
-#: BleauDatabaseDjangoApplication/views/account.py:157
 msgid "Password"
 msgstr "Mot de passe"
 
 #: BleauDatabaseDjangoApplication/jinja2/account/profile.html:31
-#: BleauDatabaseDjangoApplication/jinja2/account/update.html:44
 msgid "Language"
 msgstr "Langage"
 
@@ -200,92 +254,343 @@ msgid "Deleting my account"
 msgstr "Supprimer mon compte"
 
 #: BleauDatabaseDjangoApplication/jinja2/account/profile.html:46
-msgid ""
-"If you want to remove your account, just click on the folowing button. Be "
-"careful as it will permanently remove all your outings and personal data."
+msgid "If you want to remove your account, just click on the folowing button."
 msgstr ""
 
 #: BleauDatabaseDjangoApplication/jinja2/account/profile.html:59
-msgid ""
-"Are you sure you want to delete your account? It will permanently delete all "
-"your outings along with your personal data."
-msgstr ""
+msgid "Are you sure you want to delete your account?"
+msgstr "Êtes vous sure  de vouloir supprimer cet compte?"
 
 #: BleauDatabaseDjangoApplication/jinja2/account/profile.html:62
 msgid "Cancel"
 msgstr "Annuler"
 
-#: BleauDatabaseDjangoApplication/jinja2/account/update.html:4
-msgid "Update profile"
-msgstr "Mise à jour du profile"
+#: BleauDatabaseDjangoApplication/jinja2/circuit/boulders.html:4
+#: BleauDatabaseDjangoApplication/jinja2/circuit/boulders.html:10
+#: BleauDatabaseDjangoApplication/jinja2/circuit/boulders.html:18
+msgid "Boulders"
+msgstr "Blocs"
 
-#: BleauDatabaseDjangoApplication/jinja2/account/update.html:10
-#: BleauDatabaseDjangoApplication/jinja2/account/update.html:60
-#, fuzzy
-#| msgid "update"
+#: BleauDatabaseDjangoApplication/jinja2/circuit/boulders.html:14
+#: BleauDatabaseDjangoApplication/jinja2/circuit/openers.html:23
+#: BleauDatabaseDjangoApplication/jinja2/refection/persons.html:27
+msgid "Save"
+msgstr "Sauvegarder"
+
+#: BleauDatabaseDjangoApplication/jinja2/circuit/boulders.html:41
+msgid "Number"
+msgstr "Numéro"
+
+#: BleauDatabaseDjangoApplication/jinja2/circuit/boulders.html:42
+msgid "Grade"
+msgstr "Cotation"
+
+#: BleauDatabaseDjangoApplication/jinja2/circuit/boulders.html:44
+msgid "Comment"
+msgstr "Commentaire"
+
+#: BleauDatabaseDjangoApplication/jinja2/circuit/create.html:7
+#: BleauDatabaseDjangoApplication/jinja2/circuit/create.html:17
+#: BleauDatabaseDjangoApplication/jinja2/circuit/create.html:26
+#: BleauDatabaseDjangoApplication/jinja2/massif/create.html:7
+#: BleauDatabaseDjangoApplication/jinja2/massif/create.html:17
+#: BleauDatabaseDjangoApplication/jinja2/massif/create.html:26
+#: BleauDatabaseDjangoApplication/jinja2/person/create.html:7
+#: BleauDatabaseDjangoApplication/jinja2/person/create.html:17
+#: BleauDatabaseDjangoApplication/jinja2/person/create.html:26
+#: BleauDatabaseDjangoApplication/jinja2/place/create.html:13
+#: BleauDatabaseDjangoApplication/jinja2/place/create.html:23
+#: BleauDatabaseDjangoApplication/jinja2/place/create.html:32
+#: BleauDatabaseDjangoApplication/jinja2/refection/create.html:10
+#: BleauDatabaseDjangoApplication/jinja2/refection/create.html:22
+#: BleauDatabaseDjangoApplication/jinja2/refection/create.html:31
+#: BleauDatabaseDjangoApplication/jinja2/refection/persons.html:7
+#: BleauDatabaseDjangoApplication/jinja2/refection/persons.html:14
+#: BleauDatabaseDjangoApplication/jinja2/refection/persons.html:18
 msgid "Update"
-msgstr "mettre à jour"
+msgstr "Mettre à jour"
 
-#: BleauDatabaseDjangoApplication/jinja2/account/update.html:14
-#, fuzzy
-#| msgid "Deleting my account"
-msgid "Update my account"
-msgstr "Supprimer mon compte"
+#: BleauDatabaseDjangoApplication/jinja2/circuit/create.html:9
+#: BleauDatabaseDjangoApplication/jinja2/circuit/create.html:19
+#: BleauDatabaseDjangoApplication/jinja2/circuit/create.html:28
+#: BleauDatabaseDjangoApplication/jinja2/massif/details.html:66
+msgid "New circuit"
+msgstr "Nouveau circuit"
 
-#: BleauDatabaseDjangoApplication/jinja2/account/update.html:19
-#, fuzzy
-#| msgid "Personnal information updated"
-msgid "Personnal information"
-msgstr "Information personnelle mise à jour"
+#: BleauDatabaseDjangoApplication/jinja2/circuit/details.html:19
+msgid "Delete circuit"
+msgstr "Supprimer circuit"
 
-#: BleauDatabaseDjangoApplication/jinja2/account/update.html:21
-msgid "First name"
-msgstr "Prénom"
+#: BleauDatabaseDjangoApplication/jinja2/circuit/details.html:20
+msgid "Are you sure you want to delete this circuit?"
+msgstr "Êtes vous sure  de vouloir supprimer ce circuit?"
 
-#: BleauDatabaseDjangoApplication/jinja2/account/update.html:31
-msgid "Last name"
-msgstr "Nom"
+#: BleauDatabaseDjangoApplication/jinja2/circuit/openers.html:4
+#: BleauDatabaseDjangoApplication/jinja2/circuit/openers.html:10
+#: BleauDatabaseDjangoApplication/jinja2/circuit/openers.html:14
+msgid "Openers"
+msgstr "Ouvreurs"
 
-#: BleauDatabaseDjangoApplication/jinja2/account/update.html:42
-msgid "Localization"
-msgstr "Localisation"
+#: BleauDatabaseDjangoApplication/jinja2/massif/create.html:9
+#: BleauDatabaseDjangoApplication/jinja2/massif/create.html:19
+#: BleauDatabaseDjangoApplication/jinja2/massif/create.html:28
+#: BleauDatabaseDjangoApplication/jinja2/massif/index.html:11
+msgid "New massif"
+msgstr "Nouveau massif"
+
+#: BleauDatabaseDjangoApplication/jinja2/massif/create.html:14
+#: BleauDatabaseDjangoApplication/jinja2/massif/index.html:6
+#: BleauDatabaseDjangoApplication/jinja2/massif/index.html:10
+#: BleauDatabaseDjangoApplication/jinja2/refection/details.html:11
+msgid "Massifs"
+msgstr "Massifs"
+
+#: BleauDatabaseDjangoApplication/jinja2/massif/details.html:18
+msgid "Delete massif"
+msgstr "Supprimer massif"
 
 #: BleauDatabaseDjangoApplication/jinja2/massif/details.html:19
+msgid "Are you sure you want to delete this massif?"
+msgstr "Êtes vous sure  de vouloir supprimer ce massif?"
+
+#: BleauDatabaseDjangoApplication/jinja2/massif/details.html:27
+msgid "Accés"
+msgstr ""
+
+#: BleauDatabaseDjangoApplication/jinja2/massif/details.html:29
+msgid "Accés en voiture"
+msgstr ""
+
+#: BleauDatabaseDjangoApplication/jinja2/massif/details.html:33
+msgid "Accés à vélo"
+msgstr ""
+
+#: BleauDatabaseDjangoApplication/jinja2/massif/details.html:39
+msgid "Informations"
+msgstr "Informations"
+
+#: BleauDatabaseDjangoApplication/jinja2/massif/details.html:41
+msgid "Type de chaos"
+msgstr ""
+
+#: BleauDatabaseDjangoApplication/jinja2/massif/details.html:42
+msgid "Notes"
+msgstr ""
+
+#: BleauDatabaseDjangoApplication/jinja2/massif/details.html:43
+msgid "Rendez-vous Gums"
+msgstr ""
+
+#: BleauDatabaseDjangoApplication/jinja2/massif/details.html:46
+#: BleauDatabaseDjangoApplication/jinja2/place/details.html:23
+msgid "Carte de situation"
+msgstr ""
+
+#: BleauDatabaseDjangoApplication/jinja2/massif/details.html:52
+#: BleauDatabaseDjangoApplication/jinja2/place/details.html:29
+msgid "Coordonnée WGS 84"
+msgstr ""
+
+#: BleauDatabaseDjangoApplication/jinja2/massif/details.html:58
+msgid "Parcelles ONF"
+msgstr ""
+
+#: BleauDatabaseDjangoApplication/jinja2/massif/details.html:65
 msgid "Circuits"
-msgstr "circuits"
+msgstr "Circuits"
 
-#: BleauDatabaseDjangoApplication/settings.py:28
-#, fuzzy
-msgid "English"
-msgstr "Anglais"
+#: BleauDatabaseDjangoApplication/jinja2/massif/index.html:27
+msgid "Any massif"
+msgstr "Aucun massif"
 
-#: BleauDatabaseDjangoApplication/settings.py:29
-msgid "Français"
-msgstr "Français"
+#: BleauDatabaseDjangoApplication/jinja2/person/create.html:9
+#: BleauDatabaseDjangoApplication/jinja2/person/create.html:19
+#: BleauDatabaseDjangoApplication/jinja2/person/create.html:28
+#: BleauDatabaseDjangoApplication/jinja2/person/index.html:13
+msgid "New person"
+msgstr "Nouvelle Personne"
 
-#: BleauDatabaseDjangoApplication/views/account.py:60
-#: BleauDatabaseDjangoApplication/views/account.py:160
+#: BleauDatabaseDjangoApplication/jinja2/person/create.html:14
+#: BleauDatabaseDjangoApplication/jinja2/person/details.html:8
+#: BleauDatabaseDjangoApplication/jinja2/person/index.html:5
+#: BleauDatabaseDjangoApplication/jinja2/person/index.html:8
+#: BleauDatabaseDjangoApplication/jinja2/person/index.html:12
+#: BleauDatabaseDjangoApplication/jinja2/refection/details.html:30
+msgid "Persons"
+msgstr "Personnes"
+
+#: BleauDatabaseDjangoApplication/jinja2/person/details.html:17
+msgid "Delete person"
+msgstr "Supprimer personne"
+
+#: BleauDatabaseDjangoApplication/jinja2/person/details.html:18
+msgid "Are you sure you want to delete this person?"
+msgstr "Êtes vous sure  de vouloir supprimer cette personne?"
+
+#: BleauDatabaseDjangoApplication/jinja2/person/details.html:22
+msgid "Circuits Ouverts"
+msgstr ""
+
+#: BleauDatabaseDjangoApplication/jinja2/person/details.html:43
+msgid "any circuit"
+msgstr "aucun circuit"
+
+#: BleauDatabaseDjangoApplication/jinja2/person/details.html:47
+msgid "Réfections de Circuits"
+msgstr ""
+
+#: BleauDatabaseDjangoApplication/jinja2/person/details.html:60
+msgid "any refection"
+msgstr "aucune réfection"
+
+#: BleauDatabaseDjangoApplication/jinja2/person/index.html:29
+msgid "Any person"
+msgstr "Aucune personne"
+
+#: BleauDatabaseDjangoApplication/jinja2/place/create.html:15
+#: BleauDatabaseDjangoApplication/jinja2/place/create.html:25
+#: BleauDatabaseDjangoApplication/jinja2/place/create.html:34
+#: BleauDatabaseDjangoApplication/jinja2/place/index.html:13
+msgid "New place"
+msgstr "Nouvelle place"
+
+#: BleauDatabaseDjangoApplication/jinja2/place/create.html:20
+#: BleauDatabaseDjangoApplication/jinja2/place/index.html:5
+#: BleauDatabaseDjangoApplication/jinja2/place/index.html:8
+#: BleauDatabaseDjangoApplication/jinja2/place/index.html:12
+msgid "Places"
+msgstr "Places"
+
+#: BleauDatabaseDjangoApplication/jinja2/place/details.html:18
+msgid "Delete place"
+msgstr "Supprimer place"
+
+#: BleauDatabaseDjangoApplication/jinja2/place/details.html:19
+msgid "Are you sure you want to delete this place?"
+msgstr "Êtes vous sure  de vouloir supprimer cet place?"
+
+#: BleauDatabaseDjangoApplication/jinja2/place/details.html:34
+#: BleauDatabaseDjangoApplication/jinja2/refection/details.html:29
+msgid "Note"
+msgstr "Note"
+
+#: BleauDatabaseDjangoApplication/jinja2/place/index.html:31
+msgid "Any place"
+msgstr "Aucune place"
+
+#: BleauDatabaseDjangoApplication/jinja2/refection/create.html:10
+#: BleauDatabaseDjangoApplication/jinja2/refection/create.html:21
+#: BleauDatabaseDjangoApplication/jinja2/refection/create.html:31
+#: BleauDatabaseDjangoApplication/jinja2/refection/details.html:8
+#: BleauDatabaseDjangoApplication/jinja2/refection/details.html:14
+#: BleauDatabaseDjangoApplication/jinja2/refection/details.html:18
+#: BleauDatabaseDjangoApplication/jinja2/refection/persons.html:7
+#: BleauDatabaseDjangoApplication/jinja2/refection/persons.html:13
+#: BleauDatabaseDjangoApplication/jinja2/refection/persons.html:18
+msgid "Refection"
+msgstr "Réfection"
+
+#: BleauDatabaseDjangoApplication/jinja2/refection/create.html:12
+#: BleauDatabaseDjangoApplication/jinja2/refection/create.html:24
+#: BleauDatabaseDjangoApplication/jinja2/refection/create.html:33
+msgid "New refection"
+msgstr "Nouvelle réfection"
+
+#: BleauDatabaseDjangoApplication/jinja2/refection/details.html:22
+msgid "Delete refection"
+msgstr "Supprimer réfection"
+
+#: BleauDatabaseDjangoApplication/jinja2/refection/details.html:23
+msgid "Are you sure you want to delete this refection?"
+msgstr "Êtes vous sure  de vouloir supprimer cette réfection?"
+
+#: BleauDatabaseDjangoApplication/jinja2/refection/details.html:28
+msgid "Date"
+msgstr "Date"
+
+#: BleauDatabaseDjangoApplication/jinja2/refection/persons.html:43
+msgid "Close"
+msgstr "Fermer"
+
+#: BleauDatabaseDjangoApplication/views/account.py:58
+#: BleauDatabaseDjangoApplication/views/account.py:158
 msgid "Username"
 msgstr "Utilisateur"
 
-#: BleauDatabaseDjangoApplication/views/account.py:102
+#: BleauDatabaseDjangoApplication/views/account.py:75
+#: BleauDatabaseDjangoApplication/views/account.py:77
+#: BleauDatabaseDjangoApplication/views/account.py:120
+#: BleauDatabaseDjangoApplication/views/account.py:122
+msgid "New password"
+msgstr "Nouveau mot de passe"
+
+#: BleauDatabaseDjangoApplication/views/account.py:80
+msgid "Old password"
+msgstr "Ancien mot de passe"
+
+#: BleauDatabaseDjangoApplication/views/account.py:100
 msgid "email"
 msgstr "courriel"
 
-#: BleauDatabaseDjangoApplication/views/account.py:225
+#: BleauDatabaseDjangoApplication/views/account.py:223
 msgid "You should update your language."
 msgstr ""
 
-#: BleauDatabaseDjangoApplication/views/account.py:253
+#: BleauDatabaseDjangoApplication/views/account.py:245
 msgid "Personnal information updated"
 msgstr "Information personnelle mise à jour"
 
-#: BleauDatabaseDjangoApplication/views/account.py:267
+#: BleauDatabaseDjangoApplication/views/account.py:259
 msgid "Password changed successfully"
 msgstr "Mot de passe changé avec succès"
 
-#: BleauDatabaseDjangoApplication/views/massif.py:63
-#: BleauDatabaseDjangoApplication/views/person.py:63
-#: BleauDatabaseDjangoApplication/views/place.py:63
-msgid "Nom"
-msgstr ""
+#: BleauDatabaseDjangoApplication/views/circuit.py:81
+msgid "Circuit créé avec succès."
+msgstr "Circuit created"
+
+#: BleauDatabaseDjangoApplication/views/circuit.py:84
+#: BleauDatabaseDjangoApplication/views/massif.py:146
+#: BleauDatabaseDjangoApplication/views/person.py:135
+#: BleauDatabaseDjangoApplication/views/place.py:138
+#: BleauDatabaseDjangoApplication/views/refection.py:74
+msgid "Des informations sont manquantes ou incorrectes"
+msgstr "Some data are missing or wrong"
+
+#: BleauDatabaseDjangoApplication/views/circuit.py:142
+msgid "Circuit «{0.name}» supprimé"
+msgstr "Circuit «{0.name}» deleted"
+
+#: BleauDatabaseDjangoApplication/views/massif.py:143
+msgid "Massif créé avec succès."
+msgstr "Massif created"
+
+#: BleauDatabaseDjangoApplication/views/massif.py:175
+msgid "Massif «{0.name}» supprimé"
+msgstr "Massif «{0.name}» deleted"
+
+#: BleauDatabaseDjangoApplication/views/person.py:132
+msgid "Person créé avec succès."
+msgstr "Person created."
+
+#: BleauDatabaseDjangoApplication/views/person.py:164
+msgid "Person «{0.name}» supprimé"
+msgstr "Person «{0.name}» deleted"
+
+#: BleauDatabaseDjangoApplication/views/place.py:135
+msgid "Place créé avec succès."
+msgstr "Place created."
+
+#: BleauDatabaseDjangoApplication/views/place.py:167
+msgid "Place «{0.name}» supprimé"
+msgstr "Place «{0.name}» deleted"
+
+#: BleauDatabaseDjangoApplication/views/refection.py:71
+msgid "Refection créé avec succès."
+msgstr "Refection created."
+
+#: BleauDatabaseDjangoApplication/views/refection.py:123
+msgid "Refection «{0.name}» supprimé"
+msgstr "Refection «{0.name}» deleted"
+
+#~ msgid "Update refection"
+#~ msgstr "Mettre à jour réfection"

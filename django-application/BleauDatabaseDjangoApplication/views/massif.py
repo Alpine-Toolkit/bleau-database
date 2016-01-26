@@ -70,7 +70,7 @@ class MassifForm(ModelForm):
 
 class MassifSearchForm(Form):
 
-    name = CharField(label=_('Nom'), required=False, initial='')
+    name = CharField(label=_('Name'), required=False, initial='')
 
     ##############################################
 
@@ -140,10 +140,10 @@ def create(request):
         if form.is_valid():
             massif = form.save(commit=False)
             massif.save()
-            messages.success(request, "Massif créé avec succès.")
+            messages.success(request, _("Massif créé avec succès."))
             return HttpResponseRedirect(reverse('massif.details', args=[massif.pk]))
         else:
-            messages.error(request, "Des informations sont manquantes ou incorrectes")
+            messages.error(request, _("Des informations sont manquantes ou incorrectes"))
     else:
         form = MassifForm()
 
@@ -172,7 +172,7 @@ def update(request, massif_id):
 def delete(request, massif_id):
 
     massif = get_object_or_404(Massif, pk=massif_id)
-    messages.success(request, "Massif «{0.name}» supprimé".format(massif))
+    messages.success(request, _("Massif «{0.name}» supprimé").format(massif))
     massif.delete()
 
     return HttpResponseRedirect(reverse('massif.index'))

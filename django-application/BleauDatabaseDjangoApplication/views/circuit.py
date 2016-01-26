@@ -28,7 +28,7 @@ from django.core.urlresolvers import reverse
 from django.forms import ModelForm, CharField
 from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
-# from django.utils.translation import ugettext as _
+from django.utils.translation import ugettext as _
 
 ####################################################################################################
 
@@ -78,10 +78,10 @@ def create(request):
         if form.is_valid():
             circuit = form.save(commit=False)
             circuit.save()
-            messages.success(request, "Circuit créé avec succès.")
+            messages.success(request, _("Circuit créé avec succès."))
             return HttpResponseRedirect(reverse('circuit.details', args=[circuit.pk]))
         else:
-            messages.error(request, "Des informations sont manquantes ou incorrectes")
+            messages.error(request, _("Des informations sont manquantes ou incorrectes"))
     else:
         form = CircuitForm()
 
@@ -139,7 +139,7 @@ def openers(request, circuit_id):
 def delete(request, circuit_id):
 
     circuit = get_object_or_404(Circuit, pk=circuit_id)
-    messages.success(request, "Circuit «{0.name}» supprimé".format(circuit))
+    messages.success(request, _("Circuit «{0.name}» supprimé").format(circuit))
     circuit.delete()
 
     return HttpResponseRedirect(reverse('circuit.index'))

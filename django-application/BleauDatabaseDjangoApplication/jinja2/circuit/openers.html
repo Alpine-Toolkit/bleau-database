@@ -1,7 +1,7 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
-{% block title %} - {{ circuit.massif.name }} ~ {{ circuit.name }}{% endblock %}
+{% block title %} - {{ _("Openers") }} {{ circuit.full_name }}{% endblock %}
 
 {% block breadcrumb_li %}
   <li><a href="{{ url('massif.index') }}">Massifs</a></li>
@@ -11,11 +11,11 @@
 {% endblock %}
 
 {% block content %}
-  <h1> {{ circuit.massif.name }} ~ {{ circuit.name }} </h1>
+  <h1> {{ _("Openers") }} {{ circuit.full_name }} </h1>
   <div class="row m-b-1">
     <div class="col-xl-6">
       <form class="form-inline">
-	<input type="text" class="typeahead form-control" placeholder="Name">
+	<input type="text" class="typeahead form-control" placeholder="{{ _("Name") }}">
 	<button type="button" id="add-person" class="btn btn-primary"><i class="fa fa-plus"></i></button>
       </form>
     </div>

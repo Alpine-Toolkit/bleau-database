@@ -1,7 +1,7 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
-{% block title %} - {{ circuit.massif.name }} ~ {{ circuit.name }}{% endblock %}
+{% block title %} - {{ _("Boulders") }} {{ circuit.full_name }}{% endblock %}
 
 {% block breadcrumb_li %}
   <li><a href="{{ url('massif.index') }}">Massifs</a></li>
@@ -15,7 +15,7 @@
 {% endmacro %}
 
 {% block content %}
-  <h1> {{ circuit.massif.name }} ~ {{ circuit.name }} </h1>
+  <h1>{{ _("Boulders") }} {{ circuit.full_name }}</h1>
   {{ save_button() }}
   <div id="rest-patch-modal" class="modal">
     <div class="modal-dialog" role="document">
@@ -38,10 +38,10 @@
   <table id="editable-table" class="table">
     <thead>
       <tr>
-	<th>Number</th>
-	<th>Grade</th>
-	<th>Name</th>
-	<th>Comment</th>
+	<th>{{ _('Number') }}</th>
+	<th>{{ _('Grade') }}</th>
+	<th>{{ _('Name') }}</th>
+	<th>{{ _('Comment') }}</th>
 	<th></th>
 	<th></th>
 	<th></th>
@@ -89,11 +89,11 @@
    var save_button = $('#save-button');
    save_button.click(function () {
        var data = {"boulders": export_data()};
-       
+
        // server = ''http://127.0.0.1:8000';
        server = '';
        endpoint = '/api/circuit/{{ circuit.pk }}/';
-       
+
        rest_patch(server, endpoint, data).done(function() {
 	   var modal = $('#rest-patch-modal')
 	       modal.find('#rest-patch-modal-title').text('Update success');

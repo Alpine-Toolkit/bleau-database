@@ -2,6 +2,8 @@
 {% extends "include/base.html" %}
 {% from "include/widgets.html" import new_button_group, search_by_name %}
 
+{% block title %} - {{ _('Places') }}{% endblock %}
+
 {% block breadcrumb_li %}
   <li class="active">{{ _('Places') }}</li>
 {% endblock %}

@@ -30,7 +30,7 @@ from django.core.urlresolvers import reverse
 from django.forms import ModelForm
 from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
-# from django.utils.translation import ugettext as _
+from django.utils.translation import ugettext as _
 
 ####################################################################################################
 
@@ -68,10 +68,10 @@ def create(request):
         if form.is_valid():
             refection = form.save(commit=False)
             refection.save()
-            messages.success(request, "Refection créé avec succès.")
+            messages.success(request, _("Refection créé avec succès."))
             return HttpResponseRedirect(reverse('refection.details', args=[refection.pk]))
         else:
-            messages.error(request, "Des informations sont manquantes ou incorrectes")
+            messages.error(request, _("Des informations sont manquantes ou incorrectes"))
     else:
         form = RefectionForm()
 
@@ -120,7 +120,7 @@ def persons(request, refection_id):
 def delete(request, refection_id):
 
     refection = get_object_or_404(Refection, pk=refection_id)
-    messages.success(request, "Refection «{0.name}» supprimé".format(refection))
+    messages.success(request, _("Refection «{0.name}» supprimé").format(refection))
     refection.delete()
 
     return HttpResponseRedirect(reverse('refection.index'))

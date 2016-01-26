@@ -11,23 +11,25 @@ var name_to_pk = person_data.reduce(function(obj, x) {
 
 $('#add-person').click(function () {
   var current = $input.val();
-  var duplicate = false;
-  var data = export_data();
-  for (var i = 0; i < data.length; i++) {
-    var row = data[i];
-    if (row.name == current) {
-      duplicate = true;
-      break;
+  if (current) {
+    var duplicate = false;
+    var data = export_data();
+    for (var i = 0; i < data.length; i++) {
+      var row = data[i];
+      if (row.name == current) {
+	duplicate = true;
+	break;
+      }
     }
-  }
-  if (duplicate) {
-    alert("Duplicated entry");
-  } else {
-    var hidden_line = table.find('tr.invisible');
-    var clone = hidden_line.clone(true);
-    hidden_line.find('td:first').html(current);
-    hidden_line.removeClass('invisible');
-    table.append(clone);
+    if (duplicate) {
+      alert("Duplicated entry");
+    } else {
+      var hidden_line = table.find('tr.invisible');
+      var clone = hidden_line.clone(true);
+      hidden_line.find('td:first').html(current);
+      hidden_line.removeClass('invisible');
+      table.append(clone);
+    }
   }
 });
 

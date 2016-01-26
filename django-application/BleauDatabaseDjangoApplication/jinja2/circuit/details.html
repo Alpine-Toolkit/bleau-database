@@ -2,7 +2,7 @@
 {% extends "include/base.html" %}
 {% from "include/widgets.html" import update_delete_button_group, delete_modal %}
 
-{% block title %} - {{ circuit.massif.name }} ~ {{ circuit.name }}{% endblock %}
+{% block title %} - {{ circuit.full_name }} {% endblock %}
 
 {% block breadcrumb_li %}
   <li><a href="{{ url('massif.index') }}">Massifs</a></li>
@@ -12,7 +12,7 @@
 
 {% block content %}
   <h1>
-    {{ circuit.massif.name }} ~ {{ circuit.name }}
+    {{ circuit.full_name }}
     {{ update_delete_button_group(href=url('circuit.update', circuit.pk)) }}
   </h1>
 

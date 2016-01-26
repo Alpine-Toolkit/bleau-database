@@ -64,7 +64,7 @@ class PlaceForm(ModelForm):
 
 class PlaceSearchForm(Form):
 
-    name = CharField(label=_('Nom'), required=False, initial='')
+    name = CharField(label=_('Name'), required=False, initial='')
 
     ##############################################
 
@@ -97,8 +97,6 @@ class PlaceListView(FormMixin, ListView):
         kwargs = {'initial': self.get_initial(),
                   'prefix': self.get_prefix(),
                   'data': self.request.GET or None}
-        # {'initial': {}, 'data': None, 'prefix': None}
-        # {'data': <QueryDict: {'csrfmiddlewaretoken': ['KVIpPCTNju6cV6I6VvNaw0jfYFgF6t0u'], 'name': ['apr']}>, 'initial': {}, 'prefix': None}
         return kwargs
 
     ##############################################
@@ -134,10 +132,10 @@ def create(request):
         if form.is_valid():
             place = form.save(commit=False)
             place.save()
-            messages.success(request, "Place créé avec succès.")
+            messages.success(request, _("Place créé avec succès."))
             return HttpResponseRedirect(reverse('place.details', args=[place.pk]))
         else:
-            messages.error(request, "Des informations sont manquantes ou incorrectes")
+            messages.error(request, _("Des informations sont manquantes ou incorrectes"))
     else:
         form = PlaceForm()
 
@@ -166,7 +164,7 @@ def update(request, place_id):
 def delete(request, place_id):
 
     place = get_object_or_404(Place, pk=place_id)
-    messages.success(request, "Place «{0.name}» supprimé".format(place))
+    messages.success(request, _("Place «{0.name}» supprimé").format(place))
     place.delete()
 
     return HttpResponseRedirect(reverse('place.index'))

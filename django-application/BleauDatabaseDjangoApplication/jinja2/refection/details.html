@@ -5,17 +5,17 @@
 {% set circuit = refection.circuit %}
 {% set massif = circuit.massif %}
 
-{% block title %} - Réfection {{ circuit.name }} {{ refection.date }}{% endblock %}
+{% block title %} - {{ _('Refection') }} {{ circuit.full_name }} {{ refection.date }}{% endblock %}
 
 {% block breadcrumb_li %}
-  <li><a href="{{ url('massif.index') }}">Massifs</a></li>
+  <li><a href="{{ url('massif.index') }}">{{ _('Massifs') }}</a></li>
   <li><a href="{{ url('massif.details', massif.pk) }}">{{ massif.name }}</a></li>
-  <li><a href="{{ url('massif.details', circuit.pk) }}">{{ circuit.name }}</a></li>
-  <li class="active">Réfection {{ refection.date }}</li>
+  <li><a href="{{ url('circuit.details', circuit.pk) }}">{{ circuit.name }}</a></li>
+  <li class="active">{{ _('Refection') }} {{ refection.date }}</li>
 {% endblock %}
 
 {% block content %}
-  <h1>Réfection {{ circuit.name }} {{ refection.date }}
+  <h1>{{ _('Refection') }} {{ circuit.full_name }} {{ refection.date }}
     {{ update_delete_button_group(href=url('refection.update', refection.pk)) }}
   </h1>
 
@@ -25,9 +25,9 @@
      ) }}
 
   <dl>
-    <dt>Date</dt><dd>{{ refection.date }}</dd>
-    <dt>Note</dt><dd>{{ refection.note }}</dd>
-    <dt>Personnes
+    <dt>{{ _('Date') }}</dt><dd>{{ refection.date }}</dd>
+    <dt>{{ _('Note') }}</dt><dd>{{ refection.note }}</dd>
+    <dt>{{ _('Persons') }}
       <a role="button" class="btn btn-sm btn-primary" href="{{ url('refection.persons', circuit.pk) }}">
 	<i class="fa fa-pencil-square-o"></i></a>
     </dt>

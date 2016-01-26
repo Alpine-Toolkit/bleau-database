@@ -43,11 +43,8 @@ class Profile(models.Model):
 
     """This class defines a user profile."""
 
-    class Meta:
-        app_label = 'BleauDatabaseDjangoApplication'
-
     user = models.OneToOneField(User)
-    language = models.CharField(max_length=4, blank=True, null=True, choices=LANGUAGES)
+    language = models.CharField(verbose_name=_('language'), max_length=4, blank=True, null=True, choices=LANGUAGES)
 
     ##############################################
 
@@ -60,9 +57,6 @@ class Place(Model):
 
     """This class defines a place."""
 
-    class Meta:
-        app_label = 'BleauDatabaseDjangoApplication'
-
     CATEGORIES_CHOICES = (
         ('parking', _('parking')),
         ('gare', _('gare')),
@@ -70,10 +64,10 @@ class Place(Model):
     )
 
     # creation_date = models.DateTimeField(auto_now_add=True)
-    category = CharField(choices=CATEGORIES_CHOICES, max_length=30)
-    coordinate = PointField()
-    name = CharField(max_length=100)
-    note = TextField(null=True, blank=True) # aka commentaire
+    category = CharField(verbose_name=_('category'), choices=CATEGORIES_CHOICES, max_length=30)
+    coordinate = PointField(verbose_name=_('coordinate'))
+    name = CharField(verbose_name=_('name'), max_length=100)
+    note = TextField(verbose_name=_('note'), null=True, blank=True) # aka commentaire
 
     ##############################################
 
@@ -85,11 +79,8 @@ class Place(Model):
 
 class Person(Model):
 
-    class Meta:
-        app_label = 'BleauDatabaseDjangoApplication'
-
-    first_name = CharField(max_length=100)
-    last_name = CharField(max_length=100)
+    first_name = CharField(verbose_name=_('first name'), max_length=100)
+    last_name = CharField(verbose_name=_('last name'), max_length=100)
 
     ##############################################
 
@@ -138,19 +129,16 @@ class Massif(Model):
 
     """This class defines a massif."""
 
-    class Meta:
-        app_label = 'BleauDatabaseDjangoApplication'
-
-    acces = TextField(null=True, blank=True) # Fixme: fr
-    alternative_name = CharField(max_length=100, null=True, blank=True) # Fixme
-    chaos_type = CharField(max_length=3, null=True, blank=True)
-    coordinate = PointField(null=True, blank=True)
-    name = CharField(max_length=100)
-    note = TextField(null=True, blank=True)
-    parcelles = CharField(max_length=50, null=True, blank=True) # Fixme: fr
-    rdv = TextField(null=True, blank=True) # Fixme: fr
-    secteur = CharField(max_length=100) # Fixme: fr, entity ?
-    velo = TextField(null=True, blank=True) # Fixme: fr, gare
+    acces = TextField(verbose_name=_('acces'), null=True, blank=True) # Fixme: fr
+    alternative_name = CharField(verbose_name=_('alternative name'), max_length=100, null=True, blank=True) # Fixme
+    chaos_type = CharField(verbose_name=_('chaos type'), max_length=3, null=True, blank=True)
+    coordinate = PointField(verbose_name=_('coordinate'), null=True, blank=True)
+    name = CharField(verbose_name=_('name'), max_length=100)
+    note = TextField(verbose_name=_('note'), null=True, blank=True)
+    parcelles = CharField(verbose_name=_('parcelles'), max_length=50, null=True, blank=True) # Fixme: fr
+    rdv = TextField(verbose_name=_('Rdv GUMS'), null=True, blank=True) # Fixme: fr
+    secteur = CharField(verbose_name=_('secteur'), max_length=100) # Fixme: fr, entity ?
+    velo = TextField(verbose_name=_('velo'), null=True, blank=True) # Fixme: fr, gare
 
     ##############################################
 
@@ -178,23 +166,20 @@ class Circuit(Model):
 
     """This class defines a circuit."""
 
-    class Meta:
-        app_label = 'BleauDatabaseDjangoApplication'
-
-    boulders = JSONField(null=True, blank=True)
-    colour = CharField(max_length=50, null=True, blank=True)
-    coordinate = PointField(null=True, blank=True)
-    creation_date = IntegerField(null=True, blank=True) # Fixme: opening ?
-    gestion = CharField(max_length=50, null=True, blank=True) # Fixme: fr
-    grade = CharField(max_length=3, null=True, blank=True)
-    massif = ForeignKey(Massif, on_delete=models.CASCADE)
-    note = TextField(null=True, blank=True)
-    number = IntegerField()
-    openers = ManyToManyField(Person)
-    refection_date = IntegerField(null=True, blank=True)
-    refection_note = TextField(null=True, blank=True)
-    status = CharField(max_length=50, null=True, blank=True)
-    topos = JSONField(null=True, blank=True)
+    boulders = JSONField(verbose_name=_('boulders'), null=True, blank=True)
+    colour = CharField(verbose_name=_('colour'), max_length=50, null=True, blank=True)
+    coordinate = PointField(verbose_name=_('coordinate'), null=True, blank=True)
+    creation_date = IntegerField(verbose_name=_('creation_date'), null=True, blank=True) # Fixme: opening ?
+    gestion = CharField(verbose_name=_('gestion'), max_length=50, null=True, blank=True) # Fixme: fr
+    grade = CharField(verbose_name=_('grade'), max_length=3, null=True, blank=True)
+    massif = ForeignKey(Massif, verbose_name=_('massif'), on_delete=models.CASCADE)
+    note = TextField(verbose_name=_('note'), null=True, blank=True)
+    number = IntegerField(verbose_name=_('number'))
+    openers = ManyToManyField(Person, verbose_name=_('openers'))
+    refection_date = IntegerField(verbose_name=_('refection date'), null=True, blank=True)
+    refection_note = TextField(verbose_name=_('refection note'), null=True, blank=True)
+    status = CharField(verbose_name=_('status'), max_length=50, null=True, blank=True)
+    topos = JSONField(verbose_name=_('topos'), null=True, blank=True)
 
     ##############################################
 
@@ -211,20 +196,17 @@ class Circuit(Model):
 
     @property
     def full_name(self):
-        pattern = '{0.massif} ' + _('N° ') + '{0.number} {0.grade} {0.colour}'
+        pattern = '{0.massif} ~ ' + str(_('N° ')) + '{0.number} {0.grade} {0.colour}'
         return pattern.format(self)
 
 ####################################################################################################
 
 class Refection(Model):
 
-    class Meta:
-        app_label = 'BleauDatabaseDjangoApplication'
-
-    circuit = models.ForeignKey(Circuit)
-    date = IntegerField(null=True, blank=True)
-    note = TextField(null=True, blank=True)
-    persons = ManyToManyField(Person)
+    circuit = models.ForeignKey(Circuit, verbose_name=_('circuit'))
+    date = IntegerField(verbose_name=_('date'), null=True, blank=True)
+    note = TextField(verbose_name=_('note'), null=True, blank=True)
+    persons = ManyToManyField(Person, verbose_name=_('persons'))
 
     ##############################################
 
