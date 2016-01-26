@@ -1,10 +1,10 @@
 {# -*- engine: jinja2 -*- #}
 {% extends "include/base.html" %}
 
-{% block title %} - {{ _("Boulders") }} {{ circuit.full_name }}{% endblock %}
+{% block title %} - {{ _('Boulders') }} {{ circuit.full_name }}{% endblock %}
 
 {% block breadcrumb_li %}
-  <li><a href="{{ url('massif.index') }}">Massifs</a></li>
+  <li><a href="{{ url('massif.index') }}">{{ _('Massifs') }}</a></li>
   <li><a href="{{ url('massif.details', circuit.massif.pk) }}">{{ circuit.massif.name }}</a></li>
   <li><a href="{{ url('circuit.details', circuit.pk) }}">{{ circuit.name }}</a></li>
   <li class="active">{{ _("Boulders") }}</li>
@@ -38,10 +38,10 @@
   <table id="editable-table" class="table">
     <thead>
       <tr>
-	<th>{{ _('Number') }}</th>
-	<th>{{ _('Grade') }}</th>
-	<th>{{ _('Name') }}</th>
-	<th>{{ _('Comment') }}</th>
+	<th label="number">{{ _('Number') }}</th>
+	<th label="grade">{{ _('Grade') }}</th>
+	<th label="name">{{ _('Name') }}</th>
+	<th label="comment">{{ _('Comment') }}</th>
 	<th></th>
 	<th></th>
 	<th></th>

@@ -10,7 +10,7 @@
   <li><a href="{{ url('massif.index') }}">Massifs</a></li>
   <li><a href="{{ url('massif.details', massif.pk) }}">{{ massif.name }}</a></li>
   <li><a href="{{ url('circuit.details', circuit.pk) }}">{{ circuit.name }}</a></li>
-  <li><a href="{{ url('refection.update', refection.pk) }}">{{ _('Refection') }} {{ refection.date }}</a></li>
+  <li><a href="{{ url('refection.details', refection.pk) }}">{{ _('Refection') }} {{ refection.date }}</a></li>
   <li class="active">{{ _('Update') }}</li>
 {% endblock %}
 
@@ -50,7 +50,7 @@
       <table id="editable-table" class="table">
 	<thead>
 	  <tr>
-	    <th>{{ _('Name') }}</th>
+	    <th label="name">{{ _('Name') }}</th>
 	    <th></th>
 	  </tr>
 	</thead>

@@ -40,7 +40,6 @@ save_button.click(function () {
   data.forEach(function (row) {
     pks.push('/api/person/' + name_to_pk[row.name].toString() + '/');
   });
-  console.log(pks);
 
   var data = {};
   data[pk_key] = pks;

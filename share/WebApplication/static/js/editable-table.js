@@ -38,13 +38,13 @@ jQuery.fn.shift = [].shift;
 
 function export_data() {
   var rows = table.find('tr:not(tr.invisible)');
-  console.log(rows);
   var headers = [];
   var data = [];
   
   // Get the headers (add special header logic here)
   $(rows.shift()).find('th:not(:empty)').each(function () {
-    headers.push($(this).text().toLowerCase());
+    var label = $(this).attr('label');
+    headers.push(label);
   });
   
   // Turn all existing rows into a loopable array
@@ -65,13 +65,10 @@ function export_data() {
 
 function rest_patch(server, endpoint, data) {
   json_data = JSON.stringify(data);
-  console.log(json_data)
   
   url = server + endpoint;
-  console.log(url)
   
   var csrf_token = Cookies.get('csrftoken');
-  console.log(csrf_token)
   
   var xhr_request = $.ajax({
     url : url,
