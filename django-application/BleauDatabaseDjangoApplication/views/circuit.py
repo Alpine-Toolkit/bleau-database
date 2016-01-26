@@ -32,7 +32,7 @@ from django.utils.translation import ugettext as _
 
 ####################################################################################################
 
-from ..models import Circuit, Person
+from ..models import Circuit, Massif, Person
 
 ####################################################################################################
 
@@ -41,18 +41,18 @@ class CircuitForm(ModelForm):
     class Meta:
         model = Circuit
         fields = (
-            'number',
+            'massif',
             'colour',
-            'grade',
             'coordinate',
-            'gestion',
-            'status',
             'creation_date',
+            'gestion',
+            'grade',
+            'note',
+            'number',
             'refection_date',
             'refection_note',
-            'note',
+            'status',
             'topos',
-            # 'massif',
         )
 
     coordinate = CharField(max_length=100)
@@ -71,7 +71,9 @@ class CircuitForm(ModelForm):
 ####################################################################################################
 
 @login_required
-def create(request):
+def create(request, massif_id):
+
+    massif = get_object_or_404(Massif, pk=massif_id)
 
     if request.method == 'POST':
         form = CircuitForm(request.POST)
@@ -83,9 +85,9 @@ def create(request):
         else:
             messages.error(request, _("Des informations sont manquantes ou incorrectes"))
     else:
-        form = CircuitForm()
+        form = CircuitForm(initial={'massif': massif})
 
-    return render(request, 'circuit/create.html', {'form': form})
+    return render(request, 'circuit/create.html', {'form': form, 'massif': massif})
 
 ####################################################################################################
 

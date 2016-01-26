@@ -34,7 +34,7 @@ from django.utils.translation import ugettext as _
 
 ####################################################################################################
 
-from ..models import Refection, Person
+from ..models import Circuit, Person, Refection
 
 ####################################################################################################
 
@@ -43,6 +43,7 @@ class RefectionForm(ModelForm):
     class Meta:
         model = Refection
         fields = (
+            'circuit',
             'date',
             'note'
             )
@@ -61,7 +62,9 @@ class RefectionForm(ModelForm):
 ####################################################################################################
 
 @login_required
-def create(request):
+def create(request, circuit_id):
+
+    circuit = get_object_or_404(Circuit, pk=circuit_id)
 
     if request.method == 'POST':
         form = RefectionForm(request.POST)
@@ -73,9 +76,9 @@ def create(request):
         else:
             messages.error(request, _("Des informations sont manquantes ou incorrectes"))
     else:
-        form = RefectionForm()
+        form = RefectionForm(initial={'circuit': circuit})
 
-    return render(request, 'refection/create.html', {'form': form})
+    return render(request, 'refection/create.html', {'form': form, 'circuit': circuit})
 
 ####################################################################################################
 

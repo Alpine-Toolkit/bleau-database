@@ -2,14 +2,16 @@
 {% extends "include/base.html" %}
 {% from "include/widgets.html" import update_form %}
 
-{% set circuit = refection.circuit %}
+{% if update %}
+  {% set circuit = refection.circuit %}
+{% endif %}
 {% set massif = circuit.massif %}
 
 {% block title %} -
   {% if update %}
     {{ _('Update') }} {{ _('Refection') }} {{ circuit.full_name }} {{ refection.date }}
   {% else %}
-    {{ _('New refection') }}
+    {{ _('New refection') }} {{ circuit.full_name }}
   {% endif %}
 {% endblock %}
 

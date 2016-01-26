@@ -224,7 +224,7 @@ urlpatterns += [
 from .views import circuit as circuit_views
 
 urlpatterns += [
-    url(r'^circuit/create/$',
+    url(r'^massif/(?P<massif_id>\d+)/create-circuit/$',
         circuit_views.create,
         name='circuit.create'),
 
@@ -257,7 +257,7 @@ urlpatterns += [
 from .views import refection as refection_views
 
 urlpatterns += [
-    url(r'^refection/create/$', # Fixme: (?P<circuit_id>\d+)
+    url(r'^circuit/(?P<circuit_id>\d+)/create-refection/$',
         refection_views.create,
         name='refection.create'),
 

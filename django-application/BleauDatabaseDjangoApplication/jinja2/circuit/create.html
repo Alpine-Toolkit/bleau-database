@@ -6,7 +6,7 @@
   {% if update %}
     {{ _('Update') }} {{ circuit.full_name }}
   {% else %}
-    {{ _('New circuit') }}
+    {{ _('New circuit') }} {{ massif.name }}
   {% endif %}
 {% endblock %}
 
@@ -16,6 +16,8 @@
     <li><a href="{{ url('circuit.details', circuit.pk) }}">{{ circuit.name }}</a></li>
     <li class="active">{{ _('Update') }}</li>
   {% else %}
+    <li><a href="{{ url('massif.index') }}">{{ _('Massifs') }}</a></li>
+    <li><a href="{{ url('massif.details', massif.pk) }}">{{ massif.name }}</a></li>
     <li class="active">{{ _('New circuit') }}</li>
   {% endif %}
 {% endblock %}
