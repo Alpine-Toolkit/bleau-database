@@ -221,7 +221,7 @@ def profile(request):
     # Force the user to provide language
     if not request.user.profile.language:
         messages.error(request, _("You should update your language."))
-        return HttpResponseRedirect(reverse('accounts.profile.update'))
+        return HttpResponseRedirect(reverse('account.profile.update'))
 
     return render(request, 'account/profile.html')
 
@@ -243,7 +243,7 @@ def update(request):
                 request.session['django_language'] = profile.language
                 translation.activate(profile.language)
             messages.success(request, _("Personnal information updated"))
-            return HttpResponseRedirect(reverse('accounts.profile'))
+            return HttpResponseRedirect(reverse('account.profile'))
     else:
         user_form = UserUpdateForm(instance=request.user)
         profile_form = ProfileUpdateForm(instance=profile)
@@ -257,7 +257,7 @@ def update(request):
 def password_change_done(request):
 
     messages.success(request, _('Password changed successfully'))
-    return HttpResponseRedirect(reverse('accounts.profile'))
+    return HttpResponseRedirect(reverse('account.profile'))
 
 ####################################################################################################
 
