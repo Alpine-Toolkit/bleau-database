@@ -28,7 +28,7 @@
     <dt>{{ _('Date') }}</dt><dd>{{ refection.date }}</dd>
     <dt>{{ _('Note') }}</dt><dd>{{ refection.note }}</dd>
     <dt>{{ _('Persons') }}
-      <a role="button" class="btn btn-sm btn-primary" href="{{ url('refection.persons', circuit.pk) }}">
+      <a role="button" class="btn btn-sm btn-primary" href="{{ url('refection.persons', refection.pk) }}">
 	<i class="fa fa-pencil-square-o"></i></a>
     </dt>
     <dd>

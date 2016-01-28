@@ -50,7 +50,7 @@
       {% for refection in person.refections %}
 	{% with circuit = refection.circuit %}
 	  <li class="m-b-1">
-	    <a href="{{  url("refection.details", circuit.pk) }}">
+	    <a href="{{  url("refection.details", refection.pk) }}">
 	      {{ circuit.full_name }} / {{ refection.date }}</a>
 	  </li>
 	{% endwith %}
