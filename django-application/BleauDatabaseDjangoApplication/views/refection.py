@@ -124,7 +124,7 @@ def delete(request, refection_id):
 
     refection = get_object_or_404(Refection, pk=refection_id)
     circuit = refection.circuit
-    messages.success(request, _("Refection «{0.name}» supprimé").format(refection))
+    messages.success(request, _("Refection «{0.date}» supprimé").format(refection))
     refection.delete()
 
     return HttpResponseRedirect(reverse('circuit.details', args=[circuit.pk]))
