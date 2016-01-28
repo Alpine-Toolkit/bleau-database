@@ -100,7 +100,7 @@ class GradeHistogram:
             if grade_counter.count:
                 inf = min(inf, i)
                 sup = max(sup, i)
-        
+
         return self._grades[inf:sup +1]
 
 ####################################################################################################
@@ -135,7 +135,7 @@ class CircuitStatistics:
                         standard_grade = str(grade.standard_grade)
                         global_boulder_grade_histogram.increment(standard_grade)
                         boulder_grade_histogram.increment(standard_grade)
-        
+
         self._circuit_grade_histogram = circuit_grade_histogram
         self._global_boulder_grade_histogram = global_boulder_grade_histogram
         self._boulder_grade_histogram_map = boulder_grade_histogram_map

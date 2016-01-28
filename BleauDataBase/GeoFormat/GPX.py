@@ -88,7 +88,7 @@ class GPX:
     def __init__(self, gpx_path=None, schema_path=None):
 
         self._waypoints = []
-        
+
         if gpx_path is not None:
             self._parse(gpx_path, schema_path)
 
@@ -101,11 +101,11 @@ class GPX:
             parser = etree.XMLParser(schema=schema)
         else:
             parser = None
-        
+
         namespaces = dict(topografix='http://www.topografix.com/GPX/1/1')
-        
+
         tree = etree.parse(gpx_path, parser=parser)
-        
+
         # root = tree.getroot()
         # for item in root:
         #    print(item.tag, tree.getpath(item))

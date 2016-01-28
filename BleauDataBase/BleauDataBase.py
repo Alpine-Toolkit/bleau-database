@@ -83,7 +83,7 @@ class PlaceCategory(str):
         category = category.lower()
         if category not in cls.__categories__:
             raise ValueError('Unknown category "{}"'.format(category))
-        
+
         return str.__new__(cls, category)
 
 ####################################################################################################
@@ -423,7 +423,7 @@ class AlpineGrade:
             value += 1/4
         else:
             value += 3/4
-        
+
         return value
 
     ##############################################
@@ -551,7 +551,7 @@ class Person:
         self._first_name = first_name
         self._last_name = last_name
         self._affiliation = affiliation
-        
+
         self._opened_circuits = [] # set()
         self._circuit_refections = [] # set() # Fixme: date
 
@@ -641,7 +641,7 @@ class Openers:
     def __init__(self, bleau_database, opener_string):
 
         self._opener_string = opener_string
-        
+
         self._openers = []
         self._affiliation = None
         if opener_string is not None:
@@ -672,7 +672,7 @@ class Openers:
                 raise ValueError("Unauthorised tag {}".format(element.tag))
         elif number_of_elements > 1:
             raise ValueError("More than one affiliation")
-        
+
         if affiliation is not None:
             affiliations = bleau_database.affiliations
             affiliation = Affiliation(affiliation)
@@ -681,7 +681,7 @@ class Openers:
             else:
                 affiliations.add(affiliation)
             self._affiliation = affiliation
-        
+
         persons = bleau_database.persons
         for first_name, last_name in openers:
             # Fixme: affiliation ?
@@ -734,7 +734,7 @@ class RefectionNote:
     def __init__(self, bleau_database, note):
 
         self._note = note
-        
+
         self._persons = []
         if note is not None:
             self._parse(bleau_database)
@@ -754,7 +754,7 @@ class RefectionNote:
                     first_name = name[:i]
                     last_name = name[i+1:].strip()
                     persons.append((first_name, last_name))
-        
+
         all_persons = bleau_database.persons
         for first_name, last_name in persons:
             # Fixme: affiliation ?
@@ -869,7 +869,7 @@ class WithCoordinate(FromJsonMixin):
         properties = self.to_json(exclude=('coordinate',))
         # Fixme: category
         properties['object'] = self.__class__.__name__
-        
+
         return {'type': 'Feature', 'geometry': self.coordinate, 'properties': properties}
 
     ##############################################
@@ -977,7 +977,7 @@ class Massif(PlaceBase):
     def __init__(self, bleau_database, **kwargs):
 
         super().__init__(bleau_database, **kwargs)
-        
+
         self._circuits = set()
 
     ##############################################
@@ -1174,9 +1174,9 @@ class Circuit(PlaceBase):
         kwargs['opener'] = Openers(bleau_database, kwargs.get('opener', None))
         kwargs['refection_note'] = RefectionNote(bleau_database, kwargs.get('refection_note', None))
         super().__init__(bleau_database, **kwargs)
-        
+
         self.massif.add_circuit(self)
-        
+
         for person in self.opener:
             person.add_opened_circuit(self)
         for person in self.refection_note:
@@ -1189,7 +1189,7 @@ class Circuit(PlaceBase):
         properties = self.to_json(exclude=('coordinate', 'boulders'))
         # Fixme: category
         properties['object'] = self.__class__.__name__
-        
+
         return Feature(geometry=self.coordinate, properties=properties)
 
     ##############################################
@@ -1281,7 +1281,7 @@ class BleauDataBase:
 
         # To sort string using French collation
         locale.setlocale(locale.LC_ALL, country_code)
-        
+
         self._items = {}
         self._places = {}
         self._massifs = {}
@@ -1289,19 +1289,19 @@ class BleauDataBase:
         self._number_of_boulders = None
         self._persons = Persons()
         self._affiliations = Affiliations()
-        
+
         self._area_interval = None
-        
+
         self._rtree_place = None
         self._rtree_massif = None
         self._rtree_circuit = None
         self._ids = {}
-        
+
         if json_file is not None:
             with open(json_file, encoding='utf8') as f:
                 # Fixme: object_hook= for Coordinate
                 data = json.load(f)
-            
+
             places = [Place(self, raise_for_unknown=raise_for_unknown, **place_dict)
                       for place_dict in data['places']]
             for place in places:
@@ -1311,7 +1311,7 @@ class BleauDataBase:
                        for massif_dict in data['massifs']]
             for massif in massifs:
                 self.add_massif(massif)
-            
+
             for circuit_dict in data['circuits']:
                 circuit_dict['massif'] = self._massifs[circuit_dict['massif']]
                 # Fixme: circuit -> massif -> bleau_database
@@ -1447,7 +1447,7 @@ class BleauDataBase:
                 exported_circuits = [circuit.to_feature() for circuit in self.circuits if circuit]
             features.extend(exported_circuits)
         feature_collections = geojson.FeatureCollection(features)
-        
+
         if not geojson.is_valid(feature_collections):
             raise ValueError('Non valid GeoJSON')
         # Fixme: crs geojson.named API
@@ -1484,7 +1484,7 @@ class BleauDataBase:
 
         if rtree is None:
             raise NotImplementedError
-        
+
         rtree_ = rtree.index.Index()
         for item in items:
             if item:
@@ -1548,7 +1548,7 @@ class BleauDataBase:
 
         places = self._nearest(self.rtree_place, item, number_of_items=1000, distance_max=distance_max)
         places = [place for place in places if place.category == place_category]
-        
+
         return places[:number_of_items]
 
     ##############################################

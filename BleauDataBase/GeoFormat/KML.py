@@ -35,10 +35,10 @@ def import_kml_file(kml_path):
 
     with open(kml_path) as f:
         doc = f.read()
-    
+
     kml_document = fastkml.kml.KML()
     kml_document.from_string(doc)
-    
+
     places = []
     for folder in kml_document.features():
         for placemark in folder.features():
@@ -46,7 +46,7 @@ def import_kml_file(kml_path):
             place = Place(coordinate=coordinate, name=placemark.name, note=placemark.description,
                           bleau_database=None)
             places.append(place)
-    
+
     return places
 
 ####################################################################################################

@@ -113,7 +113,7 @@ class FromJsonMixin(metaclass=FromJsonMixinMetaClass):
                 else:
                     value = factory(value)
             setattr(self, key, value)
-        
+
         # Set to None missing fields
         for key in self.__field_names__:
             if key not in kwargs:
@@ -140,7 +140,7 @@ class FromJsonMixin(metaclass=FromJsonMixinMetaClass):
                     value = value.__json_interface__
                 if not only_defined or value is not None:
                     d[field] = value
-        
+
         return d
 
 ####################################################################################################
