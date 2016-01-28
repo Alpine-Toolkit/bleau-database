@@ -48,7 +48,7 @@ class MassifForm(ModelForm):
             'note',
             # 'coordinate',
             'parcelles',
-            'acces',
+            'access',
             'velo',
             'rdv',
         )

@@ -20,8 +20,11 @@
 
 ####################################################################################################
 
+from datetime import datetime
+
 from django.contrib.auth.models import User
 from django.contrib.postgres.fields import JSONField
+from django.core.exceptions import ValidationError
 from django.db.models.signals import post_save
 from django.utils.translation import ugettext_lazy as _
 
@@ -34,6 +37,8 @@ from django.contrib.gis.db.models import (Model,
                                           ManyToManyField)
 
 ####################################################################################################
+
+from BleauDataBase.BleauDataBase import AlpineGrade, ChaosType
 
 from .settings import LANGUAGES
 from .utils import strip_accent
@@ -77,7 +82,7 @@ class Place(Model):
     # creation_date = models.DateTimeField(auto_now_add=True)
     category = CharField(verbose_name=_('category'), choices=CATEGORIES_CHOICES, max_length=30)
     coordinate = PointField(verbose_name=_('coordinate'))
-    name = CharField(verbose_name=_('name'), max_length=100)
+    name = CharField(verbose_name=_('name'), max_length=100, unique=True)
     note = TextField(verbose_name=_('note'), null=True, blank=True) # aka commentaire
 
     ##############################################
@@ -89,6 +94,9 @@ class Place(Model):
 ####################################################################################################
 
 class Person(Model):
+
+    class Meta:
+        unique_together = ('first_name', 'last_name')
 
     first_name = CharField(verbose_name=_('first name'), max_length=100)
     last_name = CharField(verbose_name=_('last name'), max_length=100)
@@ -136,15 +144,29 @@ class Person(Model):
 
 ####################################################################################################
 
+def year_validator(year):
+    if not (1900 < year <= datetime.now().year):
+        raise ValidationError(_('Invalid date'))
+
+####################################################################################################
+
+def chaos_type_validator(chaos_type):
+    try:
+        ChaosType(chaos_type)
+    except ValueError:
+        raise ValidationError(_('Invalid chaos type'))
+
+####################################################################################################
+
 class Massif(Model):
 
     """This class defines a massif."""
 
-    acces = TextField(verbose_name=_('acces'), null=True, blank=True) # Fixme: fr
+    access = TextField(verbose_name=_('access'), null=True, blank=True)
     alternative_name = CharField(verbose_name=_('alternative name'), max_length=100, null=True, blank=True) # Fixme
-    chaos_type = CharField(verbose_name=_('chaos type'), max_length=3, null=True, blank=True)
+    chaos_type = CharField(verbose_name=_('chaos type'), max_length=3, null=True, blank=True, validators=[chaos_type_validator])
     coordinate = PointField(verbose_name=_('coordinate'), null=True, blank=True)
-    name = CharField(verbose_name=_('name'), max_length=100)
+    name = CharField(verbose_name=_('name'), max_length=100, unique=True)
     note = TextField(verbose_name=_('note'), null=True, blank=True)
     parcelles = CharField(verbose_name=_('parcelles'), max_length=50, null=True, blank=True) # Fixme: fr
     rdv = TextField(verbose_name=_('Rdv GUMS'), null=True, blank=True) # Fixme: fr
@@ -173,24 +195,35 @@ class Massif(Model):
 
 ####################################################################################################
 
+def alpine_grade_validator(grade):
+    try:
+        AlpineGrade(grade)
+    except ValueError:
+        raise ValidationError(_('Invalid alpine grade'))
+
+####################################################################################################
+
 class Circuit(Model):
 
     """This class defines a circuit."""
 
-    boulders = JSONField(verbose_name=_('boulders'), null=True, blank=True)
+    class Meta:
+        unique_together = ('massif', 'number')
+
+    boulders = JSONField(verbose_name=_('boulders'), null=True, blank=True) # Fixme: validation
     colour = CharField(verbose_name=_('colour'), max_length=50, null=True, blank=True)
     coordinate = PointField(verbose_name=_('coordinate'), null=True, blank=True)
-    creation_date = IntegerField(verbose_name=_('creation_date'), null=True, blank=True) # Fixme: opening ?
+    creation_date = IntegerField(verbose_name=_('creation_date'), null=True, blank=True, validators=[year_validator]) # Fixme: opening ?
     gestion = CharField(verbose_name=_('gestion'), max_length=50, null=True, blank=True) # Fixme: fr
-    grade = CharField(verbose_name=_('grade'), max_length=3, null=True, blank=True)
+    grade = CharField(verbose_name=_('grade'), max_length=3, null=True, blank=True, validators=[alpine_grade_validator])
     massif = ForeignKey(Massif, verbose_name=_('massif'), on_delete=models.CASCADE)
     note = TextField(verbose_name=_('note'), null=True, blank=True)
     number = IntegerField(verbose_name=_('number'))
     openers = ManyToManyField(Person, verbose_name=_('openers'))
-    refection_date = IntegerField(verbose_name=_('refection date'), null=True, blank=True)
+    refection_date = IntegerField(verbose_name=_('refection date'), null=True, blank=True, validators=[year_validator])
     refection_note = TextField(verbose_name=_('refection note'), null=True, blank=True)
     status = CharField(verbose_name=_('status'), max_length=50, null=True, blank=True)
-    topos = JSONField(verbose_name=_('topos'), null=True, blank=True)
+    topos = JSONField(verbose_name=_('topos'), null=True, blank=True) # Fixme: validation
 
     ##############################################
 
@@ -215,7 +248,7 @@ class Circuit(Model):
 class Refection(Model):
 
     circuit = models.ForeignKey(Circuit, verbose_name=_('circuit'))
-    date = IntegerField(verbose_name=_('date'), null=True, blank=True)
+    date = IntegerField(verbose_name=_('date'), validators=[year_validator])
     note = TextField(verbose_name=_('note'), null=True, blank=True)
     persons = ManyToManyField(Person, verbose_name=_('persons'))
 

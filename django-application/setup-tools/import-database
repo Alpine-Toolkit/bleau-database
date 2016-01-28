@@ -37,7 +37,13 @@ from BleauDataBase.BleauDataBase import BleauDataBase
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "BleauDatabaseDjangoSite.settings")
 django.setup()
 
-from BleauDatabaseDjangoApplication.models import (Place, Massif, Circuit, Person)
+from BleauDatabaseDjangoApplication.models import (
+    Circuit,
+    Massif,
+    Person,
+    Place,
+    Refection,
+)
 
 ####################################################################################################
 
@@ -76,7 +82,7 @@ Massif.objects.all().delete()
 for massif in bleau_database.massifs:
     print(massif)
     orm_massif = Massif(
-        acces=massif.acces,
+        access=massif.acces,
         alternative_name=massif.alternative_name,
         chaos_type=massif.chaos_type,
         coordinate=to_postgis_coordinate(massif),
@@ -133,10 +139,11 @@ for person in bleau_database.persons:
     )
     orm_person.save()
     for circuit in person.opened_circuits:
-        print(circuit)
         circuits[circuit].openers.add(orm_person)
-
-# Refections ...
+    for circuit in person.circuit_refections:
+        orm_refection = Refection(circuit=circuits[circuit], date=1900, note='')
+        orm_refection.save()
+        orm_refection.persons.add(orm_person)
 
 ####################################################################################################
 #
