@@ -57,7 +57,7 @@
   <form action="." method="post">
     {% csrf_token %}
     {% for field in form.visible_fields() %}
-      <div class="form-group row{% if field.errors %} has-error{% endif %}">
+      <div class="form-group row{% if field.errors %} has-danger{% endif %}">
 	<label class="col-xl-4 form-control-label" for="{{ field.id_for_label }}">{{ field.label }}</label>
 	<div class="col-xl-8">
 	  {{ field }}
