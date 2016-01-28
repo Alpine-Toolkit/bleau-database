@@ -99,40 +99,40 @@ class FlaskWebApplication:
 
         self.application = Flask(__name__)
         self.application.logger.info("Start Bleau Database Web Application")
-        
+
         self.application.config.from_pyfile(config_path)
         # Fixme: right way?
         self.application.config['bleau_database'] = bleau_database
-        
+
         self.application.secret_key = os.urandom(24)
         # WTF_CSRF_SECRET_KEY =
         
         self.cache = Cache(self.application, config={'CACHE_TYPE': 'simple'})
-        
+
         self.babel = Babel(self.application)
         self.babel.localeselector(get_locale)
-        
+
         self.application.error_handler_spec[None][404] = page_not_found
-        
+
         if server_name is not None:
             self.application.config['SERVER_NAME'] = server_name
         # self.app.config['SITEMAP_GZIP'] = True
         self.application.config['SITEMAP_INCLUDE_RULES_WITHOUT_PARAMS'] = True
         self.application.config['SITEMAP_VIEW_DECORATORS'] = [load_page]
         self.sitemap = Sitemap(app=self.application)
-        
+
         from .Model import model
         model.init_app(self.application)
-        
+
         application_singleton = FlaskWebApplicationSingleton()
         application_singleton.application = self.application
         application_singleton.cache = self.cache
         application_singleton.babel = self.babel
         application_singleton.sitemap = self.sitemap
-        
+
         from .Views.Main import main
         self.application.register_blueprint(main)
-        
+
         # Map / to /fr
         # Fixme: /foo redirect to main instead of 404
         self.application.add_url_rule('/', 'main.index')

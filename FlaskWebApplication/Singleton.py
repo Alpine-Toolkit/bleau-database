@@ -44,7 +44,7 @@ class SingletonMetaClass(type):
         # print('MetaSingleton __init__:', cls, class_name, super_classes, class_attribute_dict, sep='\n... ')
 
         type.__init__(cls, class_name, super_classes, class_attribute_dict)
-        
+
         cls._instance = None
         cls._rlock = threading.RLock() # A factory function that returns a new reentrant lock object.
 
@@ -60,7 +60,7 @@ class SingletonMetaClass(type):
         with cls._rlock:
             if cls._instance is None:
                 cls._instance = type.__call__(cls, *args, **kwargs)
-        
+
         return cls._instance
 
 ####################################################################################################
