@@ -1,1 +1,0 @@
-../packages/openlayers3-v3.12.1/ol-debug.js

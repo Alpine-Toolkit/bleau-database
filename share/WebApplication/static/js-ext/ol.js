@@ -1,1 +1,1 @@
-../packages/openlayers3-v3.12.1/ol.js
+../packages/openlayers3/ol.js
