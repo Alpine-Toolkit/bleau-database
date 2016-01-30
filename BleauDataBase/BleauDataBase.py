@@ -1451,7 +1451,7 @@ class BleauDataBase:
         if not geojson.is_valid(feature_collections):
             raise ValueError('Non valid GeoJSON')
         # Fixme: crs geojson.named API
-        
+
         kwargs = dict(indent=2, ensure_ascii=False, sort_keys=True)
         if json_path is not None:
             with open(json_path, 'w', encoding='utf8') as f:
