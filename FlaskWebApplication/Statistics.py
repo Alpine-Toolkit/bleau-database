@@ -21,6 +21,14 @@
 ####################################################################################################
 
 import hashlib
+from io import StringIO
+
+import numpy as np
+
+import matplotlib
+matplotlib.use('Agg')
+from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
+from matplotlib.figure import Figure
 
 # from bokeh.plotting import figure
 from bokeh.embed import components
@@ -42,6 +50,17 @@ class BokehPlot:
         script, div = components(*args, **kwargs)
         self.script = script
         self.div = div
+
+####################################################################################################
+
+class SvgPlot:
+
+    ##############################################
+
+    def __init__(self, svg):
+
+        self.script = ''
+        self.div = svg
 
 ####################################################################################################
 
@@ -70,22 +89,61 @@ class CircuitStatisticsData:
                 'labels': [str(grade_counter) for grade_counter in grade_counters],
                 'counts': [grade_counter.count for grade_counter in grade_counters],
             }
-            # Workaround to don't sort labels
-            label = CatAttr(df=data, columns='labels', sort=False)
-            bar = Bar(data,
-                      values='counts', label=label,
-                      title=title,
-                      xlabel='',
-                      ylabel='',
-                      plot_width=300,
-                      plot_height=200,
-                      responsive=True,
-                      tools='',
-                      toolbar_location=None,
-            )
-            return BokehPlot(bar)
+            # engine = self._make_bokeh_barchart
+            engine = self._make_svg_barchart
+            return engine(data, title)
         else:
             return None
+
+    ##############################################
+
+    def _make_bokeh_barchart(self, data, title):
+
+        # Workaround to don't sort labels
+        label = CatAttr(df=data, columns='labels', sort=False)
+        bar = Bar(data,
+                  values='counts', label=label,
+                  title=title,
+                  xlabel='',
+                  ylabel='',
+                  plot_width=300,
+                  plot_height=200,
+                  responsive=True,
+                  tools='',
+                  toolbar_location=None,
+        )
+        return BokehPlot(bar)
+
+    ##############################################
+
+    def _make_svg_barchart(self, data, title):
+
+        dpi = 100
+        figure_width = 1500 / dpi
+        aspect_ratio = 16 / 9
+        figure_height = figure_width / aspect_ratio
+
+        figure = Figure(figsize=(figure_width, figure_height), dpi=dpi, facecolor='white')
+        axes = figure.add_subplot(1, 1, 1)
+        y = data['counts']
+        x = np.arange(len(y))
+        width = .5
+        bar_chart = axes.bar(x, y, width=width, color='r', edgecolor='white')
+
+        axes.set_ylabel('')
+        axes.set_title(title, fontsize=20)
+        axes.set_xticks(x + width/2)
+        axes.xaxis.set_tick_params(width=0)
+        axes.set_xticklabels(data['labels'], rotation=45, fontsize=15)
+        axes.grid(axis='y')
+
+        canvas = FigureCanvas(figure)
+        image_data = StringIO()
+        canvas.print_figure(image_data, format='svg')
+        svg = image_data.getvalue()
+        svg = svg[svg.find('<svg'):]
+
+        return SvgPlot(svg)
 
     ##############################################
 
