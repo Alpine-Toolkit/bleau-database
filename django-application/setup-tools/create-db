@@ -16,10 +16,12 @@ ${path}/../manage.py migrate
 ${path}/../manage.py makemigrations BleauDatabaseDjangoApplication
 ${path}/../manage.py migrate BleauDatabaseDjangoApplication
 
-${path}/../manage.py createsuperuser --noinput --username fabrice --email fabrice.salvaire@orange.fr
-psql -U postgres < ${sql_path}/init-password.sql
+# ${path}/../manage.py createsuperuser --noinput --username fabrice --email fabrice.salvaire@orange.fr
+# psql -U postgres < ${sql_path}/init-password.sql
 
 ${path}/../manage.py createinitialrevisions
+
+${path}/../manage.py loaddata BleauDatabaseDjangoApplication/fixtures/00_profiles.json
 
 pg_dump -U postgres -d bleaudb > ${sql_path}/bleaudb.sql
 

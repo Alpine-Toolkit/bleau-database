@@ -1,0 +1,132 @@
+[
+  {
+    "fields": {
+      "groups": [],
+      "first_name": "",
+      "last_login": "2016-01-28T20:31:38.963Z",
+      "is_staff": true,
+      "is_superuser": true,
+      "password": "pbkdf2_sha256$24000$pp8dV2vNmdMV$IgWibdB0wzIRkGRKJJkFvi4d3NLbV/iGWwfdeeAHxTI=",
+      "last_name": "",
+      "username": "fabrice",
+      "is_active": true,
+      "date_joined": "2016-01-28T20:31:02.134Z",
+      "user_permissions": [],
+      "email": "fabrice.salvaire@orange.fr"
+    },
+    "model": "auth.user",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "groups": [],
+      "first_name": "",
+      "last_login": "2016-02-05T12:06:17.498Z",
+      "is_staff": true,
+      "is_superuser": false,
+      "password": "pbkdf2_sha256$24000$ycdyz5S6GNe0$zvjaPgFKDPFXBLaSB6wWqOrc5IBt9VSiZkbJTyQQ0ng=",
+      "last_name": "",
+      "username": "fsgt",
+      "is_active": true,
+      "date_joined": "2016-02-05T12:02:37.959Z",
+      "user_permissions": [],
+      "email": ""
+    },
+    "model": "auth.user",
+    "pk": 2
+  },
+  {
+    "fields": {
+      "groups": [],
+      "first_name": "",
+      "last_login": "2016-02-05T12:06:42.800Z",
+      "is_staff": true,
+      "is_superuser": false,
+      "password": "pbkdf2_sha256$24000$PLioBcJiiYxw$D3t3uMtCI1nJp9VZTBC54qS/5Iktss5pftXSERFrgVs=",
+      "last_name": "",
+      "username": "cosiroc",
+      "is_active": true,
+      "date_joined": "2016-02-05T12:03:37.038Z",
+      "user_permissions": [],
+      "email": ""
+    },
+    "model": "auth.user",
+    "pk": 3
+  },
+  {
+    "fields": {
+      "groups": [],
+      "first_name": "",
+      "last_login": "2016-02-05T12:06:56.889Z",
+      "is_staff": true,
+      "is_superuser": false,
+      "password": "pbkdf2_sha256$24000$ZDKc8QQSO06G$ridcW9hui87hJQVLF4+yyETDgl6/lfKHdM+S00NmUhU=",
+      "last_name": "",
+      "username": "gums",
+      "is_active": true,
+      "date_joined": "2016-02-05T12:05:01.940Z",
+      "user_permissions": [],
+      "email": ""
+    },
+    "model": "auth.user",
+    "pk": 4
+  },
+  {
+    "fields": {
+      "groups": [],
+      "first_name": "",
+      "last_login": "2016-02-05T12:07:10.682Z",
+      "is_staff": true,
+      "is_superuser": false,
+      "password": "pbkdf2_sha256$24000$shF2090hdinG$K39UsCLo2VBlhP44p0bvz16YPGxU9QHa8f8MJ/fuLhE=",
+      "last_name": "",
+      "username": "blol",
+      "is_active": true,
+      "date_joined": "2016-02-05T12:05:43.696Z",
+      "user_permissions": [],
+      "email": ""
+    },
+    "model": "auth.user",
+    "pk": 5
+  },
+  {
+    "fields": {
+      "language": "fr",
+      "user": 1
+    },
+    "model": "BleauDatabaseDjangoApplication.profile",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "language": "fr",
+      "user": 2
+    },
+    "model": "BleauDatabaseDjangoApplication.profile",
+    "pk": 2
+  },
+  {
+    "fields": {
+      "language": "fr",
+      "user": 3
+    },
+    "model": "BleauDatabaseDjangoApplication.profile",
+    "pk": 3
+  },
+  {
+    "fields": {
+      "language": "fr",
+      "user": 4
+    },
+    "model": "BleauDatabaseDjangoApplication.profile",
+    "pk": 4
+  },
+  {
+    "fields": {
+      "language": "fr",
+      "user": 5
+    },
+    "model": "BleauDatabaseDjangoApplication.profile",
+    "pk": 5
+  }
+]
