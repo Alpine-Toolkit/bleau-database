@@ -119,7 +119,7 @@ class CircuitStatisticsData:
     def _make_svg_barchart(self, data, title):
 
         dpi = 100
-        figure_width = 1500 / dpi
+        figure_width = 1000 / dpi
         aspect_ratio = 16 / 9
         figure_height = figure_width / aspect_ratio
 
