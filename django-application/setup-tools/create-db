@@ -2,30 +2,32 @@
 
 ####################################################################################################
 
-path=$(dirname $(realpath $0))
-sql_path="$path/sql"
+path=$(dirname $(dirname $(realpath $0)))
+sql_path="${path}/setup-tools/sql"
 
 # psql=/usr/pgsql-9.4/bin/psql
+# python3=/usr/local/stow/Python-3.5.0-bdver3/bin/python3
+
 psql -U postgres < ${sql_path}/create-db.sql
 
 rm -rf BleauDatabaseDjangoApplication/migrations
 
-${path}/../manage.py makemigrations
-${path}/../manage.py migrate
+${python3} ${path}/manage.py makemigrations
+${python3} ${path}/manage.py migrate
 
-${path}/../manage.py makemigrations BleauDatabaseDjangoApplication
-${path}/../manage.py migrate BleauDatabaseDjangoApplication
+${python3} ${path}/manage.py makemigrations BleauDatabaseDjangoApplication
+${python3} ${path}/manage.py migrate BleauDatabaseDjangoApplication
 
-# ${path}/../manage.py createsuperuser --noinput --username fabrice --email fabrice.salvaire@orange.fr
+# ${python3} ${path}/manage.py createsuperuser --noinput --username fabrice --email fabrice.salvaire@orange.fr
 # psql -U postgres < ${sql_path}/init-password.sql
 
-${path}/../manage.py createinitialrevisions
+${python3} ${path}/manage.py createinitialrevisions
 
-${path}/../manage.py loaddata BleauDatabaseDjangoApplication/fixtures/00_profiles.json
+${python3} ${path}/manage.py loaddata ${path}/BleauDatabaseDjangoApplication/fixtures/00_profiles.json
 
 pg_dump -U postgres -d bleaudb > ${sql_path}/bleaudb.sql
 
-${path}/import-database ../data/bleau.json
+${python3} ${path}/setup-tools/import-database ${path}/../data/bleau.json
 
 ####################################################################################################
 #
