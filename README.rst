@@ -1,8 +1,5 @@
-.. |Cosiroc| replace:: Cosiroc
-.. _Cosiroc: http://www.cosiroc.fr
-
-.. |GUMS| replace:: GUMS
-.. _GUMS: http://www.gumsparis.asso.fr
+.. |BLEAULIB| replace:: bleaulib.org
+.. _BLEAULIB: http://bleaulib.org
 
 ======================
 Online Web Application
@@ -23,10 +20,10 @@ The JSON database and its derivatives are licensed under `CC BY-NC-SA 3.0 <http:
 English Resume
 ==============
 
-This repository contains a JSON database of the bouldering area of Fontainebleau (bleau) made from data
-of the |Cosiroc|_ and |Gums|_.
+This repository contains a JSON database of the bouldering area of Fontainebleau (bleau) made from
+the data of |BLEAULIB|_.
 
-JSON URL: https://raw.githubusercontent.com/Cosiroc/bleau-database/master/data/bleau.json
+JSON URL: https://raw.githubusercontent.com/bleaudb/bleau-database/master/data/bleau.json
 
 It also contains a Python module that provide an object oriented API on the database and a web application.
 
@@ -35,9 +32,9 @@ Description en Français
 =======================
 
 Ce dépôt contient une base de données au format JSON des sites d'escalade de la région de
-Fontainebleau (bleau) constitué à partir de données du |Cosiroc|_ et du |Gums|_.
+Fontainebleau constitué à partir de données du site |BLEAULIB|_.
 
-L'URL du fichier JSON est https://raw.githubusercontent.com/Cosiroc/bleau-database/master/data/bleau.json
+L'URL du fichier JSON est https://raw.githubusercontent.com/bleaudb/bleau-database/master/data/bleau.json
 
 Ce dépôt contient un module Python qui permet d'exploiter cette base de données et une application web.
 
