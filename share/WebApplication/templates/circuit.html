@@ -17,9 +17,9 @@
 {% endblock %}
 
 {% block breadcrumb_li %}
-  <li>{{ massif.secteur }}</li>
-  <li><a href="/{{ lang_code }}/massif/{{ massif.name }}">{{ massif.name }}</a></li>
-  <li class="active">Circuit n° {{ circuit.number }} {{ circuit.grade }} {{ circuit.colour }}</li>
+  <li class="breadcrumb-item">{{ massif.secteur }}</li>
+  <li class="breadcrumb-item"><a href="/{{ lang_code }}/massif/{{ massif.name }}">{{ massif.name }}</a></li>
+  <li class="breadcrumb-item active">Circuit n° {{ circuit.number }} {{ circuit.grade }} {{ circuit.colour }}</li>
 {% endblock %}
 
 {% block content %}

@@ -4,9 +4,9 @@
 {% block title %} - {{ person }}{% endblock %}
 
 {% block breadcrumb_li %}
-  <li><a href="/{{ lang_code }}/information">Information</a></li>
-  <li>Personne</li>
-  <li class="active">{{ person }}</li>
+  <li class="breadcrumb-item"><a href="/{{ lang_code }}/information">Information</a></li>
+  <li class="breadcrumb-item">Personne</li>
+  <li class="breadcrumb-item active">{{ person }}</li>
 {% endblock %}
 
 {% block content %}
