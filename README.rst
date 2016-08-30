@@ -8,7 +8,7 @@
 Online Web Application
 ======================
 
-The url of the online web application is http://bleau.fabrice-salvaire.fr
+The url of the online web application is http://bleaudb.bleausard.fr
 
 ========================
 Source and Data Licenses
