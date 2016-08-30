@@ -24,8 +24,8 @@ from functools import wraps
 import os
 
 from flask import Flask, g, request, render_template, abort, url_for
-from flask.ext.cache import Cache
-from flask.ext.babel import Babel
+from flask_cache import Cache
+from flask_babel import Babel
 from flask_sitemap import Sitemap, sitemap_page_needed
 
 ####################################################################################################
@@ -106,7 +106,7 @@ class FlaskWebApplication:
 
         self.application.secret_key = os.urandom(24)
         # WTF_CSRF_SECRET_KEY =
-        
+
         self.cache = Cache(self.application, config={'CACHE_TYPE': 'simple'})
 
         self.babel = Babel(self.application)

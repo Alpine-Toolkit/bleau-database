@@ -21,7 +21,7 @@
 ####################################################################################################
 
 from flask import Blueprint, render_template, request, g, url_for, send_from_directory
-from flask.ext.babel import lazy_gettext
+from flask_babel import lazy_gettext
 
 # from wtforms import Form
 from flask_wtf import Form
