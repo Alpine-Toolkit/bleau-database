@@ -70,10 +70,11 @@ setup_dict = dict(
         # Web Application
         'bokeh',
         'Flask',
-        'Flask-Babel',
-        'Flask-Cache',
-        'Flask-Sitemap',
-        'Flask-WTF',
+        # Fixme: valueError: expected parenthesized list: '-Sitemap'
+        # 'Flask-Babel',
+        # 'Flask-Cache',
+        # 'Flask-Sitemap',
+        # 'Flask-WTF',
         'WTForms',
     ],
     )
