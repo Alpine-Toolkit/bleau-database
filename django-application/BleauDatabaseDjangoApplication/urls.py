@@ -286,6 +286,7 @@ urlpatterns += [
 from .views.rest import (PersonViewSet, PlaceViewSet,
                          MassifViewSet,
                          CircuitViewSet, RefectionViewSet)
+from .views.schema_view import schema_view
 
 router = routers.DefaultRouter()
 router.register(r'circuit', CircuitViewSet)
@@ -297,7 +298,7 @@ router.register(r'refection', RefectionViewSet)
 urlpatterns += [
     url(r'^api/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    url(r'^api-docs/', include('rest_framework_swagger.urls')),
+    url(r'^api-docs/', schema_view),
 ]
 
 ####################################################################################################
