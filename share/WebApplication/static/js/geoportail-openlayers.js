@@ -44,7 +44,7 @@ if (extent) {
 } else {
   var center_in_mercator = ol.proj.transform([center.longitude, center.latitude],
 					     'EPSG:4326', 'EPSG:3857');
-  
+
   extent = [
     center_in_mercator[0] - extent_margin[0], center_in_mercator[1] - extent_margin[1],
     center_in_mercator[0] + extent_margin[0], center_in_mercator[1] + extent_margin[1]
@@ -166,21 +166,22 @@ function ign_layer_factory(layer_settings) {
     style: 'normal',
     attributions: [ign_attribution]
   });
-  
+
   var layer = new ol.layer.Tile({
     source: source,
     visible: false
   });
-  
+
   return layer;
 }
 
 var ign_layer_settings = [
   {layer_name: 'GEOGRAPHICALGRIDSYSTEMS.MAPS', image_format: 'image/jpeg'},
   {layer_name: 'ORTHOIMAGERY.ORTHOPHOTOS', image_format: 'image/jpeg'},
-  {layer_name: 'GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD', image_format: 'image/jpeg'},
-  {layer_name: 'TRANSPORTNETWORKS.ROADS', image_format: 'image/png'},
-  {layer_name: 'CADASTRALPARCELS.PARCELS', image_format: 'image/png'}
+  {layer_name: 'GEOGRAPHICALGRIDSYSTEMS.PLANIGN', image_format: 'image/jpeg'},
+  // {layer_name: 'GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD', image_format: 'image/jpeg'},
+  // {layer_name: 'TRANSPORTNETWORKS.ROADS', image_format: 'image/png'},
+  // {layer_name: 'CADASTRALPARCELS.PARCELS', image_format: 'image/png'}
 ];
 
 var ign_layers = [];
@@ -454,7 +455,7 @@ map.on('pointermove', function(event) {
 	feature_name = feature.get('name');
       coordinate = feature.getGeometry().getCoordinates();
     }
-    
+
     feature.setStyle([
       // selected_style,
       selected_text_style_function(feature_name, coordinate)
@@ -466,7 +467,7 @@ map.on('pointermove', function(event) {
 /**************************************************************************************************/
 
 if (show_edit_toolbar) {
-  
+
   var style_function_custom = function(feature, resolution) {
     return [new ol.style.Style({
       image: new ol.style.Circle({
@@ -481,28 +482,28 @@ if (show_edit_toolbar) {
       })
     })]
   }
-  
+
   var custom_source = new ol.source.Vector({
     features: new ol.format.GeoJSON()
   });
-  
+
   var custom_layer = new ol.layer.Vector({
     source: custom_source,
     style: style_function_custom
   });
   map.addLayer(custom_layer);
-  
+
   var interaction;
   $('#map-toolbar label').on('click', function(event) {
     map.removeInteraction(interaction);
-    
+
     var id = event.target.id;
     switch(id) {
     case "select":
       interaction = new ol.interaction.Select();
       map.addInteraction(interaction);
       break;
-      
+
     case "point":
       interaction = new ol.interaction.Draw({
         type: 'Point',
@@ -511,19 +512,19 @@ if (show_edit_toolbar) {
       map.addInteraction(interaction);
       interaction.on('drawend', onDrawEnd);
       break;
-      
+
     case "modify":
       interaction = new ol.interaction.Modify({
         features: new ol.Collection(custom_source.getFeatures())
       });
       map.addInteraction(interaction);
       break;
-      
+
     default:
       break;
     }
   });
-  
+
   var current_feature = null;
   var feature_modal = $('#feature-modal');
   var feature_wgs84_position = feature_modal.find('#feature-wsg84-position');
@@ -536,7 +537,7 @@ if (show_edit_toolbar) {
   var save_feature_button = feature_modal.find('#save-feature-button');
   var download_feature_button = $("#download-feature-button");
   var number_of_features_label = $("#number-of-features");
-  
+
   function show_feature_modal(feature) {
     current_feature = feature;
     mercator_coordinate = feature.getGeometry().getCoordinates();
@@ -545,7 +546,7 @@ if (show_edit_toolbar) {
     feature_mercator_position.text(mercator_coordinate[0].toFixed(0) + ', ' + mercator_coordinate[1].toFixed(0))
     feature_modal.modal();
   }
-  
+
   function hide_feature_modal() {
     feature_modal.modal('hide');
     feature_name_group.removeClass('has-error')
@@ -556,11 +557,11 @@ if (show_edit_toolbar) {
     feature_note_input.val('');
     current_feature = null;
   }
-  
+
   function onDrawEnd(event) {
     show_feature_modal(event.feature);
   }
-  
+
   save_feature_button.on('click', function(event) {
     var name = feature_name_input.val();
     if (name) {
@@ -574,12 +575,12 @@ if (show_edit_toolbar) {
       feature_name_input.addClass('form-control-error')
     }
   });
-  
+
   cancel_feature_button.on('click', function(event) {
     custom_source.removeFeature(current_feature)
     hide_feature_modal();
   });
-  
+
   download_feature_button.click(function(event) {
     var obj_geojson = (new ol.format.GeoJSON()).writeFeatures(custom_source.getFeatures(), feature_options);
     var obj_json = JSON.stringify(obj_geojson);

@@ -89,17 +89,13 @@
 	  <p>
 	    On peut sélectionner un autre type de carte à partir de la liste déroulante parmis les couches suivantes :
 	    <dl>
-	      <dt>Cartes IGN</dt>
+	      <dt>Carte Topographique</dt>
 	      <dd>Carte papier scannée série TOP 25, 100, … {# (GEOGRAPHICALGRIDSYSTEMS.MAPS) #}</dd>
-	      <dt>Carte Scan Express</dt>
+	      <dt>Carte</dt>
 	      <dd>Carte offrant une meilleure lisibilité que la précédente
-		{# (GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD) #}</dd>
+		{# (GEOGRAPHICALGRIDSYSTEMS.PLANIGN) #}</dd>
 	      <dt>Vue aérienne</dt>
 	      <dd>{# (ORTHOIMAGERY.ORTHOPHOTOS) #}</dd>
-	      <dt>Routes</dt>
-	      <dd>Carte mettant l'accent sur le réseau routier {# (TRANSPORTNETWORKS.ROADS) #}</dd>
-	      <dt>Parcelles cadastrales</dt>
-	      <dd>{# (CADASTRALPARCELS.PARCELS) #}</dd>
 	    </dl>
 	  </p>
 	  <p>
@@ -258,11 +254,9 @@
       <div class="form-group">
 	<label></label>
 	<select id="map-source" autocomplete=off> {# class="form-control" #}
-	  <option value="GEOGRAPHICALGRIDSYSTEMS.MAPS">Cartes IGN</option>
-	  <option value="GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD">Carte Scan Express</option>
+	  <option value="GEOGRAPHICALGRIDSYSTEMS.PLANIGN">Carte</option>
+	  <option value="GEOGRAPHICALGRIDSYSTEMS.MAPS">Carte Topographique</option>
 	  <option value="ORTHOIMAGERY.ORTHOPHOTOS">Vue aérienne</option>
-	  <option value="TRANSPORTNETWORKS.ROADS">Routes</option>
-	  <option value="CADASTRALPARCELS.PARCELS">Parcelles cadastrales</option>
 	</select>
       </div>
     </form>
