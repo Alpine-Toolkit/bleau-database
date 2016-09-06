@@ -187,7 +187,7 @@ var ign_layer_settings = [
 var ign_layers = [];
 ign_layer_settings.forEach(function(layer_settings) {
   var layer = ign_layer_factory(layer_settings);
-  if (layer_settings.layer_name == 'GEOGRAPHICALGRIDSYSTEMS.MAPS')
+  if (layer_settings.layer_name == 'GEOGRAPHICALGRIDSYSTEMS.PLANIGN')
     layer.setVisible(true);
   map.addLayer(layer);
   ign_layers.push(layer);
