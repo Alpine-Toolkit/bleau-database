@@ -1,0 +1,26 @@
+{# -*- engine: jinja2 -*- #}
+{% extends "include/base.html" %}
+
+{% block title %} - {{ _('Topo') }}{% endblock %}
+
+{% block breadcrumb_li %}
+  <li class="breadcrumb-item active">{{ _('Topo') }}</li>
+{% endblock %}
+
+{% block content %}
+  <h2>Note relative au droit d'auteur sur les topos</h2>
+  <p>
+    Les topos accessibles à partir de ce site appartiennent à leurs auteurs respectifs et sont en
+    principe des liens externes vers les sites qui les mettent à disposition du publique. Les liens
+    hypertextes de ces topos affichent explicitement les URLs. Cependant l'URL est tronquée lorsque
+    la taille du média est trop restreinte pour l'afficher en entier.
+  </p>
+  <p>
+    Nous souhaiterions à terme avoir des topos sous licence <a href="http://creativecommons.fr/">creative commons</a>,
+    mais il n'y a malheureusement pas de dynamique dans ce sens.
+  </p>
+  {# http://www.mascre-heguy.com/htm/fr/conseils/conseil_usage_liens_hypertextes.htm #}
+  {# http://www.numerama.com/politique/139435-un-amendement-pour-interdire-les-liens-hypertextes.html #}
+  {# http://www.numerama.com/magazine/28409-legalite-des-liens-hypertextes-d-importantes-nuances-a-apporter.html #}
+  {# http://www.les-infostrateges.com/article/0512246/la-question-juridique-des-liens-hypertextes #}
+{% endblock %}
