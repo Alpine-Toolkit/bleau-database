@@ -11,15 +11,49 @@
   <div itemscope itemtype="https://schema.org/AboutPage">
     <h2>Colophon</h2>
     <p>
-      Ce site présente une compilation de toutes les données disponible
-      sur les sites d'escalade de la région de Fontainebleau.
+      L'objectif premier de ce site est de mettre à disposition du publique une base de donnée en
+      open data sur les sites d'escalade de Fontainebleau et de les rendre accessible via une
+      application web open source et des outils informatiques.
+    </p>
+    <p>
+      La premiére initiative en matière d'open data revient au grimpeur François Louvel qui a fondé
+      fin 2012 l'association bleau libre avec d'autres grimpeurs et mis en place un <a href="http://bleaulib.org">wiki</a> sous
+      licence creative commons. Bien que le site <a href="http://camptocamp.org">camptocamp.org</a>
+      soit devenu une référence en ski de randonnée et en alpinisme, l'open data reste un concept
+      marginal pour la falaise et le bloc.
+    </p>
+    <p>
+      Ce site reprend la philosophie du wiki de bleaulib.org tout en apportant une différence au
+      niveau de l'architecture informatique.
+    </p>
+    <p>
+      Le topo d'escalade est d'ailleurs un sujet délicat en France où les divisions locales peuvent
+      parfois profiter à d'autres qui se soucient guère du fincancement de l'équipement, l'entretien
+      et la protection des sites. Le paradigme « Divide ut imperes » s'applique aussi à
+      l'escalade. La pratique de l'escalade en France est régie par deux fédérations
+      nationales&nbsp;: la FFME et la FFCAM auquel il faut ajouter la section escalade et montagne
+      de la FSGT, sans compter les apatrides. Bien que cela contribue à la diversité philosophique
+      de la pratique, il ne va sans dire que tout ce monde passe une certaine partie de son temps à
+      se quereller ... Il suffit de grimper un peu en extérieur pour avoir une aperçu de la jungle
+      du topo. Les équipeurs qui se font concurrence. L'équipeur qui ne fait pas partie du comité
+      départementale et qui ne recevra donc pas un sous de la vente du topo de la dite
+      fédération. Bref c'est le désarroi en bas des falaise &hellip;
     </p>
     <p>
       La <a href="/{{ lang_code }}/data">base de données</a> répertorie {{ bleau_database.number_of_massifs }} massifs
       et {{ bleau_database.number_of_circuits }} circuits
-      dont {{ bleau_database.number_of_circuits_with_topos }} avec topo,
-      {{ bleau_database.number_of_boulders }} blocs sont référencés.
+      dont {{ bleau_database.number_of_circuits_with_topos }} avec <a href="/{{ lang_code }}/topo-note">topo</a>,
+      {{ bleau_database.number_of_boulders }} blocs sont référencés. Les données sont essentiellement
+      issues du wiki de <a href="http://bleaulib.org">l'association Bleau Libre</a>. Des corrections
+      ont été apportées par rapport au wiki, tel que des fautes de saisies dans les noms etc. On
+      peut logiquement retrouver une partie de ces données sur d'autres sites pour la simple raison
+      qu'ils ont été alimenté par les mêmes personnes.
     </p>
+    <p>La procédure de mise à jour de la base de donnée reste une question en suspens, d'autant plus
+    qu'il faut impérativement contrôler que les modification respectents les arrêtés de l'ONF, la
+    propriété privée, etc.
+    </p>
+    <h2>Fonctions du site</h2>
     <p>Les principales fonctions du site sont les suivantes&nbsp;:</p>
     <ul>
       <li>Le site est « responsive », il s'adapte au format de l'écran que ce soit un smartphone, une tablette ou un ordinateur.</li>
@@ -32,6 +66,7 @@
       <li>Carte interactive pour créer des points d'intérêts</li>
       <li>Histogrammes des cotations pour les massifs et les circuits</li>
     </ul>
+    {#
     <h2>Frais de fonctionnement</h2>
     <p>La mise en service de ce site internet requiert le bugdet financier suivant&nbsp;:</p>
     <ul>
@@ -46,6 +81,7 @@
       Un serveur VPS offre une parfaite flexibilité et s'inscrit dans une démarche de
       développement durable.  De plus il est possible de mutualiser les services sur un seul VPS.
     </p>
+    #}
     <h2>À propos de l'application web</h2>
     <p>
       Cette application web a été écrite à la fin 2015 par
