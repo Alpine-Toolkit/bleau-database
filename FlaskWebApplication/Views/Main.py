@@ -122,6 +122,11 @@ def a_propos():
     return render_template_i18n('a-propos.html', bleau_database=model.bleau_database)
 
 @cache.cached()
+@main.route('/topo-note')
+def topo_note():
+    return render_template_i18n('topo-note.html', bleau_database=model.bleau_database)
+
+@cache.cached()
 @main.route('/fontainebleau')
 def fontainebleau():
     return render_template_i18n('fontainebleau.html')
