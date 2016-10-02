@@ -75,7 +75,7 @@
   <dl>
     <dt>{{ _("Type de chaos") }}</dt><dd>{% if massif.chaos_type %}{{ massif.chaos_type }}{% endif %}</dd>
     <dt>{{ _("Notes") }}</dt><dd>{% if massif.notes %}{{ massif.note }}{% endif %}</dd>
-    <dt>{{ _("Rendez-vous Gums") }}</dt><dd>{{ massif.rdv }}</dd>
+    {# <dt>{{ _("Rendez-vous Gums") }}</dt><dd>{{ massif.rdv }}</dd> #}
     {% with places = massif.nearest_point_deau() %}
       {% if places %}
 	<dt>{{ _("Point d'eau") }}</dt>
