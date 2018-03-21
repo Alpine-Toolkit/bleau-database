@@ -25,14 +25,14 @@ from Triangulation import TriangulationGeometry, TriangulationForce
 
 ####################################################################################################
 
-geometry = TriangulationGeometry(anchor_distance=100,
+geometry = TriangulationGeometry(anchor_distance=50,
                                  anchor_angle=30,
-                                 webbing_length=120,
+                                 webbing_length=150,
                                  webbing_ratio=.45)
 
 triangulation = TriangulationForce(geometry=geometry,
                                    weight=100,
-                                   deviation=10)
+                                   deviation=0)
 
 anchor1 = geometry.anchor1
 anchor2 = geometry.anchor2
@@ -133,6 +133,7 @@ geometry_line = mlines.Line2D((0, node_point.x, anchor2.x),
 axes.add_line(geometry_line)
 plt.annotate('P1', xy=anchor1, xytext=anchor1 + Vector.from_polar_coordinate(135, 5), horizontalalignment='right')
 plt.annotate('P2', xy=anchor2, xytext=anchor2 + Vector.from_polar_coordinate(45, 5))
+plt.annotate('N', xy=node_point, xytext=node_point + Vector.from_polar_coordinate(45, 5))
 
 Tp = (node_point + weight_point + weight_point + Vector(-weight_force.x, 0)) / 3
 T1 = (node_point + force_point + force_point + Vector(0, -force1.y)) / 3
