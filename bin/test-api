@@ -45,26 +45,62 @@ circuit_statistics = CircuitStatistics(bleau_database.circuits)
 grade_counters = circuit_statistics.circuit_grade_histogram
 title = 'Cotations des Blocs'
 
-grade_counters = [grade_counter for grade_counter in grade_counters if str(grade_counter) in ('EN', 'AD', 'PD')]
+grade_counters = [grade_counter for grade_counter in grade_counters]
 
 data = {
     'labels': [str(grade_counter) for grade_counter in grade_counters],
     'counts': [grade_counter.count for grade_counter in grade_counters],
 }
-print(data)
 
-from bokeh.charts import Bar, output_file, show
 
-p = Bar(data, values='counts', label='labels', title=title, tools='',
-        xlabel='',
-        ylabel='',
-        plot_width=300,
-        plot_height=150,
-        responsive=True,
-        toolbar_location=None,
-)
-output_file("bar.html")
-show(p)
+from io import StringIO
+
+import numpy as np
+
+import matplotlib
+matplotlib.use('Agg')
+
+from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
+from matplotlib.figure import Figure
+import matplotlib.pyplot as plt
+
+dpi = 100
+figure_width = 800 / dpi
+aspect_ratio = 16 / 9
+figure_height = figure_width / aspect_ratio
+
+figure = Figure(figsize=(figure_width, figure_height), dpi=dpi, facecolor='white')
+axes = figure.add_subplot(1,1,1)
+y = data['counts']
+x = np.arange(len(y))
+width = .5
+bar_chart = axes.bar(x, y, width=width, color='r', edgecolor='white')
+
+axes.set_ylabel('counts')
+axes.set_title('Histogram')
+axes.set_xticks(x + width/2)
+axes.xaxis.set_tick_params(width=0)
+axes.set_xticklabels(data['labels'], rotation=45, x=x)
+axes.grid(axis='y')
+
+canvas = FigureCanvas(figure)
+image_data = StringIO()
+canvas.print_figure(image_data, format='svg')
+
+print(image_data.getvalue())
+
+# from bokeh.charts import Bar, output_file, show
+
+# p = Bar(data, values='counts', label='labels', title=title, tools='',
+#         xlabel='',
+#         ylabel='',
+#         plot_width=300,
+#         plot_height=150,
+#         responsive=True,
+#         toolbar_location=None,
+# )
+# output_file("bar.html")
+# show(p)
 
 # for affiliation in bleau_database.affiliations:
 #     print(affiliation)
