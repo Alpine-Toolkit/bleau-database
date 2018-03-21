@@ -83,9 +83,3 @@ class PersonAdmin(YourModelAdmin, admin.ModelAdmin):
 @admin.register(Refection)
 class RefectionAdmin(YourModelAdmin, admin.ModelAdmin):
     pass
-
-####################################################################################################
-#
-# End
-#
-####################################################################################################

@@ -51,9 +51,3 @@ for secteur in secteurs:
 boulders.sort()
 boulders = [boulder.to_json() for boulder in boulders]
 print(json.dumps(boulders, indent=2, ensure_ascii=False, sort_keys=True))
-
-####################################################################################################
-#
-# End
-#
-####################################################################################################

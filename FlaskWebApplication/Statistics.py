@@ -189,9 +189,3 @@ class CircuitStatisticsCache:
         if key not in self._cache:
             self._cache[key] = CircuitStatisticsData(circuits)
         return self._cache[key]
-
-####################################################################################################
-#
-# End
-#
-####################################################################################################

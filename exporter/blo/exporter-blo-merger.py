@@ -218,9 +218,3 @@ print('Massifs manquants:', set(massif_list1) - set(massif_list2))
 json_path = 'html-data/blo/json/blo.json'
 with open(json_path, 'w', encoding='utf8') as f:
     json.dump(secteurs, f, indent=2, ensure_ascii=False, sort_keys=True)
-
-####################################################################################################
-#
-# End
-#
-####################################################################################################

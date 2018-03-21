@@ -176,9 +176,3 @@ for secteur in circuits_data:
 json_path = 'blo-blocs.json'
 with open(json_path, 'w', encoding='utf8') as f:
     json.dump(circuits, f, indent=2, ensure_ascii=False, sort_keys=True)
-
-####################################################################################################
-#
-# End
-#
-####################################################################################################

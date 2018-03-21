@@ -1634,9 +1634,3 @@ class BleauDataBase:
 
         longitude, latitude = self.area_interval.centre
         return Coordinate(longitude=longitude, latitude=latitude)
-
-####################################################################################################
-#
-# End
-#
-####################################################################################################

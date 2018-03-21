@@ -27,9 +27,3 @@ from django.apps import AppConfig
 class ApplicationConfig(AppConfig):
     name = 'BleauDatabaseDjangoApplication'
     verbose_name = 'Bleau Database'
-
-####################################################################################################
-#
-# End
-#
-####################################################################################################

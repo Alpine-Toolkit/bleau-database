@@ -31,9 +31,3 @@ from rest_framework_swagger.renderers import OpenAPIRenderer, SwaggerUIRenderer
 def schema_view(request):
     generator = schemas.SchemaGenerator(title='BleauDB REST API')
     return response.Response(generator.get_schema(request=request))
-
-####################################################################################################
-#
-# End
-#
-####################################################################################################

@@ -40,9 +40,3 @@ bleau_database = BleauDataBase(json_file)
 config_path = 'config.py'
 server_name = 'bleaudb.bleausard.fr' # Fixme:
 application = FlaskWebApplication(config_path, bleau_database, server_name).application
-
-####################################################################################################
-#
-# End
-#
-####################################################################################################

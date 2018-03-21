@@ -79,9 +79,3 @@ class RefectionViewSet(viewsets.ModelViewSet):
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     queryset = Refection.objects.all()
     serializer_class = RefectionSerializer
-
-####################################################################################################
-#
-# End
-#
-####################################################################################################

@@ -90,9 +90,3 @@ for secteur in secteurs:
 json_path = 'html-data/blo/json/blo2.json'
 with open(json_path, 'w', encoding='utf8') as f:
     json.dump(secteurs, f, indent=2, ensure_ascii=False, sort_keys=True)
-
-####################################################################################################
-#
-# End
-#
-####################################################################################################

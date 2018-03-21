@@ -146,9 +146,3 @@ plt.annotate('T2', xy=node_point, xytext=T2, horizontalalignment='center')
 plt.annotate('Tf', xy=node_point, xytext=Tf, horizontalalignment='center')
 
 plt.show()
-
-####################################################################################################
-#
-# End
-#
-####################################################################################################

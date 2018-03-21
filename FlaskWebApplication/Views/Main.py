@@ -288,9 +288,3 @@ def search_massifs():
         massifs = model.bleau_database.filter_by(**kwargs)
         return render_template_i18n('search-massifs.html', form=form, massifs=massifs)
     return render_template_i18n('search-massifs.html', form=form, massifs=[])
-
-####################################################################################################
-#
-# End
-#
-####################################################################################################
