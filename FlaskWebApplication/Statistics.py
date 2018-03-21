@@ -30,10 +30,13 @@ matplotlib.use('Agg')
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 from matplotlib.figure import Figure
 
-# from bokeh.plotting import figure
-from bokeh.embed import components
-from bokeh.charts import Bar
-from bokeh.charts.attributes import CatAttr
+## WSGI Hang
+## print(bokeh ...)
+## # from bokeh.plotting import figure
+## from bokeh.embed import components
+## from bokeh.charts import Bar
+## from bokeh.charts.attributes import CatAttr
+## print(bokeh done)
 
 ####################################################################################################
 

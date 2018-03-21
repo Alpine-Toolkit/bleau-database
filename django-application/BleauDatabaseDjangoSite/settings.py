@@ -50,7 +50,7 @@ ROOT_URLCONF = 'BleauDatabaseDjangoSite.urls'
 
 WSGI_APPLICATION = 'BleauDatabaseDjangoSite.wsgi.application'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bleaudb-admin.bleausard.fr', 'bleaudb-admin.bleausard.fr.']
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = ')*#b)3xtlw5_zhy*$yuwg+o6q#hm&=2i&xfh^v^t#6b5jx!!(^'
