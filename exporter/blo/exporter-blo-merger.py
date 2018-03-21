@@ -33,7 +33,7 @@ def convert_url(item, categorie='circuit'):
     del item['url']
     blo_url = int(url[len('spip.php?' + categorie):])
     item['blo_url'] = blo_url
-    
+
     return blo_url
 
 ####################################################################################################
@@ -56,9 +56,9 @@ def fix_bloc(bloc):
 
     if bloc['numero'] == "09.9b":
         bloc['numero'] = "9b"
-    
+
     convert_to(bloc, 'numero', int)
-    
+
     if not bloc['cotation']:
         match = cotation_re.match(bloc['descriptif'])
         if match is not None:
@@ -90,7 +90,7 @@ def fix_circuit_blocs(circuit):
         ):
             new_blocs.append(bloc)
     circuit['items'] = new_blocs
-    
+
     for bloc in new_blocs:
         fix_bloc(bloc)
 
@@ -102,7 +102,7 @@ def fix_circuit(secteur, massif, circuit):
     convert_to(circuit, 'lon', float)
     convert_to(circuit, 'renove', int)
     convert_to(circuit, 'nombre_de_voie', int)
-    
+
     name = circuit['name']
     info = circuit['info']
 
@@ -114,7 +114,7 @@ def fix_circuit(secteur, massif, circuit):
             circuit['numero'] = numero
         except:
             pass
-    
+
     circuit['couleur'] = None
     couleur_match = False
     for couleur in ('blanc', 'jaune', 'orange', 'bleu', 'rouge', 'noir',
@@ -122,21 +122,21 @@ def fix_circuit(secteur, massif, circuit):
         if couleur in name.lower():
             couleur_match = True
             circuit['couleur'] = couleur
-    
+
     circuit['cotation'] = None
     match = alpine_cotation_re.match(name.lower())
     if match:
         circuit['cotation'] = ''.join([x for x in match.groups() if x]).upper()
-    
+
     circuit['secteur'] = secteur['name']
     circuit['massif'] = massif['name']
-    
+
     blo_url = convert_url(circuit)
     bloc = bloc_map[blo_url] # global
-    
+
     if 'items' in bloc:
         circuit['items'] = bloc['items']
-    
+
     for key in ('name',):
         if circuit[key] != bloc[key]:
             print('!', circuit[key], bloc[key])

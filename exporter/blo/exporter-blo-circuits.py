@@ -42,7 +42,7 @@ class Secteur(ToJsonMixin):
     def __init__(self):
 
         super().__init__()
-        
+
         self.name = Target()
 
 ####################################################################################################
@@ -56,7 +56,7 @@ class Massif(ToJsonMixin):
     def __init__(self):
 
         super().__init__()
-        
+
         self.url = ''
         self.name = Target()
         self.descriptif = Target()
@@ -74,7 +74,7 @@ class Circuit(ToJsonMixin):
     def __init__(self):
 
         super().__init__()
-        
+
         self.url = ''
         self.name = Target()
         self.logo = Target()
@@ -119,7 +119,7 @@ class MyHTMLParser(HTMLParser):
     def __init__(self):
 
         super().__init__(convert_charrefs=True)
-        
+
         self._in_table = False
         self._in_secteur = False
         self._in_secteur_name = False
@@ -127,7 +127,7 @@ class MyHTMLParser(HTMLParser):
         self._in_massif_name = False
         self._in_circuit = False
         self._target = None
-        
+
         self._secteurs = []
 
     ##############################################

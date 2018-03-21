@@ -42,18 +42,18 @@ class RstFactory:
 
         self._rst_directory = os.path.realpath(rst_directory)
         self._root_module_path = os.path.realpath(module_path)
-        
+
         self._excluded_directory = [os.path.join(self._root_module_path, x) for x in excluded_directory]
         self._root_module_name = os.path.basename(self._root_module_path)
-        
+
         print("RST API Path:    ", self._rst_directory)
         print("Root Module Path:", self._root_module_path)
         print("Root Module Name:", self._root_module_name)
         print('Exclude:', '\n  '.join(self._excluded_directory))
-        
+
         if not os.path.exists(self._rst_directory):
             os.mkdir(self._rst_directory)
-            
+
         self._process_recursively()
 
     ##############################################
@@ -87,10 +87,10 @@ class RstFactory:
         print("Directory Module Name:", directory_module_name)
         print("Directory Module Python Path:", directory_module_python_path)
         print("Dest Path:", dst_directory)
-        
+
         if not os.path.exists(dst_directory):
             os.mkdir(dst_directory)
-        
+
         # Generate a RST file per module
         module_names = []
         for file_name in python_files:
@@ -101,7 +101,7 @@ class RstFactory:
             rst_file_name = os.path.join(dst_directory, module_name + '.rst')
             with open(rst_file_name, 'w') as f:
                 f.write(rst)
-        
+
         # Generate the TOC RST file
         rst = self._generate_toc(directory_module_name, sorted(module_names + sub_modules))
         rst_file_name = os.path.join(os.path.dirname(dst_directory), directory_module_name + '.rst')
@@ -162,18 +162,18 @@ class RstFactory:
     def _generate_title(self, module_name):
 
         mod_rst = ' :mod:`'
-        
+
         template = """
 %(header_line)s
 %(mod)s%(module_name)s`
 %(header_line)s"""
-        
+
         rst = template.lstrip() % dict(
             module_name=module_name,
             mod=mod_rst,
             header_line='*'*(len(module_name) + len(mod_rst) +2),
             )
-        
+
         return rst
 
     ##############################################
@@ -184,18 +184,18 @@ class RstFactory:
 
 .. toctree::
 """
-        
+
         rst = template.lstrip() % dict(
             title=self._generate_title(directory_module_name),
             )
-        
+
         for module_name in module_names:
             rst += ' '*2 + os.path.join(directory_module_name, module_name) + '\n'
-        
+
         rst += """
 .. End
 """
-        
+
         return rst
 
     ##############################################
@@ -210,7 +210,7 @@ class RstFactory:
 
 .. End
 """
-        
+
         rst = template.lstrip() % dict(
             title=self._generate_title(module_name),
             module_name=module_name,

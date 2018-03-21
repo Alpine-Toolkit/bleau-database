@@ -48,7 +48,7 @@ class MassifExporter:
 
         massif_id = int(first(args[0]))
         massif = first(args[1])
-        
+
         lon = first(args[2])
         lat = first(args[3])
         if lon:
@@ -57,19 +57,19 @@ class MassifExporter:
             coordonne = dict(longitude=longitude, latitude=latitude)
         else:
             coordonne = None
-        
+
         type_de_chaos = first(args[4])
         if type_de_chaos:
             type_de_chaos = type_de_chaos.replace(' ', '')
         else:
             type_de_chaos = ''
-        
+
         parcelles = first(args[5])
         if not parcelles:
             parcelles = ''
-        
+
         circuits = first(args[6])
-        
+
         return Massif(massif=massif,
                       coordonne=coordonne,
                       type_de_chaos=type_de_chaos,
@@ -95,13 +95,13 @@ class CircuitExporter:
             page_id = int(page_id[len(prefix):])
         else:
             raise ValueError
-        
+
         massif = args[0][1]
         couleur = first(args[1])
         numero = int(first(args[2]))
         cotation = first(args[3])
         topos = [url for url in args[4] if url.startswith('http')]
-        
+
         ign = first(args[5])
         if ign:
             ign = dict([x.split('=') for x in ign[ign.find('?')+1:].split('&')])
@@ -112,13 +112,13 @@ class CircuitExporter:
             coordonne = dict(longitude=ign['lon'], latitude=ign['lat'])
         else:
             coordonne = None
-        
+
         annee_refection = args[6]
         if annee_refection:
             annee_refection = int(first(annee_refection))
         else:
             annee_refection = None
-        
+
         gestion = first(args[7])
         status = first(args[8])
         liste_blocs = first(args[10])
@@ -126,7 +126,7 @@ class CircuitExporter:
             liste_blocs = None # []
         else:
             liste_blocs = liste_blocs
-        
+
         return Circuit(massif=self._bleau_database[massif],
                        couleur=couleur,
                        numero=numero,
@@ -185,7 +185,7 @@ class MyHTMLParser(HTMLParser):
             if self._in_row:
                 self._in_column = True
                 self._column = []
-        
+
         if self._in_column:
             # print('<{}>'.format(tag))
             for key, value in attrs:
@@ -199,7 +199,7 @@ class MyHTMLParser(HTMLParser):
 
         # if self._in_tbody:
         #     print('</{}>'.format(tag))
-        
+
         if tag == 'table':
             self._in_table = False
         elif tag == 'tbody':

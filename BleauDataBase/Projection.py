@@ -96,13 +96,13 @@ class GeoCoordinate(object):
     def mercator(self):
 
         # epsg:3857
-        
+
         x = math.radians(float(self.longitude.decimal))
         y = math.log(math.tan(math.radians(self.latitude.decimal)/2 + math.pi/4))
         x *= self.equatorial_radius
         y *= self.equatorial_radius
         # y = R/2 * math.log((1 + math.sin(latitude))/(1 - math.sin(latitude))
-        
+
         return (x, y)
 
     ##############################################

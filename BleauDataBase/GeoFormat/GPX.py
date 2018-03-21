@@ -109,7 +109,7 @@ class GPX:
         # root = tree.getroot()
         # for item in root:
         #    print(item.tag, tree.getpath(item))
-        
+
         waypoints = []
         for waypoint_element in tree.xpath('topografix:wpt', namespaces=namespaces):
             d = self._attribute_to_dict(waypoint_element, ('lat', 'lon'))

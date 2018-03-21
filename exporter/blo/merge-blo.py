@@ -122,7 +122,7 @@ def convert_boulder(circuit_blo):
                           comment=comment)
         boulders.append(boulder)
     boulders.sort()
-    
+
     return boulders
 
 ####################################################################################################

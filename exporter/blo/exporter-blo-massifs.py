@@ -42,7 +42,7 @@ class Item(ToJsonMixin):
     def __init__(self, url='', name=''):
 
         super().__init__()
-        
+
         self.url = url
         self.name = name
 
@@ -55,10 +55,10 @@ class MyHTMLParser(HTMLParser):
     def __init__(self):
 
         super().__init__(convert_charrefs=True)
-        
+
         self._in_column = False
         self._in_column_list = False
-        
+
         self._secteurs = []
 
     ##############################################

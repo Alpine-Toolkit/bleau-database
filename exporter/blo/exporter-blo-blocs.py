@@ -42,7 +42,7 @@ class Circuit(ToJsonMixin):
     def __init__(self):
 
         super().__init__()
-        
+
         self.url = ''
         self.name = Target()
         self.date = Target()
@@ -60,7 +60,7 @@ class Bloc(ToJsonMixin):
     def __init__(self):
 
         super().__init__()
-        
+
         self.name = Target()
         self.numero = Target()
         self.cotation = Target()
@@ -75,7 +75,7 @@ class MyHTMLParser(HTMLParser):
     def __init__(self):
 
         super().__init__(convert_charrefs=True)
-        
+
         self.circuit = Circuit()
 
         self._in_bloc = False
@@ -131,19 +131,19 @@ def upload_circuit(url):
 
     request = requests.get('http://bleaulib.org/' + url)
     source = request.text
-    
+
     parser = MyHTMLParser()
     parser.feed(source)
-    
+
     circuit = parser.circuit
-    
+
     # print(circuit.name)
     # print(circuit.date)
     # print(circuit.numero)
     # print(circuit.descriptif)
-    
+
     circuit.url = url
-    
+
     for bloc in circuit:
         numero = str(bloc.numero)
         if ',' in numero:
@@ -155,7 +155,7 @@ def upload_circuit(url):
             i = descriptif.find(',')
             bloc.cotation = descriptif[:i].strip()
             bloc.descriptif = descriptif[i+1:].strip()
-    
+
     return circuit.to_json()
 
 ####################################################################################################

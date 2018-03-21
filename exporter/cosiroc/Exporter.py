@@ -77,7 +77,7 @@ class ToJsonMixin(list):
         d = {attribute:clean_str(getattr(self, attribute)) for attribute in self.__attributes__}
         if self:
             d['items'] = [x.to_json() for x in self]
-        
+
         return d
 
 ####################################################################################################

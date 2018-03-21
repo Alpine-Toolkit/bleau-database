@@ -32,7 +32,7 @@ def convert_url(item, categorie='circuit'):
     del item['url']
     blo_url = int(url[len('spip.php?' + categorie):])
     item['blo_url'] = blo_url
-    
+
     return blo_url
 
 ####################################################################################################
